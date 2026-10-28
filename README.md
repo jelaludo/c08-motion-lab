@@ -54,3 +54,7 @@ For generation, install the pinned upstream MotionBricks checkout separately: `N
 ## Feedback and attribution
 
 This is shared for observation and discussion. Original character assets and original project work are by jelaludo. Publication does not relicense upstream models, data or third-party assets. The original C08 and K0-Tech source pages retain their provenance records. Third-party components keep their respective notices; see [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+## Keyboard playground
+
+[Open control mode](https://jelaludo.github.io/c08-motion-lab/lab/?control=1). WASD moves, Shift runs, Space jumps, Shift + movement + Space uses the running-jump clip. U plays Ukemi and T plays sumo stomp. Keys 1?9 and 0 select ten actions; the sidebar lists them. Esc exits control. Standing jump uses an authored crouch/flight variation; running jump uses the original-input generated jump with staged travel/lift. This is a kinematic playback controller without collision physics. Flag markers indicate review findings, detailed alongside each clip.

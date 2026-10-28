@@ -34,14 +34,16 @@ function sourcePose(){
 }
 function pose(){
  if(!action)return;
- time=Math.max(0,Math.min(time,duration));action.enabled=true;action.paused=false;mixer.setTime(time);
- if(continuous){const motion=active.getObjectByName('MOTION');if(motion){motion.position.x=0;motion.position.z=0}}
+ time=Math.max(0,Math.min(time,duration));action.enabled=true;action.paused=false;mixer.setTime(keyboard.enabled&&keyboard.jumpKind==='standing'?0:time);
+ if(keyboard.enabled&&keyboard.jumpKind==='standing'){const u=time/duration,bend=Math.sin(Math.PI*Math.min(1,u/.25))*.45;if(u<.25)active.traverse(o=>{if(o.isBone&&o.name.includes('KNEE'))o.rotateX(bend);if(o.isBone&&o.name.includes('HIP'))o.rotateX(-bend*.5)});}
+ if(continuous||keyboard.enabled){const motion=active.getObjectByName('MOTION');if(motion){motion.position.x=0;motion.position.z=0}}
  if(transition){
   const u=Math.min(1,transition.elapsed/transition.duration),weight=u*u*(3-2*u);
   active.traverse(o=>{if(!o.isBone)return;const previous=transition.from.get(o.name);if(previous){o.position.lerpVectors(previous.p,o.position,weight);o.quaternion.slerpQuaternions(previous.q,o.quaternion,weight)}});
   if(u>=1)transition=null;
  }
- holder.position.set(0,0,0);if(currentEntry?.kind==='authored'&&!continuous)holder.position.z=(authoredMeta[currentEntry.authoredClip]?.speed||0)*time;
+ holder.position.set(0,0,0);if(currentEntry?.kind==='authored'&&!continuous&&!keyboard.enabled)holder.position.z=(authoredMeta[currentEntry.authoredClip]?.speed||0)*time;
+ if(keyboard.enabled){holder.position.copy(keyboard.position);holder.rotation.y=keyboard.yaw;if(keyboard.jumpKind){const phase=T.MathUtils.clamp((time/duration-.2)/.6,0,1);holder.position.y=Math.sin(Math.PI*phase)*(keyboard.jumpKind==='running'?.8:.5)}}else holder.rotation.y=0;
  holder.updateMatrixWorld(true);helper?.updateMatrixWorld(true);sourcePose();
  $('time').value=time;$('readout').textContent=`${time.toFixed(2)} / ${duration.toFixed(2)} s`;
  const p=active.getObjectByName('PELVIS')?.getWorldPosition(new T.Vector3())||new T.Vector3();p.y=1.05;
@@ -52,7 +54,7 @@ function prepare(asset,clip,preserveView){
  if(mixer){mixer.stopAllAction();mixer.uncacheRoot(active)}
  if(active)holder.remove(active);if(helper){scene.remove(helper);helper.dispose()}
  active=asset.scene;holder.add(active);active.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;o.frustumCulled=false}});
- mixer=new T.AnimationMixer(active);duration=clip.duration;action=mixer.clipAction(clip);action.setLoop(T.LoopOnce,1);action.clampWhenFinished=true;action.play();time=0;
+ mixer=new T.AnimationMixer(active);duration=keyboard.enabled&&keyboard.jumpKind==='standing'?1.2:clip.duration;action=mixer.clipAction(clip);action.setLoop(T.LoopOnce,1);action.clampWhenFinished=true;action.play();time=0;
  helper=new T.SkeletonHelper(active);helper.visible=$('skeleton').checked;scene.add(helper);$('time').max=duration;pose();if(!preserveView)view();wireframe();
 }
 function authoredEntries(){return original.animations.map(clip=>({id:'authored:'+clip.name,label:'C08 authored · '+(authoredMeta[clip.name]?.label||clip.name),category:'Original C08 animations',kind:'authored',authoredClip:clip.name,duration_s:clip.duration}))}
@@ -74,7 +76,7 @@ function updateInformation(entry){
 async function loadTest(id,options={}){
  const token=++loadToken,entry=entries().find(c=>c.id===id);
  if(!entry)throw Error('Unknown motion: '+id);
- const from=options.continuous?capturePose():null;playing=false;$('status').textContent='Loading '+entry.label+'…';$('error').textContent='';
+ const from=(options.continuous||options.control)?capturePose():null;playing=false;$('status').textContent='Loading '+entry.label+'…';$('error').textContent='';
  let asset,preview=null;
  if(entry.kind==='authored')asset=original;
  else{
@@ -85,7 +87,7 @@ async function loadTest(id,options={}){
  const old=generated;source=preview;currentEntry=entry;selectedTest=id;if(asset!==original){generated=asset;lastGenerated=id}
  transition=from?{from,elapsed:0,duration:.65}:null;
  const clip=entry.kind==='authored'?asset.animations.find(c=>c.name===entry.authoredClip):asset.animations[0];
- prepare(asset,clip,!!options.continuous);if(old&&old!==asset&&old!==original)disposeAsset(old);
+ prepare(asset,clip,!!(options.continuous||options.control));if(old&&old!==asset&&old!==original)disposeAsset(old);
  if(asset===original)generated=null;
  updateInformation(entry);playing=options.play!==false;$('play').textContent=playing?'Pause':'Play';
  playlistHistory.push({id,time:performance.now()});if(playlistHistory.length>200)playlistHistory.shift();return true;
@@ -110,8 +112,8 @@ function populate(){
  for(const entry of entries()){const category=entry.category||'Video motion capture';if(!groups.has(category)){const group=document.createElement('optgroup');group.label=category;groups.set(category,group);$('test').append(group)}const option=document.createElement('option');option.value=entry.id;option.textContent=entry.label+(entry.review_flags?.length?' ⚑':'');groups.get(category).append(option)}
  $('gallery-count').textContent=`${catalog.tests.length} experiments + ${original.animations.length} original C08 actions`;
 }
-function manual(){if(continuous)setContinuous(false)}
-$('continuous').onclick=()=>setContinuous(!continuous);
+function manual(){if(continuous)setContinuous(false);if(keyboard.enabled)setKeyboard(false)}
+$('continuous').onclick=()=>{if(keyboard.enabled)setKeyboard(false);setContinuous(!continuous)};
 $('play').onclick=()=>{playing=!playing;if(playing&&time>=duration){if(continuous){advanceContinuous();return}time=0}$('play').textContent=playing?'Pause':'Play'};
 $('restart').onclick=()=>{time=0;transition=null;playing=true;$('play').textContent='Pause';pose()};
 $('time').oninput=()=>{manual();playing=false;time=Number($('time').value);$('play').textContent='Play';pose()};
@@ -119,17 +121,53 @@ $('test').onchange=()=>{manual();loadTest($('test').value).catch(error=>{$('erro
 $('mode').onchange=()=>{manual();loadTest($('mode').value==='original'?'authored:Heavy_Walk_Cycle':lastGenerated||catalog.tests[0].id).catch(error=>{$('error').textContent=error.message;console.error(error)})};
 $('skeleton').onchange=()=>{if(helper)helper.visible=$('skeleton').checked};$('source').onchange=()=>sourceGroup.visible=!!source&&$('source').checked;$('wire').onchange=wireframe;
 for(const button of document.querySelectorAll('[data-view]'))button.onclick=()=>view(button.dataset.view);
+const keyboard={enabled:false,keys:new Set(),position:new T.Vector3(),yaw:0,desired:'',pending:false,oneShot:false,jumpKind:null};
+const shortcuts={Digit1:'own_deep_crouch',Digit2:'own_reach_right',Digit3:'own_reach_both',Digit4:'own_hands_high',Digit5:'mocap_gorilla_side',Digit6:'mocap_gorilla_front',Digit7:'mocap_technical_standup',Digit8:'mocap_deadlift',Digit9:'fresh_dance',Digit0:'fresh_skip',KeyU:'mocap_ukemi',KeyT:'mocap_sumo_stomp'};
+function setKeyboard(enabled){
+ if(enabled&&continuous)setContinuous(false);
+ keyboard.enabled=enabled;keyboard.keys.clear();keyboard.oneShot=false;keyboard.jumpKind=null;keyboard.desired='';
+ $('keyboard').setAttribute('aria-pressed',String(enabled));$('keyboard').textContent=enabled?'Keyboard control ? On':'Keyboard control';
+ if(enabled){keyboard.position.set(0,0,0);keyboard.yaw=0;requestControl('authored:Standby_Idle')}else{loadToken++;holder.rotation.y=0;holder.position.set(0,0,0);pose()}
+}
+async function requestControl(id){
+ keyboard.desired=id;if(keyboard.pending)return;
+ keyboard.pending=true;
+ try{while(keyboard.enabled&&keyboard.desired!==selectedTest){const next=keyboard.desired;await loadTest(next,{control:true})}}
+ catch(error){$('error').textContent='Keyboard control: '+error.message;setKeyboard(false)}finally{keyboard.pending=false}
+}
+function direction(){const k=keyboard.keys;return new T.Vector3(Number(k.has('KeyD'))-Number(k.has('KeyA')),0,Number(k.has('KeyS'))-Number(k.has('KeyW'))).normalize()}
+function triggerControl(id,jumpKind=null){keyboard.oneShot=true;keyboard.jumpKind=jumpKind;requestControl(id);time=0;playing=true}
+function keyboardTick(delta){
+ if(!keyboard.enabled)return;
+ const d=direction(),moving=d.lengthSq()>0,run=keyboard.keys.has('ShiftLeft')||keyboard.keys.has('ShiftRight');
+ if(!keyboard.oneShot){requestControl(moving?(run?'own_run':'authored:Heavy_Walk_Cycle'):'authored:Standby_Idle');if(moving){keyboard.yaw=Math.atan2(d.x,d.z);keyboard.position.addScaledVector(d,delta*(run?2.8:1.1));keyboard.position.x=T.MathUtils.clamp(keyboard.position.x,-35,35);keyboard.position.z=T.MathUtils.clamp(keyboard.position.z,-35,35)}}
+ else if(keyboard.jumpKind==='running'&&!keyboard.pending)keyboard.position.addScaledVector(new T.Vector3(Math.sin(keyboard.yaw),0,Math.cos(keyboard.yaw)),delta*2.8);
+ $('keyboard-state').textContent=keyboard.oneShot?(keyboard.jumpKind?keyboard.jumpKind+' jump':currentEntry?.label||'Action'):(moving?(run?'Running':'Walking'):'Standing');
+}
+$('keyboard').onclick=()=>setKeyboard(!keyboard.enabled);
+window.addEventListener('keydown',event=>{
+ if(event.target.closest('input,select,textarea,button,[contenteditable="true"]')||event.ctrlKey||event.metaKey||event.altKey)return;
+ if(event.code==='Escape'){if(keyboard.enabled){event.preventDefault();setKeyboard(false)}return}
+ const supported=['KeyW','KeyA','KeyS','KeyD','ShiftLeft','ShiftRight','Space',...Object.keys(shortcuts)];if(!supported.includes(event.code)||!original)return;
+ event.preventDefault();if(!keyboard.enabled)setKeyboard(true);keyboard.keys.add(event.code);if(event.repeat)return;
+ if(event.code==='Space'&&!keyboard.oneShot){const running=direction().lengthSq()>0&&(keyboard.keys.has('ShiftLeft')||keyboard.keys.has('ShiftRight'));triggerControl(running?'own_jump_over':'own_idle',running?'running':'standing')}
+ else if(shortcuts[event.code])triggerControl(shortcuts[event.code]);
+});
+window.addEventListener('keyup',event=>keyboard.keys.delete(event.code));
+window.addEventListener('blur',()=>keyboard.keys.clear());document.addEventListener('visibilitychange',()=>{if(document.hidden)keyboard.keys.clear()});
+
 function resize(){renderer.setSize(stage.clientWidth,stage.clientHeight);camera.aspect=stage.clientWidth/stage.clientHeight;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(stage);resize();view();
 try{
  [catalog,original]=await Promise.all([fetch(config.catalog).then(r=>{if(!r.ok)throw Error('Motion catalog unavailable');return r.json()}),loader.loadAsync(config.authored)]);
  populate();const requested=new URL(location.href).searchParams.get('test'),id=entries().some(e=>e.id===requested)?requested:catalog.tests[0].id;
- await loadTest(id);
- window.motionTest={scene,camera,renderer,original,get generated(){return generated},get active(){return active},get time(){return time},get selectedTest(){return selectedTest},get catalog(){return catalog},get continuous(){return continuous},get history(){return playlistHistory},get transition(){return transition},get duration(){return duration},setTime(t){manual();playing=false;time=t;pose()},select(value){return loadTest(value==='original'?'authored:Heavy_Walk_Cycle':lastGenerated||catalog.tests[0].id)},view,loadTest,setContinuous,advanceContinuous,entries};
+ await loadTest(id);if(new URL(location.href).searchParams.get('control')==='1')setKeyboard(true);
+ window.motionTest={scene,camera,renderer,original,get generated(){return generated},get active(){return active},get time(){return time},get selectedTest(){return selectedTest},get catalog(){return catalog},get keyboard(){return keyboard},setKeyboard,get continuous(){return continuous},get history(){return playlistHistory},get transition(){return transition},get duration(){return duration},setTime(t){manual();playing=false;time=t;pose()},select(value){return loadTest(value==='original'?'authored:Heavy_Walk_Cycle':lastGenerated||catalog.tests[0].id)},view,loadTest,setContinuous,advanceContinuous,entries};
 }catch(error){$('error').textContent=error.message;$('status').textContent='Unable to load';console.error(error)}
 let previous=performance.now();renderer.setAnimationLoop(now=>{
  const delta=Math.max(0,Math.min((now-previous)/1000,.1));previous=now;
+ keyboardTick(delta);
  if(playing&&action){time+=delta*Number($('speed').value);if(transition)transition.elapsed+=delta;
-  if(time>=duration){time=duration;if(continuous){pose();advanceContinuous()}else if($('repeat').checked)time=0;else{playing=false;$('play').textContent='Play'}}pose();
+  if(time>=duration){time=duration;if(keyboard.enabled){if(keyboard.oneShot){keyboard.oneShot=false;keyboard.jumpKind=null;keyboard.desired='';}time=0}else if(continuous){pose();advanceContinuous()}else if($('repeat').checked)time=0;else{playing=false;$('play').textContent='Play'}}pose();
  }
  controls.update();renderer.render(scene,camera);
 });
