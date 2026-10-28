@@ -29,7 +29,8 @@ for i,j in enumerate(joints):
  if np.any(violation>1e-5):audit.append({'joint':j.get('name'),'violating_frames':int(np.sum(violation>1e-5)),'max_violation_rad':float(max(violation))})
 meta=json.loads((OUT/'g1-motion.json').read_text());meta['joint_limit_audit']={'clamped':False,'violations':audit};meta['newton_joint_order_verified']=True;meta['retargeting']='experimental C08 adaptation complete' if (OUT/'retarget-report.json').exists() else 'C08 adaptation failed or pending; source available'
 (OUT/'g1-motion.json').write_text(json.dumps(meta,indent=2))
-preview={'fps':30,'frames':len(p),'body_names':d['body_names'].tolist(),'parents':parents,'positions':p.tolist(),'contacts':d['contacts'].tolist(),'note':'G1 skeleton at original source scale; aligned initial heading; source contact predictions are unreviewed'}
+B=np.array([[1,0,0],[0,0,1],[0,-1,0]])@A;B0=np.array([[0,1,0],[0,0,1],[1,0,0]]);rot=Rotation.from_quat(d['body_transforms'][:,:,3:7].reshape(-1,4)).as_matrix().reshape(len(p),-1,3,3);ref=Rotation.from_quat(d['reference_bodies'][:,3:7]).as_matrix();deltas=np.einsum('ij,fbjk,bkl,lm->fbim',B,rot,np.swapaxes(ref,-1,-2),B0.T);quat=Rotation.from_matrix(deltas.reshape(-1,3,3)).as_quat().reshape(len(p),-1,4)
+preview={'rotation_deltas':quat.tolist(),'reference_positions':(d['reference_bodies'][:,:3]@B0.T).tolist(),'fps':30,'frames':len(p),'body_names':d['body_names'].tolist(),'parents':parents,'positions':p.tolist(),'contacts':d['contacts'].tolist(),'note':'G1 skeleton at original source scale; aligned initial heading; source contact predictions are unreviewed'}
 (OUT/'g1-preview.json').write_text(json.dumps(preview,separators=(',',':')))
 manifest=json.loads((ROOT/'assets/c08-worker/manifest.json').read_text())
 checks=[]

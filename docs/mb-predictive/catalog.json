@@ -341,11 +341,42 @@
         4.766666666666667
       ],
       "publishable": true
+    },
+    {
+      "id": "routine_5",
+      "label": "5 moves / neural chain",
+      "duration_s": 17.3,
+      "move_count": 5,
+      "category": "Combined / neural sequences",
+      "routine": true,
+      "inference_seconds": 0.08680799999274313,
+      "segment_count": 11
+    },
+    {
+      "id": "routine_10",
+      "label": "10 moves / neural chain",
+      "duration_s": 32.3,
+      "move_count": 10,
+      "category": "Combined / neural sequences",
+      "routine": true,
+      "inference_seconds": 0.06912330072373152,
+      "segment_count": 21
+    },
+    {
+      "id": "routine_15",
+      "label": "15 moves / neural chain",
+      "duration_s": 47.43333333333333,
+      "move_count": 15,
+      "category": "Combined / neural sequences",
+      "routine": true,
+      "inference_seconds": 0.09750319924205542,
+      "segment_count": 31
     }
   ],
   "summary": {
     "authored_original": 6,
     "harvested_public": 15,
-    "restricted_sample_results_in_public": false
+    "restricted_sample_results_in_public": false,
+    "combined_neural_sequences": 3
   }
 }

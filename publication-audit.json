@@ -13,9 +13,20 @@
   "authored_c08_clips": 5,
   "playback_choices": 47,
   "quaternius_baseline_clips": 20,
-  "predictive_neural_experiments": 21,
-  "predictive_linear_controls": 21,
+  "predictive_neural_experiments": 24,
+  "predictive_linear_controls": 24,
   "raw_source_videos_published": false,
   "harvested_public_predictions": 15,
-  "restricted_harvested_results_published": 0
+  "restricted_harvested_results_published": 0,
+  "combined_sequence_counts": [
+    5,
+    10,
+    15
+  ],
+  "experimental_test_body": {
+    "author": "Tulio Portela",
+    "license": "CC-BY-4.0",
+    "source": "Sketchfab / Meshy",
+    "production_eligible_in_this_project": false
+  }
 }

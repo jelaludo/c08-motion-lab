@@ -54,7 +54,12 @@ def work(identifier, settings):
         folder = JOBS / identifier
         folder.mkdir(exist_ok=True)
         jobs[identifier]['message'] = 'Generating movement and a matched interpolation baseline...'
-        case = sampled_case(settings) if 'harvest_id' in settings else {'id': identifier, 'label': 'Local custom target', 'goals': [goal(settings['pose'], settings['x'], settings['y'], settings['yaw'])]}
+        if 'sequence_count' in settings:
+            from predictive_sequences import sequence_case
+            import secrets
+            case = sequence_case(settings['sequence_count'], secrets.randbelow(2**31))
+        else:
+            case = sampled_case(settings) if 'harvest_id' in settings else {'id': identifier, 'label': 'Local custom target', 'goals': [goal(settings['pose'], settings['x'], settings['y'], settings['yaw'])]}
         case['id'] = identifier
         predictor.generate(case, folder)
         jobs[identifier]['message'] = 'Retargeting both outputs to C08...'
@@ -108,7 +113,12 @@ class Handler(SimpleHTTPRequestHandler):
             if not 0 < size <= 2048 or self.headers.get_content_type() != 'application/json':
                 raise ValueError('Expected a small JSON target specification')
             value = json.loads(self.rfile.read(size))
-            if 'harvest_id' in value:
+            if 'sequence_count' in value:
+                count = int(value['sequence_count'])
+                if count not in (5, 10, 15):
+                    raise ValueError('Choose 5, 10 or 15 moves')
+                settings = {'sequence_count': count}
+            elif 'harvest_id' in value:
                 settings = {'harvest_id': str(value['harvest_id']), 'spacing': float(value['spacing']), 'yaw': float(value['yaw'])}
                 if not (.5 <= settings['spacing'] <= 1.5 and -45 <= settings['yaw'] <= 45 and any(c['id'] == settings['harvest_id'] for c in harvest_records())):
                     raise ValueError('Unsupported sampled-pose variation')

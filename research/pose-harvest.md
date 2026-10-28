@@ -26,7 +26,7 @@ Source hashes, timestamps, fitted input poses, fitting errors, generated segment
 
 The local MB-Predictive UI can reuse any harvested source's context and target postures. Target spacing and heading are adjustable; source hinge angles remain unchanged. A fresh model call generates the intervening movement, followed by retargeting, export and validation. Source provenance and placement adjustments remain attached. New jobs stay local.
 
-The local view contains 23 presets: 21 public experiments and two restricted sample evaluations. The public view contains 21. The same controls work with the permitted sources without depending on the restricted branch.
+The source-harvest base contains 21 public experiments and two restricted sample evaluations locally. Three later combined neural routines bring the current totals to 24 public and 26 local presets. The same controls work with the permitted sources without depending on the restricted branch.
 
 ## C08 adaptation findings
 

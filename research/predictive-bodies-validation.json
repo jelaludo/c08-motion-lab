@@ -1,0 +1,194 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/mb-predictive/",
+  "cases": 24,
+  "samples": [
+    {
+      "id": "near",
+      "finite": true,
+      "min": 0.006992204297103928,
+      "maxError": 2.6015253984379427e-7,
+      "lift": 0.00047520721687077834
+    },
+    {
+      "id": "far",
+      "finite": true,
+      "min": 0.021143122326407623,
+      "maxError": 1.0993550919602413e-7,
+      "lift": 0
+    },
+    {
+      "id": "turn",
+      "finite": true,
+      "min": 0.01877921564246208,
+      "maxError": 6.778283091479764e-7,
+      "lift": 0
+    },
+    {
+      "id": "crouch",
+      "finite": true,
+      "min": 0.007743128379169741,
+      "maxError": 1.798973554012484e-7,
+      "lift": 0.003778505671960501
+    },
+    {
+      "id": "reach",
+      "finite": true,
+      "min": 0.007872849132315583,
+      "maxError": 3.119457887001964e-7,
+      "lift": 0.0018813573926957632
+    },
+    {
+      "id": "chain",
+      "finite": true,
+      "min": 0.008000000109658971,
+      "maxError": 1.3146821759013605e-7,
+      "lift": 0.009812118272304654
+    },
+    {
+      "id": "quat_walk_loop",
+      "finite": true,
+      "min": 0.00719107998504483,
+      "maxError": 1.2948012773073003e-7,
+      "lift": 0.017117152335919025
+    },
+    {
+      "id": "quat_dance_loop",
+      "finite": true,
+      "min": 0.008000000078158025,
+      "maxError": 1.796125114195135e-7,
+      "lift": 0.0069934581510029
+    },
+    {
+      "id": "quat_interact",
+      "finite": true,
+      "min": 0.007342314268740203,
+      "maxError": 1.2231034551835052e-7,
+      "lift": 0.015180434115535685
+    },
+    {
+      "id": "quat_jump_start",
+      "finite": true,
+      "min": 0.08524066228443047,
+      "maxError": 0.0000013575498105655726,
+      "lift": 0
+    },
+    {
+      "id": "quat_crouch_fwd_loop",
+      "finite": true,
+      "min": 0.003935030097740384,
+      "maxError": 4.5099229661893503e-7,
+      "lift": 0.01676880626886735
+    },
+    {
+      "id": "capture_deadlift",
+      "finite": true,
+      "min": 0.061863505528999115,
+      "maxError": 4.39162887555522e-7,
+      "lift": 0
+    },
+    {
+      "id": "capture_sumo_stomp",
+      "finite": true,
+      "min": 0.07400655175027795,
+      "maxError": 1.0777461678657119e-7,
+      "lift": 0
+    },
+    {
+      "id": "capture_technical_standup",
+      "finite": true,
+      "min": 0.07266534255220299,
+      "maxError": 0.0000018424646818226975,
+      "lift": 0
+    },
+    {
+      "id": "capture_ukemi",
+      "finite": true,
+      "min": 0.14284200001700606,
+      "maxError": 8.335297719264112e-7,
+      "lift": 0
+    },
+    {
+      "id": "capture_gorilla_side",
+      "finite": true,
+      "min": 0.19269402807589808,
+      "maxError": 0.0000017003625942257905,
+      "lift": 0
+    },
+    {
+      "id": "capture_gorilla_front",
+      "finite": true,
+      "min": 0.36445431351048574,
+      "maxError": 5.487477259813467e-7,
+      "lift": 0
+    },
+    {
+      "id": "mb_run",
+      "finite": true,
+      "min": 0.006945786887488758,
+      "maxError": 3.043163885885214e-7,
+      "lift": 0.008867689139508287
+    },
+    {
+      "id": "mb_jump",
+      "finite": true,
+      "min": 0.453730524696677,
+      "maxError": 4.102069650624429e-7,
+      "lift": 0
+    },
+    {
+      "id": "mb_dance",
+      "finite": true,
+      "min": 0.007578523011854148,
+      "maxError": 1.0760074931059904e-7,
+      "lift": 0.019184798895815078
+    },
+    {
+      "id": "mb_crouch",
+      "finite": true,
+      "min": 0.0440939281978058,
+      "maxError": 1.3269353441036635e-7,
+      "lift": 0
+    },
+    {
+      "id": "routine_5",
+      "finite": true,
+      "min": 0.022873927829888084,
+      "maxError": 5.706583837694623e-7,
+      "lift": 0
+    },
+    {
+      "id": "routine_10",
+      "finite": true,
+      "min": 0.007771809343481914,
+      "maxError": 8.836092988406818e-7,
+      "lift": 0.020988074608462335
+    },
+    {
+      "id": "routine_15",
+      "finite": true,
+      "min": 0.006920816849099517,
+      "maxError": 1.3151114869325298e-7,
+      "lift": 0.0009197532176418461
+    }
+  ],
+  "minFloor": 0.003935030097740384,
+  "maxLengthError": 0.0000018424646818226975,
+  "independent": true,
+  "checks": [
+    "body selection",
+    "same prediction side by side",
+    "attribution",
+    "finite deformed geometry",
+    "fixed limb lengths",
+    "human interpolation",
+    "space pause/resume",
+    "arrow and angle shortcuts",
+    "5/10/15 true neural chains",
+    "sequence stop",
+    "natural random advance",
+    "random pause and stop",
+    "mobile"
+  ],
+  "errors": []
+}

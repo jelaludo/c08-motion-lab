@@ -56,7 +56,7 @@ floor_corrections=[]
 samples=[]
 # Sparse human targets can include inverted/non-foot support. Retain the raw source;
 # report any whole-avatar grounding correction on this experimental adaptation.
-whole_body_ground=bool(metadata.get('source_harvest'));ground_geometry=[];body_ground_offsets=[];dense_ground_offsets=[]
+whole_body_ground=bool(metadata.get('source_harvest') or metadata.get('routine'));ground_geometry=[];body_ground_offsets=[];dense_ground_offsets=[]
 if whole_body_ground:
  for obj in bpy.data.objects:
   if obj.type!='MESH':continue

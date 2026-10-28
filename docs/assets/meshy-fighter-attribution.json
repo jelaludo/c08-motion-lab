@@ -1,0 +1,136 @@
+{
+  "source_title": "BJJ Jiu-Jitsu Woman Girl Fighter Free",
+  "author": "Tulio Portela",
+  "author_url": "https://sketchfab.com/TulioPortela",
+  "source_url": "https://sketchfab.com/3d-models/bjj-jiu-jitsu-woman-girl-fighter-free-8077cada67a14af18249b6af687fcc3c",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_sha256": "054fb739bef2e674f77772e50a1c276a86d44a7cb0d8b064c14f3b5ff5d5f6c9",
+  "source_generator": "Meshy AI, per creator description; downloaded through Sketchfab",
+  "changes": [
+    "Normalized copied geometry to 1.70 m height",
+    "Joined surface partitions and reduced triangles for the lab",
+    "Added an original manual-landmark humanoid rig",
+    "Blender heat skin weights, limited and normalized to four influences",
+    "Original textures preserved; no finger articulation or cloth simulation"
+  ],
+  "triangles_before": 206951,
+  "triangles_after": 72431,
+  "vertices": 36209,
+  "bones": 22,
+  "heat_weight_fallback_vertices": 21,
+  "role": "Experiment-only secondary body; excluded from production asset pipeline",
+  "bind_heads_blender": {
+    "MOTION": [
+      0,
+      0,
+      0
+    ],
+    "PELVIS": [
+      0,
+      0,
+      0.89
+    ],
+    "WAIST": [
+      0,
+      0.005,
+      1.02
+    ],
+    "CHEST": [
+      0,
+      0.012,
+      1.24
+    ],
+    "NECK": [
+      0,
+      0,
+      1.405
+    ],
+    "HEAD": [
+      0,
+      0,
+      1.5
+    ],
+    "HIP_L": [
+      0.12,
+      0,
+      0.87
+    ],
+    "KNEE_L": [
+      0.17,
+      0,
+      0.47
+    ],
+    "ANKLE_L": [
+      0.22,
+      0,
+      0.09
+    ],
+    "TOE_L": [
+      0.245,
+      -0.1,
+      0.035
+    ],
+    "SHOULDER_L": [
+      0.1,
+      0,
+      1.32
+    ],
+    "UPPER_ARM_L": [
+      0.19,
+      0,
+      1.32
+    ],
+    "FOREARM_L": [
+      0.29,
+      -0.005,
+      1.1
+    ],
+    "HAND_L": [
+      0.35,
+      -0.015,
+      0.92
+    ],
+    "HIP_R": [
+      -0.12,
+      0,
+      0.87
+    ],
+    "KNEE_R": [
+      -0.17,
+      0,
+      0.47
+    ],
+    "ANKLE_R": [
+      -0.22,
+      0,
+      0.09
+    ],
+    "TOE_R": [
+      -0.245,
+      -0.1,
+      0.035
+    ],
+    "SHOULDER_R": [
+      -0.1,
+      0,
+      1.32
+    ],
+    "UPPER_ARM_R": [
+      -0.19,
+      0,
+      1.32
+    ],
+    "FOREARM_R": [
+      -0.29,
+      -0.005,
+      1.1
+    ],
+    "HAND_R": [
+      -0.35,
+      -0.015,
+      0.92
+    ]
+  },
+  "output_sha256": "43567f4b21feb06bc1d4be132da8d845afdb777d4ccf6b79c935c54432f7f0ae"
+}

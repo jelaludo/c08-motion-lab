@@ -7,8 +7,14 @@
   "max_file_bytes": 7618436,
   "checks": "Research gallery uses original conditioning; predictive sources are original, CC0 or user-owned; video-derived motion separately classified; no raw videos, source-local paths, inference weights or token-like credentials in publication.",
   "quaternius_baseline_clips": 20,
-  "predictive_neural_experiments": 21,
-  "predictive_interpolation_controls": 21,
+  "predictive_neural_experiments": 24,
+  "predictive_interpolation_controls": 24,
   "exact_generated_context_chaining": true,
-  "public_predictive_source_rights_verified": true
+  "public_predictive_source_rights_verified": true,
+  "experimental_body_attribution_verified": true,
+  "combined_sequence_move_counts": [
+    5,
+    10,
+    15
+  ]
 }

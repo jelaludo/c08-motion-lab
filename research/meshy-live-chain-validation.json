@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "job": "local-7962605bcb124d9bbe2699dcd26ea0e5",
+  "move_count": 5,
+  "requests": 11,
+  "duration_s": 15.166666666666666,
+  "checks": [
+    "fresh local GPU combined generation",
+    "11 actual neural calls including recovery",
+    "exact context links",
+    "both bodies on new prediction"
+  ],
+  "errors": []
+}

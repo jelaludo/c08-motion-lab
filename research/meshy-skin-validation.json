@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "skin_vertices": 48168,
+  "joints": 22,
+  "maximum_weight_sum_error": 1.7881393432617188e-07,
+  "attribution": {
+    "author": "Tulio Portela",
+    "author_url": "https://sketchfab.com/TulioPortela",
+    "source": "https://sketchfab.com/3d-models/bjj-jiu-jitsu-woman-girl-fighter-free-8077cada67a14af18249b6af687fcc3c",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "BJJ Jiu-Jitsu Woman Girl Fighter Free",
+    "modifications": "Normalized size, geometry reduction, experimental humanoid rig and skinning by C08 Motion Lab. Original Meshy textures preserved. Test-only, excluded from production."
+  },
+  "gltf_validation": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  }
+}

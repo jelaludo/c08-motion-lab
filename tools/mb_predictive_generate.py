@@ -46,6 +46,7 @@ class Predictor:
   q=np.concatenate(segments);c=np.concatenate(contacts)
   meta={'id':case['id'],'label':case['label'],'clip':'MBP_'+case['id'],'purpose':purpose,'provenance_type':case.get('provenance_type','original'),'model':'MotionBricks-G1-RP-v1','precision':'FP32','sample_rate':30,'frames':len(q),'duration_s':(len(q)-1)/30,'inputs':[{'context':s['context'],'target':s['target']} for s in trace],'segments':trace,'inference_seconds':sum(s['inference_seconds'] for s in trace),'total_seconds':time.perf_counter()-start,'upstream_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT/'upstream',text=True).strip(),'endpoint_correction':True,'allowed_token_counts':list(range(8,15)),'body_names':self.names,'source_metrics':{'maximum_joint_key_step_rad':float(np.abs(np.diff(q[:,7:],axis=0)).max())}}
   if 'source_harvest' in case:meta['source_harvest']=case['source_harvest']
+  if 'routine' in case:meta['routine']=case['routine']
   self.save(folder,q,c,meta)
   if baseline:
    b=np.concatenate(linear);bm={**meta,'clip':'LINEAR_'+case['id'],'kind':'linear_baseline','model':None,'purpose':purpose+' Non-neural joint interpolation with matched endpoints/duration.','segments':[]};self.save(folder/'linear',b,np.zeros_like(c),bm)

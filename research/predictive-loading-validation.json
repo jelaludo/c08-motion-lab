@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "body deep link",
+    "pause during random asset load",
+    "resume",
+    "stop"
+  ],
+  "errors": []
+}

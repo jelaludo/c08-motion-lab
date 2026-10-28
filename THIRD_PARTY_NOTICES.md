@@ -19,3 +19,9 @@ The landing page requests DM Sans and Space Grotesk through Google Fonts; these 
 
 ## Sampled-pose conditioning
 The predictive tab includes five new Quaternius CC0 source-pose experiments, six from user-provided capture recoveries, and four from our original-input MotionBricks outputs. Generated outputs are identified separately from their source clips. Two bundled NVIDIA sample experiments remain local under the sample evaluation terms; neither their sampled poses nor their conditioned outputs are published. See research/pose-harvest.md.
+
+## Meshy-generated fighter test body (CC BY 4.0)
+
+**BJJ Jiu-Jitsu Woman Girl Fighter Free** by **Tulio Portela** (https://sketchfab.com/TulioPortela). Source: https://sketchfab.com/3d-models/bjj-jiu-jitsu-woman-girl-fighter-free-8077cada67a14af18249b6af687fcc3c. License: Creative Commons Attribution 4.0 International, https://creativecommons.org/licenses/by/4.0/. Creator description identifies Meshy AI generation.
+
+Lab changes: normalized size, joined/reduced mesh, duplicate UV cleanup, humanoid landmark rig, automatic heat skinning with four-weight normalization, tangent export and runtime G1 retargeting. Original textures retained. This is an experimental secondary body in MB-Predictive, excluded from this project's production pipeline. Attribution and modification notices also accompany the GLB and player. The creator's license continues to apply.
