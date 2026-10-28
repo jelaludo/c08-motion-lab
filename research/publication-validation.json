@@ -19,5 +19,11 @@
   ],
   "vanilla_candidates": 15,
   "vanilla_source_hashes_verified": true,
-  "vanilla_review_version": "v1-8b59f533a52e"
+  "vanilla_review_version": "v1-43a5bfc0cbc0",
+  "reactive_neural_takes": 40,
+  "reactive_neural_calls": 640,
+  "reactive_paired_environments_verified": true,
+  "brek43_original_rig_hash_verified": true,
+  "vanilla_game_bakes": 30,
+  "vanilla_bake_version_hashes_verified": true
 }

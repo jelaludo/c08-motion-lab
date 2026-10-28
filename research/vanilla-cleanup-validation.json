@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/vanilla/",
+  "checks": [
+    "seat contact volume clear at60Hz",
+    "seated support gap below3cm",
+    "running jump forward flight >=4.4m with >=.5m arc",
+    "raw-vs-filtered identical-composition angular acceleration reduction"
+  ],
+  "motion": {
+    "seat": [
+      {
+        "id": "sit",
+        "verticesInsideSeat": 0,
+        "maxDepth": 0,
+        "minSupportGap": null
+      },
+      {
+        "id": "seated",
+        "verticesInsideSeat": 0,
+        "maxDepth": 0,
+        "minSupportGap": 0.01231069202773194
+      },
+      {
+        "id": "stand",
+        "verticesInsideSeat": 0,
+        "maxDepth": 0,
+        "minSupportGap": null
+      }
+    ],
+    "stoolBounds": {
+      "min": [
+        -0.20000000298023224,
+        0.5250000006705523,
+        -0.325
+      ],
+      "max": [
+        0.20000000298023224,
+        0.5849999993294478,
+        -0.07500000000000001
+      ]
+    },
+    "jump": [
+      {
+        "time": 0,
+        "position": [
+          0,
+          0.004900742946581604,
+          0
+        ]
+      },
+      {
+        "time": 1.4,
+        "position": [
+          0,
+          0,
+          1.54
+        ]
+      },
+      {
+        "time": 1.925,
+        "position": [
+          0,
+          0.65,
+          3.79
+        ]
+      },
+      {
+        "time": 2.45,
+        "position": [
+          0,
+          0.04361209704883436,
+          6.04
+        ]
+      },
+      {
+        "time": 3.5999999999999996,
+        "position": [
+          0,
+          0,
+          6.29
+        ]
+      }
+    ],
+    "recipe": {
+      "travel": 4.5,
+      "flightStart": 1.4,
+      "flightEnd": 2.45
+    }
+  },
+  "curveMetrics": {
+    "filtered": {
+      "run": {
+        "angularAccelerationRms": 61.49097817173749,
+        "angularAccelerationMax": 394.02901832938835,
+        "samples": 1166
+      },
+      "run_jump": {
+        "angularAccelerationRms": 40.67159844806794,
+        "angularAccelerationMax": 394.02901832938835,
+        "samples": 4730
+      },
+      "back_roll": {
+        "angularAccelerationRms": 37.46889622952905,
+        "angularAccelerationMax": 254.2986562681455,
+        "samples": 4466
+      }
+    },
+    "unfiltered": {
+      "run": {
+        "angularAccelerationRms": 115.15409900084627,
+        "angularAccelerationMax": 1128.140989160771,
+        "samples": 1166
+      },
+      "run_jump": {
+        "angularAccelerationRms": 69.81792788589306,
+        "angularAccelerationMax": 1128.140989160771,
+        "samples": 4730
+      },
+      "back_roll": {
+        "angularAccelerationRms": 83.74677031628345,
+        "angularAccelerationMax": 1287.619311736739,
+        "samples": 4466
+      }
+    },
+    "ratios": {
+      "run": 0.5339886179065635,
+      "run_jump": 0.5825380339923518,
+      "back_roll": 0.4474070592575881
+    }
+  },
+  "errors": []
+}

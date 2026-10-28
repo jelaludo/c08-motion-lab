@@ -1,0 +1,90 @@
+{
+  "status": "completed",
+  "takes": 40,
+  "paired_environments": 20,
+  "neural_calls": 640,
+  "duration_per_take_s": 8,
+  "seed_interpretation": "Five matched environment/initial-state seeds, deterministic neural inference, not five model randomness samples.",
+  "summaries": [
+    {
+      "scenario": "slalom",
+      "condition": "baseline",
+      "runs": 5,
+      "mean_collision_frames": 166.0,
+      "mean_speed_m_s": 0.6770270109176636,
+      "mean_jerk_p95_m_s3": 51.27880706787109,
+      "mean_goal_distance_m": 0.6608188154153001
+    },
+    {
+      "scenario": "slalom",
+      "condition": "reactive",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_speed_m_s": 0.5757690787315368,
+      "mean_jerk_p95_m_s3": 55.460062408447264,
+      "mean_goal_distance_m": 2.321425824940199
+    },
+    {
+      "scenario": "speedzones",
+      "condition": "baseline",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_speed_m_s": 0.753102445602417,
+      "mean_jerk_p95_m_s3": 85.25531768798828,
+      "mean_goal_distance_m": 0.04433981953069688
+    },
+    {
+      "scenario": "speedzones",
+      "condition": "reactive",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_speed_m_s": 0.7603247165679932,
+      "mean_jerk_p95_m_s3": 81.04343109130859,
+      "mean_goal_distance_m": 0.03131233518539561
+    },
+    {
+      "scenario": "pursuit",
+      "condition": "baseline",
+      "runs": 5,
+      "mean_collision_frames": 22.2,
+      "mean_speed_m_s": 0.8635759830474854,
+      "mean_jerk_p95_m_s3": 140.23623809814453,
+      "mean_goal_distance_m": 2.512329915683486
+    },
+    {
+      "scenario": "pursuit",
+      "condition": "reactive",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_speed_m_s": 0.6333246231079102,
+      "mean_jerk_p95_m_s3": 88.20045471191406,
+      "mean_goal_distance_m": 0.5454077951514668
+    },
+    {
+      "scenario": "mixed",
+      "condition": "baseline",
+      "runs": 5,
+      "mean_collision_frames": 47.6,
+      "mean_speed_m_s": 0.23896821737289428,
+      "mean_jerk_p95_m_s3": 50.32588348388672,
+      "mean_goal_distance_m": 2.0028282340123966
+    },
+    {
+      "scenario": "mixed",
+      "condition": "reactive",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_speed_m_s": 0.6814253568649292,
+      "mean_jerk_p95_m_s3": 86.3904052734375,
+      "mean_goal_distance_m": 2.5811474857940557
+    }
+  ],
+  "limits": [
+    "Root-proxy collisions are not whole-avatar geometry certification.",
+    "Both bodies retarget the same native prediction; body-specific floor handling is separate.",
+    "No collision response solver; collisions and failures retained.",
+    "Mixed trial combines pursuit, pillars and speed zone. Duck/vault triggers deferred.",
+    "Paired conditions change multiple planner behaviors, so they test controller packages rather than isolating every individual factor."
+  ],
+  "context_check": "Each input matches last four actually played frames; unused future frames discarded."
+}

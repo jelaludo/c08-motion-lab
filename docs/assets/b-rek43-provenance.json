@@ -1,0 +1,36 @@
+{
+  "title": "B-REK43 / Long-stride Recon",
+  "author": "jelaludo",
+  "source_url": "https://jelaludo.github.io/SentryTowers_A6/b-rek43/",
+  "source_glb_url": "https://jelaludo.github.io/SentryTowers_A6/assets/b-rek43/b_rek43_d0_lod1.glb",
+  "source_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+  "output_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+  "rights": "Original user-owned character and authored motions by jelaludo.",
+  "rig_status": "Existing authored rigid humanoid rig imported without geometry, bind-pose or animation modification; no redundant rerigging.",
+  "joints": 63,
+  "triangles": 24102,
+  "standing_height_m": 2.709,
+  "units": "metres",
+  "axes": "+Y up, +Z forward",
+  "source_clips": [
+    "Recon_Idle",
+    "Patrol_Walk_Cycle",
+    "Stealth_Walk_Cycle",
+    "Survey_Scan",
+    "Crouch_Observe",
+    "Signal_Halt"
+  ],
+  "runtime_adapter": "../reactive/brek.js",
+  "runtime_changes": [
+    "G1 direction retarget using native fixed segment lengths",
+    "Rest-relative source torso and wrist articulation",
+    "Original B-REK43 curled fingers/thumbs/sockets inherit actual parent delta at every depth",
+    "Whole-skinned-geometry floor clearance correction"
+  ],
+  "limitations": [
+    "No contact IK, terrain compliance or collision response",
+    "Anatomical G1 adaptation is an experiment, not an authored B-REK performance",
+    "Long legs and compact feet need visual review of support/sliding",
+    "Avatar scaling must also scale the reactive environment for fair clearance comparisons"
+  ]
+}

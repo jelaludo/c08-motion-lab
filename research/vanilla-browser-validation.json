@@ -5,11 +5,7 @@
     "15 finite full-skin candidates at five phases",
     "ground clearance",
     "browser rating persistence",
-    "per reviewer isolation",
-    "Keep/Rework/Reject queues",
-    "JSON export and import",
-    "invalid import rejected atomically",
-    "CSV export",
+    "scores and comments counted as reviewed",
     "one-shot stopping",
     "keyboard navigation",
     "mobile layout"
@@ -31,10 +27,10 @@
     },
     {
       "id": "run",
-      "low": 0.01199984413404842,
+      "low": 0.00799999999999998,
       "finite": true,
-      "extent": 2.290803149382923,
-      "duration": 0.6666666865348816
+      "extent": 2.2798611839982517,
+      "duration": 0.9
     },
     {
       "id": "small_jump",
@@ -52,10 +48,10 @@
     },
     {
       "id": "run_jump",
-      "low": 0.011999951296771188,
+      "low": 0.007999999999999924,
       "finite": true,
-      "extent": 3.2560145285775652,
-      "duration": 4.400000023841859
+      "extent": 6.980986168599661,
+      "duration": 3.5999999999999996
     },
     {
       "id": "crouch",
@@ -94,10 +90,10 @@
     },
     {
       "id": "back_roll",
-      "low": 0.007999999999999993,
+      "low": 0.008000000000000007,
       "finite": true,
-      "extent": 2.256284372453795,
-      "duration": 2.7166666984558105
+      "extent": 2.2588433298476978,
+      "duration": 3.4
     },
     {
       "id": "sit",

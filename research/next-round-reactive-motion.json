@@ -1,6 +1,6 @@
 {
   "reviewed_on": "2026-10-28",
-  "status": "research and proposed protocol; reactive trials have not been run",
+  "status": "Initial reactive navigation round completed 2026-10-29: 40 eight-second paired neural rollouts; duck/vault interaction extensions deferred.",
   "goal": "More natural humanoid motion through reactive navigation, acceleration and K0-Tech pursuit; preserve selected takes as game animation assets.",
   "architecture": [
     "Application reads obstacle and target state",
@@ -131,5 +131,18 @@
     "url": "https://github.com/sebastianstarke/AI4Animation",
     "note": "Separate quadruped research, not MotionBricks; repository explicitly limits use to research/education and mocap is CC BY-NC 4.0. No asset copied or installed."
   },
-  "recommendation": "First build reactive pursuit plus obstacle waypoints and speed zones on the existing local GPU runtime, record real generated takes, then compare SOMA and G1. Keep K0 authored initially. Evaluate MotionForge in an isolated newer Blender installation only if its documented workflow merits the extra dependencies."
+  "recommendation": "First build reactive pursuit plus obstacle waypoints and speed zones on the existing local GPU runtime, record real generated takes, then compare SOMA and G1. Keep K0 authored initially. Evaluate MotionForge in an isolated newer Blender installation only if its documented workflow merits the extra dependencies.",
+  "execution": {
+    "report": "reactive-round-summary.json",
+    "viewer": "../docs/reactive/",
+    "neural_calls": 640,
+    "paired_environment_seeds": 5,
+    "scenarios": [
+      "slalom",
+      "speedzones",
+      "pursuit",
+      "mixed"
+    ],
+    "mixed_scope": "Pursuit, pillars and speed zone; no duck/vault generation in this initial round."
+  }
 }

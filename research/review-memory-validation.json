@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/vanilla/",
+  "migrated_original_reviews": 15,
+  "total_exported_records": 23,
+  "checks": [
+    "all 15 legacy scores/comments recovered across version and blank name",
+    "reviewed counted without decision",
+    "name edit preserves visible fields",
+    "reload persistence",
+    "new animation version carries visible earlier feedback",
+    "new version edits retain old record",
+    "single export includes all comments/scores/collections/body versions",
+    "Keep shortlist preview",
+    "atomic invalid import rejection",
+    "idempotent full import",
+    "all-collection CSV",
+    "mobile no overflow"
+  ],
+  "errors": []
+}

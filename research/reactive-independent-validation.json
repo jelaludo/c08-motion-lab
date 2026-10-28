@@ -1,0 +1,839 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "cases": 40,
+  "bodies": 2,
+  "checks": [
+    "all40takes bothbodies finite fullskin at3phases",
+    "floor",
+    "seededcat exactsource interpolation",
+    "obstacle placement/radius under ownavatarscale",
+    "speedzone worldvertices",
+    "both displayed GLBexports preserve root/boneposes andcuppedhands overmarked2-4s"
+  ],
+  "results": [
+    {
+      "body": "c08",
+      "id": "slalom_baseline_1",
+      "finite": true,
+      "minFloor": 0.011999797222484464,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4786006595209537e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_reactive_1",
+      "finite": true,
+      "minFloor": 0.01199988451136573,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4786006595209537e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_baseline_2",
+      "finite": true,
+      "minFloor": 0.011999868347104457,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.557428901737534e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_reactive_2",
+      "finite": true,
+      "minFloor": 0.011999844023962553,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.557428901737534e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_baseline_3",
+      "finite": true,
+      "minFloor": 0.011999342210121928,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.6240576955671297e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_reactive_3",
+      "finite": true,
+      "minFloor": 0.011999846747255218,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.6240576955671297e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_baseline_4",
+      "finite": true,
+      "minFloor": 0.011999652681578224,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5415932056283605e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_reactive_4",
+      "finite": true,
+      "minFloor": 0.01199947413656939,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5415932056283605e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_baseline_5",
+      "finite": true,
+      "minFloor": 0.01199931610356418,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4972671105574066e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "slalom_reactive_5",
+      "finite": true,
+      "minFloor": 0.011999958127673896,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4972671105574066e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_baseline_1",
+      "finite": true,
+      "minFloor": 0.011999742997513088,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4786006595209537e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_reactive_1",
+      "finite": true,
+      "minFloor": 0.011999631551934842,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4786006595209537e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_baseline_2",
+      "finite": true,
+      "minFloor": 0.011999585492238625,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.557428901737534e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_reactive_2",
+      "finite": true,
+      "minFloor": 0.011999916942602051,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.557428901737534e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_baseline_3",
+      "finite": true,
+      "minFloor": 0.01199977294636747,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.6240576955671297e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_reactive_3",
+      "finite": true,
+      "minFloor": 0.011999702671466814,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.6240576955671297e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_baseline_4",
+      "finite": true,
+      "minFloor": 0.012000230198094194,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5415932056283605e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_reactive_4",
+      "finite": true,
+      "minFloor": 0.011999942503765142,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5415932056283605e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_baseline_5",
+      "finite": true,
+      "minFloor": 0.011999890089814093,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4972671105574066e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "speedzones_reactive_5",
+      "finite": true,
+      "minFloor": 0.011999747079596071,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4972671105574066e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_baseline_1",
+      "finite": true,
+      "minFloor": 0.011999099022130064,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4786006595209537e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_reactive_1",
+      "finite": true,
+      "minFloor": 0.012000007757484,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4786006595209537e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_baseline_2",
+      "finite": true,
+      "minFloor": 0.011999633316157523,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.557428901737534e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_reactive_2",
+      "finite": true,
+      "minFloor": 0.011999896589269025,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.557428901737534e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_baseline_3",
+      "finite": true,
+      "minFloor": 0.011999626870781821,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.6240576955671297e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_reactive_3",
+      "finite": true,
+      "minFloor": 0.0119996893262269,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.6240576955671297e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_baseline_4",
+      "finite": true,
+      "minFloor": 0.011999942960417283,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5415932056283605e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_reactive_4",
+      "finite": true,
+      "minFloor": 0.0119997576877469,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5415932056283605e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_baseline_5",
+      "finite": true,
+      "minFloor": 0.01199954870333847,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4972671105574066e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "pursuit_reactive_5",
+      "finite": true,
+      "minFloor": 0.011999674256050322,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4972671105574066e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_baseline_1",
+      "finite": true,
+      "minFloor": 0.011999926755928734,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4786006595209537e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_reactive_1",
+      "finite": true,
+      "minFloor": 0.011999923956803174,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4786006595209537e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_baseline_2",
+      "finite": true,
+      "minFloor": 0.011999851196770026,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.557428901737534e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_reactive_2",
+      "finite": true,
+      "minFloor": 0.012000071174406341,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.557428901737534e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_baseline_3",
+      "finite": true,
+      "minFloor": 0.011999906438813043,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.6240576955671297e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_reactive_3",
+      "finite": true,
+      "minFloor": 0.011999967947878075,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.6240576955671297e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_baseline_4",
+      "finite": true,
+      "minFloor": 0.012000036086181803,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5415932056283605e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_reactive_4",
+      "finite": true,
+      "minFloor": 0.011999744609615882,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5415932056283605e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_baseline_5",
+      "finite": true,
+      "minFloor": 0.011999872965418736,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4972671105574066e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "c08",
+      "id": "mixed_reactive_5",
+      "finite": true,
+      "minFloor": 0.012000361853170733,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.4972671105574066e-7,
+      "scale": 1.1891157385510651
+    },
+    {
+      "body": "brek",
+      "id": "slalom_baseline_1",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5593689070431028e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_reactive_1",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5593689070431028e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_baseline_2",
+      "finite": true,
+      "minFloor": 0.007999999999999851,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.432834991052575e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_reactive_2",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.432834991052575e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_baseline_3",
+      "finite": true,
+      "minFloor": 0.007999999999999867,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5105773721472142e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_reactive_3",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5105773721472142e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_baseline_4",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.7195339026983536e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_reactive_4",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.7195339026983536e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_baseline_5",
+      "finite": true,
+      "minFloor": 0.007999999999999823,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.757275351579153e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "slalom_reactive_5",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.757275351579153e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_baseline_1",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5593689070431028e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_reactive_1",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5593689070431028e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_baseline_2",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.432834991052575e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_reactive_2",
+      "finite": true,
+      "minFloor": 0.007999999999999896,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.432834991052575e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_baseline_3",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5105773721472142e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_reactive_3",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5105773721472142e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_baseline_4",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.7195339026983536e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_reactive_4",
+      "finite": true,
+      "minFloor": 0.007999999999999832,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.7195339026983536e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_baseline_5",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.757275351579153e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "speedzones_reactive_5",
+      "finite": true,
+      "minFloor": 0.007999999999999896,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.757275351579153e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_baseline_1",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5593689070431028e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_reactive_1",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5593689070431028e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_baseline_2",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.432834991052575e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_reactive_2",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.432834991052575e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_baseline_3",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5105773721472142e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_reactive_3",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5105773721472142e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_baseline_4",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.7195339026983536e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_reactive_4",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.7195339026983536e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_baseline_5",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.757275351579153e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "pursuit_reactive_5",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.757275351579153e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_baseline_1",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5593689070431028e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_reactive_1",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5593689070431028e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_baseline_2",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.432834991052575e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_reactive_2",
+      "finite": true,
+      "minFloor": 0.007999999999999794,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.432834991052575e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_baseline_3",
+      "finite": true,
+      "minFloor": 0.007999999999999757,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5105773721472142e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_reactive_3",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.5105773721472142e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_baseline_4",
+      "finite": true,
+      "minFloor": 0.007999999999999757,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.7195339026983536e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_reactive_4",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.7195339026983536e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_baseline_5",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.757275351579153e-7,
+      "scale": 1.922404075925682
+    },
+    {
+      "body": "brek",
+      "id": "mixed_reactive_5",
+      "finite": true,
+      "minFloor": 0.00799999999999991,
+      "maxCatError": 0,
+      "maxObstacleError": 0,
+      "maxZoneError": 1.757275351579153e-7,
+      "scale": 1.922404075925682
+    }
+  ],
+  "exports": [
+    {
+      "body": "c08",
+      "bytes": 1353616,
+      "gltf_errors": 0,
+      "gltf_warnings": 0,
+      "maxPositionError": 3.261978803052417e-8,
+      "maxQuaternionError": 0.0006668239649631355,
+      "duration": 2,
+      "clips": 1
+    },
+    {
+      "body": "brek",
+      "bytes": 1623668,
+      "gltf_errors": 0,
+      "gltf_warnings": 0,
+      "maxPositionError": 1.0180853685463155e-7,
+      "maxQuaternionError": 0.0004809215032808097,
+      "duration": 2,
+      "clips": 1
+    }
+  ],
+  "errors": []
+}

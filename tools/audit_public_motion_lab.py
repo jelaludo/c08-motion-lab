@@ -78,3 +78,37 @@ assert all(c['warning'] for c in vanilla['candidates'] if c['id'] in ('back_roll
 report.update(vanilla_candidates=15,vanilla_source_hashes_verified=True,vanilla_review_version=vanilla['version'])
 (ROOT/'research/publication-validation.json').write_text(json.dumps(report,indent=2),encoding='utf8')
 print('Vanilla: 15 CC0-derived versioned candidates; source hashes and prototype warnings verified.')
+
+reactive_root=ROOT/'docs/reactive'
+reactive=json.loads((reactive_root/'catalog.json').read_text(encoding='utf8'))
+assert len(reactive['cases'])==40
+assert {c['scenario'] for c in reactive['cases']}=={'slalom','speedzones','pursuit','mixed'}
+episodes={}
+for case in reactive['cases']:
+ episode=json.loads((reactive_root/case['episode']).read_text(encoding='utf8'))
+ validation=json.loads((reactive_root/case['validation']).read_text(encoding='utf8'))
+ assert case['metrics']['neural_calls']==16 and episode['sample_rate']==30
+ assert validation['gltf_errors']==0 and validation['gltf_warnings']==0
+ assert validation['skinned_geometry_min_floor_y_m']>=-.003
+ for name in ['prediction-trace.json','native-g1-motion.npz','root-trajectory.csv']:
+  assert (reactive_root/'takes'/case['id']/name).is_file()
+ episodes[(case['scenario'],case['seed'],case['condition'])]=episode
+for scenario in ['slalom','speedzones','pursuit','mixed']:
+ for seed in range(1,6):
+  assert episodes[(scenario,seed,'baseline')]['environment']==episodes[(scenario,seed,'reactive')]['environment']
+brek=json.loads((ROOT/'docs/assets/b-rek43-provenance.json').read_text(encoding='utf8'))
+assert hashlib.sha256((ROOT/'docs/assets/b-rek43.glb').read_bytes()).hexdigest()==brek['source_sha256']==brek['output_sha256']
+report.update(reactive_neural_takes=40,reactive_neural_calls=640,reactive_paired_environments_verified=True,brek43_original_rig_hash_verified=True)
+(ROOT/'research/publication-validation.json').write_text(json.dumps(report,indent=2),encoding='utf8')
+print('Reactive: 40 real neural rollouts / 640 calls; paired environments, derived exports and B-REK43 hash verified.')
+
+bakes=list((ROOT/'docs/vanilla/takes').glob('*.glb'))
+assert len(bakes)==30
+for bake in bakes:
+ metadata=json.loads(bake.with_suffix('.json').read_text(encoding='utf8'))
+ assert metadata['recipe_version']==vanilla['version']
+ assert metadata['sha256']==hashlib.sha256(bake.read_bytes()).hexdigest()
+ assert metadata['gltf_errors']==metadata['gltf_warnings']==0
+report.update(vanilla_game_bakes=30,vanilla_bake_version_hashes_verified=True)
+(ROOT/'research/publication-validation.json').write_text(json.dumps(report,indent=2),encoding='utf8')
+print('Vanilla game exports: 30 bakes, exact recipe versions, hashes and glTF validation verified.')

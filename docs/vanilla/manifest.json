@@ -1,6 +1,6 @@
 {
   "schema": "c08-vanilla/1",
-  "version": "v1-8b59f533a52e",
+  "version": "v1-43a5bfc0cbc0",
   "selection": "15 practical staples; not a statistical usage ranking",
   "source": "Quaternius Universal Animation Library 1 Standard",
   "source_url": "https://quaternius.com/packs/universalanimationlibrary.html",
@@ -8,7 +8,11 @@
   "hashes": {
     "quaternius/c08-quaternius.glb": "555772692fc7536a70334f8adf728a8265a29c5b6999434fd9c9e402fb9eab28",
     "vanilla/c08-extra.glb": "f278a2486d376b1443bdf8814c088eb9dca2a472c07227e90b1a0c4cc95e0553",
-    "vanilla/vanilla.js": "20b5dcbd9d6ffe940f8e425f11bc001b9a499e52e629a5e873ac51260b2e5586"
+    "vanilla/vanilla.js": "86d10b638acc998c599c11edde767e5ebe1c28165f24154b2861500cd9c612fd",
+    "vanilla/motion-cleanup.js": "f561cf00792139cb8915a91f9b34d47586eaff705198dbf2faa4df44e5a8416e",
+    "shared/review-store.js": "c6cc1d4f51bacc6b19026ec8a3aa70c443bf7d1a7fef55abc795d1076a0477a9",
+    "shared/review-panel.js": "fd8e05d854f63393b87c9832bf8d39058e288893ba6ffa45cb1f40b00cd77b9f",
+    "shared/bake-take.js": "1db7939aac0b1117945cb764bc93a183536b692ff54fb752e4dedaf9011ab511"
   },
   "candidates": [
     {
@@ -62,23 +66,25 @@
       "label": "Run",
       "parts": [
         {
-          "clip": "Sprint_Loop"
+          "clip": "Sprint_Loop",
+          "duration": 0.9
         }
       ],
-      "description": "Fast forward run, in place.",
+      "description": "Steady running cycle with eased timing and filtered curves to reduce high-frequency vibration.",
       "phases": "Run loop; no world travel.",
       "warning": "",
       "loop": true,
       "entry": 0,
       "exit": 0,
       "experimental": false,
-      "method": "CC0 Quaternius direct retarget",
+      "method": "CC0 Quaternius retarget + lab timing/curve cleanup",
       "number": 3,
       "source_license": "CC0-1.0",
       "body": "c08",
       "source_clips": [
         "Sprint_Loop"
-      ]
+      ],
+      "smoothing": 3
     },
     {
       "id": "small_jump",
@@ -151,28 +157,30 @@
       "parts": [
         {
           "clip": "Sprint_Loop",
-          "duration": 0.7
+          "duration": 0.9
         },
         {
-          "clip": "Jump_Start"
+          "clip": "Jump_Start",
+          "duration": 0.65
         },
         {
           "clip": "Jump_Loop",
-          "duration": 0.45
+          "duration": 0.85
         },
         {
-          "clip": "Jump_Land"
+          "clip": "Jump_Land",
+          "duration": 0.5
         }
       ],
-      "description": "Running approach and forward jump with landing recovery.",
+      "description": "Running approach into a long forward leap, followed by a landing and recovery.",
       "phases": "Run > takeoff > air > land > idle.",
-      "warning": "Authored 2 m root travel; speed and foot contact need review. Repeat resets the path.",
+      "warning": "Authored 4.5 m forward flight with curve filtering. No physics/contact solver; inspect landing. Repeat resets the route.",
       "loop": false,
       "entry": 0,
-      "exit": 0.65,
+      "exit": 0.7,
       "experimental": true,
       "method": "CC0 Quaternius retarget + lab composition",
-      "travel": 2,
+      "travel": 4.5,
       "number": 6,
       "source_license": "CC0-1.0",
       "body": "c08",
@@ -181,7 +189,11 @@
         "Jump_Start",
         "Jump_Loop",
         "Jump_Land"
-      ]
+      ],
+      "smoothing": 3,
+      "flightStart": 1.4,
+      "flightEnd": 2.45,
+      "flightHeight": 0.65
     },
     {
       "id": "crouch",
@@ -305,15 +317,16 @@
       "parts": [
         {
           "clip": "Roll",
-          "reverse": true
+          "reverse": true,
+          "duration": 1.9
         }
       ],
       "description": "Backward roll prototype built by reversing the source roll.",
       "phases": "Idle > reversed roll > idle.",
-      "warning": "Time reversal is a prototype, not a coached backward roll. Hand placement and recovery need rework.",
+      "warning": "Filtered, slower reversed-roll prototype; hand support and recovery still require review.",
       "loop": false,
-      "entry": 0.5,
-      "exit": 0.75,
+      "entry": 0.6,
+      "exit": 0.9,
       "experimental": true,
       "method": "CC0 Quaternius retarget + lab composition",
       "number": 12,
@@ -321,7 +334,8 @@
       "body": "c08",
       "source_clips": [
         "Roll"
-      ]
+      ],
+      "smoothing": 4
     },
     {
       "id": "sit",
@@ -333,7 +347,7 @@
       ],
       "description": "Enter a seated pose on a simple support marker.",
       "phases": "Standing > seated; ends seated.",
-      "warning": "Bench is a visual marker, not a contact solver. Inspect seat alignment.",
+      "warning": "Fixed low stool aligned behind the pelvis; no moving seat or contact IK. Inspect support and clearance.",
       "loop": false,
       "entry": 0,
       "exit": 0,
@@ -356,7 +370,7 @@
       ],
       "description": "Resting seated loop.",
       "phases": "Seated loop; pair with sit and stand.",
-      "warning": "Bench is a visual marker; no seat contact IK.",
+      "warning": "Fixed low stool aligned behind the pelvis; no moving seat or contact IK. Inspect support and clearance.",
       "loop": true,
       "entry": 0,
       "exit": 0,
@@ -379,7 +393,7 @@
       ],
       "description": "Rise from a seated position to standing.",
       "phases": "Seated > standing > idle.",
-      "warning": "Check seat, feet and balance through the exit.",
+      "warning": "Fixed low stool aligned behind the pelvis; no moving seat or contact IK. Inspect support and clearance.",
       "loop": false,
       "entry": 0,
       "exit": 0.6,

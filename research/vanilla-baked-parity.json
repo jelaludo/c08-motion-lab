@@ -1,0 +1,223 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/vanilla/",
+  "checks": [
+    "30 standalone root-motion/in-place GLBs reload and play",
+    "actual displayed bone positions match exports at five sampled phases",
+    "every skinned vertex matches displayed pose",
+    "in-place removes horizontal actor travel only",
+    "whole body remains above floor"
+  ],
+  "results": [
+    {
+      "id": "idle",
+      "boneError": 4.295954340084481e-16,
+      "vertexError": 4.163336342344337e-16,
+      "floor": 0.011999796611556951,
+      "duration": 2.5
+    },
+    {
+      "id": "idle-in-place",
+      "boneError": 4.295954340084481e-16,
+      "vertexError": 4.163336342344337e-16,
+      "floor": 0.011999796611556951,
+      "duration": 2.5
+    },
+    {
+      "id": "walk",
+      "boneError": 1.264713313797098e-7,
+      "vertexError": 1.2476612440529986e-7,
+      "floor": 0.011999877301235036,
+      "duration": 1.3333333730697632
+    },
+    {
+      "id": "walk-in-place",
+      "boneError": 1.264713313797098e-7,
+      "vertexError": 1.2476612440529986e-7,
+      "floor": 0.011999877301235036,
+      "duration": 1.3333333730697632
+    },
+    {
+      "id": "run",
+      "boneError": 7.845944783848451e-8,
+      "vertexError": 8.021929644142484e-8,
+      "floor": 0.008000000033414369,
+      "duration": 0.9
+    },
+    {
+      "id": "run-in-place",
+      "boneError": 7.845944783848451e-8,
+      "vertexError": 8.021929644142484e-8,
+      "floor": 0.008000000033414369,
+      "duration": 0.9
+    },
+    {
+      "id": "small_jump",
+      "boneError": 8.70518400515825e-8,
+      "vertexError": 9.011419699862521e-8,
+      "floor": 0.011999951296771188,
+      "duration": 3.980000023841858
+    },
+    {
+      "id": "small_jump-in-place",
+      "boneError": 8.70518400515825e-8,
+      "vertexError": 9.011419699862521e-8,
+      "floor": 0.011999951296771188,
+      "duration": 3.980000023841858
+    },
+    {
+      "id": "high_jump",
+      "boneError": 9.488168634382428e-8,
+      "vertexError": 9.883582481658352e-8,
+      "floor": 0.011999951296771188,
+      "duration": 4.400000023841858
+    },
+    {
+      "id": "high_jump-in-place",
+      "boneError": 9.488168634382428e-8,
+      "vertexError": 9.883582481658352e-8,
+      "floor": 0.011999951296771188,
+      "duration": 4.400000023841858
+    },
+    {
+      "id": "run_jump",
+      "boneError": 3.550323798080074e-7,
+      "vertexError": 3.578841460578008e-7,
+      "floor": 0.00799999984128618,
+      "duration": 3.5999999999999996
+    },
+    {
+      "id": "run_jump-in-place",
+      "boneError": 1.2893815676325053e-7,
+      "vertexError": 1.5783948578695846e-7,
+      "floor": 0.00799999984128618,
+      "duration": 3.5999999999999996
+    },
+    {
+      "id": "crouch",
+      "boneError": 2.429808579786727e-8,
+      "vertexError": 2.4658576653934138e-8,
+      "floor": 0.011999951296771188,
+      "duration": 4.233333396911621
+    },
+    {
+      "id": "crouch-in-place",
+      "boneError": 2.429808579786727e-8,
+      "vertexError": 2.4658576653934138e-8,
+      "floor": 0.011999951296771188,
+      "duration": 4.233333396911621
+    },
+    {
+      "id": "crouch_walk",
+      "boneError": 0,
+      "vertexError": 0,
+      "floor": 0.011999932132520827,
+      "duration": 2
+    },
+    {
+      "id": "crouch_walk-in-place",
+      "boneError": 0,
+      "vertexError": 0,
+      "floor": 0.011999932132520827,
+      "duration": 2
+    },
+    {
+      "id": "lie_down",
+      "boneError": 1.309064259264148e-7,
+      "vertexError": 1.3513111915393953e-7,
+      "floor": 0.011999951296771188,
+      "duration": 2.850000095367432
+    },
+    {
+      "id": "lie_down-in-place",
+      "boneError": 1.309064259264148e-7,
+      "vertexError": 1.3513111915393953e-7,
+      "floor": 0.011999951296771188,
+      "duration": 2.850000095367432
+    },
+    {
+      "id": "get_up",
+      "boneError": 3.0148164146334057e-7,
+      "vertexError": 3.209708413887395e-7,
+      "floor": 0.011999181161366224,
+      "duration": 3.100000095367432
+    },
+    {
+      "id": "get_up-in-place",
+      "boneError": 3.0148164146334057e-7,
+      "vertexError": 3.209708413887395e-7,
+      "floor": 0.011999181161366224,
+      "duration": 3.100000095367432
+    },
+    {
+      "id": "forward_roll",
+      "boneError": 4.904304360041228e-8,
+      "vertexError": 5.3390497089863644e-8,
+      "floor": 0.007999992709778747,
+      "duration": 2.7166666984558105
+    },
+    {
+      "id": "forward_roll-in-place",
+      "boneError": 4.904304360041228e-8,
+      "vertexError": 5.3390497089863644e-8,
+      "floor": 0.007999992709778747,
+      "duration": 2.7166666984558105
+    },
+    {
+      "id": "back_roll",
+      "boneError": 3.0126121325905004e-7,
+      "vertexError": 3.514961064754848e-7,
+      "floor": 0.007999872043367329,
+      "duration": 3.4
+    },
+    {
+      "id": "back_roll-in-place",
+      "boneError": 3.0126121325905004e-7,
+      "vertexError": 3.514961064754848e-7,
+      "floor": 0.007999872043367329,
+      "duration": 3.4
+    },
+    {
+      "id": "sit",
+      "boneError": 5.8415038594881585e-8,
+      "vertexError": 5.858988136965809e-8,
+      "floor": 0.011999961715861925,
+      "duration": 1.2999999523162842
+    },
+    {
+      "id": "sit-in-place",
+      "boneError": 5.8415038594881585e-8,
+      "vertexError": 5.858988136965809e-8,
+      "floor": 0.011999961715861925,
+      "duration": 1.2999999523162842
+    },
+    {
+      "id": "seated",
+      "boneError": 2.9298908745992922e-8,
+      "vertexError": 3.205617167161985e-8,
+      "floor": 0.012000013718485466,
+      "duration": 1.6666666269302368
+    },
+    {
+      "id": "seated-in-place",
+      "boneError": 2.9298908745992922e-8,
+      "vertexError": 3.205617167161985e-8,
+      "floor": 0.012000013718485466,
+      "duration": 1.6666666269302368
+    },
+    {
+      "id": "stand",
+      "boneError": 5.451528585683909e-8,
+      "vertexError": 6.14251840701392e-8,
+      "floor": 0.011970761272789888,
+      "duration": 1.6333333015441895
+    },
+    {
+      "id": "stand-in-place",
+      "boneError": 5.451528585683909e-8,
+      "vertexError": 6.14251840701392e-8,
+      "floor": 0.011970761272789888,
+      "duration": 1.6333333015441895
+    }
+  ]
+}

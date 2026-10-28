@@ -1,0 +1,155 @@
+{
+  "schema": "c08-baked-takes/1",
+  "takes": [
+    {
+      "id": "idle",
+      "duration_s": 2.5,
+      "sha256": "b87a1b539a1a44560085a7f3bf54c95120f26b26f0dc5966db99b9bf29091e5b"
+    },
+    {
+      "id": "idle-in-place",
+      "duration_s": 2.5,
+      "sha256": "2292aea182bb646989a01b6c1ac52c5ae023c330ab6f29b5263e72207c8c51c3"
+    },
+    {
+      "id": "walk",
+      "duration_s": 1.3333333730697632,
+      "sha256": "6ce7c631be47377f8940fa6b6e16681f89256d2b638756c192a06e4ea0ffccbf"
+    },
+    {
+      "id": "walk-in-place",
+      "duration_s": 1.3333333730697632,
+      "sha256": "bbe8f51c674f27c69ccc02ee61669bb758763481f90987fd127e0900c04d7a61"
+    },
+    {
+      "id": "run",
+      "duration_s": 0.9,
+      "sha256": "4227a52752d78b029430a90251f1b28c531ad91857e3bbb51a910ddaa7d8e26b"
+    },
+    {
+      "id": "run-in-place",
+      "duration_s": 0.9,
+      "sha256": "5099ca04c24b13bf35673653614d67ee8bca103779846b4dcfe2b25ac210f0cf"
+    },
+    {
+      "id": "small_jump",
+      "duration_s": 3.980000023841858,
+      "sha256": "55a709b8bd1166244b79db7ef4e95bda87ee067a3823d5377b19d75bdd719ad2"
+    },
+    {
+      "id": "small_jump-in-place",
+      "duration_s": 3.980000023841858,
+      "sha256": "49bc60f3e365310cf415b7009af2f43b7904f568ee1e70c2fbbf356fab2a1148"
+    },
+    {
+      "id": "high_jump",
+      "duration_s": 4.400000023841858,
+      "sha256": "3401b857b776bf6a0736beb71114279b13882a686884dcce5aa05fe0572047c2"
+    },
+    {
+      "id": "high_jump-in-place",
+      "duration_s": 4.400000023841858,
+      "sha256": "e9b9d8d41cc9111f4f8bc544bedccf38993d58c6343b3431d75d71c76bad9573"
+    },
+    {
+      "id": "run_jump",
+      "duration_s": 3.5999999999999996,
+      "sha256": "5b762ca7c7b324af1a0c42c61cdb5ce8a436dc4cf6545cd81bf3daedcf67889f"
+    },
+    {
+      "id": "run_jump-in-place",
+      "duration_s": 3.5999999999999996,
+      "sha256": "6ae28439d0636302b4522512ec0586edd83fd95a614a54f1f4d59d9166b689c6"
+    },
+    {
+      "id": "crouch",
+      "duration_s": 4.233333396911621,
+      "sha256": "f70437107487d1dfec7bffa060e0550a4b4d502ee5fa18d43f2161534ccde275"
+    },
+    {
+      "id": "crouch-in-place",
+      "duration_s": 4.233333396911621,
+      "sha256": "74f0a842f89a691ba8e198bb70e236b511415e8d35e3fa90d935e9b5607e4eed"
+    },
+    {
+      "id": "crouch_walk",
+      "duration_s": 2,
+      "sha256": "6a55816357a331483de2685d7c41613a39394d6e42eb3eefdcbbf9e9d47b77ee"
+    },
+    {
+      "id": "crouch_walk-in-place",
+      "duration_s": 2,
+      "sha256": "7bb8a1ea3b74bcf66f0cb5ff5c4f1f74812538b25fcdbcc47f5291e1f62390d6"
+    },
+    {
+      "id": "lie_down",
+      "duration_s": 2.850000095367432,
+      "sha256": "216f4905106b366048f393ef047920039ec102a44a7fdd416e6875773e3b6235"
+    },
+    {
+      "id": "lie_down-in-place",
+      "duration_s": 2.850000095367432,
+      "sha256": "4681be6de4740fd77e8438704ad9e8a580a50814e62bcb2e2c357ec6ad910563"
+    },
+    {
+      "id": "get_up",
+      "duration_s": 3.100000095367432,
+      "sha256": "beb6fbb6f54e0a19b15ace13951a04609bec35b31024a4b4651172467abcb624"
+    },
+    {
+      "id": "get_up-in-place",
+      "duration_s": 3.100000095367432,
+      "sha256": "3a3f5ee45190da857079c7d7b80487fd540c4a28d4e9fa4ad70cccc783ec16c0"
+    },
+    {
+      "id": "forward_roll",
+      "duration_s": 2.7166666984558105,
+      "sha256": "b7aa2cc693f0e6436510630c667d485a00181f9083608f3765c341491cf31b9c"
+    },
+    {
+      "id": "forward_roll-in-place",
+      "duration_s": 2.7166666984558105,
+      "sha256": "9515eceea31f7aa5f1c1a122846d8d8adb861beeaf4e210cb9b320ccae9d5770"
+    },
+    {
+      "id": "back_roll",
+      "duration_s": 3.4,
+      "sha256": "e7dfc6b8295b70b42821b2541115d13d3921a2c558207dfb40beb6022144ada6"
+    },
+    {
+      "id": "back_roll-in-place",
+      "duration_s": 3.4,
+      "sha256": "5f3fb96576df50f43b48b9a4eb86304fe9acf4e94cd0137be52dfa2380e5bb5a"
+    },
+    {
+      "id": "sit",
+      "duration_s": 1.2999999523162842,
+      "sha256": "1079d3fcec7a93f2f4db7933c4b99deada0698064be6abf8441e639087849733"
+    },
+    {
+      "id": "sit-in-place",
+      "duration_s": 1.2999999523162842,
+      "sha256": "b015d297a807bf5c87a42656f4743f6ca9069227dd03bb6be1331ca14880c1ea"
+    },
+    {
+      "id": "seated",
+      "duration_s": 1.6666666269302368,
+      "sha256": "ec3e2dace784c7914a44464fd03764f4fbaae9c5ce8e91d1b60b291e4d436ee8"
+    },
+    {
+      "id": "seated-in-place",
+      "duration_s": 1.6666666269302368,
+      "sha256": "2ddaa10bd871cf4c53d58f117872272fe815dd207fdc2fb0eb1aed828d3d2c4d"
+    },
+    {
+      "id": "stand",
+      "duration_s": 1.6333333015441895,
+      "sha256": "5eda38cfe07b661c8cfeba4b279585e45f3b15fa9ceb756e8aecb8d1bf6d71c6"
+    },
+    {
+      "id": "stand-in-place",
+      "duration_s": 1.6333333015441895,
+      "sha256": "06173871e373d9e810cef97609235fe45c5e7acaa9e47f707040adcf503ac8ca"
+    }
+  ]
+}

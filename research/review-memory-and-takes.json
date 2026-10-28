@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "feedback_storage": "One origin-local document c08-motion-lab-feedback-v2 shared by Vanilla and Reactive. Original c08-vanilla-reviews-v1 data migrates without removing the original key.",
+  "review_counting": "A score or a non-empty comment counts as reviewed without requiring a decision. Latest real feedback remains visible across animation versions and author-name edits. Earlier versions and tagged chat reports remain in history and exports.",
+  "export": "Export all reviews JSON/CSV contains every saved collection, body, version and reviewer. Kept take manifest contains selected reviews, preview links and animation/data download URLs.",
+  "baked_takes": 30,
+  "bake_fps": 60,
+  "manifest_version": "v1-43a5bfc0cbc0",
+  "export_formats": [
+    "15 standalone root-motion GLBs",
+    "15 in-place GLBs",
+    "30 provenance/timing/root-path/source-recipe JSON files"
+  ],
+  "validation": "All exports pass glTF with zero errors/warnings. All bone and skinned-vertex positions match actual displayed poses at five bake sample phases; max vertex difference 3.58e-7m.",
+  "limitations": [
+    "Browser storage is local to the site origin; export to transfer feedback to another device or origin.",
+    "Animations contain the character and motion, not the stool or environment.",
+    "In-place exports retain vertical motion and local body sway; horizontal actor travel is removed.",
+    "A Keep decision records a reviewer recommendation, not automatic game-production clearance."
+  ]
+}
