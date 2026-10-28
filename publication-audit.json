@@ -11,5 +11,9 @@
   "third_party_runtime": "Three.js r160 (MIT)",
   "video_derived_tests": 6,
   "authored_c08_clips": 5,
-  "playback_choices": 47
+  "playback_choices": 47,
+  "quaternius_baseline_clips": 20,
+  "predictive_neural_experiments": 6,
+  "predictive_linear_controls": 6,
+  "raw_source_videos_published": false
 }

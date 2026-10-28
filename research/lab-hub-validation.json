@@ -1,0 +1,11 @@
+{
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/",
+  "checks": [
+    "landing links and live hero",
+    "six predictions, true context chaining, stages, comparison and display controls",
+    "mobile layouts",
+    "fresh GPU generation through local UI"
+  ],
+  "errors": [],
+  "status": "passed"
+}

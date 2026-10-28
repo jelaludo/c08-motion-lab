@@ -9,7 +9,10 @@ const room=new RoomEnvironment(),pmrem=new T.PMREMGenerator(renderer);scene.envi
 const sun=new T.DirectionalLight(0xffe1b3,3);sun.position.set(3,6,4);scene.add(sun);
 const floor=new T.Mesh(new T.PlaneGeometry(150,150),new T.MeshStandardMaterial({color:'#243139',roughness:.9}));floor.rotation.x=-Math.PI/2;floor.position.y=-.002;scene.add(floor,new T.GridHelper(100,200,0x48616a,0x2c3c43));
 const actor=new T.Group(),sourceActor=new T.Group();sourceActor.position.x=2.7;sourceActor.visible=false;scene.add(actor,sourceActor);
+renderer.domElement.tabIndex=0;renderer.domElement.setAttribute('aria-label','C08 playground. WASD to move, Shift to run, Space to jump.');
 const keys=new Set(),position=new T.Vector3(),lastFollow=new T.Vector3();let gltf,source,mixer,sourceMixer,actions={},sourceActions={},current,currentSource,name='',mode='preview',playing=true,elapsed=0,demoTime=0,crouched=false,seated=false,sequence=[],oneShot=false,helper,groundVertices=[];
+let randomPhase='idle',randomBag=[],randomQueue=[],randomHistory=[],jumpTravel=null,randomLast=-1;
+const randomRoutines=[['Walk_Loop'],['Jog_Fwd_Loop'],['Sprint_Loop'],['Walk_Formal_Loop'],['Crouch_Idle_Loop'],['Crouch_Fwd_Loop'],['Dance_Loop'],['Interact'],['PickUp_Table'],['Fixing_Kneeling'],['Punch_Jab'],['Punch_Cross'],['Jump_Start','Jump_Loop','Jump_Land'],['Sitting_Enter','Sitting_Idle_Loop','Sitting_Exit']];
 const pretty=n=>n.replaceAll('_',' '),loop=n=>n.endsWith('_Loop');
 const locomotion=new Set(['Walk_Loop','Jog_Fwd_Loop','Sprint_Loop']);
 function view(){const p=position.clone().add(new T.Vector3(sourceActor.visible?1.1:0,1.05,0));orbit.target.copy(p);camera.position.copy(p).add(new T.Vector3(3.5,1.7,6.5));orbit.update();lastFollow.copy(position)}
@@ -20,25 +23,36 @@ function choose(n,{fade=.25,sync=false,force=false}={}){
  if(old&&old!==current){old.fadeOut(fade);current.fadeIn(fade)}if(oldSource&&oldSource!==currentSource){oldSource.fadeOut(fade);currentSource?.fadeIn(fade)}
  name=n;elapsed=0;$('clip').value=n;$('timeline').max=current.getClip().duration;$('clip-info').textContent=`${pretty(n)} · ${current.getClip().duration.toFixed(2)} s · ${loop(n)?'repeating cycle':'one-shot / transition'}`;
 }
-function setMode(value){mode=value;$('mode').value=value;keys.clear();sequence=[];oneShot=false;crouched=false;seated=false;demoTime=0;playing=true;$('play').textContent='Pause';position.set(0,0,0);actor.rotation.y=0;choose('Idle_Loop',{force:true});view()}
+function setMode(value){mode=value;$('mode').value=value;keys.clear();sequence=[];oneShot=false;crouched=false;seated=false;demoTime=0;playing=true;$('play').textContent='Pause';randomPhase='idle';randomBag=[];randomQueue=[];randomHistory=[];jumpTravel=null;randomLast=-1;position.set(0,0,0);actor.rotation.y=0;choose('Idle_Loop',{force:true});$('keyboard-button').setAttribute('aria-pressed',String(value==='keyboard'));$('random-button').setAttribute('aria-pressed',String(value==='random'));view()}
 function playSequence(names){sequence=[...names];oneShot=true;choose(sequence.shift(),{force:true})}
 function desiredMovement(){const d=new T.Vector3(Number(keys.has('KeyD'))-Number(keys.has('KeyA')),0,Number(keys.has('KeyS'))-Number(keys.has('KeyW'))).normalize();const fast=keys.has('ShiftLeft')||keys.has('ShiftRight');return {d,fast,moving:d.lengthSq()>0}}
+function updateRandom(){
+ const limit=randomPhase==='idle'?1.6:(name==='Jump_Loop'?1:loop(name)?Math.min(4,Math.max(1.8,current.getClip().duration*2)):current.getClip().duration);
+ if(elapsed<limit)return;
+ if(randomPhase==='idle'){
+  if(!randomBag.length){randomBag=randomRoutines.map((_,i)=>i);for(let i=randomBag.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[randomBag[i],randomBag[j]]=[randomBag[j],randomBag[i]]}if(randomBag.at(-1)===randomLast&&randomBag.length>1)[randomBag[0],randomBag[randomBag.length-1]]=[randomBag.at(-1),randomBag[0]]}
+  const index=randomBag.pop();randomLast=index;randomQueue=[...randomRoutines[index]];randomHistory.push({routine:index,clips:[...randomQueue]});if(randomHistory.length>200)randomHistory.shift();randomPhase='action';choose(randomQueue.shift(),{fade:.6,force:true});
+ }else if(randomQueue.length)choose(randomQueue.shift(),{fade:.3});else{randomPhase='idle';choose('Idle_Loop',{fade:.65,force:true})}
+}
 function updateController(dt){
+ if(mode==='random'){updateRandom();return}
+
  if(mode==='demo'){demoTime+=dt;const phase=demoTime%18,n=phase<3?'Idle_Loop':phase<6?'Walk_Loop':phase<9?'Jog_Fwd_Loop':phase<12?'Sprint_Loop':phase<15?'Walk_Loop':'Idle_Loop';choose(n,{sync:locomotion.has(name)&&locomotion.has(n)});return}
  if(mode!=='keyboard')return;
- if(oneShot){if(elapsed>=current.getClip().duration){if(sequence.length)choose(sequence.shift());else{oneShot=false;if(name==='Sitting_Enter'){seated=true;choose('Sitting_Idle_Loop')}else if(name==='Sitting_Exit'){seated=false;choose('Idle_Loop')}else choose(seated?'Sitting_Idle_Loop':crouched?'Crouch_Idle_Loop':'Idle_Loop')}}return}
+ if(oneShot){if(jumpTravel&&name!=='Jump_Land')position.addScaledVector(jumpTravel,dt);if(elapsed>=current.getClip().duration){if(sequence.length)choose(sequence.shift());else{oneShot=false;jumpTravel=null;if(name==='Sitting_Enter'){seated=true;choose('Sitting_Idle_Loop')}else if(name==='Sitting_Exit'){seated=false;choose('Idle_Loop')}else choose(seated?'Sitting_Idle_Loop':crouched?'Crouch_Idle_Loop':'Idle_Loop')}}return}
  if(seated)return;
  const {d,fast,moving}=desiredMovement(),n=crouched?(moving?'Crouch_Fwd_Loop':'Crouch_Idle_Loop'):moving?(fast?'Sprint_Loop':'Walk_Loop'):'Idle_Loop';choose(n,{sync:locomotion.has(name)&&locomotion.has(n)});
  if(moving){const target=Math.atan2(d.x,d.z),angle=T.MathUtils.euclideanModulo(target-actor.rotation.y+Math.PI,Math.PI*2)-Math.PI;actor.rotation.y+=angle*Math.min(1,dt*10);position.addScaledVector(d,dt*(crouched?.6:fast?3.6:1.1));position.x=T.MathUtils.clamp(position.x,-30,30);position.z=T.MathUtils.clamp(position.z,-30,30)}
 }
-$('mode').onchange=()=>setMode($('mode').value);$('clip').onchange=()=>{mode='preview';$('mode').value=mode;keys.clear();sequence=[];oneShot=false;choose($('clip').value,{force:true})};
+$('keyboard-button').onclick=()=>{setMode('keyboard');renderer.domElement.focus()};$('random-button').onclick=()=>setMode('random');
+$('mode').onchange=()=>setMode($('mode').value);$('clip').onchange=()=>{mode='preview';$('mode').value=mode;$('keyboard-button').setAttribute('aria-pressed','false');$('random-button').setAttribute('aria-pressed','false');keys.clear();sequence=[];oneShot=false;choose($('clip').value,{force:true})};
 $('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Pause':'Play'};$('restart').onclick=()=>{choose(name,{force:true});playing=true;$('play').textContent='Pause'};
-$('timeline').oninput=()=>{mode='preview';$('mode').value=mode;keys.clear();oneShot=false;sequence=[];playing=false;$('play').textContent='Play';current.time=Number($('timeline').value);if(currentSource)currentSource.time=current.time;elapsed=current.time;mixer.update(0);sourceMixer.update(0)};
+$('timeline').oninput=()=>{mode='preview';$('mode').value=mode;$('keyboard-button').setAttribute('aria-pressed','false');$('random-button').setAttribute('aria-pressed','false');keys.clear();oneShot=false;sequence=[];playing=false;$('play').textContent='Play';current.time=Number($('timeline').value);if(currentSource)currentSource.time=current.time;elapsed=current.time;mixer.update(0);sourceMixer.update(0)};
 $('source').onchange=()=>{sourceActor.visible=$('source').checked;view()};$('skeleton').onchange=()=>{if(helper)helper.visible=$('skeleton').checked};$('camera').onclick=view;
-window.addEventListener('keydown',e=>{if(e.target.closest('input,select,textarea,button,[contenteditable="true"]')||e.ctrlKey||e.altKey||e.metaKey||!gltf)return;if(e.code==='Escape'){setMode('preview');return}if(mode!=='keyboard')return;
+window.addEventListener('keydown',e=>{if(e.target.closest('input,select,textarea,button,[contenteditable="true"]')||e.ctrlKey||e.altKey||e.metaKey||!gltf)return;if(e.code==='Escape'){setMode('preview');return}if(mode!=='keyboard'){if(['KeyW','KeyA','KeyS','KeyD','Space'].includes(e.code))setMode('keyboard');else return;}
  const mapping={Digit1:'Roll',Digit2:'Dance_Loop',Digit3:'Interact',Digit4:'PickUp_Table',Digit5:'Fixing_Kneeling',Digit6:'Punch_Jab',Digit7:'Punch_Cross'};
  if(!['KeyW','KeyA','KeyS','KeyD','ShiftLeft','ShiftRight','Space','KeyC','KeyE',...Object.keys(mapping)].includes(e.code))return;e.preventDefault();keys.add(e.code);if(e.repeat||oneShot)return;
- if(e.code==='Space'&&!seated)playSequence(['Jump_Start','Jump_Loop','Jump_Land']);else if(e.code==='KeyC'&&!seated)crouched=!crouched;else if(e.code==='KeyE')playSequence([seated?'Sitting_Exit':'Sitting_Enter']);else if(mapping[e.code]&&!seated){playSequence([mapping[e.code]]);if(loop(mapping[e.code]))sequence=['Idle_Loop']}
+ if(e.code==='Space'&&!seated){const motion=desiredMovement();jumpTravel=motion.d.multiplyScalar(motion.fast?3:1.1);playSequence(['Jump_Start','Jump_Loop','Jump_Land']);}else if(e.code==='KeyC'&&!seated)crouched=!crouched;else if(e.code==='KeyE')playSequence([seated?'Sitting_Exit':'Sitting_Enter']);else if(mapping[e.code]&&!seated){playSequence([mapping[e.code]]);if(loop(mapping[e.code]))sequence=['Idle_Loop']}
 });
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());document.addEventListener('visibilitychange',()=>{if(document.hidden)keys.clear()});
 function resize(){renderer.setSize(stage.clientWidth,stage.clientHeight);camera.aspect=stage.clientWidth/stage.clientHeight;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(stage);resize();view();
@@ -46,7 +60,7 @@ try{
  const loader=new GLTFLoader();[gltf,source]=await Promise.all([loader.loadAsync('c08-quaternius.glb'),loader.loadAsync('quaternius-source.glb')]);actor.add(gltf.scene);sourceActor.add(source.scene);mixer=new T.AnimationMixer(gltf.scene);sourceMixer=new T.AnimationMixer(source.scene);
  for(const clip of gltf.animations){const n=clip.name.replace(/^Q_/,'');actions[n]=mixer.clipAction(clip);const original=source.animations.find(c=>c.name===n);if(original)sourceActions[n]=sourceMixer.clipAction(original);const option=document.createElement('option');option.value=n;option.textContent=pretty(n);$('clip').append(option)}
  gltf.scene.traverse(o=>{if(o.isSkinnedMesh){o.frustumCulled=false;const skin=o.geometry.attributes.skinIndex;for(let i=0;i<o.geometry.attributes.position.count;i++)groundVertices.push({mesh:o,index:i})}});helper=new T.SkeletonHelper(gltf.scene);helper.visible=false;scene.add(helper);
- choose('Idle_Loop');window.quaterniusTest={scene,actor,camera,renderer,actions,sourceActions,choose,setMode,playSequence,get name(){return name},get mode(){return mode},get position(){return position},get keys(){return keys},get oneShot(){return oneShot},get elapsed(){return elapsed},get playing(){return playing},get current(){return current},get source(){return sourceActor}};
+ choose('Idle_Loop');window.quaterniusTest={scene,actor,camera,renderer,actions,sourceActions,choose,setMode,playSequence,get name(){return name},get mode(){return mode},get position(){return position},get keys(){return keys},get randomPhase(){return randomPhase},get randomHistory(){return randomHistory},get oneShot(){return oneShot},get elapsed(){return elapsed},get playing(){return playing},get current(){return current},get source(){return sourceActor}};
 }catch(e){$('error').textContent=e.message;console.error(e)}
 const v=new T.Vector3();let previous=performance.now();renderer.setAnimationLoop(now=>{const dt=Math.min(.05,Math.max(0,(now-previous)/1000));previous=now;if(mixer){if(playing){elapsed+=dt;updateController(dt);mixer.update(dt);sourceMixer.update(dt)}actor.position.copy(position);actor.updateMatrixWorld(true);
  // A blend can lower armor between individually grounded clips. Lift the complete actor only.

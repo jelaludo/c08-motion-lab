@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "id": "near",
+      "label": "01 / A short arrival",
+      "duration_s": 1.6333333333333333,
+      "inference_seconds": 0.061980600003153086,
+      "segment_count": 1
+    },
+    {
+      "id": "far",
+      "label": "02 / Same stance, farther target",
+      "duration_s": 1.2333333333333334,
+      "inference_seconds": 0.02376629994250834,
+      "segment_count": 1
+    },
+    {
+      "id": "turn",
+      "label": "03 / Arrive with a new heading",
+      "duration_s": 1.6333333333333333,
+      "inference_seconds": 0.02022740012034774,
+      "segment_count": 1
+    },
+    {
+      "id": "crouch",
+      "label": "04 / Approach a crouched target",
+      "duration_s": 1.6333333333333333,
+      "inference_seconds": 0.02437199978157878,
+      "segment_count": 1
+    },
+    {
+      "id": "reach",
+      "label": "05 / Approach and reach",
+      "duration_s": 1.6333333333333333,
+      "inference_seconds": 0.020924300188198686,
+      "segment_count": 1
+    },
+    {
+      "id": "chain",
+      "label": "06 / Chain three predictions",
+      "duration_s": 4.9,
+      "inference_seconds": 0.06565130013041198,
+      "segment_count": 3
+    }
+  ]
+}

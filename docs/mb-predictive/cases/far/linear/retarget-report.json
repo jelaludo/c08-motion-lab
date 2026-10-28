@@ -1,0 +1,212 @@
+{
+  "status": "experimental prototype; not game accepted",
+  "conditioning_provenance": "Original authored numeric G1 poses; no bundled sample motion, sample-conditioned output or Quaternius pose is used. Non-neural joint interpolation with matched endpoints/duration.",
+  "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+  "clip": "LINEAR_far",
+  "frames": 38,
+  "fps": 30,
+  "duration_s": 1.2333333333333334,
+  "source_to_target_scale": 1.1891157385510651,
+  "initial_heading_removed_rad": 0.0,
+  "max_pelvis_reach_correction_m": 0.0,
+  "max_foot_floor_lift_m": 0.001999987840652466,
+  "root_motion": "MOTION owns scaled horizontal travel and heading; PELVIS residual; do not add navigation travel",
+  "contact_policy": ">=0.65 maximum source heel/toe confidence; heuristic sole-center XY locking, broad-sole floor correction; unreviewed contacts",
+  "limitations": [
+    "G1 and C08 proportions/rigs differ; this is measured adaptation, not reference-rig equivalence",
+    "Fingers/toes/head remain inherited rest controls",
+    "No self-collision or physical balance guarantee"
+  ],
+  "root_path": [
+    [
+      0.0,
+      0.015,
+      -0.0
+    ],
+    [
+      0.0,
+      0.015,
+      0.041779741644859314
+    ],
+    [
+      0.0,
+      0.015,
+      0.08355948328971863
+    ],
+    [
+      0.0,
+      0.015,
+      0.12533922493457794
+    ],
+    [
+      0.0,
+      0.015,
+      0.16711896657943726
+    ],
+    [
+      0.0,
+      0.015,
+      0.20889870822429657
+    ],
+    [
+      0.0,
+      0.015,
+      0.2506784498691559
+    ],
+    [
+      0.0,
+      0.015,
+      0.292458176612854
+    ],
+    [
+      0.0,
+      0.015,
+      0.3342379331588745
+    ],
+    [
+      0.0,
+      0.015,
+      0.37601765990257263
+    ],
+    [
+      0.0,
+      0.015,
+      0.41779741644859314
+    ],
+    [
+      0.0,
+      0.015,
+      0.45957714319229126
+    ],
+    [
+      0.0,
+      0.015,
+      0.5013568997383118
+    ],
+    [
+      0.0,
+      0.015,
+      0.5431366562843323
+    ],
+    [
+      0.0,
+      0.015,
+      0.584916353225708
+    ],
+    [
+      0.0,
+      0.015,
+      0.6266961097717285
+    ],
+    [
+      0.0,
+      0.015,
+      0.668475866317749
+    ],
+    [
+      0.0,
+      0.015,
+      0.7102555632591248
+    ],
+    [
+      0.0,
+      0.015,
+      0.7520353198051453
+    ],
+    [
+      0.0,
+      0.015,
+      0.7938150763511658
+    ],
+    [
+      0.0,
+      0.015,
+      0.8355948328971863
+    ],
+    [
+      0.0,
+      0.015,
+      0.877374529838562
+    ],
+    [
+      0.0,
+      0.015,
+      0.9191542863845825
+    ],
+    [
+      0.0,
+      0.015,
+      0.960934042930603
+    ],
+    [
+      0.0,
+      0.015,
+      1.0027137994766235
+    ],
+    [
+      0.0,
+      0.015,
+      1.044493556022644
+    ],
+    [
+      0.0,
+      0.015,
+      1.0862733125686646
+    ],
+    [
+      0.0,
+      0.015,
+      1.128053069114685
+    ],
+    [
+      0.0,
+      0.015,
+      1.169832706451416
+    ],
+    [
+      0.0,
+      0.015,
+      1.2116124629974365
+    ],
+    [
+      0.0,
+      0.015,
+      1.253392219543457
+    ],
+    [
+      0.0,
+      0.015,
+      1.2951719760894775
+    ],
+    [
+      0.0,
+      0.015,
+      1.336951732635498
+    ],
+    [
+      0.0,
+      0.015,
+      1.3787314891815186
+    ],
+    [
+      0.0,
+      0.015,
+      1.4205111265182495
+    ],
+    [
+      0.0,
+      0.015,
+      1.46229088306427
+    ],
+    [
+      0.0,
+      0.015,
+      1.5040706396102905
+    ],
+    [
+      0.0,
+      0.015,
+      1.545850396156311
+    ]
+  ]
+}

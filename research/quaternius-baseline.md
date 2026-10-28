@@ -10,7 +10,7 @@ Source: https://quaternius.itch.io/universal-animation-library and https://quate
 - Conventional crossfades; walk/jog/sprint transitions inherit the preceding cycle phase.
 - Explicit jump-start → airborne → landing and sit-enter → seated idle → sit-exit sequences.
 - Clip inspection, a locomotion blend demonstration, keyboard movement, and the original mannequin for comparison.
-- The existing diorama, MotionBricks tests, video retargets and experimental keyboard controller retain their research role and URLs. No research clips are replaced.
+- The existing diorama, MotionBricks tests, video retargets and experimental keyboard controller retain their research role; the diorama is now at `diorama.html`, with the root page serving as the lab hub. No research clips are replaced.
 
 ## Retargeting and verification
 
@@ -29,3 +29,6 @@ The browser research pages play exported clips; their Continuous button does not
 A useful next comparison is to use permissible target poses on a supported model rig, generate an approach/transition with MotionBricks, then compare it with the direct Quaternius sequence under the same start/end conditions. C08 is not a native MotionBricks model rig; it needs a supported-rig mapping and final retarget. Sparse targets cannot guarantee a faithful Ukemi, correct contacts or obstacle clearance.
 
 Official documentation: https://github.com/NVlabs/MotionBricks#how-motionbricks-works and https://nvlabs.github.io/motionbricks/.
+
+## Controls and random routines
+The prominent WASD control button focuses the stage. WASD walks, Shift runs, Space jumps with staged horizontal travel when moving, C crouches, E sits/stands, and number keys trigger actions. Random + idle shuffles 14 curated routines without repeats, completes jump/sitting sequences, then blends to Idle_Loop for 1.6 seconds between routines. Roll stays manual because this subset lacks a matched recovery. These remain conventional clip transitions, not MotionBricks inference.

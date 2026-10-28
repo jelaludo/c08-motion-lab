@@ -13,3 +13,6 @@ This repository has no blanket grant that overrides the source assets or upstrea
 ## Quaternius Universal Animation Library 1 Standard
 
 The new baseline tab includes 20 retargeted animations and the original Standard mannequin GLB from Quaternius. Source: https://quaternius.itch.io/universal-animation-library. Animation/source pack license: CC0 1.0 Universal, included at `docs/quaternius/license.txt`. C08 geometry remains the original creator asset under its existing terms. Only the free Standard download was used; no paid-tier assets were obtained.
+
+## Landing page typography
+The landing page requests DM Sans and Space Grotesk through Google Fonts; these font families are offered under the SIL Open Font License. System fonts provide the fallback.

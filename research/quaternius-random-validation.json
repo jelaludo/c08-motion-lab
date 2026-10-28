@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/quaternius/",
+  "history": [
+    {
+      "routine": 0,
+      "clips": [
+        "Walk_Loop"
+      ]
+    },
+    {
+      "routine": 9,
+      "clips": [
+        "Fixing_Kneeling"
+      ]
+    },
+    {
+      "routine": 3,
+      "clips": [
+        "Walk_Formal_Loop"
+      ]
+    },
+    {
+      "routine": 1,
+      "clips": [
+        "Jog_Fwd_Loop"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "name": "Idle_Loop",
+      "phase": "idle",
+      "history": 0,
+      "elapsed": 0,
+      "at": 1
+    },
+    {
+      "name": "Walk_Loop",
+      "phase": "action",
+      "history": 1,
+      "elapsed": 0.05399999999999999,
+      "at": 1654
+    },
+    {
+      "name": "Idle_Loop",
+      "phase": "idle",
+      "history": 1,
+      "elapsed": 0.036,
+      "at": 4331
+    },
+    {
+      "name": "Fixing_Kneeling",
+      "phase": "action",
+      "history": 2,
+      "elapsed": 0,
+      "at": 5893
+    },
+    {
+      "name": "Idle_Loop",
+      "phase": "idle",
+      "history": 2,
+      "elapsed": 0.018,
+      "at": 11113
+    },
+    {
+      "name": "Walk_Formal_Loop",
+      "phase": "action",
+      "history": 3,
+      "elapsed": 0.09,
+      "at": 12789
+    },
+    {
+      "name": "Idle_Loop",
+      "phase": "idle",
+      "history": 3,
+      "elapsed": 0.09000000000000001,
+      "at": 15467
+    },
+    {
+      "name": "Jog_Fwd_Loop",
+      "phase": "action",
+      "history": 4,
+      "elapsed": 0.05409999999999854,
+      "at": 17027
+    },
+    {
+      "name": "Idle_Loop",
+      "phase": "idle",
+      "history": 4,
+      "elapsed": 0.09000000000000001,
+      "at": 18929
+    }
+  ],
+  "checks": [
+    "prominent WASD control",
+    "run and jumping travel",
+    "random routines without repeats",
+    "neutral idle between routines",
+    "pause/resume behavior",
+    "WASD leaves random"
+  ],
+  "errors": []
+}

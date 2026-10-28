@@ -1,0 +1,20 @@
+{
+  "three_revision": "160",
+  "clip": "MBP_far",
+  "duration_s": 1.2333333492279053,
+  "frames": 38,
+  "gltf_errors": 0,
+  "gltf_warnings": 0,
+  "gltf_messages": [],
+  "sampling_hz": 120,
+  "skinned_geometry_min_floor_y_m": 0.0014875725703754894,
+  "max_exported_joint_position_error_m": 7.12729076949948e-7,
+  "max_segment_length_variation_m": 2.472580866164087e-7,
+  "heuristic_stance_sole_xz_drift_m": 4.935618792496542e-7,
+  "independent_clones": true,
+  "prohibited_animation_tracks": [],
+  "limitations": [
+    "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+    "No general self-collision or game acceptance test"
+  ]
+}

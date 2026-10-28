@@ -1,8 +1,10 @@
-# Off Shift — C08 & K0-Tech
+# C08 Motion Lab
 
-A non-commercial motion experiment by **jelaludo**: a heavy utility robot and his compact robot cat share a little free time. Built to invite animation and technical feedback, not to claim a finished game controller or a physics simulation.
+An independent, non-commercial motion notebook by **jelaludo**. One original robot, a small robot cat, and several distinct approaches to animation.
 
-**[Watch the moving diorama](https://jelaludo.github.io/c08-motion-lab/)** · **[Inspect the generated motions](https://jelaludo.github.io/c08-motion-lab/lab/)** · **[Leave feedback](https://github.com/jelaludo/c08-motion-lab/issues)**
+**[Lab home](https://jelaludo.github.io/c08-motion-lab/)** | **[MB-Predictive](https://jelaludo.github.io/c08-motion-lab/mb-predictive/)** | **[Quaternius](https://jelaludo.github.io/c08-motion-lab/quaternius/)** | **[Research gallery](https://jelaludo.github.io/c08-motion-lab/lab/)** | **[Off Shift diorama](https://jelaludo.github.io/c08-motion-lab/diorama.html)**
+
+The landing page separates learned prediction, conventional animation, video recovery, choreography, and the earlier research archive. MB-Predictive shows six actual AI predictions beside ordinary interpolation, with explicit recent-pose/target/generated-movement stages. The Quaternius tab adds a prominent WASD controller and shuffled routines that return through idle. Existing research clips remain available for future comparisons.
 
 The diorama includes greetings, crouching, a feline roll-over, chases in both directions, reciprocal jumps, footwork, turns, reaches and a quiet finish. Its 16 scenes form a continuous loop. The expanded inspector offers **47 choices**: 36 original-input MotionBricks experiments, six video-derived C08 retargets and all five original authored C08 actions.
 
@@ -61,4 +63,12 @@ This is shared for observation and discussion. Original character assets and ori
 
 ## Quaternius baseline tab
 
-[Open the separate baseline](https://jelaludo.github.io/c08-motion-lab/quaternius/). Twenty CC0 clips from the official free Quaternius Universal Animation Library 1 Standard pack are directly retargeted to C08. Includes source-mannequin comparison, clip inspection, a phase-aligned locomotion blend demo and a basic keyboard state machine. All existing diorama and experiment URLs remain as research. See [findings and provenance](research/quaternius-baseline.md). All 20 exports pass structural and 120 Hz floor checks; these checks do not establish contact fidelity or production readiness.
+[Open the separate baseline](https://jelaludo.github.io/c08-motion-lab/quaternius/). Twenty CC0 clips from the official free Quaternius Universal Animation Library 1 Standard pack are directly retargeted to C08. Includes source-mannequin comparison, clip inspection, a phase-aligned locomotion blend demo and a basic keyboard state machine. Existing experiments remain as research; the diorama now lives at `diorama.html` and the root is the lab hub. See [findings and provenance](research/quaternius-baseline.md). All 20 exports pass structural and 120 Hz floor checks; these checks do not establish contact fidelity or production readiness.
+
+## MB-Predictive
+
+Six new original-input experiments vary distance, heading and arrival posture. The chain experiment feeds each prediction's actual last four poses into the next call. A matched non-neural baseline interpolates source joints and root transforms over the same duration. Both outputs use the existing C08 adapter; only the neural result supplies predicted contact labels. This comparison illustrates the learned stepping; it is not a benchmark against an authored controller.
+
+The public site plays recorded outputs. A loopback-only local service also supports fresh target generation on the RTX 4090. In the provisioned MotionBricks workspace, run `./Start-MB-Predictive.ps1` and open `http://127.0.0.1:8791/mb-predictive/`. Set forward/sideways placement, heading and arrival posture, then generate. The service serializes jobs, reuses the model, retargets both outputs in Blender, and validates the exported clips. New job files stay outside the public repository. GPU timing displayed in the UI excludes initialization, retargeting and export.
+
+See [MB-Predictive research notes](research/mb-predictive.md) for input provenance, chaining checks and limits.
