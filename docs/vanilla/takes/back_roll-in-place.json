@@ -3,7 +3,7 @@
   "id": "back_roll",
   "label": "Backward roll",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 3.4,
   "frames": 205,
@@ -1068,7 +1068,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "5f3fb96576df50f43b48b9a4eb86304fe9acf4e94cd0137be52dfa2380e5bb5a",
+  "sha256": "3c9d1b2ae7116e364a8e897eb13eb91f25e95c1088258482da700aa6adc8d00e",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

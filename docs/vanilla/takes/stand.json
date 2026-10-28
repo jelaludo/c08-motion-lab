@@ -3,7 +3,7 @@
   "id": "stand",
   "label": "Stand from seat",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 1.6333333015441895,
   "frames": 99,
@@ -535,7 +535,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "5eda38cfe07b661c8cfeba4b279585e45f3b15fa9ceb756e8aecb8d1bf6d71c6",
+  "sha256": "7b648290c55ab64239c6d92754c96b93407ac40e9dc6c1ba7fe15f9c0358bea1",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

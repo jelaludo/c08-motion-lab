@@ -1,6 +1,6 @@
 {
   "schema": "c08-vanilla/1",
-  "version": "v1-43a5bfc0cbc0",
+  "version": "v1-bd04a8519ed9",
   "selection": "15 practical staples; not a statistical usage ranking",
   "source": "Quaternius Universal Animation Library 1 Standard",
   "source_url": "https://quaternius.com/packs/universalanimationlibrary.html",
@@ -8,11 +8,11 @@
   "hashes": {
     "quaternius/c08-quaternius.glb": "555772692fc7536a70334f8adf728a8265a29c5b6999434fd9c9e402fb9eab28",
     "vanilla/c08-extra.glb": "f278a2486d376b1443bdf8814c088eb9dca2a472c07227e90b1a0c4cc95e0553",
-    "vanilla/vanilla.js": "86d10b638acc998c599c11edde767e5ebe1c28165f24154b2861500cd9c612fd",
-    "vanilla/motion-cleanup.js": "f561cf00792139cb8915a91f9b34d47586eaff705198dbf2faa4df44e5a8416e",
+    "vanilla/vanilla.js": "c8a912c7dbe903210cf08afb9e79cda8f360167216d1c1fd4845f993d6188a0c",
+    "vanilla/motion-cleanup.js": "6b450d24b8f0b6e71c451455aa5bc3f0294189330c19f247bc4509ad85ed4465",
     "shared/review-store.js": "c6cc1d4f51bacc6b19026ec8a3aa70c443bf7d1a7fef55abc795d1076a0477a9",
-    "shared/review-panel.js": "fd8e05d854f63393b87c9832bf8d39058e288893ba6ffa45cb1f40b00cd77b9f",
-    "shared/bake-take.js": "1db7939aac0b1117945cb764bc93a183536b692ff54fb752e4dedaf9011ab511"
+    "shared/review-panel.js": "f9ccc09ba63bfebda3cac439cfee09f77975767e1edbe11b209f04f3a8c88518",
+    "shared/bake-take.js": "7b282dd7217f46c8e1098721f4fdb71147e29132ecac53629710e1a353ceefac"
   },
   "candidates": [
     {
@@ -406,5 +406,6 @@
         "Sitting_Exit"
       ]
     }
-  ]
+  ],
+  "hash_normalization": "JavaScript SHA-256 uses UTF-8 bytes with CRLF normalized to LF, matching Git and Pages; binary assets use unchanged bytes."
 }

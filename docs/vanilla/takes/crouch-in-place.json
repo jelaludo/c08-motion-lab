@@ -3,7 +3,7 @@
   "id": "crouch",
   "label": "Crouch",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 4.233333396911621,
   "frames": 255,
@@ -1315,7 +1315,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "74f0a842f89a691ba8e198bb70e236b511415e8d35e3fa90d935e9b5607e4eed",
+  "sha256": "3be5ee1cada35a1867eb91fd5bd5132ac416ea7f9e24b30c8c190e59ab00658f",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

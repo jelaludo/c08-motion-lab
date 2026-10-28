@@ -3,7 +3,7 @@
   "id": "seated",
   "label": "Seated idle",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 1.6666666269302368,
   "frames": 101,
@@ -545,7 +545,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "2ddaa10bd871cf4c53d58f117872272fe815dd207fdc2fb0eb1aed828d3d2c4d",
+  "sha256": "a48213709cfaca12d30212ae28be86c56819cfd6fc8d5135eca120dc306aa307",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

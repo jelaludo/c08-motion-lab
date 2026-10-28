@@ -3,7 +3,7 @@
   "id": "run",
   "label": "Run",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 0.9,
   "frames": 55,
@@ -317,7 +317,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "4227a52752d78b029430a90251f1b28c531ad91857e3bbb51a910ddaa7d8e26b",
+  "sha256": "8c8a19faa962c099c0bd94297f7033c5265237444a3e85c73b13ac2ecda5d214",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

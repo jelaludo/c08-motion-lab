@@ -73,7 +73,9 @@ vanilla=json.loads((ROOT/'docs/vanilla/manifest.json').read_text(encoding='utf8'
 assert len(vanilla['candidates'])==15 and len({c['id'] for c in vanilla['candidates']})==15
 assert all(c['source_license']=='CC0-1.0' and c['body']=='c08' for c in vanilla['candidates'])
 for relative,digest in vanilla['hashes'].items():
- assert hashlib.sha256((ROOT/'docs'/relative).read_bytes()).hexdigest()==digest
+ source_bytes=(ROOT/'docs'/relative).read_bytes()
+ if relative.endswith('.js'):source_bytes=source_bytes.replace(b'\r\n',b'\n')
+ assert hashlib.sha256(source_bytes).hexdigest()==digest
 assert all(c['warning'] for c in vanilla['candidates'] if c['id'] in ('back_roll','get_up','lie_down','high_jump'))
 report.update(vanilla_candidates=15,vanilla_source_hashes_verified=True,vanilla_review_version=vanilla['version'])
 (ROOT/'research/publication-validation.json').write_text(json.dumps(report,indent=2),encoding='utf8')

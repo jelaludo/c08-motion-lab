@@ -3,7 +3,7 @@
   "id": "crouch_walk",
   "label": "Crouch walk",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 2,
   "frames": 121,
@@ -645,7 +645,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "7bb8a1ea3b74bcf66f0cb5ff5c4f1f74812538b25fcdbcc47f5291e1f62390d6",
+  "sha256": "e7db32175e4bf01eb39a208bbf0decb293b17ed44d993decc73730c0bb4a994c",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

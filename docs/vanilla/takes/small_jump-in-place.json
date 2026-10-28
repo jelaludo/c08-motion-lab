@@ -3,7 +3,7 @@
   "id": "small_jump",
   "label": "Small jump",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 3.980000023841858,
   "frames": 240,
@@ -1249,7 +1249,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "49bc60f3e365310cf415b7009af2f43b7904f568ee1e70c2fbbf356fab2a1148",
+  "sha256": "8fcd3d8de8a667d841cd721114c6e7ffeec8d9d50229855271e9fe818cf07a10",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

@@ -3,7 +3,7 @@
   "id": "forward_roll",
   "label": "Forward roll",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 2.7166666984558105,
   "frames": 164,
@@ -860,7 +860,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "b7aa2cc693f0e6436510630c667d485a00181f9083608f3765c341491cf31b9c",
+  "sha256": "26fa136056b76771ed62e9b21f0d74cd00b4049bf2c5c1cf14f6ba9d427e475a",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

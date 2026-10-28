@@ -3,7 +3,7 @@
   "id": "lie_down",
   "label": "Lie down",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 2.850000095367432,
   "frames": 172,
@@ -900,7 +900,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "216f4905106b366048f393ef047920039ec102a44a7fdd416e6875773e3b6235",
+  "sha256": "d6eb4fa7337c0f89f2c603214724e7b785ff1cfb2f7c3ac2fc8dc3e239da471a",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

@@ -3,7 +3,7 @@
   "id": "sit",
   "label": "Sit down",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 1.2999999523162842,
   "frames": 79,
@@ -435,7 +435,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "1079d3fcec7a93f2f4db7933c4b99deada0698064be6abf8441e639087849733",
+  "sha256": "bd4fc765da45105dcde12e3eae2391e38e61113af66f151f1cc8ec2c61a23cf8",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

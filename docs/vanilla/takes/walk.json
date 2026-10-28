@@ -3,7 +3,7 @@
   "id": "walk",
   "label": "Walk",
   "body": "c08",
-  "recipe_version": "v1-43a5bfc0cbc0",
+  "recipe_version": "v1-bd04a8519ed9",
   "fps": 60,
   "duration_s": 1.3333333730697632,
   "frames": 81,
@@ -445,7 +445,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "6ce7c631be47377f8940fa6b6e16681f89256d2b638756c192a06e4ea0ffccbf",
+  "sha256": "44be4d48defa828306f1fcd15470f9c9964615d0d2604dc84bbe45028f7135ee",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }
