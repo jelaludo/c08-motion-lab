@@ -1,0 +1,171 @@
+{
+  "source": "https://jelaludo.github.io/SentryTowers_A6/k0-tech-01/",
+  "file": "k0_tech_01_d0_lod1.glb",
+  "sha256": "9c1844d47c3953f4b456190459a1ca9bcc4778effed1166a787c2ac18d937754",
+  "credit": "Models by jelaludo",
+  "clips": [
+    {
+      "name": "Watch_Idle",
+      "duration_s": 3,
+      "loop": true,
+      "pattern_family": "C07 authored feline pattern; proportions and travel adapted for K0-TECH-01"
+    },
+    {
+      "name": "Feline_Walk_Cycle",
+      "duration_s": 1.6,
+      "loop": true,
+      "speed_mps": 0.2383333320418994,
+      "duty_factor": 0.6,
+      "touchdown_phase": {
+        "HR": 0,
+        "FR": 0.22,
+        "HL": 0.5,
+        "FL": 0.72
+      },
+      "pattern_family": "C07 authored feline pattern; proportions and travel adapted for K0-TECH-01"
+    },
+    {
+      "name": "Stalk_Cycle",
+      "duration_s": 2.4,
+      "loop": true,
+      "speed_mps": 0.08931623883227,
+      "duty_factor": 0.78,
+      "touchdown_phase": {
+        "HR": 0,
+        "FR": 0.22,
+        "HL": 0.5,
+        "FL": 0.72
+      },
+      "pattern_family": "C07 authored feline pattern; proportions and travel adapted for K0-TECH-01"
+    },
+    {
+      "name": "Gallop_Cycle",
+      "duration_s": 0.4,
+      "loop": true,
+      "speed_mps": 2.688888874318865,
+      "duty_factor": 0.18,
+      "touchdown_phase": {
+        "FL": 0,
+        "FR": 0.08,
+        "HR": 0.48,
+        "HL": 0.56
+      },
+      "flight_intervals": {
+        "gathered": [
+          0.26,
+          0.48
+        ],
+        "extended": [
+          0.74,
+          1
+        ]
+      },
+      "phase_landmarks": {
+        "fore_support": 0.13,
+        "gathered": 0.37,
+        "hind_support": 0.61,
+        "extended": 0.87
+      },
+      "pattern_family": "C07 authored feline pattern; proportions and travel adapted for K0-TECH-01"
+    },
+    {
+      "name": "Sit_Down",
+      "duration_s": 2.4,
+      "loop": false,
+      "pattern_family": "C07 authored feline pattern; proportions and travel adapted for K0-TECH-01"
+    },
+    {
+      "name": "Pounce",
+      "duration_s": 3.2,
+      "loop": false,
+      "root_motion": true,
+      "source_ids": [
+        "motionzoo_jump"
+      ],
+      "pattern_revision": "2026-10-27-faster-gaits-social",
+      "release_s": {
+        "FL": 0.65,
+        "FR": 0.675,
+        "HR": 0.8,
+        "HL": 0.815
+      },
+      "touchdown_s": {
+        "FL": 1.34,
+        "FR": 1.365,
+        "HR": 1.455,
+        "HL": 1.48
+      },
+      "phase_landmarks_s": {
+        "ready": 0.12,
+        "crouch": 0.49,
+        "push_off": 0.79,
+        "apex": 1.0775,
+        "fore_contact": 1.35,
+        "absorb": 1.53,
+        "recover": 2.65
+      },
+      "flight_interval_s": [
+        0.815,
+        1.34
+      ],
+      "travel_m": 1.6,
+      "trajectory": "Forward pounce: original push/landing travel plus constant horizontal flight travel between last release and first touchdown; planted paw anchors preserved.",
+      "root_motion_profile": {
+        "kind": "base_plus_airborne",
+        "base_travel_m": 0.527999997138977,
+        "airborne_extra_m": 1.072000002861023
+      },
+      "pattern_family": "C07 authored feline pattern; proportions and travel adapted for K0-TECH-01"
+    },
+    {
+      "name": "Roll_Over",
+      "duration_s": 5.6,
+      "loop": false,
+      "phase_landmarks_s": {
+        "crouch": 0.8,
+        "side": 1.97,
+        "back": 2.6,
+        "other_side": 3.23,
+        "recover": 5.4
+      },
+      "pattern_family": "C07 authored feline pattern; proportions and travel adapted for K0-TECH-01"
+    },
+    {
+      "name": "Give_Paw",
+      "duration_s": 4.4,
+      "loop": false,
+      "offered_paw": "FL",
+      "phase_landmarks_s": {
+        "sit": 1,
+        "offer": 1.65,
+        "shake": 2.1,
+        "lower": 3.15,
+        "recover": 4.4
+      },
+      "pattern_family": "C07 authored feline pattern; proportions and travel adapted for K0-TECH-01"
+    }
+  ],
+  "coordinate_system": {
+    "units": "metres",
+    "up": "+Y",
+    "forward": "+Z",
+    "origin": "ground at torso centre; shortened striped tail extends aft"
+  },
+  "bounds": {
+    "min": [
+      -0.1504499912261963,
+      0.000939997549001044,
+      -0.6420783400535583
+    ],
+    "max": [
+      0.1504499912261963,
+      0.415010005235672,
+      0.4031279981136322
+    ],
+    "dimensions_m": [
+      0.3008999824523926,
+      0.41407000768667096,
+      1.0452063381671906
+    ]
+  }
+}

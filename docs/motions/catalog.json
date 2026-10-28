@@ -1,0 +1,842 @@
+{
+  "tests": [
+    {
+      "id": "own_idle",
+      "label": "Original \u00b7 neutral idle",
+      "duration_s": 2.5,
+      "frames": 76,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.009010300040245056,
+        "pelvis_height_min_m": 0.7929973006248474,
+        "pelvis_height_max_m": 0.7935345768928528,
+        "maximum_joint_key_step_rad": 0.027961544692516327,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.0057188706398010256
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_idle",
+        "duration_s": 2.5,
+        "frames": 76,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007850517946230817,
+        "max_exported_joint_position_error_m": 3.029431839046201e-07,
+        "max_segment_length_variation_m": 1.0359457236486236e-08,
+        "heuristic_stance_sole_xz_drift_m": 3.3909060312541034e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_idle/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_idle",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_crouch_down",
+      "label": "Original \u00b7 crouch down",
+      "duration_s": 1.6333333333333333,
+      "frames": 50,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.027328088879585266,
+        "pelvis_height_min_m": 0.5799999833106995,
+        "pelvis_height_max_m": 0.7929999828338623,
+        "maximum_joint_key_step_rad": 0.085968017578125,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.017226888418197632
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_crouch_down",
+        "duration_s": 1.6333333253860474,
+        "frames": 50,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007582917243309533,
+        "max_exported_joint_position_error_m": 3.082228675150166e-07,
+        "max_segment_length_variation_m": 2.1948889494805002e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.3730168127306943e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_crouch_down/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_crouch_down",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_crouch_hold",
+      "label": "Original \u00b7 crouch hold",
+      "duration_s": 1.6666666666666667,
+      "frames": 51,
+      "review_flags": [
+        "Generated G1 joint-limit violations"
+      ],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.010918836109340191,
+        "pelvis_height_min_m": 0.5786542892456055,
+        "pelvis_height_max_m": 0.5920110940933228,
+        "maximum_joint_key_step_rad": 0.0400717630982399,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.023497282147407532
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_crouch_hold",
+        "duration_s": 1.6666666269302368,
+        "frames": 51,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007720849590479757,
+        "max_exported_joint_position_error_m": 4.2894510494690667e-07,
+        "max_segment_length_variation_m": 3.375340934530513e-08,
+        "heuristic_stance_sole_xz_drift_m": 3.7406564808962435e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_crouch_hold/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_crouch_hold",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_stand_up",
+      "label": "Original \u00b7 stand up",
+      "duration_s": 1.6333333333333333,
+      "frames": 50,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.0853893980383873,
+        "pelvis_height_min_m": 0.5799999833106995,
+        "pelvis_height_max_m": 0.7930948138237,
+        "maximum_joint_key_step_rad": 0.18725115060806274,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.01584151256084442
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_stand_up",
+        "duration_s": 1.6333333253860474,
+        "frames": 50,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0075669825867347735,
+        "max_exported_joint_position_error_m": 4.4329118494918793e-07,
+        "max_segment_length_variation_m": 1.9130346312623558e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.798313062254092e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_stand_up/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_stand_up",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_deep_crouch",
+      "label": "Original \u00b7 deep crouch and return",
+      "duration_s": 4.766666666666667,
+      "frames": 144,
+      "review_flags": [
+        "Generated G1 joint-limit violations"
+      ],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.21514740586280823,
+        "pelvis_height_min_m": 0.40418606996536255,
+        "pelvis_height_max_m": 0.7929999828338623,
+        "maximum_joint_key_step_rad": 0.08577275276184082,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.03417989480495453
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_deep_crouch",
+        "duration_s": 4.766666889190674,
+        "frames": 144,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.00749486769821806,
+        "max_exported_joint_position_error_m": 5.912904332845318e-07,
+        "max_segment_length_variation_m": 8.414674751433537e-08,
+        "heuristic_stance_sole_xz_drift_m": 6.15544944858111e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_deep_crouch/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_deep_crouch",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_reach_right",
+      "label": "Original \u00b7 reach right and return",
+      "duration_s": 3.033333333333333,
+      "frames": 92,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.011705106124281883,
+        "pelvis_height_min_m": 0.7919363379478455,
+        "pelvis_height_max_m": 0.7934609055519104,
+        "maximum_joint_key_step_rad": 0.1012425422668457,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.010739891409873963
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_reach_right",
+        "duration_s": 3.0333333015441895,
+        "frames": 92,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007845720491152067,
+        "max_exported_joint_position_error_m": 3.99672756355834e-07,
+        "max_segment_length_variation_m": 1.2485916300875033e-08,
+        "heuristic_stance_sole_xz_drift_m": 3.254394589053411e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_reach_right/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_reach_right",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_reach_both",
+      "label": "Original \u00b7 reach both hands",
+      "duration_s": 2.466666666666667,
+      "frames": 75,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.01144430972635746,
+        "pelvis_height_min_m": 0.7920321226119995,
+        "pelvis_height_max_m": 0.7931634783744812,
+        "maximum_joint_key_step_rad": 0.120577871799469,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.009515358686447144
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_reach_both",
+        "duration_s": 2.4666666984558105,
+        "frames": 75,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007878202107641069,
+        "max_exported_joint_position_error_m": 3.5965680686349433e-07,
+        "max_segment_length_variation_m": 1.1368246677356808e-08,
+        "heuristic_stance_sole_xz_drift_m": 2.5308208311620305e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_reach_both/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_reach_both",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_hands_high",
+      "label": "Original \u00b7 hands overhead",
+      "duration_s": 3.2666666666666666,
+      "frames": 99,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.015076383017003536,
+        "pelvis_height_min_m": 0.7900165915489197,
+        "pelvis_height_max_m": 0.793161928653717,
+        "maximum_joint_key_step_rad": 0.1298433244228363,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.009993507146835327
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_hands_high",
+        "duration_s": 3.2666666507720947,
+        "frames": 99,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007826373684777042,
+        "max_exported_joint_position_error_m": 3.5521069061742193e-07,
+        "max_segment_length_variation_m": 1.2808847538181567e-08,
+        "heuristic_stance_sole_xz_drift_m": 2.705322169035108e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_hands_high/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_hands_high",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_turn_left90",
+      "label": "Original \u00b7 turn left 90\u00b0",
+      "duration_s": 2.466666666666667,
+      "frames": 75,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.027357621118426323,
+        "pelvis_height_min_m": 0.7915146946907043,
+        "pelvis_height_max_m": 0.7934727072715759,
+        "maximum_joint_key_step_rad": 0.03575383871793747,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.06585990184904023,
+        "max_foot_floor_lift_m": 0.01017290222644806
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_turn_left90",
+        "duration_s": 2.4666666984558105,
+        "frames": 75,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007874526425549557,
+        "max_exported_joint_position_error_m": 3.662373794799191e-07,
+        "max_segment_length_variation_m": 1.7994383416652937e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.153315049318118e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_turn_left90/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_turn_left90",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_turn_right90",
+      "label": "Original \u00b7 turn right 90\u00b0",
+      "duration_s": 2.466666666666667,
+      "frames": 75,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.026851285248994827,
+        "pelvis_height_min_m": 0.7913490533828735,
+        "pelvis_height_max_m": 0.7935218214988708,
+        "maximum_joint_key_step_rad": 0.04092375189065933,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.06288978848748594,
+        "max_foot_floor_lift_m": 0.011003522753715515
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_turn_right90",
+        "duration_s": 2.4666666984558105,
+        "frames": 75,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0076705212416155084,
+        "max_exported_joint_position_error_m": 3.713252598928127e-07,
+        "max_segment_length_variation_m": 1.7736016882929917e-07,
+        "heuristic_stance_sole_xz_drift_m": 3.6238707879018025e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_turn_right90/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_turn_right90",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_turn180",
+      "label": "Original \u00b7 turn around",
+      "duration_s": 1.6333333333333333,
+      "frames": 50,
+      "review_flags": [
+        "C08 geometry penetrates the floor"
+      ],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.1435082107782364,
+        "pelvis_height_min_m": 0.7794581651687622,
+        "pelvis_height_max_m": 0.7930894494056702,
+        "maximum_joint_key_step_rad": 0.1438068449497223,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.030641703103100548,
+        "max_foot_floor_lift_m": 0.026870145082473755
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_turn180",
+        "duration_s": 1.6333333253860474,
+        "frames": 50,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.005480187464790905,
+        "max_exported_joint_position_error_m": 4.093149361882893e-07,
+        "max_segment_length_variation_m": 1.349575011744264e-07,
+        "heuristic_stance_sole_xz_drift_m": 5.179778829384271e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_turn180/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_turn180",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_forward_steps",
+      "label": "Original \u00b7 forward targets",
+      "duration_s": 4.633333333333334,
+      "frames": 140,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 1.8197472095489502,
+        "pelvis_height_min_m": 0.7104864716529846,
+        "pelvis_height_max_m": 0.7930529117584229,
+        "maximum_joint_key_step_rad": 0.2595379054546356,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.04759520161151886
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_forward_steps",
+        "duration_s": 4.633333206176758,
+        "frames": 140,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0036784079856534485,
+        "max_exported_joint_position_error_m": 7.229623408248518e-07,
+        "max_segment_length_variation_m": 2.0286969776295294e-07,
+        "heuristic_stance_sole_xz_drift_m": 6.058901124803333e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_forward_steps/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "loop_window": {
+        "start_s": 1.7333333333333334,
+        "end_s": 2.966666666666667,
+        "joint_seam_rms_rad": 0.03409515042285044,
+        "processing": "Runtime endpoint correction and quaternion continuity; authored speed matched to path travel"
+      },
+      "directory": "own_forward_steps",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_backward_steps",
+      "label": "Original \u00b7 backward targets",
+      "duration_s": 3.2666666666666666,
+      "frames": 99,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.8292685151100159,
+        "pelvis_height_min_m": 0.7596091628074646,
+        "pelvis_height_max_m": 0.7932119965553284,
+        "maximum_joint_key_step_rad": 0.16685336828231812,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.04762451219558716
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_backward_steps",
+        "duration_s": 3.2666666507720947,
+        "frames": 99,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.005471328006342389,
+        "max_exported_joint_position_error_m": 4.636949748109608e-07,
+        "max_segment_length_variation_m": 1.0783538678671434e-07,
+        "heuristic_stance_sole_xz_drift_m": 3.6119540876197077e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_backward_steps/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_backward_steps",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_left_steps",
+      "label": "Original \u00b7 sidestep left",
+      "duration_s": 3.2666666666666666,
+      "frames": 99,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.8058398962020874,
+        "pelvis_height_min_m": 0.7727723717689514,
+        "pelvis_height_max_m": 0.7930254936218262,
+        "maximum_joint_key_step_rad": 0.07756838202476501,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.03804022467537316,
+        "max_foot_floor_lift_m": 0.052493213295936585
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_left_steps",
+        "duration_s": 3.2666666507720947,
+        "frames": 99,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.006406495512747407,
+        "max_exported_joint_position_error_m": 4.486690248156812e-07,
+        "max_segment_length_variation_m": 1.814872838123982e-07,
+        "heuristic_stance_sole_xz_drift_m": 2.562407433663241e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_left_steps/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_left_steps",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_right_steps",
+      "label": "Original \u00b7 sidestep right",
+      "duration_s": 3.2666666666666666,
+      "frames": 99,
+      "review_flags": [],
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.81119704246521,
+        "pelvis_height_min_m": 0.7693460583686829,
+        "pelvis_height_max_m": 0.7932023406028748,
+        "maximum_joint_key_step_rad": 0.07599930465221405,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.038683428049087525
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_right_steps",
+        "duration_s": 3.2666666507720947,
+        "frames": 99,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0025958176066375044,
+        "max_exported_joint_position_error_m": 4.847083796265297e-07,
+        "max_segment_length_variation_m": 2.446945674416945e-07,
+        "heuristic_stance_sole_xz_drift_m": 3.6474487873827723e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_right_steps/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_right_steps",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_fast_long_step",
+      "label": "Original \u00b7 3 m rapid arrival",
+      "duration_s": 0.5666666666666667,
+      "frames": 18,
+      "review_flags": [
+        "C08 geometry penetrates the floor",
+        "Generated G1 joint-limit violations"
+      ],
+      "source_metrics": {
+        "root_horizontal_travel_m": 3.0021839141845703,
+        "pelvis_height_min_m": 0.7237476110458374,
+        "pelvis_height_max_m": 0.8311735391616821,
+        "maximum_joint_key_step_rad": 0.5443640947341919,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.09033001828193665
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_fast_long_step",
+        "duration_s": 0.5666666626930237,
+        "frames": 18,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.00721951265952385,
+        "max_exported_joint_position_error_m": 8.87833268808377e-07,
+        "max_segment_length_variation_m": 2.3464667697759012e-07,
+        "heuristic_stance_sole_xz_drift_m": 0,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_fast_long_step/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_fast_long_step",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original conditioning tests"
+    },
+    {
+      "id": "own_run",
+      "label": "Original \u00b7 playful run",
+      "duration_s": 3.1666666666666665,
+      "frames": 96,
+      "review_flags": [
+        "C08 geometry penetrates the floor"
+      ],
+      "source_metrics": {
+        "root_horizontal_travel_m": 3.9328763484954834,
+        "pelvis_height_min_m": 0.718842089176178,
+        "pelvis_height_max_m": 0.7855840921401978,
+        "maximum_joint_key_step_rad": 0.40434008836746216,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.07055801022052766
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_run",
+        "duration_s": 3.1666667461395264,
+        "frames": 96,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.008089858311697631,
+        "max_exported_joint_position_error_m": 1.3243873663083531e-06,
+        "max_segment_length_variation_m": 4.166773137082025e-07,
+        "heuristic_stance_sole_xz_drift_m": 7.410232248163999e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_run/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "loop_window": {
+        "start_s": 0.6,
+        "end_s": 1.5333333333333334,
+        "joint_seam_rms_rad": 0.06989815938469382,
+        "processing": "Runtime endpoint correction and quaternion continuity; authored speed matched to path travel"
+      },
+      "directory": "own_run",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original diorama actions"
+    },
+    {
+      "id": "own_jump_over",
+      "label": "Original \u00b7 jump over K0-Tech",
+      "duration_s": 4.5,
+      "frames": 136,
+      "review_flags": [
+        "Generated G1 joint-limit violations"
+      ],
+      "source_metrics": {
+        "root_horizontal_travel_m": 2.1080455780029297,
+        "pelvis_height_min_m": 0.5319242477416992,
+        "pelvis_height_max_m": 1.4030752182006836,
+        "maximum_joint_key_step_rad": 0.43814191222190857,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.026908724188804627
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_own_jump_over",
+        "duration_s": 4.5,
+        "frames": 136,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007410189490592661,
+        "max_exported_joint_position_error_m": 8.879364246947301e-07,
+        "max_segment_length_variation_m": 3.685128051045261e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.5193272685758426e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "file": "motions/own_jump_over/c08-motionbricks-test.glb",
+      "provenance": "Original numeric conditioning, no bundled sample motion",
+      "directory": "own_jump_over",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "provenance_type": "original",
+      "category": "Original diorama actions"
+    }
+  ],
+  "original_conditioning_only": true,
+  "model": "MotionBricks-G1-RP-v1 FP32",
+  "robot_asset": "Models by jelaludo"
+}

@@ -1,0 +1,27 @@
+name: Motion feedback
+description: A movement, transition, contact or camera observation
+title: "Motion feedback: "
+body:
+  - type: input
+    id: scene
+    attributes:
+      label: Scene or motion
+      description: A chapter name or a motion-inspector test
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Timestamp
+      placeholder: "For example: 0:45"
+  - type: textarea
+    id: observation
+    attributes:
+      label: What did you notice?
+      description: A useful detail, an awkward movement or something that worked well
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser

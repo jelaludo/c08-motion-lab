@@ -1,0 +1,6 @@
+{
+  "bodies_checked": 30,
+  "max_position_error_m": 1.1482841003845987e-06,
+  "max_orientation_error_rad": 1.5926347627687564e-07,
+  "exported_qpos_values": 36
+}

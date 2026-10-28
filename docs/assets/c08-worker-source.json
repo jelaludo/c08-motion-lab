@@ -1,0 +1,86 @@
+{
+  "source": "https://jelaludo.github.io/SentryTowers_A6/c08-worker/",
+  "file": "c08_d0_lod1.glb",
+  "sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+  "credit": "Models by jelaludo",
+  "clips": [
+    {
+      "name": "Standby_Idle",
+      "label": "Standby",
+      "duration_s": 4,
+      "loop": true,
+      "note": "Quiet hydraulic corrections; both feet planted."
+    },
+    {
+      "name": "Heavy_Walk_Cycle",
+      "label": "Heavy walk",
+      "duration_s": 1.8,
+      "loop": true,
+      "speed_mps": 0.55,
+      "duty_factor": 0.68,
+      "touchdown_phase": {
+        "L": 0,
+        "R": 0.5
+      },
+      "flat_support_phase": [
+        0.08,
+        0.57
+      ],
+      "note": "66.7 steps/min \u00b7 0.55 m/s \u00b7 heel placement, long support and delayed arm swing."
+    },
+    {
+      "name": "Carry_Walk_Cycle",
+      "label": "Carry walk",
+      "duration_s": 2.4,
+      "loop": true,
+      "speed_mps": 0.36,
+      "duty_factor": 0.74,
+      "touchdown_phase": {
+        "L": 0,
+        "R": 0.5
+      },
+      "flat_support_phase": [
+        0.08,
+        0.63
+      ],
+      "note": "50 steps/min \u00b7 0.36 m/s \u00b7 forearms braced for a load; attach cargo at the hand sockets."
+    },
+    {
+      "name": "Work_Inspect",
+      "label": "Inspect",
+      "duration_s": 5,
+      "loop": false,
+      "note": "Plant both feet, raise the right hand for a sensor check, then return to standby."
+    },
+    {
+      "name": "Crouch_Service",
+      "label": "Service crouch",
+      "duration_s": 5,
+      "loop": false,
+      "note": "Lower the center of mass with both soles anchored, hold, then stand."
+    }
+  ],
+  "coordinate_system": {
+    "units": "metres",
+    "up": "+Y",
+    "forward": "+Z",
+    "origin": "ground at standing hip centre"
+  },
+  "bounds": {
+    "min": [
+      -0.7670000195503235,
+      0.006000000983476639,
+      -0.4244999885559082
+    ],
+    "max": [
+      0.7670000195503235,
+      2.291412591934204,
+      0.3109999895095825
+    ],
+    "dimensions_m": [
+      1.534000039100647,
+      2.2854125909507275,
+      0.7354999780654907
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+upstream/
+.venv/
+node_modules/
+weights/
+checkpoints/
+.trt-cache/
+cache/
+video-mocap/
+reference-videos/
+*.mp4
+*.ckpt
+*.onnx
+*.pkl
+*.pth
+*.pt
+*.blend1
