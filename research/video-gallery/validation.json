@@ -1,0 +1,79 @@
+{
+  "tests": 6,
+  "results": [
+    {
+      "id": "mocap_ukemi",
+      "label": "Ukemi / shoulder roll",
+      "duration": 4.733333333333333,
+      "selected": "mocap_ukemi",
+      "clip": "VC_ukemi",
+      "time": 2.366666555404663,
+      "headBelowPelvis": true,
+      "description": "Ukemi / shoulder roll · 4.73 seconds. Direct video recovery adapted to C08; this is not MotionBricks-generated motion.",
+      "flags": "Review findings: Monocular recovery: occluded joints are estimates; Direct adaptation; no contact or self-collision solve; Source crops part of the body; late recovery is less reliable; Large whole-body grounding correction; inspect the reported offsets",
+      "error": ""
+    },
+    {
+      "id": "mocap_gorilla_side",
+      "label": "Gorilla sideways exercise",
+      "duration": 8.1,
+      "selected": "mocap_gorilla_side",
+      "clip": "VC_gorilla_side",
+      "time": 4.050000190734863,
+      "headBelowPelvis": true,
+      "description": "Gorilla sideways exercise · 8.10 seconds. Direct video recovery adapted to C08; this is not MotionBricks-generated motion.",
+      "flags": "Review findings: Monocular recovery: occluded joints are estimates; Direct adaptation; no contact or self-collision solve; Source crops part of the body; late recovery is less reliable; Large whole-body grounding correction; inspect the reported offsets",
+      "error": ""
+    },
+    {
+      "id": "mocap_gorilla_front",
+      "label": "Gorilla forward exercise",
+      "duration": 7.933333333333334,
+      "selected": "mocap_gorilla_front",
+      "clip": "VC_gorilla_front",
+      "time": 3.9666666984558105,
+      "headBelowPelvis": false,
+      "description": "Gorilla forward exercise · 7.93 seconds. Direct video recovery adapted to C08; this is not MotionBricks-generated motion.",
+      "flags": "Review findings: Monocular recovery: occluded joints are estimates; Direct adaptation; no contact or self-collision solve; Source crops part of the body; late recovery is less reliable; Large whole-body grounding correction; inspect the reported offsets",
+      "error": ""
+    },
+    {
+      "id": "mocap_technical_standup",
+      "label": "BJJ technical stand-up",
+      "duration": 7.066666666666666,
+      "selected": "mocap_technical_standup",
+      "clip": "VC_technical_standup",
+      "time": 3.5333333015441895,
+      "headBelowPelvis": false,
+      "description": "BJJ technical stand-up · 7.07 seconds. Direct video recovery adapted to C08; this is not MotionBricks-generated motion.",
+      "flags": "Review findings: Monocular recovery: occluded joints are estimates; Direct adaptation; no contact or self-collision solve; Source crops part of the body; late recovery is less reliable; Large whole-body grounding correction; inspect the reported offsets",
+      "error": ""
+    },
+    {
+      "id": "mocap_sumo_stomp",
+      "label": "Sumo stomp / leg lift",
+      "duration": 7.233333333333333,
+      "selected": "mocap_sumo_stomp",
+      "clip": "VC_sumo_stomp",
+      "time": 3.616666555404663,
+      "headBelowPelvis": false,
+      "description": "Sumo stomp / leg lift · 7.23 seconds. Direct video recovery adapted to C08; this is not MotionBricks-generated motion.",
+      "flags": "Review findings: Monocular recovery: occluded joints are estimates; Direct adaptation; no contact or self-collision solve; Large whole-body grounding correction; inspect the reported offsets",
+      "error": ""
+    },
+    {
+      "id": "mocap_deadlift",
+      "label": "Deadlift",
+      "duration": 6.266666666666667,
+      "selected": "mocap_deadlift",
+      "clip": "VC_deadlift",
+      "time": 3.133333444595337,
+      "headBelowPelvis": false,
+      "description": "Deadlift · 6.27 seconds. Direct video recovery adapted to C08; this is not MotionBricks-generated motion.",
+      "flags": "Review findings: Monocular recovery: occluded joints are estimates; Direct adaptation; no contact or self-collision solve; Large whole-body grounding correction; inspect the reported offsets; Body motion only: no bar, load or grip/contact physics",
+      "error": ""
+    }
+  ],
+  "errors": [],
+  "mobile": true
+}

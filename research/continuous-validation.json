@@ -1,0 +1,541 @@
+{
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/lab/",
+  "checks": {
+    "authoredEntriesPresent": true,
+    "buttonStartsPlaylist": true,
+    "naturalClipEndAdvance": true,
+    "pauseHoldsPlaylist": true,
+    "playResumesPlaylist": true,
+    "eachEntryOncePerBag": true,
+    "noImmediateRepeatAcrossBags": true,
+    "manualDropdownStopsPlaylist": true,
+    "timelineStopsPlaylist": true,
+    "manualSetTimeStopsPlaylist": true,
+    "finiteSkeletonAndSkinnedPositions": true
+  },
+  "pageErrors": [],
+  "transitions": [
+    {
+      "id": "mocap_gorilla_side",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_sit_hold",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_jump_over",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_zombie_walk",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_reach_right",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "mocap_ukemi",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "authored:Work_Inspect",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "authored:Crouch_Service",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "authored:Heavy_Walk_Cycle",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_stand_up",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_duck_under",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_jog",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_right_steps",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_dance",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_slow_walk",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_limp",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_forward_steps",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_brisk_walk",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_walk_start",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_turn180",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_fast_long_step",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_crouch_backward",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "mocap_technical_standup",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_walk_stop",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_hands_high",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_stand_from_seat",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_crouch_right",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_run",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_idle",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "mocap_deadlift",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_crouch_down",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_crouch_hold",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "mocap_sumo_stomp",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_left_steps",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_backward_steps",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "authored:Standby_Idle",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_skip",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_sit_down",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_turn_left90",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_crouch_forward",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "authored:Carry_Walk_Cycle",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_guarded_steps",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_deep_crouch",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_reach_both",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "fresh_crouch_left",
+      "bones": 55,
+      "skinSamples": 30
+    },
+    {
+      "id": "own_turn_right90",
+      "bones": 55,
+      "skinSamples": 30
+    }
+  ],
+  "entryCount": 47,
+  "entries": [
+    {
+      "id": "own_idle",
+      "label": "Original · neutral idle",
+      "duration": 2.5
+    },
+    {
+      "id": "own_crouch_down",
+      "label": "Original · crouch down",
+      "duration": 1.6333333333333333
+    },
+    {
+      "id": "own_crouch_hold",
+      "label": "Original · crouch hold",
+      "duration": 1.6666666666666667
+    },
+    {
+      "id": "own_stand_up",
+      "label": "Original · stand up",
+      "duration": 1.6333333333333333
+    },
+    {
+      "id": "own_deep_crouch",
+      "label": "Original · deep crouch and return",
+      "duration": 4.766666666666667
+    },
+    {
+      "id": "own_reach_right",
+      "label": "Original · reach right and return",
+      "duration": 3.033333333333333
+    },
+    {
+      "id": "own_reach_both",
+      "label": "Original · reach both hands",
+      "duration": 2.466666666666667
+    },
+    {
+      "id": "own_hands_high",
+      "label": "Original · hands overhead",
+      "duration": 3.2666666666666666
+    },
+    {
+      "id": "own_turn_left90",
+      "label": "Original · turn left 90°",
+      "duration": 2.466666666666667
+    },
+    {
+      "id": "own_turn_right90",
+      "label": "Original · turn right 90°",
+      "duration": 2.466666666666667
+    },
+    {
+      "id": "own_turn180",
+      "label": "Original · turn around",
+      "duration": 1.6333333333333333
+    },
+    {
+      "id": "own_forward_steps",
+      "label": "Original · forward targets",
+      "duration": 4.633333333333334
+    },
+    {
+      "id": "own_backward_steps",
+      "label": "Original · backward targets",
+      "duration": 3.2666666666666666
+    },
+    {
+      "id": "own_left_steps",
+      "label": "Original · sidestep left",
+      "duration": 3.2666666666666666
+    },
+    {
+      "id": "own_right_steps",
+      "label": "Original · sidestep right",
+      "duration": 3.2666666666666666
+    },
+    {
+      "id": "own_fast_long_step",
+      "label": "Original · 3 m rapid arrival",
+      "duration": 0.5666666666666667
+    },
+    {
+      "id": "own_run",
+      "label": "Original · playful run",
+      "duration": 3.1666666666666665
+    },
+    {
+      "id": "own_jump_over",
+      "label": "Original · jump over K0-Tech",
+      "duration": 4.5
+    },
+    {
+      "id": "fresh_slow_walk",
+      "label": "Original · deliberate slow walk",
+      "duration": 3.8333333333333335
+    },
+    {
+      "id": "fresh_brisk_walk",
+      "label": "Original · brisk walk",
+      "duration": 3.966666666666667
+    },
+    {
+      "id": "fresh_jog",
+      "label": "Original · light jog",
+      "duration": 3.433333333333333
+    },
+    {
+      "id": "fresh_walk_start",
+      "label": "Original · walk start",
+      "duration": 3.1333333333333333
+    },
+    {
+      "id": "fresh_walk_stop",
+      "label": "Original · walk stop",
+      "duration": 2.7333333333333334
+    },
+    {
+      "id": "fresh_crouch_forward",
+      "label": "Original · crouched forward",
+      "duration": 3.966666666666667
+    },
+    {
+      "id": "fresh_crouch_backward",
+      "label": "Original · crouched backward",
+      "duration": 2.7666666666666666
+    },
+    {
+      "id": "fresh_crouch_left",
+      "label": "Original · crouched left",
+      "duration": 4.9
+    },
+    {
+      "id": "fresh_crouch_right",
+      "label": "Original · crouched right",
+      "duration": 4.1
+    },
+    {
+      "id": "fresh_duck_under",
+      "label": "Original · duck through low space",
+      "duration": 6.533333333333333
+    },
+    {
+      "id": "fresh_sit_down",
+      "label": "Original · seated lowering",
+      "duration": 2.066666666666667
+    },
+    {
+      "id": "fresh_sit_hold",
+      "label": "Original · seated hold",
+      "duration": 1.6666666666666667
+    },
+    {
+      "id": "fresh_stand_from_seat",
+      "label": "Original · stand from seated pose",
+      "duration": 3.2666666666666666
+    },
+    {
+      "id": "fresh_guarded_steps",
+      "label": "Original · guarded side steps",
+      "duration": 4.9
+    },
+    {
+      "id": "fresh_limp",
+      "label": "Original · asymmetric limp experiment",
+      "duration": 4.1
+    },
+    {
+      "id": "fresh_zombie_walk",
+      "label": "Original · arms-forward walk",
+      "duration": 4.766666666666667
+    },
+    {
+      "id": "fresh_skip",
+      "label": "Original · skipping experiment",
+      "duration": 3.7
+    },
+    {
+      "id": "fresh_dance",
+      "label": "Original · playful torso and arm sequence",
+      "duration": 7.233333333333333
+    },
+    {
+      "id": "mocap_ukemi",
+      "label": "Ukemi / shoulder roll",
+      "duration": 4.733333333333333
+    },
+    {
+      "id": "mocap_gorilla_side",
+      "label": "Gorilla sideways exercise",
+      "duration": 8.1
+    },
+    {
+      "id": "mocap_gorilla_front",
+      "label": "Gorilla forward exercise",
+      "duration": 7.933333333333334
+    },
+    {
+      "id": "mocap_technical_standup",
+      "label": "BJJ technical stand-up",
+      "duration": 7.066666666666666
+    },
+    {
+      "id": "mocap_sumo_stomp",
+      "label": "Sumo stomp / leg lift",
+      "duration": 7.233333333333333
+    },
+    {
+      "id": "mocap_deadlift",
+      "label": "Deadlift",
+      "duration": 6.266666666666667
+    },
+    {
+      "id": "authored:Standby_Idle",
+      "label": "C08 authored · Standby idle",
+      "duration": 4
+    },
+    {
+      "id": "authored:Heavy_Walk_Cycle",
+      "label": "C08 authored · Heavy walk",
+      "duration": 1.7999999523162842
+    },
+    {
+      "id": "authored:Carry_Walk_Cycle",
+      "label": "C08 authored · Carry walk",
+      "duration": 2.4000000953674316
+    },
+    {
+      "id": "authored:Work_Inspect",
+      "label": "C08 authored · Inspect",
+      "duration": 5
+    },
+    {
+      "id": "authored:Crouch_Service",
+      "label": "C08 authored · Service crouch",
+      "duration": 5
+    }
+  ],
+  "naturalAdvance": {
+    "from": "fresh_sit_down",
+    "to": "own_stand_up"
+  },
+  "firstBag": [
+    "mocap_gorilla_front",
+    "mocap_gorilla_side",
+    "fresh_sit_hold",
+    "own_jump_over",
+    "fresh_zombie_walk",
+    "own_reach_right",
+    "mocap_ukemi",
+    "authored:Work_Inspect",
+    "authored:Crouch_Service",
+    "authored:Heavy_Walk_Cycle",
+    "own_stand_up",
+    "fresh_duck_under",
+    "fresh_jog",
+    "own_right_steps",
+    "fresh_dance",
+    "fresh_slow_walk",
+    "fresh_limp",
+    "own_forward_steps",
+    "fresh_brisk_walk",
+    "fresh_walk_start",
+    "own_turn180",
+    "own_fast_long_step",
+    "fresh_crouch_backward",
+    "mocap_technical_standup",
+    "fresh_walk_stop",
+    "own_hands_high",
+    "fresh_stand_from_seat",
+    "fresh_crouch_right",
+    "own_run",
+    "own_idle",
+    "mocap_deadlift",
+    "own_crouch_down",
+    "own_crouch_hold",
+    "mocap_sumo_stomp",
+    "own_left_steps",
+    "own_backward_steps",
+    "authored:Standby_Idle",
+    "fresh_skip",
+    "fresh_sit_down",
+    "own_turn_left90",
+    "fresh_crouch_forward",
+    "authored:Carry_Walk_Cycle",
+    "fresh_guarded_steps",
+    "own_deep_crouch",
+    "own_reach_both",
+    "fresh_crouch_left",
+    "own_turn_right90"
+  ],
+  "status": "passed"
+}

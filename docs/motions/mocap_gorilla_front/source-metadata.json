@@ -1,0 +1,19 @@
+{
+  "id": "mocap_gorilla_front",
+  "source_motion_sha256": "081364e4cf975239dca46fbb57932c131edc170785f05c6e5c64c2c2918ddd2d",
+  "provenance_type": "video_mocap",
+  "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+  "source_space": "SOMA world, +Y up, metres; source translation applied exactly once",
+  "frames": 239,
+  "sample_rate": 30,
+  "duration_s": 7.933333333333334,
+  "source_joint_count": 77,
+  "transform_to_saved_joint_max_error_m": 3.372570972715039e-06,
+  "source_file_id": "gorilla-front",
+  "reference_note": "Median recovered identity/scale, zero public rotations and zero translation; exact matching SOMA 0.3.3 runtime with procedural conventions",
+  "limitations": [
+    "Monocular recovery estimates occluded limbs and depth",
+    "Direct experimental adaptation; not a physical/contact solve",
+    "Original video and source frames remain local"
+  ]
+}

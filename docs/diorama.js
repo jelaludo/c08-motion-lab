@@ -239,7 +239,9 @@ for(const button of document.querySelectorAll('[data-camera]'))button.onclick=()
 document.addEventListener('keydown',event=>{if(event.code==='Space'&&!/INPUT|SELECT|BUTTON/.test(document.activeElement.tagName)){event.preventDefault();playing=!playing;update(time)}});
 try{
  const loader=new GLTFLoader();catalog=await fetch('motions/catalog.json').then(r=>r.json());
- const assets=await Promise.all(catalog.tests.map(async(entry,i)=>{const asset=await loader.loadAsync(entry.file);$('loading-text').textContent=`Preparing movement ${i+1} / ${catalog.tests.length}`;return [entry,asset]}));
+ const storyIds=new Set(['own_idle','own_crouch_down','own_crouch_hold','own_stand_up','own_deep_crouch','own_reach_right','own_reach_both','own_hands_high','own_turn_left90','own_turn_right90','own_turn180','own_forward_steps','own_backward_steps','own_left_steps','own_right_steps','own_run','own_jump_over']);
+ const storyTests=catalog.tests.filter(entry=>storyIds.has(entry.id));
+ const assets=await Promise.all(storyTests.map(async(entry,i)=>{const asset=await loader.loadAsync(entry.file);$('loading-text').textContent=`Preparing movement ${i+1} / ${storyTests.length}`;return [entry,asset]}));
  const base=assets.find(([entry])=>entry.id==='own_idle')[1],clips=new Map(assets.map(([entry,asset])=>[entry.id,asset.animations[0]]));
  robot=setupActor(base,clips,true);
  for(const [,asset] of assets)if(asset!==base)asset.scene.traverse(o=>{if(o.isMesh){o.geometry.dispose();for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose();o.skeleton?.dispose()}});

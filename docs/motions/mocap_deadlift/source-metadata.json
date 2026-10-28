@@ -1,0 +1,19 @@
+{
+  "id": "mocap_deadlift",
+  "source_motion_sha256": "2ea8bd900a117fa5b6e2b71df0ca0742b22d76e6df1fc0a527ef2e77337dbc7d",
+  "provenance_type": "video_mocap",
+  "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+  "source_space": "SOMA world, +Y up, metres; source translation applied exactly once",
+  "frames": 189,
+  "sample_rate": 30,
+  "duration_s": 6.266666666666667,
+  "source_joint_count": 77,
+  "transform_to_saved_joint_max_error_m": 3.7699642234656494e-06,
+  "source_file_id": "deadlift",
+  "reference_note": "Median recovered identity/scale, zero public rotations and zero translation; exact matching SOMA 0.3.3 runtime with procedural conventions",
+  "limitations": [
+    "Monocular recovery estimates occluded limbs and depth",
+    "Direct experimental adaptation; not a physical/contact solve",
+    "Original video and source frames remain local"
+  ]
+}

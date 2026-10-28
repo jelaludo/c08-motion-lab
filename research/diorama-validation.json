@@ -702,7 +702,7 @@
     "minimumChaseRootDistance": 1.3509256086106296
   },
   "inspect": {
-    "tests": 18,
+    "tests": 42,
     "allOriginal": true
   },
   "mobile": true

@@ -1,0 +1,31 @@
+{
+  "kind": "video_mocap",
+  "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+  "clip": "VC_ukemi",
+  "frames": 143,
+  "fps": 30,
+  "duration_s": 4.733333110809326,
+  "three_revision": "160",
+  "gltf_errors": 0,
+  "gltf_warnings": 0,
+  "gltf_messages": [],
+  "sampling_hz": 120,
+  "skinned_geometry_min_floor_y_m": 0.006225270283995554,
+  "max_exported_joint_position_error_m": 2.119841981905222e-06,
+  "max_segment_length_variation_m": 4.947881661609976e-07,
+  "inverted_head_below_pelvis_frames": 15,
+  "independent_clones": true,
+  "prohibited_animation_tracks": [],
+  "max_abs_whole_body_ground_offset_m": 0.28544778778694047,
+  "limitations": [
+    "Monocular recovery estimates occluded limbs and depth",
+    "Direct experimental adaptation; not a physical/contact solve",
+    "Original video and source frames remain local",
+    "C08 has much broader armor and different proportions from the performer",
+    "Whole-avatar grounding changes vertical root motion, especially during inversion; offsets are reported",
+    "No hand/foot pinning or armor self-collision solve",
+    "Finger curls remain at C08 rest pose; source hand detail is not reproduced",
+    "Not a MotionBricks-generated clip, not a G1 CSV, not physical robot control",
+    "Performer approaches camera; head/upper body leave frame near end"
+  ]
+}

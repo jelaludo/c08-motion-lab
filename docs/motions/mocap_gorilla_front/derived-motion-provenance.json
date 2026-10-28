@@ -1,0 +1,30 @@
+{
+  "id": "gorilla-front",
+  "label": "Front-facing gorilla",
+  "source_sha256": "f74069e711836cedc60962d55a7ad816b71ee29b3b190f03b6a6f3df68e21354",
+  "source_duration_s": 7.966666666666667,
+  "source_fps": 30.0,
+  "derived_frames": 239,
+  "derived_fps": 30,
+  "derived_last_key_duration_s": 7.933333333333334,
+  "derived_soma_npz_sha256": "081364e4cf975239dca46fbb57932c131edc170785f05c6e5c64c2c2918ddd2d",
+  "recovery_model": "GEM-X Body Motion native77",
+  "recovery_code_commit": "20555befe2fbbe5b2015e1fff7ff214dc18ea9d6",
+  "camera_mode": "static",
+  "contact_processing": "Raw recovery; standing/foot-plant constraints not applied",
+  "limitations": [
+    "Camera is fixed, verified from source backgrounds",
+    "Performer approaches into an extreme face close-up; most body joints are unobserved near the end",
+    "Knuckle/hand contacts require independent ground review"
+  ],
+  "visual_review": {
+    "reviewed_seconds": [
+      2.0,
+      3.97,
+      5.93,
+      7.53
+    ],
+    "finding": "Approach and knuckle gait are coherent while visible. Upper torso leaves frame after roughly 5 s; ending becomes an extreme face close-up, so late full-body pose is speculative completion rather than faithful mocap."
+  },
+  "raw_source_media_included": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mocap_ukemi",
+  "source_motion_sha256": "71fcfb7168d336220142a4a5cfbf05fbde9d3f70cd8fc5dcd3c6eff9e4a874d8",
+  "provenance_type": "video_mocap",
+  "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+  "source_space": "SOMA world, +Y up, metres; source translation applied exactly once",
+  "frames": 143,
+  "sample_rate": 30,
+  "duration_s": 4.733333333333333,
+  "source_joint_count": 77,
+  "transform_to_saved_joint_max_error_m": 2.8324752747721504e-06,
+  "source_file_id": "ukemi",
+  "reference_note": "Median recovered identity/scale, zero public rotations and zero translation; exact matching SOMA 0.3.3 runtime with procedural conventions",
+  "limitations": [
+    "Monocular recovery estimates occluded limbs and depth",
+    "Direct experimental adaptation; not a physical/contact solve",
+    "Original video and source frames remain local"
+  ]
+}

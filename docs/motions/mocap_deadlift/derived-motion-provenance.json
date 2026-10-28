@@ -1,0 +1,30 @@
+{
+  "id": "deadlift",
+  "label": "Deadlift",
+  "source_sha256": "fd659b1c986949dd076d85748923b2b27296be9e418713c0e6b3fbad0cc093ef",
+  "source_duration_s": 6.3,
+  "source_fps": 30.0,
+  "derived_frames": 189,
+  "derived_fps": 30,
+  "derived_last_key_duration_s": 6.266666666666667,
+  "derived_soma_npz_sha256": "2ea8bd900a117fa5b6e2b71df0ca0742b22d76e6df1fc0a527ef2e77337dbc7d",
+  "recovery_model": "GEM-X Body Motion native77",
+  "recovery_code_commit": "20555befe2fbbe5b2015e1fff7ff214dc18ea9d6",
+  "camera_mode": "static",
+  "contact_processing": "Raw recovery; standing/foot-plant constraints not applied",
+  "limitations": [
+    "Camera is fixed, verified from static gym structure",
+    "Hex-bar geometry and hand-bar contacts are not reconstructed",
+    "Clip contains lifting, release/upper-body flourish, then another reach to the bar"
+  ],
+  "visual_review": {
+    "reviewed_seconds": [
+      1.57,
+      3.13,
+      4.7,
+      5.97
+    ],
+    "finding": "The lift, lowering/release, upper-body flourish and final reach follow the visible reference. Hex-bar geometry, load and precise hand-bar contact are not recovered."
+  },
+  "raw_source_media_included": false
+}

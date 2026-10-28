@@ -1,0 +1,19 @@
+{
+  "id": "ukemi",
+  "label": "Ukemi shoulder roll",
+  "source_sha256": "14938dbf21397b14d8b8567d2fecdc6b007610d554674a309a60455cf87eec34",
+  "source_duration_s": 4.766666666666667,
+  "source_fps": 30,
+  "derived_frames": 143,
+  "derived_fps": 30,
+  "derived_last_key_duration_s": 4.733333333333333,
+  "derived_soma_npz_sha256": "71fcfb7168d336220142a4a5cfbf05fbde9d3f70cd8fc5dcd3c6eff9e4a874d8",
+  "recovery_model": "GEM-X Body Motion native77",
+  "recovery_code_commit": "20555befe2fbbe5b2015e1fff7ff214dc18ea9d6",
+  "camera_mode": "static",
+  "contact_processing": "Raw recovery; no standing or foot-plant constraints applied to intentional roll",
+  "limitations": [
+    "Performer approaches camera; head/upper body leave frame near end"
+  ],
+  "raw_source_media_included": false
+}

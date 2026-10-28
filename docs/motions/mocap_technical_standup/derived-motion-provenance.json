@@ -1,0 +1,30 @@
+{
+  "id": "technical-standup",
+  "label": "BJJ technical stand-up",
+  "source_sha256": "438c4e3a8697ce732c66bf6ad8bb5fef4cc491a98c8f96daf9c55241d85b9a4c",
+  "source_duration_s": 7.1,
+  "source_fps": 30.0,
+  "derived_frames": 213,
+  "derived_fps": 30,
+  "derived_last_key_duration_s": 7.066666666666666,
+  "derived_soma_npz_sha256": "007686fb73bfc479e1cefa3b902b1fa5d08c7d1e531b3580c61c48459e9e2100",
+  "recovery_model": "GEM-X Body Motion native77",
+  "recovery_code_commit": "20555befe2fbbe5b2015e1fff7ff214dc18ea9d6",
+  "camera_mode": "static",
+  "contact_processing": "Raw recovery; standing/foot-plant constraints not applied",
+  "limitations": [
+    "Camera is fixed, verified from source backgrounds",
+    "Extended legs and feet cross the image boundary during floor transitions",
+    "Hand-supported technical stand-up includes intentional non-foot body contacts"
+  ],
+  "visual_review": {
+    "reviewed_seconds": [
+      1.77,
+      3.53,
+      5.3,
+      6.7
+    ],
+    "finding": "Seated guard, alternate hand-supported floor transitions and low standing finish are recognizable. Extended feet leave image boundaries; hands/fingers and planted wrist positions are approximate."
+  },
+  "raw_source_media_included": false
+}

@@ -1,0 +1,30 @@
+{
+  "id": "sumo-stomp",
+  "label": "Sumo stomp",
+  "source_sha256": "5a8a1c125f6ba4e08a8feade79cf3e5c3cb104721385abbd2dc1f90b872bfe06",
+  "source_duration_s": 7.266666666666667,
+  "source_fps": 30.0,
+  "derived_frames": 218,
+  "derived_fps": 30,
+  "derived_last_key_duration_s": 7.233333333333333,
+  "derived_soma_npz_sha256": "7799e08d5d715acdb427e3531e119db9940afe5d2b78f08542b23fbd0e1eb7ea",
+  "recovery_model": "GEM-X Body Motion native77",
+  "recovery_code_commit": "20555befe2fbbe5b2015e1fff7ff214dc18ea9d6",
+  "camera_mode": "static",
+  "contact_processing": "Raw recovery; standing/foot-plant constraints not applied",
+  "limitations": [
+    "Camera is fixed, verified from static ceiling/door frame",
+    "Large lateral leg lifts can occlude the lifted thigh and torso",
+    "Background hanging bags are not tracked as scene geometry"
+  ],
+  "visual_review": {
+    "reviewed_seconds": [
+      1.8,
+      3.6,
+      5.43,
+      6.87
+    ],
+    "finding": "Wide stance, lateral weight transfer and leg lifts, arm gestures and final squat are recovered. Lifted-limb occlusion and exact floor contacts remain unvalidated."
+  },
+  "raw_source_media_included": false
+}

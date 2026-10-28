@@ -1,0 +1,19 @@
+{
+  "id": "mocap_technical_standup",
+  "source_motion_sha256": "007686fb73bfc479e1cefa3b902b1fa5d08c7d1e531b3580c61c48459e9e2100",
+  "provenance_type": "video_mocap",
+  "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+  "source_space": "SOMA world, +Y up, metres; source translation applied exactly once",
+  "frames": 213,
+  "sample_rate": 30,
+  "duration_s": 7.066666666666666,
+  "source_joint_count": 77,
+  "transform_to_saved_joint_max_error_m": 7.571622973046033e-06,
+  "source_file_id": "technical-standup",
+  "reference_note": "Median recovered identity/scale, zero public rotations and zero translation; exact matching SOMA 0.3.3 runtime with procedural conventions",
+  "limitations": [
+    "Monocular recovery estimates occluded limbs and depth",
+    "Direct experimental adaptation; not a physical/contact solve",
+    "Original video and source frames remain local"
+  ]
+}

@@ -1,7 +1,6 @@
 {
-  "public_tests": 18,
-  "original_conditioning_tests": 18,
-  "automatic_review_flags": 6,
+  "public_tests": 42,
+  "original_conditioning_tests": 36,
   "gltf_errors": 0,
   "gltf_warnings": 0,
   "excluded": "All bundled-sample-conditioned outputs, NVIDIA sample motion files, model weights, caches, environments and private reference video",
@@ -9,5 +8,8 @@
     "C08 Industrial Worker",
     "K0-TECH-01 / Felis"
   ],
-  "third_party_runtime": "Three.js r160 (MIT)"
+  "third_party_runtime": "Three.js r160 (MIT)",
+  "video_derived_tests": 6,
+  "authored_c08_clips": 5,
+  "playback_choices": 47
 }

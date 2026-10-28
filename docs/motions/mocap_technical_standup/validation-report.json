@@ -1,0 +1,33 @@
+{
+  "kind": "video_mocap",
+  "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+  "clip": "VC_technical_standup",
+  "frames": 213,
+  "fps": 30,
+  "duration_s": 7.066666603088379,
+  "three_revision": "160",
+  "gltf_errors": 0,
+  "gltf_warnings": 0,
+  "gltf_messages": [],
+  "sampling_hz": 120,
+  "skinned_geometry_min_floor_y_m": 0.0037618509934356226,
+  "max_exported_joint_position_error_m": 1.7659357113873473e-06,
+  "max_segment_length_variation_m": 2.233868863221744e-07,
+  "inverted_head_below_pelvis_frames": 11,
+  "independent_clones": true,
+  "prohibited_animation_tracks": [],
+  "max_abs_whole_body_ground_offset_m": 0.3376701336635964,
+  "limitations": [
+    "Monocular recovery estimates occluded limbs and depth",
+    "Direct experimental adaptation; not a physical/contact solve",
+    "Original video and source frames remain local",
+    "C08 has much broader armor and different proportions from the performer",
+    "Whole-avatar grounding changes vertical root motion, especially during inversion; offsets are reported",
+    "No hand/foot pinning or armor self-collision solve",
+    "Finger curls remain at C08 rest pose; source hand detail is not reproduced",
+    "Not a MotionBricks-generated clip, not a G1 CSV, not physical robot control",
+    "Camera is fixed, verified from source backgrounds",
+    "Extended legs and feet cross the image boundary during floor transitions",
+    "Hand-supported technical stand-up includes intentional non-foot body contacts"
+  ]
+}

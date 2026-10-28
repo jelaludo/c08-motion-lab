@@ -1,0 +1,30 @@
+{
+  "id": "gorilla-side",
+  "label": "Sideways gorilla",
+  "source_sha256": "ca844efa19ba7d32d5043832b8d40bb538803c98036f5c1cb8ecbe6193f3c05e",
+  "source_duration_s": 8.133333333333333,
+  "source_fps": 30.0,
+  "derived_frames": 244,
+  "derived_fps": 30,
+  "derived_last_key_duration_s": 8.1,
+  "derived_soma_npz_sha256": "95a14d16aaf5457fc87e91758ef76f158df0b946b86cc0b093e16ad0f2457362",
+  "recovery_model": "GEM-X Body Motion native77",
+  "recovery_code_commit": "20555befe2fbbe5b2015e1fff7ff214dc18ea9d6",
+  "camera_mode": "static",
+  "contact_processing": "Raw recovery; standing/foot-plant constraints not applied",
+  "limitations": [
+    "Camera is fixed, verified from source backgrounds",
+    "Performer approaches camera and upper body is severely cropped near the end",
+    "Knuckle/hand contacts and bent posture are outside a simple standing foot-contact model"
+  ],
+  "visual_review": {
+    "reviewed_seconds": [
+      2.03,
+      4.07,
+      6.07,
+      7.7
+    ],
+    "finding": "Chest-to-low crouch and sideways knuckle locomotion follow the visible action; late near-camera upper-body crop and occluded limbs are less reliable. Closed-fist finger shapes are not faithful."
+  },
+  "raw_source_media_included": false
+}

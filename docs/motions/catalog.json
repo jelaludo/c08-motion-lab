@@ -834,9 +834,1217 @@
       "technical_validation": "passed",
       "provenance_type": "original",
       "category": "Original diorama actions"
+    },
+    {
+      "id": "fresh_slow_walk",
+      "label": "Original \u00b7 deliberate slow walk",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 116,
+      "duration_s": 3.8333333333333335,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.9269096851348877,
+        "pelvis_height_min_m": 0.7543866038322449,
+        "pelvis_height_max_m": 0.7799999713897705,
+        "maximum_joint_key_step_rad": 0.23208728432655334,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.06597819793224335
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_slow_walk",
+        "duration_s": 3.8333332538604736,
+        "frames": 116,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0028999608690140934,
+        "max_exported_joint_position_error_m": 4.4768598873023707e-07,
+        "max_segment_length_variation_m": 1.739625083430063e-07,
+        "heuristic_stance_sole_xz_drift_m": 3.208448499974308e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_slow_walk",
+      "file": "motions/fresh_slow_walk/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_brisk_walk",
+      "label": "Original \u00b7 brisk walk",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 120,
+      "duration_s": 3.966666666666667,
+      "source_metrics": {
+        "root_horizontal_travel_m": 2.3558313846588135,
+        "pelvis_height_min_m": 0.742712676525116,
+        "pelvis_height_max_m": 0.7822676301002502,
+        "maximum_joint_key_step_rad": 0.24562886357307434,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.07503665852546693
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_brisk_walk",
+        "duration_s": 3.9666666984558105,
+        "frames": 120,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0014870860151310608,
+        "max_exported_joint_position_error_m": 8.781232938596016e-07,
+        "max_segment_length_variation_m": 1.2563783785557447e-07,
+        "heuristic_stance_sole_xz_drift_m": 5.951447546223467e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_brisk_walk",
+      "file": "motions/fresh_brisk_walk/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_jog",
+      "label": "Original \u00b7 light jog",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 104,
+      "duration_s": 3.433333333333333,
+      "source_metrics": {
+        "root_horizontal_travel_m": 3.2104575634002686,
+        "pelvis_height_min_m": 0.7345433831214905,
+        "pelvis_height_max_m": 0.7882080078125,
+        "maximum_joint_key_step_rad": 0.29185950756073,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.07289036977291108
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_jog",
+        "duration_s": 3.433333396911621,
+        "frames": 104,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.003584289847487508,
+        "max_exported_joint_position_error_m": 1.6106373274356007e-06,
+        "max_segment_length_variation_m": 1.2487174044784055e-07,
+        "heuristic_stance_sole_xz_drift_m": 9.036827418560879e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "C08 geometry penetrates the floor"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_jog",
+      "file": "motions/fresh_jog/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_walk_start",
+      "label": "Original \u00b7 walk start",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 95,
+      "duration_s": 3.1333333333333333,
+      "source_metrics": {
+        "root_horizontal_travel_m": 1.0626496076583862,
+        "pelvis_height_min_m": 0.7373005151748657,
+        "pelvis_height_max_m": 0.7929999828338623,
+        "maximum_joint_key_step_rad": 0.28338852524757385,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.06623737382888795
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_walk_start",
+        "duration_s": 3.133333444595337,
+        "frames": 95,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0020975513623920222,
+        "max_exported_joint_position_error_m": 5.138486983257906e-07,
+        "max_segment_length_variation_m": 1.5972591560498017e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.047869413464214e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_walk_start",
+      "file": "motions/fresh_walk_start/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_walk_stop",
+      "label": "Original \u00b7 walk stop",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 83,
+      "duration_s": 2.7333333333333334,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.6378349661827087,
+        "pelvis_height_min_m": 0.7462790608406067,
+        "pelvis_height_max_m": 0.793449878692627,
+        "maximum_joint_key_step_rad": 0.16162490844726562,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.061315669298172
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_walk_stop",
+        "duration_s": 2.7333333492279053,
+        "frames": 83,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0036742642652308546,
+        "max_exported_joint_position_error_m": 4.98105015695321e-07,
+        "max_segment_length_variation_m": 1.634227718705361e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.2710895475918656e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_walk_stop",
+      "file": "motions/fresh_walk_stop/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_crouch_forward",
+      "label": "Original \u00b7 crouched forward",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 120,
+      "duration_s": 3.966666666666667,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.7327749133110046,
+        "pelvis_height_min_m": 0.5574246048927307,
+        "pelvis_height_max_m": 0.6444957256317139,
+        "maximum_joint_key_step_rad": 0.08545750379562378,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.29454825499615916,
+        "max_foot_floor_lift_m": 0.04778124260902405
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_crouch_forward",
+        "duration_s": 3.9666666984558105,
+        "frames": 120,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.017709720674698268,
+        "max_exported_joint_position_error_m": 5.082459917861559e-07,
+        "max_segment_length_variation_m": 3.4596783637930173e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.7448160834295195e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "C08 geometry penetrates the floor",
+        "Large C08 pelvis reach correction",
+        "Generated G1 joint-limit violations"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_crouch_forward",
+      "file": "motions/fresh_crouch_forward/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_crouch_backward",
+      "label": "Original \u00b7 crouched backward",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 84,
+      "duration_s": 2.7666666666666666,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.7289779782295227,
+        "pelvis_height_min_m": 0.5771883726119995,
+        "pelvis_height_max_m": 0.6621271967887878,
+        "maximum_joint_key_step_rad": 0.17461955547332764,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.06805600094795228
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_crouch_backward",
+        "duration_s": 2.7666666507720947,
+        "frames": 84,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.003315532747434557,
+        "max_exported_joint_position_error_m": 4.539852304718942e-07,
+        "max_segment_length_variation_m": 1.3755516886648778e-07,
+        "heuristic_stance_sole_xz_drift_m": 7.003911660641426e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "Generated G1 joint-limit violations"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_crouch_backward",
+      "file": "motions/fresh_crouch_backward/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_crouch_left",
+      "label": "Original \u00b7 crouched left",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 148,
+      "duration_s": 4.9,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.8179454207420349,
+        "pelvis_height_min_m": 0.5771883726119995,
+        "pelvis_height_max_m": 0.7291525602340698,
+        "maximum_joint_key_step_rad": 0.11897337436676025,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.42186814700601155,
+        "max_foot_floor_lift_m": 0.03457301723957062
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_crouch_left",
+        "duration_s": 4.900000095367432,
+        "frames": 148,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.018516061110309765,
+        "max_exported_joint_position_error_m": 4.968951379263294e-07,
+        "max_segment_length_variation_m": 1.8006172503026718e-07,
+        "heuristic_stance_sole_xz_drift_m": 5.525842750027406e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "C08 geometry penetrates the floor",
+        "Large C08 pelvis reach correction",
+        "Generated G1 joint-limit violations"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_crouch_left",
+      "file": "motions/fresh_crouch_left/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_crouch_right",
+      "label": "Original \u00b7 crouched right",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 124,
+      "duration_s": 4.1,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.7958828210830688,
+        "pelvis_height_min_m": 0.5771883726119995,
+        "pelvis_height_max_m": 0.8363230228424072,
+        "maximum_joint_key_step_rad": 0.2338770627975464,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.04241445529460907
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_crouch_right",
+        "duration_s": 4.099999904632568,
+        "frames": 124,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.0026415404810946307,
+        "max_exported_joint_position_error_m": 4.342250780842853e-07,
+        "max_segment_length_variation_m": 1.3837364704061272e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.865532061812136e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "C08 geometry penetrates the floor",
+        "Generated G1 joint-limit violations"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_crouch_right",
+      "file": "motions/fresh_crouch_right/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_duck_under",
+      "label": "Original \u00b7 duck through low space",
+      "category": "Fresh original interactions",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 197,
+      "duration_s": 6.533333333333333,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.6606507897377014,
+        "pelvis_height_min_m": 0.4164442718029022,
+        "pelvis_height_max_m": 0.7938345074653625,
+        "maximum_joint_key_step_rad": 0.21069955825805664,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.25212312045328933,
+        "max_foot_floor_lift_m": 0.027423112273216248
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_duck_under",
+        "duration_s": 6.5333333015441895,
+        "frames": 197,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.006496255522243963,
+        "max_exported_joint_position_error_m": 5.869948720837952e-07,
+        "max_segment_length_variation_m": 1.4345481802457982e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.869412235940036e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "Large C08 pelvis reach correction",
+        "Generated G1 joint-limit violations"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_duck_under",
+      "file": "motions/fresh_duck_under/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_sit_down",
+      "label": "Original \u00b7 seated lowering",
+      "category": "Fresh original interactions",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 63,
+      "duration_s": 2.066666666666667,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.2497943937778473,
+        "pelvis_height_min_m": 0.46000000834465027,
+        "pelvis_height_max_m": 0.7929999828338623,
+        "maximum_joint_key_step_rad": 0.08219766616821289,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.19627661871910096
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_sit_down",
+        "duration_s": 2.066666603088379,
+        "frames": 63,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007302295897368992,
+        "max_exported_joint_position_error_m": 6.700558700631473e-07,
+        "max_segment_length_variation_m": 9.508411025205277e-08,
+        "heuristic_stance_sole_xz_drift_m": 6.674205180532343e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "Large C08 foot-clearance correction"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_sit_down",
+      "file": "motions/fresh_sit_down/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_sit_hold",
+      "label": "Original \u00b7 seated hold",
+      "category": "Fresh original interactions",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 51,
+      "duration_s": 1.6666666666666667,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.08377289026975632,
+        "pelvis_height_min_m": 0.46000000834465027,
+        "pelvis_height_max_m": 0.48598024249076843,
+        "maximum_joint_key_step_rad": 0.06042366474866867,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.20457191634178162
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_sit_hold",
+        "duration_s": 1.6666666269302368,
+        "frames": 51,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007807773212094714,
+        "max_exported_joint_position_error_m": 5.780120368444016e-07,
+        "max_segment_length_variation_m": 5.599848773574223e-08,
+        "heuristic_stance_sole_xz_drift_m": 4.000964018883917e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "Large C08 foot-clearance correction"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_sit_hold",
+      "file": "motions/fresh_sit_hold/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_stand_from_seat",
+      "label": "Original \u00b7 stand from seated pose",
+      "category": "Fresh original interactions",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 99,
+      "duration_s": 3.2666666666666666,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.2690269649028778,
+        "pelvis_height_min_m": 0.46000000834465027,
+        "pelvis_height_max_m": 0.811139702796936,
+        "maximum_joint_key_step_rad": 0.22192919254302979,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.18640147018432618
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_stand_from_seat",
+        "duration_s": 3.2666666507720947,
+        "frames": 99,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0074417667816962605,
+        "max_exported_joint_position_error_m": 5.916310147895053e-07,
+        "max_segment_length_variation_m": 1.0868430549981767e-07,
+        "heuristic_stance_sole_xz_drift_m": 6.121763647947226e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "Large C08 foot-clearance correction"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_stand_from_seat",
+      "file": "motions/fresh_stand_from_seat/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_guarded_steps",
+      "label": "Original \u00b7 guarded side steps",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 148,
+      "duration_s": 4.9,
+      "source_metrics": {
+        "root_horizontal_travel_m": 1.36057448387146,
+        "pelvis_height_min_m": 0.7437922954559326,
+        "pelvis_height_max_m": 0.7799999713897705,
+        "maximum_joint_key_step_rad": 0.09197360277175903,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.3082616277534248,
+        "max_foot_floor_lift_m": 0.08739653098583222
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_guarded_steps",
+        "duration_s": 4.900000095367432,
+        "frames": 148,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.06694458691265327,
+        "max_exported_joint_position_error_m": 2.4210241216439436e-06,
+        "max_segment_length_variation_m": 1.5971769717904039e-07,
+        "heuristic_stance_sole_xz_drift_m": 1.613277916354818e-06,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "C08 geometry penetrates the floor",
+        "Large C08 pelvis reach correction"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_guarded_steps",
+      "file": "motions/fresh_guarded_steps/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_limp",
+      "label": "Original \u00b7 asymmetric limp experiment",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 124,
+      "duration_s": 4.1,
+      "source_metrics": {
+        "root_horizontal_travel_m": 1.0879201889038086,
+        "pelvis_height_min_m": 0.7457839250564575,
+        "pelvis_height_max_m": 0.7653746604919434,
+        "maximum_joint_key_step_rad": 0.21239709854125977,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.08255793023109437
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_limp",
+        "duration_s": 4.099999904632568,
+        "frames": 124,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0008239003913122142,
+        "max_exported_joint_position_error_m": 4.619994466396564e-07,
+        "max_segment_length_variation_m": 1.9676792878398075e-07,
+        "heuristic_stance_sole_xz_drift_m": 4.076877207699555e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_limp",
+      "file": "motions/fresh_limp/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_zombie_walk",
+      "label": "Original \u00b7 arms-forward walk",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 144,
+      "duration_s": 4.766666666666667,
+      "source_metrics": {
+        "root_horizontal_travel_m": 1.1619503498077393,
+        "pelvis_height_min_m": 0.7575181126594543,
+        "pelvis_height_max_m": 0.7799999713897705,
+        "maximum_joint_key_step_rad": 0.2320803999900818,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.0660543875694275
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_zombie_walk",
+        "duration_s": 4.766666889190674,
+        "frames": 144,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0015907673202851177,
+        "max_exported_joint_position_error_m": 6.784616233346738e-07,
+        "max_segment_length_variation_m": 3.463184451990564e-07,
+        "heuristic_stance_sole_xz_drift_m": 5.02187949829635e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_zombie_walk",
+      "file": "motions/fresh_zombie_walk/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_skip",
+      "label": "Original \u00b7 skipping experiment",
+      "category": "Fresh original motion",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 112,
+      "duration_s": 3.7,
+      "source_metrics": {
+        "root_horizontal_travel_m": 1.7703505754470825,
+        "pelvis_height_min_m": 0.7501636147499084,
+        "pelvis_height_max_m": 0.8522657155990601,
+        "maximum_joint_key_step_rad": 0.21990492939949036,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.06588337163513547,
+        "max_foot_floor_lift_m": 0.06592444944381715
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_skip",
+        "duration_s": 3.700000047683716,
+        "frames": 112,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": -0.017298992524182516,
+        "max_exported_joint_position_error_m": 5.278660696844995e-07,
+        "max_segment_length_variation_m": 2.398462338737417e-07,
+        "heuristic_stance_sole_xz_drift_m": 5.181319236568918e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [
+        "C08 geometry penetrates the floor"
+      ],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_skip",
+      "file": "motions/fresh_skip/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "fresh_dance",
+      "label": "Original \u00b7 playful torso and arm sequence",
+      "category": "Fresh original styles",
+      "provenance_type": "original",
+      "kind": "motionbricks",
+      "frames": 218,
+      "duration_s": 7.233333333333333,
+      "source_metrics": {
+        "root_horizontal_travel_m": 0.5037406086921692,
+        "pelvis_height_min_m": 0.7529999613761902,
+        "pelvis_height_max_m": 0.7931258678436279,
+        "maximum_joint_key_step_rad": 0.18093502521514893,
+        "root_endpoint_error_m": 0.0
+      },
+      "adaptation": {
+        "max_pelvis_reach_correction_m": 0.0,
+        "max_foot_floor_lift_m": 0.05245695877075195
+      },
+      "validation": {
+        "three_revision": "160",
+        "clip": "MB_fresh_dance",
+        "duration_s": 7.233333110809326,
+        "frames": 218,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.007404448834889605,
+        "max_exported_joint_position_error_m": 3.978524166352279e-07,
+        "max_segment_length_variation_m": 1.3073342131075805e-08,
+        "heuristic_stance_sole_xz_drift_m": 3.4791413181131124e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "limitations": [
+          "Contacts use unreviewed prediction intervals; contact acceptance remains pending",
+          "No general self-collision or game acceptance test"
+        ]
+      },
+      "review_flags": [],
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "directory": "fresh_dance",
+      "file": "motions/fresh_dance/c08-motionbricks-test.glb",
+      "provenance": "Fresh original numerical conditioning, no bundled sample motion"
+    },
+    {
+      "id": "mocap_ukemi",
+      "label": "Ukemi / shoulder roll",
+      "category": "Video motion capture \u2192 C08",
+      "kind": "video_mocap",
+      "provenance_type": "user_reference_video",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "clip": "VC_ukemi",
+      "frames": 143,
+      "duration_s": 4.733333333333333,
+      "directory": "mocap_ukemi",
+      "file": "motions/mocap_ukemi/c08-mocap.glb",
+      "preview_file": "motions/mocap_ukemi/source-preview.json",
+      "has_blend": false,
+      "report_file": "motions/mocap_ukemi/retarget-report.json",
+      "review_flags": [
+        "Monocular recovery: occluded joints are estimates",
+        "Direct adaptation; no contact or self-collision solve",
+        "Source crops part of the body; late recovery is less reliable",
+        "Large whole-body grounding correction; inspect the reported offsets"
+      ],
+      "validation": {
+        "kind": "video_mocap",
+        "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+        "clip": "VC_ukemi",
+        "frames": 143,
+        "fps": 30,
+        "duration_s": 4.733333110809326,
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.006225270283995554,
+        "max_exported_joint_position_error_m": 2.119841981905222e-06,
+        "max_segment_length_variation_m": 4.947881661609976e-07,
+        "inverted_head_below_pelvis_frames": 15,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "max_abs_whole_body_ground_offset_m": 0.28544778778694047,
+        "limitations": [
+          "Monocular recovery estimates occluded limbs and depth",
+          "Direct experimental adaptation; not a physical/contact solve",
+          "Original video and source frames remain local",
+          "C08 has much broader armor and different proportions from the performer",
+          "Whole-avatar grounding changes vertical root motion, especially during inversion; offsets are reported",
+          "No hand/foot pinning or armor self-collision solve",
+          "Finger curls remain at C08 rest pose; source hand detail is not reproduced",
+          "Not a MotionBricks-generated clip, not a G1 CSV, not physical robot control",
+          "Performer approaches camera; head/upper body leave frame near end"
+        ]
+      },
+      "ground_policy": "Complete avatar is translated vertically each frame so its lowest rigid armor vertex is 15 mm above a flat floor. No foot locks, no standing pose constraint, no limb stretching; this is a measured presentation correction, not physical contact IK.",
+      "provenance": "User-provided reference exercise \u2192 GEM-X native SOMA \u2192 direct C08 adaptation; no MotionBricks generation"
+    },
+    {
+      "id": "mocap_gorilla_side",
+      "label": "Gorilla sideways exercise",
+      "category": "Video motion capture \u2192 C08",
+      "kind": "video_mocap",
+      "provenance_type": "user_reference_video",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "clip": "VC_gorilla_side",
+      "frames": 244,
+      "duration_s": 8.1,
+      "directory": "mocap_gorilla_side",
+      "file": "motions/mocap_gorilla_side/c08-mocap.glb",
+      "preview_file": "motions/mocap_gorilla_side/source-preview.json",
+      "has_blend": false,
+      "report_file": "motions/mocap_gorilla_side/retarget-report.json",
+      "review_flags": [
+        "Monocular recovery: occluded joints are estimates",
+        "Direct adaptation; no contact or self-collision solve",
+        "Source crops part of the body; late recovery is less reliable",
+        "Large whole-body grounding correction; inspect the reported offsets"
+      ],
+      "validation": {
+        "kind": "video_mocap",
+        "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+        "clip": "VC_gorilla_side",
+        "frames": 244,
+        "fps": 30,
+        "duration_s": 8.100000381469727,
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.013034114185415807,
+        "max_exported_joint_position_error_m": 2.0482011544756e-06,
+        "max_segment_length_variation_m": 2.729122263178674e-07,
+        "inverted_head_below_pelvis_frames": 107,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "max_abs_whole_body_ground_offset_m": 0.6418285292188806,
+        "limitations": [
+          "Monocular recovery estimates occluded limbs and depth",
+          "Direct experimental adaptation; not a physical/contact solve",
+          "Original video and source frames remain local",
+          "C08 has much broader armor and different proportions from the performer",
+          "Whole-avatar grounding changes vertical root motion, especially during inversion; offsets are reported",
+          "No hand/foot pinning or armor self-collision solve",
+          "Finger curls remain at C08 rest pose; source hand detail is not reproduced",
+          "Not a MotionBricks-generated clip, not a G1 CSV, not physical robot control",
+          "Camera is fixed, verified from source backgrounds",
+          "Performer approaches camera and upper body is severely cropped near the end",
+          "Knuckle/hand contacts and bent posture are outside a simple standing foot-contact model"
+        ]
+      },
+      "ground_policy": "Complete avatar is translated vertically each frame so its lowest rigid armor vertex is 15 mm above a flat floor. No foot locks, no standing pose constraint, no limb stretching; this is a measured presentation correction, not physical contact IK.",
+      "provenance": "User-provided reference exercise \u2192 GEM-X native SOMA \u2192 direct C08 adaptation; no MotionBricks generation"
+    },
+    {
+      "id": "mocap_gorilla_front",
+      "label": "Gorilla forward exercise",
+      "category": "Video motion capture \u2192 C08",
+      "kind": "video_mocap",
+      "provenance_type": "user_reference_video",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "clip": "VC_gorilla_front",
+      "frames": 239,
+      "duration_s": 7.933333333333334,
+      "directory": "mocap_gorilla_front",
+      "file": "motions/mocap_gorilla_front/c08-mocap.glb",
+      "preview_file": "motions/mocap_gorilla_front/source-preview.json",
+      "has_blend": false,
+      "report_file": "motions/mocap_gorilla_front/retarget-report.json",
+      "review_flags": [
+        "Monocular recovery: occluded joints are estimates",
+        "Direct adaptation; no contact or self-collision solve",
+        "Source crops part of the body; late recovery is less reliable",
+        "Large whole-body grounding correction; inspect the reported offsets"
+      ],
+      "validation": {
+        "kind": "video_mocap",
+        "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+        "clip": "VC_gorilla_front",
+        "frames": 239,
+        "fps": 30,
+        "duration_s": 7.933333396911621,
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.00422330546637345,
+        "max_exported_joint_position_error_m": 2.156863158147381e-06,
+        "max_segment_length_variation_m": 5.469886565356852e-07,
+        "inverted_head_below_pelvis_frames": 18,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "max_abs_whole_body_ground_offset_m": 0.7972291583392707,
+        "limitations": [
+          "Monocular recovery estimates occluded limbs and depth",
+          "Direct experimental adaptation; not a physical/contact solve",
+          "Original video and source frames remain local",
+          "C08 has much broader armor and different proportions from the performer",
+          "Whole-avatar grounding changes vertical root motion, especially during inversion; offsets are reported",
+          "No hand/foot pinning or armor self-collision solve",
+          "Finger curls remain at C08 rest pose; source hand detail is not reproduced",
+          "Not a MotionBricks-generated clip, not a G1 CSV, not physical robot control",
+          "Camera is fixed, verified from source backgrounds",
+          "Performer approaches into an extreme face close-up; most body joints are unobserved near the end",
+          "Knuckle/hand contacts require independent ground review"
+        ]
+      },
+      "ground_policy": "Complete avatar is translated vertically each frame so its lowest rigid armor vertex is 15 mm above a flat floor. No foot locks, no standing pose constraint, no limb stretching; this is a measured presentation correction, not physical contact IK.",
+      "provenance": "User-provided reference exercise \u2192 GEM-X native SOMA \u2192 direct C08 adaptation; no MotionBricks generation"
+    },
+    {
+      "id": "mocap_technical_standup",
+      "label": "BJJ technical stand-up",
+      "category": "Video motion capture \u2192 C08",
+      "kind": "video_mocap",
+      "provenance_type": "user_reference_video",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "clip": "VC_technical_standup",
+      "frames": 213,
+      "duration_s": 7.066666666666666,
+      "directory": "mocap_technical_standup",
+      "file": "motions/mocap_technical_standup/c08-mocap.glb",
+      "preview_file": "motions/mocap_technical_standup/source-preview.json",
+      "has_blend": false,
+      "report_file": "motions/mocap_technical_standup/retarget-report.json",
+      "review_flags": [
+        "Monocular recovery: occluded joints are estimates",
+        "Direct adaptation; no contact or self-collision solve",
+        "Source crops part of the body; late recovery is less reliable",
+        "Large whole-body grounding correction; inspect the reported offsets"
+      ],
+      "validation": {
+        "kind": "video_mocap",
+        "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+        "clip": "VC_technical_standup",
+        "frames": 213,
+        "fps": 30,
+        "duration_s": 7.066666603088379,
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.0037618509934356226,
+        "max_exported_joint_position_error_m": 1.7659357113873473e-06,
+        "max_segment_length_variation_m": 2.233868863221744e-07,
+        "inverted_head_below_pelvis_frames": 11,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "max_abs_whole_body_ground_offset_m": 0.3376701336635964,
+        "limitations": [
+          "Monocular recovery estimates occluded limbs and depth",
+          "Direct experimental adaptation; not a physical/contact solve",
+          "Original video and source frames remain local",
+          "C08 has much broader armor and different proportions from the performer",
+          "Whole-avatar grounding changes vertical root motion, especially during inversion; offsets are reported",
+          "No hand/foot pinning or armor self-collision solve",
+          "Finger curls remain at C08 rest pose; source hand detail is not reproduced",
+          "Not a MotionBricks-generated clip, not a G1 CSV, not physical robot control",
+          "Camera is fixed, verified from source backgrounds",
+          "Extended legs and feet cross the image boundary during floor transitions",
+          "Hand-supported technical stand-up includes intentional non-foot body contacts"
+        ]
+      },
+      "ground_policy": "Complete avatar is translated vertically each frame so its lowest rigid armor vertex is 15 mm above a flat floor. No foot locks, no standing pose constraint, no limb stretching; this is a measured presentation correction, not physical contact IK.",
+      "provenance": "User-provided reference exercise \u2192 GEM-X native SOMA \u2192 direct C08 adaptation; no MotionBricks generation"
+    },
+    {
+      "id": "mocap_sumo_stomp",
+      "label": "Sumo stomp / leg lift",
+      "category": "Video motion capture \u2192 C08",
+      "kind": "video_mocap",
+      "provenance_type": "user_reference_video",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "clip": "VC_sumo_stomp",
+      "frames": 218,
+      "duration_s": 7.233333333333333,
+      "directory": "mocap_sumo_stomp",
+      "file": "motions/mocap_sumo_stomp/c08-mocap.glb",
+      "preview_file": "motions/mocap_sumo_stomp/source-preview.json",
+      "has_blend": false,
+      "report_file": "motions/mocap_sumo_stomp/retarget-report.json",
+      "review_flags": [
+        "Monocular recovery: occluded joints are estimates",
+        "Direct adaptation; no contact or self-collision solve",
+        "Large whole-body grounding correction; inspect the reported offsets"
+      ],
+      "validation": {
+        "kind": "video_mocap",
+        "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+        "clip": "VC_sumo_stomp",
+        "frames": 218,
+        "fps": 30,
+        "duration_s": 7.233333110809326,
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.01471661406086619,
+        "max_exported_joint_position_error_m": 1.3597772235288691e-06,
+        "max_segment_length_variation_m": 2.974344263106943e-07,
+        "inverted_head_below_pelvis_frames": 0,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "max_abs_whole_body_ground_offset_m": 0.2673942695204098,
+        "limitations": [
+          "Monocular recovery estimates occluded limbs and depth",
+          "Direct experimental adaptation; not a physical/contact solve",
+          "Original video and source frames remain local",
+          "C08 has much broader armor and different proportions from the performer",
+          "Whole-avatar grounding changes vertical root motion, especially during inversion; offsets are reported",
+          "No hand/foot pinning or armor self-collision solve",
+          "Finger curls remain at C08 rest pose; source hand detail is not reproduced",
+          "Not a MotionBricks-generated clip, not a G1 CSV, not physical robot control",
+          "Camera is fixed, verified from static ceiling/door frame",
+          "Large lateral leg lifts can occlude the lifted thigh and torso",
+          "Background hanging bags are not tracked as scene geometry"
+        ]
+      },
+      "ground_policy": "Complete avatar is translated vertically each frame so its lowest rigid armor vertex is 15 mm above a flat floor. No foot locks, no standing pose constraint, no limb stretching; this is a measured presentation correction, not physical contact IK.",
+      "provenance": "User-provided reference exercise \u2192 GEM-X native SOMA \u2192 direct C08 adaptation; no MotionBricks generation"
+    },
+    {
+      "id": "mocap_deadlift",
+      "label": "Deadlift",
+      "category": "Video motion capture \u2192 C08",
+      "kind": "video_mocap",
+      "provenance_type": "user_reference_video",
+      "retarget": "passed",
+      "technical_validation": "passed",
+      "clip": "VC_deadlift",
+      "frames": 189,
+      "duration_s": 6.266666666666667,
+      "directory": "mocap_deadlift",
+      "file": "motions/mocap_deadlift/c08-mocap.glb",
+      "preview_file": "motions/mocap_deadlift/source-preview.json",
+      "has_blend": false,
+      "report_file": "motions/mocap_deadlift/retarget-report.json",
+      "review_flags": [
+        "Monocular recovery: occluded joints are estimates",
+        "Direct adaptation; no contact or self-collision solve",
+        "Large whole-body grounding correction; inspect the reported offsets",
+        "Body motion only: no bar, load or grip/contact physics"
+      ],
+      "validation": {
+        "kind": "video_mocap",
+        "pipeline": "User-provided reference video -> GEM-X native SOMA recovery -> direct C08 retarget; no MotionBricks generation",
+        "clip": "VC_deadlift",
+        "frames": 189,
+        "fps": 30,
+        "duration_s": 6.266666889190674,
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "gltf_messages": [],
+        "sampling_hz": 120,
+        "skinned_geometry_min_floor_y_m": 0.014648270146683906,
+        "max_exported_joint_position_error_m": 1.4219413442101077e-06,
+        "max_segment_length_variation_m": 2.980147609799033e-07,
+        "inverted_head_below_pelvis_frames": 0,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "max_abs_whole_body_ground_offset_m": 0.14205976856840652,
+        "limitations": [
+          "Monocular recovery estimates occluded limbs and depth",
+          "Direct experimental adaptation; not a physical/contact solve",
+          "Original video and source frames remain local",
+          "C08 has much broader armor and different proportions from the performer",
+          "Whole-avatar grounding changes vertical root motion, especially during inversion; offsets are reported",
+          "No hand/foot pinning or armor self-collision solve",
+          "Finger curls remain at C08 rest pose; source hand detail is not reproduced",
+          "Not a MotionBricks-generated clip, not a G1 CSV, not physical robot control",
+          "Camera is fixed, verified from static gym structure",
+          "Hex-bar geometry and hand-bar contacts are not reconstructed",
+          "Clip contains lifting, release/upper-body flourish, then another reach to the bar"
+        ]
+      },
+      "ground_policy": "Complete avatar is translated vertically each frame so its lowest rigid armor vertex is 15 mm above a flat floor. No foot locks, no standing pose constraint, no limb stretching; this is a measured presentation correction, not physical contact IK.",
+      "provenance": "User-provided reference exercise \u2192 GEM-X native SOMA \u2192 direct C08 adaptation; no MotionBricks generation"
     }
   ],
   "original_conditioning_only": true,
   "model": "MotionBricks-G1-RP-v1 FP32",
-  "robot_asset": "Models by jelaludo"
+  "robot_asset": "Models by jelaludo",
+  "summary": {
+    "motionbricks_tests": 36,
+    "video_mocap_tests": 6,
+    "authored_c08_actions": 5,
+    "raw_videos_public": false
+  }
 }
