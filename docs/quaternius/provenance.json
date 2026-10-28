@@ -142,7 +142,7 @@
       "frames": 177,
       "fps": 120,
       "loop": false,
-      "ground_correction_min_m": -0.8422404174804687,
+      "ground_correction_min_m": -0.8243381624221802,
       "ground_correction_max_m": 0.46750402998924256
     },
     {
@@ -215,7 +215,27 @@
   "source_url": "https://quaternius.itch.io/universal-animation-library",
   "source_pack": "Official free Standard ZIP, downloaded 2026-10-28",
   "zip_sha256": "cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724",
-  "output_sha256": "2a9cc3489b795c993b03f1649f3d14a70b683e63bd059a6d6cd8b0ddd5e8f3fd",
+  "output_sha256": "555772692fc7536a70334f8adf728a8265a29c5b6999434fd9c9e402fb9eab28",
   "bake_hz": 120,
-  "hand_basis": "Anatomical palm frame alignment from wrist-to-knuckles and index-to-pinky axes, mirrored per side; source wrist articulation preserved; C08 fingers retain their rest pose."
+  "hand_basis": "Anatomical palm alignment with source wrist articulation; robot finger and thumb hinges receive an authored relaxed cupped pose.",
+  "hand_pose": {
+    "type": "authored relaxed cup",
+    "finger_proximal_degrees": [
+      24,
+      28,
+      32,
+      36
+    ],
+    "finger_distal_degrees": [
+      40,
+      44,
+      48,
+      52
+    ],
+    "thumb_proximal_degrees": 68,
+    "thumb_distal_degrees": 38,
+    "palmar_direction": "opposite the ivory dorsal hand plate",
+    "thumb_opposition": "mirrored toward palm centre",
+    "limits": "Constant relaxed baseline, not generated finger performance or contact-aware gripping."
+  }
 }

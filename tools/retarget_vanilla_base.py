@@ -56,6 +56,18 @@ for label in CLIPS:
    sn=mapping.get(n);q=(src.pose.bones[sn].matrix.to_quaternion()@R[sn].inverted()) if sn else None
    if n in limbs:q=q@limbs[n]
    if n in hand_alignment:q=q@hand_alignment[n]
+   # Author a relaxed cup on the robot's own two-link fingers. The source wrist
+   # still drives the palm; finger hinges bend toward the palm, never outward.
+   if n.startswith('FINGER_'):
+    finger=int(n.split('_')[1][-1]);distal=n.endswith('_02')
+    angle=math.radians((40 if distal else 24)+(finger-1)*4)
+    q=ori[parents[n]]@Quaternion(Vector((1,0,0)),angle)
+   elif n.startswith('THUMB_'):
+    side=n.split('_')[1];sign=1 if side=='L' else -1
+    forward=H['THUMB_'+side+'_02']-H['THUMB_'+side+'_01']
+    inward=Vector((sign*.65,1,0)).normalized()
+    axis=forward.normalized().cross(inward).normalized()
+    q=ori[parents[n]]@Quaternion(axis,math.radians(68 if n.endswith('_01') else 38))
    put(n,q=q)
   matrices={n:Matrix.Translation(pos[n])@ori[n].to_matrix().to_4x4()@arm.data.bones[n].matrix_local.to_3x3().to_4x4() for n in H}
   low=min((matrices[n]@v).z for n,v in geometry)
@@ -69,7 +81,7 @@ for label in CLIPS:
    b=arm.data.bones[n];parent=parents[n];m=Matrix.Translation(pos[n])@ori[n].to_matrix().to_4x4()@b.matrix_local.to_3x3().to_4x4();matrices[n]=m
    kw={'parent_matrix':matrices[parent],'parent_matrix_local':arm.data.bones[parent].matrix_local} if parent else {}
    pb=arm.pose.bones[n];pb.rotation_mode='QUATERNION';pb.matrix_basis=b.convert_local_to_pose(m,b.matrix_local,invert=True,**kw)
-   if n.startswith(('SOCKET_','FINGER_','THUMB_')) or n=='SENSOR_YAW':continue
+   if n.startswith('SOCKET_') or n=='SENSOR_YAW':continue
    q=pb.rotation_quaternion.copy()
    if n in last and q.dot(last[n])<0:q.negate();pb.rotation_quaternion=q
    last[n]=q.copy();pb.keyframe_insert(data_path='location',frame=f);pb.keyframe_insert(data_path='rotation_quaternion',frame=f)

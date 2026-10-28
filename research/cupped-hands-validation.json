@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/vanilla/",
+  "checks": [
+    "15 candidates at five phases, both hands",
+    "all four fingers bend toward palmar side opposite ivory dorsal armor",
+    "thumbs oppose toward palm centre and curl palmward",
+    "fixed finger segment lengths"
+  ],
+  "results": [
+    {
+      "id": "idle",
+      "minFingerCurl": 0.009700219746148207,
+      "minThumbOpposition": 0.011296849339232695,
+      "minThumbPalmCurl": 0.03833897709025236,
+      "maxBoneLengthChange": 5.019618996571218e-7
+    },
+    {
+      "id": "walk",
+      "minFingerCurl": 0.009700220247330414,
+      "minThumbOpposition": 0.011296948561034581,
+      "minThumbPalmCurl": 0.03833918486306909,
+      "maxBoneLengthChange": 2.636779683484747e-16
+    },
+    {
+      "id": "run",
+      "minFingerCurl": 0.00970021501409013,
+      "minThumbOpposition": 0.011296887112018594,
+      "minThumbPalmCurl": 0.03833902416477054,
+      "maxBoneLengthChange": 2.8566664050933e-7
+    },
+    {
+      "id": "small_jump",
+      "minFingerCurl": 0.00970013641523604,
+      "minThumbOpposition": 0.011296849339232695,
+      "minThumbPalmCurl": 0.03833881097168935,
+      "maxBoneLengthChange": 4.5136367450571147e-7
+    },
+    {
+      "id": "high_jump",
+      "minFingerCurl": 0.00970013641523604,
+      "minThumbOpposition": 0.011296849339232695,
+      "minThumbPalmCurl": 0.038338810971688904,
+      "maxBoneLengthChange": 4.5136367450571147e-7
+    },
+    {
+      "id": "run_jump",
+      "minFingerCurl": 0.009700136415235596,
+      "minThumbOpposition": 0.011296849339232695,
+      "minThumbPalmCurl": 0.03833881097168935,
+      "maxBoneLengthChange": 3.106537208863447e-7
+    },
+    {
+      "id": "crouch",
+      "minFingerCurl": 0.009700140181482353,
+      "minThumbOpposition": 0.011296837723474451,
+      "minThumbPalmCurl": 0.03833897709025236,
+      "maxBoneLengthChange": 5.433073314992098e-7
+    },
+    {
+      "id": "crouch_walk",
+      "minFingerCurl": 0.00970013858823815,
+      "minThumbOpposition": 0.011296796217546506,
+      "minThumbPalmCurl": 0.03833893552453205,
+      "maxBoneLengthChange": 1.8041124150158794e-16
+    },
+    {
+      "id": "lie_down",
+      "minFingerCurl": 0.009700219746148207,
+      "minThumbOpposition": 0.011296817338417031,
+      "minThumbPalmCurl": 0.03833891954994595,
+      "maxBoneLengthChange": 6.020877157814075e-7
+    },
+    {
+      "id": "get_up",
+      "minFingerCurl": 0.009700219746148207,
+      "minThumbOpposition": 0.011296820280250808,
+      "minThumbPalmCurl": 0.0383389114354149,
+      "maxBoneLengthChange": 6.020877157814075e-7
+    },
+    {
+      "id": "forward_roll",
+      "minFingerCurl": 0.009700174910532986,
+      "minThumbOpposition": 0.011296756136878597,
+      "minThumbPalmCurl": 0.03833897553188115,
+      "maxBoneLengthChange": 5.054994838549209e-7
+    },
+    {
+      "id": "back_roll",
+      "minFingerCurl": 0.009700172963167608,
+      "minThumbOpposition": 0.011296760483558432,
+      "minThumbPalmCurl": 0.03833897709025236,
+      "maxBoneLengthChange": 5.780047403897148e-7
+    },
+    {
+      "id": "sit",
+      "minFingerCurl": 0.009700263733155023,
+      "minThumbOpposition": 0.011296820312469757,
+      "minThumbPalmCurl": 0.03833900291153136,
+      "maxBoneLengthChange": 2.1935609245682386e-7
+    },
+    {
+      "id": "seated",
+      "minFingerCurl": 0.009700179459218418,
+      "minThumbOpposition": 0.011296818483258766,
+      "minThumbPalmCurl": 0.03833902783223286,
+      "maxBoneLengthChange": 1.1102230246251565e-16
+    },
+    {
+      "id": "stand",
+      "minFingerCurl": 0.009700219746148207,
+      "minThumbOpposition": 0.011296842669018647,
+      "minThumbPalmCurl": 0.03833897709025236,
+      "maxBoneLengthChange": 3.787543739891541e-7
+    }
+  ]
+}

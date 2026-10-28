@@ -1,0 +1,135 @@
+{
+  "reviewed_on": "2026-10-28",
+  "status": "research and proposed protocol; reactive trials have not been run",
+  "goal": "More natural humanoid motion through reactive navigation, acceleration and K0-Tech pursuit; preserve selected takes as game animation assets.",
+  "architecture": [
+    "Application reads obstacle and target state",
+    "Planner chooses route, desired speed, facing and interaction targets",
+    "MotionBricks generates toward 1-4 target poses using the latest four actually displayed context poses at 30 Hz",
+    "Collision/contact layer validates or corrects displayed poses; corrected displayed poses feed subsequent context",
+    "Recorder stores native motion, displayed retarget, actor trajectories and generation trace"
+  ],
+  "boundaries": {
+    "obstacles": "Current model has no scene-geometry input. Scene boxes trigger authored smart primitives; they are not neural collision geometry. Planner and collision checks are application responsibilities.",
+    "speed": "Use matching locomotion targets and controlled desired velocity; measure actual travel rather than increasing playback speed.",
+    "pursuit": "A seeded moving cat can supply a moving goal. Pursuit prediction, stop distance and replanning are application logic.",
+    "quadrupeds": "Official released model contracts are SOMA human and Unitree G1 humanoid. No ready-made K0-Tech quadruped model was found. Cat should initially use its own authored gait/actions and procedural navigation.",
+    "naturalness": "Compare existing G1 with the SOMA human model using permitted original/CC0/user-owned targets; better naturalness is a hypothesis to measure."
+  },
+  "proposed_trials": [
+    {
+      "id": "slalom",
+      "task": "Navigate around staggered static pillars",
+      "comparison": "Straight-to-goal target versus collision-aware waypoints",
+      "measure": [
+        "collisions",
+        "minimum body clearance",
+        "route length",
+        "foot slip",
+        "turn jerk"
+      ]
+    },
+    {
+      "id": "speed_zones",
+      "task": "Idle to walk to run through a marked straight section, brake before a boundary",
+      "comparison": "Abrupt target change versus bounded acceleration and braking",
+      "measure": [
+        "actual speed",
+        "acceleration",
+        "stopping distance",
+        "foot slip",
+        "review score"
+      ]
+    },
+    {
+      "id": "cat_pursuit",
+      "task": "Follow K0-Tech around seeded random waypoints; stop outside its personal space",
+      "comparison": "Aim at current location versus short-horizon predicted interception",
+      "measure": [
+        "separation",
+        "catch-up delay",
+        "overshoot",
+        "collisions",
+        "replans",
+        "naturalness rating"
+      ]
+    },
+    {
+      "id": "mixed_course",
+      "task": "Combine pursuit, pillars, narrow passages, jump/duck triggers and an arrival idle",
+      "comparison": "Fixed recorded choreography versus target updates driven by actual displayed state",
+      "measure": [
+        "completion",
+        "collisions",
+        "transition discontinuities",
+        "generated latency",
+        "usable take duration"
+      ]
+    }
+  ],
+  "trial_design": {
+    "initial_runs_per_condition": 5,
+    "seed_policy": "Fixed environment/cat seeds for paired comparisons; record generation settings and seeds separately.",
+    "speeds": "Begin near each target gait native speed, then sweep speed/turn rate/target horizon to find failure boundaries.",
+    "collision_check": "Root navigation capsule plus conservative body/limb proxies; optionally dense skinned-geometry checks offline. Do not label root-only clearance as whole-body collision freedom.",
+    "review": "Reuse Keep/Rework/Reject and timestamped notes with clip and retarget versions."
+  },
+  "recording_plan": {
+    "native": "G1 qpos or SOMA local transforms, timestamps and predicted contacts",
+    "displayed": "Bake the actual corrected C08 skeleton and root trajectory, not unused predicted futures. Preserve uncorrected native data separately.",
+    "formats": [
+      "NPZ research source",
+      "C08 GLB baked animation",
+      "editable Blender Actions",
+      "FBX export for engines that need it",
+      "CSV root/cat trajectories",
+      "JSON targets, events, seeds, licenses, versions and review references"
+    ],
+    "variants": [
+      "Root motion take",
+      "In-place take with separate root trajectory"
+    ],
+    "workflow": "Generate or steer a take, record, scrub/mark in-out, review, keep, bake/export, check engine import and loop/contact quality. Offline baked clips do not require shipping inference with a game."
+  },
+  "community_examples": [
+    {
+      "name": "MotionForge",
+      "url": "https://mayalhc.github.io/motionforge/",
+      "source_repo": "https://github.com/mayalhc/motionforge",
+      "evidence": "Creator guide documents MotionBricks G1/SOMA steering, per-character takes, target pose arrival, Bake/Discard and retargeting.",
+      "relevance": "Closest documented artist workflow for generating and keeping game clips.",
+      "caveat": "Documentation reviewed, addon not installed or independently validated. Guide requires Blender 5.0 for SOMA human, 5.2 for G1; our existing Blender is 4.5.15."
+    },
+    {
+      "name": "LocalAI motion-bricks.cpp",
+      "url": "https://github.com/localai-org/motion-bricks.cpp",
+      "evidence": "Primary README and repository document end-to-end G1 GGML CPU/Vulkan inference, C ABI, server-owned browser streaming and planning/advance APIs.",
+      "relevance": "Potential later portable runtime or game-engine bridge.",
+      "caveat": "No complete Unreal plugin verified in this repository; no performance measured on this PC. Existing NVIDIA runtime remains our baseline."
+    },
+    {
+      "name": "motionbricks-mlx",
+      "url": "https://github.com/neeboo/motionbricks-mlx",
+      "evidence": "Primary README documents Apple Silicon planning, batch baking and A-to-B motion switching with quality gates.",
+      "relevance": "Useful ideas for per-take manifests, paired controls and seam measurement.",
+      "caveat": "README states no checkpoint published, pretrained NVIDIA weights not used, and training scaffold only exercised on synthetic shards. Do not treat its reported results as a verified substitute for the official model."
+    }
+  ],
+  "sources": [
+    "https://github.com/NVlabs/motionbricks/blob/main/docs/scene_preview.md",
+    "https://github.com/NVlabs/motionbricks/blob/main/docs/runtime_api.md",
+    "https://github.com/NVlabs/motionbricks/blob/main/docs/soma_model.md",
+    "https://github.com/NVlabs/motionbricks/blob/main/docs/unitree_g1_model.md",
+    "https://github.com/NVlabs/GR00T-WholeBodyControl/issues/170",
+    "https://mayalhc.github.io/motionforge/",
+    "https://github.com/localai-org/motion-bricks.cpp",
+    "https://github.com/neeboo/motionbricks-mlx",
+    "https://github.com/sebastianstarke/AI4Animation"
+  ],
+  "quadruped_alternative": {
+    "project": "AI4Animation / Mode-Adaptive Neural Networks for Quadruped Motion Control",
+    "url": "https://github.com/sebastianstarke/AI4Animation",
+    "note": "Separate quadruped research, not MotionBricks; repository explicitly limits use to research/education and mocap is CC BY-NC 4.0. No asset copied or installed."
+  },
+  "recommendation": "First build reactive pursuit plus obstacle waypoints and speed zones on the existing local GPU runtime, record real generated takes, then compare SOMA and G1. Keep K0 authored initially. Evaluate MotionForge in an isolated newer Blender installation only if its documented workflow merits the extra dependencies."
+}

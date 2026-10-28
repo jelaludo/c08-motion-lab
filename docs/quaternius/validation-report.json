@@ -22,7 +22,7 @@
       "floor_min_m": 0.011999598576989623,
       "max_fk_error_m": 7.800076193744913e-7,
       "max_segment_variation_m": 1.1045473119475346e-7,
-      "seam_position_m": 1.0803341865539551e-7,
+      "seam_position_m": 2.2180342147654588e-7,
       "seam_rotation_rad": 0.0007271661874668399,
       "prohibited_tracks": 0
     },
@@ -67,7 +67,7 @@
       "max_fk_error_m": 0.000001113488930079424,
       "max_segment_variation_m": 6.405175478896297e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.0006624252711757309,
+      "seam_rotation_rad": 0.0006770982090939676,
       "prohibited_tracks": 0
     },
     {
@@ -77,7 +77,7 @@
       "floor_min_m": 0.011999601497111712,
       "max_fk_error_m": 9.49393806935453e-7,
       "max_segment_variation_m": 2.2782966535572768e-7,
-      "seam_position_m": 2.1400163496054816e-7,
+      "seam_position_m": 5.440964707809617e-7,
       "seam_rotation_rad": 0.011335754771089755,
       "prohibited_tracks": 0
     },
@@ -100,7 +100,7 @@
       "max_fk_error_m": 0.0000032947940286880005,
       "max_segment_variation_m": 8.848629123869856e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.0005008624224464692,
+      "seam_rotation_rad": 0.0006991933021554945,
       "prohibited_tracks": 0
     },
     {
@@ -133,7 +133,7 @@
       "max_fk_error_m": 0.0000010388494932593998,
       "max_segment_variation_m": 9.118685373454838e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.0006757837800755311,
+      "seam_rotation_rad": 0.0008447004941287588,
       "prohibited_tracks": 0
     },
     {
@@ -144,14 +144,14 @@
       "max_fk_error_m": 0.000001117720485213071,
       "max_segment_variation_m": 7.440583948969959e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.0006757837800755311,
+      "seam_rotation_rad": 0.0008447004941287588,
       "prohibited_tracks": 0
     },
     {
       "name": "Q_Roll",
       "loop": false,
       "duration_s": 1.4666666984558105,
-      "floor_min_m": 0.011999172842386052,
+      "floor_min_m": 0.011998930897000992,
       "max_fk_error_m": 0.0000014778552031226714,
       "max_segment_variation_m": 6.192632786006236e-7,
       "seam_position_m": 0.439484775066376,
@@ -188,7 +188,7 @@
       "max_fk_error_m": 0.000001255099394554715,
       "max_segment_variation_m": 2.9192395278876404e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.0006673688056725547,
+      "seam_rotation_rad": 0.0008447004788824227,
       "prohibited_tracks": 0
     },
     {
@@ -198,7 +198,7 @@
       "floor_min_m": 0.011999675938534182,
       "max_fk_error_m": 0.0000012978227730330152,
       "max_segment_variation_m": 6.786960909943573e-8,
-      "seam_position_m": 2.565857076305533e-7,
+      "seam_position_m": 3.634402073997565e-7,
       "seam_rotation_rad": 0.011355705658461583,
       "prohibited_tracks": 0
     },
@@ -209,7 +209,7 @@
       "floor_min_m": 0.011999614801518552,
       "max_fk_error_m": 7.219241497737811e-7,
       "max_segment_variation_m": 3.8969635629548804e-8,
-      "seam_position_m": 5.78320573876054e-8,
+      "seam_position_m": 2.764757769596498e-7,
       "seam_rotation_rad": 0.020937788424484557,
       "prohibited_tracks": 0
     },
@@ -221,7 +221,7 @@
       "max_fk_error_m": 6.218453851502503e-7,
       "max_segment_variation_m": 2.572864388206142e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.00015039963969450996,
+      "seam_rotation_rad": 0.000677098207126354,
       "prohibited_tracks": 0
     }
   ]

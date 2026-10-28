@@ -10,7 +10,7 @@ for i,node in enumerate(document['nodes']):
  for s in document['scenes']:
   if i not in s['nodes']:s['nodes'].append(i)
 for animation in document['animations']:
- animation['channels']=[c for c in animation['channels'] if c['target']['path']!='scale' and not document['nodes'][c['target']['node']].get('name','').startswith(('SOCKET_','FINGER_','THUMB_')) and document['nodes'][c['target']['node']].get('name') not in ('ROOT','SENSOR_YAW')]
+ animation['channels']=[c for c in animation['channels'] if c['target']['path']!='scale' and not document['nodes'][c['target']['node']].get('name','').startswith('SOCKET_') and document['nodes'][c['target']['node']].get('name') not in ('ROOT','SENSOR_YAW')]
  used=sorted({c['sampler'] for c in animation['channels']});mapping={a:b for b,a in enumerate(used)};animation['samplers']=[animation['samplers'][i] for i in used]
  for c in animation['channels']:c['sampler']=mapping[c['sampler']]
 slots=[]

@@ -1,13 +1,13 @@
 {
   "schema": "c08-vanilla/1",
-  "version": "v1-ac4e7a50d7de",
+  "version": "v1-8b59f533a52e",
   "selection": "15 practical staples; not a statistical usage ranking",
   "source": "Quaternius Universal Animation Library 1 Standard",
   "source_url": "https://quaternius.com/packs/universalanimationlibrary.html",
   "source_license": "CC0-1.0",
   "hashes": {
-    "quaternius/c08-quaternius.glb": "2a9cc3489b795c993b03f1649f3d14a70b683e63bd059a6d6cd8b0ddd5e8f3fd",
-    "vanilla/c08-extra.glb": "8e5b90a63ea176fdd5a4f1ba6774506292c8a075f87e2767475a897ec2a2d98b",
+    "quaternius/c08-quaternius.glb": "555772692fc7536a70334f8adf728a8265a29c5b6999434fd9c9e402fb9eab28",
+    "vanilla/c08-extra.glb": "f278a2486d376b1443bdf8814c088eb9dca2a472c07227e90b1a0c4cc95e0553",
     "vanilla/vanilla.js": "20b5dcbd9d6ffe940f8e425f11bc001b9a499e52e629a5e873ac51260b2e5586"
   },
   "candidates": [

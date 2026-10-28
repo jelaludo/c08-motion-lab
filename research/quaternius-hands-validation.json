@@ -9,88 +9,88 @@
   "results": [
     {
       "clip": "Crouch_Fwd_Loop",
-      "max_palm_axis_error_degrees": 0.0001697872240627295
+      "max_palm_axis_error_degrees": 0.0001705689324002915
     },
     {
       "clip": "Crouch_Idle_Loop",
-      "max_palm_axis_error_degrees": 0.00016508768214512984
+      "max_palm_axis_error_degrees": 0.00016717620531048227
     },
     {
       "clip": "Dance_Loop",
-      "max_palm_axis_error_degrees": 0.000200295006268606
+      "max_palm_axis_error_degrees": 0.0002693287122953999
     },
     {
       "clip": "Fixing_Kneeling",
-      "max_palm_axis_error_degrees": 0.000462185771987577
+      "max_palm_axis_error_degrees": 0.00038498470468226176
     },
     {
       "clip": "Idle_Loop",
-      "max_palm_axis_error_degrees": 0.00020872102894509636
+      "max_palm_axis_error_degrees": 0.00015776572702986497
     },
     {
       "clip": "Interact",
-      "max_palm_axis_error_degrees": 0.0002609825582541286
+      "max_palm_axis_error_degrees": 0.000252439947865208
     },
     {
       "clip": "Jog_Fwd_Loop",
-      "max_palm_axis_error_degrees": 0.003427697256641518
+      "max_palm_axis_error_degrees": 0.003377580125025827
     },
     {
       "clip": "Jump_Land",
-      "max_palm_axis_error_degrees": 0.000195210074570558
+      "max_palm_axis_error_degrees": 0.00022822760537354367
     },
     {
       "clip": "Jump_Loop",
-      "max_palm_axis_error_degrees": 0.0003036758965092417
+      "max_palm_axis_error_degrees": 0.0003559458000695882
     },
     {
       "clip": "Jump_Start",
-      "max_palm_axis_error_degrees": 0.00026038976483479194
+      "max_palm_axis_error_degrees": 0.0002956720573243077
     },
     {
       "clip": "PickUp_Table",
-      "max_palm_axis_error_degrees": 0.00019115189245853223
+      "max_palm_axis_error_degrees": 0.00020766892240063148
     },
     {
       "clip": "Punch_Cross",
-      "max_palm_axis_error_degrees": 0.00025057929259710704
+      "max_palm_axis_error_degrees": 0.00019126816433023925
     },
     {
       "clip": "Punch_Jab",
-      "max_palm_axis_error_degrees": 0.23484692299556106
+      "max_palm_axis_error_degrees": 0.23483888267405165
     },
     {
       "clip": "Roll",
-      "max_palm_axis_error_degrees": 0.0005909162249432525
+      "max_palm_axis_error_degrees": 0.0005988654643347013
     },
     {
       "clip": "Sitting_Enter",
-      "max_palm_axis_error_degrees": 0.00019352244499982733
+      "max_palm_axis_error_degrees": 0.00021049286691542966
     },
     {
       "clip": "Sitting_Exit",
-      "max_palm_axis_error_degrees": 0.0007575575467606509
+      "max_palm_axis_error_degrees": 0.0007205773705500318
     },
     {
       "clip": "Sitting_Idle_Loop",
-      "max_palm_axis_error_degrees": 0.0002076987557293089
+      "max_palm_axis_error_degrees": 0.0002624836788224189
     },
     {
       "clip": "Sprint_Loop",
-      "max_palm_axis_error_degrees": 0.00030473261375494817
+      "max_palm_axis_error_degrees": 0.0003221635409330668
     },
     {
       "clip": "Walk_Formal_Loop",
-      "max_palm_axis_error_degrees": 0.00016421998190217232
+      "max_palm_axis_error_degrees": 0.00015115651910032162
     },
     {
       "clip": "Walk_Loop",
-      "max_palm_axis_error_degrees": 0.0002128038306268529
+      "max_palm_axis_error_degrees": 0.00023006625629602278
     },
     {
       "clip": "Death01 (Vanilla floor source)",
-      "max_palm_axis_error_degrees": 0.0001967313841128903
+      "max_palm_axis_error_degrees": 0.00022935703788377258
     }
   ],
-  "max_error_degrees": 0.23484692299556106
+  "max_error_degrees": 0.23483888267405165
 }
