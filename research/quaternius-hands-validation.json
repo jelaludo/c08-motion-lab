@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/quaternius/",
+  "checks": [
+    "both palms match original source finger direction and palm roll",
+    "21 source clips at five phases",
+    "mirrored thumb/index edges"
+  ],
+  "results": [
+    {
+      "clip": "Crouch_Fwd_Loop",
+      "max_palm_axis_error_degrees": 0.0001697872240627295
+    },
+    {
+      "clip": "Crouch_Idle_Loop",
+      "max_palm_axis_error_degrees": 0.00016508768214512984
+    },
+    {
+      "clip": "Dance_Loop",
+      "max_palm_axis_error_degrees": 0.000200295006268606
+    },
+    {
+      "clip": "Fixing_Kneeling",
+      "max_palm_axis_error_degrees": 0.000462185771987577
+    },
+    {
+      "clip": "Idle_Loop",
+      "max_palm_axis_error_degrees": 0.00020872102894509636
+    },
+    {
+      "clip": "Interact",
+      "max_palm_axis_error_degrees": 0.0002609825582541286
+    },
+    {
+      "clip": "Jog_Fwd_Loop",
+      "max_palm_axis_error_degrees": 0.003427697256641518
+    },
+    {
+      "clip": "Jump_Land",
+      "max_palm_axis_error_degrees": 0.000195210074570558
+    },
+    {
+      "clip": "Jump_Loop",
+      "max_palm_axis_error_degrees": 0.0003036758965092417
+    },
+    {
+      "clip": "Jump_Start",
+      "max_palm_axis_error_degrees": 0.00026038976483479194
+    },
+    {
+      "clip": "PickUp_Table",
+      "max_palm_axis_error_degrees": 0.00019115189245853223
+    },
+    {
+      "clip": "Punch_Cross",
+      "max_palm_axis_error_degrees": 0.00025057929259710704
+    },
+    {
+      "clip": "Punch_Jab",
+      "max_palm_axis_error_degrees": 0.23484692299556106
+    },
+    {
+      "clip": "Roll",
+      "max_palm_axis_error_degrees": 0.0005909162249432525
+    },
+    {
+      "clip": "Sitting_Enter",
+      "max_palm_axis_error_degrees": 0.00019352244499982733
+    },
+    {
+      "clip": "Sitting_Exit",
+      "max_palm_axis_error_degrees": 0.0007575575467606509
+    },
+    {
+      "clip": "Sitting_Idle_Loop",
+      "max_palm_axis_error_degrees": 0.0002076987557293089
+    },
+    {
+      "clip": "Sprint_Loop",
+      "max_palm_axis_error_degrees": 0.00030473261375494817
+    },
+    {
+      "clip": "Walk_Formal_Loop",
+      "max_palm_axis_error_degrees": 0.00016421998190217232
+    },
+    {
+      "clip": "Walk_Loop",
+      "max_palm_axis_error_degrees": 0.0002128038306268529
+    },
+    {
+      "clip": "Death01 (Vanilla floor source)",
+      "max_palm_axis_error_degrees": 0.0001967313841128903
+    }
+  ],
+  "max_error_degrees": 0.23484692299556106
+}

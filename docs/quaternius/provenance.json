@@ -142,7 +142,7 @@
       "frames": 177,
       "fps": 120,
       "loop": false,
-      "ground_correction_min_m": -0.8643609528541565,
+      "ground_correction_min_m": -0.8422404174804687,
       "ground_correction_max_m": 0.46750402998924256
     },
     {
@@ -215,6 +215,7 @@
   "source_url": "https://quaternius.itch.io/universal-animation-library",
   "source_pack": "Official free Standard ZIP, downloaded 2026-10-28",
   "zip_sha256": "cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724",
-  "output_sha256": "b3e35e3f4898c86f8b1a23d082ad2947f0abdd7466c061716c983968772fd1cc",
-  "bake_hz": 120
+  "output_sha256": "2a9cc3489b795c993b03f1649f3d14a70b683e63bd059a6d6cd8b0ddd5e8f3fd",
+  "bake_hz": 120,
+  "hand_basis": "Anatomical palm frame alignment from wrist-to-knuckles and index-to-pinky axes, mirrored per side; source wrist articulation preserved; C08 fingers retain their rest pose."
 }

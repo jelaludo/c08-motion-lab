@@ -100,7 +100,7 @@
       "max_fk_error_m": 0.0000032947940286880005,
       "max_segment_variation_m": 8.848629123869856e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.00040320913120408646,
+      "seam_rotation_rad": 0.0005008624224464692,
       "prohibited_tracks": 0
     },
     {
@@ -133,7 +133,7 @@
       "max_fk_error_m": 0.0000010388494932593998,
       "max_segment_variation_m": 9.118685373454838e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.0005329809548629712,
+      "seam_rotation_rad": 0.0006757837800755311,
       "prohibited_tracks": 0
     },
     {
@@ -144,14 +144,14 @@
       "max_fk_error_m": 0.000001117720485213071,
       "max_segment_variation_m": 7.440583948969959e-8,
       "seam_position_m": 0,
-      "seam_rotation_rad": 0.0005329809548629712,
+      "seam_rotation_rad": 0.0006757837800755311,
       "prohibited_tracks": 0
     },
     {
       "name": "Q_Roll",
       "loop": false,
       "duration_s": 1.4666666984558105,
-      "floor_min_m": 0.011999175348290647,
+      "floor_min_m": 0.011999172842386052,
       "max_fk_error_m": 0.0000014778552031226714,
       "max_segment_variation_m": 6.192632786006236e-7,
       "seam_position_m": 0.439484775066376,

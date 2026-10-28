@@ -13,12 +13,24 @@ for o in targets:
 H={b.name:b.head_local.copy() for b in arm.data.bones};parents={b.name:b.parent.name if b.parent else None for b in arm.data.bones}
 R={b.name:b.matrix_local.to_quaternion() for b in src.data.bones};SH={b.name:b.head_local.copy() for b in src.data.bones};scale=H['PELVIS'].z/SH['pelvis'].z
 mapping={'PELVIS':'pelvis','WAIST':'spine_01','CHEST':'spine_03','NECK':'neck_01','HEAD':'Head'}
+def palm_frame(forward, across):
+ # Match both finger direction and palm roll; the two rigs use different rest poses.
+ forward=forward.normalized();across=(across-forward*across.dot(forward)).normalized()
+ return Matrix((forward,across,forward.cross(across))).transposed()
 limbs={}
+hand_alignment={}
 for side in ['L','R']:
  s=side.lower()
  for t,c,f,g in [('HIP','KNEE','thigh','calf'),('KNEE','ANKLE','calf','foot'),('UPPER_ARM','FOREARM','upperarm','lowerarm'),('FOREARM','HAND','lowerarm','hand')]:
   n=t+'_'+side;source=f+'_'+s;mapping[n]=source;limbs[n]=(H[c+'_'+side]-H[n]).rotation_difference(SH[g+'_'+s]-SH[source])
  for t,f in [('ANKLE','foot'),('TOE','ball'),('SHOULDER','clavicle'),('HAND','hand')]:mapping[t+'_'+side]=f+'_'+s
+ target_forward=sum((H['FINGER_'+side+str(i)+'_01'] for i in range(1,5)),Vector())/4-H['HAND_'+side]
+ # Finger numbering is spatial, so the right hand's thumb/index edge is reversed.
+ target_across=(H['FINGER_'+side+'4_01']-H['FINGER_'+side+'1_01'])*(1 if side=='L' else -1)
+ source_forward=SH['middle_01_'+s]-SH['hand_'+s]
+ source_across=SH['pinky_01_'+s]-SH['index_01_'+s]
+ hand_alignment['HAND_'+side]=(palm_frame(source_forward,source_across)@palm_frame(target_forward,target_across).transposed()).to_quaternion()
+
 geometry=[]
 for o in targets:
  if o.type!='MESH':continue
@@ -43,6 +55,7 @@ for label in CLIPS:
    if n in pos:continue
    sn=mapping.get(n);q=(src.pose.bones[sn].matrix.to_quaternion()@R[sn].inverted()) if sn else None
    if n in limbs:q=q@limbs[n]
+   if n in hand_alignment:q=q@hand_alignment[n]
    put(n,q=q)
   matrices={n:Matrix.Translation(pos[n])@ori[n].to_matrix().to_4x4()@arm.data.bones[n].matrix_local.to_3x3().to_4x4() for n in H}
   low=min((matrices[n]@v).z for n,v in geometry)
