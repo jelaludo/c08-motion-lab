@@ -16,5 +16,8 @@
     5,
     10,
     15
-  ]
+  ],
+  "vanilla_candidates": 15,
+  "vanilla_source_hashes_verified": true,
+  "vanilla_review_version": "v1-1b6309214422"
 }

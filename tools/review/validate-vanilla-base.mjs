@@ -1,0 +1,1 @@
+﻿import fs from 'node:fs';import validator from 'gltf-validator';const report=await validator.validateBytes(new Uint8Array(fs.readFileSync('public/c08-motion-lab/docs/vanilla/c08-extra.glb')));console.log(JSON.stringify(report.issues));if(report.issues.numErrors||report.issues.numWarnings)process.exitCode=1;

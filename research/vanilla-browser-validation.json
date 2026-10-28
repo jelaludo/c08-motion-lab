@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/vanilla/",
+  "checks": [
+    "15 finite full-skin candidates at five phases",
+    "ground clearance",
+    "browser rating persistence",
+    "per reviewer isolation",
+    "Keep/Rework/Reject queues",
+    "JSON export and import",
+    "invalid import rejected atomically",
+    "CSV export",
+    "one-shot stopping",
+    "keyboard navigation",
+    "mobile layout"
+  ],
+  "audit": [
+    {
+      "id": "idle",
+      "low": 0.011999796611556951,
+      "finite": true,
+      "extent": 2.25457560650309,
+      "duration": 2.5
+    },
+    {
+      "id": "walk",
+      "low": 0.011999877301235036,
+      "finite": true,
+      "extent": 2.3123852840347308,
+      "duration": 1.3333333730697632
+    },
+    {
+      "id": "run",
+      "low": 0.01199984413404842,
+      "finite": true,
+      "extent": 2.290803149382923,
+      "duration": 0.6666666865348816
+    },
+    {
+      "id": "small_jump",
+      "low": 0.011999951296771188,
+      "finite": true,
+      "extent": 2.423557586156474,
+      "duration": 3.980000023841858
+    },
+    {
+      "id": "high_jump",
+      "low": 0.011999951296771188,
+      "finite": true,
+      "extent": 2.864904493882289,
+      "duration": 4.400000023841858
+    },
+    {
+      "id": "run_jump",
+      "low": 0.011999951296771188,
+      "finite": true,
+      "extent": 3.2560145285775652,
+      "duration": 4.400000023841859
+    },
+    {
+      "id": "crouch",
+      "low": 0.011999797510118676,
+      "finite": true,
+      "extent": 2.2539727926535025,
+      "duration": 4.233333396911621
+    },
+    {
+      "id": "crouch_walk",
+      "low": 0.011999867640838664,
+      "finite": true,
+      "extent": 1.8259095973784472,
+      "duration": 2
+    },
+    {
+      "id": "lie_down",
+      "low": 0.00799999999999998,
+      "finite": true,
+      "extent": 2.2657309372915093,
+      "duration": 2.850000095367432
+    },
+    {
+      "id": "get_up",
+      "low": 0.010824919080343012,
+      "finite": true,
+      "extent": 2.2656952901379146,
+      "duration": 3.100000095367432
+    },
+    {
+      "id": "forward_roll",
+      "low": 0.007999999999999917,
+      "finite": true,
+      "extent": 2.2542381557871005,
+      "duration": 2.7166666984558105
+    },
+    {
+      "id": "back_roll",
+      "low": 0.007999999999999993,
+      "finite": true,
+      "extent": 2.256284372453795,
+      "duration": 2.7166666984558105
+    },
+    {
+      "id": "sit",
+      "low": 0.011970667514258168,
+      "finite": true,
+      "extent": 2.2544707188242574,
+      "duration": 1.2999999523162842
+    },
+    {
+      "id": "seated",
+      "low": 0.012000013718485466,
+      "finite": true,
+      "extent": 1.8696503079994886,
+      "duration": 1.6666666269302368
+    },
+    {
+      "id": "stand",
+      "low": 0.011993624365916859,
+      "finite": true,
+      "extent": 2.2539727926535025,
+      "duration": 1.6333333015441895
+    }
+  ],
+  "errors": []
+}

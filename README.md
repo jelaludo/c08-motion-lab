@@ -2,7 +2,7 @@
 
 An independent, non-commercial motion notebook by **jelaludo**. One original robot, a small robot cat, and several distinct approaches to animation.
 
-**[Lab home](https://jelaludo.github.io/c08-motion-lab/)** | **[MB-Predictive](https://jelaludo.github.io/c08-motion-lab/mb-predictive/)** | **[Quaternius](https://jelaludo.github.io/c08-motion-lab/quaternius/)** | **[Research gallery](https://jelaludo.github.io/c08-motion-lab/lab/)** | **[Off Shift diorama](https://jelaludo.github.io/c08-motion-lab/diorama.html)**
+**[Vanilla 15 / Review](https://jelaludo.github.io/c08-motion-lab/vanilla/)** | **[Lab home](https://jelaludo.github.io/c08-motion-lab/)** | **[MB-Predictive](https://jelaludo.github.io/c08-motion-lab/mb-predictive/)** | **[Quaternius](https://jelaludo.github.io/c08-motion-lab/quaternius/)** | **[Research gallery](https://jelaludo.github.io/c08-motion-lab/lab/)** | **[Off Shift diorama](https://jelaludo.github.io/c08-motion-lab/diorama.html)**
 
 The landing page separates learned prediction, conventional animation, video recovery, choreography, and the earlier research archive. MB-Predictive shows 24 actual AI experiments beside ordinary interpolation, with explicit recent-pose/target/generated-movement stages. The Quaternius tab adds a prominent WASD controller and shuffled routines that return through idle. Existing research clips remain available for future comparisons.
 
@@ -88,3 +88,13 @@ MB-Predictive offers **C08**, **Meshy fighter**, and **both bodies side by side*
 **Combine 5 / 10 / 15** selects a recorded neural sequence on the public page. Locally, those buttons generate a fresh random source arrangement on the GPU. Each source move supplies midpoint/end targets; the next request uses the last four actually generated poses. Each sequence ends with neutral recovery. **Random until stopped** shuffles recorded short predictions with centred pose blends; it is playback, not ongoing inference. **< / >**, left/right arrows and **Space** browse or pause/play. The stage transport stays visible as the sidebar scrolls.
 
 There are now 24 public presets (21 earlier tests plus three combined neural sequences), with two additional restricted sample evaluations locally. Both bodies consume the same G1 output; the human is retargeted at runtime on its own proportions. Body-specific contact correction, cloth physics, finger articulation and production-quality deformation remain open work. See [Meshy rig findings](research/meshy-body.md).
+
+## Vanilla 15 and reviewer feedback
+
+`docs/vanilla/` adds fifteen practical core candidates for C08: idle, walk, run, small/high/running jumps, crouch, crouch walk, lie down, get up, forward/backward rolls, sit down, seated idle, and stand from a seat. This is a curated starting set, not a statistical usage ranking. All motion inputs are Quaternius UAL 1 Standard CC0; playback recipes and source hashes are in `manifest.json`.
+
+The backward roll reverses a forward roll; get-up reverses a fall; lie-down uses a fall-style source. These are explicitly marked prototypes. Modified jumps use authored timing/root travel. No new MotionBricks inference or physically solved contact is claimed. Loops repeat; one-shots stop in their destination pose. Sitting and lying do not automatically return to standing. Whole-avatar grounding prevents floor penetration but does not repair support or armor overlap.
+
+Reviewers score overall quality, smoothness, contact and readability from 1 to 5, choose Keep/Rework/Reject, and add timestamped notes. Feedback belongs to the reviewer, C08 body, candidate and manifest version. It saves in browser localStorage; JSON import/export shares or backs up reviews, CSV exports a spreadsheet. Import retains newer records and preserves reviews from other versions. There is no shared online review database. Reject filters a candidate out of the Keep shortlist without deleting source assets.
+
+Rebuild the extra Death01 retarget in the provisioned workspace with `tools/retarget_vanilla_base.py` through Blender, then `tools/finalize_vanilla_base.py`, copy the resulting GLB to `docs/vanilla/c08-extra.glb`, and run `tools/refresh_vanilla_manifest.py`. Runtime composition recipes are deterministic in `vanilla.js`. `tools/review/check-vanilla.mjs` exercises playback, deformed geometry, persistence, review queues and import/export.

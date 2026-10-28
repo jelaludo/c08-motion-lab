@@ -1,0 +1,396 @@
+{
+  "schema": "c08-vanilla/1",
+  "version": "v1-1b6309214422",
+  "selection": "15 practical staples; not a statistical usage ranking",
+  "source": "Quaternius Universal Animation Library 1 Standard",
+  "source_url": "https://quaternius.com/packs/universalanimationlibrary.html",
+  "source_license": "CC0-1.0",
+  "hashes": {
+    "quaternius/c08-quaternius.glb": "b3e35e3f4898c86f8b1a23d082ad2947f0abdd7466c061716c983968772fd1cc",
+    "vanilla/c08-extra.glb": "f385128b1cb7600fa4989a4e98bd2a4ebca27656ccea64f8f2ed6c5b52f60a94",
+    "vanilla/vanilla.js": "86ca9f24a989e8fd8db29185804ceb8089b3bc7389710c37095061380b311853"
+  },
+  "candidates": [
+    {
+      "id": "idle",
+      "label": "Idle",
+      "parts": [
+        {
+          "clip": "Idle_Loop"
+        }
+      ],
+      "description": "Neutral standing with subtle movement.",
+      "phases": "Standing loop; seam review.",
+      "warning": "",
+      "loop": true,
+      "entry": 0,
+      "exit": 0,
+      "experimental": false,
+      "method": "CC0 Quaternius direct retarget",
+      "number": 1,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Idle_Loop"
+      ]
+    },
+    {
+      "id": "walk",
+      "label": "Walk",
+      "parts": [
+        {
+          "clip": "Walk_Loop"
+        }
+      ],
+      "description": "Everyday forward walk, in place.",
+      "phases": "Walk loop; no world travel.",
+      "warning": "",
+      "loop": true,
+      "entry": 0,
+      "exit": 0,
+      "experimental": false,
+      "method": "CC0 Quaternius direct retarget",
+      "number": 2,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Walk_Loop"
+      ]
+    },
+    {
+      "id": "run",
+      "label": "Run",
+      "parts": [
+        {
+          "clip": "Sprint_Loop"
+        }
+      ],
+      "description": "Fast forward run, in place.",
+      "phases": "Run loop; no world travel.",
+      "warning": "",
+      "loop": true,
+      "entry": 0,
+      "exit": 0,
+      "experimental": false,
+      "method": "CC0 Quaternius direct retarget",
+      "number": 3,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Sprint_Loop"
+      ]
+    },
+    {
+      "id": "small_jump",
+      "label": "Small jump",
+      "parts": [
+        {
+          "clip": "Jump_Start"
+        },
+        {
+          "clip": "Jump_Loop",
+          "duration": 0.28
+        },
+        {
+          "clip": "Jump_Land"
+        }
+      ],
+      "description": "Compact standing jump with a short airborne phase.",
+      "phases": "Idle > takeoff > air > landing > idle.",
+      "warning": "Timing-compressed source jump; inspect landing and weight.",
+      "loop": false,
+      "entry": 0.45,
+      "exit": 0.65,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 4,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Jump_Start",
+        "Jump_Loop",
+        "Jump_Land"
+      ]
+    },
+    {
+      "id": "high_jump",
+      "label": "High jump",
+      "parts": [
+        {
+          "clip": "Jump_Start"
+        },
+        {
+          "clip": "Jump_Loop",
+          "duration": 0.7
+        },
+        {
+          "clip": "Jump_Land"
+        }
+      ],
+      "description": "Higher jump candidate with authored vertical travel.",
+      "phases": "Idle > takeoff > air > landing > idle.",
+      "warning": "Extra root height is procedural, not a new physically solved jump.",
+      "loop": false,
+      "entry": 0.45,
+      "exit": 0.65,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "extraHeight": 0.45,
+      "number": 5,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Jump_Start",
+        "Jump_Loop",
+        "Jump_Land"
+      ]
+    },
+    {
+      "id": "run_jump",
+      "label": "Running jump",
+      "parts": [
+        {
+          "clip": "Sprint_Loop",
+          "duration": 0.7
+        },
+        {
+          "clip": "Jump_Start"
+        },
+        {
+          "clip": "Jump_Loop",
+          "duration": 0.45
+        },
+        {
+          "clip": "Jump_Land"
+        }
+      ],
+      "description": "Running approach and forward jump with landing recovery.",
+      "phases": "Run > takeoff > air > land > idle.",
+      "warning": "Authored 2 m root travel; speed and foot contact need review. Repeat resets the path.",
+      "loop": false,
+      "entry": 0,
+      "exit": 0.65,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "travel": 2,
+      "number": 6,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Sprint_Loop",
+        "Jump_Start",
+        "Jump_Loop",
+        "Jump_Land"
+      ]
+    },
+    {
+      "id": "crouch",
+      "label": "Crouch",
+      "parts": [
+        {
+          "clip": "Crouch_Idle_Loop"
+        }
+      ],
+      "description": "Lower from neutral, hold a crouch, then stand.",
+      "phases": "Idle > crouch hold > idle.",
+      "warning": "Entry and recovery use pose blends, not dedicated squat clips.",
+      "loop": false,
+      "entry": 0.6,
+      "exit": 0.7,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 7,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Crouch_Idle_Loop"
+      ]
+    },
+    {
+      "id": "crouch_walk",
+      "label": "Crouch walk",
+      "parts": [
+        {
+          "clip": "Crouch_Fwd_Loop"
+        }
+      ],
+      "description": "Low forward locomotion, in place.",
+      "phases": "Crouched locomotion loop.",
+      "warning": "",
+      "loop": true,
+      "entry": 0,
+      "exit": 0,
+      "experimental": false,
+      "method": "CC0 Quaternius direct retarget",
+      "number": 8,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Crouch_Fwd_Loop"
+      ]
+    },
+    {
+      "id": "lie_down",
+      "label": "Lie down",
+      "parts": [
+        {
+          "clip": "Death01"
+        }
+      ],
+      "description": "A source fall adapted as an initial floor-entry candidate.",
+      "phases": "Standing > floor; ends lying down.",
+      "warning": "Fall-style source, not a controlled voluntary lie-down. Rework candidate.",
+      "loop": false,
+      "entry": 0.45,
+      "exit": 0,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 9,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Death01"
+      ]
+    },
+    {
+      "id": "get_up",
+      "label": "Get up",
+      "parts": [
+        {
+          "clip": "Death01",
+          "reverse": true
+        }
+      ],
+      "description": "Floor-to-standing recovery candidate.",
+      "phases": "Lying > stand > idle.",
+      "warning": "Time-reversed fall: likely implausible support and momentum. Rework candidate.",
+      "loop": false,
+      "entry": 0,
+      "exit": 0.7,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 10,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Death01"
+      ]
+    },
+    {
+      "id": "forward_roll",
+      "label": "Forward roll",
+      "parts": [
+        {
+          "clip": "Roll"
+        }
+      ],
+      "description": "Tucked forward roll with a neutral recovery blend.",
+      "phases": "Idle > source roll > idle.",
+      "warning": "Recovery is a pose blend; check hands, armor clearance and foot support.",
+      "loop": false,
+      "entry": 0.5,
+      "exit": 0.75,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 11,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Roll"
+      ]
+    },
+    {
+      "id": "back_roll",
+      "label": "Backward roll",
+      "parts": [
+        {
+          "clip": "Roll",
+          "reverse": true
+        }
+      ],
+      "description": "Backward roll prototype built by reversing the source roll.",
+      "phases": "Idle > reversed roll > idle.",
+      "warning": "Time reversal is a prototype, not a coached backward roll. Hand placement and recovery need rework.",
+      "loop": false,
+      "entry": 0.5,
+      "exit": 0.75,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 12,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Roll"
+      ]
+    },
+    {
+      "id": "sit",
+      "label": "Sit down",
+      "parts": [
+        {
+          "clip": "Sitting_Enter"
+        }
+      ],
+      "description": "Enter a seated pose on a simple support marker.",
+      "phases": "Standing > seated; ends seated.",
+      "warning": "Bench is a visual marker, not a contact solver. Inspect seat alignment.",
+      "loop": false,
+      "entry": 0,
+      "exit": 0,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 13,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Sitting_Enter"
+      ]
+    },
+    {
+      "id": "seated",
+      "label": "Seated idle",
+      "parts": [
+        {
+          "clip": "Sitting_Idle_Loop"
+        }
+      ],
+      "description": "Resting seated loop.",
+      "phases": "Seated loop; pair with sit and stand.",
+      "warning": "Bench is a visual marker; no seat contact IK.",
+      "loop": true,
+      "entry": 0,
+      "exit": 0,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 14,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Sitting_Idle_Loop"
+      ]
+    },
+    {
+      "id": "stand",
+      "label": "Stand from seat",
+      "parts": [
+        {
+          "clip": "Sitting_Exit"
+        }
+      ],
+      "description": "Rise from a seated position to standing.",
+      "phases": "Seated > standing > idle.",
+      "warning": "Check seat, feet and balance through the exit.",
+      "loop": false,
+      "entry": 0,
+      "exit": 0.6,
+      "experimental": true,
+      "method": "CC0 Quaternius retarget + lab composition",
+      "number": 15,
+      "source_license": "CC0-1.0",
+      "body": "c08",
+      "source_clips": [
+        "Sitting_Exit"
+      ]
+    }
+  ]
+}
