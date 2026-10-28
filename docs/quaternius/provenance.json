@@ -1,0 +1,220 @@
+{
+  "source": "Quaternius Universal Animation Library 1 Standard",
+  "license": "CC0-1.0",
+  "source_sha256": "69591853d817488edaa8fd9bf8fc1d821eaeaf789f8627b3cd23b41c4ed67997",
+  "target_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+  "scale": 1.199956253949206,
+  "clips": [
+    {
+      "name": "Q_Idle_Loop",
+      "source_clip": "Idle_Loop",
+      "duration_s": 2.5,
+      "frames": 301,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": 0.03611437407135963,
+      "ground_correction_max_m": 0.03721519176661968
+    },
+    {
+      "name": "Q_Walk_Loop",
+      "source_clip": "Walk_Loop",
+      "duration_s": 1.3333333333333333,
+      "frames": 161,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": 0.030777551129460335,
+      "ground_correction_max_m": 0.08161816549301147
+    },
+    {
+      "name": "Q_Jog_Fwd_Loop",
+      "source_clip": "Jog_Fwd_Loop",
+      "duration_s": 0.9333333333333333,
+      "frames": 113,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": -0.2330178563594818,
+      "ground_correction_max_m": 0.11159848970174789
+    },
+    {
+      "name": "Q_Sprint_Loop",
+      "source_clip": "Sprint_Loop",
+      "duration_s": 0.6666666666666666,
+      "frames": 81,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": -0.2581299488544464,
+      "ground_correction_max_m": 0.11111078214645385
+    },
+    {
+      "name": "Q_Walk_Formal_Loop",
+      "source_clip": "Walk_Formal_Loop",
+      "duration_s": 1.3333333333333333,
+      "frames": 161,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": 0.030386054784059525,
+      "ground_correction_max_m": 0.08165238600969314
+    },
+    {
+      "name": "Q_Crouch_Idle_Loop",
+      "source_clip": "Crouch_Idle_Loop",
+      "duration_s": 2.933333333333333,
+      "frames": 353,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": 0.08037420910596847,
+      "ground_correction_max_m": 0.08506690514087677
+    },
+    {
+      "name": "Q_Crouch_Fwd_Loop",
+      "source_clip": "Crouch_Fwd_Loop",
+      "duration_s": 2.0,
+      "frames": 241,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": 0.019142071146517992,
+      "ground_correction_max_m": 0.12179535430669784
+    },
+    {
+      "name": "Q_Jump_Start",
+      "source_clip": "Jump_Start",
+      "duration_s": 1.3333333333333333,
+      "frames": 161,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.056219564646482464,
+      "ground_correction_max_m": 0.2208763564825058
+    },
+    {
+      "name": "Q_Jump_Loop",
+      "source_clip": "Jump_Loop",
+      "duration_s": 2.5,
+      "frames": 301,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": 0.2058900500535965,
+      "ground_correction_max_m": 0.2196593190431595
+    },
+    {
+      "name": "Q_Jump_Land",
+      "source_clip": "Jump_Land",
+      "duration_s": 1.2666666666666666,
+      "frames": 153,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.09054869216680526,
+      "ground_correction_max_m": 0.09341863346099853
+    },
+    {
+      "name": "Q_Sitting_Enter",
+      "source_clip": "Sitting_Enter",
+      "duration_s": 1.3,
+      "frames": 157,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.015903923789039254,
+      "ground_correction_max_m": 0.058060163527727124
+    },
+    {
+      "name": "Q_Sitting_Idle_Loop",
+      "source_clip": "Sitting_Idle_Loop",
+      "duration_s": 1.6666666666666667,
+      "frames": 201,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": 0.04590038758516311,
+      "ground_correction_max_m": 0.04590038758516311
+    },
+    {
+      "name": "Q_Sitting_Exit",
+      "source_clip": "Sitting_Exit",
+      "duration_s": 1.0333333333333334,
+      "frames": 125,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.015903923789039254,
+      "ground_correction_max_m": 0.05511583936214447
+    },
+    {
+      "name": "Q_Roll",
+      "source_clip": "Roll",
+      "duration_s": 1.4666666666666666,
+      "frames": 177,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": -0.8643609528541565,
+      "ground_correction_max_m": 0.46750402998924256
+    },
+    {
+      "name": "Q_Dance_Loop",
+      "source_clip": "Dance_Loop",
+      "duration_s": 1.0,
+      "frames": 121,
+      "fps": 120,
+      "loop": true,
+      "ground_correction_min_m": 0.028313327476382256,
+      "ground_correction_max_m": 0.060607673496007916
+    },
+    {
+      "name": "Q_Interact",
+      "source_clip": "Interact",
+      "duration_s": 2.0,
+      "frames": 241,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.03529863421618938,
+      "ground_correction_max_m": 0.03718391795456409
+    },
+    {
+      "name": "Q_PickUp_Table",
+      "source_clip": "PickUp_Table",
+      "duration_s": 0.8333333333333334,
+      "frames": 101,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.034108972072601315,
+      "ground_correction_max_m": 0.036718761444091794
+    },
+    {
+      "name": "Q_Fixing_Kneeling",
+      "source_clip": "Fixing_Kneeling",
+      "duration_s": 5.2,
+      "frames": 625,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.02991035570204258,
+      "ground_correction_max_m": 0.14696696949005128
+    },
+    {
+      "name": "Q_Punch_Jab",
+      "source_clip": "Punch_Jab",
+      "duration_s": 0.8666666666666667,
+      "frames": 105,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.060986773937940594,
+      "ground_correction_max_m": 0.06423460122942924
+    },
+    {
+      "name": "Q_Punch_Cross",
+      "source_clip": "Punch_Cross",
+      "duration_s": 1.0,
+      "frames": 121,
+      "fps": 120,
+      "loop": false,
+      "ground_correction_min_m": 0.05768042233586311,
+      "ground_correction_max_m": 0.11210215640068054
+    }
+  ],
+  "limitations": [
+    "Direct anatomical retarget with fixed C08 segment lengths",
+    "Whole-avatar ground placement; no foot/hand contact IK",
+    "Broad armor may overlap; motion quality requires visual review",
+    "In-place clips; source root travel excluded"
+  ],
+  "source_url": "https://quaternius.itch.io/universal-animation-library",
+  "source_pack": "Official free Standard ZIP, downloaded 2026-10-28",
+  "zip_sha256": "cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724",
+  "output_sha256": "b3e35e3f4898c86f8b1a23d082ad2947f0abdd7466c061716c983968772fd1cc",
+  "bake_hz": 120
+}

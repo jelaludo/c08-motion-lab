@@ -4,6 +4,6 @@
   "video_derived_c08_count": 6,
   "all_motionbricks_conditioning_original": true,
   "excluded_private_video_and_model_weights": true,
-  "max_file_bytes": 5530624,
+  "max_file_bytes": 7618436,
   "checks": "Every MotionBricks input classified original; video-derived motion separately classified; no raw videos, source-local paths, inference weights or token-like credentials in publication."
 }

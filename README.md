@@ -58,3 +58,7 @@ This is shared for observation and discussion. Original character assets and ori
 ## Keyboard playground
 
 [Open control mode](https://jelaludo.github.io/c08-motion-lab/lab/?control=1). WASD moves, Shift runs, Space jumps, Shift + movement + Space uses the running-jump clip. U plays Ukemi and T plays sumo stomp. Keys 1?9 and 0 select ten actions; the sidebar lists them. Esc exits control. Standing jump uses an authored crouch/flight variation; running jump uses the original-input generated jump with staged travel/lift. This is a kinematic playback controller without collision physics. Flag markers indicate review findings, detailed alongside each clip.
+
+## Quaternius baseline tab
+
+[Open the separate baseline](https://jelaludo.github.io/c08-motion-lab/quaternius/). Twenty CC0 clips from the official free Quaternius Universal Animation Library 1 Standard pack are directly retargeted to C08. Includes source-mannequin comparison, clip inspection, a phase-aligned locomotion blend demo and a basic keyboard state machine. All existing diorama and experiment URLs remain as research. See [findings and provenance](research/quaternius-baseline.md). All 20 exports pass structural and 120 Hz floor checks; these checks do not establish contact fidelity or production readiness.

@@ -1,0 +1,228 @@
+{
+  "gltf_errors": 0,
+  "gltf_warnings": 0,
+  "messages": [],
+  "sampling_hz": 120,
+  "clips": [
+    {
+      "name": "Q_Crouch_Fwd_Loop",
+      "loop": true,
+      "duration_s": 2,
+      "floor_min_m": 0.011999629234561755,
+      "max_fk_error_m": 0.0000011818121814956452,
+      "max_segment_variation_m": 9.326112776486539e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.0006984647318520026,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Crouch_Idle_Loop",
+      "loop": true,
+      "duration_s": 2.933333396911621,
+      "floor_min_m": 0.011999598576989623,
+      "max_fk_error_m": 7.800076193744913e-7,
+      "max_segment_variation_m": 1.1045473119475346e-7,
+      "seam_position_m": 1.0803341865539551e-7,
+      "seam_rotation_rad": 0.0007271661874668399,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Dance_Loop",
+      "loop": true,
+      "duration_s": 1,
+      "floor_min_m": 0.011999522271585912,
+      "max_fk_error_m": 9.898819886695886e-7,
+      "max_segment_variation_m": 5.167572592057468e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.0007144848170193449,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Fixing_Kneeling",
+      "loop": false,
+      "duration_s": 5.199999809265137,
+      "floor_min_m": 0.011999825662278335,
+      "max_fk_error_m": 0.0000012317619049457249,
+      "max_segment_variation_m": 3.206030848579289e-7,
+      "seam_position_m": 4.4883178120341997e-7,
+      "seam_rotation_rad": 0.015932426471483113,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Idle_Loop",
+      "loop": true,
+      "duration_s": 2.5,
+      "floor_min_m": 0.011999466450992705,
+      "max_fk_error_m": 0.0000010410251594487493,
+      "max_segment_variation_m": 1.8234557463969736e-7,
+      "seam_position_m": 0.0001422166824340821,
+      "seam_rotation_rad": 0.006822145899849869,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Interact",
+      "loop": false,
+      "duration_s": 2,
+      "floor_min_m": 0.011999925986542988,
+      "max_fk_error_m": 0.000001113488930079424,
+      "max_segment_variation_m": 6.405175478896297e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.0006624252711757309,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Jog_Fwd_Loop",
+      "loop": true,
+      "duration_s": 0.9333333373069763,
+      "floor_min_m": 0.011999601497111712,
+      "max_fk_error_m": 9.49393806935453e-7,
+      "max_segment_variation_m": 2.2782966535572768e-7,
+      "seam_position_m": 2.1400163496054816e-7,
+      "seam_rotation_rad": 0.011335754771089755,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Jump_Land",
+      "loop": false,
+      "duration_s": 1.2666666507720947,
+      "floor_min_m": 0.011999731343426828,
+      "max_fk_error_m": 9.924167992092776e-7,
+      "max_segment_variation_m": 2.6704211081307605e-7,
+      "seam_position_m": 0.05937099456787113,
+      "seam_rotation_rad": 0.9328809584222258,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Jump_Loop",
+      "loop": true,
+      "duration_s": 2.5,
+      "floor_min_m": 0.011999700644885036,
+      "max_fk_error_m": 0.0000032947940286880005,
+      "max_segment_variation_m": 8.848629123869856e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.00040320913120408646,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Jump_Start",
+      "loop": false,
+      "duration_s": 1.3333333730697632,
+      "floor_min_m": 0.011999712538699803,
+      "max_fk_error_m": 8.127229979584772e-7,
+      "max_segment_variation_m": 2.3813334787403662e-7,
+      "seam_position_m": 0.5645357966423038,
+      "seam_rotation_rad": 1.5765062296527825,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_PickUp_Table",
+      "loop": false,
+      "duration_s": 0.8333333134651184,
+      "floor_min_m": 0.011999997322371574,
+      "max_fk_error_m": 0.0000011337764654334114,
+      "max_segment_variation_m": 4.816504556304224e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.0006624252711757309,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Punch_Cross",
+      "loop": false,
+      "duration_s": 1,
+      "floor_min_m": 0.0119996698009967,
+      "max_fk_error_m": 0.0000010388494932593998,
+      "max_segment_variation_m": 9.118685373454838e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.0005329809548629712,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Punch_Jab",
+      "loop": false,
+      "duration_s": 0.8666666746139526,
+      "floor_min_m": 0.011999640453343952,
+      "max_fk_error_m": 0.000001117720485213071,
+      "max_segment_variation_m": 7.440583948969959e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.0005329809548629712,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Roll",
+      "loop": false,
+      "duration_s": 1.4666666984558105,
+      "floor_min_m": 0.011999175348290647,
+      "max_fk_error_m": 0.0000014778552031226714,
+      "max_segment_variation_m": 6.192632786006236e-7,
+      "seam_position_m": 0.439484775066376,
+      "seam_rotation_rad": 1.8212970294908695,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Sitting_Enter",
+      "loop": false,
+      "duration_s": 1.2999999523162842,
+      "floor_min_m": 0.011999620531057624,
+      "max_fk_error_m": 7.136378251896942e-7,
+      "max_segment_variation_m": 2.6688467530400217e-7,
+      "seam_position_m": 0.3935667872428896,
+      "seam_rotation_rad": 1.7152222645820985,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Sitting_Exit",
+      "loop": false,
+      "duration_s": 1.0333333015441895,
+      "floor_min_m": 0.011999592288962437,
+      "max_fk_error_m": 7.264663263281002e-7,
+      "max_segment_variation_m": 2.6688467530400217e-7,
+      "seam_position_m": 0.3935667872428896,
+      "seam_rotation_rad": 1.7152222645820985,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Sitting_Idle_Loop",
+      "loop": true,
+      "duration_s": 1.6666666269302368,
+      "floor_min_m": 0.012000013718485466,
+      "max_fk_error_m": 0.000001255099394554715,
+      "max_segment_variation_m": 2.9192395278876404e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.0006673688056725547,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Sprint_Loop",
+      "loop": true,
+      "duration_s": 0.6666666865348816,
+      "floor_min_m": 0.011999675938534182,
+      "max_fk_error_m": 0.0000012978227730330152,
+      "max_segment_variation_m": 6.786960909943573e-8,
+      "seam_position_m": 2.565857076305533e-7,
+      "seam_rotation_rad": 0.011355705658461583,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Walk_Formal_Loop",
+      "loop": true,
+      "duration_s": 1.3333333730697632,
+      "floor_min_m": 0.011999614801518552,
+      "max_fk_error_m": 7.219241497737811e-7,
+      "max_segment_variation_m": 3.8969635629548804e-8,
+      "seam_position_m": 5.78320573876054e-8,
+      "seam_rotation_rad": 0.020937788424484557,
+      "prohibited_tracks": 0
+    },
+    {
+      "name": "Q_Walk_Loop",
+      "loop": true,
+      "duration_s": 1.3333333730697632,
+      "floor_min_m": 0.011999729678153423,
+      "max_fk_error_m": 6.218453851502503e-7,
+      "max_segment_variation_m": 2.572864388206142e-8,
+      "seam_position_m": 0,
+      "seam_rotation_rad": 0.00015039963969450996,
+      "prohibited_tracks": 0
+    }
+  ]
+}

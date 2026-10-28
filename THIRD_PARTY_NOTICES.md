@@ -9,3 +9,7 @@
 - **Reference video:** raw video, extracted frames, reference overlays and human capture archives remain local. The intended derived C08 clips, source-skeleton previews and sanitized provenance are published at the user's request; they are distinct from MotionBricks-generated clips.
 
 This repository has no blanket grant that overrides the source assets or upstream terms.
+
+## Quaternius Universal Animation Library 1 Standard
+
+The new baseline tab includes 20 retargeted animations and the original Standard mannequin GLB from Quaternius. Source: https://quaternius.itch.io/universal-animation-library. Animation/source pack license: CC0 1.0 Universal, included at `docs/quaternius/license.txt`. C08 geometry remains the original creator asset under its existing terms. Only the free Standard download was used; no paid-tier assets were obtained.
