@@ -13,7 +13,9 @@
   "authored_c08_clips": 5,
   "playback_choices": 47,
   "quaternius_baseline_clips": 20,
-  "predictive_neural_experiments": 6,
-  "predictive_linear_controls": 6,
-  "raw_source_videos_published": false
+  "predictive_neural_experiments": 21,
+  "predictive_linear_controls": 21,
+  "raw_source_videos_published": false,
+  "harvested_public_predictions": 15,
+  "restricted_harvested_results_published": 0
 }

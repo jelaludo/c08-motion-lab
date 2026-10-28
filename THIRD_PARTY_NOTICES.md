@@ -16,3 +16,6 @@ The new baseline tab includes 20 retargeted animations and the original Standard
 
 ## Landing page typography
 The landing page requests DM Sans and Space Grotesk through Google Fonts; these font families are offered under the SIL Open Font License. System fonts provide the fallback.
+
+## Sampled-pose conditioning
+The predictive tab includes five new Quaternius CC0 source-pose experiments, six from user-provided capture recoveries, and four from our original-input MotionBricks outputs. Generated outputs are identified separately from their source clips. Two bundled NVIDIA sample experiments remain local under the sample evaluation terms; neither their sampled poses nor their conditioned outputs are published. See research/pose-harvest.md.

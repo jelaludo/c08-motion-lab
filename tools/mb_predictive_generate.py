@@ -1,4 +1,4 @@
-﻿"""Original-input MotionBricks predictive experiments; no bundled sample motion is loaded."""
+﻿"""MotionBricks predictive experiments with explicit per-case input provenance."""
 from pathlib import Path
 import json,time,subprocess,sys,os,xml.etree.ElementTree as ET
 import numpy as np
@@ -29,7 +29,7 @@ class Predictor:
   folder.mkdir(parents=True,exist_ok=True);np.savez(folder/'g1-motion.npz',qpos=q,timestamps=np.arange(len(q))/30,contacts=contacts,body_transforms=self.transforms(q),body_names=np.array(self.names),reference_qpos=self.refq,reference_bodies=self.refbody)
   (folder/'g1-motion.json').write_text(json.dumps(meta,indent=2),encoding='utf8')
  def generate(self,case,folder,baseline=True):
-  recent=np.repeat(np.array(LIB['poses']['neutral'],np.float32)[None,:],4,axis=0);segments=[];contacts=[];trace=[];linear=[];linear_recent=recent[-1].copy();start=time.perf_counter()
+  recent=np.array(case.get('context',np.repeat(np.array(LIB['poses']['neutral'],np.float32)[None,:],4,axis=0)),np.float32);assert recent.shape==(4,36);purpose=case.get('purpose',PURPOSE);segments=[];contacts=[];trace=[];linear=[];linear_recent=recent[-1].copy();start=time.perf_counter()
   with wp.ScopedStream(self.engine.stream):
    for i,g in enumerate(case['goals']):
     before=recent.copy();self.context.update_from_poses(wp.array(recent,dtype=wp.float32),stream=self.engine.stream);self.target.update_from_poses(wp.array(g,dtype=wp.float32),stream=self.engine.stream);tick=time.perf_counter()
@@ -44,10 +44,11 @@ class Predictor:
     linear.append(b);linear_recent=g[0].copy()
     trace.append({'index':i,'start_frame':boundary,'frames':len(q),'raw_frames':len(raw),'inference_seconds':seconds,'context':before.tolist(),'target':g.tolist(),'last_four_generated':recent.tolist(),'context_from_previous_prediction':i>0,'shared_endpoint_removed':duplicate,'endpoint_root_error_m':float(np.linalg.norm(q[-1,:3]-g[0,:3]))})
   q=np.concatenate(segments);c=np.concatenate(contacts)
-  meta={'id':case['id'],'label':case['label'],'clip':'MBP_'+case['id'],'purpose':PURPOSE,'provenance_type':'original','model':'MotionBricks-G1-RP-v1','precision':'FP32','sample_rate':30,'frames':len(q),'duration_s':(len(q)-1)/30,'inputs':[{'context':s['context'],'target':s['target']} for s in trace],'segments':trace,'inference_seconds':sum(s['inference_seconds'] for s in trace),'total_seconds':time.perf_counter()-start,'upstream_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT/'upstream',text=True).strip(),'endpoint_correction':True,'allowed_token_counts':list(range(8,15)),'body_names':self.names,'source_metrics':{'maximum_joint_key_step_rad':float(np.abs(np.diff(q[:,7:],axis=0)).max())}}
+  meta={'id':case['id'],'label':case['label'],'clip':'MBP_'+case['id'],'purpose':purpose,'provenance_type':case.get('provenance_type','original'),'model':'MotionBricks-G1-RP-v1','precision':'FP32','sample_rate':30,'frames':len(q),'duration_s':(len(q)-1)/30,'inputs':[{'context':s['context'],'target':s['target']} for s in trace],'segments':trace,'inference_seconds':sum(s['inference_seconds'] for s in trace),'total_seconds':time.perf_counter()-start,'upstream_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT/'upstream',text=True).strip(),'endpoint_correction':True,'allowed_token_counts':list(range(8,15)),'body_names':self.names,'source_metrics':{'maximum_joint_key_step_rad':float(np.abs(np.diff(q[:,7:],axis=0)).max())}}
+  if 'source_harvest' in case:meta['source_harvest']=case['source_harvest']
   self.save(folder,q,c,meta)
   if baseline:
-   b=np.concatenate(linear);bm={**meta,'clip':'LINEAR_'+case['id'],'kind':'linear_baseline','model':None,'purpose':PURPOSE+' Non-neural joint interpolation with matched endpoints/duration.','segments':[]};self.save(folder/'linear',b,np.zeros_like(c),bm)
+   b=np.concatenate(linear);bm={**meta,'clip':'LINEAR_'+case['id'],'kind':'linear_baseline','model':None,'purpose':purpose+' Non-neural joint interpolation with matched endpoints/duration.','segments':[]};self.save(folder/'linear',b,np.zeros_like(c),bm)
   # Explicit G1 context/target skeletons, on the same source basis as g1-preview.json.
   skeletons=[{'context':self.transforms(np.array(s['context'],np.float32))[:,:,:3].tolist(),'target':self.transforms(np.array(s['target'],np.float32))[:,:,:3].tolist()} for s in trace]
   (folder/'prediction-trace.json').write_text(json.dumps({'metadata':meta,'skeletons_g1_zup':skeletons},indent=2),encoding='utf8')

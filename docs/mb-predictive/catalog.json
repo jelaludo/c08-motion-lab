@@ -41,6 +41,311 @@
       "duration_s": 4.9,
       "inference_seconds": 0.06565130013041198,
       "segment_count": 3
+    },
+    {
+      "id": "quat_walk_loop",
+      "label": "Quaternius / Walk Loop",
+      "category": "Harvest / Quaternius CC0",
+      "family": "quaternius",
+      "harvested": true,
+      "source_duration_s": 1.3333333333333333,
+      "duration_s": 1.6666666666666667,
+      "inference_seconds": 0.059941899962723255,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        0.6666666666666666,
+        1.3333333333333333
+      ],
+      "publishable": true
+    },
+    {
+      "id": "quat_dance_loop",
+      "label": "Quaternius / Dance Loop",
+      "category": "Harvest / Quaternius CC0",
+      "family": "quaternius",
+      "harvested": true,
+      "source_duration_s": 1.0,
+      "duration_s": 3.2666666666666666,
+      "inference_seconds": 0.006470699794590473,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        0.5,
+        1.0
+      ],
+      "publishable": true
+    },
+    {
+      "id": "quat_interact",
+      "label": "Quaternius / Interact",
+      "category": "Harvest / Quaternius CC0",
+      "family": "quaternius",
+      "harvested": true,
+      "source_duration_s": 2.0,
+      "duration_s": 2.466666666666667,
+      "inference_seconds": 0.007272300077602267,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        1.0,
+        2.0
+      ],
+      "publishable": true
+    },
+    {
+      "id": "quat_jump_start",
+      "label": "Quaternius / Jump Start",
+      "category": "Harvest / Quaternius CC0",
+      "family": "quaternius",
+      "harvested": true,
+      "source_duration_s": 1.3333333333333333,
+      "duration_s": 1.8,
+      "inference_seconds": 0.006403999635949731,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        0.6666666666666666,
+        1.3333333333333333
+      ],
+      "publishable": true
+    },
+    {
+      "id": "quat_crouch_fwd_loop",
+      "label": "Quaternius / Crouch Fwd Loop",
+      "category": "Harvest / Quaternius CC0",
+      "family": "quaternius",
+      "harvested": true,
+      "source_duration_s": 2.0,
+      "duration_s": 2.8666666666666667,
+      "inference_seconds": 0.007864300161600113,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        1.0,
+        2.0
+      ],
+      "publishable": true
+    },
+    {
+      "id": "capture_deadlift",
+      "label": "Own capture / deadlift",
+      "category": "Harvest / own video capture",
+      "family": "own_capture",
+      "harvested": true,
+      "source_duration_s": 6.266666666666667,
+      "duration_s": 2.7333333333333334,
+      "inference_seconds": 0.006408600136637688,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        3.1333333333333333,
+        6.266666666666667
+      ],
+      "publishable": true
+    },
+    {
+      "id": "capture_sumo_stomp",
+      "label": "Own capture / sumo stomp",
+      "category": "Harvest / own video capture",
+      "family": "own_capture",
+      "harvested": true,
+      "source_duration_s": 7.233333333333333,
+      "duration_s": 3.2666666666666666,
+      "inference_seconds": 0.006969299865886569,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        3.6,
+        7.233333333333333
+      ],
+      "publishable": true
+    },
+    {
+      "id": "capture_technical_standup",
+      "label": "Own capture / technical standup",
+      "category": "Harvest / own video capture",
+      "family": "own_capture",
+      "harvested": true,
+      "source_duration_s": 7.066666666666666,
+      "duration_s": 3.2666666666666666,
+      "inference_seconds": 0.007189400028437376,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        3.533333333333333,
+        7.066666666666666
+      ],
+      "publishable": true
+    },
+    {
+      "id": "capture_ukemi",
+      "label": "Own capture / ukemi",
+      "category": "Harvest / own video capture",
+      "family": "own_capture",
+      "harvested": true,
+      "source_duration_s": 4.733333333333333,
+      "duration_s": 3.2666666666666666,
+      "inference_seconds": 0.00644840020686388,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        2.3666666666666667,
+        4.733333333333333
+      ],
+      "publishable": true
+    },
+    {
+      "id": "capture_gorilla_side",
+      "label": "Own capture / gorilla side",
+      "category": "Harvest / own video capture",
+      "family": "own_capture",
+      "harvested": true,
+      "source_duration_s": 8.1,
+      "duration_s": 3.2666666666666666,
+      "inference_seconds": 0.006420500110834837,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        4.066666666666666,
+        8.1
+      ],
+      "publishable": true
+    },
+    {
+      "id": "capture_gorilla_front",
+      "label": "Own capture / gorilla front",
+      "category": "Harvest / own video capture",
+      "family": "own_capture",
+      "harvested": true,
+      "source_duration_s": 7.933333333333334,
+      "duration_s": 3.2666666666666666,
+      "inference_seconds": 0.0069604001473635435,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        3.966666666666667,
+        7.933333333333334
+      ],
+      "publishable": true
+    },
+    {
+      "id": "mb_run",
+      "label": "MotionBricks original / run",
+      "category": "Harvest / our MotionBricks outputs",
+      "family": "motionbricks_original",
+      "harvested": true,
+      "source_duration_s": 3.1666666666666665,
+      "duration_s": 2.8666666666666667,
+      "inference_seconds": 0.006380900042131543,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        1.6,
+        3.1666666666666665
+      ],
+      "publishable": true
+    },
+    {
+      "id": "mb_jump",
+      "label": "MotionBricks original / jump",
+      "category": "Harvest / our MotionBricks outputs",
+      "family": "motionbricks_original",
+      "harvested": true,
+      "source_duration_s": 4.5,
+      "duration_s": 2.8666666666666667,
+      "inference_seconds": 0.006742400117218494,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        2.2666666666666666,
+        4.5
+      ],
+      "publishable": true
+    },
+    {
+      "id": "mb_dance",
+      "label": "MotionBricks original / dance",
+      "category": "Harvest / our MotionBricks outputs",
+      "family": "motionbricks_original",
+      "harvested": true,
+      "source_duration_s": 7.233333333333333,
+      "duration_s": 2.466666666666667,
+      "inference_seconds": 0.006425099913030863,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        3.6,
+        7.233333333333333
+      ],
+      "publishable": true
+    },
+    {
+      "id": "mb_crouch",
+      "label": "MotionBricks original / crouch",
+      "category": "Harvest / our MotionBricks outputs",
+      "family": "motionbricks_original",
+      "harvested": true,
+      "source_duration_s": 4.766666666666667,
+      "duration_s": 3.2666666666666666,
+      "inference_seconds": 0.0075217001140117645,
+      "segment_count": 2,
+      "source_sample_times_s": [
+        0.0,
+        0.03333333333333333,
+        0.06666666666666667,
+        0.1,
+        2.4,
+        4.766666666666667
+      ],
+      "publishable": true
     }
-  ]
+  ],
+  "summary": {
+    "authored_original": 6,
+    "harvested_public": 15,
+    "restricted_sample_results_in_public": false
+  }
 }

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "converted_source_cases_exactly_reused": [
+    "quat_walk_loop",
+    "quat_dance_loop",
+    "quat_interact",
+    "quat_jump_start",
+    "quat_crouch_fwd_loop",
+    "capture_deadlift",
+    "capture_sumo_stomp",
+    "capture_technical_standup",
+    "capture_ukemi",
+    "capture_gorilla_side",
+    "capture_gorilla_front"
+  ],
+  "source_skeleton_fk_crosscheck_error_m": 1.1720121408837895e-06,
+  "all_17_chain_contexts_verified": true,
+  "public_count": 21,
+  "restricted_samples_in_public": false
+}

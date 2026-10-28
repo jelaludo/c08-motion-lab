@@ -4,7 +4,7 @@ An independent, non-commercial motion notebook by **jelaludo**. One original rob
 
 **[Lab home](https://jelaludo.github.io/c08-motion-lab/)** | **[MB-Predictive](https://jelaludo.github.io/c08-motion-lab/mb-predictive/)** | **[Quaternius](https://jelaludo.github.io/c08-motion-lab/quaternius/)** | **[Research gallery](https://jelaludo.github.io/c08-motion-lab/lab/)** | **[Off Shift diorama](https://jelaludo.github.io/c08-motion-lab/diorama.html)**
 
-The landing page separates learned prediction, conventional animation, video recovery, choreography, and the earlier research archive. MB-Predictive shows six actual AI predictions beside ordinary interpolation, with explicit recent-pose/target/generated-movement stages. The Quaternius tab adds a prominent WASD controller and shuffled routines that return through idle. Existing research clips remain available for future comparisons.
+The landing page separates learned prediction, conventional animation, video recovery, choreography, and the earlier research archive. MB-Predictive shows 21 actual AI predictions beside ordinary interpolation, with explicit recent-pose/target/generated-movement stages. The Quaternius tab adds a prominent WASD controller and shuffled routines that return through idle. Existing research clips remain available for future comparisons.
 
 The diorama includes greetings, crouching, a feline roll-over, chases in both directions, reciprocal jumps, footwork, turns, reaches and a quiet finish. Its 16 scenes form a continuous loop. The expanded inspector offers **47 choices**: 36 original-input MotionBricks experiments, six video-derived C08 retargets and all five original authored C08 actions.
 
@@ -72,3 +72,11 @@ Six new original-input experiments vary distance, heading and arrival posture. T
 The public site plays recorded outputs. A loopback-only local service also supports fresh target generation on the RTX 4090. In the provisioned MotionBricks workspace, run `./Start-MB-Predictive.ps1` and open `http://127.0.0.1:8791/mb-predictive/`. Set forward/sideways placement, heading and arrival posture, then generate. The service serializes jobs, reuses the model, retargets both outputs in Blender, and validates the exported clips. New job files stay outside the public repository. GPU timing displayed in the UI excludes initialization, retargeting and export.
 
 See [MB-Predictive research notes](research/mb-predictive.md) for input provenance, chaining checks and limits.
+
+## Harvested midpoint and endpoint targets
+
+MB-Predictive now contains 21 public experiments: the six authored-target examples plus 15 sampled-pose predictions (five Quaternius Standard clips, six own video captures and four of our original-input MotionBricks outputs). Each harvested case seeds four recent source poses, then generates toward its midpoint and endpoint poses in two chained requests. The source names, timestamps, fitting notes and traces stay visible. Source timing is not imposed on the prediction.
+
+The local tab adds two bundled NVIDIA sample cases for internal evaluation only. They are excluded from the public catalog, files and screenshots. Public results rely on CC0, the user's own references or originally conditioned generated motion; we do not rely on a fair-use assumption to publish restricted sample derivatives.
+
+In the local UI, select a harvested source, vary target spacing/rotation and choose **Generate from sampled targets**. This reuses the source context and hinge postures while placing targets differently, then runs a fresh prediction and validated C08 export. See [pose-harvest findings](research/pose-harvest.md) and [measured results](research/pose-harvest-results.json).

@@ -15,6 +15,34 @@ lock = threading.Lock()
 executor = ThreadPoolExecutor(max_workers=1)
 predictor = None
 
+def harvest_records():
+    manifest = ROOT/'evaluation/pose-harvest/catalog.json'
+    if not manifest.exists():
+        return []
+    return json.loads(manifest.read_text(encoding='utf8'))['cases']
+
+def sampled_case(settings):
+    import numpy as np
+    from scipy.spatial.transform import Rotation
+    record = next((c for c in harvest_records() if c['id'] == settings['harvest_id']), None)
+    if record is None or record.get('validation') != 'passed':
+        raise ValueError('This sampled-pose experiment is not available')
+    source = ROOT / record['directory']
+    meta = json.loads((source/'g1-motion.json').read_text(encoding='utf8'))
+    context = np.array(meta['inputs'][0]['context'], np.float32)
+    anchor = context[-1, :2].copy()
+    rotation = Rotation.from_euler('z', settings['yaw'], degrees=True)
+    goals = []
+    for item in meta['inputs']:
+        goal = np.array(item['target'], np.float32)
+        for row in goal:
+            delta = np.array([*(row[:2]-anchor), 0.])
+            row[:2] = anchor + rotation.apply(delta)[:2]*settings['spacing']
+            row[3:7] = (rotation*Rotation.from_quat(row[3:7])).as_quat()
+        goals.append(goal)
+    provenance = {**meta['source_harvest'], 'target_placement_variant': {'spacing': settings['spacing'], 'yaw_degrees': settings['yaw']}}
+    return {'id': settings['harvest_id'], 'label': 'Sampled-pose variation / '+record['label'], 'context': context, 'goals': goals, 'source_harvest': provenance, 'provenance_type': meta['provenance_type'], 'purpose': meta['purpose']+' Fresh target-placement variation.'}
+
 def work(identifier, settings):
     global predictor
     try:
@@ -26,7 +54,9 @@ def work(identifier, settings):
         folder = JOBS / identifier
         folder.mkdir(exist_ok=True)
         jobs[identifier]['message'] = 'Generating movement and a matched interpolation baseline...'
-        predictor.generate({'id': identifier, 'label': 'Local custom target', 'goals': [goal(settings['pose'], settings['x'], settings['y'], settings['yaw'])]}, folder)
+        case = sampled_case(settings) if 'harvest_id' in settings else {'id': identifier, 'label': 'Local custom target', 'goals': [goal(settings['pose'], settings['x'], settings['y'], settings['yaw'])]}
+        case['id'] = identifier
+        predictor.generate(case, folder)
         jobs[identifier]['message'] = 'Retargeting both outputs to C08...'
         result = subprocess.run([str(ROOT/'tools/blender-4.5.15-windows-x64/blender.exe'), '-b', '-t', '2', '--python', str(ROOT/'tools/mb_predictive_retarget.py'), '--', str(folder)], capture_output=True, text=True, encoding='utf8', errors='replace', timeout=120)
         (folder/'retarget.log').write_text(result.stdout + result.stderr, encoding='utf8')
@@ -56,6 +86,9 @@ class Handler(SimpleHTTPRequestHandler):
         route = urlsplit(self.path).path
         if route == '/api/predictive/status':
             return self.send_json({'service': 'mb-predictive', 'generation': 'local GPU', 'ready': True})
+        if route == '/api/predictive/pose-catalog':
+            manifest = ROOT/'evaluation/pose-harvest/private-catalog.json'
+            return self.send_json(json.loads(manifest.read_text(encoding='utf8')) if manifest.exists() else {'cases': []})
         if route.startswith('/api/predictive/jobs/'):
             job = jobs.get(route.rsplit('/', 1)[-1])
             return self.send_json(job or {'error': 'Unknown job'}, 200 if job else 404)
@@ -75,10 +108,15 @@ class Handler(SimpleHTTPRequestHandler):
             if not 0 < size <= 2048 or self.headers.get_content_type() != 'application/json':
                 raise ValueError('Expected a small JSON target specification')
             value = json.loads(self.rfile.read(size))
-            settings = {key: float(value[key]) for key in ('x', 'y', 'yaw')}
-            settings['pose'] = value['pose']
-            if not (.3 <= settings['x'] <= 1.4 and -.4 <= settings['y'] <= .4 and -60 <= settings['yaw'] <= 60 and settings['pose'] in ('neutral', 'crouch', 'reach_right')):
-                raise ValueError('Target is outside the supported input range')
+            if 'harvest_id' in value:
+                settings = {'harvest_id': str(value['harvest_id']), 'spacing': float(value['spacing']), 'yaw': float(value['yaw'])}
+                if not (.5 <= settings['spacing'] <= 1.5 and -45 <= settings['yaw'] <= 45 and any(c['id'] == settings['harvest_id'] for c in harvest_records())):
+                    raise ValueError('Unsupported sampled-pose variation')
+            else:
+                settings = {key: float(value[key]) for key in ('x', 'y', 'yaw')}
+                settings['pose'] = value['pose']
+                if not (.3 <= settings['x'] <= 1.4 and -.4 <= settings['y'] <= .4 and -60 <= settings['yaw'] <= 60 and settings['pose'] in ('neutral', 'crouch', 'reach_right')):
+                    raise ValueError('Target is outside the supported input range')
         except (ValueError, KeyError, TypeError) as error:
             return self.send_json({'error': str(error)}, 400)
         with lock:
@@ -91,6 +129,11 @@ class Handler(SimpleHTTPRequestHandler):
 
     def translate_path(self, path):
         route = urlsplit(path).path
+        evaluation_prefix = '/mb-predictive/evaluation/'
+        if route.startswith(evaluation_prefix):
+            base = (ROOT/'evaluation/pose-harvest/local-view').resolve()
+            target = base.joinpath(route[len(evaluation_prefix):]).resolve()
+            return str(target) if target.is_relative_to(base) else str(SITE/'__not_found__')
         prefix = '/mb-predictive/generated/'
         if route.startswith(prefix):
             parts = route[len(prefix):].split('/')

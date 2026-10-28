@@ -54,6 +54,19 @@ last_quat={}
 max_reach_correction=0.
 floor_corrections=[]
 samples=[]
+# Sparse human targets can include inverted/non-foot support. Retain the raw source;
+# report any whole-avatar grounding correction on this experimental adaptation.
+whole_body_ground=bool(metadata.get('source_harvest'));ground_geometry=[];body_ground_offsets=[];dense_ground_offsets=[]
+if whole_body_ground:
+ for obj in bpy.data.objects:
+  if obj.type!='MESH':continue
+  bybone={};groups={g.index:g.name for g in obj.vertex_groups};mesh_to_arm=arm.matrix_world.inverted()@obj.matrix_world
+  for vertex in obj.data.vertices:
+   weights=[g for g in vertex.groups if g.weight>1e-7]
+   if not weights:continue
+   assert len(weights)==1 and abs(weights[0].weight-1)<1e-5
+   n=groups[weights[0].group];p=arm.data.bones[n].matrix_local.inverted()@(mesh_to_arm@vertex.co);bybone.setdefault(n,[]).append((*p,1.))
+  ground_geometry.extend((n,np.array(points)) for n,points in bybone.items())
 for frame in range(len(source)):
  scene.frame_set(frame)
  pos,ori={},{}
@@ -136,6 +149,11 @@ for frame in range(len(source)):
  # Unmapped fingers and sockets inherit the adapted parent; none receives an animation channel.
  for n in H:
   if n not in pos:put(n)
+ if whole_body_ground:
+  low=min(float((points@np.array(Matrix.Translation(pos[n])@ori[n].to_matrix().to_4x4()@arm.data.bones[n].matrix_local.to_3x3().to_4x4())[2,:]).min()) for n,points in ground_geometry)
+  body_lift=max(0,.012-low);body_ground_offsets.append(body_lift)
+  for n in H:
+   if n!='MOTION':pos[n].z+=body_lift
  matrices={}
  for n in H:
   b=arm.data.bones[n];parent=parents[n]
@@ -153,6 +171,21 @@ for frame in range(len(source)):
  samples.append({n:list(pos[n]) for n in ('PELVIS','KNEE_L','KNEE_R','ANKLE_L','ANKLE_R','SOCKET_SOLE_L','SOCKET_SOLE_R')})
 for fc in action.fcurves:
  for key in fc.keyframe_points:key.interpolation='LINEAR'
+if whole_body_ground:
+ # Preserve source timing while sampling the geometric clearance at 120 Hz.
+ for fc in action.fcurves:
+  for key in fc.keyframe_points:
+   key.co.x*=4;key.handle_left.x*=4;key.handle_right.x*=4
+ scene.render.fps=120;scene.frame_end=(len(source)-1)*4;dense_locations=[]
+ for frame in range(scene.frame_end+1):
+  scene.frame_set(frame);bpy.context.view_layer.update()
+  low=min(float((points@np.array(arm.pose.bones[n].matrix)[2,:]).min()) for n,points in ground_geometry);lift=max(0,.012-low);dense_ground_offsets.append(lift)
+  pb=arm.pose.bones['PELVIS'];b=arm.data.bones['PELVIS'];m=pb.matrix.copy();m.translation.z+=lift
+  local=b.convert_local_to_pose(m,b.matrix_local,parent_matrix=pb.parent.matrix,parent_matrix_local=b.parent.matrix_local,invert=True);dense_locations.append(local.translation.copy())
+ for frame,location in enumerate(dense_locations):
+  arm.pose.bones['PELVIS'].location=location;arm.pose.bones['PELVIS'].keyframe_insert(data_path='location',frame=frame)
+ for fc in action.fcurves:
+  for key in fc.keyframe_points:key.interpolation='LINEAR'
 scene.frame_set(0)
 arm.show_in_front=True
 arm['motion_provenance']=metadata['purpose']+'; MotionBricks G1 FP32; experimental retarget'
@@ -206,5 +239,6 @@ for d,k in slots:d[k]=indices[d[k]]
 encoded=json.dumps(document,separators=(',',':')).encode();encoded+=b' '*((-len(encoded))%4)
 glb_path.write_bytes(struct.pack('<III',0x46546c67,2,20+len(encoded)+len(rest))+struct.pack('<II',len(encoded),0x4e4f534a)+encoded+rest)
 report={'status':'experimental prototype; not game accepted','conditioning_provenance':metadata['purpose'],'source_asset_sha256':hashlib.sha256((ROOT/'assets/c08-worker/c08_d0_lod1.glb').read_bytes()).hexdigest(),'clip':CLIP_NAME,'frames':len(source),'fps':fps,'duration_s':(len(source)-1)/fps,'source_to_target_scale':scale,'initial_heading_removed_rad':initial_yaw,'max_pelvis_reach_correction_m':max_reach_correction,'max_foot_floor_lift_m':max(floor_corrections),'root_motion':'MOTION owns scaled horizontal travel and heading; PELVIS residual; do not add navigation travel','contact_policy':'>=0.65 maximum source heel/toe confidence; heuristic sole-center XY locking, broad-sole floor correction; unreviewed contacts','limitations':['G1 and C08 proportions/rigs differ; this is measured adaptation, not reference-rig equivalence','Fingers/toes/head remain inherited rest controls','No self-collision or physical balance guarantee'],'sample_positions_blender':samples}
+report.update(export_bake_hz=120 if whole_body_ground else 30,max_whole_body_ground_lift_m=max(body_ground_offsets,default=0.),max_dense_ground_lift_m=max(dense_ground_offsets,default=0.),whole_avatar_ground_policy='Complete-avatar lift only, including non-foot armor support; no balance/contact solve' if whole_body_ground else 'Original standing foot adapter')
 (OUT/'retarget-report.json').write_text(json.dumps(report,indent=2))
 print('RETARGET_COMPLETE',len(source),'frames','scale',scale,'pelvis correction',max_reach_correction,'foot lift',max(floor_corrections),flush=True)

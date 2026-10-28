@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "local_groups": [
+    {
+      "label": "Original authored targets",
+      "count": 6
+    },
+    {
+      "label": "Harvest / Quaternius CC0",
+      "count": 5
+    },
+    {
+      "label": "Harvest / own video capture",
+      "count": 6
+    },
+    {
+      "label": "Harvest / our MotionBricks outputs",
+      "count": 4
+    },
+    {
+      "label": "LOCAL / bundled sample evaluation",
+      "count": 2
+    }
+  ],
+  "checks": [
+    "public and local-only source groups",
+    "midpoint and endpoint source timestamps",
+    "conditioning ghosts for nonzero headings",
+    "fresh generation from harvested targets",
+    "exact context and sampled hinge preservation",
+    "varied target placement"
+  ],
+  "errors": []
+}

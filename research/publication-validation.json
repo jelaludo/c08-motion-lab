@@ -2,12 +2,13 @@
   "status": "passed",
   "public_motion_count": 42,
   "video_derived_c08_count": 6,
-  "all_motionbricks_conditioning_original": true,
+  "all_research_gallery_motionbricks_conditioning_original": true,
   "excluded_private_video_and_model_weights": true,
   "max_file_bytes": 7618436,
-  "checks": "Every MotionBricks input classified original; video-derived motion separately classified; no raw videos, source-local paths, inference weights or token-like credentials in publication.",
+  "checks": "Research gallery uses original conditioning; predictive sources are original, CC0 or user-owned; video-derived motion separately classified; no raw videos, source-local paths, inference weights or token-like credentials in publication.",
   "quaternius_baseline_clips": 20,
-  "predictive_neural_experiments": 6,
-  "predictive_interpolation_controls": 6,
-  "exact_generated_context_chaining": true
+  "predictive_neural_experiments": 21,
+  "predictive_interpolation_controls": 21,
+  "exact_generated_context_chaining": true,
+  "public_predictive_source_rights_verified": true
 }
