@@ -1,0 +1,141 @@
+{
+  "scope": "Only explicitly reviewed H3 generated robot references and own-rig rendered/recovery previews. Existing private human source-video prohibition and all inference/checkpoint exclusions remain in force.",
+  "files": [
+    {
+      "path": "docs/h3-motion/media/c07-jump-reference-inspection.mp4",
+      "sha256": "efccacf5a25cf193a6f7bfe9cebe76f098479fe128e48da1efbd97460ea52820",
+      "bytes": 839955,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false,
+      "rendered_glb_sha256": "daf9ba45cbfc31552a951026aac2946122d87923f5f5b0c6885ada27439ec53d"
+    },
+    {
+      "path": "docs/h3-motion/media/c07-jump-soft-inspection.mp4",
+      "sha256": "69f9480e9704a4cdc5bcafd8b4aad9cdea8cec8c6339095d203297601994a269",
+      "bytes": 827029,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false,
+      "rendered_glb_sha256": "5c62104956b9d4f372144107c6017155ae42570cf133332e44d9c515e4d1f6fc"
+    },
+    {
+      "path": "docs/h3-motion/media/c07-jump.mp4",
+      "sha256": "11e22ece2041f84612699333f02e1cd433bce2a4f8adf62cd651ef8fd5b1ed1e",
+      "bytes": 879866,
+      "kind": "creator_supplied_generated_robot_preview",
+      "private_human_footage": false,
+      "original_generated_reference_sha256": "dd458be3c39a71d1e7cd1b06d0b4d432b1fc05c5b93fcf98446ca1f3acf9abb9"
+    },
+    {
+      "path": "docs/h3-motion/media/c07-known-motion-inspection.mp4",
+      "sha256": "ecb8a13662a199ee7a2d287207accc7cd49d3e2c7c0b38572f7cd0d378589bf7",
+      "bytes": 459449,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false,
+      "rendered_glb_sha256": "353efb3ad78c8fd187936ce5bfa52a46916f6084df218609c5d01f17c48f92e1"
+    },
+    {
+      "path": "docs/h3-motion/media/c07-native-control-side.mp4",
+      "sha256": "96a66f3dd21993cd447ee92aea6e61045ab4f2e37cd0da9dcc6fb19e97c2f697",
+      "bytes": 153134,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false
+    },
+    {
+      "path": "docs/h3-motion/media/c07-native-control.mp4",
+      "sha256": "93d482e1505813890155bcd6625a6c6530f6a6a6a1d5412fa6db9fb5838dc8ba",
+      "bytes": 237430,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false
+    },
+    {
+      "path": "docs/h3-motion/media/concept-recovery-overlay.mp4",
+      "sha256": "1d79eb823b3ec0c27f6317fb0963aad5a9899608d749334b8bfc9b08210046c0",
+      "bytes": 2389702,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false
+    },
+    {
+      "path": "docs/h3-motion/media/concept-walk-run-stop.mp4",
+      "sha256": "77a1f86c2540c5f738496268d2ea2678e88217d792aa3036b3301828f75477a7",
+      "bytes": 1996297,
+      "kind": "creator_supplied_generated_robot_preview",
+      "private_human_footage": false,
+      "original_generated_reference_sha256": "53ebcddc5899555b5bc5bf50b41461409c19ae85bdabf97f1a35c7513e14567b"
+    },
+    {
+      "path": "docs/h3-motion/media/k0-native-control-side.mp4",
+      "sha256": "8857c858580851cb9f5a8e8505b05b13e371b92f3e4ce856e101f6990e8a135e",
+      "bytes": 120107,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false
+    },
+    {
+      "path": "docs/h3-motion/media/k0-native-control.mp4",
+      "sha256": "f42a35a96ede66ad3356483d31fcf0f5ee9b9058eb06100d2cc1f5811b8f0427",
+      "bytes": 191995,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false
+    },
+    {
+      "path": "docs/h3-motion/media/k0-native-three-quarter-cropped.mp4",
+      "sha256": "118563900efe16c25f8440564f57acb3f12bbcb5f700693260404676602e1ed9",
+      "bytes": 142512,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false
+    },
+    {
+      "path": "docs/h3-motion/media/k0-pounce-camera-locked-inspection.mp4",
+      "sha256": "6ceaa0ed3cffa77daf14e309509a7d99e12a29550148e7719e6716c6687e4a8a",
+      "bytes": 1277099,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false,
+      "rendered_glb_sha256": "ac79a763d074f108e330d0988cc3539f503b505d907114fdf6a752bcf76b03a4"
+    },
+    {
+      "path": "docs/h3-motion/media/k0-pounce-camera-trained-inspection.mp4",
+      "sha256": "5f201e229dfe5e3141536729138825a828230da27fd69d702b9c17960295763c",
+      "bytes": 1137446,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false,
+      "rendered_glb_sha256": "cdfb1ad65ad59a9202773478f05c18df04cb2b9a01976dd3734e59a03adf83d4"
+    },
+    {
+      "path": "docs/h3-motion/media/k0-pounce-default-inspection.mp4",
+      "sha256": "fe9a6b78e19104bda1a23cca6f6a29d0c74246b2cb1f58a3551cc0f6ed289966",
+      "bytes": 1443876,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false,
+      "rendered_glb_sha256": "3f8c28ff462915d61917922e616b0ca6a627a556ad6aca8849c9dcd002968e0a"
+    },
+    {
+      "path": "docs/h3-motion/media/k0-pounce-soft-inspection.mp4",
+      "sha256": "58b490cf02e5776e0c90f4bcb30b896a49b9fda1f9203b55a59bd35774041dfa",
+      "bytes": 1436106,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false,
+      "rendered_glb_sha256": "0f41deb61512497d9588bba873804898b5c4e37dc3a93eadb0c9bbd4560ccf9e"
+    },
+    {
+      "path": "docs/h3-motion/media/k0-pounce.mp4",
+      "sha256": "833a6ddabbb56d8e45f172f5aa200d7a59d6842c12d20f1b9ae579820d72592a",
+      "bytes": 739966,
+      "kind": "creator_supplied_generated_robot_preview",
+      "private_human_footage": false,
+      "original_generated_reference_sha256": "88dc16afcb016176e65b32782753741a37df85818deffc207923e8d4022db196"
+    },
+    {
+      "path": "docs/h3-motion/media/k0-recovered-three-quarter-cropped.mp4",
+      "sha256": "1ea7f7fa0229ea7d12e390c889931beed7ef420f9330391e033e025e9b92f55a",
+      "bytes": 154250,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false
+    },
+    {
+      "path": "docs/h3-motion/media/k0-source-vs-recovered-three-quarter.mp4",
+      "sha256": "b7ee69de1f7170f0cee5596449c18df6f774fac9c83ae778039d90f4b3875bbf",
+      "bytes": 243363,
+      "kind": "own_robot_render_or_recovery_visualization",
+      "private_human_footage": false
+    }
+  ]
+}

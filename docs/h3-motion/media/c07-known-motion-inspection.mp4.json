@@ -1,0 +1,10 @@
+{
+  "testId": "c07-known-motion",
+  "output": "public/c08-motion-lab/docs/h3-motion/media/c07-known-motion-inspection.mp4",
+  "frames": 120,
+  "fps": 30,
+  "duration_s": 4,
+  "source_model": "models/c07-known-motion.glb",
+  "method": "Deterministic Three.js GLB inspection frames. Camera follows the body; no motion keys, floor correction or retiming added. Every source-time sample retained at the stated frame rate.",
+  "errors": []
+}

@@ -1,0 +1,35 @@
+{
+  "test": "concept-humanoid",
+  "status": "computed - visual review required",
+  "method": "GEM-X Body Motion native SOMA77, fixed camera, raw recovery",
+  "source_sha256": "53ebcddc5899555b5bc5bf50b41461409c19ae85bdabf97f1a35c7513e14567b",
+  "inference_seconds": 153.0473158999812,
+  "peak_torch_allocated_bytes": 3674924032,
+  "frames": 368,
+  "fps": 30,
+  "joints": 77,
+  "finite_positions": true,
+  "estimated_root_path_m": 9.346717834472656,
+  "detection_filled_frames": [
+    123,
+    140,
+    245
+  ],
+  "limitations": [
+    "Stylized robot from concept art, not a human performer; human-model recovery is out of distribution",
+    "No matching concept robot rig or exact reference camera imported; no exact surface-fit claim",
+    "Estimated world travel is not measured scene distance.",
+    "No contact or balance correction; numerical validity is not visual acceptance.",
+    "Exporter printed trajectory-ready and artifacts decode completely; shell reported exit1 without Python traceback, retained as a tooling caveat.",
+    "Source video returns toward the starting stance, but raw recovered horizontal root seam is about5.88m; no seamless loop is claimed."
+  ],
+  "source_recovery_loop_diagnostic": {
+    "estimated_root_end_minus_start_m": [
+      -3.2548766136169434,
+      0.4437468647956848,
+      -4.89453125
+    ],
+    "estimated_horizontal_loop_seam_m": 5.877980769541277,
+    "interpretation": "Monocular estimated travel, not measured distance. Source return-to-stance does not establish a seamless recovered world-space loop."
+  }
+}

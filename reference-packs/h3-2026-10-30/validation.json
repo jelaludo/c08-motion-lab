@@ -1,0 +1,281 @@
+{
+  "status": "passed",
+  "bodies": 5,
+  "pngs": 20,
+  "companion_txts": 20,
+  "video2rig_camera_jsons": 20,
+  "checks": [
+    "Reopened original frozen idle pose/rig; all NLA muted and actions detached",
+    "Importer widget helpers excluded from rendered scenes and body bounds",
+    "Saved camera matrices/projection/resolution match manifests",
+    "All body vertices finite and within 2.5 percent frame margins",
+    "Side/wide forward is image-left",
+    "Front/side panels same camera-plane pixel scale; right panel byte-identical RGBA to side",
+    "20 PNG dimensions, companions and recorded hashes verified",
+    "20 Video2Rig camera JSON files equal their exact Blender source records",
+    "Every .blend below 100 MB"
+  ],
+  "results": [
+    {
+      "id": "c08",
+      "vertices": 23090,
+      "bone_pose_error_m": 0,
+      "camera_matrix_error": 2.2351741790771484e-07,
+      "projection_error": 0,
+      "frozen_time_error": 0,
+      "dual_pixels_match_side_exactly": true,
+      "render_projected_bounds": [
+        {
+          "min": [
+            0.34812766313552856,
+            0.057570695877075195
+          ],
+          "max": [
+            0.6162391304969788,
+            0.5208203792572021
+          ]
+        },
+        {
+          "min": [
+            0.3437480330467224,
+            0.06286825984716415
+          ],
+          "max": [
+            0.6562519669532776,
+            0.5189154148101807
+          ]
+        },
+        {
+          "min": [
+            0.4268574118614197,
+            0.060565825551748276
+          ],
+          "max": [
+            0.5731409788131714,
+            0.5256903171539307
+          ]
+        },
+        {
+          "min": [
+            0.6834287047386169,
+            0.060565777122974396
+          ],
+          "max": [
+            0.7565704584121704,
+            0.5256902575492859
+          ]
+        }
+      ],
+      "blend_bytes": 1097323
+    },
+    {
+      "id": "brek43",
+      "vertices": 28060,
+      "bone_pose_error_m": 0,
+      "camera_matrix_error": 2.980232238769531e-07,
+      "projection_error": 0,
+      "frozen_time_error": 0,
+      "dual_pixels_match_side_exactly": true,
+      "render_projected_bounds": [
+        {
+          "min": [
+            0.42194661498069763,
+            0.06511901319026947
+          ],
+          "max": [
+            0.5692946314811707,
+            0.5249542593955994
+          ]
+        },
+        {
+          "min": [
+            0.4129846692085266,
+            0.06925448030233383
+          ],
+          "max": [
+            0.5870153307914734,
+            0.5267877578735352
+          ]
+        },
+        {
+          "min": [
+            0.45989468693733215,
+            0.06413567066192627
+          ],
+          "max": [
+            0.5401039123535156,
+            0.5211113691329956
+          ]
+        },
+        {
+          "min": [
+            0.6999473571777344,
+            0.06413562595844269
+          ],
+          "max": [
+            0.7400519251823425,
+            0.5211113095283508
+          ]
+        }
+      ],
+      "blend_bytes": 1409438
+    },
+    {
+      "id": "eva-k7",
+      "vertices": 21531,
+      "bone_pose_error_m": 0,
+      "camera_matrix_error": 1.341104507446289e-07,
+      "projection_error": 0,
+      "frozen_time_error": 0,
+      "dual_pixels_match_side_exactly": true,
+      "render_projected_bounds": [
+        {
+          "min": [
+            0.39181631803512573,
+            0.0625295639038086
+          ],
+          "max": [
+            0.5796529054641724,
+            0.523491621017456
+          ]
+        },
+        {
+          "min": [
+            0.3877493441104889,
+            0.0651586651802063
+          ],
+          "max": [
+            0.6122506260871887,
+            0.5231506824493408
+          ]
+        },
+        {
+          "min": [
+            0.442484587430954,
+            0.06564080715179443
+          ],
+          "max": [
+            0.5575124621391296,
+            0.5232776999473572
+          ]
+        },
+        {
+          "min": [
+            0.6912422776222229,
+            0.06564083695411682
+          ],
+          "max": [
+            0.7487562298774719,
+            0.5232776999473572
+          ]
+        }
+      ],
+      "blend_bytes": 1477310
+    },
+    {
+      "id": "k0-tech",
+      "vertices": 17054,
+      "bone_pose_error_m": 0,
+      "camera_matrix_error": 1.309714718900068e-07,
+      "projection_error": 0,
+      "frozen_time_error": 0,
+      "dual_pixels_match_side_exactly": true,
+      "render_projected_bounds": [
+        {
+          "min": [
+            0.25995439291000366,
+            0.20978166162967682
+          ],
+          "max": [
+            0.7275802493095398,
+            0.49666503071784973
+          ]
+        },
+        {
+          "min": [
+            0.4001776874065399,
+            0.20848335325717926
+          ],
+          "max": [
+            0.5998222827911377,
+            0.4934769868850708
+          ]
+        },
+        {
+          "min": [
+            0.15517094731330872,
+            0.23191790282726288
+          ],
+          "max": [
+            0.8448261022567749,
+            0.5202046036720276
+          ]
+        },
+        {
+          "min": [
+            0.5533325672149658,
+            0.24085408449172974
+          ],
+          "max": [
+            0.8866658806800842,
+            0.51953125
+          ]
+        }
+      ],
+      "blend_bytes": 2905482
+    },
+    {
+      "id": "c07",
+      "vertices": 12594,
+      "bone_pose_error_m": 0,
+      "camera_matrix_error": 3.5196427461414714e-07,
+      "projection_error": 0,
+      "frozen_time_error": 0,
+      "dual_pixels_match_side_exactly": true,
+      "render_projected_bounds": [
+        {
+          "min": [
+            0.27909553050994873,
+            0.27074557542800903
+          ],
+          "max": [
+            0.7254208922386169,
+            0.4961223304271698
+          ]
+        },
+        {
+          "min": [
+            0.4403780698776245,
+            0.2671216130256653
+          ],
+          "max": [
+            0.5596219301223755,
+            0.49420320987701416
+          ]
+        },
+        {
+          "min": [
+            0.15516823530197144,
+            0.2948421537876129
+          ],
+          "max": [
+            0.8448233604431152,
+            0.5165678858757019
+          ]
+        },
+        {
+          "min": [
+            0.5533325672149658,
+            0.30167892575263977
+          ],
+          "max": [
+            0.8866658806800842,
+            0.5160138607025146
+          ]
+        }
+      ],
+      "blend_bytes": 2475043
+    }
+  ],
+  "scope": "Exact starting-reference asset/camera validation. No generated video, motion recovery or physical balance approval."
+}

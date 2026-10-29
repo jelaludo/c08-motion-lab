@@ -8,9 +8,12 @@ cache/
 video-mocap/
 reference-videos/
 *.mp4
+!docs/h3-motion/media/*.mp4
 *.ckpt
 *.onnx
 *.pkl
 *.pth
 *.pt
 *.blend1
+__pycache__/
+*.py[cod]

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "tests": 13,
+  "local_declared_artifacts_checked": 56,
+  "decoded_video_files": 18,
+  "all_video_final_frames_decode": true,
+  "zip_members": 74,
+  "zip_sha256": "db8c43baa7c49bb84e4b580fe068d33e298ef41774ccc890d498d90bbee680a8",
+  "reference_pack_validation": "passed",
+  "independent_recovery_validation": "research/h3-independent-validation.json"
+}

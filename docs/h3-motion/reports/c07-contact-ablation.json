@@ -1,0 +1,9 @@
+{
+  "comparison": "C07 default vs steps=false/foot_lock=false",
+  "maximum_absolute_array_difference": {
+    "times": 0.0,
+    "root_location": 0.0,
+    "quaternions": 0.0
+  },
+  "interpretation": "Zero means disabled heuristics had not changed this clip; this does not prove good contact."
+}

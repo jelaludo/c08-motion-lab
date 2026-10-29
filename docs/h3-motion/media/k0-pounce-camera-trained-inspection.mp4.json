@@ -1,0 +1,10 @@
+{
+  "testId": "k0-pounce-camera-trained",
+  "output": "public/c08-motion-lab/docs/h3-motion/media/k0-pounce-camera-trained-inspection.mp4",
+  "frames": 294,
+  "fps": 24,
+  "duration_s": 12.25,
+  "source_model": "models/k0-pounce-camera-trained.glb",
+  "method": "Deterministic Three.js GLB inspection frames. Camera follows the body; no motion keys, floor correction or retiming added. Every source-time sample retained at the stated frame rate.",
+  "errors": []
+}

@@ -1,0 +1,702 @@
+{
+  "version": 21,
+  "updated_at": "2026-10-29T16:34:58.977089+00:00",
+  "experiment_title": "H3 video to editable motion - overnight round 1",
+  "summary": "Completed H3 recovery and controlled comparisons, with known-motion references and explicit failed-quality candidates. Job completion is separate from visual acceptance.",
+  "tests": [
+    {
+      "id": "k0-known-motion",
+      "title": "K0 known-motion recovery control",
+      "kind": "control",
+      "body": "K0-Tech",
+      "status": "complete",
+      "description": "Recover the original 3.2-second K0 Pounce plus a 0.8-second hold from exact front/side renders. Compare recovered bones against retained ground truth and inspect from a new camera.",
+      "limitations": [
+        "Native shoulder translation up to 10.6 mm is outside the rotation-only fitter contract.",
+        "An exact-camera synthetic control is easier than recovering generated H3 imagery.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping."
+      ],
+      "source": {
+        "video": "media/k0-native-control.mp4",
+        "poster": "media/k0-native-control.jpg",
+        "label": "Known native pounce - exact rendered cameras"
+      },
+      "outputs": [
+        {
+          "label": "Known single-side control reference",
+          "video": "media/k0-native-control-side.mp4"
+        },
+        {
+          "label": "Native ground-truth animation (original action, not recovered)",
+          "model": "models/k0-native-control.glb"
+        },
+        {
+          "label": "Source control integrity report",
+          "report": "reports/k0-control-integrity.json"
+        },
+        {
+          "label": "Character-reader training report (not recovery accuracy)",
+          "report": "reports/k0-reader-training.json"
+        },
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/k0-known-motion.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/k0-known-motion.json"
+        },
+        {
+          "label": "Source/recovered novel-view pose comparison",
+          "report": "media/k0-known-control-comparison.jpg"
+        },
+        {
+          "label": "Native and recovered pounce - same novel camera, shared crop",
+          "video": "media/k0-source-vs-recovered-three-quarter.mp4"
+        }
+      ],
+      "metrics": {
+        "frames": 120,
+        "fps": 30,
+        "duration_s": 4.0,
+        "ground_truth_retained": true,
+        "minimum_skin_floor_clearance_m": -0.016264570901814268,
+        "end_start_horizontal_distance_m": 1.6004166504909785,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "body50_mean_joint_error_m": 0.011200642692985667,
+        "body50_p95_joint_error_m": 0.026055968787422064,
+        "body50_median_rotation_error_deg": 3.921677864839695
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests.",
+        "Both all51-node and visible50-body-chain errors are reported; the invisible transport ancestor is reorganized, not hidden."
+      ],
+      "version": 3,
+      "artifact_sha256": "cd55ec6a26eaa25c3747991a96dab0a20d0fa700b5f8e34af22c7d2982fbea25"
+    },
+    {
+      "id": "k0-pounce-default",
+      "title": "K0 pounce - reused-reader baseline",
+      "kind": "recovery",
+      "body": "K0-Tech",
+      "status": "complete",
+      "description": "Reuse the native wide-camera reader on the close H3 framing. This is an intentional camera/domain-transfer baseline; the camera-specific reader is a separate test.",
+      "limitations": [
+        "Original H3 reference camera and exact starting pose not yet located; approximate matching is a stress test.",
+        "Single-view depth and hidden paws are uncertain.",
+        "Recovery is not proof of dynamic balance.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping.",
+        "Reader training cameras differ from the H3 framing; baseline reading confidence is0.48 versus0.96 on the known control.",
+        "Independent quaternion audit finds a178.68degree single-frame tail rotation: this baseline is a failed-quality candidate, despite a valid file."
+      ],
+      "source": {
+        "video": "media/k0-pounce.mp4",
+        "poster": "media/k0-pounce.jpg",
+        "label": "H3 generated reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/k0-pounce-default.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/k0-pounce-default.json"
+        },
+        {
+          "label": "Recorded GLB inspection - same timing, camera follows body",
+          "video": "media/k0-pounce-default-inspection.mp4"
+        }
+      ],
+      "metrics": {
+        "frames": 294,
+        "duration_s": 12.25,
+        "minimum_skin_floor_clearance_m": -0.03812206897519965,
+        "end_start_horizontal_distance_m": 0.00683976032515958,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "maximum_quaternion_step_deg": 178.679
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests."
+      ],
+      "version": 2,
+      "artifact_sha256": "3f8c28ff462915d61917922e616b0ca6a627a556ad6aca8849c9dcd002968e0a"
+    },
+    {
+      "id": "k0-pounce-no-contacts",
+      "title": "K0 pounce - contact ablation",
+      "kind": "ablation",
+      "body": "K0-Tech",
+      "status": "complete",
+      "description": "Reuse the native wide-camera reader on the close H3 framing. This is an intentional camera/domain-transfer baseline; the camera-specific reader is a separate test.",
+      "limitations": [
+        "Changes contact processing only, not the source video or trained reader.",
+        "May expose source sliding or depth errors.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping.",
+        "Reader training cameras differ from the H3 framing; baseline reading confidence is0.48 versus0.96 on the known control."
+      ],
+      "source": {
+        "video": "media/k0-pounce.mp4",
+        "poster": "media/k0-pounce.jpg",
+        "label": "H3 generated reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/k0-pounce-no-contacts.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/k0-pounce-no-contacts.json"
+        },
+        {
+          "label": "Playback is numerically identical to default",
+          "video": "media/k0-pounce-default-inspection.mp4"
+        },
+        {
+          "label": "Exact array comparison - contact processing had no effect",
+          "report": "reports/k0-contact-ablation.json"
+        }
+      ],
+      "metrics": {
+        "frames": 294,
+        "duration_s": 12.25,
+        "minimum_skin_floor_clearance_m": -0.03812206897519965,
+        "end_start_horizontal_distance_m": 0.00683976032515958,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "maximum_quaternion_step_deg": 178.679
+      },
+      "notes": [
+        "Default and no-contact fit have exactly identical times, root positions and quaternion arrays. These default heuristics did not activate; this is a no-effect control, not a second distinct motion."
+      ],
+      "version": 2,
+      "artifact_sha256": "3f8c28ff462915d61917922e616b0ca6a627a556ad6aca8849c9dcd002968e0a"
+    },
+    {
+      "id": "k0-pounce-soft",
+      "title": "K0 pounce - smoothing comparison",
+      "kind": "ablation",
+      "body": "K0-Tech",
+      "status": "complete",
+      "description": "Reuse the native wide-camera reader on the close H3 framing. This is an intentional camera/domain-transfer baseline; the camera-specific reader is a separate test.",
+      "limitations": [
+        "Smoothing is postprocessing; it may suppress useful action.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping.",
+        "Reader training cameras differ from the H3 framing; baseline reading confidence is0.48 versus0.96 on the known control."
+      ],
+      "source": {
+        "video": "media/k0-pounce.mp4",
+        "poster": "media/k0-pounce.jpg",
+        "label": "H3 generated reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/k0-pounce-soft.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/k0-pounce-soft.json"
+        },
+        {
+          "label": "Recorded original-rig inspection - computed motion",
+          "video": "media/k0-pounce-soft-inspection.mp4"
+        }
+      ],
+      "metrics": {
+        "frames": 294,
+        "duration_s": 12.25,
+        "minimum_skin_floor_clearance_m": -0.037415186179134974,
+        "end_start_horizontal_distance_m": 0.006839760325159292,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "maximum_quaternion_step_deg": 175.638
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests."
+      ],
+      "version": 2,
+      "artifact_sha256": "0f41deb61512497d9588bba873804898b5c4e37dc3a93eadb0c9bbd4560ccf9e"
+    },
+    {
+      "id": "concept-humanoid",
+      "title": "Concept robot - human-mocap stress test",
+      "kind": "recovery",
+      "body": "Concept biped",
+      "status": "complete",
+      "description": "Try the existing GEM-X human estimator on the stylized walk/run/stop clip and inspect the skeleton overlay.",
+      "limitations": [
+        "Out of distribution: a stylized robot, not a human performer.",
+        "No matching concept-art mesh/rig exists in this lab.",
+        "A plausible human skeleton does not validate the unseen robot anatomy.",
+        "Recovered root is not cyclic: estimated end-to-start horizontal gap about5.88m. No seamless game loop is claimed."
+      ],
+      "source": {
+        "video": "media/concept-walk-run-stop.mp4",
+        "poster": "media/concept-walk-run-stop.jpg",
+        "label": "H3 generated reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered SOMA skeleton projected over H3 reference",
+          "video": "media/concept-recovery-overlay.mp4"
+        },
+        {
+          "label": "Sanitized recovery report",
+          "report": "reports/concept-humanoid.json"
+        },
+        {
+          "label": "Orbit the recovered 3D skeleton (interactive)",
+          "report": "concept-skeleton/"
+        }
+      ],
+      "metrics": {
+        "recovered_frames": 368,
+        "fps": 30,
+        "joints": 77,
+        "inference_seconds": 153.05,
+        "peak_torch_allocated_gib": 3.42,
+        "finite_positions": true
+      },
+      "notes": [
+        "Computed successfully; visual quality is unreviewed. Three detector gaps were filled at frames123,140,245.",
+        "No exact robot rig or retargeted robot output is claimed."
+      ],
+      "version": 1
+    },
+    {
+      "id": "c07-jump-reference",
+      "title": "C07 jump - approximate-body stress test",
+      "kind": "recovery",
+      "body": "C07 Cheetah",
+      "status": "complete",
+      "description": "Try a bounded recovery test using the available published C07 rig. Its appearance and silhouette differ substantially from H3 frame0; the exact generation mesh is not verified.",
+      "limitations": [
+        "Available C07 body differs from H3 frame0, beyond camera/pose differences; this violates the ideal exact-character input assumption.",
+        "Camera and starting pose are approximate.",
+        "A poor fit cannot be attributed to training or solver quality alone.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping.",
+        "The available C07 rig differs visibly from the H3 reference. This is an approximate-body negative control, not a verified exact-character reconstruction."
+      ],
+      "source": {
+        "video": "media/c07-jump.mp4",
+        "poster": "media/c07-jump.jpg",
+        "label": "H3 generated reference"
+      },
+      "outputs": [
+        {
+          "label": "Compare H3 frame0 with the available rig (image)",
+          "report": "media/c07-source-vs-available-rig.jpg"
+        },
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/c07-jump-reference.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/c07-jump-reference.json"
+        },
+        {
+          "label": "Recorded original-rig inspection - computed motion",
+          "video": "media/c07-jump-reference-inspection.mp4"
+        }
+      ],
+      "metrics": {
+        "frames": 158,
+        "duration_s": 6.583333333333334,
+        "minimum_skin_floor_clearance_m": -0.04753152578093928,
+        "end_start_horizontal_distance_m": 0.06457963755899214,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "maximum_quaternion_step_deg": 174.083
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests."
+      ],
+      "version": 2,
+      "artifact_sha256": "daf9ba45cbfc31552a951026aac2946122d87923f5f5b0c6885ada27439ec53d"
+    },
+    {
+      "id": "concept-to-c08",
+      "title": "Concept video to C08 - adapter stress test",
+      "kind": "recovery",
+      "body": "C08",
+      "status": "complete",
+      "description": "Apply the existing direct SOMA-to-C08 adapter to the concept robot recovery. This tests a complete video-to-different-body route and exposes adapter corrections.",
+      "limitations": [
+        "Human estimator applied outside its normal distribution.",
+        "No original concept robot rig; C08 is a different body.",
+        "Existing adapter applies per-frame whole-avatar grounding, with corrections up to0.518m: weight/vertical motion are altered.",
+        "120Hz skin sampling finds a7.2mm floor penetration between keys despite15mm margin at baked keys.",
+        "Rest-pose fingers, no contact locking or physical balance solve.",
+        "A numerical/export pass is not motion approval.",
+        "Recovered root is not cyclic: estimated end-to-start horizontal gap about5.88m. No seamless game loop is claimed."
+      ],
+      "source": {
+        "video": "media/concept-walk-run-stop.mp4",
+        "poster": "media/concept-walk-run-stop.jpg",
+        "label": "H3 concept robot reference"
+      },
+      "outputs": [
+        {
+          "label": "Experimental C08 retarget (grounding corrections applied)",
+          "model": "models/concept-to-c08.glb"
+        },
+        {
+          "label": "Source recovery overlay",
+          "video": "media/concept-recovery-overlay.mp4"
+        },
+        {
+          "label": "Adapter measurements and caveats",
+          "report": "reports/concept-to-c08.json"
+        }
+      ],
+      "metrics": {
+        "frames": 368,
+        "fps": 30,
+        "max_abs_whole_body_ground_offset_m": 0.5175738782424958,
+        "skinned_geometry_min_floor_y_m": -0.0072077665744536,
+        "gltf_errors": 0,
+        "gltf_warnings": 0
+      },
+      "notes": [
+        "Computed, visually unreviewed. Treat as a diagnostic candidate; do not accept automatically because the file validates."
+      ],
+      "version": 1
+    },
+    {
+      "id": "c07-known-motion",
+      "title": "C07 known-motion recovery control",
+      "kind": "control",
+      "body": "C07 Cheetah",
+      "status": "complete",
+      "description": "Recover the published C07 native Pounce from exact front/side renders, separately from the different-looking H3 video.",
+      "limitations": [
+        "Known synthetic imagery is easier than H3 reconstruction.",
+        "Native shoulder translations are outside the rotation-only fitter contract.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping."
+      ],
+      "source": {
+        "video": "media/c07-native-control.mp4",
+        "poster": "media/c07-native-control.jpg",
+        "label": "Known native C07 pounce - exact cameras"
+      },
+      "outputs": [
+        {
+          "label": "Known single-side control reference",
+          "video": "media/c07-native-control-side.mp4"
+        },
+        {
+          "label": "Native ground-truth animation (not recovered)",
+          "model": "models/c07-native-control.glb"
+        },
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/c07-known-motion.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/c07-known-motion.json"
+        },
+        {
+          "label": "Recorded original-rig inspection - exact sample timing",
+          "video": "media/c07-known-motion-inspection.mp4"
+        }
+      ],
+      "metrics": {
+        "frames": 120,
+        "fps": 30,
+        "duration_s": 4.0,
+        "minimum_skin_floor_clearance_m": -0.044519582451467005,
+        "end_start_horizontal_distance_m": 2.9991357659980475,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "body50_mean_joint_error_m": 0.02671804594099062,
+        "body50_p95_joint_error_m": 0.07968521043290877,
+        "body50_median_rotation_error_deg": 4.33906627853725,
+        "maximum_quaternion_step_deg": 57.383
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests.",
+        "Both all51-node and visible50-body-chain errors are reported; the invisible transport ancestor is reorganized, not hidden."
+      ],
+      "version": 2,
+      "artifact_sha256": "353efb3ad78c8fd187936ce5bfa52a46916f6084df218609c5d01f17c48f92e1"
+    },
+    {
+      "id": "k0-pounce-camera-trained",
+      "title": "K0 pounce - camera-specific reader",
+      "kind": "recovery",
+      "body": "K0-Tech",
+      "status": "complete",
+      "version": 2,
+      "description": "Fine-tune with1000 synthetic poses through the estimated H3 camera, then recover the same video. Compare with the reused wide-camera reader baseline.",
+      "limitations": [
+        "Camera remains estimated, not the original generation camera.",
+        "No H3 video frames are used to train; unknown-video3D ground truth remains unavailable.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping.",
+        "Independent full-skin evaluation remains41?95mm above the floor throughout the clip. Higher reader confidence did not establish correct support."
+      ],
+      "source": {
+        "video": "media/k0-pounce.mp4",
+        "poster": "media/k0-pounce.jpg",
+        "label": "Same H3 pounce reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/k0-pounce-camera-trained.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/k0-pounce-camera-trained.json"
+        },
+        {
+          "label": "Recorded camera-trained GLB inspection - no floor repair",
+          "video": "media/k0-pounce-camera-trained-inspection.mp4"
+        }
+      ],
+      "metrics": {
+        "frames": 294,
+        "duration_s": 12.25,
+        "minimum_skin_floor_clearance_m": 0.041153335939255256,
+        "end_start_horizontal_distance_m": 0.000436528582115772,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "maximum_quaternion_step_deg": 83.097
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests."
+      ],
+      "artifact_sha256": "cdfb1ad65ad59a9202773478f05c18df04cb2b9a01976dd3734e59a03adf83d4"
+    },
+    {
+      "id": "k0-known-cameras",
+      "title": "K0 control - exact cameras locked",
+      "kind": "ablation",
+      "body": "K0-Tech",
+      "status": "complete",
+      "version": 2,
+      "description": "Reuse exactly the known-control readings and timing, while disabling frame0 camera correction. Compare with default automatic alignment.",
+      "limitations": [
+        "This isolates camera calibration, not reader accuracy or physics.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping."
+      ],
+      "source": {
+        "video": "media/k0-native-control.mp4",
+        "poster": "media/k0-native-control.jpg",
+        "label": "Known native pounce reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/k0-known-cameras.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/k0-known-cameras.json"
+        }
+      ],
+      "metrics": {
+        "frames": 120,
+        "duration_s": 4.0,
+        "minimum_skin_floor_clearance_m": -0.015983158796083502,
+        "end_start_horizontal_distance_m": 1.6004152474503244,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "body50_mean_joint_error_m": 0.010993940759276115,
+        "body50_p95_joint_error_m": 0.026446812952051854,
+        "body50_median_rotation_error_deg": 3.9451885545343135
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests.",
+        "Both all51-node and visible50-body-chain errors are reported; the invisible transport ancestor is reorganized, not hidden."
+      ],
+      "artifact_sha256": "b78eb47b45409705916f0c71f398f655e5ca3953a7263267af54f86cd242178a"
+    },
+    {
+      "id": "k0-pounce-camera-locked",
+      "title": "K0 pounce - estimated camera locked",
+      "kind": "ablation",
+      "body": "K0-Tech",
+      "status": "complete",
+      "version": 2,
+      "description": "Reuse camera-trained joint readings, masks and timing; disable automatic camera correction. Compare with the unlocked estimated-camera fit.",
+      "limitations": [
+        "Camera is manually estimated, not recovered original generation-camera ground truth.",
+        "No new training or3D ground truth is introduced.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping.",
+        "Ground proximity improves, but a96.29degree adjacent tail step remains; this is a rework candidate, not an accepted game animation."
+      ],
+      "source": {
+        "video": "media/k0-pounce.mp4",
+        "poster": "media/k0-pounce.jpg",
+        "label": "Same H3 pounce reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/k0-pounce-camera-locked.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/k0-pounce-camera-locked.json"
+        },
+        {
+          "label": "Recorded locked-estimated-camera GLB inspection",
+          "video": "media/k0-pounce-camera-locked-inspection.mp4"
+        },
+        {
+          "label": "Controlled camera/reader comparison measurements",
+          "report": "reports/k0-camera-comparison.json"
+        },
+        {
+          "label": "Same novel camera - auto alignment versus locked estimate",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/h3-k0-camera-calibration-comparison.jpg"
+        }
+      ],
+      "metrics": {
+        "frames": 294,
+        "duration_s": 12.25,
+        "minimum_skin_floor_clearance_m": -0.012113483038119238,
+        "end_start_horizontal_distance_m": 0.026158282158195528,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "maximum_quaternion_step_deg": 96.292
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests."
+      ],
+      "artifact_sha256": "ac79a763d074f108e330d0988cc3539f503b505d907114fdf6a752bcf76b03a4"
+    },
+    {
+      "id": "c07-jump-no-contacts",
+      "title": "C07 jump - contact ablation",
+      "kind": "ablation",
+      "body": "C07 Cheetah",
+      "version": 2,
+      "description": "Additional controlled processing comparison of the same H3 reference.",
+      "limitations": [
+        "No unknown-video ground truth or physical-balance claim.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping.",
+        "The available C07 rig differs visibly from the H3 reference. This is an approximate-body negative control, not a verified exact-character reconstruction."
+      ],
+      "source": {
+        "video": "media/c07-jump.mp4",
+        "poster": "media/c07-jump.jpg",
+        "label": "H3 reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/c07-jump-no-contacts.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/c07-jump-no-contacts.json"
+        },
+        {
+          "label": "Exact contact-ablation array comparison",
+          "report": "reports/c07-contact-ablation.json"
+        },
+        {
+          "label": "Playback identical to default (verified arrays)",
+          "video": "media/c07-jump-reference-inspection.mp4"
+        }
+      ],
+      "metrics": {
+        "frames": 158,
+        "duration_s": 6.583333333333334,
+        "minimum_skin_floor_clearance_m": -0.04753152578093928,
+        "end_start_horizontal_distance_m": 0.06457963755899214,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "maximum_quaternion_step_deg": 174.083
+      },
+      "notes": [
+        "All times, root positions and quaternion arrays are exactly identical to default. This is a no-effect control, not a distinct motion."
+      ],
+      "status": "complete",
+      "artifact_sha256": "daf9ba45cbfc31552a951026aac2946122d87923f5f5b0c6885ada27439ec53d"
+    },
+    {
+      "id": "c07-jump-soft",
+      "title": "C07 jump - smoothing comparison",
+      "kind": "ablation",
+      "body": "C07 Cheetah",
+      "version": 2,
+      "description": "Additional controlled processing comparison of the same H3 reference.",
+      "limitations": [
+        "No unknown-video ground truth or physical-balance claim.",
+        "Valid serialization does not establish plausible contact, weight or balance.",
+        "Root motion is fitted on LUMBAR; game root extraction needs deliberate mapping.",
+        "The available C07 rig differs visibly from the H3 reference. This is an approximate-body negative control, not a verified exact-character reconstruction."
+      ],
+      "source": {
+        "video": "media/c07-jump.mp4",
+        "poster": "media/c07-jump.jpg",
+        "label": "H3 reference"
+      },
+      "outputs": [
+        {
+          "label": "Recovered original-rig animation - computed, unreviewed",
+          "model": "models/c07-jump-soft.glb"
+        },
+        {
+          "label": "Independent recovery, floor and export measurements",
+          "report": "reports/c07-jump-soft.json"
+        },
+        {
+          "label": "Recorded original-rig inspection - exact sample timing",
+          "video": "media/c07-jump-soft-inspection.mp4"
+        }
+      ],
+      "metrics": {
+        "frames": 158,
+        "duration_s": 6.583333333333334,
+        "minimum_skin_floor_clearance_m": -0.047520913753311966,
+        "end_start_horizontal_distance_m": 0.06457963755899214,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "maximum_quaternion_step_deg": 173.726
+      },
+      "notes": [
+        "Computed and independently exported/reimported. Human visual acceptance remains open.",
+        "Native-camera source controls and unknown-camera H3 fits are different tests."
+      ],
+      "status": "complete",
+      "artifact_sha256": "5c62104956b9d4f372144107c6017155ae42570cf133332e44d9c515e4d1f6fc"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Video2Rig source and workflow",
+      "url": "https://github.com/canitcode/video2rig"
+    },
+    {
+      "title": "Method and limitations",
+      "url": "https://github.com/canitcode/video2rig/blob/main/docs/HOW-IT-WORKS.md"
+    }
+  ]
+}

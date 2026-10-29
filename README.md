@@ -2,6 +2,10 @@
 
 An independent, non-commercial motion notebook by **jelaludo**. Original robots, a small robot cat, and several distinct approaches to animation.
 
+**[H3 / Video2Rig tests](https://jelaludo.github.io/c08-motion-lab/h3-motion/)** add 13 completed recovery/control comparisons from three generated robot references. They include actual original-rig exports, known-motion ground truth, camera/reader ablations and preserved negative results. Job completion is separate from visual acceptance; tail spikes, floor contact and approximate-body mismatches remain explicit. The [Dev Log](https://jelaludo.github.io/c08-motion-lab/dev-log/#h3-video2rig) records the findings.
+
+The [H3 starting-frame pack](reference-packs/h3-2026-10-30) contains 20 exact Blender PNGs, 20 companion animation-prompt TXT files, matching Video2Rig camera files and five frozen Blender scenes. [Download the complete ZIP](https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/reference-packs/h3-2026-10-30.zip). It covers C08, B-REK43, EVA-K7, K0-Tech and C07; no generated motion is certified by the reference images.
+
 **[Vanilla 15 / Review](https://jelaludo.github.io/c08-motion-lab/vanilla/)** | **[Reactive Arena](https://jelaludo.github.io/c08-motion-lab/reactive/)** | **[Lab home](https://jelaludo.github.io/c08-motion-lab/)** | **[MB-Predictive](https://jelaludo.github.io/c08-motion-lab/mb-predictive/)** | **[Quaternius](https://jelaludo.github.io/c08-motion-lab/quaternius/)** | **[Research gallery](https://jelaludo.github.io/c08-motion-lab/lab/)** | **[Off Shift diorama](https://jelaludo.github.io/c08-motion-lab/diorama.html)**
 
 The landing page separates learned prediction, conventional animation, video recovery, choreography, and the earlier research archive. MB-Predictive shows 24 actual AI experiments beside ordinary interpolation, with explicit recent-pose/target/generated-movement stages. The Quaternius tab adds a prominent WASD controller and shuffled routines that return through idle. Existing research clips remain available for future comparisons.

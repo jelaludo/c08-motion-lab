@@ -1,0 +1,29 @@
+C07 Cheetah — forward-action-wide / exact Blender starting frame
+
+Choose ONE prompt below for ONE 4–8 second clip. These are test prompts, not a guarantee that H3 obeys camera, timing, geometry or contact constraints. Reject/rework changed identity, missing parts, drifting cameras, unmatched panels or cropped motion.
+
+REFERENCE CONTRACT
+The image is the original model at time 0 of its authored idle. Preserve its silhouette, proportions, panel layout, colors, sensors, hands/paws and tail exactly. No added limbs, props, deformation redesign, cuts, zoom, orbit, tracking or camera shake. Fixed neutral studio, stationary floor, full body visible throughout. Animate joints and root; preserve rigid armor and component lengths.
+FORWARD FRAME: the character faces IMAGE-LEFT, starts on the right, and moves toward image-left. Keep total forward displacement at or below approximately 3.33 m (1.21 reference units). One reference unit is nose-to-tail bounding length. Stay well inside all borders and stop at the new location. Do not return to the starting position.
+
+SEPARATE PROMPTS — DO NOT COMBINE THESE INTO ONE VIDEO
+
+1. Walk–trot/gallop–stop / ends at destination
+Eight seconds. Begin still, a short walk, a brief coordinated faster stride, then braking support steps. Move toward image-left by ≤ 3.33 m total and hold standing at the new location. If the action does not fit, shorten it; never zoom, track or crop the tail.
+
+2. Crouch / stalk / ends low
+Seven seconds. Lower the body under controlled leg flexion, make two small alternating stalk steps, total travel ≤ 3.33 m, then stop low. Preserve paw count, rigid joints and complete tail.
+
+3. Sit down / ends seated
+Six seconds. Move the hindquarters down with visible paw support and coordinated front legs. End sitting; do not automatically stand up. Keep the original mechanical anatomy.
+
+4. Small step and turn / ends at new heading
+Six seconds. One small lateral support step and a coordinated 30 degree turn. Paws lift and plant in a clear order; the torso and tail follow naturally. End standing in the new heading.
+
+5. Forward pounce / ends at destination
+Seven seconds. Still stance, deliberate crouch/recoil, strong leg extension, visible forward flight, fore/hind paw landing and recovery. Total forward travel ≤ 3.33 m toward image-left. Keep the complete robot and tail visible; finish standing at the new location, without returning to the start.
+
+QUADRUPED MENU / NEW-FRAME REQUIREMENTS
+Watch idle; walk; trot; short gallop-stop; forward pounce; low crouch/stalk; sit down; stand from sit. Use wide for travel/pounce. A stand-from-sit clip requires a newly rendered SEATED reference. Keep long-tail clearance visible. Rolling/floor contact needs additional side/front/depth evidence. A pretty generated pounce is not proof of editable rig recovery or physical balance.
+
+Review the output against this starting frame, camera JSON and original rig. Matching the first frame alone does not establish subsequent geometry/camera consistency.

@@ -1,0 +1,415 @@
+{
+  "schema": "h3-own-asset-reference-pack/1",
+  "pack_date": "2026-10-30",
+  "scope": "Exact first authored idle poses; original geometry/rig retained. No AI images or recovered motion.",
+  "coordinate_system": "Blender +Z up; character forward -Y; side camera +X gives image-left travel.",
+  "counts": {
+    "bodies": 5,
+    "pngs": 20,
+    "prompt_companions": 20,
+    "video2rig_camera_jsons": 20,
+    "blend_scenes": 5
+  },
+  "bodies": [
+    {
+      "id": "brek43",
+      "label": "B-REK43",
+      "source_asset_relative": "b-rek43/b_rek43_d0_lod1.glb",
+      "source_glb_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+      "idle": "Recon_Idle",
+      "camera_pose_manifest": "brek43/camera-and-pose.json",
+      "blend": "brek43/source.blend",
+      "images": [
+        "brek43/three-quarter.png",
+        "brek43/side.png",
+        "brek43/dual-front-side.png",
+        "brek43/forward-action-wide.png"
+      ],
+      "video2rig_cameras": [
+        "brek43/three-quarter.video2rig-cameras.json",
+        "brek43/side.video2rig-cameras.json",
+        "brek43/forward-action-wide.video2rig-cameras.json",
+        "brek43/dual-front-side.video2rig-cameras.json"
+      ]
+    },
+    {
+      "id": "c07",
+      "label": "C07 Cheetah",
+      "source_asset_relative": "c07-cheetah/c07_d0_lod1.glb",
+      "source_glb_sha256": "13bd05e4a4a9101d31d45c4a392fe016ef59d0124945bf1ebaf2dbc913c7eae7",
+      "idle": "Watch_Idle",
+      "camera_pose_manifest": "c07/camera-and-pose.json",
+      "blend": "c07/source.blend",
+      "images": [
+        "c07/three-quarter.png",
+        "c07/side.png",
+        "c07/dual-front-side.png",
+        "c07/forward-action-wide.png"
+      ],
+      "video2rig_cameras": [
+        "c07/three-quarter.video2rig-cameras.json",
+        "c07/side.video2rig-cameras.json",
+        "c07/forward-action-wide.video2rig-cameras.json",
+        "c07/dual-front-side.video2rig-cameras.json"
+      ]
+    },
+    {
+      "id": "c08",
+      "label": "C08 Industrial Worker",
+      "source_asset_relative": "c08-worker/c08_d0_lod1.glb",
+      "source_glb_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+      "idle": "Standby_Idle",
+      "camera_pose_manifest": "c08/camera-and-pose.json",
+      "blend": "c08/source.blend",
+      "images": [
+        "c08/three-quarter.png",
+        "c08/side.png",
+        "c08/dual-front-side.png",
+        "c08/forward-action-wide.png"
+      ],
+      "video2rig_cameras": [
+        "c08/three-quarter.video2rig-cameras.json",
+        "c08/side.video2rig-cameras.json",
+        "c08/forward-action-wide.video2rig-cameras.json",
+        "c08/dual-front-side.video2rig-cameras.json"
+      ]
+    },
+    {
+      "id": "eva-k7",
+      "label": "EVA-K7",
+      "source_asset_relative": "eva-k7/eva_k7_d0_lod1.glb",
+      "source_glb_sha256": "17b210d3586a21f669f1de66926867a143d99b5106770064bedd211b79279ac2",
+      "idle": "Suit_Idle",
+      "camera_pose_manifest": "eva-k7/camera-and-pose.json",
+      "blend": "eva-k7/source.blend",
+      "images": [
+        "eva-k7/three-quarter.png",
+        "eva-k7/side.png",
+        "eva-k7/dual-front-side.png",
+        "eva-k7/forward-action-wide.png"
+      ],
+      "video2rig_cameras": [
+        "eva-k7/three-quarter.video2rig-cameras.json",
+        "eva-k7/side.video2rig-cameras.json",
+        "eva-k7/forward-action-wide.video2rig-cameras.json",
+        "eva-k7/dual-front-side.video2rig-cameras.json"
+      ]
+    },
+    {
+      "id": "k0-tech",
+      "label": "K0-Tech",
+      "source_asset_relative": "k0-tech-01/k0_tech_01_d0_lod1.glb",
+      "source_glb_sha256": "9c1844d47c3953f4b456190459a1ca9bcc4778effed1166a787c2ac18d937754",
+      "idle": "Watch_Idle",
+      "camera_pose_manifest": "k0-tech/camera-and-pose.json",
+      "blend": "k0-tech/source.blend",
+      "images": [
+        "k0-tech/three-quarter.png",
+        "k0-tech/side.png",
+        "k0-tech/dual-front-side.png",
+        "k0-tech/forward-action-wide.png"
+      ],
+      "video2rig_cameras": [
+        "k0-tech/three-quarter.video2rig-cameras.json",
+        "k0-tech/side.video2rig-cameras.json",
+        "k0-tech/forward-action-wide.video2rig-cameras.json",
+        "k0-tech/dual-front-side.video2rig-cameras.json"
+      ]
+    }
+  ],
+  "files": {
+    "brek43/camera-and-pose.json": {
+      "bytes": 198693,
+      "sha256": "96bfbf519df60e9148889f6762af9db0403e0fc9bcf6062c454fb3b72b978322"
+    },
+    "brek43/dual-front-side.png": {
+      "bytes": 621398,
+      "sha256": "0da6bf5dbb5b4e423ee4ba59fd1108295c043e5e1b78b8a3f081007fd38b694c"
+    },
+    "brek43/dual-front-side.txt": {
+      "bytes": 3436,
+      "sha256": "e476b1e12139efacdf24353ae343cd17006c3fc9905232185f3d3801cc5d730d"
+    },
+    "brek43/dual-front-side.video2rig-cameras.json": {
+      "bytes": 1372,
+      "sha256": "50c3126259e4b7d3b5d926030eff82bc5ec0c13ee35c1a45105ab0531cd55f40"
+    },
+    "brek43/forward-action-wide.png": {
+      "bytes": 945363,
+      "sha256": "dd9f2735d81f288096128cc40e14a67f3a6b4dd5203d755dca98bd7f574774f5"
+    },
+    "brek43/forward-action-wide.txt": {
+      "bytes": 3443,
+      "sha256": "a5c4c365da4d89951757218545deca94ad2e569feac86d451a1c11d38f0b042f"
+    },
+    "brek43/forward-action-wide.video2rig-cameras.json": {
+      "bytes": 785,
+      "sha256": "11352f3f9d75e08c43806d7249e1589881a791fdbf4d3832ca8ee583cd1bfd3f"
+    },
+    "brek43/side.png": {
+      "bytes": 486629,
+      "sha256": "301053ee945f00cc8d1ae5d21a8c031448a2991284532e7454d0811f038e26ad"
+    },
+    "brek43/side.txt": {
+      "bytes": 3108,
+      "sha256": "5968eda075481537bf42398b4418ca77fca8712f8d721ef0a026d576ae46d88f"
+    },
+    "brek43/side.video2rig-cameras.json": {
+      "bytes": 769,
+      "sha256": "8e3bab6d2c48e960cf4aafa878171cdaac2503a4027ed3dbe7bfefc9bff56660"
+    },
+    "brek43/source.blend": {
+      "bytes": 1409438,
+      "sha256": "0ade7fc2488d392753a972536ffd86f965e6443bb8bfb6bfa1e4a8d43d32e2f7"
+    },
+    "brek43/three-quarter.png": {
+      "bytes": 504145,
+      "sha256": "5b26c06fd22f991dce3f548360b06ea3046c3e66fa103865ec5c18e276b60e20"
+    },
+    "brek43/three-quarter.txt": {
+      "bytes": 3117,
+      "sha256": "82a6285a5f6f01a1b1782f30320cb0ffd37afdecb8609e07da097042c44abb75"
+    },
+    "brek43/three-quarter.video2rig-cameras.json": {
+      "bytes": 766,
+      "sha256": "9c991a82ea78202b11327aa3a850ed470a5c14dfebb788eea25dfea27400522b"
+    },
+    "c07/camera-and-pose.json": {
+      "bytes": 161511,
+      "sha256": "05c6fdd9e624de2ccf57c9aecaad7b9a922818e8a0cf5eb2a89d7547a97a1ea6"
+    },
+    "c07/dual-front-side.png": {
+      "bytes": 633944,
+      "sha256": "d1378ba7d8529a39b9dea1e5be0b4f15542075ba877a897f52857efda596ccc3"
+    },
+    "c07/dual-front-side.txt": {
+      "bytes": 3022,
+      "sha256": "32a697931048a812599be6401d6ec65a7654f76282395ad3c7bc6ddd5d66f46b"
+    },
+    "c07/dual-front-side.video2rig-cameras.json": {
+      "bytes": 1356,
+      "sha256": "85a8ab4d0ac23000d86d0a57baeef6dda24544cdd3306ec4b249437b30013628"
+    },
+    "c07/forward-action-wide.png": {
+      "bytes": 898891,
+      "sha256": "703d329bd42245fb601e24530e853e5acab2f3efdcdf48b11eab9bb5a25774ce"
+    },
+    "c07/forward-action-wide.txt": {
+      "bytes": 3060,
+      "sha256": "dcf7be537a5df84ffcd2ebf00abec93c351a0c4b1c7935f6a704211e549db1b4"
+    },
+    "c07/forward-action-wide.video2rig-cameras.json": {
+      "bytes": 785,
+      "sha256": "a76b4413d1413a74efdfdd3cc58c109745b1940615c3d7a28f247ae751698d3c"
+    },
+    "c07/side.png": {
+      "bytes": 488787,
+      "sha256": "794d5d70a05395e22fa43ad4caf37fdc8c1c3818dfe8af395a105006c4abd0b5"
+    },
+    "c07/side.txt": {
+      "bytes": 2694,
+      "sha256": "4fe6739117137732173a9a50b3ff6439d0f009455cc2d7d3014627651dc8cad9"
+    },
+    "c07/side.video2rig-cameras.json": {
+      "bytes": 769,
+      "sha256": "d301056d092433a1c65e102931133d35abdb7ffca0207c784b53d3833f03affe"
+    },
+    "c07/source.blend": {
+      "bytes": 2475043,
+      "sha256": "d9f1dd6e501ce8a326be100ede5f0f9688b6ed7e039daa5664d4be7d57bfc253"
+    },
+    "c07/three-quarter.png": {
+      "bytes": 495352,
+      "sha256": "9f1a3bb445560d3954845acd65d37913e3372fe23cf7e99fac4aba9351e174e6"
+    },
+    "c07/three-quarter.txt": {
+      "bytes": 2703,
+      "sha256": "faa9b9f5408405274998644085ba1bd6c00f63120163dbf12d8acc83f71fae42"
+    },
+    "c07/three-quarter.video2rig-cameras.json": {
+      "bytes": 766,
+      "sha256": "d87d746ffe5ecf0ea2ffa7e8a72352255d955d0520e66d3cc1ebdbb76efcd829"
+    },
+    "c08/camera-and-pose.json": {
+      "bytes": 174682,
+      "sha256": "d7db072c37def357ee877b8e769b08b55158ec74299033cdb1de5409448ec5e6"
+    },
+    "c08/dual-front-side.png": {
+      "bytes": 678465,
+      "sha256": "ab2493f5116b13aaf63137a06a83b43cf543554112720bd04aac0f2f85c00876"
+    },
+    "c08/dual-front-side.txt": {
+      "bytes": 3450,
+      "sha256": "0553995057bd88d1673f1ac7fe907b5f144ca269ddc15e0dd7c54b0ddead281f"
+    },
+    "c08/dual-front-side.video2rig-cameras.json": {
+      "bytes": 1353,
+      "sha256": "f89c590fd693c2aabdf3cd4a3b6275ae15d0b576335d82707b77676e35daa971"
+    },
+    "c08/forward-action-wide.png": {
+      "bytes": 966679,
+      "sha256": "a295f7db2e2a620b38390d0af4d35513984aca06865ee73c169a6b0904645f1d"
+    },
+    "c08/forward-action-wide.txt": {
+      "bytes": 3457,
+      "sha256": "a8282a1ba2dd2bc37c711f74a7f2bc9f04eacdab04799e5ce0cdc12c0bb4e3b6"
+    },
+    "c08/forward-action-wide.video2rig-cameras.json": {
+      "bytes": 783,
+      "sha256": "3c462348b65ecbb5e541b3c66b940f78fdab0aa74e8e46b1f77fa212a558cb09"
+    },
+    "c08/side.png": {
+      "bytes": 503430,
+      "sha256": "ee3dcbcb602fd2103b7562ee960dff011edb52fc076af48f5db7103e539b071b"
+    },
+    "c08/side.txt": {
+      "bytes": 3122,
+      "sha256": "4c9165e17269a01c6c34619a52dc97b2323df2b5dd5812d795c52fe5755294d3"
+    },
+    "c08/side.video2rig-cameras.json": {
+      "bytes": 766,
+      "sha256": "c46d0365b7f00f9f4f5357ae231ac36fdcd728d561bcc00420bd6da7a76e66cd"
+    },
+    "c08/source.blend": {
+      "bytes": 1097323,
+      "sha256": "b59c81342ef550a0245542ca88eacb1b517222a09cfb4aa406721bc955e0fb86"
+    },
+    "c08/three-quarter.png": {
+      "bytes": 535409,
+      "sha256": "1e216854015d2fc99b0fe79e24a04d953d15eda986df16694492f928d225bd99"
+    },
+    "c08/three-quarter.txt": {
+      "bytes": 3131,
+      "sha256": "5fc16b4fdf01f49d2dca7a316c3da537d8c4f1262c1ec9f1be894bce02c2918f"
+    },
+    "c08/three-quarter.video2rig-cameras.json": {
+      "bytes": 767,
+      "sha256": "83c00d2a053cf9f9a01ed79df40ad40b02157bbb150662fb6fec1d9d3ff41a05"
+    },
+    "eva-k7/camera-and-pose.json": {
+      "bytes": 193101,
+      "sha256": "13b2e868d45b466f3d7fd2b40dfa85b173a92522c53d0edd589de1a268ebded9"
+    },
+    "eva-k7/dual-front-side.png": {
+      "bytes": 648844,
+      "sha256": "646f761e5ee67f41eb082918087cd0403989ec885355ccd9efd6927014804555"
+    },
+    "eva-k7/dual-front-side.txt": {
+      "bytes": 3435,
+      "sha256": "a07795cee39e792c6fdba119ebadc11ecc3db3c6d8350e01b6047fc8a7335774"
+    },
+    "eva-k7/dual-front-side.video2rig-cameras.json": {
+      "bytes": 1371,
+      "sha256": "a58e5282a2f15f9ab422c51bd5ee60e14294ae19aaee10724dd88b4eb4e5366c"
+    },
+    "eva-k7/forward-action-wide.png": {
+      "bytes": 953250,
+      "sha256": "e777ed34650a16c27553afe6d836725e8a30a4d55373daf004a2701d6c4c54ee"
+    },
+    "eva-k7/forward-action-wide.txt": {
+      "bytes": 3442,
+      "sha256": "867a4961129f666f3493c85ede05ffa9002a2c48fb9b5ec0139c6f5f2a81dabe"
+    },
+    "eva-k7/forward-action-wide.video2rig-cameras.json": {
+      "bytes": 782,
+      "sha256": "047cf28976998c915a23abdca56f738a3b374eecfb14ab09a26b98971b9cd58c"
+    },
+    "eva-k7/side.png": {
+      "bytes": 492920,
+      "sha256": "1bf0116500edf78248d3d82c99477d113ba68297d62154c0aeb4871a5a92aeb1"
+    },
+    "eva-k7/side.txt": {
+      "bytes": 3107,
+      "sha256": "cc1ff8b25b92372ba7c6aba341dd7791ef75ade3ff32084a37a5c7c1c1711cfa"
+    },
+    "eva-k7/side.video2rig-cameras.json": {
+      "bytes": 765,
+      "sha256": "f5b5d34816a4f7cd66fb803cfdef577ffa7e70d8b65f955d4e0d7dbb6828dd25"
+    },
+    "eva-k7/source.blend": {
+      "bytes": 1477310,
+      "sha256": "d1a9d95b46fe06f54043b32cb6997cdfb87cba58ae5524040027ff2d59b41829"
+    },
+    "eva-k7/three-quarter.png": {
+      "bytes": 507405,
+      "sha256": "fe199901f6b3978b473999d8fc50a71c3e7afdb8cc9fb9cf519b3a2cfdad39f2"
+    },
+    "eva-k7/three-quarter.txt": {
+      "bytes": 3116,
+      "sha256": "eaaf6f0ff5a96592318105c174fb470bc73c5f38979824f10b999a84e488c37f"
+    },
+    "eva-k7/three-quarter.video2rig-cameras.json": {
+      "bytes": 765,
+      "sha256": "5178fbc3204c72fd78a15745384383828ee65ae227c7919dfd5a28b66c542cf8"
+    },
+    "k0-tech/camera-and-pose.json": {
+      "bytes": 161814,
+      "sha256": "b6207a227964a93b2a8369c7eb1a98854cdf5c0bd72000ebe3b76faa9c479045"
+    },
+    "k0-tech/dual-front-side.png": {
+      "bytes": 662360,
+      "sha256": "558c06246c8fd59077da9fd400bb1631f9542999497a14480b54a8e5cb1600f0"
+    },
+    "k0-tech/dual-front-side.txt": {
+      "bytes": 3018,
+      "sha256": "f74f83a8f8fed115764d0a6cbe0999a3b2f045b83649502ff8bf0cd9c1fab909"
+    },
+    "k0-tech/dual-front-side.video2rig-cameras.json": {
+      "bytes": 1358,
+      "sha256": "f4752a763b7c9521f88484cb4a9428eca163e742e6964ac61662a9b4f860cfd2"
+    },
+    "k0-tech/forward-action-wide.png": {
+      "bytes": 932910,
+      "sha256": "41141a381ea3ae084cca4940088de4a4323375eb6787c1325536801de95156e2"
+    },
+    "k0-tech/forward-action-wide.txt": {
+      "bytes": 3056,
+      "sha256": "26be3b31eee7c18e7850bbb22eb5da6d814a670f37019de382246730c710a482"
+    },
+    "k0-tech/forward-action-wide.video2rig-cameras.json": {
+      "bytes": 784,
+      "sha256": "83bd7e80a6fa410cae4c2eea41dcb3ad496839525aa48441173041c3c482f160"
+    },
+    "k0-tech/side.png": {
+      "bytes": 506163,
+      "sha256": "5ce7db87b78f0cbd332ff82311082da3c0d47261346e81f7f6439f2b90e4430a"
+    },
+    "k0-tech/side.txt": {
+      "bytes": 2690,
+      "sha256": "685214441c5674f8724922a213ce09a945a098258905239e569cccde55ff4950"
+    },
+    "k0-tech/side.video2rig-cameras.json": {
+      "bytes": 768,
+      "sha256": "4a81082fe52e1984f07681f1d3d40838f8eab578536e30124a91b1ba73695593"
+    },
+    "k0-tech/source.blend": {
+      "bytes": 2905482,
+      "sha256": "473305145cc92bb0d311e65fc9567b9d2e6d669b4c9d20598b23f064086eebed"
+    },
+    "k0-tech/three-quarter.png": {
+      "bytes": 513211,
+      "sha256": "6c06928757a08cd73c8de83b827782fcb54cb5f1cafcb500d0607b991afdfedc"
+    },
+    "k0-tech/three-quarter.txt": {
+      "bytes": 2699,
+      "sha256": "edb67d2038c551528cc74a286302a5117adb7a5eb86c8d524ac9d46b6cf65983"
+    },
+    "k0-tech/three-quarter.video2rig-cameras.json": {
+      "bytes": 766,
+      "sha256": "95a42122788ceb03760264733d420fc1842cecda7418faf87df311bf86688610"
+    },
+    "README.txt": {
+      "bytes": 5572,
+      "sha256": "7cb2c1349ef02313d4b0fe11f7f8bc3eab4e9c42461bb2546a5e017563d11363"
+    },
+    "validation.json": {
+      "bytes": 6975,
+      "sha256": "7a55d40ecdfb6f8beb15dbc36eab201f4c8168927a7c7e502b50464d85bd832c"
+    },
+    "video2rig-camera-validation.json": {
+      "bytes": 1432,
+      "sha256": "de6783b34e7728d76bc5f81fe5648515c67a228e609698d4c478dba37e397c85"
+    }
+  },
+  "hash_scope": "Raw bytes of every delivered file except this manifest; ZIP is a sibling archive, not part of its own inventory."
+}

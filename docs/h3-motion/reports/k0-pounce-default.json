@@ -1,0 +1,158 @@
+{
+  "motion": "pounce.npz",
+  "frames": 294,
+  "first_time_s": 0.0,
+  "last_time_s": 12.208333333333334,
+  "nominal_duration_s": 12.25,
+  "root_bone": "LUMBAR",
+  "bones": 51,
+  "finite": true,
+  "minimum_skin_floor_clearance_m": -0.03812206897519965,
+  "floor_clearance_percentiles_m": [
+    -0.03812206897519965,
+    0.07573388821071655,
+    0.13915348444519493,
+    0.1701304369364991,
+    0.18188457992636797
+  ],
+  "spatial_alignment_applied": false,
+  "time_alignment_applied": false,
+  "solver_frame0_camera_adjustment": [
+    {
+      "scale": 2.438330029287307,
+      "offset": [
+        21.151479561663248,
+        99.72421893835065
+      ],
+      "turn_deg": [
+        -1.0577708474213838,
+        19.990837409560356,
+        24.001341908161354
+      ],
+      "frame0_iou": 0.5721,
+      "raw_iou": 0.2131,
+      "shadow": {
+        "learned": true,
+        "frame0_px_before": 130420,
+        "frame0_px_after": 130381,
+        "frame0_iou_before": 0.5723
+      }
+    }
+  ],
+  "camera_adjustment_note": "These are the upstream frame0 camera estimates, reported separately. The independent metric applies no additional alignment to recovered motion.",
+  "root_world_diagnostics": {
+    "coordinate_system": "Blender Z-up metres; game Y-up via [X,Z,-Y]",
+    "first_game_xz_m": [
+      0.001596693163948804,
+      0.06255693522752541
+    ],
+    "last_game_xz_m": [
+      -0.005014646514876219,
+      0.06080407785830767
+    ],
+    "end_start_horizontal_distance_m": 0.00683976032515958,
+    "end_start_world_distance_m": 0.009041930550774298,
+    "minimum_vertical_m": 0.30922270866775964,
+    "maximum_vertical_m": 0.38975735630301506,
+    "vertical_range_m": 0.08053464763525542,
+    "note": "Endpoint separation is a diagnostic for a non-looping action, not a requirement to close the loop or a balance test."
+  },
+  "temporal_local_rotation_geodesic": {
+    "method": "Quaternion-antipodal shortest-angle difference between adjacent samples; no Euler-wrap jump.",
+    "maximum_step_deg": 178.6793601721194,
+    "worst_bone": "TAIL_07",
+    "worst_frame": 205,
+    "worst_interval_s": 0.041666666666666075,
+    "maximum_speed_deg_per_s": 4288.304644130927,
+    "per_joint_maximum_step_deg": {
+      "MOTION": 0.0,
+      "LUMBAR": 71.66142188337041,
+      "LUMBAR_FRONT_LINK": 60.90704021152496,
+      "SPINE_FRONT": 6.642994276167723,
+      "CHEST": 9.329689159705508,
+      "NECK": 5.284305978307369,
+      "HEAD": 20.242829115718315,
+      "EAR_L": 2.161824445826166,
+      "EAR_R": 2.8279515132640722,
+      "JAW": 0.7384861312909301,
+      "SENSOR_YAW": 0.0,
+      "SOCKET_SENSOR": 0.0,
+      "SOCKET_MOUTH": 0.0,
+      "SCAPULA_FL": 32.50355723730096,
+      "UPPER_FL": 65.26368577913445,
+      "LOWER_FL": 23.586962355759507,
+      "ANKLE_FL": 18.435570943937716,
+      "PAW_FL": 41.41007918722095,
+      "SOCKET_PAW_FL": 0.0,
+      "TOES_FL": 0.4777674397037075,
+      "SCAPULA_FR": 50.87931356754274,
+      "UPPER_FR": 80.8576520001336,
+      "LOWER_FR": 64.39715935231486,
+      "ANKLE_FR": 19.610747577392452,
+      "PAW_FR": 38.73139894043454,
+      "SOCKET_PAW_FR": 0.0,
+      "TOES_FR": 0.30910931470164177,
+      "SOCKET_PAYLOAD": 0.0,
+      "LUMBAR_REAR_LINK": 6.272163710876812,
+      "SPINE_REAR": 5.800839454766819,
+      "PELVIS": 8.30409289630697,
+      "TAIL_01": 168.1631711644106,
+      "TAIL_02": 106.43986388870344,
+      "TAIL_03": 111.89613837089797,
+      "TAIL_04": 138.6482785022758,
+      "TAIL_05": 159.6061517250681,
+      "TAIL_06": 165.3896299322519,
+      "TAIL_07": 178.6793601721194,
+      "TAIL_08": 89.0777372035003,
+      "UPPER_HL": 32.75525630795854,
+      "LOWER_HL": 48.42854436114591,
+      "ANKLE_HL": 13.209909866357716,
+      "PAW_HL": 15.090512370119884,
+      "SOCKET_PAW_HL": 0.0,
+      "TOES_HL": 0.2957973920023953,
+      "UPPER_HR": 70.1998803891166,
+      "LOWER_HR": 33.93767362875301,
+      "ANKLE_HR": 12.236746909303836,
+      "PAW_HR": 18.168219205708112,
+      "SOCKET_PAW_HR": 0.0,
+      "TOES_HR": 0.3756488244197195
+    }
+  },
+  "export_path": "../models/k0-pounce-default.glb",
+  "source_motion_sha256": "1b34c66b16915d88ef84373005ee0e99e820ea26d62be360dd308112c3a19664",
+  "export_sha256": "3f8c28ff462915d61917922e616b0ca6a627a556ad6aca8849c9dcd002968e0a",
+  "quality_status": "Research negative result: shared reader trained through different wide cameras. Low-confidence H3 recovery has a real178.68-degree shortest-quaternion tail step; not accepted for game use. Camera-specific training is a separate comparison.",
+  "game_handoff_note": "Fitted root is LUMBAR; original invisible MOTION transport node remains fixed. Configure game root extraction deliberately; no controller integration is claimed.",
+  "structural_validation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "skin_export_parity": {
+    "method": "Bidirectional nearest-vertex distances after full skin evaluation; allows export material/vertex reordering. No spatial alignment.",
+    "sample_frames": [
+      0,
+      36,
+      73,
+      109,
+      146,
+      183,
+      219,
+      256,
+      293
+    ],
+    "expected_vertices_per_frame": 17054,
+    "actual_vertices_per_frame": 17272,
+    "maximum_bidirectional_full_skin_distance_m": 5.054867109909538e-07,
+    "per_sample_m": [
+      2.9302620286175646e-07,
+      5.054867109909538e-07,
+      3.298193284332681e-07,
+      3.222153471117112e-07,
+      2.2104875895421957e-07,
+      3.262684562028372e-07,
+      3.1871005977993023e-07,
+      3.643086510615285e-07,
+      3.3826098500778676e-07
+    ]
+  }
+}

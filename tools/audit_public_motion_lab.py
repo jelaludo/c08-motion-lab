@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,hashlib,gzip
-ROOT=Path(__file__).resolve().parents[1]/'public/c08-motion-lab'
+ROOT=Path(__file__).resolve().parents[1]
 def read_json(path):
  path=Path(path)
  if not path.exists() and path.suffix=='.json':path=path.with_suffix('.json.gz')
@@ -18,9 +18,16 @@ for test in catalog['tests']:
   assert metadata['provenance_type']=='original',test['id']
   assert 'conditioning_file' not in metadata,test['id']
  assert not test['validation']['gltf_errors'] and not test['validation']['gltf_warnings']
+allowlist_path=ROOT/'research/h3-publication-allowlist.json'
+allowed_videos={entry['path']:entry for entry in read_json(allowlist_path)['files']} if allowlist_path.exists() else {}
+for relative,entry in allowed_videos.items():
+ assert relative.startswith('docs/h3-motion/media/') and relative.endswith('.mp4'),relative
+ assert entry['private_human_footage'] is False and entry['kind'] in ('creator_supplied_generated_robot_preview','own_robot_render_or_recovery_visualization'),relative
+ assert hashlib.sha256((ROOT/relative).read_bytes()).hexdigest()==entry['sha256'],relative
 for path in ROOT.rglob('*'):
  if not path.is_file() or '.git' in path.parts:continue
- assert path.suffix.lower() not in ('.mp4','.pt','.pth','.ckpt','.onnx','.pkl'),path
+ assert path.suffix.lower() not in ('.pt','.pth','.ckpt','.onnx','.pkl'),path
+ if path.suffix.lower()=='.mp4':assert path.relative_to(ROOT).as_posix() in allowed_videos,path
  assert path.stat().st_size<50*1024*1024,path
  if path.suffix.lower() in ('.json','.md','.html','.js','.py','.mjs','.yml') or path.name.endswith('.json.gz'):
   text=gzip.decompress(path.read_bytes()).decode('utf8') if path.name.endswith('.json.gz') else path.read_text(encoding='utf-8')
@@ -28,7 +35,7 @@ for path in ROOT.rglob('*'):
    # Match token-like strings, not function names such as hf_download.
    import re
    assert not re.search(re.escape(marker)+r'[A-Za-z0-9]{25,}',text),path
-report={'status':'passed','public_motion_count':len(catalog['tests']),'video_derived_c08_count':video_count,'all_research_gallery_motionbricks_conditioning_original':True,'excluded_private_video_and_model_weights':True,'max_file_bytes':max(p.stat().st_size for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.parts),'checks':'Research gallery uses original conditioning; predictive sources are original, CC0 or user-owned; video-derived motion separately classified; no raw videos, source-local paths, inference weights or token-like credentials in publication.'}
+report={'status':'passed','public_motion_count':len(catalog['tests']),'video_derived_c08_count':video_count,'all_research_gallery_motionbricks_conditioning_original':True,'excluded_private_video_and_model_weights':True,'hash_allowlisted_generated_robot_render_previews':len(allowed_videos),'max_file_bytes':max(p.stat().st_size for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.parts),'checks':'Research gallery uses original conditioning; predictive sources are original, CC0 or user-owned; video-derived motion separately classified; generated robot previews hash-allowlisted separately; no private human source videos, inference weights or token-like credentials in publication.'}
 
 
 quaternius=json.loads((ROOT/'docs/quaternius/validation-report.json').read_text(encoding='utf-8'))

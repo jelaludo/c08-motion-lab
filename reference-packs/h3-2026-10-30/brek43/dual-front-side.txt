@@ -1,0 +1,31 @@
+B-REK43 — dual-front-side / exact Blender starting frame
+
+Choose ONE prompt below for ONE 4–8 second clip. These are test prompts, not a guarantee that H3 obeys camera, timing, geometry or contact constraints. Reject/rework changed identity, missing parts, drifting cameras, unmatched panels or cropped motion.
+
+REFERENCE CONTRACT
+The image is the original model at time 0 of its authored idle. Preserve its silhouette, proportions, panel layout, colors, sensors, hands/paws and tail exactly. No added limbs, props, deformation redesign, cuts, zoom, orbit, tracking or camera shake. Fixed neutral studio, stationary floor, full body visible throughout. Animate joints and root; preserve rigid armor and component lengths.
+DUAL VIEW: left is front, right is side. Both panels depict the SAME performance at the SAME instant, same pose/phase, duration and pixel scale. Never generate independent actions, stagger timing, resize panels or move the divider. The renderer preserves this at frame0; future generated agreement must be reviewed.
+STANDARD FRAME: use for idle, crouch, small turns and vertical actions. Small root travel only, approximately 0.68 m total. For a longer run/forward jump, use forward-action-wide.png instead of moving/zooming this camera.
+
+SEPARATE PROMPTS — DO NOT COMBINE THESE INTO ONE VIDEO
+
+1. Idle / ends standing
+Six seconds. Hold the supplied stance initially, then a restrained natural weight shift. Feet remain supported; subtle coordinated arm movement. End in the same standing state, without drifting.
+
+2. Squat / ends crouched
+Six seconds. Pause 0.5 s, lower through hips and knees over 2 s, keep weight between the planted feet, then hold the low crouch. End crouched, not automatically standing.
+
+3. Crouch walk / ends crouched
+Seven seconds. Lower smoothly, make two short alternating crouched steps with planted support and a clearly swinging opposite foot, total travel ≤ 0.68 m, brake and hold crouched. No foot skating.
+
+4. Small vertical jump / ends recovered
+Six seconds. Still stance, visible recoil, leg extension/takeoff, short vertical flight, soft knee-flexion landing, then standing recovery. Keep horizontal travel tiny and full body inside the fixed frame.
+
+5. Sidestep / ends turned
+Six seconds. One small deliberate sidestep, transfer support, then turn the torso/feet together about 30 degrees. End balanced in the new heading; do not force a return to the initial heading.
+
+VANILLA 15 MENU / NEW-FRAME REQUIREMENTS
+Idle, walk, run, small jump, high jump, running jump, crouch down, crouch walk, stand from crouch, sit down, seated idle, sit-to-stand, lie down, forward roll, backward roll.
+Use the wide frame for traveling run/jump. High jumps need full visible height; shorten/reject any action exceeding the frame. Stand-from-crouch needs a new CROUCHED starting frame. Sit down / seated idle / sit-to-stand require a real visible chair and a newly rendered chair-interaction starting frame; this empty studio idle image does not supply one. Floor work/rolls need floor-appropriate starting poses plus front/side/depth evidence; a backward roll should start from an appropriate seated/floor reference. No invented chair, grip or hidden support is validated by this pack.
+
+Review the output against this starting frame, camera JSON and original rig. Matching the first frame alone does not establish subsequent geometry/camera consistency.

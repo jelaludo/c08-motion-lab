@@ -1,0 +1,9 @@
+{
+  "comparison": "Default vs steps=false and foot_lock=false using identical readings",
+  "max_absolute_array_difference": {
+    "times": 0.0,
+    "root_location": 0.0,
+    "quaternions": 0.0
+  },
+  "interpretation": "All zero means these default heuristics made no change on this clip. It does not imply contact was physically correct."
+}

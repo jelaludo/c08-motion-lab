@@ -1,0 +1,2 @@
+# Preserve the exact bytes inventoried in downloadable reference-pack manifests.
+reference-packs/** -text whitespace=cr-at-eol

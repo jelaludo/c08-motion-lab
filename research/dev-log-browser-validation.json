@@ -1,17 +1,17 @@
 {
   "status": "passed",
   "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/dev-log/",
-  "entries": 18,
-  "words": 4948,
+  "entries": 19,
+  "words": 5050,
   "checks": [
     "prominent unresolved crouch/arm feedback",
-    "18 dated entries and working in-page index",
+    "dated entries and working in-page index",
     "all local destinations and cited repository reports exist",
     "navigation added to all seven principal pages",
     "live embedded synchronized comparison loads and pauses",
     "desktop/mobile page and iframe have no horizontal overflow",
     "no page errors"
   ],
-  "local_urls_checked": 11,
+  "local_urls_checked": 12,
   "errors": []
 }

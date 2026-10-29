@@ -1,0 +1,33 @@
+{
+  "clip": "VC_h3_concept",
+  "frames": 368,
+  "fps": 30,
+  "duration_s": 12.233333587646484,
+  "gltf_errors": 0,
+  "gltf_warnings": 0,
+  "sampling_hz": 120,
+  "skinned_geometry_min_floor_y_m": -0.0072077665744536,
+  "max_exported_joint_position_error_m": 5.510865046943035e-06,
+  "max_segment_length_variation_m": 3.7825717402739656e-07,
+  "max_abs_whole_body_ground_offset_m": 0.5175738782424958,
+  "ground_policy": "Complete avatar is translated vertically each frame so its lowest rigid armor vertex is 15 mm above a flat floor. No foot locks, no standing pose constraint, no limb stretching; this is a measured presentation correction, not physical contact IK.",
+  "pipeline": "H3 concept robot video -> GEM-X human SOMA estimate -> existing direct C08 adapter; no MotionBricks inference",
+  "limitations": [
+    "Human estimator applied outside its normal distribution.",
+    "No original concept robot rig; C08 is a different body.",
+    "Existing adapter applies per-frame whole-avatar grounding, with corrections up to0.518m: weight/vertical motion are altered.",
+    "120Hz skin sampling finds a7.2mm floor penetration between keys despite15mm margin at baked keys.",
+    "Rest-pose fingers, no contact locking or physical balance solve.",
+    "A numerical/export pass is not motion approval.",
+    "Source video returns toward the starting stance, but raw recovered horizontal root seam is about5.88m; no seamless loop is claimed."
+  ],
+  "source_recovery_loop_diagnostic": {
+    "estimated_root_end_minus_start_m": [
+      -3.2548766136169434,
+      0.4437468647956848,
+      -4.89453125
+    ],
+    "estimated_horizontal_loop_seam_m": 5.877980769541277,
+    "interpretation": "Monocular estimated travel, not measured distance. Source return-to-stance does not establish a seamless recovered world-space loop."
+  }
+}

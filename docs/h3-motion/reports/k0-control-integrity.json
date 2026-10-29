@@ -1,0 +1,15 @@
+{
+  "scope": "Source control and rig/export integrity; no trained recovery accuracy claim",
+  "duration_s": 4.0,
+  "native_action": "Pounce",
+  "native_action_duration_s": 3.2,
+  "hold_s": 0.8,
+  "bones": 51,
+  "fps": 30,
+  "known_cameras": true,
+  "h3_camera_known": false,
+  "native_glb_max_world_joint_error_m": 8.37e-07,
+  "rotation_only_representability_mean_error_m": 0.000543,
+  "rotation_only_representability_max_error_m": 0.01073,
+  "limitation": "Native shoulder translations are not represented by the rotation-only fitter."
+}

@@ -1,0 +1,42 @@
+{
+  "method": "Independent original-rig full-skin FK. Lowest surface height is relative to the exported studio floor; it is not a labeled contact or dynamic-balance measurement. Opening1s is visually a standing reference, not mocap ground truth.",
+  "rows": [
+    {
+      "variant": "Reused wide-camera reader, automatic alignment",
+      "whole_clip_lowest_skin_min_m": -0.03812206897519965,
+      "whole_clip_lowest_skin_median_m": 0.13915348444519493,
+      "opening_1s_lowest_skin_median_m": 0.07622727641499485,
+      "opening_1s_lowest_skin_range_m": [
+        0.07530155950471286,
+        0.08257058713359772
+      ],
+      "maximum_adjacent_quaternion_step_deg": 178.6793601721194
+    },
+    {
+      "variant": "Camera-specific reader, automatic alignment",
+      "whole_clip_lowest_skin_min_m": 0.041153335939255256,
+      "whole_clip_lowest_skin_median_m": 0.05586784709084033,
+      "opening_1s_lowest_skin_median_m": 0.056208966761980374,
+      "opening_1s_lowest_skin_range_m": [
+        0.041153335939255256,
+        0.06275289937360555
+      ],
+      "maximum_adjacent_quaternion_step_deg": 83.09671791176187
+    },
+    {
+      "variant": "Camera-specific reader, estimated camera locked",
+      "whole_clip_lowest_skin_min_m": -0.012113483038119238,
+      "whole_clip_lowest_skin_median_m": -0.001548518828642086,
+      "opening_1s_lowest_skin_median_m": 0.00658779692603473,
+      "opening_1s_lowest_skin_range_m": [
+        0.0035594767783244975,
+        0.00966760391433906
+      ],
+      "maximum_adjacent_quaternion_step_deg": 96.29220429665287
+    }
+  ],
+  "finding": "Camera matching improves reading confidence; locking the estimated camera removes most gross hovering. Large tail steps remain, so the locked result is still a rework candidate.",
+  "same_H3_video": true,
+  "camera_trained_vs_locked_same_joint_readings": true,
+  "exact_H3_generation_camera_available": false
+}

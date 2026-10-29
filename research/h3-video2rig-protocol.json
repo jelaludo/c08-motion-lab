@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-30",
+  "purpose": "Evaluate creator-supplied H3 videos as motion references, distinguishing source quality, recovery, body adaptation and game-export readiness.",
+  "video2rig_commit": "55d51b3b9685125a8ea27841d6af9523f6352aa1",
+  "environment": "Separate G-drive Python environment and caches. Existing MotionBricks and GEM-X environments retained.",
+  "tests": {
+    "k0_control": "Known native Pounce, 3.2s plus0.8s hold, 120frames at30Hz, known front/side cameras and retained joint ground truth.",
+    "k0_h3": "Full294frame H3 pounce at24Hz; available K0 body, approximate camera. Character reader trained on native synthetic imagery. This camera/domain change is explicitly a stress test.",
+    "k0_contact_ablation": "Reuse exactly the same joint readings with steps=false and foot_lock=false. Both root-from-steps and locking are disabled together; this does not isolate either one alone.",
+    "k0_smoothing_ablation": "Reuse joint readings with lowpass_slow_hz=3. Other fit settings unchanged; downstream contact/root effects can still differ.",
+    "concept_human_recovery": "Existing GEM-X human estimator applied to a stylized robot. No exact matching concept-body rig is available. Raw skeleton and source overlay retained.",
+    "concept_c08_adapter": "Existing direct SOMA-to-C08 adapter applied unchanged. Whole-avatar grounding and rest hands are documented, not presented as learned motion or physical contact.",
+    "c07_control": "Published C07 native Pounce rendered through known cameras. Separate ground truth and recovery evaluation.",
+    "c07_h3": "Available published C07 differs visibly from H3 frame0. Bounded training/recovery only; failure cannot isolate solver quality from input-body mismatch.",
+    "k0_camera_specific": "1000 synthetic poses through the estimated H3 camera,2000 additional steps, fresh checkpoint initialized from base K0. No H3 video frames used for training; baseline preserved.",
+    "k0_estimated_camera_locked": "Same camera-specific joint readings, masks and timing, but unit camera correction instead of automatic scale2.438/offset/rotation. Camera remains manually estimated, not ground truth."
+  },
+  "checks": [
+    "Train/held-out synthetic joint error is separate from known-motion recovery error.",
+    "Compare known-control world-joint positions and rotation errors without per-frame alignment; state any static alignment separately.",
+    "Retain native translations unsupported by the rotation-only fitter as a representability baseline.",
+    "Inspect original and recovered animations from source and novel cameras.",
+    "Validate finite poses, fixed rig lengths, timing, exported-rig forward kinematics and glTF structure.",
+    "Measure end-to-start root displacement separately from return-to-stance appearance.",
+    "Treat reprojection, contact heuristics and export validity as diagnostics, not physical-balance or visual-acceptance proofs.",
+    "Save every comment/score per test/body/version, and export all review history together."
+  ],
+  "publication": "Only selected generated robot previews, original creator rigs/recovered outputs and sanitized reports. No private human footage, training renders, trained reader weights, third-party inference weights or credentials.",
+  "limitations": "No new H3 generation, paid service or commercial license activated. A completed test is computed and available for review, not accepted for production. MotionBricks is not used to generate the Video2Rig/GEM-X recovery outputs.",
+  "outcome": "13 completed comparisons, not13 distinct new motions. Both no-contact ablations are exact no-effect controls; H3 fits retain serious quality problems. See catalog and per-test reports."
+}

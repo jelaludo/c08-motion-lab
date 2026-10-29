@@ -4,8 +4,9 @@
   "video_derived_c08_count": 6,
   "all_research_gallery_motionbricks_conditioning_original": true,
   "excluded_private_video_and_model_weights": true,
-  "max_file_bytes": 7618436,
-  "checks": "Research gallery uses original conditioning; predictive sources are original, CC0 or user-owned; video-derived motion separately classified; no raw videos, source-local paths, inference weights or token-like credentials in publication.",
+  "hash_allowlisted_generated_robot_render_previews": 18,
+  "max_file_bytes": 22347404,
+  "checks": "Research gallery uses original conditioning; predictive sources are original, CC0 or user-owned; video-derived motion separately classified; generated robot previews hash-allowlisted separately; no private human source videos, inference weights or token-like credentials in publication.",
   "quaternius_baseline_clips": 20,
   "predictive_neural_experiments": 24,
   "predictive_interpolation_controls": 24,
@@ -43,7 +44,7 @@
   "reactive_final_artifact_hashes_verified": true,
   "original_brek_eva_rigs_hash_verified": true,
   "trusted_stance_only_footplant_validation": true,
-  "pages_artifact_mib": 828.17,
+  "pages_artifact_mib": 857.73,
   "vanilla_game_bakes": 30,
   "vanilla_bake_version_hashes_verified": true
 }

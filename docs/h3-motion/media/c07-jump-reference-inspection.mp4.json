@@ -1,0 +1,10 @@
+{
+  "testId": "c07-jump-reference",
+  "output": "public/c08-motion-lab/docs/h3-motion/media/c07-jump-reference-inspection.mp4",
+  "frames": 158,
+  "fps": 24,
+  "duration_s": 6.583333333333333,
+  "source_model": "models/c07-jump-reference.glb",
+  "method": "Deterministic Three.js GLB inspection frames. Camera follows the body; no motion keys, floor correction or retiming added. Every source-time sample retained at the stated frame rate.",
+  "errors": []
+}

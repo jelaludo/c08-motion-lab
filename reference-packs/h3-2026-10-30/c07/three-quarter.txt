@@ -1,0 +1,29 @@
+C07 Cheetah — three-quarter / exact Blender starting frame
+
+Choose ONE prompt below for ONE 4–8 second clip. These are test prompts, not a guarantee that H3 obeys camera, timing, geometry or contact constraints. Reject/rework changed identity, missing parts, drifting cameras, unmatched panels or cropped motion.
+
+REFERENCE CONTRACT
+The image is the original model at time 0 of its authored idle. Preserve its silhouette, proportions, panel layout, colors, sensors, hands/paws and tail exactly. No added limbs, props, deformation redesign, cuts, zoom, orbit, tracking or camera shake. Fixed neutral studio, stationary floor, full body visible throughout. Animate joints and root; preserve rigid armor and component lengths.
+STANDARD FRAME: use for idle, crouch, small turns and vertical actions. Small root travel only, approximately 0.28 m total. For a longer run/forward jump, use forward-action-wide.png instead of moving/zooming this camera.
+
+SEPARATE PROMPTS — DO NOT COMBINE THESE INTO ONE VIDEO
+
+1. Watch idle / ends standing
+Six seconds. Hold the exact supplied quadruped stance, a restrained head look and small tail response. Four paws stay supported. End standing without body drift.
+
+2. Crouch / stalk / ends low
+Seven seconds. Lower the body under controlled leg flexion, make two small alternating stalk steps, total travel ≤ 0.28 m, then stop low. Preserve paw count, rigid joints and complete tail.
+
+3. Sit down / ends seated
+Six seconds. Move the hindquarters down with visible paw support and coordinated front legs. End sitting; do not automatically stand up. Keep the original mechanical anatomy.
+
+4. Small step and turn / ends at new heading
+Six seconds. One small lateral support step and a coordinated 30 degree turn. Paws lift and plant in a clear order; the torso and tail follow naturally. End standing in the new heading.
+
+5. Low hop / ends recovered
+Six seconds. Crouch, visibly push off, a low short flight and a four-paw landing with leg flexion. Keep forward travel tiny, then recover standing. Fixed camera; no tail or paws outside the frame.
+
+QUADRUPED MENU / NEW-FRAME REQUIREMENTS
+Watch idle; walk; trot; short gallop-stop; forward pounce; low crouch/stalk; sit down; stand from sit. Use wide for travel/pounce. A stand-from-sit clip requires a newly rendered SEATED reference. Keep long-tail clearance visible. Rolling/floor contact needs additional side/front/depth evidence. A pretty generated pounce is not proof of editable rig recovery or physical balance.
+
+Review the output against this starting frame, camera JSON and original rig. Matching the first frame alone does not establish subsequent geometry/camera consistency.

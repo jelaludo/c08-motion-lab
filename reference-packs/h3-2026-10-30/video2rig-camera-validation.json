@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "format": "Official Video2Rig frame_px/views ortho camera records",
+  "parser_repository": "https://github.com/canitcode/video2rig",
+  "parser_commit": "55d51b3b9685125a8ea27841d6af9523f6352aa1",
+  "clip_py_sha256": "867723923f09f81dc0da6e2bfc2682366e6787e355b914d6c49fc762445d02df",
+  "files": 20,
+  "scope": "Actual official Camera parser vs Blender projection matrices on every saved armature-space joint. Does not claim H3-generated future frames preserve cameras.",
+  "results": [
+    {
+      "body": "brek43",
+      "files": 4,
+      "official_Camera_max_pixel_error": 0.000693758171337322,
+      "armature_world_included_by_official_parser": true
+    },
+    {
+      "body": "c07",
+      "files": 4,
+      "official_Camera_max_pixel_error": 0.0008109640284601483,
+      "armature_world_included_by_official_parser": true
+    },
+    {
+      "body": "c08",
+      "files": 4,
+      "official_Camera_max_pixel_error": 0.0008780822997778159,
+      "armature_world_included_by_official_parser": true
+    },
+    {
+      "body": "eva-k7",
+      "files": 4,
+      "official_Camera_max_pixel_error": 0.00011333568278359962,
+      "armature_world_included_by_official_parser": true
+    },
+    {
+      "body": "k0-tech",
+      "files": 4,
+      "official_Camera_max_pixel_error": 0.00038729555387817527,
+      "armature_world_included_by_official_parser": true
+    }
+  ]
+}

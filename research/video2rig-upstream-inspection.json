@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/canitcode/video2rig",
+  "commit": "55d51b3b9685125a8ea27841d6af9523f6352aa1",
+  "tracked_worktree_changes": false,
+  "local_upstream_patch_required": false,
+  "compatibility_note": "The pinned upstream already contains the Blender4.x EEVEE fallback and Action compatibility helpers. No local upstream patch was applied. Environment and runner wrappers live outside upstream.",
+  "requirements_snapshot": "../tools/video2rig/requirements-lock.txt",
+  "environment_snapshot": "../tools/video2rig/Enter-Video2Rig.ps1",
+  "reviewed_components": [
+    "requirements.txt",
+    "video2rig/common.py",
+    "video2rig/reader/prepare.py",
+    "video2rig/reader/net.py",
+    "video2rig/reader/train.py",
+    "video2rig/reader/poses.py",
+    "video2rig/reader/visible.py",
+    "video2rig/reader/road.py",
+    "video2rig/reader/fit.py",
+    "blender/render_poses.py"
+  ],
+  "source_license": "AGPL-3.0"
+}
