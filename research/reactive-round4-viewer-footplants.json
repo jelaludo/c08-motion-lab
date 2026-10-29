@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "body": "c08",
+      "id": "crouch_reactive_1",
+      "lane_world_offset": [
+        6,
+        0,
+        0
+      ],
+      "support_samples": 267,
+      "support_speed_p50_m_s": 0.000006792766280294592,
+      "support_speed_p95_m_s": 0.000023258442214902524,
+      "support_speed_max_m_s": 0.000031846774732951396,
+      "reach_release_samples": 0,
+      "min_floor_m": 0.011999443252470099
+    },
+    {
+      "body": "brek",
+      "id": "crouch_reactive_1",
+      "lane_world_offset": [
+        6,
+        0,
+        0
+      ],
+      "support_samples": 267,
+      "support_speed_p50_m_s": 0,
+      "support_speed_p95_m_s": 5.3290705182007514e-14,
+      "support_speed_max_m_s": 1.0658141036401503e-13,
+      "reach_release_samples": 0,
+      "min_floor_m": 0.007999999999999672
+    },
+    {
+      "body": "eva",
+      "id": "crouch_reactive_1",
+      "lane_world_offset": [
+        6,
+        0,
+        0
+      ],
+      "support_samples": 267,
+      "support_speed_p50_m_s": 0,
+      "support_speed_p95_m_s": 2.6645352591003757e-14,
+      "support_speed_max_m_s": 5.3290705182007514e-14,
+      "reach_release_samples": 0,
+      "min_floor_m": 0.007999999999999839
+    }
+  ]
+}

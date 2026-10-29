@@ -14,6 +14,7 @@ names=list(data['body_names'])
 source=data['body_transforms']
 reference=data['reference_bodies']
 contacts=data['contacts']
+contact_ik_mask=data['contact_ik_mask'] if 'contact_ik_mask' in data.files else None
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.gltf(filepath=str(ROOT/'assets/c08-worker/c08_d0_lod1.glb'))
 arm=next(o for o in bpy.data.objects if o.type=='ARMATURE')
@@ -94,7 +95,11 @@ for frame in range(len(source)):
   p.z=H[ankle].z+(point(frame,src).z-refpos(src).z)*scale
   sole=H['SOCKET_SOLE_'+side]-H[ankle]
   supported=bool(max(contacts[frame,ci:ci+2])>=.65)
-  if metadata.get('reactive',{}).get('scenario')=='crouch':
+  if contact_ik_mask is not None:
+   # Only externally prepared contact phases are trusted. Genuine neural
+   # entry/exit frames keep their original, unreviewed contact predictions.
+   supported=supported and bool(contact_ik_mask[frame])
+  elif metadata.get('reactive',{}).get('scenario')=='crouch':
    # These squat-shuffle predictions retain unreliable high contact labels during
    # root travel. Follow the predicted feet instead of pinning both soles until
    # the short C08 legs collapse or stretch. This adaptation does not claim IK contact repair.
@@ -250,7 +255,7 @@ document['bufferViews']=[document['bufferViews'][i] for i in used]
 for d,k in slots:d[k]=indices[d[k]]
 encoded=json.dumps(document,separators=(',',':')).encode();encoded+=b' '*((-len(encoded))%4)
 glb_path.write_bytes(struct.pack('<III',0x46546c67,2,20+len(encoded)+len(rest))+struct.pack('<II',len(encoded),0x4e4f534a)+encoded+rest)
-report={'status':'experimental prototype; not game accepted','conditioning_provenance':metadata['purpose'],'source_asset_sha256':hashlib.sha256((ROOT/'assets/c08-worker/c08_d0_lod1.glb').read_bytes()).hexdigest(),'clip':CLIP_NAME,'frames':len(source),'fps':fps,'duration_s':(len(source)-1)/fps,'source_to_target_scale':scale,'initial_heading_removed_rad':initial_yaw,'max_pelvis_reach_correction_m':max_reach_correction,'reactive_foot_lock_releases':reactive_lock_releases,'max_reactive_ankle_reach_adjustment_m':max_reactive_ankle_reach_adjustment,'max_foot_floor_lift_m':max(floor_corrections),'root_motion':'MOTION owns scaled horizontal travel and heading; PELVIS residual; do not add navigation travel','contact_policy':('Predicted foot positions with sole XY locking disabled for reactive squat-shuffles; source contact labels retained unreviewed; broad-sole floor correction.' if metadata.get('reactive',{}).get('scenario')=='crouch' else '>=0.65 maximum source heel/toe confidence; heuristic sole-center XY locking, broad-sole floor correction; unreviewed contacts'),'limitations':['G1 and C08 proportions/rigs differ; this is measured adaptation, not reference-rig equivalence','Fingers/toes/head remain inherited rest controls','No self-collision or physical balance guarantee'],'sample_positions_blender':samples}
+report={'status':'experimental prototype; not game accepted','conditioning_provenance':metadata['purpose'],'source_asset_sha256':hashlib.sha256((ROOT/'assets/c08-worker/c08_d0_lod1.glb').read_bytes()).hexdigest(),'clip':CLIP_NAME,'frames':len(source),'fps':fps,'duration_s':(len(source)-1)/fps,'source_to_target_scale':scale,'initial_heading_removed_rad':initial_yaw,'max_pelvis_reach_correction_m':max_reach_correction,'reactive_foot_lock_releases':reactive_lock_releases,'max_reactive_ankle_reach_adjustment_m':max_reactive_ankle_reach_adjustment,'max_foot_floor_lift_m':max(floor_corrections),'root_motion':'MOTION owns scaled horizontal travel and heading; PELVIS residual; do not add navigation travel','trusted_contact_mask_frames':int(np.sum(contact_ik_mask)) if contact_ik_mask is not None else 0,'contact_policy':('Authored prepared-contact mask plus phase contacts enable sole XY locking; raw NN entry/exit contacts are not pinned. Broad-sole floor correction retained.' if contact_ik_mask is not None else 'Predicted foot positions with sole XY locking disabled for reactive squat-shuffles; source contact labels retained unreviewed; broad-sole floor correction.' if metadata.get('reactive',{}).get('scenario')=='crouch' else '>=0.65 maximum source heel/toe confidence; heuristic sole-center XY locking, broad-sole floor correction; unreviewed contacts'),'limitations':['G1 and C08 proportions/rigs differ; this is measured adaptation, not reference-rig equivalence','Fingers/toes/head remain inherited rest controls','No self-collision or physical balance guarantee'],'sample_positions_blender':samples}
 report.update(export_bake_hz=120 if whole_body_ground else 30,max_whole_body_ground_lift_m=max(body_ground_offsets,default=0.),max_dense_ground_lift_m=max(dense_ground_offsets,default=0.),whole_avatar_ground_policy='Complete-avatar lift only, including non-foot armor support; no balance/contact solve' if whole_body_ground else 'Original standing foot adapter')
 (OUT/'retarget-report.json').write_text(json.dumps(report,indent=2))
 print('RETARGET_COMPLETE',len(source),'frames','scale',scale,'pelvis correction',max_reach_correction,'foot lift',max(floor_corrections),flush=True)

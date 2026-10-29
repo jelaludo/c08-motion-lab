@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "probe_only": false,
+  "scope": "BREK/EVA fullskin on translated+yaw-rotated parent, actual revised crouch preview when --actual is set; otherwise prepared61frame probe. Motion-quality audits are separate.",
+  "checks": [
+    "fullskin pose independent of preceding scrub times",
+    "new lane/body instance reproduces pose",
+    "sequential displayed-body bake matches nonsequential preview",
+    "GLB validators clean"
+  ],
+  "results": [
+    {
+      "body": "brek",
+      "target": 8.9,
+      "stanceDrift": 1.3911054626160788e-15,
+      "limbLengthError": 1.887379141862766e-15,
+      "minimumSkinY": 0.008000000000000108,
+      "releases": 0,
+      "active": 27,
+      "parent_translation": [
+        13,
+        0,
+        -7
+      ],
+      "parent_yaw": 0.61,
+      "historyError": 0,
+      "freshLaneError": 0,
+      "vertices": 28060,
+      "maskFrames": 255,
+      "exportParity": {
+        "maximum": 4.3908667457515094e-7,
+        "vertices": 28060
+      },
+      "gltf": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "body": "eva",
+      "target": 8.9,
+      "stanceDrift": 9.155133597044475e-16,
+      "limbLengthError": 1.4432899320127035e-15,
+      "minimumSkinY": 0.008000000000000021,
+      "releases": 0,
+      "active": 27,
+      "parent_translation": [
+        13,
+        0,
+        -7
+      ],
+      "parent_yaw": 0.61,
+      "historyError": 0,
+      "freshLaneError": 0,
+      "vertices": 21531,
+      "maskFrames": 255,
+      "exportParity": {
+        "maximum": 2.0508216458381412e-7,
+        "vertices": 21531
+      },
+      "gltf": {
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,41 @@
+{
+  "source": "Original-conditioned MotionBricks own_jump_over",
+  "source_sha256": "bbf519c818f8b7a9b99ba7dfb7f7452130963b1e862f207ebd823a9a52256506",
+  "method": "Contiguous recorded pose trajectory retimed by semantic phases; horizontal displacement scaled2.04; source root-height samples and joints interpolated without a new vertical arc. Stance contact preparation is separate.",
+  "phases": [
+    [
+      "recoil",
+      28,
+      58,
+      18
+    ],
+    [
+      "extend",
+      58,
+      62,
+      6
+    ],
+    [
+      "flight",
+      62,
+      117,
+      23
+    ],
+    [
+      "land",
+      117,
+      127,
+      9
+    ],
+    [
+      "recovery",
+      127,
+      135,
+      12
+    ]
+  ],
+  "fps": 30,
+  "frames": 69,
+  "duration_s": 2.2666666666666666,
+  "forward_distance_m": 4.2066364963352685
+}

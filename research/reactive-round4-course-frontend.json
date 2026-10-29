@@ -1,0 +1,586 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "version": "reactive-round4-motion-quality",
+  "catalog_override": false,
+  "scope": "Actual80s hero courses across all3bodies: source phase timing, progressive speedzones, all jump apex frames, full arena ground, game exports and end stopping. Motion collision/continuity audits are independent.",
+  "results": [
+    {
+      "body": "c08",
+      "seed": 1,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        35.333333333333336
+      ],
+      "maxNDC": 0.869583367701231,
+      "vertices": 23475,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 34.733333333333334,
+        "out": 35.93333333333334,
+        "bytes": 1309816,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 3856588,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    },
+    {
+      "body": "c08",
+      "seed": 2,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        35.333333333333336
+      ],
+      "maxNDC": 0.8695880978908975,
+      "vertices": 23475,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 34.733333333333334,
+        "out": 35.93333333333334,
+        "bytes": 1309900,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 3856632,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    },
+    {
+      "body": "c08",
+      "seed": 3,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        36.333333333333336
+      ],
+      "maxNDC": 0.869584768850923,
+      "vertices": 23475,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 35.733333333333334,
+        "out": 36.93333333333334,
+        "bytes": 1309796,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 3797172,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    },
+    {
+      "body": "brek",
+      "seed": 1,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        35.333333333333336
+      ],
+      "maxNDC": 0.7604563692953438,
+      "vertices": 28060,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 34.733333333333334,
+        "out": 35.93333333333334,
+        "bytes": 1573080,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 4490652,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    },
+    {
+      "body": "brek",
+      "seed": 2,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        35.333333333333336
+      ],
+      "maxNDC": 0.7604563692953438,
+      "vertices": 28060,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 34.733333333333334,
+        "out": 35.93333333333334,
+        "bytes": 1573080,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 4490276,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    },
+    {
+      "body": "brek",
+      "seed": 3,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        36.333333333333336
+      ],
+      "maxNDC": 0.7604562796024016,
+      "vertices": 28060,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 35.733333333333334,
+        "out": 36.93333333333334,
+        "bytes": 1573080,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 4422356,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    },
+    {
+      "body": "eva",
+      "seed": 1,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        35.333333333333336
+      ],
+      "maxNDC": 0.8039026031201573,
+      "vertices": 21531,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 34.733333333333334,
+        "out": 35.93333333333334,
+        "bytes": 1260308,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 4131276,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    },
+    {
+      "body": "eva",
+      "seed": 2,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        35.333333333333336
+      ],
+      "maxNDC": 0.8039026031201546,
+      "vertices": 21531,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 34.733333333333334,
+        "out": 35.93333333333334,
+        "bytes": 1260300,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 4131236,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    },
+    {
+      "body": "eva",
+      "seed": 3,
+      "duration": 80,
+      "phases": [
+        "idle",
+        "walk",
+        "run",
+        "crouch entry",
+        "crouch walk",
+        "stand and recover",
+        "run to plant",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery",
+        "running recovery",
+        "pursuit"
+      ],
+      "tested": [
+        "run",
+        "recoil",
+        "extend",
+        "flight",
+        "land",
+        "recovery"
+      ],
+      "flightApices": [
+        36.333333333333336
+      ],
+      "maxNDC": 0.8039026031201556,
+      "vertices": 21531,
+      "zones": [
+        {
+          "color": "#e69b42",
+          "request": 2.4
+        },
+        {
+          "color": "#d9554a",
+          "request": 3.3
+        }
+      ],
+      "source_method": "neural entry/exit plus contact-prepared recorded source action",
+      "apexExport": {
+        "in": 35.733333333333334,
+        "out": 36.93333333333334,
+        "bytes": 1260304,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "lateExport": {
+        "in": 78,
+        "out": 80,
+        "bytes": 4064348,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva",
+        "generation_method": "neural entry/exit plus contact-prepared recorded source action"
+      },
+      "end_stops": true
+    }
+  ],
+  "errors": []
+}

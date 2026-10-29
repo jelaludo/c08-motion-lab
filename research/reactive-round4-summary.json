@@ -1,0 +1,257 @@
+{
+  "version": "reactive-round4-motion-quality",
+  "takes": 123,
+  "revised_or_new_takes": 63,
+  "reused_unchanged_navigation_takes": 60,
+  "continuous_courses": 3,
+  "continuous_course_duration_s": 80,
+  "total_neural_calls": 8340,
+  "new_neural_calls": 4180,
+  "prepared_source_playback_frames": 4879,
+  "pages_mib": 827.371657371521,
+  "new_source_cases_have_remaining_native_proxy_overlap": false,
+  "progressive_zone_takes": [
+    {
+      "id": "speedzones_baseline_1",
+      "orange_mean_m_s": 2.2897744178771973,
+      "red_mean_m_s": 2.9283087253570557,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_1",
+      "orange_mean_m_s": 2.0263280868530273,
+      "red_mean_m_s": 2.8329851627349854,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_2",
+      "orange_mean_m_s": 2.2429001331329346,
+      "red_mean_m_s": 2.882218360900879,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_2",
+      "orange_mean_m_s": 1.9368311166763306,
+      "red_mean_m_s": 2.8326728343963623,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_3",
+      "orange_mean_m_s": 2.24290132522583,
+      "red_mean_m_s": 2.8822102546691895,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_3",
+      "orange_mean_m_s": 1.9368325471878052,
+      "red_mean_m_s": 2.832674026489258,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_4",
+      "orange_mean_m_s": 2.289773941040039,
+      "red_mean_m_s": 2.928307294845581,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_4",
+      "orange_mean_m_s": 2.0263283252716064,
+      "red_mean_m_s": 2.8329761028289795,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_5",
+      "orange_mean_m_s": 2.2428977489471436,
+      "red_mean_m_s": 2.882213830947876,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_5",
+      "orange_mean_m_s": 2.026327133178711,
+      "red_mean_m_s": 2.8329808712005615,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_6",
+      "orange_mean_m_s": 2.2897744178771973,
+      "red_mean_m_s": 2.928312301635742,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_6",
+      "orange_mean_m_s": 2.0263288021087646,
+      "red_mean_m_s": 2.832984209060669,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_7",
+      "orange_mean_m_s": 2.2897725105285645,
+      "red_mean_m_s": 2.928304433822632,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_7",
+      "orange_mean_m_s": 2.026327133178711,
+      "red_mean_m_s": 2.832982301712036,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_8",
+      "orange_mean_m_s": 2.2897748947143555,
+      "red_mean_m_s": 2.9283101558685303,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_8",
+      "orange_mean_m_s": 2.02632737159729,
+      "red_mean_m_s": 2.832979917526245,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_9",
+      "orange_mean_m_s": 2.242901086807251,
+      "red_mean_m_s": 2.8822104930877686,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_9",
+      "orange_mean_m_s": 1.9368317127227783,
+      "red_mean_m_s": 2.832674741744995,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_baseline_10",
+      "orange_mean_m_s": 2.2897732257843018,
+      "red_mean_m_s": 2.9283080101013184,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "speedzones_reactive_10",
+      "orange_mean_m_s": 2.026327610015869,
+      "red_mean_m_s": 2.8329830169677734,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "course_reactive_1",
+      "orange_mean_m_s": 2.0716352462768555,
+      "red_mean_m_s": 2.9128847122192383,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "course_reactive_2",
+      "orange_mean_m_s": 2.074267864227295,
+      "red_mean_m_s": 2.920773983001709,
+      "strictly_faster_red": true
+    },
+    {
+      "id": "course_reactive_3",
+      "orange_mean_m_s": 2.0452568531036377,
+      "red_mean_m_s": 2.9461331367492676,
+      "strictly_faster_red": true
+    }
+  ],
+  "prepared_jump": {
+    "source": "Original-conditioned MotionBricks own_jump_over",
+    "source_sha256": "bbf519c818f8b7a9b99ba7dfb7f7452130963b1e862f207ebd823a9a52256506",
+    "method": "Contiguous recorded pose trajectory retimed by semantic phases; horizontal displacement scaled2.04; source root-height samples and joints interpolated without a new vertical arc. Stance contact preparation is separate.",
+    "phases": [
+      [
+        "recoil",
+        28,
+        58,
+        18
+      ],
+      [
+        "extend",
+        58,
+        62,
+        6
+      ],
+      [
+        "flight",
+        62,
+        117,
+        23
+      ],
+      [
+        "land",
+        117,
+        127,
+        9
+      ],
+      [
+        "recovery",
+        127,
+        135,
+        12
+      ]
+    ],
+    "fps": 30,
+    "frames": 69,
+    "duration_s": 2.2666666666666666,
+    "forward_distance_m": 4.2066364963352685
+  },
+  "limitations": [
+    "External target planning and conservative root collision are not learned scene awareness, balance, or full-body dynamics.",
+    "Revised crouch/jump actions are explicitly prepared recorded-source playback with neural entry/exit and locomotion. Source poses are fed into subsequent actual neural context.",
+    "CC0 crouch preparation authors contact timing, stride and bounded leg IK; it is not inferred contact or a pristine unmodified source clip.",
+    "Retimed jump preserves the recorded vertical arc; stance correction may release infeasible support requests.",
+    "Actor/cat mutual collision is not solved; cat route and gait are authored controllers.",
+    "Old pure-neural sliding crouch remains accessible through the prior release commit 606b65014521f9473e02b35d29e4eafe95e3c25e."
+  ],
+  "status": "completed; ready for visual review",
+  "body_count": 3,
+  "bodies": [
+    "c08",
+    "brek",
+    "eva"
+  ],
+  "validation": {
+    "status": "passed",
+    "displayed_take_body_combinations": 369,
+    "mesh_samples": 792369,
+    "mesh_report": "reactive-round4-fullskin-validation.json",
+    "native_physics_report": "reactive-round4-public-physics.json",
+    "actual_viewer_contact_report": "reactive-round4-viewer-footplants.json",
+    "footplant_history_export_report": "reactive-round4-footplant-determinism.json",
+    "all_final_motion_artifact_hashes_verified": true
+  },
+  "body_mesh_statistics": {
+    "c08": {
+      "cases": 123,
+      "sampling_hz": 120,
+      "frames": 528123,
+      "triangle_obstacle_intersections": 0,
+      "hurdle_crossings": 23,
+      "crouch_bar_crossings": 13,
+      "minimum_hurdle_clearance_native_m": 0.3470628353652458,
+      "minimum_crouch_clearance_native_m": 0.06616343598441454
+    },
+    "brek": {
+      "cases": 123,
+      "sampling_hz": 30,
+      "frames": 132123,
+      "triangle_obstacle_intersections": 0,
+      "hurdle_crossings": 23,
+      "crouch_bar_crossings": 13,
+      "minimum_hurdle_clearance_native_m": 0.3884692493180691,
+      "minimum_crouch_clearance_native_m": 0.12607337812261954
+    },
+    "eva": {
+      "cases": 123,
+      "sampling_hz": 30,
+      "frames": 132123,
+      "triangle_obstacle_intersections": 0,
+      "hurdle_crossings": 23,
+      "crouch_bar_crossings": 13,
+      "minimum_hurdle_clearance_native_m": 0.3873615314625796,
+      "minimum_crouch_clearance_native_m": 0.11494358207074473
+    }
+  },
+  "quality_scope": "Footplant claims apply only to explicitly trusted prepared-source stance phases, not unrestricted neural locomotion or every jump frame. Extreme reach requests release rather than stretch limbs.",
+  "limits": [
+    "Contact-prepared crouch/jump source playback plus neural entry/exit is a hybrid pipeline, not an all-neural action generator.",
+    "Kinematic stop/slide and footplant IK are external controllers; self-collision, dynamic balance and actor-cat mutual collision remain unsolved.",
+    "Public previews use six-decimal display precision; exact native selected poses and provenance remain downloadable."
+  ]
+}

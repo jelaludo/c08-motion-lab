@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "version": "reactive-round4-motion-quality",
+  "checks": [
+    "EVA deep link and authored hand pose",
+    "EVA displayed GLB validator clean",
+    "progressive zone colors and requested/recorded speeds",
+    "playlist single-body follow",
+    "automatic section advance at recorded end",
+    "paused skip stays paused",
+    "stop during pending load prevents delayed resume",
+    "custom section order persists",
+    "EVA body-specific review/Keep export and body switching preserve identity"
+  ],
+  "eva": {
+    "height": 1.96,
+    "sourceScale": 1.156084638607942,
+    "bones": 62,
+    "fingers": 28,
+    "preserved": true,
+    "apexFullskin": {
+      "vertices": 21531,
+      "maxNDC": 0.6648499287284847
+    }
+  },
+  "export": {
+    "bytes": 1311268,
+    "errors": 0,
+    "warnings": 0
+  },
+  "colors": [
+    {
+      "color": "#e69b42",
+      "zone": {
+        "x_min": 5,
+        "x_max": 15,
+        "desired_speed": 2.4,
+        "color": "#e69b42",
+        "label": "Orange / run",
+        "order": 1
+      }
+    },
+    {
+      "color": "#d9554a",
+      "zone": {
+        "x_min": 15,
+        "x_max": 24,
+        "desired_speed": 3.3,
+        "color": "#d9554a",
+        "label": "Red / sprint",
+        "order": 2
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "probe_only": true,
+  "scope": "Actual BREK/EVA skinned geometry using the prepared61-frame contact-IK probe, not a claim about finalized course motion quality.",
+  "checks": [
+    "fullskin pose independent of preceding scrub times",
+    "new lane/body instance reproduces pose",
+    "sequential displayed-body bake matches nonsequential preview",
+    "GLB validators clean"
+  ],
+  "results": [
+    {
+      "body": "brek",
+      "historyError": 0,
+      "freshLaneError": 0,
+      "vertices": 28060,
+      "maskFrames": 61,
+      "exportParity": {
+        "maximum": 9.0557856879947e-8,
+        "vertices": 28060
+      },
+      "gltf": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "body": "eva",
+      "historyError": 0,
+      "freshLaneError": 0,
+      "vertices": 21531,
+      "maskFrames": 61,
+      "exportParity": {
+        "maximum": 3.2456763943145006e-8,
+        "vertices": 21531
+      },
+      "gltf": {
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "errors": []
+}

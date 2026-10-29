@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "checks": [
+    "reactive-only course has one lane",
+    "no phantom baseline metrics or button",
+    "review defaults to existing reactive condition",
+    "course provenance distinguished from playlist"
+  ],
+  "take": "course_reactive_1",
+  "lanes": 1,
+  "review": "reactive",
+  "baselineHidden": true,
+  "columns": 2,
+  "description": "One recorded course episode; reactive, environment seed 1. This course chains recorded source actions with generated transitions, as documented in its metadata.",
+  "errors": []
+}

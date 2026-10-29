@@ -1,0 +1,209 @@
+{
+  "gltf_errors": 0,
+  "gltf_warnings": 0,
+  "bones": [
+    "MOTION",
+    "PELVIS",
+    "HIP_L",
+    "KNEE_L",
+    "ANKLE_L",
+    "SOCKET_HEEL_L",
+    "SOCKET_SOLE_L",
+    "SOCKET_TOE_L",
+    "TOE_L",
+    "HIP_R",
+    "KNEE_R",
+    "ANKLE_R",
+    "SOCKET_HEEL_R",
+    "SOCKET_SOLE_R",
+    "SOCKET_TOE_R",
+    "TOE_R",
+    "WAIST",
+    "CHEST",
+    "NECK",
+    "HEAD",
+    "SOCKET_VISOR",
+    "SHOULDER_L",
+    "UPPER_ARM_L",
+    "FOREARM_L",
+    "HAND_L",
+    "FINGER_L1_01",
+    "FINGER_L1_02",
+    "FINGER_L1_03",
+    "FINGER_L2_01",
+    "FINGER_L2_02",
+    "FINGER_L2_03",
+    "FINGER_L3_01",
+    "FINGER_L3_02",
+    "FINGER_L3_03",
+    "FINGER_L4_01",
+    "FINGER_L4_02",
+    "FINGER_L4_03",
+    "SOCKET_HAND_L",
+    "SOCKET_TOOL_L",
+    "THUMB_L_01",
+    "THUMB_L_02",
+    "SHOULDER_R",
+    "UPPER_ARM_R",
+    "FOREARM_R",
+    "HAND_R",
+    "FINGER_R1_01",
+    "FINGER_R1_02",
+    "FINGER_R1_03",
+    "FINGER_R2_01",
+    "FINGER_R2_02",
+    "FINGER_R2_03",
+    "FINGER_R3_01",
+    "FINGER_R3_02",
+    "FINGER_R3_03",
+    "FINGER_R4_01",
+    "FINGER_R4_02",
+    "FINGER_R4_03",
+    "SOCKET_HAND_R",
+    "SOCKET_TOOL_R",
+    "THUMB_R_01",
+    "THUMB_R_02",
+    "SOCKET_BACK"
+  ],
+  "meshes": [
+    {
+      "name": "EVAK7_GEOMETRY",
+      "vertices": 10226,
+      "joints": 62
+    },
+    {
+      "name": "EVAK7_GEOMETRY_1",
+      "vertices": 1816,
+      "joints": 62
+    },
+    {
+      "name": "EVAK7_GEOMETRY_2",
+      "vertices": 2064,
+      "joints": 62
+    },
+    {
+      "name": "EVAK7_GEOMETRY_3",
+      "vertices": 4916,
+      "joints": 62
+    },
+    {
+      "name": "EVAK7_GEOMETRY_4",
+      "vertices": 2191,
+      "joints": 62
+    },
+    {
+      "name": "EVAK7_GEOMETRY_5",
+      "vertices": 318,
+      "joints": 62
+    }
+  ],
+  "positions": {
+    "PELVIS": [
+      0,
+      1,
+      0
+    ],
+    "HIP_L": [
+      0.12999999523162842,
+      1,
+      0
+    ],
+    "KNEE_L": [
+      0.14000000059604645,
+      0.5600000023841858,
+      0.019999999552965164
+    ],
+    "ANKLE_L": [
+      0.15000000596046448,
+      0.125,
+      -0.015000000596046448
+    ],
+    "HIP_R": [
+      -0.12999999523162842,
+      1,
+      0
+    ],
+    "KNEE_R": [
+      -0.14000000059604645,
+      0.5600000023841858,
+      0.019999999552965164
+    ],
+    "ANKLE_R": [
+      -0.15000000596046448,
+      0.125,
+      -0.015000000596046448
+    ],
+    "UPPER_ARM_L": [
+      0.30000001192092896,
+      1.5049999952316284,
+      0
+    ],
+    "FOREARM_L": [
+      0.36000001430511475,
+      1.215000033378601,
+      0.029999999329447746
+    ],
+    "HAND_L": [
+      0.4050000011920929,
+      0.9449999928474426,
+      0.07500000111758709
+    ],
+    "SOCKET_HAND_L": [
+      0.3449999988079071,
+      0.8399999737739563,
+      0.07499999366700649
+    ],
+    "UPPER_ARM_R": [
+      -0.30000001192092896,
+      1.5049999952316284,
+      0
+    ],
+    "FOREARM_R": [
+      -0.36000001430511475,
+      1.215000033378601,
+      0.029999999329447746
+    ],
+    "HAND_R": [
+      -0.4050000011920929,
+      0.9449999928474426,
+      0.07500000111758709
+    ],
+    "SOCKET_HAND_R": [
+      -0.3449999988079071,
+      0.8399999737739563,
+      0.07500000111758709
+    ]
+  },
+  "clips": [
+    {
+      "name": "Suit_Idle",
+      "duration": 4,
+      "tracks": 150
+    },
+    {
+      "name": "Walk_Cycle",
+      "duration": 1.2999999523162842,
+      "tracks": 150
+    },
+    {
+      "name": "Cautious_Walk_Cycle",
+      "duration": 2.200000047683716,
+      "tracks": 150
+    },
+    {
+      "name": "Survey_Scan",
+      "duration": 6,
+      "tracks": 150
+    },
+    {
+      "name": "Kneel_Inspect",
+      "duration": 5,
+      "tracks": 150
+    },
+    {
+      "name": "Signal_Halt",
+      "duration": 4,
+      "tracks": 150
+    }
+  ]
+}

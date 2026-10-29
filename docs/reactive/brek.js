@@ -1,4 +1,5 @@
 import * as T from 'three';
+import {applyFootplants} from './footplant.js?v=round4-2';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {clone} from 'three/addons/utils/SkeletonUtils.js';
 const lookups=new WeakMap();
@@ -17,6 +18,7 @@ export async function loadBrek(){
   item.ground=()=>{group.position.y=0;group.updateMatrixWorld(true);for(const m of meshes)m.skeleton.update();let low=Infinity;const v=new T.Vector3();for(const {mesh,i} of samples){mesh.getVertexPosition(i,v);v.applyMatrix4(mesh.matrixWorld);low=Math.min(low,v.y)}item.lastLift=Math.max(0,.008-low);item.maxLift=Math.max(item.maxLift,item.lastLift);group.position.y=item.lastLift;group.updateMatrixWorld(true);return item.lastLift};
   item.pose=(data,time,centred=false)=>{
    if(!data?.rotation_deltas||!data.reference_positions)return false;
+   group.position.y=0;
    const names=lookup(data),x=T.MathUtils.clamp(time*data.fps,0,data.frames-1),f=Math.floor(x),next=Math.min(f+1,data.frames-1),u=x-f,positions=new Map(),deltas=new Map(),worldRotations=new Map(),inherited=new Map();
    const src=n=>{const i=names.get(n);return new T.Vector3().fromArray(data.positions[f][i]).lerp(new T.Vector3().fromArray(data.positions[next][i]),u)};
    const rot=n=>{const i=names.get(n);return new T.Quaternion().fromArray(data.rotation_deltas[f][i]).slerp(new T.Quaternion().fromArray(data.rotation_deltas[next][i]),u)};
@@ -41,7 +43,7 @@ export async function loadBrek(){
     const q=delta.clone().multiply(r.q),pp=parent?positions.get(parent):r.parentP,pq=parent?worldRotations.get(parent):r.parentQ;worldRotations.set(n,q);
     b.position.copy(positions.get(n)).sub(pp).applyQuaternion(pq.clone().invert());b.quaternion.copy(pq).invert().multiply(q).normalize();
    }
-   group.updateMatrixWorld(true);return true;
+   group.updateMatrixWorld(true);applyFootplants(item,data,time);return true;
   };
   return item;
  }

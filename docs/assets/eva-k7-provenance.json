@@ -1,0 +1,47 @@
+{
+  "title": "EVA-K7 / Hardsuit Astronaut",
+  "author": "jelaludo",
+  "rights": "Original user-owned character and authored motions by jelaludo.",
+  "source_url": "https://jelaludo.github.io/SentryTowers_A6/eva-k7/",
+  "source_glb_url": "https://jelaludo.github.io/SentryTowers_A6/assets/eva-k7/eva_k7_d0_lod1.glb",
+  "source_sha256": "17b210d3586a21f669f1de66926867a143d99b5106770064bedd211b79279ac2",
+  "output_sha256": "17b210d3586a21f669f1de66926867a143d99b5106770064bedd211b79279ac2",
+  "rig_status": "Existing authored humanoid rig retained unchanged; no redundant rerigging.",
+  "animated_controls": 50,
+  "fixed_socket_joints": 12,
+  "skin_palette_joints": 62,
+  "triangles": 20331,
+  "exported_vertices": 21531,
+  "standing_height_m": 1.9599999617785215,
+  "units": "metres",
+  "axes": "+Y up, +Z forward",
+  "source_clips": [
+    "Suit_Idle",
+    "Walk_Cycle",
+    "Cautious_Walk_Cycle",
+    "Survey_Scan",
+    "Kneel_Inspect",
+    "Signal_Halt"
+  ],
+  "runtime_adapter": "../reactive/eva.js",
+  "source_to_g1_leg_scale": 1.1560848912860417,
+  "runtime_changes": [
+    "Direction retarget on original fixed limb lengths",
+    "Authored native gloves/fingers/thumbs retained",
+    "Explicit prepared-contact mask enables deterministic per-body two-bone footplant IK",
+    "Whole-skinned-geometry floor correction"
+  ],
+  "limitations": [
+    "Retargeted motion is an experiment rather than the original authored performances.",
+    "No self-collision, physical balance or arbitrary terrain solver.",
+    "Overhead barriers require body-specific calibration."
+  ],
+  "calibrated_crouch_probe": {
+    "maximum_mesh_top_m": 1.4278288042469978,
+    "native_bar_underside_m": 1.35,
+    "world_bar_underside_m": 1.5607146032361565,
+    "support_speed_p95_m_s": 1.3348671786163112e-14,
+    "floor_min_m": 0.008,
+    "source": "Contact-adapted CC0 gait probe; final course motion must be independently checked."
+  }
+}

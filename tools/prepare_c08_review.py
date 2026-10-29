@@ -31,6 +31,7 @@ meta=json.loads((OUT/'g1-motion.json').read_text());meta['joint_limit_audit']={'
 (OUT/'g1-motion.json').write_text(json.dumps(meta,indent=2))
 B=np.array([[1,0,0],[0,0,1],[0,-1,0]])@A;B0=np.array([[0,1,0],[0,0,1],[1,0,0]]);rot=Rotation.from_quat(d['body_transforms'][:,:,3:7].reshape(-1,4)).as_matrix().reshape(len(p),-1,3,3);ref=Rotation.from_quat(d['reference_bodies'][:,3:7]).as_matrix();deltas=np.einsum('ij,fbjk,bkl,lm->fbim',B,rot,np.swapaxes(ref,-1,-2),B0.T);quat=Rotation.from_matrix(deltas.reshape(-1,3,3)).as_quat().reshape(len(p),-1,4)
 preview={'rotation_deltas':quat.tolist(),'reference_positions':(d['reference_bodies'][:,:3]@B0.T).tolist(),'fps':30,'frames':len(p),'body_names':d['body_names'].tolist(),'parents':parents,'positions':p.tolist(),'contacts':d['contacts'].tolist(),'note':'G1 skeleton at original source scale; aligned initial heading; source contact predictions are unreviewed'}
+if 'contact_ik_mask' in d.files:preview['contact_ik_mask']=d['contact_ik_mask'].tolist()
 (OUT/'g1-preview.json').write_text(json.dumps(preview,separators=(',',':')))
 manifest=json.loads((ROOT/'assets/c08-worker/manifest.json').read_text())
 checks=[]

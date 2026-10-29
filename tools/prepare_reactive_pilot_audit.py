@@ -3,8 +3,8 @@ from pathlib import Path
 import numpy as np,json,shutil,runpy,os,argparse
 from scipy.spatial.transform import Rotation
 ROOT=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('ids',nargs='*');parser.add_argument('--source-root',type=Path,default=ROOT/'evaluation/reactive-round3');args=parser.parse_args()
-out=ROOT/'logs/reactive-round3-pilot-view';out.mkdir(exist_ok=True);cases=[]
+parser=argparse.ArgumentParser();parser.add_argument('ids',nargs='*');parser.add_argument('--source-root',type=Path,default=ROOT/'evaluation/reactive-round3');parser.add_argument('--output',type=Path,default=ROOT/'logs/reactive-round3-pilot-view');args=parser.parse_args()
+out=args.output;out.mkdir(exist_ok=True);cases=[]
 for name in args.ids or ['jump_baseline_1','jump_reactive_1','crouch_baseline_1','crouch_reactive_1']:
  source=args.source_root/name;dest=out/'takes'/name;dest.mkdir(parents=True,exist_ok=True)
  for file in ['g1-motion.npz','g1-motion.json','retarget-report.json','c08-motionbricks-test.glb','episode.json']:shutil.copy2(source/file,dest/file)

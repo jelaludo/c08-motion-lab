@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "body": "eva",
+      "contact_ik": false,
+      "sourceScale": 1.1560848912860417,
+      "frames": 61,
+      "min_floor_m": 0.04908935098604681,
+      "maximum_body_top_m": 1.425672548961498,
+      "rigid_segment_length_error_m": 5.551115123125783e-16,
+      "contact_release_samples": 0,
+      "support_samples": 64,
+      "support_speed_p50_m_s": 0.045006079648374636,
+      "support_speed_p95_m_s": 0.05472336393714635,
+      "support_speed_max_m_s": 0.055369868306420295
+    },
+    {
+      "body": "eva",
+      "contact_ik": true,
+      "sourceScale": 1.1560848912860417,
+      "frames": 61,
+      "min_floor_m": 0.007999999999999945,
+      "maximum_body_top_m": 1.4278288042469978,
+      "rigid_segment_length_error_m": 5.551115123125783e-16,
+      "contact_release_samples": 0,
+      "support_samples": 64,
+      "support_speed_p50_m_s": 5.266250202865052e-15,
+      "support_speed_p95_m_s": 1.3348671786163112e-14,
+      "support_speed_max_m_s": 1.6736404963781187e-14
+    },
+    {
+      "body": "brek",
+      "contact_ik": false,
+      "sourceScale": 1.922404075925682,
+      "frames": 61,
+      "min_floor_m": 0.02642539940569481,
+      "maximum_body_top_m": 1.9661378063157826,
+      "rigid_segment_length_error_m": 1.1102230246251565e-15,
+      "contact_release_samples": 0,
+      "support_samples": 64,
+      "support_speed_p50_m_s": 0.10840554243057275,
+      "support_speed_p95_m_s": 0.1245100304785248,
+      "support_speed_max_m_s": 0.1256210890737497
+    },
+    {
+      "body": "brek",
+      "contact_ik": true,
+      "sourceScale": 1.922404075925682,
+      "frames": 61,
+      "min_floor_m": 0.00799999999999988,
+      "maximum_body_top_m": 1.9683976542310078,
+      "rigid_segment_length_error_m": 1.1102230246251565e-15,
+      "contact_release_samples": 0,
+      "support_samples": 64,
+      "support_speed_p50_m_s": 1.0129834521696387e-14,
+      "support_speed_p95_m_s": 2.0599050593350066e-14,
+      "support_speed_max_m_s": 3.3472809927562375e-14
+    }
+  ]
+}

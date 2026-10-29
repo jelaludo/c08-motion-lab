@@ -63,8 +63,9 @@ def main():
     if args.scenario:catalog['cases']=[c for c in catalog['cases'] if c['scenario'] in args.scenario.split(',')]
     if args.require_complete:
         expected={(scenario,seed,condition) for scenario in ['slalom','speedzones','pursuit','mixed','jump','crouch'] for seed in range(1,11) for condition in ['baseline','reactive']}
+        if 'round4' in catalog.get('version',''):expected|={('course',seed,'reactive')for seed in range(1,4)}
         actual={(c['scenario'],c['seed'],c['condition']) for c in catalog['cases']}
-        if actual!=expected or len(catalog['cases'])!=120:errors.append('Dataset does not contain exactly six scenarios, ten seeds, and both conditions')
+        if actual!=expected or len(catalog['cases'])!=len(expected):errors.append('Dataset does not match the paired six-scenario / ten-seed protocol plus any declared continuous courses')
     for case in catalog['cases']:
         folder = args.public / case['id'] if args.working else args.public / 'takes' / case['id']
         episode_path = folder / 'episode.json' if args.working else args.public / case['episode']
@@ -94,10 +95,11 @@ def main():
         failures = []
         if xmax - xmin < 30 or ymax - ymin < 8:
             failures.append('Arena is smaller than 30 m by 8 m')
-        if len(env['obstacles']) < (1 if case['scenario']=='crouch' else 2 if case['scenario']=='jump' else 8):
+        if len(env['obstacles']) < (1 if case['scenario']=='crouch' else 2 if case['scenario']=='jump' else 6 if case['scenario']=='course' else 8):
             failures.append('Fewer obstacles than the scenario protocol')
         if duration < (32 if case['scenario'] in ('pursuit', 'mixed') else 24):
             failures.append('Take duration below the expanded protocol')
+        if case['scenario']=='course' and duration<75:failures.append('Continuous all-element course is shorter than75 seconds')
         if len(path) != round(duration * fps) + 1 or not np.allclose(np.diff(times), 1 / fps):
             failures.append('CSV timestamps/frame count disagree with duration')
         if native.shape[0] != len(path) or np.max(np.abs(native[:, :2] - path)) > 1e-6:
@@ -181,6 +183,12 @@ def main():
         if case['scenario']=='speedzones' and 'round3' in catalog.get('version',''):
             if command_max<2.7:failures.append('Faster-zone experiment never commands approximately 2.8 m/s')
             if np.sum(speed>2)/fps<3:failures.append('Faster-zone experiment lacks three seconds of actual speed above 2 m/s')
+        zone_speeds=[]
+        if case['scenario']in('speedzones','course') and 'round4'in catalog.get('version',''):
+            for zone in env['speed_zones']:
+                inside=(path[:-1,0]>zone['x_min'])&(path[:-1,0]<zone['x_max'])
+                zone_speeds.append(float(speed[inside].mean())if inside.any()else None)
+            if len(zone_speeds)<2 or any(v is None for v in zone_speeds[:2]) or zone_speeds[1]<=zone_speeds[0]+.1:failures.append('Actual red-zone mean speed is not meaningfully above orange')
         cat_separation, _ = sweep_clearance(path - cat, np.array([0., 0.]), rr + cr)
         row = dict(id=case['id'], duration_s=duration, frames=len(path), arena_bounds=bounds,
                    obstacles=len(env['obstacles']), minimum_pillar_gap_m=min_pillar_gap,
@@ -199,7 +207,7 @@ def main():
                    corrected_root_frames=int(np.sum(root_change > 1e-5)),
                    maximum_root_correction_from_unmodified_prediction_m=float(root_change.max()),
                    max_command_speed_m_s=command_max, failures=failures)
-        row.update(interaction_passages=passages,minimum_sole_proxy_m=float(sole.min()),maximum_sole_proxy_m=float(sole.max()),minimum_top_proxy_m=float(top.min()),maximum_top_proxy_m=float(top.max()),seconds_above_2_m_s=float(np.sum(speed>2)/fps),neural_root_height_quaternion_and_joints_unchanged=np.array_equal(original_q[:,2:],native[:,2:]),native_archive_sha256=hashlib.sha256(native_path.read_bytes()).hexdigest(),selected_predictions_archive_sha256=hashlib.sha256(untouched_path.read_bytes()).hexdigest())
+        row.update(interaction_passages=passages,minimum_sole_proxy_m=float(sole.min()),maximum_sole_proxy_m=float(sole.max()),minimum_top_proxy_m=float(top.min()),maximum_top_proxy_m=float(top.max()),seconds_above_2_m_s=float(np.sum(speed>2)/fps),selected_input_height_quaternion_and_joints_unchanged=np.array_equal(original_q[:,2:],native[:,2:]),neural_root_height_quaternion_and_joints_unchanged=np.array_equal(original_q[:,2:],native[:,2:]),native_archive_sha256=hashlib.sha256(native_path.read_bytes()).hexdigest(),selected_predictions_archive_sha256=hashlib.sha256(untouched_path.read_bytes()).hexdigest(),zone_mean_speeds_m_s=zone_speeds)
         rows.append(row)
         errors.extend(f'{case["id"]}: {failure}' for failure in failures)
     report = dict(status='failed' if errors else 'passed', cases=len(rows),catalog_version=catalog.get('version'),

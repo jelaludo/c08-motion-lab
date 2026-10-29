@@ -1,0 +1,387 @@
+{
+  "status": "passed",
+  "version": "reactive-round4-motion-quality",
+  "scope": "All20speed-zone cases: native played-root readouts, ordered orange2.4/red3.3 targets; each actual red-zone mean exceeds orange by>0.25m/s. This does not score whole-body gait realism.",
+  "cases": [
+    {
+      "id": "speedzones_baseline_1",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 131,
+          "mean_m_s": 2.289774306501707,
+          "peak_m_s": 3.017125521189901
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 93,
+          "mean_m_s": 2.9283088576026155,
+          "peak_m_s": 3.355273625718714
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_1",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 149,
+          "mean_m_s": 2.0263280750046473,
+          "peak_m_s": 3.0578816018073365
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.83298544198419,
+          "peak_m_s": 3.3648597780445555
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_2",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 134,
+          "mean_m_s": 2.2429001535183684,
+          "peak_m_s": 2.9693320798471743
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 94,
+          "mean_m_s": 2.8822181302728627,
+          "peak_m_s": 3.32770466593545
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_2",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 155,
+          "mean_m_s": 1.9368311859024043,
+          "peak_m_s": 2.9860552444993296
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.8326727681799806,
+          "peak_m_s": 3.3656347516380767
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_3",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 134,
+          "mean_m_s": 2.24290143200608,
+          "peak_m_s": 2.969327937272308
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 94,
+          "mean_m_s": 2.8822104934589583,
+          "peak_m_s": 3.3276671531806112
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_3",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 155,
+          "mean_m_s": 1.936832591189231,
+          "peak_m_s": 2.9860324074002524
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.8326742343731475,
+          "peak_m_s": 3.3657107447994585
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_4",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 131,
+          "mean_m_s": 2.289773680921928,
+          "peak_m_s": 3.0171338244147843
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 93,
+          "mean_m_s": 2.928307606260854,
+          "peak_m_s": 3.3553139356421164
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_4",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 149,
+          "mean_m_s": 2.026328337429428,
+          "peak_m_s": 3.0578690195080616
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.8329762582444276,
+          "peak_m_s": 3.3649025545057256
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_5",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 134,
+          "mean_m_s": 2.2428975389777706,
+          "peak_m_s": 2.969314546034003
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 94,
+          "mean_m_s": 2.8822134244025386,
+          "peak_m_s": 3.327687553915066
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_5",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 149,
+          "mean_m_s": 2.026327335169977,
+          "peak_m_s": 3.0579067040964945
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.8329807422584294,
+          "peak_m_s": 3.3649339995889695
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_6",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 131,
+          "mean_m_s": 2.2897744093367107,
+          "peak_m_s": 3.017169162384143
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 93,
+          "mean_m_s": 2.928312075077882,
+          "peak_m_s": 3.3553512131955463
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_6",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 149,
+          "mean_m_s": 2.026328790335979,
+          "peak_m_s": 3.057868485705394
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.832984444602486,
+          "peak_m_s": 3.3648651976493675
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_7",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 131,
+          "mean_m_s": 2.2897725797350414,
+          "peak_m_s": 3.0171448211368666
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 93,
+          "mean_m_s": 2.9283041543939308,
+          "peak_m_s": 3.3553769450067263
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_7",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 149,
+          "mean_m_s": 2.026327247045507,
+          "peak_m_s": 3.0578818666197134
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.832982274247389,
+          "peak_m_s": 3.3649924735286336
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_8",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 131,
+          "mean_m_s": 2.289774826344397,
+          "peak_m_s": 3.017156149070103
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 93,
+          "mean_m_s": 2.9283104055813545,
+          "peak_m_s": 3.3552971459693373
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_8",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 149,
+          "mean_m_s": 2.026327406412812,
+          "peak_m_s": 3.057847247030622
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.8329799548044416,
+          "peak_m_s": 3.3648477481212202
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_9",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 134,
+          "mean_m_s": 2.242900954162936,
+          "peak_m_s": 2.969322496453836
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 94,
+          "mean_m_s": 2.8822105130696185,
+          "peak_m_s": 3.3277239888625467
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_9",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 155,
+          "mean_m_s": 1.9368318440055432,
+          "peak_m_s": 2.986070973413741
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.8326743852289678,
+          "peak_m_s": 3.3657098787658084
+        }
+      ]
+    },
+    {
+      "id": "speedzones_baseline_10",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 131,
+          "mean_m_s": 2.289773101552639,
+          "peak_m_s": 3.017129820473624
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 93,
+          "mean_m_s": 2.9283081431434117,
+          "peak_m_s": 3.355342562316393
+        }
+      ]
+    },
+    {
+      "id": "speedzones_reactive_10",
+      "zones": [
+        {
+          "color": "#e69b42",
+          "requested_m_s": 2.4,
+          "samples": 149,
+          "mean_m_s": 2.0263276627614126,
+          "peak_m_s": 3.057876403495964
+        },
+        {
+          "color": "#d9554a",
+          "requested_m_s": 3.3,
+          "samples": 96,
+          "mean_m_s": 2.832983118397029,
+          "peak_m_s": 3.3648578980789545
+        }
+      ]
+    }
+  ]
+}

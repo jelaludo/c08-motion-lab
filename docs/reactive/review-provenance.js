@@ -1,6 +1,10 @@
 import {ReviewPanel} from '../shared/review-panel.js?v=kept-body-2';
-const ARCHIVES={'reactive-round2-expanded-armor-clearance':'ee76e9c566e0a16a54f63f5646b6f24f1fc4c0b0'};
-const archiveDownloads=(candidate,version)=>{const commit=ARCHIVES[version];if(!commit||!/^(slalom|speedzones|pursuit|mixed)_(baseline|reactive)_[1-5]$/.test(candidate.id))return [];const prefix=`https://raw.githubusercontent.com/jelaludo/c08-motion-lab/${commit}/docs/reactive/takes/${candidate.id}/`;return [['Reviewed-version C08 source GLB','c08-motionbricks-test.glb'],['Reviewed-version played native G1 NPZ','native-g1-motion.npz'],['Reviewed-version untouched predictions NPZ','unmodified-predictions.npz'],['Reviewed-version episode JSON','episode.json'],['Reviewed-version target/context trace','prediction-trace.json']].map(([label,file])=>({label,url:prefix+file}));};
+const ARCHIVES={'reactive-round2-expanded-armor-clearance':'ee76e9c566e0a16a54f63f5646b6f24f1fc4c0b0','reactive-round3-actions-fast-run':'606b65014521f9473e02b35d29e4eafe95e3c25e'};
+const archiveDownloads=(candidate,version)=>{
+ const commit=ARCHIVES[version],round3=version==='reactive-round3-actions-fast-run';if(!commit||!(round3?/^(slalom|speedzones|pursuit|mixed|jump|crouch)_(baseline|reactive)_(?:[1-9]|10)$/:/^(slalom|speedzones|pursuit|mixed)_(baseline|reactive)_[1-5]$/).test(candidate.id))return [];
+ const root=`https://raw.githubusercontent.com/jelaludo/c08-motion-lab/${commit}/`,prefix=`docs/reactive/takes/${candidate.id}/`,native=round3?`research/reactive-native/${candidate.id}/`:prefix;
+ return [['Reviewed-version C08 source GLB',prefix+'c08-motionbricks-test.glb'],['Reviewed-version played native G1 NPZ',native+'native-g1-motion.npz'],['Reviewed-version untouched predictions NPZ',native+'unmodified-predictions.npz'],['Reviewed-version episode JSON',prefix+'episode.json'+(round3?'.gz':'')],['Reviewed-version target/context trace',prefix+'prediction-trace.json'+(round3?'.gz':'')]].map(([label,path])=>({label,url:root+path}));
+};
 const downloadJSON=value=>{const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='motion-lab-kept-takes.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
 /** Preserve historical feedback without relabeling a revised take as its old Keep. */
 export class ReactiveReviewPanel extends ReviewPanel{

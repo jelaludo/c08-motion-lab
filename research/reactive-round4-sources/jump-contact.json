@@ -1,0 +1,766 @@
+{
+  "method": "Selected source takeoff/landing support frames receive bounded leg IK and flat soles; unreachable support requests release rather than editing the root. Flight poses unchanged. Explicit prepared-motion contact correction, not inference.",
+  "root_arc_and_quaternion_unchanged": true,
+  "accepted_support_samples": 52,
+  "released_support_samples": 32,
+  "maximum_accepted_position_error_m": 0.0009156395474038228,
+  "maximum_hinge_step_rad": 0.5245022773742676,
+  "errors": [
+    {
+      "frame": 0,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 5.556396733626028e-10,
+      "rotation_error_rad": 9.393640509075896e-10,
+      "maximum_correction_rad": 0.07981073955101303
+    },
+    {
+      "frame": 0,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 9.686239854065824e-10,
+      "rotation_error_rad": 7.857425154449498e-10,
+      "maximum_correction_rad": 0.10951525135602663
+    },
+    {
+      "frame": 1,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 3.326188826688122e-10,
+      "rotation_error_rad": 6.277323027116821e-10,
+      "maximum_correction_rad": 0.0560709563704721
+    },
+    {
+      "frame": 1,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 7.545602019950396e-10,
+      "rotation_error_rad": 1.1318569002615763e-09,
+      "maximum_correction_rad": 0.09566415986827043
+    },
+    {
+      "frame": 2,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 6.49229922900728e-11,
+      "rotation_error_rad": 4.6199028791578044e-10,
+      "maximum_correction_rad": 0.032234059141930116
+    },
+    {
+      "frame": 2,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 4.1298285239236834e-10,
+      "rotation_error_rad": 1.3833256871442704e-09,
+      "maximum_correction_rad": 0.06504813073606669
+    },
+    {
+      "frame": 3,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 1.2520577451252925e-10,
+      "rotation_error_rad": 6.203149060309499e-10,
+      "maximum_correction_rad": 0.06736404820829606
+    },
+    {
+      "frame": 3,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 1.0431160089254382e-10,
+      "rotation_error_rad": 1.4113305409351097e-09,
+      "maximum_correction_rad": 0.056026599365760876
+    },
+    {
+      "frame": 4,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 2.2596535047098213e-10,
+      "rotation_error_rad": 1.0318401161852779e-09,
+      "maximum_correction_rad": 0.09939467417560027
+    },
+    {
+      "frame": 4,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 1.281008775113688e-10,
+      "rotation_error_rad": 1.4946307005706221e-09,
+      "maximum_correction_rad": 0.09609773531687943
+    },
+    {
+      "frame": 5,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 2.502293965957553e-10,
+      "rotation_error_rad": 1.5958722851487053e-09,
+      "maximum_correction_rad": 0.12889672152921933
+    },
+    {
+      "frame": 5,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 1.834963581012962e-10,
+      "rotation_error_rad": 1.8223730122016892e-09,
+      "maximum_correction_rad": 0.12604397345735874
+    },
+    {
+      "frame": 6,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 2.666389495657061e-10,
+      "rotation_error_rad": 2.2957486862876823e-09,
+      "maximum_correction_rad": 0.1597027721743702
+    },
+    {
+      "frame": 6,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 2.2420631072908534e-10,
+      "rotation_error_rad": 2.372482465515723e-09,
+      "maximum_correction_rad": 0.1526114734716682
+    },
+    {
+      "frame": 7,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 2.9388689809356096e-10,
+      "rotation_error_rad": 3.1008939876590522e-09,
+      "maximum_correction_rad": 0.19125424854768308
+    },
+    {
+      "frame": 7,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 2.4616171653134964e-10,
+      "rotation_error_rad": 2.8338554338564158e-09,
+      "maximum_correction_rad": 0.17667721401113567
+    },
+    {
+      "frame": 8,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 2.9680344598750724e-11,
+      "rotation_error_rad": 2.40366058785022e-10,
+      "maximum_correction_rad": 0.009424703427174013
+    },
+    {
+      "frame": 8,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 2.9124388825835683e-10,
+      "rotation_error_rad": 3.205174486743473e-09,
+      "maximum_correction_rad": 0.20534153489415896
+    },
+    {
+      "frame": 9,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 4.5392541944578535e-11,
+      "rotation_error_rad": 5.626529604060198e-10,
+      "maximum_correction_rad": 0.026187532009156134
+    },
+    {
+      "frame": 9,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 3.215919853089596e-11,
+      "rotation_error_rad": 6.805973680183552e-10,
+      "maximum_correction_rad": 0.02676832704699106
+    },
+    {
+      "frame": 10,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.00068393666548321,
+      "rotation_error_rad": 0.01065543692570201,
+      "maximum_correction_rad": 0.05012603225441348
+    },
+    {
+      "frame": 10,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 2.7773300398673238e-11,
+      "rotation_error_rad": 3.7150653998587164e-10,
+      "maximum_correction_rad": 0.015799183649097704
+    },
+    {
+      "frame": 11,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": true,
+      "position_error_m": 0.00038406460937992785,
+      "rotation_error_rad": 0.005944997249425018,
+      "maximum_correction_rad": 0.011667165579524356
+    },
+    {
+      "frame": 11,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0008942466050289681,
+      "rotation_error_rad": 0.01384901869755937,
+      "maximum_correction_rad": 0.017716444417761545
+    },
+    {
+      "frame": 12,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0030468731256201942,
+      "rotation_error_rad": 0.046596514980309436,
+      "maximum_correction_rad": 0.0348797849082948
+    },
+    {
+      "frame": 12,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0010438827818953274,
+      "rotation_error_rad": 0.015988424859413312,
+      "maximum_correction_rad": 0.030420455360380096
+    },
+    {
+      "frame": 13,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0029354608137379793,
+      "rotation_error_rad": 0.04438555802931044,
+      "maximum_correction_rad": 0.04880337032318127
+    },
+    {
+      "frame": 13,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.001902892203242887,
+      "rotation_error_rad": 0.028886822265516487,
+      "maximum_correction_rad": 0.047352563820046226
+    },
+    {
+      "frame": 14,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0031161217961226087,
+      "rotation_error_rad": 0.04687873517502268,
+      "maximum_correction_rad": 0.06461397918701184
+    },
+    {
+      "frame": 14,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.002515834929294475,
+      "rotation_error_rad": 0.03806961886173186,
+      "maximum_correction_rad": 0.055799055834665934
+    },
+    {
+      "frame": 15,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0033452643750097547,
+      "rotation_error_rad": 0.05052208080052593,
+      "maximum_correction_rad": 0.08652172597885144
+    },
+    {
+      "frame": 15,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0029771640433867478,
+      "rotation_error_rad": 0.04527258001728077,
+      "maximum_correction_rad": 0.07289854574501398
+    },
+    {
+      "frame": 16,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0035953701243653575,
+      "rotation_error_rad": 0.055006378885589916,
+      "maximum_correction_rad": 0.09993926795959485
+    },
+    {
+      "frame": 16,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0033521432435462692,
+      "rotation_error_rad": 0.05160328518315439,
+      "maximum_correction_rad": 0.08970454916531945
+    },
+    {
+      "frame": 17,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.003120204421168188,
+      "rotation_error_rad": 0.048439219302347535,
+      "maximum_correction_rad": 0.0981247833633424
+    },
+    {
+      "frame": 17,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.003102692552598743,
+      "rotation_error_rad": 0.04830983426365851,
+      "maximum_correction_rad": 0.10272802171352513
+    },
+    {
+      "frame": 18,
+      "side": "left",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.0014485861908616598,
+      "rotation_error_rad": 0.02252706944460584,
+      "maximum_correction_rad": 0.07963525079667044
+    },
+    {
+      "frame": 18,
+      "side": "right",
+      "phase": "recoil",
+      "accepted": false,
+      "position_error_m": 0.00153240989344538,
+      "rotation_error_rad": 0.023710736347266972,
+      "maximum_correction_rad": 0.11757321287969469
+    },
+    {
+      "frame": 19,
+      "side": "left",
+      "phase": "extend",
+      "accepted": true,
+      "position_error_m": 2.3589778608500396e-10,
+      "rotation_error_rad": 1.238461520511026e-09,
+      "maximum_correction_rad": 0.08382805527991266
+    },
+    {
+      "frame": 19,
+      "side": "right",
+      "phase": "extend",
+      "accepted": true,
+      "position_error_m": 3.256060240556071e-10,
+      "rotation_error_rad": 2.3041073843912146e-09,
+      "maximum_correction_rad": 0.12757819684892335
+    },
+    {
+      "frame": 20,
+      "side": "left",
+      "phase": "extend",
+      "accepted": true,
+      "position_error_m": 4.259057522705552e-10,
+      "rotation_error_rad": 1.0957038346221192e-09,
+      "maximum_correction_rad": 0.1254437030207256
+    },
+    {
+      "frame": 20,
+      "side": "right",
+      "phase": "extend",
+      "accepted": false,
+      "position_error_m": 6.221795427065359e-10,
+      "rotation_error_rad": 3.0898416551601022e-09,
+      "maximum_correction_rad": 0.1891330396984514
+    },
+    {
+      "frame": 21,
+      "side": "left",
+      "phase": "extend",
+      "accepted": false,
+      "position_error_m": 9.226222327711149e-10,
+      "rotation_error_rad": 1.1774805070033264e-09,
+      "maximum_correction_rad": 0.2152464509860924
+    },
+    {
+      "frame": 21,
+      "side": "right",
+      "phase": "extend",
+      "accepted": false,
+      "position_error_m": 8.869147489510123e-10,
+      "rotation_error_rad": 3.231170082281756e-09,
+      "maximum_correction_rad": 0.21409117649584175
+    },
+    {
+      "frame": 22,
+      "side": "left",
+      "phase": "extend",
+      "accepted": false,
+      "position_error_m": 1.406354829709522e-09,
+      "rotation_error_rad": 2.3216557481995507e-09,
+      "maximum_correction_rad": 0.2563731651640877
+    },
+    {
+      "frame": 22,
+      "side": "right",
+      "phase": "extend",
+      "accepted": false,
+      "position_error_m": 2.503999156644323e-09,
+      "rotation_error_rad": 4.013846190061963e-09,
+      "maximum_correction_rad": 0.3798434927377735
+    },
+    {
+      "frame": 50,
+      "side": "left",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 2.330892245946951e-10,
+      "rotation_error_rad": 2.988303038206265e-09,
+      "maximum_correction_rad": 0.11183607071753772
+    },
+    {
+      "frame": 50,
+      "side": "right",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 5.700996238540783e-10,
+      "rotation_error_rad": 7.141387544787815e-10,
+      "maximum_correction_rad": 0.1289585537355863
+    },
+    {
+      "frame": 51,
+      "side": "left",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 1.5937973300756776e-10,
+      "rotation_error_rad": 3.778229080203059e-09,
+      "maximum_correction_rad": 0.11708279541326672
+    },
+    {
+      "frame": 51,
+      "side": "right",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 1.671694869225979e-10,
+      "rotation_error_rad": 2.6952861572766406e-09,
+      "maximum_correction_rad": 0.12263664322273132
+    },
+    {
+      "frame": 52,
+      "side": "left",
+      "phase": "land",
+      "accepted": false,
+      "position_error_m": 3.0943992489917355e-10,
+      "rotation_error_rad": 5.023886704992133e-09,
+      "maximum_correction_rad": 0.20290381697380733
+    },
+    {
+      "frame": 52,
+      "side": "right",
+      "phase": "land",
+      "accepted": false,
+      "position_error_m": 3.071299224270484e-10,
+      "rotation_error_rad": 4.558887294352178e-09,
+      "maximum_correction_rad": 0.2089828189852191
+    },
+    {
+      "frame": 53,
+      "side": "left",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 1.7253668204936595e-10,
+      "rotation_error_rad": 2.690173414526798e-09,
+      "maximum_correction_rad": 0.09115459244240197
+    },
+    {
+      "frame": 53,
+      "side": "right",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 8.03830091184552e-11,
+      "rotation_error_rad": 1.8178048011045166e-09,
+      "maximum_correction_rad": 0.04977760394069327
+    },
+    {
+      "frame": 54,
+      "side": "left",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 1.5884681070295846e-10,
+      "rotation_error_rad": 2.603644956754396e-09,
+      "maximum_correction_rad": 0.08026051530247902
+    },
+    {
+      "frame": 54,
+      "side": "right",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 1.3695631370371485e-10,
+      "rotation_error_rad": 2.550900730402694e-09,
+      "maximum_correction_rad": 0.10279343845790789
+    },
+    {
+      "frame": 55,
+      "side": "left",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 1.775102218672522e-10,
+      "rotation_error_rad": 3.0424763340356786e-09,
+      "maximum_correction_rad": 0.11247590223223869
+    },
+    {
+      "frame": 55,
+      "side": "right",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 2.1770193791674975e-10,
+      "rotation_error_rad": 3.494429838909945e-09,
+      "maximum_correction_rad": 0.1550145985019301
+    },
+    {
+      "frame": 56,
+      "side": "left",
+      "phase": "land",
+      "accepted": true,
+      "position_error_m": 2.1607546157911871e-10,
+      "rotation_error_rad": 3.64020925451679e-09,
+      "maximum_correction_rad": 0.15014092800148326
+    },
+    {
+      "frame": 56,
+      "side": "right",
+      "phase": "land",
+      "accepted": false,
+      "position_error_m": 2.688714396872278e-10,
+      "rotation_error_rad": 4.138996594192065e-09,
+      "maximum_correction_rad": 0.18953527849137608
+    },
+    {
+      "frame": 57,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": false,
+      "position_error_m": 2.9184186425536956e-10,
+      "rotation_error_rad": 4.2059326191757785e-09,
+      "maximum_correction_rad": 0.18015036466616152
+    },
+    {
+      "frame": 57,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 8.142793202876023e-11,
+      "rotation_error_rad": 1.6616587443114653e-09,
+      "maximum_correction_rad": 0.0659527826647352
+    },
+    {
+      "frame": 58,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 2.2864597682198888e-10,
+      "rotation_error_rad": 2.118091713137621e-09,
+      "maximum_correction_rad": 0.07464636956351811
+    },
+    {
+      "frame": 58,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 1.4675866954652032e-10,
+      "rotation_error_rad": 2.1497288371286513e-09,
+      "maximum_correction_rad": 0.09465302569954553
+    },
+    {
+      "frame": 59,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 3.6953355337130974e-10,
+      "rotation_error_rad": 2.46809058022073e-09,
+      "maximum_correction_rad": 0.08947681466865393
+    },
+    {
+      "frame": 59,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 1.858100880214962e-10,
+      "rotation_error_rad": 2.557347123132042e-09,
+      "maximum_correction_rad": 0.11690980201871248
+    },
+    {
+      "frame": 60,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 8.309406049935503e-10,
+      "rotation_error_rad": 2.5201382134153332e-09,
+      "maximum_correction_rad": 0.1169617193313295
+    },
+    {
+      "frame": 60,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 1.582560910770147e-10,
+      "rotation_error_rad": 2.803573243795586e-09,
+      "maximum_correction_rad": 0.12977538286057788
+    },
+    {
+      "frame": 61,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": false,
+      "position_error_m": 3.2685550338686213e-09,
+      "rotation_error_rad": 2.143168392433954e-09,
+      "maximum_correction_rad": 0.1839739992002404
+    },
+    {
+      "frame": 61,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 5.528594176907945e-10,
+      "rotation_error_rad": 2.7206640007845932e-09,
+      "maximum_correction_rad": 0.1455355892487215
+    },
+    {
+      "frame": 62,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 6.993643017579183e-09,
+      "rotation_error_rad": 1.280571479165419e-09,
+      "maximum_correction_rad": 0.17797783319284657
+    },
+    {
+      "frame": 62,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": false,
+      "position_error_m": 9.517551813140625e-09,
+      "rotation_error_rad": 2.4840018301845545e-09,
+      "maximum_correction_rad": 0.22390348199397292
+    },
+    {
+      "frame": 63,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": false,
+      "position_error_m": 0.0013289362109183724,
+      "rotation_error_rad": 1.4387809363582939e-05,
+      "maximum_correction_rad": 0.17957078409439167
+    },
+    {
+      "frame": 63,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 3.2163009344447086e-09,
+      "rotation_error_rad": 6.192670706690354e-10,
+      "maximum_correction_rad": 0.07780565470829671
+    },
+    {
+      "frame": 64,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": false,
+      "position_error_m": 0.0018329039678275996,
+      "rotation_error_rad": 1.0056045931593293e-05,
+      "maximum_correction_rad": 0.11320442677468305
+    },
+    {
+      "frame": 64,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 0.000286374408004495,
+      "rotation_error_rad": 3.2313836791814487e-06,
+      "maximum_correction_rad": 0.10490689585548137
+    },
+    {
+      "frame": 65,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": false,
+      "position_error_m": 0.0014022155075627538,
+      "rotation_error_rad": 7.212740884927261e-06,
+      "maximum_correction_rad": 0.06994577579984258
+    },
+    {
+      "frame": 65,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 0.00043052482482406083,
+      "rotation_error_rad": 2.7559852361041027e-06,
+      "maximum_correction_rad": 0.0665213244100535
+    },
+    {
+      "frame": 66,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 0.0009156395474038228,
+      "rotation_error_rad": 4.5036395876883685e-06,
+      "maximum_correction_rad": 0.03423920152317898
+    },
+    {
+      "frame": 66,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 0.0006002491269641961,
+      "rotation_error_rad": 1.128687043340156e-05,
+      "maximum_correction_rad": 0.046591786510101776
+    },
+    {
+      "frame": 67,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 0.0005295332503227031,
+      "rotation_error_rad": 4.305130192771144e-06,
+      "maximum_correction_rad": 0.01719247586737971
+    },
+    {
+      "frame": 67,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 0.0006229013906166704,
+      "rotation_error_rad": 1.78940006886323e-05,
+      "maximum_correction_rad": 0.04454880436529795
+    },
+    {
+      "frame": 68,
+      "side": "left",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 0.00025192810290444636,
+      "rotation_error_rad": 4.103194688410481e-06,
+      "maximum_correction_rad": 0.017942027116784443
+    },
+    {
+      "frame": 68,
+      "side": "right",
+      "phase": "recovery",
+      "accepted": true,
+      "position_error_m": 0.000714846390015035,
+      "rotation_error_rad": 2.6922987258883044e-05,
+      "maximum_correction_rad": 0.04271760197837781
+    }
+  ]
+}

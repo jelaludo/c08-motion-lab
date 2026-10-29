@@ -1,0 +1,71 @@
+{
+  "method": "Minimum horizontal world velocity of actual foot vertices within4mm of lowest sole, while sole <25mm. Rolling contacts allowed; no generator metrics used.",
+  "results": [
+    {
+      "id": "quaternius_c08_crouch_walk",
+      "clip": "crouch_walk",
+      "duration_s": 2,
+      "root_travel_speed_m_s": null,
+      "sides": {
+        "L": {
+          "low_sole_seconds": 1.8,
+          "support_point_speed_p50_m_s": 0.8431220760509024,
+          "support_point_speed_p95_m_s": 3.3379494843692346,
+          "fraction_low_sole_over_5cm_s": 1,
+          "min_floor_m": 0.011999667817253062
+        },
+        "R": {
+          "low_sole_seconds": 0.6333333333333333,
+          "support_point_speed_p50_m_s": 0.7667302403533516,
+          "support_point_speed_p95_m_s": 1.9583019785108176,
+          "fraction_low_sole_over_5cm_s": 1,
+          "min_floor_m": 0.012000035680879317
+        }
+      }
+    },
+    {
+      "id": "eva_authored_cautious_walk",
+      "clip": "Cautious_Walk_Cycle",
+      "duration_s": 2.200000047683716,
+      "root_travel_speed_m_s": 0.32,
+      "sides": {
+        "L": {
+          "low_sole_seconds": 1.9000000411813909,
+          "support_point_speed_p50_m_s": 0.0002956831663661725,
+          "support_point_speed_p95_m_s": 0.5485592387626366,
+          "fraction_low_sole_over_5cm_s": 0.12280701754385964,
+          "min_floor_m": 0.00414573299214771
+        },
+        "R": {
+          "low_sole_seconds": 1.9000000411813909,
+          "support_point_speed_p50_m_s": 0.00033223554054787584,
+          "support_point_speed_p95_m_s": 0.5485573418850272,
+          "fraction_low_sole_over_5cm_s": 0.12280701754385964,
+          "min_floor_m": 0.00414679988391925
+        }
+      }
+    },
+    {
+      "id": "eva_authored_walk",
+      "clip": "Walk_Cycle",
+      "duration_s": 1.2999999523162842,
+      "root_travel_speed_m_s": 0.75,
+      "sides": {
+        "L": {
+          "low_sole_seconds": 0.9999999633202187,
+          "support_point_speed_p50_m_s": 0.00014743001032536425,
+          "support_point_speed_p95_m_s": 1.121790495635118,
+          "fraction_low_sole_over_5cm_s": 0.16666666666666666,
+          "min_floor_m": 0.0026613270342587536
+        },
+        "R": {
+          "low_sole_seconds": 0.9666666312095448,
+          "support_point_speed_p50_m_s": 0.000008270451168177246,
+          "support_point_speed_p95_m_s": 0.9354192051256471,
+          "fraction_low_sole_over_5cm_s": 0.1724137931034483,
+          "min_floor_m": 0.0026886916900549784
+        }
+      }
+    }
+  ]
+}

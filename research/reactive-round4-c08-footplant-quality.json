@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "id": "round3_c08",
+      "maskedFrames": 421,
+      "support_samples": 842,
+      "min_floor_m": 0.01199851334123609,
+      "maximum_crouched_body_top_m": 1.8424111160483165,
+      "support_speed_p50_m_s": 0.17756797233351157,
+      "support_speed_p95_m_s": 0.3202681820178501,
+      "support_speed_max_m_s": 0.3692996665285003
+    },
+    {
+      "id": "round4_c08",
+      "maskedFrames": 255,
+      "support_samples": 267,
+      "min_floor_m": 0.011998593149440549,
+      "maximum_crouched_body_top_m": 1.8832912565255304,
+      "support_speed_p50_m_s": 0.000006792766278168046,
+      "support_speed_p95_m_s": 0.000023258442214902524,
+      "support_speed_max_m_s": 0.00003184677473500876
+    }
+  ]
+}

@@ -1,0 +1,826 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "scope": "Actual revised round4 speed/jump/crouch assets; frontend timing, body-specific obstacle mapping and displayed-pose export. Motion/geometry collision quality is independently audited elsewhere.",
+  "version": "reactive-round4-motion-quality",
+  "case_count": 123,
+  "results": [
+    {
+      "body": "c08",
+      "scenario": "speedzones",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.02 m/s recorded / Idle | reactive: 0.04 m/s recorded / Idle",
+      "export": {
+        "bytes": 1303408,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "speedzones",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.02 m/s recorded / walk / neural segment | reactive: 0.07 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1303356,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "jump",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 58,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.5434195866872112,
+          "maxY": 0.4526305388221592,
+          "vertices": 23475
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.5434195866872112,
+          "maxY": 0.4526305388221592,
+          "vertices": 23475
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.49588213277753695,
+          "maxY": 0.4240770504084047,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 6.166666666666666,
+          "maxX": 0.5831789527173595,
+          "maxY": 0.40134447299129816,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 6.566666666666666,
+          "maxX": 0.9652555590919135,
+          "maxY": 0.413463634135553,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 6.966666666666667,
+          "maxX": 0.5264674114276249,
+          "maxY": 0.46212502556751356,
+          "vertices": 23475
+        }
+      ],
+      "liveText": "baseline: 0.02 m/s recorded / run / neural segment | reactive: 0.01 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1303240,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "jump",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 58,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.5434197042974102,
+          "maxY": 0.4526306139851366,
+          "vertices": 23475
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.5434197042974102,
+          "maxY": 0.4526306139851366,
+          "vertices": 23475
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.4958824075186766,
+          "maxY": 0.42407666271619415,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 6.166666666666666,
+          "maxX": 0.583178564181901,
+          "maxY": 0.40134446083333675,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 6.566666666666666,
+          "maxX": 0.9652552284047426,
+          "maxY": 0.4134636494135068,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 6.966666666666667,
+          "maxX": 0.5264671961969319,
+          "maxY": 0.46212463954262956,
+          "vertices": 23475
+        }
+      ],
+      "liveText": "baseline: 0.02 m/s recorded / run / neural segment | reactive: 0.01 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1303280,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "crouch",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 818,
+          "commands": 60,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded / walk / neural segment | reactive: 0.02 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1303108,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "crouch",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 818,
+          "commands": 60,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded / walk / neural segment | reactive: 0.02 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1303056,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "speedzones",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.02 m/s recorded / Idle | reactive: 0.04 m/s recorded / Idle",
+      "export": {
+        "bytes": 1566096,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "speedzones",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.02 m/s recorded / walk / neural segment | reactive: 0.07 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1565824,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "jump",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 58,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.30712406199473624,
+          "maxY": 0.41814146435552946,
+          "vertices": 28060
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.30712406199473624,
+          "maxY": 0.41814146435552946,
+          "vertices": 28060
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.2865876574691906,
+          "maxY": 0.4030061709580078,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 6.166666666666666,
+          "maxX": 0.3248050486978992,
+          "maxY": 0.38857896410290127,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 6.566666666666666,
+          "maxX": 0.5979546406038203,
+          "maxY": 0.4102395147258781,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 6.966666666666667,
+          "maxX": 0.3072791529176253,
+          "maxY": 0.4108223632700769,
+          "vertices": 28060
+        }
+      ],
+      "liveText": "baseline: 0.02 m/s recorded / run / neural segment | reactive: 0.01 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1565620,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "jump",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 58,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.30712406199473624,
+          "maxY": 0.41814146435552946,
+          "vertices": 28060
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.30712406199473624,
+          "maxY": 0.41814146435552946,
+          "vertices": 28060
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.2865882977544763,
+          "maxY": 0.4030066534871526,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 6.166666666666666,
+          "maxX": 0.3248050486978992,
+          "maxY": 0.3885789641029014,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 6.566666666666666,
+          "maxX": 0.5979527106902618,
+          "maxY": 0.4102395147258775,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 6.966666666666667,
+          "maxX": 0.30727816939613345,
+          "maxY": 0.4108223632700764,
+          "vertices": 28060
+        }
+      ],
+      "liveText": "baseline: 0.02 m/s recorded / run / neural segment | reactive: 0.01 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1565620,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "crouch",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 818,
+          "commands": 60,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded / walk / neural segment | reactive: 0.02 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1565548,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "crouch",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 818,
+          "commands": 60,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded / walk / neural segment | reactive: 0.02 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1565548,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "eva",
+      "scenario": "speedzones",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.02 m/s recorded / Idle | reactive: 0.04 m/s recorded / Idle",
+      "export": {
+        "bytes": 1253456,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva"
+      }
+    },
+    {
+      "body": "eva",
+      "scenario": "speedzones",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.02 m/s recorded / walk / neural segment | reactive: 0.07 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1253192,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva"
+      }
+    },
+    {
+      "body": "eva",
+      "scenario": "jump",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 58,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.35437211339046476,
+          "maxY": 0.43762061910863254,
+          "vertices": 21531
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.35437211339046476,
+          "maxY": 0.43762061910863254,
+          "vertices": 21531
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.3293810736324608,
+          "maxY": 0.40600252441873974,
+          "vertices": 21531
+        },
+        {
+          "condition": "reactive",
+          "time": 6.166666666666666,
+          "maxX": 0.398465804599506,
+          "maxY": 0.3632318571341124,
+          "vertices": 21531
+        },
+        {
+          "condition": "reactive",
+          "time": 6.566666666666666,
+          "maxX": 0.6648499287284847,
+          "maxY": 0.4001610175120099,
+          "vertices": 21531
+        },
+        {
+          "condition": "reactive",
+          "time": 6.966666666666667,
+          "maxX": 0.35378484233380025,
+          "maxY": 0.4369511314096331,
+          "vertices": 21531
+        }
+      ],
+      "liveText": "baseline: 0.02 m/s recorded / run / neural segment | reactive: 0.01 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1252980,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva"
+      }
+    },
+    {
+      "body": "eva",
+      "scenario": "jump",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 58,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.35437211339046476,
+          "maxY": 0.43762061910863254,
+          "vertices": 21531
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.35437211339046476,
+          "maxY": 0.43762061910863254,
+          "vertices": 21531
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.3293818335640355,
+          "maxY": 0.40600104495908934,
+          "vertices": 21531
+        },
+        {
+          "condition": "reactive",
+          "time": 6.166666666666666,
+          "maxX": 0.398465804599506,
+          "maxY": 0.3632318571341126,
+          "vertices": 21531
+        },
+        {
+          "condition": "reactive",
+          "time": 6.566666666666666,
+          "maxX": 0.6648487031328203,
+          "maxY": 0.40016101751200917,
+          "vertices": 21531
+        },
+        {
+          "condition": "reactive",
+          "time": 6.966666666666667,
+          "maxX": 0.35378373865954876,
+          "maxY": 0.43695113140963343,
+          "vertices": 21531
+        }
+      ],
+      "liveText": "baseline: 0.02 m/s recorded / run / neural segment | reactive: 0.01 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1252992,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva"
+      }
+    },
+    {
+      "body": "eva",
+      "scenario": "crouch",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 818,
+          "commands": 60,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded / walk / neural segment | reactive: 0.02 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1252928,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva"
+      }
+    },
+    {
+      "body": "eva",
+      "scenario": "crouch",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 818,
+          "commands": 60,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded / walk / neural segment | reactive: 0.02 m/s recorded / walk / neural segment",
+      "export": {
+        "bytes": 1252936,
+        "errors": 0,
+        "warnings": 0,
+        "body": "eva"
+      }
+    }
+  ],
+  "errors": []
+}

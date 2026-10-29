@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "gltf_errors": 0,
+  "gltf_warnings": 0,
+  "bones": 62,
+  "meshes": 6,
+  "vertices": 21531,
+  "weightError": 0,
+  "illegalIndex": false,
+  "maxLengthVariation": 3.3306690738754696e-16,
+  "maxLift": 0.038833188548944124,
+  "results": [
+    {
+      "id": "near",
+      "low": 0.00799999999999998,
+      "finite": true,
+      "sourceScale": 1.1560848912860417
+    },
+    {
+      "id": "quat_walk_loop",
+      "low": 0.007999999999999868,
+      "finite": true,
+      "sourceScale": 1.1560848912860417
+    },
+    {
+      "id": "mb_run",
+      "low": 0.007999999999999945,
+      "finite": true,
+      "sourceScale": 1.1560848912860417
+    },
+    {
+      "id": "routine_5",
+      "low": 0.00800000000000005,
+      "finite": true,
+      "sourceScale": 1.1560848912860417
+    },
+    {
+      "id": "capture_ukemi",
+      "low": 0.025447648362350847,
+      "finite": true,
+      "sourceScale": 1.1560848912860417
+    }
+  ],
+  "independentClones": true,
+  "errors": []
+}
