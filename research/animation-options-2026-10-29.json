@@ -1,0 +1,101 @@
+{
+  "checked_on": "2026-10-29",
+  "scope": "Primary-source research, not a completed installation or quality benchmark. No paid software, accounts, model access terms, or downloads were activated.",
+  "decision": {
+    "cascadeur": "Promising offline editing experiment for arms, support, center of mass and jump trajectories; Free cannot export a usable game interchange clip.",
+    "kimodo": "Promising separate text/constraint-to-motion source; prefer a controlled official SOMA v1.2 CLI trial because the documented G1 postprocessing is weak. The existing G1 adapter remains a comparison option. This kinematic model does not guarantee dynamic balance.",
+    "bridge": "Optional community convenience layer after a controlled CLI test; configure a separate G-drive environment and caches rather than accepting the default auto-installer."
+  },
+  "cascadeur": {
+    "classification": "Proprietary commercial animation software with a free tier; not open-source software.",
+    "plan_source": "https://cascadeur.com/plans",
+    "published_usd_faq_prices": "Checked2026-10-29: Free0; Indie19/month or96/year; Pro49/month or396/year. Regional cards/currency may differ; no purchase was attempted.",
+    "plans": {
+      "free": "One user, non-commercial use, CASC-only export. Includes rigging, physics tools, inbetweening and animation unbaking.",
+      "indie": "Adds interchange export; comparison grid lists FBX, DAE, USD and GLTF. Aggregate gross revenue or funding must be below USD100,000/year.",
+      "pro": "Adds retargeting, environment interaction in AutoPhysics, scene linking and quadruped AutoPosing."
+    },
+    "autoposing": {
+      "source": "https://cascadeur.com/help/tools/animation_tools/autoposing",
+      "facts": "Predicts poses from manipulated controllers. Requires a standard Cascadeur rig; humanoids or quadrupeds, with quadrupeds restricted to Pro+. Quick Rigging maps body joints. The default setup can change the initial rest pose: preserve the original rig and work on copies."
+    },
+    "autophysics": {
+      "source": "https://cascadeur.com/help/tools/physics_tools/autophysics",
+      "facts": "Uses a center of mass and associated character geometry. A physical assistant proposes an edited motion that can be applied. A red assistant means a physically accurate solution is impossible under the current setup and poses/timing need manual changes. This is not guaranteed automatic balance."
+    },
+    "blender_roundtrip": {
+      "source": "https://cascadeur.com/help/category/300",
+      "facts": "Vendor recommends binary FBX for Blender. Do not enable Automatic Bone Orientation on import because it changes joint rotations. DAE is deprecated since Blender4.5; FBX is the practical first roundtrip for our Blender4.5.15. A paid export-capable plan is required."
+    },
+    "hardware": {
+      "source": "https://cascadeur.com/help/installation/system_requirements",
+      "facts": "Vendor minimum: 4GB RAM, 64-bit multicore CPU with SSE4.1, OpenGL4.1 GPU. Recommendation: 8GB RAM, faster CPU with AVX. Windows11 is supported. Our recorded RTX4090/96GB machine is comfortably above these listed requirements; actual scene performance has not been measured."
+    },
+    "hands": {
+      "source": "https://cascadeur.com/help/faq",
+      "facts": "Finger AutoPosing expects five fingers with three joints each. Robot hand topology must be checked separately; preserve the authored finger shapes rather than assuming a valid mapping."
+    }
+  },
+  "kimodo": {
+    "official_repo": "https://github.com/nv-tlabs/kimodo",
+    "repo_facts": "Official NVIDIA kinematic motion diffusion model with text, full-body keyframes, end-effector, root-path and waypoint constraints. Code uses Apache2.0; model weights use separate licenses. SOMA-RP-v1.2 was released October15,2026. G1-RP-v1 is also available. SMPLX-RP-v1 uses the separate NVIDIA R&D Model license, so it is not the default route for this shareable/game experiment.",
+    "license": {
+      "source": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+      "facts": "SOMA/G1 RP weights are listed under NVIDIA Open Model License. It permits commercial use subject to its terms; NVIDIA does not claim ownership of outputs, and outputs are not derivative models. Redistribution of models has separate notice/agreement requirements. Third-party dependencies and the gated text encoder retain their own terms."
+    },
+    "setup": {
+      "source": "https://research.nvidia.com/labs/sil/projects/kimodo/docs/getting_started/installation.html",
+      "facts": "Primarily developed/tested on Linux. Official instructions recommend a new environment and GPU PyTorch>2. Text encoding requires access to gated meta-llama/Meta-Llama-3-8B-Instruct plus a HuggingFace token. Account access has not been requested or assumed."
+    },
+    "hardware": {
+      "source": "https://research.nvidia.com/labs/sil/projects/kimodo/docs/getting_started/quick_start.html",
+      "facts": "Approximately17GB VRAM for entirely-GPU local generation; TEXT_ENCODER_DEVICE=cpu reduces GPU use below3GB with slower encoding. RTX4090 is among tested GPUs. Our24GB4090 appears suitable for an isolated inference trial; this is an inference from vendor requirements, not a local measurement. The17GB figure is VRAM, not download size. Exact disk/model-cache size must be enumerated before installation."
+    },
+    "limitations": {
+      "source": "https://research.nvidia.com/labs/sil/projects/kimodo/docs/key_concepts/limitations.html",
+      "facts": "Maximum10seconds per prompt; keep each prompt to one or two behaviors. Use fewer than20 constrained frames per constraint type except dense2D root paths. Multi-prompt transitions consume part of the following prompt. Raw motions may footskate or miss constraints; postprocessing helps but currently does not work well for the G1 skeleton."
+    },
+    "skeletons": {
+      "source": "https://research.nvidia.com/labs/sil/projects/kimodo/docs/key_concepts/skeleton.html",
+      "facts": "Separate models target SOMA, G1 or SMPL-X. SOMA predicts30core joints and exports77joints; most hand/finger detail is absent internally. G1 has34learning joints including toes, removed from downstream qpos exports. Uniform training proportions mean our three bodies still require retargeting and geometry checks."
+    },
+    "formats": {
+      "source": "https://research.nvidia.com/labs/sil/projects/kimodo/docs/user_guide/output_formats.html",
+      "facts": "NPZ preserves joints, rotations, contacts and actual root trajectory. G1 CSV is36values: xyz, wxyz quaternion,29hinges, z-up/+X-forward MuJoCo coordinates. SOMA BVH exports77joints and scales metres to centimetres; its rest-pose option must match our adapter. These coordinate/unit conventions need explicit roundtrip validation."
+    }
+  },
+  "community_blender_bridge": {
+    "article_context_only": "https://3dxdev.com/assets/kimodo-blender-bridge-free-text-to-motion-animation-inside-blender/",
+    "author_repo": "https://github.com/lewdineer/Kimodo_Blender_Bridge",
+    "manifest_source": "https://raw.githubusercontent.com/lewdineer/Kimodo_Blender_Bridge/main/blender_manifest.toml",
+    "manifest_facts": "Manifest declares v1.5.8, Blender>=4.2 and SPDX GPL-2.0-or-later. The README-linked LICENSE file returned404 at review. This is a community add-on, not NVIDIA's official Blender integration.",
+    "readme_source": "https://github.com/lewdineer/Kimodo_Blender_Bridge/blob/main/README.md",
+    "readme_facts": "Runs an external Python process rather than loading PyTorch into Blender. Author reports tests on Blender4.4/5.1; our4.5.15 meets the manifest minimum but is not locally tested. Auto-install creates ~/.kimodo-venv, uses Aero-Ex's offline fork and defaults to SOMA-RP-v1. Bone AutoMatch is fuzzy and still needs reviewed mappings/rest poses. Manual Python-environment selection is supported.",
+    "local_policy": "Default home-directory environment/HuggingFace caches can consume C:. A future trial should use a separate G-drive venv plus HF_HOME and package caches explicitly on G:, leaving the existing MotionBricks environment and Blender Python intact. Prefer a pinned official Kimodo CLI first."
+  },
+  "local_inspection": {
+    "kimodo_import_in_motionbricks_env": false,
+    "workspace_filename_matches_kimodo_or_cascadeur": 0,
+    "checked_locations": ["workspace filenames", "workspace cache", "user HuggingFace hub directory names", "user .kimodo-venv", "workspace kimodo and upstream/kimodo"],
+    "matching_cached_models_found": false,
+    "limits": "This is a targeted workspace/cache search, not proof that no unrelated system-wide installation exists.",
+    "g_free_gib_at_check": 574.3,
+    "ram_gib_current_cim_check": 96,
+    "blender": "Portable4.5.15 already present on G:"
+  },
+  "proposed_small_tests_not_yet_run": [
+    {
+      "name": "Offline physics cleanup",
+      "input": "Copied user-owned EVA rig and existing CC0 run/crouch/jump clips; retain originals and current contact masks.",
+      "experiment": "Compare unchanged clip with manually reviewed arms/CoM/AutoPhysics edits. Free permits in-app assessment; an export-capable license is needed for a game roundtrip.",
+      "measure": "World heel/toe drift during trusted stance, floor/contact geometry, takeoff extension, flight timing, landing knee flexion, arm balance and before/after reviewer scores. A support-polygon/CoM plot is diagnostic, not proof of dynamic stability."
+    },
+    {
+      "name": "Official Kimodo clip source",
+      "input": "Three4-6second prompts: crouch walk, run-and-forward-jump, sidestep; two seeds each, with optional sparse user-owned pose targets.",
+      "experiment": "Prefer current SOMA-RP-v1.2 via the official CLI, with reviewed BVH retargeting. Compare raw and postprocessed output; optionally compare G1 CSV through the existing adapter, noting the documented weak G1 postprocessing.",
+      "measure": "Record seed/model/version/license, generation time/VRAM, constraint error, trusted-stance foot drift, floor/self-intersection review, three-body rig/export parity and scores. Preserve native outputs separately from contact/controller edits."
+    }
+  ],
+  "role_inference": "Use consistent CC0 clips as a baseline, Kimodo for semantic clip ideas, Cascadeur for offline animation editing, MotionBricks for target/state transitions, and explicit game-side contacts/obstacle/speed logic for the reactive course. These tools complement each other; generated pose sequences alone do not provide a physical character controller."
+}

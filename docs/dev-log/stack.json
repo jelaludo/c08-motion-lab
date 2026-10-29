@@ -1,0 +1,62 @@
+{
+  "captured": "2026-10-29",
+  "scope": "Observed local provisioning and QA tools, not minimum requirements.",
+  "source_notes": [
+    "workspace STATUS.md",
+    "workspace video-mocap/README.md",
+    "pinned upstream uv.lock",
+    "tools/review/package-lock.json"
+  ],
+  "motionbricks": {
+    "version": "0.2.0",
+    "commit": "54fc563aeaaf819a753d72cc9fdc6713989cdd43",
+    "model": "MotionBricks-G1-RP-v1",
+    "precision": "FP32",
+    "python": "3.12.14",
+    "tensorrt": "10.8.0.43",
+    "warp": "1.17.0",
+    "newton": "1.6.0",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "torch_in_main_env": false,
+    "soma_comparison_run": false
+  },
+  "blender": "4.5.15 LTS",
+  "browser_runtime": "Three.js r160 /0.160.0",
+  "qa": {
+    "playwright": "1.64.1",
+    "gltf_validator": "2.0.0-dev.3.10",
+    "node": "24.14.0",
+    "chrome_observed": "156.0.8078.73",
+    "git_observed": "2.53.0.windows.1",
+    "uv_observed": "0.12.6"
+  },
+  "video_recovery": {
+    "gemx_commit": "20555befe2fbbe5b2015e1fff7ff214dc18ea9d6",
+    "weights_revision": "4fce057963671fd95cd4154297944397e7b5a9a0",
+    "soma_assets": "0.3.3",
+    "python": "3.12.14",
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "transformers": "5.3.0",
+    "py_soma_x": "0.3.3"
+  },
+  "observed_host": {
+    "os": "Windows11 VM",
+    "gpu": "RTX4090 24GiB",
+    "ram_gib": 96,
+    "logical_cpus": 16,
+    "initial_G_free_gib_approx": 616
+  },
+  "small_g1_smoke": {
+    "frames": 116,
+    "duration_s": 3.8333,
+    "initialization_s_approx": 58.9,
+    "warmed_call_ms_approx": [
+      23,
+      26
+    ],
+    "peak_generation_vram": "not measured",
+    "excluded_from_warm_time": "initialization/Blender/retarget/export/validation"
+  }
+}

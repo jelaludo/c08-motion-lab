@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-10-29",
+  "status": "Research only; no account, download, retarget or AI test performed.",
+  "article": "https://3dxdev.com/is-mixamo-still-the-best-free-animation-source-in-2026/",
+  "assessment": "Useful stock humanoid animation source for a conventional game workflow. Free access does not make the content open source or CC0. Our existing CC0 baseline is easier to reproduce and publish as downloadable motion artifacts.",
+  "adobe_faq": {
+    "source": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+    "findings": "Free Adobe ID; no Creative Cloud subscription required. Royalty-free use in personal, commercial and nonprofit projects. Auto-rigging supports biped humanoids."
+  },
+  "formal_additional_terms": {
+    "source": "https://wwwimages2.adobe.com/content/dam/cc/en/legal/servicetou/Mixamo-Addl-Terms-en_US-20210623.pdf",
+    "findings": "The AI/ML restriction covers directly or indirectly creating, training, testing or otherwise improving AI/ML systems using the service/content/data/output or derived information. This is broader than a training-only restriction.",
+    "lab_decision": "Keep Mixamo outside MotionBricks conditioning and AI comparison tests unless the intended use is clarified with Adobe. Conventional game animation use is a separate workflow."
+  },
+  "distribution_guidance": {
+    "source": "https://community.adobe.com/questions-696/mixamo-faq-licensing-royalties-ownership-eula-and-tos-589400?lang=en",
+    "findings": "Adobe guidance prohibits sharing raw character or animation files freely outside the project team, including asset packages. Do not copy the lab's existing downloadable standalone GLB publication pattern for Mixamo clips."
+  },
+  "scope_limit": "This records a conservative project decision from published terms, not a legal ruling on every inference or end-product use. No Mixamo-derived pose or motion was added to the lab."
+}
