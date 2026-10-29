@@ -1,6 +1,6 @@
 {
   "reviewed_on": "2026-10-28",
-  "status": "Initial reactive navigation round completed 2026-10-29: 40 eight-second paired neural rollouts; duck/vault interaction extensions deferred.",
+  "status": "Expanded reactive round 2 completed 2026-10-29: 40 paired 24-40 second neural rollouts, native swept collision response, 36x14m course and ten pillars. Duck/vault extensions remain future work.",
   "goal": "More natural humanoid motion through reactive navigation, acceleration and K0-Tech pursuit; preserve selected takes as game animation assets.",
   "architecture": [
     "Application reads obstacle and target state",
@@ -144,5 +144,11 @@
       "mixed"
     ],
     "mixed_scope": "Pursuit, pillars and speed zone; no duck/vault generation in this initial round."
+  },
+  "completed_rounds": {
+    "round1": "research/reactive-round1-results.json",
+    "round2": "research/reactive-round2-results.json",
+    "independent_physics": "research/reactive-physics-validation.json",
+    "sampled_armor": "research/reactive-armor-validation.json"
   }
 }

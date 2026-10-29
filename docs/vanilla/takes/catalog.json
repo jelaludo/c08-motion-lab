@@ -4,152 +4,152 @@
     {
       "id": "idle",
       "duration_s": 2.5,
-      "sha256": "effd8f3f3bceaf4cb9cbed55cee91bcac87447f326943adfd98c9a4d49184d87"
+      "sha256": "22b1b240d31e218dda67b88135c0e102b4f54b52027d34ed3e1cf0f590018fd1"
     },
     {
       "id": "idle-in-place",
       "duration_s": 2.5,
-      "sha256": "cce465b663cb69bbd27f49e94bc4520c7a508802b88b33f168d252f19080e5d0"
+      "sha256": "845c79935c0c35fffae99ee81f2b7776910eeff846dfc2769dcb2c853fef99a2"
     },
     {
       "id": "walk",
       "duration_s": 1.3333333730697632,
-      "sha256": "44be4d48defa828306f1fcd15470f9c9964615d0d2604dc84bbe45028f7135ee"
+      "sha256": "a5140c6edda9847de966af7c6fc3d7b9185aa1500889fcc57c0aab0f87fb76df"
     },
     {
       "id": "walk-in-place",
       "duration_s": 1.3333333730697632,
-      "sha256": "12be73e322ba9dc36ad48350b07269a4a2a24f36cd9b39049c3a7b850d67d52f"
+      "sha256": "dc09ac7879c0bf26a0648a5ff95114a593e04c0d9c01f1f8300915805441a74c"
     },
     {
       "id": "run",
       "duration_s": 0.9,
-      "sha256": "8c8a19faa962c099c0bd94297f7033c5265237444a3e85c73b13ac2ecda5d214"
+      "sha256": "66d99e626cb1bdc4a21cf2543be1911baa71911461ac848285891524425764a6"
     },
     {
       "id": "run-in-place",
       "duration_s": 0.9,
-      "sha256": "320bc515a1a1aa0155c0684b47487f8d97c99cec10866fbd61f7913e53bdc85d"
+      "sha256": "bcb4db32c371c6bdc8404553297a13e7da387d694eb12ce1f1c87b7f67b53032"
     },
     {
       "id": "small_jump",
       "duration_s": 3.980000023841858,
-      "sha256": "0690b0d7680fb8aee8a52115618eff5691ffeda9fef518c5b5dabf3f0e375eb7"
+      "sha256": "a7106ea7fe0f61ef4d2f3e6d53a4b9e116b9d9764a692fe19b34ff51dbcc3f13"
     },
     {
       "id": "small_jump-in-place",
       "duration_s": 3.980000023841858,
-      "sha256": "8fcd3d8de8a667d841cd721114c6e7ffeec8d9d50229855271e9fe818cf07a10"
+      "sha256": "c01838128d05023bee6b30e27579bd696cdf081bf3daaf2b5b57d60ab941112b"
     },
     {
       "id": "high_jump",
       "duration_s": 4.400000023841858,
-      "sha256": "3e0472ed4c7c9d7b51b9198519957f4857f63878b29360fe37ae27c55b26f2eb"
+      "sha256": "7fb58102131f15aff04a97162e5730206fccd9bbbf8e3359d94dbc4867681c62"
     },
     {
       "id": "high_jump-in-place",
       "duration_s": 4.400000023841858,
-      "sha256": "19aa3005b51385c8194c24acccc5e6d5f20a17e5beaf5b412ba948097a3ed90d"
+      "sha256": "7adeb0910ee8a843aed2ec5b7fb03af5c472b684312f0efdf1d6ca9a9ad87768"
     },
     {
       "id": "run_jump",
       "duration_s": 3.5999999999999996,
-      "sha256": "75c8870e47adfdfc7def5d9c015510278e209d75947b3c2282c4f6ba99e11669"
+      "sha256": "c2c27b83d65ab7d28bdf12503937f0625db7c4f02ce13ccfebcd9d7372a34232"
     },
     {
       "id": "run_jump-in-place",
       "duration_s": 3.5999999999999996,
-      "sha256": "b904239e8962e924a38b833e7e6160b4218e8516a3df123d2fc0b8f04343e998"
+      "sha256": "6fa0e5112c43d97d3579ff57cf079908fe053eff278a5a86bda480739e2ab75d"
     },
     {
       "id": "crouch",
       "duration_s": 4.233333396911621,
-      "sha256": "215e6bfc537ccaf7dc1f4c3c33779122f9610c29682c84bd11837447b4aa211e"
+      "sha256": "e8589150c7c52cc47034de1282c5bd3e31620a88a21bb7b5572196370078c4cc"
     },
     {
       "id": "crouch-in-place",
       "duration_s": 4.233333396911621,
-      "sha256": "3be5ee1cada35a1867eb91fd5bd5132ac416ea7f9e24b30c8c190e59ab00658f"
+      "sha256": "d1f860112def0af06838ae2570fcb3233387812154050c39b1eaa5ac6cd5b818"
     },
     {
       "id": "crouch_walk",
       "duration_s": 2,
-      "sha256": "022e16bc290dbbc645f67ac2d01271f61929827acb66083b153c5f26480ee46c"
+      "sha256": "74af9855680850c61829f6fe94d6f17620278cc754b74241a78bb84c167d99dc"
     },
     {
       "id": "crouch_walk-in-place",
       "duration_s": 2,
-      "sha256": "e7db32175e4bf01eb39a208bbf0decb293b17ed44d993decc73730c0bb4a994c"
+      "sha256": "941378392e8daabb82f3f06e1cb0b5d68ba6f434f0842c41d992018190807a52"
     },
     {
       "id": "lie_down",
       "duration_s": 2.850000095367432,
-      "sha256": "d6eb4fa7337c0f89f2c603214724e7b785ff1cfb2f7c3ac2fc8dc3e239da471a"
+      "sha256": "ea4e61b1b24f665981a8d3cb434da2ac6dbc8c1ab5eb787b905ea0e47035326a"
     },
     {
       "id": "lie_down-in-place",
       "duration_s": 2.850000095367432,
-      "sha256": "48e7eb0cee8275043a711d492138e06b90e42a1c8eb0f78886931513d8998bbf"
+      "sha256": "0a18a68b25d6d3d66cea3c07c00b788480d41c9caf72a3b99bab3d9b5b537395"
     },
     {
       "id": "get_up",
       "duration_s": 3.100000095367432,
-      "sha256": "fa7f6c07ea524481d4c466d96f8d759e72f8e1305455b03f12cc850c0c27e631"
+      "sha256": "2994ef8629085ebde108eacf329c5f645068833caa7d1e56e958e0b1da2ab536"
     },
     {
       "id": "get_up-in-place",
       "duration_s": 3.100000095367432,
-      "sha256": "12418849055ffcfacae110777e5b5a357814785ecbc9345d8de46303c969b5a7"
+      "sha256": "3ab19f9cd2e0d23bc832cd436d085d7148f863a9dd173e929ea685d874ab40e8"
     },
     {
       "id": "forward_roll",
       "duration_s": 2.7166666984558105,
-      "sha256": "26fa136056b76771ed62e9b21f0d74cd00b4049bf2c5c1cf14f6ba9d427e475a"
+      "sha256": "e803bc4ab62db260bc410e6d220d56794b9af232f3f2212cf4749428bf867c04"
     },
     {
       "id": "forward_roll-in-place",
       "duration_s": 2.7166666984558105,
-      "sha256": "61c4bfb008b3960d63f0634e7b35ca9f3943f8497b80bd0bfc4bc9c1346254d4"
+      "sha256": "a25827e9bdfcdad361321d1333dd317d2d94ffd517f7bddedd0108eec2461f4e"
     },
     {
       "id": "back_roll",
       "duration_s": 3.4,
-      "sha256": "e25f8bb12215e5e4218d62180829c751531be9de6cb2ed520038d260694bf5e0"
+      "sha256": "fc25c63c6497edd8d7bee68c4cdd0d47112746b983764e013f0e3483bf4d7d09"
     },
     {
       "id": "back_roll-in-place",
       "duration_s": 3.4,
-      "sha256": "3c9d1b2ae7116e364a8e897eb13eb91f25e95c1088258482da700aa6adc8d00e"
+      "sha256": "bf7e0ec77884e25b2f439579064d3083b054ee980a4269696a4e7a84bb14c31f"
     },
     {
       "id": "sit",
       "duration_s": 1.2999999523162842,
-      "sha256": "bd4fc765da45105dcde12e3eae2391e38e61113af66f151f1cc8ec2c61a23cf8"
+      "sha256": "2451d41079cd75f7d40aadf527aed27fc35d848283ba99c2947a9ebecd23bec9"
     },
     {
       "id": "sit-in-place",
       "duration_s": 1.2999999523162842,
-      "sha256": "4d8262319dc9d80a179ee197fb0bf8e950d6abf200977588c70418e24518eb29"
+      "sha256": "a7240e869f9d345142f6e159188df85df28857ce55432ed076e5520648c36cba"
     },
     {
       "id": "seated",
       "duration_s": 1.6666666269302368,
-      "sha256": "7dc358ac1ea728b5447ff1ed597a5f934eeee9d9abaa73f2379e8aa95b9a61cd"
+      "sha256": "de62f247f0656509004140c1d08786a04fed7c2c0a096374feafa920b0a88ce9"
     },
     {
       "id": "seated-in-place",
       "duration_s": 1.6666666269302368,
-      "sha256": "a48213709cfaca12d30212ae28be86c56819cfd6fc8d5135eca120dc306aa307"
+      "sha256": "38445c36901a90e4c306bcee0d3733119dcc4af33e70b55c4aa7224b5277e63c"
     },
     {
       "id": "stand",
       "duration_s": 1.6333333015441895,
-      "sha256": "7b648290c55ab64239c6d92754c96b93407ac40e9dc6c1ba7fe15f9c0358bea1"
+      "sha256": "5895a88f02b2766e66d8c617b261061e19117861beb57a1f8dd69f35d78c95f7"
     },
     {
       "id": "stand-in-place",
       "duration_s": 1.6333333015441895,
-      "sha256": "790478d839f8d85922202a4d25fecb07c8323a959f36a6b89ba5c8d8c7f4b207"
+      "sha256": "7efe7c7b6c35352273907b141bed422602b265bf742eba3b74b387bec9d67f9f"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "id": "run_jump",
   "label": "Running jump",
   "body": "c08",
-  "recipe_version": "v1-bd04a8519ed9",
+  "recipe_version": "v1-1b85a1812073",
   "fps": 60,
   "duration_s": 3.5999999999999996,
   "frames": 217,
@@ -1146,7 +1146,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "b904239e8962e924a38b833e7e6160b4218e8516a3df123d2fc0b8f04343e998",
+  "sha256": "6fa0e5112c43d97d3579ff57cf079908fe053eff278a5a86bda480739e2ab75d",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

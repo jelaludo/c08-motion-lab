@@ -3,7 +3,7 @@
   "id": "idle",
   "label": "Idle",
   "body": "c08",
-  "recipe_version": "v1-bd04a8519ed9",
+  "recipe_version": "v1-1b85a1812073",
   "fps": 60,
   "duration_s": 2.5,
   "frames": 151,
@@ -795,7 +795,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "effd8f3f3bceaf4cb9cbed55cee91bcac87447f326943adfd98c9a4d49184d87",
+  "sha256": "22b1b240d31e218dda67b88135c0e102b4f54b52027d34ed3e1cf0f590018fd1",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

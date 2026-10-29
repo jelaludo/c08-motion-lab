@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "checks": [
+    "40-second pursuit seeks beyond old8-second limit",
+    "cat path interpolates correctly after35seconds",
+    "full timeline range40seconds",
+    "selected31.15-33.35s displayed-bodyGLBexports cleanly",
+    "end stopping follows actual duration"
+  ],
+  "episode": {
+    "duration": 40,
+    "time": 35.25,
+    "timelineMax": 40,
+    "lanes": [
+      {
+        "condition": "baseline",
+        "duration": 40,
+        "catError": 0,
+        "rootPoints": 1201,
+        "catPoints": 1201
+      },
+      {
+        "condition": "reactive",
+        "duration": 40,
+        "catError": 0,
+        "rootPoints": 1201,
+        "catPoints": 1201
+      }
+    ]
+  },
+  "export": {
+    "bytes": 1367392,
+    "gltf_errors": 0,
+    "gltf_warnings": 0
+  },
+  "errors": []
+}

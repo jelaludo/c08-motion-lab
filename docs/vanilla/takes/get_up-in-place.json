@@ -3,7 +3,7 @@
   "id": "get_up",
   "label": "Get up",
   "body": "c08",
-  "recipe_version": "v1-bd04a8519ed9",
+  "recipe_version": "v1-1b85a1812073",
   "fps": 60,
   "duration_s": 3.100000095367432,
   "frames": 187,
@@ -976,7 +976,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "12418849055ffcfacae110777e5b5a357814785ecbc9345d8de46303c969b5a7",
+  "sha256": "3ab19f9cd2e0d23bc832cd436d085d7148f863a9dd173e929ea685d874ab40e8",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

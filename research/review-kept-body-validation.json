@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "href": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/?take=slalom_reactive_1&body=brek",
+  "takes": [
+    {
+      "id": "slalom_reactive_1",
+      "body": "brek",
+      "preview": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/?take=slalom_reactive_1&body=brek"
+    }
+  ],
+  "checks": [
+    "BREK Open take retains body query",
+    "kept manifest preview retains body query"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "checks": [
+    "each actor followed independently in paired lanes",
+    "whole arena projected within viewport",
+    "zoom buttons change framing distance",
+    "K0-Tech follow",
+    "single-lane focus",
+    "reset",
+    "mobile no overflow"
+  ],
+  "version": "reactive-round2-expanded-armor-clearance",
+  "results": [
+    {
+      "condition": "baseline",
+      "time": 0,
+      "followXZError": 0,
+      "distance": 7.611623653638713
+    },
+    {
+      "condition": "reactive",
+      "time": 0,
+      "followXZError": 0,
+      "distance": 7.611623653638713
+    },
+    {
+      "condition": "baseline",
+      "time": 0,
+      "overviewMaxNDC": 0.6272887368078383
+    },
+    {
+      "condition": "reactive",
+      "time": 0,
+      "overviewMaxNDC": 0.6272887368078383
+    },
+    {
+      "condition": "baseline",
+      "time": 8,
+      "followXZError": 0,
+      "distance": 7.611623653638713
+    },
+    {
+      "condition": "reactive",
+      "time": 8,
+      "followXZError": 0,
+      "distance": 7.611623653638713
+    },
+    {
+      "condition": "baseline",
+      "time": 8,
+      "overviewMaxNDC": 0.6272887368078383
+    },
+    {
+      "condition": "reactive",
+      "time": 8,
+      "overviewMaxNDC": 0.6272887368078383
+    }
+  ],
+  "zoomBefore": 7.611623653638713,
+  "zoomAfter": 6.343019711365594
+}

@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "checks": [
+    "authored gallop phase follows actual cumulative ground distance",
+    "paired cats share exact phases",
+    "limbs animate as distance advances",
+    "scrubbed phases reproduce exactly"
+  ],
+  "version": "reactive-round2-expanded-armor-clearance",
+  "gait": "Gallop_Cycle",
+  "nominalSpeed": 2.688888874318865,
+  "samples": [
+    {
+      "condition": "baseline",
+      "time": 0,
+      "animationTime": 0,
+      "expected": 0
+    },
+    {
+      "condition": "reactive",
+      "time": 0,
+      "animationTime": 0,
+      "expected": 0
+    },
+    {
+      "condition": "baseline",
+      "time": 1.1,
+      "animationTime": 0.5757351292473931,
+      "expected": 0.5757351292473931
+    },
+    {
+      "condition": "reactive",
+      "time": 1.1,
+      "animationTime": 0.5757351292473931,
+      "expected": 0.5757351292473931
+    },
+    {
+      "condition": "baseline",
+      "time": 10.25,
+      "animationTime": 4.244157661189933,
+      "expected": 4.2441576611899325
+    },
+    {
+      "condition": "reactive",
+      "time": 10.25,
+      "animationTime": 4.244157661189933,
+      "expected": 4.2441576611899325
+    },
+    {
+      "condition": "baseline",
+      "time": 20.7,
+      "animationTime": 8.974127032482032,
+      "expected": 8.974127032482032
+    },
+    {
+      "condition": "reactive",
+      "time": 20.7,
+      "animationTime": 8.974127032482032,
+      "expected": 8.974127032482032
+    },
+    {
+      "condition": "baseline",
+      "time": 39.8,
+      "animationTime": 16.592806194841575,
+      "expected": 16.592806194841575
+    },
+    {
+      "condition": "reactive",
+      "time": 39.8,
+      "animationTime": 16.592806194841575,
+      "expected": 16.592806194841575
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "status": "failed",
+  "cases": 1,
+  "checks": [
+    "All displayed C08 frames including authored cupped hands",
+    "Rigid skin bone-local AABBs conservatively bound every vertex",
+    "Near-pillar exact triangle vs height-clipped cylinder projection",
+    "No reliance on generator collision routines"
+  ],
+  "tolerance_m": 0.001,
+  "sampling_hz": 30,
+  "limitation": "Sampled articulated geometry validation, not continuous swept-triangle dynamics. Native root/cat continuous sweeps are audited separately.",
+  "results": [
+    {
+      "id": "pursuit_baseline_2",
+      "sampling_hz": 30,
+      "frames": 1201,
+      "conservative_bone_aabb_native_radius_max_m": 1.0058726480289033,
+      "native_navigation_radius_m": 0.65,
+      "frames_requiring_exact_triangle_check": 619,
+      "triangle_cylinder_intersections": 154806,
+      "max_penetration_m": 0.23859390161068988,
+      "examples": [
+        {
+          "frame": 72,
+          "time_s": 2.4,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 3782,
+          "penetration_m": 0.004374157450378724
+        },
+        {
+          "frame": 72,
+          "time_s": 2.4,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 3783,
+          "penetration_m": 0.0026321496478541873
+        },
+        {
+          "frame": 72,
+          "time_s": 2.4,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 3786,
+          "penetration_m": 0.0026321496478541873
+        },
+        {
+          "frame": 72,
+          "time_s": 2.4,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 3794,
+          "penetration_m": 0.004374157450378724
+        },
+        {
+          "frame": 72,
+          "time_s": 2.4,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 3795,
+          "penetration_m": 0.004374157450378724
+        }
+      ]
+    }
+  ],
+  "source_glb_sha256": "5bc28c400e897ab80cb7f4d755082430609e13f9fe305bca49ddb87502e689cc",
+  "purpose": "Calibration negative control: a root-only clearance pass still allowed visible C08 triangle/pillar intersections. Source retained in the local calibration archive."
+}

@@ -89,10 +89,14 @@ episodes={}
 for case in reactive['cases']:
  episode=json.loads((reactive_root/case['episode']).read_text(encoding='utf8'))
  validation=json.loads((reactive_root/case['validation']).read_text(encoding='utf8'))
- assert case['metrics']['neural_calls']==16 and episode['sample_rate']==30
+ assert case['metrics']['neural_calls']==round(episode['duration_s']*2) and episode['sample_rate']==30
+ assert episode['duration_s']>=24 and (case['scenario'] not in ('pursuit','mixed') or episode['duration_s']>=32)
+ assert len(episode['environment']['obstacles'])>=8 and episode['environment']['bounds'][1]-episode['environment']['bounds'][0]>=30
+ assert len(episode['predicted_root_path'])==len(episode['played_root_path'])
+ assert case['metrics']['root_proxy_collision_frames']==0
  assert validation['gltf_errors']==0 and validation['gltf_warnings']==0
  assert validation['skinned_geometry_min_floor_y_m']>=-.003
- for name in ['prediction-trace.json','native-g1-motion.npz','root-trajectory.csv']:
+ for name in ['prediction-trace.json','native-g1-motion.npz','unmodified-predictions.npz','root-trajectory.csv']:
   assert (reactive_root/'takes'/case['id']/name).is_file()
  episodes[(case['scenario'],case['seed'],case['condition'])]=episode
 for scenario in ['slalom','speedzones','pursuit','mixed']:
@@ -100,9 +104,9 @@ for scenario in ['slalom','speedzones','pursuit','mixed']:
   assert episodes[(scenario,seed,'baseline')]['environment']==episodes[(scenario,seed,'reactive')]['environment']
 brek=json.loads((ROOT/'docs/assets/b-rek43-provenance.json').read_text(encoding='utf8'))
 assert hashlib.sha256((ROOT/'docs/assets/b-rek43.glb').read_bytes()).hexdigest()==brek['source_sha256']==brek['output_sha256']
-report.update(reactive_neural_takes=40,reactive_neural_calls=640,reactive_paired_environments_verified=True,brek43_original_rig_hash_verified=True)
+report.update(reactive_neural_takes=40,reactive_neural_calls=sum(c['metrics']['neural_calls'] for c in reactive['cases']),reactive_paired_environments_verified=True,brek43_original_rig_hash_verified=True)
 (ROOT/'research/publication-validation.json').write_text(json.dumps(report,indent=2),encoding='utf8')
-print('Reactive: 40 real neural rollouts / 640 calls; paired environments, derived exports and B-REK43 hash verified.')
+print('Reactive: 40 expanded real neural rollouts / '+str(sum(c['metrics']['neural_calls'] for c in reactive['cases']))+' calls; paired environments, collision response, derived exports and B-REK43 hash verified.')
 
 bakes=list((ROOT/'docs/vanilla/takes').glob('*.glb'))
 assert len(bakes)==30

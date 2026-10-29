@@ -1,6 +1,6 @@
 import {smoothClip} from './motion-cleanup.js';
 import * as T from 'three';
-import {ReviewPanel} from '../shared/review-panel.js';
+import {ReviewPanel} from '../shared/review-panel.js?v=kept-body-2';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';

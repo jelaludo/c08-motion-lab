@@ -1,0 +1,1538 @@
+{
+  "status": "passed",
+  "cases": 40,
+  "mode": "published CSV and native NPZ",
+  "checks": [
+    "Expanded arena dimensions and obstacle count/spacing",
+    "Long pursuit duration",
+    "CSV/native/viewer path agreement",
+    "Independent continuous circle sweeps, including between frames",
+    "Cat obstacle avoidance and arena containment",
+    "Corrected playback forms subsequent neural context",
+    "Actual and commanded running speed reported separately"
+  ],
+  "limitation": "Circle-proxy navigation validation; this is not a whole-body collision or dynamics guarantee.",
+  "results": [
+    {
+      "id": "slalom_baseline_1",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0495494570636543,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010129136517211812,
+      "minimum_continuous_cat_clearance_m": 0.16473193973049516,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.0244521309953425,
+      "max_speed_m_s": 1.901790498764359,
+      "seconds_above_1_5_m_s": 1.4,
+      "root_travel_m": 24.586851143888218,
+      "actual_root_extent_m": [
+        23.28724479675293,
+        1.0054437816143036
+      ],
+      "cat_travel_m": 22.676474654415877,
+      "actual_cat_extent_m": [
+        16.106684295422852,
+        5.0
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.6650327306998222,
+      "corrected_root_frames": 352,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.4006211966392909,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_reactive_1",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0495494570636543,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.2632080529046257,
+      "minimum_continuous_cat_clearance_m": 0.16473193973049516,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9429422661662101,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.228841443390257,
+      "max_speed_m_s": 1.8244536911804268,
+      "seconds_above_1_5_m_s": 2.2333333333333334,
+      "root_travel_m": 29.49219464136617,
+      "actual_root_extent_m": [
+        27.43969590216875,
+        3.529271263629198
+      ],
+      "cat_travel_m": 22.676474654415877,
+      "actual_cat_extent_m": [
+        16.106684295422852,
+        5.0
+      ],
+      "minimum_continuous_root_cat_clearance_m": 1.1690452233591326,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_baseline_2",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0276889857171048,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00011126482650314351,
+      "minimum_continuous_cat_clearance_m": 0.00011184306850164916,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.9481643950260907,
+      "max_speed_m_s": 1.599432687248842,
+      "seconds_above_1_5_m_s": 0.36666666666666664,
+      "root_travel_m": 22.755945480626178,
+      "actual_root_extent_m": [
+        21.377464294433594,
+        0.9751699566841125
+      ],
+      "cat_travel_m": 21.96090969765137,
+      "actual_cat_extent_m": [
+        14.736988131136048,
+        5.2054347657887305
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.8257648063640778,
+      "corrected_root_frames": 369,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.35865153750740003,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_reactive_2",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0276889857171048,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.30963412223767683,
+      "minimum_continuous_cat_clearance_m": 0.00011184306850164916,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9489635292440652,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.1873763697049637,
+      "max_speed_m_s": 1.9020546004129764,
+      "seconds_above_1_5_m_s": 2.0,
+      "root_travel_m": 28.497032872919128,
+      "actual_root_extent_m": [
+        26.69034463725984,
+        3.605850949883461
+      ],
+      "cat_travel_m": 21.96090969765137,
+      "actual_cat_extent_m": [
+        14.736988131136048,
+        5.2054347657887305
+      ],
+      "minimum_continuous_root_cat_clearance_m": 1.0594817632010414,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_baseline_3",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.1082549526499186,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00011577055811029524,
+      "minimum_continuous_cat_clearance_m": 0.15829668117798834,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.0314625829675133,
+      "max_speed_m_s": 1.8967123603445388,
+      "seconds_above_1_5_m_s": 1.2,
+      "root_travel_m": 24.755101991220318,
+      "actual_root_extent_m": [
+        23.58522605895996,
+        1.00522580742836
+      ],
+      "cat_travel_m": 22.02470000569715,
+      "actual_cat_extent_m": [
+        14.85187343179977,
+        5.262695818862956
+      ],
+      "minimum_continuous_root_cat_clearance_m": -1.2276204310518493,
+      "corrected_root_frames": 305,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.3883507780969241,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_reactive_3",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.1082549526499186,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.23300857744509806,
+      "minimum_continuous_cat_clearance_m": 0.15829668117798834,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9491853113169781,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.230740403760256,
+      "max_speed_m_s": 1.915834993967659,
+      "seconds_above_1_5_m_s": 2.3333333333333335,
+      "root_travel_m": 29.537769690246144,
+      "actual_root_extent_m": [
+        27.896505606651772,
+        3.5897137206047773
+      ],
+      "cat_travel_m": 22.02470000569715,
+      "actual_cat_extent_m": [
+        14.85187343179977,
+        5.262695818862956
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.6387436005419489,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_baseline_4",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.9337757395833877,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00011925450910732494,
+      "minimum_continuous_cat_clearance_m": 0.1769331565988418,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.0193271199096445,
+      "max_speed_m_s": 1.8958364194186208,
+      "seconds_above_1_5_m_s": 1.4333333333333333,
+      "root_travel_m": 24.46385087783147,
+      "actual_root_extent_m": [
+        23.359716415405273,
+        0.885589987039566
+      ],
+      "cat_travel_m": 22.757923401025902,
+      "actual_cat_extent_m": [
+        15.644679793667013,
+        5.374571460346535
+      ],
+      "minimum_continuous_root_cat_clearance_m": -1.2541117514685065,
+      "corrected_root_frames": 327,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.43363526262930047,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_reactive_4",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.9337757395833877,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.24763687014032487,
+      "minimum_continuous_cat_clearance_m": 0.1769331565988418,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.942769481614232,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.206523895396131,
+      "max_speed_m_s": 1.8971590051352478,
+      "seconds_above_1_5_m_s": 2.1666666666666665,
+      "root_travel_m": 28.956573489507143,
+      "actual_root_extent_m": [
+        26.962152240797877,
+        3.5263433419167995
+      ],
+      "cat_travel_m": 22.757923401025902,
+      "actual_cat_extent_m": [
+        15.644679793667013,
+        5.374571460346535
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.8534001072412511,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_baseline_5",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.948713315301016,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00011006396187029921,
+      "minimum_continuous_cat_clearance_m": 0.1707161245458091,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.9272941626507173,
+      "max_speed_m_s": 1.8856255409946483,
+      "seconds_above_1_5_m_s": 0.6333333333333333,
+      "root_travel_m": 22.255059903617216,
+      "actual_root_extent_m": [
+        20.8111629486084,
+        1.0975921750068665
+      ],
+      "cat_travel_m": 23.47146023036722,
+      "actual_cat_extent_m": [
+        15.656374974622313,
+        5.325121943827895
+      ],
+      "minimum_continuous_root_cat_clearance_m": -1.1997855638473156,
+      "corrected_root_frames": 379,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.3304365417495915,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "slalom_reactive_5",
+      "duration_s": 24.0,
+      "frames": 721,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.948713315301016,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.22412877212885207,
+      "minimum_continuous_cat_clearance_m": 0.1707161245458091,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9424514847807586,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.1638345735622717,
+      "max_speed_m_s": 1.8948666759829762,
+      "seconds_above_1_5_m_s": 1.3333333333333333,
+      "root_travel_m": 27.93202976549452,
+      "actual_root_extent_m": [
+        26.122925941366702,
+        3.549733141437173
+      ],
+      "cat_travel_m": 23.47146023036722,
+      "actual_cat_extent_m": [
+        15.656374974622313,
+        5.325121943827895
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.8482793758776586,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 1.35,
+      "failures": []
+    },
+    {
+      "id": "speedzones_baseline_1",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 1.1292944950862625,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.5127595112850947,
+      "minimum_continuous_cat_clearance_m": 0.0586318334421434,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7676584968147723,
+      "max_speed_m_s": 2.6559769305397736,
+      "seconds_above_1_5_m_s": 6.9,
+      "root_travel_m": 30.70633987259089,
+      "actual_root_extent_m": [
+        30.024658203125,
+        0.1911323368549347
+      ],
+      "cat_travel_m": 37.71573366502962,
+      "actual_cat_extent_m": [
+        27.494670933508655,
+        5.198319519734106
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.7852807044398884,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_reactive_1",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 1.1292944950862625,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.520118443204269,
+      "minimum_continuous_cat_clearance_m": 0.0586318334421434,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.782236676527743,
+      "max_speed_m_s": 2.5225353790263605,
+      "seconds_above_1_5_m_s": 7.566666666666666,
+      "root_travel_m": 31.289467061109722,
+      "actual_root_extent_m": [
+        30.199432373046875,
+        0.2481173500418663
+      ],
+      "cat_travel_m": 37.71573366502962,
+      "actual_cat_extent_m": [
+        27.494670933508655,
+        5.198319519734106
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.7214929460934401,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_baseline_2",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 0.9626156440369601,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.5899615047702116,
+      "minimum_continuous_cat_clearance_m": 0.1707626877408922,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.696147040665536,
+      "mean_speed_m_s": 0.7733186005751892,
+      "max_speed_m_s": 2.656118038697906,
+      "seconds_above_1_5_m_s": 6.9,
+      "root_travel_m": 30.932744023007565,
+      "actual_root_extent_m": [
+        30.03447151184082,
+        0.18937326222658157
+      ],
+      "cat_travel_m": 37.47985578576882,
+      "actual_cat_extent_m": [
+        27.491675498462733,
+        5.509356823002788
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.10832006740481037,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_reactive_2",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 0.9626156440369601,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.5967999843901008,
+      "minimum_continuous_cat_clearance_m": 0.1707626877408922,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.696147040665536,
+      "mean_speed_m_s": 0.7889009640151058,
+      "max_speed_m_s": 2.652897837420564,
+      "seconds_above_1_5_m_s": 8.3,
+      "root_travel_m": 31.556038560604236,
+      "actual_root_extent_m": [
+        30.350940704345703,
+        0.17489049583673477
+      ],
+      "cat_travel_m": 37.47985578576882,
+      "actual_cat_extent_m": [
+        27.491675498462733,
+        5.509356823002788
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.016539766547273294,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_baseline_3",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 1.099262601785937,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.628705461454497,
+      "minimum_continuous_cat_clearance_m": 0.15706680740176449,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7695854592387111,
+      "max_speed_m_s": 2.65611081688092,
+      "seconds_above_1_5_m_s": 6.933333333333334,
+      "root_travel_m": 30.783418369548446,
+      "actual_root_extent_m": [
+        30.041345596313477,
+        0.17192138731479645
+      ],
+      "cat_travel_m": 37.724045638975824,
+      "actual_cat_extent_m": [
+        27.095732027176386,
+        5.298000002700798
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.8471672183369154,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_reactive_3",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 1.099262601785937,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.6567648312018086,
+      "minimum_continuous_cat_clearance_m": 0.15706680740176449,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7780710768372654,
+      "max_speed_m_s": 2.6529110805179443,
+      "seconds_above_1_5_m_s": 8.333333333333334,
+      "root_travel_m": 31.122843073490614,
+      "actual_root_extent_m": [
+        30.1458797454834,
+        0.1655401885509491
+      ],
+      "cat_travel_m": 37.724045638975824,
+      "actual_cat_extent_m": [
+        27.095732027176386,
+        5.298000002700798
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.6605250203699854,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_baseline_4",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 0.9623162606724484,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.5624959102577511,
+      "minimum_continuous_cat_clearance_m": 0.1915201158118367,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7689773530898851,
+      "max_speed_m_s": 2.6559217607094268,
+      "seconds_above_1_5_m_s": 6.9,
+      "root_travel_m": 30.759094123595407,
+      "actual_root_extent_m": [
+        30.043922424316406,
+        0.18291370570659637
+      ],
+      "cat_travel_m": 38.11031092676395,
+      "actual_cat_extent_m": [
+        27.216193841038496,
+        5.264582281428066
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.8235856386559381,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_reactive_4",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 0.9623162606724484,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.5350239225277287,
+      "minimum_continuous_cat_clearance_m": 0.1915201158118367,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7831026397727808,
+      "max_speed_m_s": 2.5225117802529207,
+      "seconds_above_1_5_m_s": 7.566666666666666,
+      "root_travel_m": 31.32410559091123,
+      "actual_root_extent_m": [
+        30.202516555786133,
+        0.24321970343589783
+      ],
+      "cat_travel_m": 38.11031092676395,
+      "actual_cat_extent_m": [
+        27.216193841038496,
+        5.264582281428066
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.6838353014949015,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_baseline_5",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 1.0776219016687398,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.5356034195864818,
+      "minimum_continuous_cat_clearance_m": 0.00011003444852419886,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7736151821665762,
+      "max_speed_m_s": 2.6560986764400036,
+      "seconds_above_1_5_m_s": 6.9,
+      "root_travel_m": 30.944607286663047,
+      "actual_root_extent_m": [
+        30.035947799682617,
+        0.16608355566859245
+      ],
+      "cat_travel_m": 37.018718158210596,
+      "actual_cat_extent_m": [
+        27.165602076997466,
+        5.520482236116173
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.005808516660563701,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "speedzones_reactive_5",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 1.0776219016687398,
+      "pillar_pairs_narrower_than_root_diameter": 2,
+      "minimum_continuous_root_clearance_m": 1.507193104409373,
+      "minimum_continuous_cat_clearance_m": 0.00011003444852419886,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7832189483105929,
+      "max_speed_m_s": 2.5224997774157494,
+      "seconds_above_1_5_m_s": 7.566666666666666,
+      "root_travel_m": 31.32875793242372,
+      "actual_root_extent_m": [
+        30.202547073364258,
+        0.23388013988733292
+      ],
+      "cat_travel_m": 37.018718158210596,
+      "actual_cat_extent_m": [
+        27.165602076997466,
+        5.520482236116173
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.03640261141718493,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_baseline_1",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0495494570636543,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010970553317668497,
+      "minimum_continuous_cat_clearance_m": 0.16473193973049516,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7947512099848989,
+      "max_speed_m_s": 2.623756598308839,
+      "seconds_above_1_5_m_s": 4.333333333333333,
+      "root_travel_m": 31.790048399395957,
+      "actual_root_extent_m": [
+        26.851594924926758,
+        5.317587852478027
+      ],
+      "cat_travel_m": 37.71517147254653,
+      "actual_cat_extent_m": [
+        26.580970073237047,
+        5.085716960984206
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.33151618232976454,
+      "corrected_root_frames": 422,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.4645412612835261,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_reactive_1",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0495494570636543,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00011016753282766523,
+      "minimum_continuous_cat_clearance_m": 0.16473193973049516,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9497819699638057,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.8577568931340719,
+      "max_speed_m_s": 2.7553210188462605,
+      "seconds_above_1_5_m_s": 5.6,
+      "root_travel_m": 34.31027572536288,
+      "actual_root_extent_m": [
+        27.139950390876038,
+        5.341800689697266
+      ],
+      "cat_travel_m": 37.71517147254653,
+      "actual_cat_extent_m": [
+        26.580970073237047,
+        5.085716960984206
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.18427961864589193,
+      "corrected_root_frames": 303,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.3651586610659441,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_baseline_2",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0276889857171048,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010980889787037817,
+      "minimum_continuous_cat_clearance_m": 0.00011184306850164916,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.6897509714557244,
+      "mean_speed_m_s": 0.7218603383787765,
+      "max_speed_m_s": 2.606847472965237,
+      "seconds_above_1_5_m_s": 5.7,
+      "root_travel_m": 28.87441353515106,
+      "actual_root_extent_m": [
+        24.047212600708008,
+        4.475475311279297
+      ],
+      "cat_travel_m": 37.457411917774905,
+      "actual_cat_extent_m": [
+        25.0,
+        5.530249028544276
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.4561211119735249,
+      "corrected_root_frames": 626,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.5405290466341012,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_reactive_2",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0276889857171048,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010992566764689293,
+      "minimum_continuous_cat_clearance_m": 0.00011184306850164916,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9489635292440652,
+      "minimum_cat_wall_clearance_m": 3.6897509714557244,
+      "mean_speed_m_s": 1.051575669132892,
+      "max_speed_m_s": 2.595677370888296,
+      "seconds_above_1_5_m_s": 12.833333333333334,
+      "root_travel_m": 42.06302676531568,
+      "actual_root_extent_m": [
+        18.911621874198318,
+        6.531399726867676
+      ],
+      "cat_travel_m": 37.457411917774905,
+      "actual_cat_extent_m": [
+        25.0,
+        5.530249028544276
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.5867928457836299,
+      "corrected_root_frames": 217,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.44163181805533197,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_baseline_3",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.1082549526499186,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010984754908793803,
+      "minimum_continuous_cat_clearance_m": 0.15083759140978237,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7682017409162117,
+      "max_speed_m_s": 2.467201908767839,
+      "seconds_above_1_5_m_s": 4.133333333333334,
+      "root_travel_m": 30.72806963664847,
+      "actual_root_extent_m": [
+        25.671630859375,
+        4.234449028968811
+      ],
+      "cat_travel_m": 37.68680759094401,
+      "actual_cat_extent_m": [
+        25.97659296536408,
+        5.262695818862956
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.2209606008584628,
+      "corrected_root_frames": 295,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.8076473016205071,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_reactive_3",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.1082549526499186,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.0001106429803146014,
+      "minimum_continuous_cat_clearance_m": 0.15083759140978237,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9491853113169781,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.8509049864874088,
+      "max_speed_m_s": 2.681593095620423,
+      "seconds_above_1_5_m_s": 6.1,
+      "root_travel_m": 34.036199459496345,
+      "actual_root_extent_m": [
+        26.247251761436928,
+        4.90622353553772
+      ],
+      "cat_travel_m": 37.68680759094401,
+      "actual_cat_extent_m": [
+        25.97659296536408,
+        5.262695818862956
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.8232791273863996,
+      "corrected_root_frames": 361,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.4450592220491789,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_baseline_4",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.9337757395833877,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010925468229117108,
+      "minimum_continuous_cat_clearance_m": 0.12327545640803506,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7144049610190627,
+      "max_speed_m_s": 2.6807221687746488,
+      "seconds_above_1_5_m_s": 6.4,
+      "root_travel_m": 28.57619844076251,
+      "actual_root_extent_m": [
+        23.67926025390625,
+        5.10234808921814
+      ],
+      "cat_travel_m": 38.154935595750615,
+      "actual_cat_extent_m": [
+        26.12994650277257,
+        5.3778217498951
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.25594468952468086,
+      "corrected_root_frames": 628,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.6119504623056329,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_reactive_4",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.9337757395833877,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010977122356914393,
+      "minimum_continuous_cat_clearance_m": 0.12327545640803506,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9497686407150467,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.0418906726032724,
+      "max_speed_m_s": 2.595893897428069,
+      "seconds_above_1_5_m_s": 11.666666666666666,
+      "root_travel_m": 41.6756269041309,
+      "actual_root_extent_m": [
+        26.86874637393339,
+        5.678152084350586
+      ],
+      "cat_travel_m": 38.154935595750615,
+      "actual_cat_extent_m": [
+        26.12994650277257,
+        5.3778217498951
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.12029920761010127,
+      "corrected_root_frames": 375,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.4945333567297803,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_baseline_5",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.948713315301016,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010983497098915329,
+      "minimum_continuous_cat_clearance_m": 0.1707161245458091,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.8268825410615844,
+      "max_speed_m_s": 2.5505526907500724,
+      "seconds_above_1_5_m_s": 4.9,
+      "root_travel_m": 33.07530164246338,
+      "actual_root_extent_m": [
+        25.7716121673584,
+        4.838144779205322
+      ],
+      "cat_travel_m": 38.3836907406554,
+      "actual_cat_extent_m": [
+        25.665291962424188,
+        5.325121943827895
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.15429574909022303,
+      "corrected_root_frames": 360,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.5821278875916508,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "pursuit_reactive_5",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.948713315301016,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.0001098930756573413,
+      "minimum_continuous_cat_clearance_m": 0.1707161245458091,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9496336242475081,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.1237549285772452,
+      "max_speed_m_s": 2.720169295780343,
+      "seconds_above_1_5_m_s": 13.533333333333333,
+      "root_travel_m": 44.95019714308981,
+      "actual_root_extent_m": [
+        26.88500802309136,
+        5.629643201828003
+      ],
+      "cat_travel_m": 38.3836907406554,
+      "actual_cat_extent_m": [
+        25.665291962424188,
+        5.325121943827895
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.5082599515409211,
+      "corrected_root_frames": 412,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.5553217094335221,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_baseline_1",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0495494570636543,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 1.3059122286393272,
+      "minimum_continuous_cat_clearance_m": 0.16473193973049516,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.04188334369634392,
+      "max_speed_m_s": 1.3608847726932334,
+      "seconds_above_1_5_m_s": 0.0,
+      "root_travel_m": 1.6753337478537569,
+      "actual_root_extent_m": [
+        1.0046169757843018,
+        1.2174449302256107
+      ],
+      "cat_travel_m": 37.71517147254653,
+      "actual_cat_extent_m": [
+        26.580970073237047,
+        5.085716960984206
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.403205883006434,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_reactive_1",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0495494570636543,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00011058957904275246,
+      "minimum_continuous_cat_clearance_m": 0.16473193973049516,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9497819699638057,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.8581356076309835,
+      "max_speed_m_s": 2.7553210188462605,
+      "seconds_above_1_5_m_s": 4.666666666666667,
+      "root_travel_m": 34.325424305239345,
+      "actual_root_extent_m": [
+        27.12916814905475,
+        5.496129751205444
+      ],
+      "cat_travel_m": 37.71517147254653,
+      "actual_cat_extent_m": [
+        26.580970073237047,
+        5.085716960984206
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.29963587443705686,
+      "corrected_root_frames": 322,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.3909213683469326,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_baseline_2",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0276889857171048,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 1.3259400835067443,
+      "minimum_continuous_cat_clearance_m": 0.00011184306850164916,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.6897509714557244,
+      "mean_speed_m_s": 0.04894287741139356,
+      "max_speed_m_s": 2.037759244669044,
+      "seconds_above_1_5_m_s": 0.4666666666666667,
+      "root_travel_m": 1.9577150964557424,
+      "actual_root_extent_m": [
+        1.1169427633285522,
+        1.3907371275126934
+      ],
+      "cat_travel_m": 37.457411917774905,
+      "actual_cat_extent_m": [
+        25.0,
+        5.530249028544276
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.5521385035682236,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_reactive_2",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.0276889857171048,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010974039456335127,
+      "minimum_continuous_cat_clearance_m": 0.00011184306850164916,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9489635292440652,
+      "minimum_cat_wall_clearance_m": 3.6897509714557244,
+      "mean_speed_m_s": 0.931203988670715,
+      "max_speed_m_s": 2.5873962537825372,
+      "seconds_above_1_5_m_s": 8.933333333333334,
+      "root_travel_m": 37.2481595468286,
+      "actual_root_extent_m": [
+        18.89487916789949,
+        6.06580376625061
+      ],
+      "cat_travel_m": 37.457411917774905,
+      "actual_cat_extent_m": [
+        25.0,
+        5.530249028544276
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.5867928457836299,
+      "corrected_root_frames": 278,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.46075244490595935,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_baseline_3",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.1082549526499186,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 1.3459772214637915,
+      "minimum_continuous_cat_clearance_m": 0.15083759140978237,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.048661948136698704,
+      "max_speed_m_s": 2.0284209508241338,
+      "seconds_above_1_5_m_s": 0.4666666666666667,
+      "root_travel_m": 1.9464779254679483,
+      "actual_root_extent_m": [
+        1.113181233406067,
+        1.3748614620417356
+      ],
+      "cat_travel_m": 37.68680759094401,
+      "actual_cat_extent_m": [
+        25.97659296536408,
+        5.262695818862956
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.30799813885952787,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_reactive_3",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 3.1082549526499186,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.0001092963587736584,
+      "minimum_continuous_cat_clearance_m": 0.15083759140978237,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9491853113169781,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.7366014213003755,
+      "max_speed_m_s": 2.584029100321941,
+      "seconds_above_1_5_m_s": 5.0,
+      "root_travel_m": 29.46405685201502,
+      "actual_root_extent_m": [
+        24.360529196739662,
+        3.803816795349121
+      ],
+      "cat_travel_m": 37.68680759094401,
+      "actual_cat_extent_m": [
+        25.97659296536408,
+        5.262695818862956
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.4800306280152137,
+      "corrected_root_frames": 353,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.4530953848561252,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_baseline_4",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.9337757395833877,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 1.39847276080698,
+      "minimum_continuous_cat_clearance_m": 0.12327545640803506,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.04213770161588227,
+      "max_speed_m_s": 1.3576334336640645,
+      "seconds_above_1_5_m_s": 0.0,
+      "root_travel_m": 1.6855080646352907,
+      "actual_root_extent_m": [
+        1.008507490158081,
+        1.2276658788323402
+      ],
+      "cat_travel_m": 38.154935595750615,
+      "actual_cat_extent_m": [
+        26.12994650277257,
+        5.3778217498951
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.3510160238811715,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_reactive_4",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.9337757395833877,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.00010977122356914393,
+      "minimum_continuous_cat_clearance_m": 0.12327545640803506,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9497686407150467,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.0172807398510693,
+      "max_speed_m_s": 2.59487591159062,
+      "seconds_above_1_5_m_s": 9.7,
+      "root_travel_m": 40.69122959404277,
+      "actual_root_extent_m": [
+        25.98913440493925,
+        5.678152084350586
+      ],
+      "cat_travel_m": 38.154935595750615,
+      "actual_cat_extent_m": [
+        26.12994650277257,
+        5.3778217498951
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.2680397893209612,
+      "corrected_root_frames": 348,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.5092829266475369,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_baseline_5",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.948713315301016,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 1.3259613459219137,
+      "minimum_continuous_cat_clearance_m": 0.1707161245458091,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.95,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 0.04249657678303747,
+      "max_speed_m_s": 1.3670324230178215,
+      "seconds_above_1_5_m_s": 0.0,
+      "root_travel_m": 1.6998630713214988,
+      "actual_root_extent_m": [
+        1.0186659097671509,
+        1.2394942324608564
+      ],
+      "cat_travel_m": 38.3836907406554,
+      "actual_cat_extent_m": [
+        25.665291962424188,
+        5.325121943827895
+      ],
+      "minimum_continuous_root_cat_clearance_m": 0.38328281732235303,
+      "corrected_root_frames": 0,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.0,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    },
+    {
+      "id": "mixed_reactive_5",
+      "duration_s": 40.0,
+      "frames": 1201,
+      "arena_bounds": [
+        -2.0,
+        34.0,
+        -7.0,
+        7.0
+      ],
+      "obstacles": 10,
+      "minimum_pillar_gap_m": 2.948713315301016,
+      "pillar_pairs_narrower_than_root_diameter": 0,
+      "minimum_continuous_root_clearance_m": 0.0001098930756573413,
+      "minimum_continuous_cat_clearance_m": 0.1707161245458091,
+      "swept_root_penetrations": 0,
+      "swept_cat_penetrations": 0,
+      "minimum_root_wall_clearance_m": 0.9496336242475081,
+      "minimum_cat_wall_clearance_m": 3.7199999999999998,
+      "mean_speed_m_s": 1.032111623810337,
+      "max_speed_m_s": 2.5828315977907037,
+      "seconds_above_1_5_m_s": 9.533333333333333,
+      "root_travel_m": 41.28446495241348,
+      "actual_root_extent_m": [
+        26.525873349019093,
+        5.613670110702515
+      ],
+      "cat_travel_m": 38.3836907406554,
+      "actual_cat_extent_m": [
+        25.665291962424188,
+        5.325121943827895
+      ],
+      "minimum_continuous_root_cat_clearance_m": -0.1691726931631361,
+      "corrected_root_frames": 382,
+      "maximum_root_correction_from_unmodified_prediction_m": 0.4837610892931132,
+      "max_command_speed_m_s": 2.0,
+      "failures": []
+    }
+  ],
+  "errors": []
+}

@@ -1,6 +1,6 @@
 {
   "schema": "c08-vanilla/1",
-  "version": "v1-bd04a8519ed9",
+  "version": "v1-1b85a1812073",
   "selection": "15 practical staples; not a statistical usage ranking",
   "source": "Quaternius Universal Animation Library 1 Standard",
   "source_url": "https://quaternius.com/packs/universalanimationlibrary.html",
@@ -8,10 +8,10 @@
   "hashes": {
     "quaternius/c08-quaternius.glb": "555772692fc7536a70334f8adf728a8265a29c5b6999434fd9c9e402fb9eab28",
     "vanilla/c08-extra.glb": "f278a2486d376b1443bdf8814c088eb9dca2a472c07227e90b1a0c4cc95e0553",
-    "vanilla/vanilla.js": "c8a912c7dbe903210cf08afb9e79cda8f360167216d1c1fd4845f993d6188a0c",
+    "vanilla/vanilla.js": "f6b4a6dbb60b3a808cb616c2894733b393c7cb565adb3caf03a638b27a9a1101",
     "vanilla/motion-cleanup.js": "6b450d24b8f0b6e71c451455aa5bc3f0294189330c19f247bc4509ad85ed4465",
     "shared/review-store.js": "c6cc1d4f51bacc6b19026ec8a3aa70c443bf7d1a7fef55abc795d1076a0477a9",
-    "shared/review-panel.js": "f9ccc09ba63bfebda3cac439cfee09f77975767e1edbe11b209f04f3a8c88518",
+    "shared/review-panel.js": "e4bdff0f7b565afca6491db1b2ca5f9312ee8c089934dcfdea79a7fa47950a04",
     "shared/bake-take.js": "7b282dd7217f46c8e1098721f4fdb71147e29132ecac53629710e1a353ceefac"
   },
   "candidates": [

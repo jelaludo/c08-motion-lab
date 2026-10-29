@@ -3,7 +3,7 @@
   "id": "high_jump",
   "label": "High jump",
   "body": "c08",
-  "recipe_version": "v1-bd04a8519ed9",
+  "recipe_version": "v1-1b85a1812073",
   "fps": 60,
   "duration_s": 4.400000023841858,
   "frames": 265,
@@ -1375,7 +1375,7 @@
     "Baked visual correction is not contact IK or dynamic physics",
     "Review motion before production use"
   ],
-  "sha256": "3e0472ed4c7c9d7b51b9198519957f4857f63878b29360fe37ae27c55b26f2eb",
+  "sha256": "7fb58102131f15aff04a97162e5730206fccd9bbbf8e3359d94dbc4867681c62",
   "gltf_errors": 0,
   "gltf_warnings": 0
 }

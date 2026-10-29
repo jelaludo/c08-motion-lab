@@ -1,0 +1,40 @@
+{
+  "feature": "Reactive arena camera controls",
+  "status": "passed on reactive-round2-expanded-armor-clearance",
+  "modes": {
+    "actor": "Default: centers each body independently in paired views, preserving readable body size as it travels. Tracking uses XZ position and fixed height to avoid camera bob.",
+    "cat": "Centers K0-Tech for inspecting its authored movement and target path.",
+    "overview": "Fits arena bounds, root/cat paths, obstacle extents and avatar height through the actual native-to-display transform."
+  },
+  "views": [
+    "Paired views",
+    "Baseline only",
+    "Reactive only"
+  ],
+  "controls": [
+    "Orbit drag",
+    "Wheel zoom",
+    "Zoom slider and +/- buttons",
+    "Reset camera"
+  ],
+  "mobile": "Camera controls sit beside/below the stage in the sidebar, leaving actors unobscured on phones and desktop single-body views.",
+  "review_alignment": "Selecting a single-lane camera view selects that same take for review/export.",
+  "comparison_note": "Follow mode independently centers each subject. Use Whole arena to compare route shape and relative progress.",
+  "timeline": "Durations and FPS come from the episode; catalog call counts and full export ranges update dynamically.",
+  "collision_display": "Amber pillars mark external controller contact, red marks remaining root-proxy overlap. Whole-body collision freedom is not claimed. Cat/actor mutual avoidance is not implemented; closest native proxy gap is shown explicitly.",
+  "validation": [
+    "Independent actor following in both paired lanes",
+    "Whole-arena bounding corners fit viewport",
+    "Cat follow and zoom/reset",
+    "Review/export side stays aligned with single-lane camera focus",
+    "Mobile toolbar moves below stage without body obstruction",
+    "40-second pursuit seek, cat interpolation after35seconds, marked GLB export and end stopping"
+  ],
+  "cat_gait": {
+    "clip": "Gallop_Cycle",
+    "nominal_source_speed_m_s": 2.688888874318865,
+    "clock": "Cumulative native cat distance times canonical C08 display scale divided by source gait speed. Current body scale cancels because both fixture travel and cat geometry use it.",
+    "determinism": "Paired cats have identical phases; scrubbing reproduces the pose.",
+    "limitation": "Authored quadruped gait fixture; not neural quadruped generation, gait contact IK or full cat-body collision physics."
+  }
+}
