@@ -52,6 +52,7 @@ scene.frame_end=len(source)-1
 locks={'L':None,'R':None}
 last_quat={}
 max_reach_correction=0.
+reactive_lock_releases=0;max_reactive_ankle_reach_adjustment=0.
 floor_corrections=[]
 samples=[]
 # Sparse human targets can include inverted/non-foot support. Retain the raw source;
@@ -93,6 +94,11 @@ for frame in range(len(source)):
   p.z=H[ankle].z+(point(frame,src).z-refpos(src).z)*scale
   sole=H['SOCKET_SOLE_'+side]-H[ankle]
   supported=bool(max(contacts[frame,ci:ci+2])>=.65)
+  if metadata.get('reactive',{}).get('scenario')=='crouch':
+   # These squat-shuffle predictions retain unreliable high contact labels during
+   # root travel. Follow the predicted feet instead of pinning both soles until
+   # the short C08 legs collapse or stretch. This adaptation does not claim IK contact repair.
+   supported=False
   if supported:
    if locks[side] is None:locks[side]=(p+q@sole).copy()
    support=p+q@sole
@@ -123,6 +129,12 @@ for frame in range(len(source)):
   foot,footq=feet[side]
   a=(H[kneename]-H[hipname]).length;b=(H[anklename]-H[kneename]).length
   d=foot-hip;length=d.length
+  if metadata.get('reactive') and length>=a+b:
+   # A predicted planted-contact interval can outlast the retargeted leg's reach.
+   # Release that display-only lock and keep rigid segment lengths; raw G1 stays intact.
+   corrected=hip+d.normalized()*(a+b-.002)
+   max_reactive_ankle_reach_adjustment=max(max_reactive_ankle_reach_adjustment,(corrected-foot).length)
+   reactive_lock_releases+=1;locks[side]=None;foot=corrected;d=foot-hip;length=d.length
   if not abs(a-b)<length<a+b:raise ValueError(('unreachable leg',frame,side,length,a+b))
   direction=d.normalized()
   sh=point(frame,prefix+'_hip_pitch_link');sk=point(frame,prefix+'_knee_link');sa=point(frame,prefix+'_ankle_roll_link')
@@ -238,7 +250,7 @@ document['bufferViews']=[document['bufferViews'][i] for i in used]
 for d,k in slots:d[k]=indices[d[k]]
 encoded=json.dumps(document,separators=(',',':')).encode();encoded+=b' '*((-len(encoded))%4)
 glb_path.write_bytes(struct.pack('<III',0x46546c67,2,20+len(encoded)+len(rest))+struct.pack('<II',len(encoded),0x4e4f534a)+encoded+rest)
-report={'status':'experimental prototype; not game accepted','conditioning_provenance':metadata['purpose'],'source_asset_sha256':hashlib.sha256((ROOT/'assets/c08-worker/c08_d0_lod1.glb').read_bytes()).hexdigest(),'clip':CLIP_NAME,'frames':len(source),'fps':fps,'duration_s':(len(source)-1)/fps,'source_to_target_scale':scale,'initial_heading_removed_rad':initial_yaw,'max_pelvis_reach_correction_m':max_reach_correction,'max_foot_floor_lift_m':max(floor_corrections),'root_motion':'MOTION owns scaled horizontal travel and heading; PELVIS residual; do not add navigation travel','contact_policy':'>=0.65 maximum source heel/toe confidence; heuristic sole-center XY locking, broad-sole floor correction; unreviewed contacts','limitations':['G1 and C08 proportions/rigs differ; this is measured adaptation, not reference-rig equivalence','Fingers/toes/head remain inherited rest controls','No self-collision or physical balance guarantee'],'sample_positions_blender':samples}
+report={'status':'experimental prototype; not game accepted','conditioning_provenance':metadata['purpose'],'source_asset_sha256':hashlib.sha256((ROOT/'assets/c08-worker/c08_d0_lod1.glb').read_bytes()).hexdigest(),'clip':CLIP_NAME,'frames':len(source),'fps':fps,'duration_s':(len(source)-1)/fps,'source_to_target_scale':scale,'initial_heading_removed_rad':initial_yaw,'max_pelvis_reach_correction_m':max_reach_correction,'reactive_foot_lock_releases':reactive_lock_releases,'max_reactive_ankle_reach_adjustment_m':max_reactive_ankle_reach_adjustment,'max_foot_floor_lift_m':max(floor_corrections),'root_motion':'MOTION owns scaled horizontal travel and heading; PELVIS residual; do not add navigation travel','contact_policy':('Predicted foot positions with sole XY locking disabled for reactive squat-shuffles; source contact labels retained unreviewed; broad-sole floor correction.' if metadata.get('reactive',{}).get('scenario')=='crouch' else '>=0.65 maximum source heel/toe confidence; heuristic sole-center XY locking, broad-sole floor correction; unreviewed contacts'),'limitations':['G1 and C08 proportions/rigs differ; this is measured adaptation, not reference-rig equivalence','Fingers/toes/head remain inherited rest controls','No self-collision or physical balance guarantee'],'sample_positions_blender':samples}
 report.update(export_bake_hz=120 if whole_body_ground else 30,max_whole_body_ground_lift_m=max(body_ground_offsets,default=0.),max_dense_ground_lift_m=max(dense_ground_offsets,default=0.),whole_avatar_ground_policy='Complete-avatar lift only, including non-foot armor support; no balance/contact solve' if whole_body_ground else 'Original standing foot adapter')
 (OUT/'retarget-report.json').write_text(json.dumps(report,indent=2))
 print('RETARGET_COMPLETE',len(source),'frames','scale',scale,'pelvis correction',max_reach_correction,'foot lift',max(floor_corrections),flush=True)

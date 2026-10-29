@@ -1,0 +1,113 @@
+{
+  "body": "brek",
+  "status": "failed",
+  "cases": 4,
+  "checks": [
+    "All displayed body frames; C08 authored cupped hands / B-REK native hand rig",
+    "Rigid skin bone-local AABBs conservatively bound every vertex",
+    "Near-obstacle exact triangle vs height-clipped cylinder / native oriented box SAT",
+    "No reliance on generator collision routines"
+  ],
+  "tolerance_m": 0.001,
+  "sampling_hz": 30,
+  "limitation": "Sampled articulated geometry validation, not continuous swept-triangle dynamics. Native root/cat continuous sweeps are audited separately.",
+  "results": [
+    {
+      "id": "jump_baseline_1",
+      "body": "brek",
+      "sampling_hz": 30,
+      "frames": 961,
+      "conservative_bone_aabb_native_radius_max_m": 0.6348032322385115,
+      "native_navigation_radius_m": 1.05,
+      "frames_requiring_exact_triangle_check": 0,
+      "triangle_obstacle_intersections": 0,
+      "triangle_box_intersections": 0,
+      "triangle_cylinder_intersections": 0,
+      "max_penetration_m": 0,
+      "examples": []
+    },
+    {
+      "id": "jump_reactive_1",
+      "body": "brek",
+      "sampling_hz": 30,
+      "frames": 961,
+      "conservative_bone_aabb_native_radius_max_m": 0.6348032322385115,
+      "native_navigation_radius_m": 1.05,
+      "frames_requiring_exact_triangle_check": 54,
+      "triangle_obstacle_intersections": 0,
+      "triangle_box_intersections": 0,
+      "triangle_cylinder_intersections": 0,
+      "max_penetration_m": 0,
+      "examples": []
+    },
+    {
+      "id": "crouch_baseline_1",
+      "body": "brek",
+      "sampling_hz": 30,
+      "frames": 961,
+      "conservative_bone_aabb_native_radius_max_m": 0.6348032322385115,
+      "native_navigation_radius_m": 1.05,
+      "frames_requiring_exact_triangle_check": 0,
+      "triangle_obstacle_intersections": 0,
+      "triangle_box_intersections": 0,
+      "triangle_cylinder_intersections": 0,
+      "max_penetration_m": 0,
+      "examples": []
+    },
+    {
+      "id": "crouch_reactive_1",
+      "body": "brek",
+      "sampling_hz": 30,
+      "frames": 961,
+      "conservative_bone_aabb_native_radius_max_m": 0.6371545063223244,
+      "native_navigation_radius_m": 1.05,
+      "frames_requiring_exact_triangle_check": 153,
+      "triangle_obstacle_intersections": 776,
+      "triangle_box_intersections": 776,
+      "triangle_cylinder_intersections": 0,
+      "max_penetration_m": 0,
+      "examples": [
+        {
+          "frame": 252,
+          "time_s": 8.4,
+          "mesh": "BREK43_GEOMETRY_3",
+          "triangle": 508,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        },
+        {
+          "frame": 252,
+          "time_s": 8.4,
+          "mesh": "BREK43_GEOMETRY_3",
+          "triangle": 509,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        },
+        {
+          "frame": 252,
+          "time_s": 8.4,
+          "mesh": "BREK43_GEOMETRY_3",
+          "triangle": 510,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        },
+        {
+          "frame": 252,
+          "time_s": 8.4,
+          "mesh": "BREK43_GEOMETRY_3",
+          "triangle": 511,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        },
+        {
+          "frame": 252,
+          "time_s": 8.4,
+          "mesh": "BREK43_GEOMETRY_3",
+          "triangle": 512,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        }
+      ]
+    }
+  ]
+}

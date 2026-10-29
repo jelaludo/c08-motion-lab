@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "checks": [
+    "six catalog-derived scenarios",
+    "ten seed options",
+    "next pair from jump seed10 to crouch seed1",
+    "gzip episode/preview loaded in actual viewer",
+    "nativeXYZ hurdle/bar geometry and baseZ map correctly",
+    "BREK-specific bar underside in renderer and export metadata",
+    "older Keep warns and pins reviewed-version downloads",
+    "manifest separates current and reviewed versions",
+    "reconfirm keeps current version without overwriting history"
+  ],
+  "geometry": [
+    {
+      "kind": "hurdle",
+      "base_z": 0,
+      "error": 1.3470906010986163e-8
+    },
+    {
+      "kind": "overhead",
+      "base_z": 1.12,
+      "error": 1.4405112128542161e-8
+    },
+    {
+      "kind": "hurdle",
+      "base_z": 0,
+      "error": 1.3470906010986163e-8
+    },
+    {
+      "kind": "overhead",
+      "base_z": 1.12,
+      "error": 1.4405112128542161e-8
+    }
+  ],
+  "errors": []
+}

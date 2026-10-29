@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "fetch-fixture.json",
+    "fetch-fixture.json.gz",
+    "fetch-fixture-plain.json.gz"
+  ],
+  "explicitError": "This browser cannot decompress the recorded take data, and no uncompressed copy is available. Open the lab in a current Chrome, Edge, Firefox or Safari browser.",
+  "pi": 3.141592653589793
+}

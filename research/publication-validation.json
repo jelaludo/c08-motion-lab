@@ -20,10 +20,25 @@
   "vanilla_candidates": 15,
   "vanilla_source_hashes_verified": true,
   "vanilla_review_version": "v1-1b85a1812073",
-  "reactive_neural_takes": 40,
-  "reactive_neural_calls": 2880,
+  "reactive_neural_takes": 120,
+  "reactive_scenarios": [
+    "crouch",
+    "jump",
+    "mixed",
+    "pursuit",
+    "slalom",
+    "speedzones"
+  ],
+  "reactive_seeds_per_scenario": 10,
+  "reactive_neural_calls": 7790,
   "reactive_paired_environments_verified": true,
+  "reactive_exact_played_context_chaining": true,
+  "reactive_native_height_quaternion_hinges_unchanged": true,
+  "reactive_displayed_take_body_combinations": 240,
+  "reactive_mesh_samples": 624240,
+  "reactive_final_artifact_hashes_verified": true,
   "brek43_original_rig_hash_verified": true,
+  "pages_artifact_mib": 807.82,
   "vanilla_game_bakes": 30,
   "vanilla_bake_version_hashes_verified": true
 }

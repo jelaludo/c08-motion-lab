@@ -1,6 +1,10 @@
 from pathlib import Path
-import json,hashlib
+import json,hashlib,gzip
 ROOT=Path(__file__).resolve().parents[1]/'public/c08-motion-lab'
+def read_json(path):
+ path=Path(path)
+ if not path.exists() and path.suffix=='.json':path=path.with_suffix('.json.gz')
+ return json.loads(gzip.decompress(path.read_bytes()).decode('utf8') if path.suffix=='.gz' else path.read_text(encoding='utf8'))
 catalog=json.loads((ROOT/'docs/motions/catalog.json').read_text())
 assert len(catalog['tests'])>=36
 video_count=0
@@ -18,8 +22,8 @@ for path in ROOT.rglob('*'):
  if not path.is_file() or '.git' in path.parts:continue
  assert path.suffix.lower() not in ('.mp4','.pt','.pth','.ckpt','.onnx','.pkl'),path
  assert path.stat().st_size<50*1024*1024,path
- if path.suffix.lower() in ('.json','.md','.html','.js','.py','.mjs','.yml'):
-  text=path.read_text(encoding='utf-8')
+ if path.suffix.lower() in ('.json','.md','.html','.js','.py','.mjs','.yml') or path.name.endswith('.json.gz'):
+  text=gzip.decompress(path.read_bytes()).decode('utf8') if path.name.endswith('.json.gz') else path.read_text(encoding='utf-8')
   for marker in ('ghp_','github_pat_','gho_','hf_'):
    # Match token-like strings, not function names such as hf_download.
    import re
@@ -82,31 +86,71 @@ report.update(vanilla_candidates=15,vanilla_source_hashes_verified=True,vanilla_
 print('Vanilla: 15 CC0-derived versioned candidates; source hashes and prototype warnings verified.')
 
 reactive_root=ROOT/'docs/reactive'
-reactive=json.loads((reactive_root/'catalog.json').read_text(encoding='utf8'))
-assert len(reactive['cases'])==40
-assert {c['scenario'] for c in reactive['cases']}=={'slalom','speedzones','pursuit','mixed'}
+reactive=read_json(reactive_root/'catalog.json')
+expected_scenarios={'slalom','speedzones','pursuit','mixed','jump','crouch'}
+assert len(reactive['cases'])==120
+assert {c['scenario'] for c in reactive['cases']}==expected_scenarios
+assert {c['seed'] for c in reactive['cases']}==set(range(1,11))
+assert len({(c['scenario'],c['seed'],c['condition']) for c in reactive['cases']})==120
 episodes={}
 for case in reactive['cases']:
- episode=json.loads((reactive_root/case['episode']).read_text(encoding='utf8'))
- validation=json.loads((reactive_root/case['validation']).read_text(encoding='utf8'))
- assert case['metrics']['neural_calls']==round(episode['duration_s']*2) and episode['sample_rate']==30
+ episode=read_json(reactive_root/case['episode'])
+ validation=read_json(reactive_root/case['validation'])
+ assert case['metrics']['neural_calls']>0 and episode['sample_rate']==30
  assert episode['duration_s']>=24 and (case['scenario'] not in ('pursuit','mixed') or episode['duration_s']>=32)
- assert len(episode['environment']['obstacles'])>=8 and episode['environment']['bounds'][1]-episode['environment']['bounds'][0]>=30
+ assert len(episode['environment']['obstacles'])>=(1 if case['scenario']=='crouch' else 2 if case['scenario']=='jump' else 8)
+ assert episode['environment']['bounds'][1]-episode['environment']['bounds'][0]>=30
+ if case['scenario'] in ('jump','crouch'):
+  expected_kind='hurdle' if case['scenario']=='jump' else 'overhead'
+  assert all(ob.get('shape')=='box' and ob.get('kind')==expected_kind for ob in episode['environment']['obstacles'])
+  assert all(ob['width']>0 and ob['depth']>0 and ob['height']>0 and ob.get('base_z',0)>=0 for ob in episode['environment']['obstacles'])
  assert len(episode['predicted_root_path'])==len(episode['played_root_path'])
  assert case['metrics']['root_proxy_collision_frames']==0
  assert validation['gltf_errors']==0 and validation['gltf_warnings']==0
  assert validation['skinned_geometry_min_floor_y_m']>=-.003
- for name in ['prediction-trace.json','native-g1-motion.npz','unmodified-predictions.npz','root-trajectory.csv']:
-  assert (reactive_root/'takes'/case['id']/name).is_file()
+ for name in ['prediction-trace.json','root-trajectory.csv']:
+  artifact=reactive_root/'takes'/case['id']/name
+  assert artifact.is_file() or (artifact.suffix=='.json' and artifact.with_suffix('.json.gz').is_file()),artifact
+ for field,filename in [('native_local','native-g1-motion.npz'),('predictions_local','unmodified-predictions.npz')]:
+  artifact=(reactive_root/case[field]).resolve() if case.get(field) else reactive_root/'takes'/case['id']/filename
+  assert artifact.is_file(),artifact
+  assert artifact.is_relative_to(ROOT.resolve()),artifact
+ trace=read_json(reactive_root/'takes'/case['id']/'prediction-trace.json')
+ assert trace['metadata']['provenance_type']=='original'
+ segments=trace['metadata']['segments']
+ assert len(segments)==case['metrics']['neural_calls']
+ assert sum(s['frames'] for s in segments)==round(episode['duration_s']*episode['sample_rate'])
+ assert all(len(s['context'])==4 and 1<=len(s['target'])<=4 for s in segments)
+ for previous,current in zip(segments,segments[1:]):
+  assert previous.get('last_four_played',previous['last_four_generated'])==current['context']
  episodes[(case['scenario'],case['seed'],case['condition'])]=episode
-for scenario in ['slalom','speedzones','pursuit','mixed']:
- for seed in range(1,6):
+for scenario in expected_scenarios:
+ for seed in range(1,11):
   assert episodes[(scenario,seed,'baseline')]['environment']==episodes[(scenario,seed,'reactive')]['environment']
 brek=json.loads((ROOT/'docs/assets/b-rek43-provenance.json').read_text(encoding='utf8'))
 assert hashlib.sha256((ROOT/'docs/assets/b-rek43.glb').read_bytes()).hexdigest()==brek['source_sha256']==brek['output_sha256']
-report.update(reactive_neural_takes=40,reactive_neural_calls=sum(c['metrics']['neural_calls'] for c in reactive['cases']),reactive_paired_environments_verified=True,brek43_original_rig_hash_verified=True)
+mesh=read_json(ROOT/'research/reactive-round3-fullskin-validation.json')
+assert mesh['status']=='passed' and mesh['catalog_version']==reactive['version']
+assert mesh['take_body_combinations']==240
+for body in ['c08','brek']:
+ assert mesh['bodies'][body]['cases']==120 and mesh['bodies'][body]['triangle_obstacle_intersections']==0
+ assert {row['id'] for row in mesh['results'][body]}=={c['id'] for c in reactive['cases']}
+ for row in mesh['results'][body]:
+  case=next(c for c in reactive['cases'] if c['id']==row['id']);artifact=reactive_root/case['glb' if body=='c08' else 'preview'];data=artifact.read_bytes()
+  if artifact.suffix=='.gz':data=gzip.decompress(data)
+  assert hashlib.sha256(data).hexdigest()==row['artifact_sha256'],row['id']
+physics=read_json(ROOT/'research/reactive-round3-public-physics.json')
+assert physics['status']=='passed' and physics['cases']==120 and physics['catalog_version']==reactive['version']
+for row in physics['results']:
+ case=next(c for c in reactive['cases'] if c['id']==row['id'])
+ assert row['neural_root_height_quaternion_and_joints_unchanged']
+ assert row['native_archive_sha256']==hashlib.sha256((reactive_root/case['native_local']).read_bytes()).hexdigest()
+ assert row['selected_predictions_archive_sha256']==hashlib.sha256((reactive_root/case['predictions_local']).read_bytes()).hexdigest()
+docs_bytes=sum(p.stat().st_size for p in (ROOT/'docs').rglob('*') if p.is_file())
+assert docs_bytes<900*1024*1024,f'Pages size budget exceeded: {docs_bytes/1024**2:.1f}MiB'
+report.update(reactive_neural_takes=120,reactive_scenarios=sorted(expected_scenarios),reactive_seeds_per_scenario=10,reactive_neural_calls=sum(c['metrics']['neural_calls'] for c in reactive['cases']),reactive_paired_environments_verified=True,reactive_exact_played_context_chaining=True,reactive_native_height_quaternion_hinges_unchanged=True,reactive_displayed_take_body_combinations=240,reactive_mesh_samples=sum(b['frames']for b in mesh['bodies'].values()),reactive_final_artifact_hashes_verified=True,brek43_original_rig_hash_verified=True,pages_artifact_mib=round(docs_bytes/1024**2,2))
 (ROOT/'research/publication-validation.json').write_text(json.dumps(report,indent=2),encoding='utf8')
-print('Reactive: 40 expanded real neural rollouts / '+str(sum(c['metrics']['neural_calls'] for c in reactive['cases']))+' calls; paired environments, collision response, derived exports and B-REK43 hash verified.')
+print('Reactive: 120 expanded real neural rollouts / '+str(sum(c['metrics']['neural_calls'] for c in reactive['cases']))+' calls; paired environments, exact played contexts, collision response, derived exports and B-REK43 hash verified.')
 
 bakes=list((ROOT/'docs/vanilla/takes').glob('*.glb'))
 assert len(bakes)==30

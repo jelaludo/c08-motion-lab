@@ -1,0 +1,162 @@
+{
+  "status": "completed",
+  "round": 2,
+  "version": "reactive-round2-expanded-armor-clearance",
+  "takes": 40,
+  "paired_environments": 20,
+  "neural_calls": 2880,
+  "duration_s_by_scenario": {
+    "slalom": 24,
+    "speedzones": 40,
+    "pursuit": 40,
+    "mixed": 40
+  },
+  "native_g1_arena_dimensions_m": [
+    36,
+    14
+  ],
+  "obstacles_per_environment": 10,
+  "native_collision_radius_m": 1.05,
+  "collision": "External continuous swept-circle obstacle/wall stop and slide, applied to native G1 before subsequent inference context. Full neural futures retained separately.",
+  "armor_clearance_calibration": {
+    "earlier_native_root_radius_m": 0.65,
+    "previous_negative_control_max_triangle_penetration_m": 0.23859390161068988,
+    "changes": [
+      "Navigation radius raised to 1.05 m",
+      "Main pillar stagger widened to +/-1.25m; speed-course pillars +/-3.3m",
+      "Outer decorative pillars moved to +/-5.5m",
+      "Safe cat start at [2,2.5]; pursuit standoff increased"
+    ],
+    "note": "Calibration diagnostic, not an isolated radius-only ablation.",
+    "c08_articulated_frames_checked_120hz": 172840,
+    "c08_triangle_cylinder_penetrations_above_1mm": 0,
+    "brek_all30hz_conservative_native_body_radius_max_m": 0.743940856864466
+  },
+  "native_physics": {
+    "continuous_root_penetrations": 0,
+    "continuous_cat_obstacle_penetrations": 0,
+    "maximum_actual_native_speed_m_s": 2.7553210188462605,
+    "minimum_obstacle_surface_gap_m": 0.9623162606724484
+  },
+  "summaries": [
+    {
+      "scenario": "slalom",
+      "condition": "baseline",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_attempted_contact_frames": 304.4,
+      "mean_controller_correction_total_m": 3.728983823017768,
+      "mean_speed_m_s": 0.9901400566101074,
+      "mean_jerk_p95_m_s3": 127.92753295898437,
+      "mean_goal_distance_m": 7.526305901742001
+    },
+    {
+      "scenario": "slalom",
+      "condition": "reactive",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_attempted_contact_frames": 0.0,
+      "mean_controller_correction_total_m": 0.0,
+      "mean_speed_m_s": 1.2034633159637451,
+      "mean_jerk_p95_m_s3": 123.82002716064453,
+      "mean_goal_distance_m": 3.681006431507724
+    },
+    {
+      "scenario": "speedzones",
+      "condition": "baseline",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_attempted_contact_frames": 0.0,
+      "mean_controller_correction_total_m": 0.0,
+      "mean_speed_m_s": 0.7706310153007507,
+      "mean_jerk_p95_m_s3": 121.69423980712891,
+      "mean_goal_distance_m": 0.002383506875275638
+    },
+    {
+      "scenario": "speedzones",
+      "condition": "reactive",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_attempted_contact_frames": 0.0,
+      "mean_controller_correction_total_m": 0.0,
+      "mean_speed_m_s": 0.7831060886383057,
+      "mean_jerk_p95_m_s3": 117.19940338134765,
+      "mean_goal_distance_m": 0.013126350317626333
+    },
+    {
+      "scenario": "pursuit",
+      "condition": "baseline",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_attempted_contact_frames": 441.4,
+      "mean_controller_correction_total_m": 8.261566407320705,
+      "mean_speed_m_s": 0.7652201533317566,
+      "mean_jerk_p95_m_s3": 115.51957244873047,
+      "mean_goal_distance_m": 3.8622122664242204
+    },
+    {
+      "scenario": "pursuit",
+      "condition": "reactive",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_attempted_contact_frames": 308.8,
+      "mean_controller_correction_total_m": 4.306745371778287,
+      "mean_speed_m_s": 0.9851766467094422,
+      "mean_jerk_p95_m_s3": 158.5344680786133,
+      "mean_goal_distance_m": 3.5118001824136775
+    },
+    {
+      "scenario": "mixed",
+      "condition": "baseline",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_attempted_contact_frames": 0.0,
+      "mean_controller_correction_total_m": 0.0,
+      "mean_speed_m_s": 0.044824489206075666,
+      "mean_jerk_p95_m_s3": 6.642407989501953,
+      "mean_goal_distance_m": 27.076298897482992
+    },
+    {
+      "scenario": "mixed",
+      "condition": "reactive",
+      "runs": 5,
+      "mean_collision_frames": 0.0,
+      "mean_attempted_contact_frames": 315.4,
+      "mean_controller_correction_total_m": 5.034734721472935,
+      "mean_speed_m_s": 0.9150666832923889,
+      "mean_jerk_p95_m_s3": 144.4520263671875,
+      "mean_goal_distance_m": 4.631586925039726
+    }
+  ],
+  "exports": [
+    {
+      "body": "c08",
+      "bytes": 1353648,
+      "gltf_errors": 0,
+      "gltf_warnings": 0,
+      "maxPositionError": 2.3962085702093586e-07,
+      "maxQuaternionError": 0.000800825364374305,
+      "duration": 2,
+      "clips": 1
+    },
+    {
+      "body": "brek",
+      "bytes": 1623668,
+      "gltf_errors": 0,
+      "gltf_warnings": 0,
+      "maxPositionError": 5.078148761311651e-07,
+      "maxQuaternionError": 0.00044903166851098275,
+      "duration": 2,
+      "clips": 1
+    }
+  ],
+  "seed_interpretation": "Five matched environment/initial-state seeds; deterministic neural inference, not model randomness.",
+  "limits": [
+    "Collision is an external kinematic root controller, not learned environment awareness or dynamics.",
+    "C08 armor checked at120Hz; this is sampled articulated geometry, not continuous swept-triangle collision.",
+    "Actor/cat mutual physical avoidance is not solved; closest proxy separation is reported explicitly.",
+    "B-REK and environment use a proportional leg-length adaptation; metrics remain native G1 metres.",
+    "A* planning can hesitate or hit blocked moving goals; pursuit reactive jerk is higher than baseline in this setup.",
+    "Duck/vault interactions remain future work."
+  ]
+}

@@ -7,7 +7,7 @@
     "limbs animate as distance advances",
     "scrubbed phases reproduce exactly"
   ],
-  "version": "reactive-round2-expanded-armor-clearance",
+  "version": "reactive-round3-actions-fast-run",
   "gait": "Gallop_Cycle",
   "nominalSpeed": 2.688888874318865,
   "samples": [

@@ -1,0 +1,47 @@
+{
+  "coordinates": "Native G1 metres, Z up; displayed C08/BREK use their own leg-length scale",
+  "controller": "External XY-only swept navigation. Neural Z, quaternions and hinges are never edited.",
+  "c08_native_head_margin_m": 0.86,
+  "c08_native_sole_margin_m": 0.17,
+  "sources": {
+    "own_jump_over": {
+      "frames": 136,
+      "c08_scale": 1.1891157385510651,
+      "c08_world_top_min_m": 1.9330771386658565,
+      "c08_world_top_max_m": 3.007028528662775,
+      "c08_native_head_offset_range_m": [
+        0.7084576190920786,
+        0.8508174522063405
+      ],
+      "c08_native_sole_offset_range_m": [
+        -0.15779548165346968,
+        -0.024243736055085084
+      ],
+      "brek_scale": 1.922404075925682,
+      "brek_source_measurements": "brek-behavior-source-heights.json"
+    },
+    "own_deep_crouch": {
+      "frames": 144,
+      "c08_scale": 1.1891157385510651,
+      "c08_world_top_min_m": 1.8237600403331937,
+      "c08_world_top_max_m": 2.2914126127015466,
+      "c08_native_head_offset_range_m": [
+        0.812794081661885,
+        0.8457175523385962
+      ],
+      "c08_native_sole_offset_range_m": [
+        -0.03304586703499664,
+        -0.020912180318755712
+      ],
+      "brek_scale": 1.922404075925682,
+      "brek_source_measurements": "brek-behavior-source-heights.json"
+    }
+  },
+  "proposed_obstacles": {
+    "hurdle_top_native_m": 0.18,
+    "overhead_underside_native_m": 1.65,
+    "overhead_brek_display_underside_native_m": 1.15,
+    "note": "Final passing deep microstep pilot uses these undersides. Earlier failed moving-crouch pilot used 1.85 / 1.35."
+  },
+  "limitation": "Bounds calibrated on original source motion; new neural rollouts require independent full-mesh crossing validation. Overhead geometry is adapted to each body height; native G1 controller uses the C08 envelope."
+}

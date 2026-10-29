@@ -7,3 +7,5 @@
 .camera-note{flex-basis:100%;text-align:center;font-size:11px;color:#acc3c2}@media(max-width:850px){.camera-note{text-align:left}}
 
 #camera-controls{position:static;margin:16px 0 22px;justify-content:flex-start;padding:10px}#camera-controls .camera-zoom{display:flex}.camera-note{text-align:left}
+
+.version-warning{padding:9px;border-left:3px solid #e7bd66;color:#f0d9a6;background:#463d2b;}

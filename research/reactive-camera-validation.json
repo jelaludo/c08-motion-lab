@@ -10,7 +10,7 @@
     "reset",
     "mobile no overflow"
   ],
-  "version": "reactive-round2-expanded-armor-clearance",
+  "version": "reactive-round3-actions-fast-run",
   "results": [
     {
       "condition": "baseline",
@@ -27,12 +27,12 @@
     {
       "condition": "baseline",
       "time": 0,
-      "overviewMaxNDC": 0.6272887368078383
+      "overviewMaxNDC": 0.6273290271113966
     },
     {
       "condition": "reactive",
       "time": 0,
-      "overviewMaxNDC": 0.6272887368078383
+      "overviewMaxNDC": 0.6273290271113965
     },
     {
       "condition": "baseline",
@@ -49,12 +49,12 @@
     {
       "condition": "baseline",
       "time": 8,
-      "overviewMaxNDC": 0.6272887368078383
+      "overviewMaxNDC": 0.6273290271113966
     },
     {
       "condition": "reactive",
       "time": 8,
-      "overviewMaxNDC": 0.6272887368078383
+      "overviewMaxNDC": 0.6273290271113965
     }
   ],
   "zoomBefore": 7.611623653638713,

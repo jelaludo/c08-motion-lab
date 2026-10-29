@@ -1,0 +1,117 @@
+{
+  "body": "c08",
+  "status": "failed",
+  "cases": 2,
+  "checks": [
+    "All displayed body frames; C08 authored cupped hands / B-REK native hand rig",
+    "Rigid skin bone-local AABBs conservatively bound every vertex",
+    "Near-obstacle exact triangle vs height-clipped cylinder / native oriented box SAT",
+    "No reliance on generator collision routines"
+  ],
+  "tolerance_m": 0.001,
+  "sampling_hz": 120,
+  "limitation": "Sampled articulated geometry validation, not continuous swept-triangle dynamics. Native root/cat continuous sweeps are audited separately.",
+  "results": [
+    {
+      "id": "crouch_baseline_1",
+      "body": "c08",
+      "interaction_clearance": [
+        {
+          "kind": "overhead",
+          "center": [
+            5,
+            0
+          ],
+          "underside_native_m": 1.65,
+          "top_native_m": 1.8499999999999999,
+          "minimum_actual_mesh_vertical_clearance_native_m": null,
+          "mesh_over_footprint_frames": 0,
+          "first_footprint_time_s": null,
+          "last_footprint_time_s": null,
+          "root_crossed": false
+        }
+      ],
+      "sampling_hz": 120,
+      "frames": 3841,
+      "conservative_bone_aabb_native_radius_max_m": 1.0128464320224517,
+      "native_navigation_radius_m": 1.05,
+      "frames_requiring_exact_triangle_check": 0,
+      "triangle_obstacle_intersections": 0,
+      "triangle_box_intersections": 0,
+      "triangle_cylinder_intersections": 0,
+      "max_penetration_m": 0,
+      "examples": []
+    },
+    {
+      "id": "crouch_reactive_1",
+      "body": "c08",
+      "interaction_clearance": [
+        {
+          "kind": "overhead",
+          "center": [
+            5,
+            0
+          ],
+          "underside_native_m": 1.65,
+          "top_native_m": 1.8499999999999999,
+          "minimum_actual_mesh_vertical_clearance_native_m": -0.07338525166692134,
+          "mesh_over_footprint_frames": 1628,
+          "first_footprint_time_s": 11.025,
+          "last_footprint_time_s": 24.933333333333334,
+          "root_crossed": true
+        }
+      ],
+      "sampling_hz": 120,
+      "frames": 3841,
+      "conservative_bone_aabb_native_radius_max_m": 1.0296889180454531,
+      "native_navigation_radius_m": 1.05,
+      "frames_requiring_exact_triangle_check": 1938,
+      "triangle_obstacle_intersections": 246,
+      "triangle_box_intersections": 246,
+      "triangle_cylinder_intersections": 0,
+      "max_penetration_m": 0,
+      "examples": [
+        {
+          "frame": 2090,
+          "time_s": 17.416666666666668,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 1047,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        },
+        {
+          "frame": 2090,
+          "time_s": 17.416666666666668,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 1048,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        },
+        {
+          "frame": 2090,
+          "time_s": 17.416666666666668,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 1049,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        },
+        {
+          "frame": 2090,
+          "time_s": 17.416666666666668,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 1050,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        },
+        {
+          "frame": 2090,
+          "time_s": 17.416666666666668,
+          "mesh": "C08_GEOMETRY",
+          "triangle": 1051,
+          "obstacle_kind": "overhead",
+          "intersection": "triangle_box_sat"
+        }
+      ]
+    }
+  ]
+}

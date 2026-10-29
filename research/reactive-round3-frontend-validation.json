@@ -1,0 +1,930 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/reactive/",
+  "scope": "Actual round3 assets; frontend timing, body-specific obstacle mapping and displayed-pose export. Motion/geometry collision quality is independently audited elsewhere.",
+  "version": "reactive-round3-actions-fast-run",
+  "case_count": 120,
+  "results": [
+    {
+      "body": "c08",
+      "scenario": "slalom",
+      "seed": 1,
+      "duration": 24,
+      "seek": 23.75,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 705,
+          "commands": 48,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 705,
+          "commands": 48,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 1.34 m/s recorded | reactive: 0.92 m/s recorded",
+      "export": {
+        "bytes": 1303376,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "slalom",
+      "seed": 10,
+      "duration": 24,
+      "seek": 23.75,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 705,
+          "commands": 48,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 705,
+          "commands": 48,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 1.17 m/s recorded | reactive: 1.22 m/s recorded",
+      "export": {
+        "bytes": 1303324,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "speedzones",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.01 m/s recorded | reactive: 0.02 m/s recorded",
+      "export": {
+        "bytes": 1303244,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "speedzones",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.02 m/s recorded | reactive: 0.04 m/s recorded",
+      "export": {
+        "bytes": 1303232,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "pursuit",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 1.71 m/s recorded | reactive: 0.92 m/s recorded",
+      "export": {
+        "bytes": 1303276,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "pursuit",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.77 m/s recorded | reactive: 0.16 m/s recorded",
+      "export": {
+        "bytes": 1303296,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "mixed",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.00 m/s recorded | reactive: 1.46 m/s recorded",
+      "export": {
+        "bytes": 1303252,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "mixed",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.00 m/s recorded | reactive: 3.39 m/s recorded",
+      "export": {
+        "bytes": 1303304,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "jump",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 48,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.5434195857943288,
+          "maxY": 0.4526306400013415,
+          "vertices": 23475
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.5434195857943288,
+          "maxY": 0.4526306400013415,
+          "vertices": 23475
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.5645892935631468,
+          "maxY": 0.43882796253049394,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 6.3,
+          "maxX": 0.83000692927654,
+          "maxY": 0.3900004781893869,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 6.7,
+          "maxX": 0.7133018949871878,
+          "maxY": 0.3906761626617279,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 7.1000000000000005,
+          "maxX": 0.7130996131384076,
+          "maxY": 0.45234116222835624,
+          "vertices": 23475
+        }
+      ],
+      "liveText": "baseline: 0.00 m/s recorded | reactive: 0.11 m/s recorded",
+      "export": {
+        "bytes": 1302768,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "jump",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 48,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.5434197102321456,
+          "maxY": 0.4526305939272299,
+          "vertices": 23475
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.5434197102321456,
+          "maxY": 0.4526305939272299,
+          "vertices": 23475
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.5645902685352987,
+          "maxY": 0.438827795501752,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 17,
+          "maxX": 0.8337812838943447,
+          "maxY": 0.3890530017151691,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 17.4,
+          "maxX": 0.7303117793921637,
+          "maxY": 0.39096985239543514,
+          "vertices": 23475
+        },
+        {
+          "condition": "reactive",
+          "time": 17.799999999999997,
+          "maxX": 0.7284553553935608,
+          "maxY": 0.4508396919553262,
+          "vertices": 23475
+        }
+      ],
+      "liveText": "baseline: 0.00 m/s recorded | reactive: 0.03 m/s recorded",
+      "export": {
+        "bytes": 1302752,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "crouch",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "action": "crouch",
+          "commands": 27,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded | reactive: 0.09 m/s recorded / crouch stage 2",
+      "export": {
+        "bytes": 1302664,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "c08",
+      "scenario": "crouch",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "action": "crouch",
+          "commands": 27,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded | reactive: 0.09 m/s recorded / crouch stage 2",
+      "export": {
+        "bytes": 1302664,
+        "errors": 0,
+        "warnings": 0,
+        "body": "c08"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "slalom",
+      "seed": 1,
+      "duration": 24,
+      "seek": 23.75,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 705,
+          "commands": 48,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 705,
+          "commands": 48,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 1.34 m/s recorded | reactive: 0.92 m/s recorded",
+      "export": {
+        "bytes": 1565832,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "slalom",
+      "seed": 10,
+      "duration": 24,
+      "seek": 23.75,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 705,
+          "commands": 48,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 705,
+          "commands": 48,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 1.17 m/s recorded | reactive: 1.22 m/s recorded",
+      "export": {
+        "bytes": 1565748,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "speedzones",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.01 m/s recorded | reactive: 0.02 m/s recorded",
+      "export": {
+        "bytes": 1565732,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "speedzones",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.02 m/s recorded | reactive: 0.04 m/s recorded",
+      "export": {
+        "bytes": 1565808,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "pursuit",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 1.71 m/s recorded | reactive: 0.92 m/s recorded",
+      "export": {
+        "bytes": 1565792,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "pursuit",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.77 m/s recorded | reactive: 0.16 m/s recorded",
+      "export": {
+        "bytes": 1565852,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "mixed",
+      "seed": 1,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.00 m/s recorded | reactive: 1.46 m/s recorded",
+      "export": {
+        "bytes": 1565700,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "mixed",
+      "seed": 10,
+      "duration": 40,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 80,
+          "boxCount": 0
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.00 m/s recorded | reactive: 3.39 m/s recorded",
+      "export": {
+        "bytes": 1565676,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "jump",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 48,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.30712406199473624,
+          "maxY": 0.41814146435552946,
+          "vertices": 28060
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.30712406199473624,
+          "maxY": 0.41814146435552946,
+          "vertices": 28060
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.33153153295566234,
+          "maxY": 0.4135630763309039,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 6.3,
+          "maxX": 0.4804287874891197,
+          "maxY": 0.404996493280592,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 6.7,
+          "maxX": 0.4185399048799048,
+          "maxY": 0.39636619397496653,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 7.1000000000000005,
+          "maxX": 0.4172560199174213,
+          "maxY": 0.4020539578324207,
+          "vertices": 28060
+        }
+      ],
+      "liveText": "baseline: 0.00 m/s recorded | reactive: 0.11 m/s recorded",
+      "export": {
+        "bytes": 1565484,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "jump",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 2
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 822,
+          "commands": 48,
+          "boxCount": 2
+        }
+      ],
+      "apex": [
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.30712406199473624,
+          "maxY": 0.41814146435552946,
+          "vertices": 28060
+        },
+        {
+          "condition": "baseline",
+          "time": 0,
+          "maxX": 0.30712406199473624,
+          "maxY": 0.41814146435552946,
+          "vertices": 28060
+        },
+        {
+          "condition": "baseline",
+          "time": 0.4,
+          "maxX": 0.3315319550684793,
+          "maxY": 0.4135630039158336,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 17,
+          "maxX": 0.4832073474944637,
+          "maxY": 0.4050590482338949,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 17.4,
+          "maxX": 0.4269488607290549,
+          "maxY": 0.39697033392300396,
+          "vertices": 28060
+        },
+        {
+          "condition": "reactive",
+          "time": 17.799999999999997,
+          "maxX": 0.42175276361214653,
+          "maxY": 0.4024456001175213,
+          "vertices": 28060
+        }
+      ],
+      "liveText": "baseline: 0.00 m/s recorded | reactive: 0.03 m/s recorded",
+      "export": {
+        "bytes": 1565212,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "crouch",
+      "seed": 1,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "action": "crouch",
+          "commands": 27,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded | reactive: 0.09 m/s recorded / crouch stage 2",
+      "export": {
+        "bytes": 1565100,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    },
+    {
+      "body": "brek",
+      "scenario": "crouch",
+      "seed": 10,
+      "duration": 32,
+      "seek": 27.73,
+      "lanes": [
+        {
+          "condition": "baseline",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "commands": 64,
+          "boxCount": 1
+        },
+        {
+          "condition": "reactive",
+          "episodeGzip": true,
+          "commandFrame": 825,
+          "action": "crouch",
+          "commands": 27,
+          "boxCount": 1
+        }
+      ],
+      "apex": [],
+      "liveText": "baseline: 0.04 m/s recorded | reactive: 0.09 m/s recorded / crouch stage 2",
+      "export": {
+        "bytes": 1565124,
+        "errors": 0,
+        "warnings": 0,
+        "body": "brek"
+      }
+    }
+  ],
+  "errors": []
+}
