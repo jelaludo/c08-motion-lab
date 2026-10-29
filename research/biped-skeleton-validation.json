@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "cases": 6,
+  "artifacts": [
+    {
+      "id": "ukemi",
+      "path": "docs/biped-motion/data/ukemi-skeleton.json.gz",
+      "sha256": "edebde85b0883605ee54ad1c25010782b232a44b3f2a1e649abaa54b267e300c",
+      "frames": 143,
+      "joints": 77,
+      "raw_source_media_included": false
+    },
+    {
+      "id": "technical-standup",
+      "path": "docs/biped-motion/data/technical-standup-skeleton.json.gz",
+      "sha256": "ce6c91290cffa0d7f52efada23b42a8f3e6508ecef63055ecbd4f6f0d2a5389e",
+      "frames": 213,
+      "joints": 77,
+      "raw_source_media_included": false
+    },
+    {
+      "id": "gorilla-front",
+      "path": "docs/biped-motion/data/gorilla-front-skeleton.json.gz",
+      "sha256": "1e1d1d48e013240b8c313632fb84709d16f5981eb03444f23431270f10698db5",
+      "frames": 239,
+      "joints": 77,
+      "raw_source_media_included": false
+    },
+    {
+      "id": "sumo-stomp",
+      "path": "docs/biped-motion/data/sumo-stomp-skeleton.json.gz",
+      "sha256": "12083de35cf51093f0923b4809a74a376b1db4c432eb7aca897088a832973dc2",
+      "frames": 218,
+      "joints": 77,
+      "raw_source_media_included": false
+    },
+    {
+      "id": "source-094553",
+      "path": "docs/biped-motion/data/source-094553-skeleton.json.gz",
+      "sha256": "ac9fd2d7dce62932749a213b265b07c30e9bce868c80476ee61baa34de10af38",
+      "frames": 237,
+      "joints": 77,
+      "raw_source_media_included": false
+    },
+    {
+      "id": "h3-dance",
+      "path": "docs/biped-motion/data/h3-dance-skeleton.json.gz",
+      "sha256": "b09e94afc4020a2bab95f55020e0c9936383e3603f672d9c6a129156cfc35890",
+      "frames": 219,
+      "joints": 77,
+      "raw_source_media_included": false
+    }
+  ],
+  "checks": [
+    "Only explicit recovered-joint fields copied",
+    "No source video, source frames, local paths or weights",
+    "Finite JSON serialization and matching 77-joint/frame counts"
+  ]
+}

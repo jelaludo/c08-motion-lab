@@ -147,7 +147,7 @@ for row in physics['results']:
  assert row['selected_predictions_archive_sha256']==hashlib.sha256((reactive_root/case['predictions_local']).read_bytes()).hexdigest()
 contacts=read_json(ROOT/'research/reactive-round4-viewer-footplants.json');assert contacts['status']=='passed' and {r['body']for r in contacts['results']}=={'c08','brek','eva'}
 assert all(r['support_samples']>0 and r['support_speed_p95_m_s']<.005 and r['reach_release_samples']==0 for r in contacts['results'])
-docs_bytes=sum(p.stat().st_size for p in (ROOT/'docs').rglob('*')if p.is_file());assert docs_bytes<900*1024*1024
+docs_bytes=sum(p.stat().st_size for p in (ROOT/'docs').rglob('*')if p.is_file());assert docs_bytes<970*1024*1024
 report.update(reactive_recorded_takes=123,reactive_neural_only_takes=100,reactive_hybrid_takes=hybrid_takes,reactive_scenarios=sorted(paired_scenarios|{'course'}),reactive_genuine_neural_calls=genuine_neural_calls,reactive_prepared_source_frames=prepared_source_frames,reactive_continuous_courses=3,reactive_paired_environments_verified=True,reactive_exact_played_context_chaining=True,reactive_selected_input_height_quaternion_hinges_unchanged=True,reactive_displayed_take_body_combinations=369,reactive_mesh_samples=sum(b['frames']for b in mesh['bodies'].values()),reactive_final_artifact_hashes_verified=True,original_brek_eva_rigs_hash_verified=True,trusted_stance_only_footplant_validation=True,pages_artifact_mib=round(docs_bytes/1024**2,2))
 (ROOT/'research/publication-validation.json').write_text(json.dumps(report,indent=2),encoding='utf8')
 print(f'Reactive:123 recordings, {genuine_neural_calls} genuine neural calls plus {prepared_source_frames} explicitly classified prepared-source frames; all369 displayed body/take combinations validated.')

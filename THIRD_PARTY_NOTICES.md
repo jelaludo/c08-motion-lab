@@ -29,3 +29,8 @@ Lab changes: normalized size, joined/reduced mesh, duplicate UV cleanup, humanoi
 ## H3 video-reference recovery experiment
 
 The H3 Motion tests use creator-supplied generated videos of creator-owned robot designs. Video2Rig is a separate, locally executed recovery tool by Can It Code, pinned to commit `55d51b3b9685125a8ea27841d6af9523f6352aa1`, under AGPL-3.0: https://github.com/canitcode/video2rig . Its documentation states that resulting animations belong to their creators. The external video generator has its own terms; no video-generation service or weights are redistributed here. Video2Rig's DINOv2 backbone and locally trained character readers remain private. The concept-biped stress test uses the existing GEM-X recovery pipeline and retains its existing notices. Publication of a recovered sequence is not a claim that it is physically balanced, rig-accurate or approved for production.
+
+
+## Biped recovery comparison round
+
+The six-reference Biped capture gallery reuses the existing GEM-X/SOMA recovery setup and directly adapts its estimated transforms to the four lab rigs. No model weights or personal source footage are redistributed. The Tulio Portela Meshy fighter attribution, CC BY 4.0 license link and modification notice accompany its six derived GLBs and catalog entry. Its experimental-only role remains unchanged. The robot designs remain creator-owned. These outputs are recovery/adaptation experiments, not MotionBricks generation or certified contact/dynamic control.

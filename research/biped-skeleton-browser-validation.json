@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/biped-motion/",
+  "cases": [
+    {
+      "id": "ukemi",
+      "frames": 143,
+      "joints": 77,
+      "duration": 4.733333333333333,
+      "sampled_positions_finite": true
+    },
+    {
+      "id": "technical-standup",
+      "frames": 213,
+      "joints": 77,
+      "duration": 7.066666666666666,
+      "sampled_positions_finite": true
+    },
+    {
+      "id": "gorilla-front",
+      "frames": 239,
+      "joints": 77,
+      "duration": 7.933333333333334,
+      "sampled_positions_finite": true
+    },
+    {
+      "id": "sumo-stomp",
+      "frames": 218,
+      "joints": 77,
+      "duration": 7.233333333333333,
+      "sampled_positions_finite": true
+    },
+    {
+      "id": "source-094553",
+      "frames": 237,
+      "joints": 77,
+      "duration": 7.866666666666666,
+      "sampled_positions_finite": true
+    },
+    {
+      "id": "h3-dance",
+      "frames": 219,
+      "joints": 77,
+      "duration": 7.266666666666667,
+      "sampled_positions_finite": true
+    }
+  ],
+  "checks": [
+    "Six raw77-joint skeletons load",
+    "Five timestamps each have finite rendered joints",
+    "Playback and complete-path mode work",
+    "Mobile layout has no horizontal overflow",
+    "No page errors"
+  ],
+  "errors": []
+}

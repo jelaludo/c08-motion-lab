@@ -1,0 +1,283 @@
+{
+  "round": "biped-only-2026-10-30",
+  "recovery_model": "GEM-X Body Motion native77",
+  "code_commit": "20555befe2fbbe5b2015e1fff7ff214dc18ea9d6",
+  "camera_mode": "static",
+  "pipeline_stage": "Raw monocular recovery before retargeting; not MotionBricks generation",
+  "raw_media_included": false,
+  "human_or_stylized_source_tensors_included": false,
+  "contact_processing": "None: intentional roll, hand and forearm contacts retained; not a physical or balance solve",
+  "range_convention": "Inclusive recovered frame-index ranges at 30Hz",
+  "cases": [
+    {
+      "id": "ukemi",
+      "label": "Ukemi",
+      "status": "ready",
+      "source_type": "User-owned human exercise video",
+      "source_sha256": "14938dbf21397b14d8b8567d2fecdc6b007610d554674a309a60455cf87eec34",
+      "source_fps": 30.0,
+      "source_frame_count": 143,
+      "source_duration_s": 4.766666666666667,
+      "recovery_reused": true,
+      "frames": 143,
+      "fps": 30,
+      "duration_s": 4.733333333333333,
+      "inference_seconds": 52.820109400199726,
+      "cuda_peak_allocated_bytes": 3674924032,
+      "finite_positions": true,
+      "joint_count": 77,
+      "source_soma_sha256": "71fcfb7168d336220142a4a5cfbf05fbde9d3f70cd8fc5dcd3c6eff9e4a874d8",
+      "prepared_frames_sha256": "a22a34e7ca9a4c1d2709ac03eb0b7cedcc1a53901f54259aa56103c2910be79d",
+      "prepared_transform_joint_max_error_m": 2.8324752747721504e-06,
+      "estimated_root_path_length_m": 4.223272323608398,
+      "root_distance_note": "Monocular world estimate, not measured physical travel",
+      "coverage": {
+        "major_joint_count": 15,
+        "frames_at_least_five_projected_major_joints_outside_image": 0,
+        "offscreen_frame_ranges": [],
+        "missing_or_filled_person_detection_frames": 0,
+        "missing_detection_frame_ranges": [],
+        "note": "Predicted projection and detector coverage flags, not 3D accuracy scores; zero flags does not establish visibility or good contacts"
+      },
+      "head_below_hips_frame_count": 15,
+      "limitations": [
+        "Performer approaches camera; head/upper body leave frame near end",
+        "Depth and occluded anatomy are estimated; visual acceptance still required",
+        "Retargeting, floor support and character anatomy add separate errors; inspect raw skeleton alongside target body"
+      ]
+    },
+    {
+      "id": "technical-standup",
+      "label": "BJJ technical stand-up",
+      "status": "ready",
+      "source_type": "User-owned human exercise video",
+      "source_sha256": "438c4e3a8697ce732c66bf6ad8bb5fef4cc491a98c8f96daf9c55241d85b9a4c",
+      "source_fps": 30.0,
+      "source_frame_count": 213,
+      "source_duration_s": 7.1,
+      "recovery_reused": true,
+      "frames": 213,
+      "fps": 30,
+      "duration_s": 7.066666666666666,
+      "inference_seconds": 80.3266569999978,
+      "cuda_peak_allocated_bytes": 3674924032,
+      "finite_positions": true,
+      "joint_count": 77,
+      "source_soma_sha256": "007686fb73bfc479e1cefa3b902b1fa5d08c7d1e531b3580c61c48459e9e2100",
+      "prepared_frames_sha256": "228bc66a174fcf21bdb96038ac001d9a574b09fe34b5256d3da2cb34887dca59",
+      "prepared_transform_joint_max_error_m": 7.571622973046033e-06,
+      "estimated_root_path_length_m": 3.883011817932129,
+      "root_distance_note": "Monocular world estimate, not measured physical travel",
+      "coverage": {
+        "major_joint_count": 15,
+        "frames_at_least_five_projected_major_joints_outside_image": 0,
+        "offscreen_frame_ranges": [],
+        "missing_or_filled_person_detection_frames": 0,
+        "missing_detection_frame_ranges": [],
+        "note": "Predicted projection and detector coverage flags, not 3D accuracy scores; zero flags does not establish visibility or good contacts"
+      },
+      "head_below_hips_frame_count": 23,
+      "limitations": [
+        "Camera is fixed, verified from source backgrounds",
+        "Extended legs and feet cross the image boundary during floor transitions",
+        "Hand-supported technical stand-up includes intentional non-foot body contacts",
+        "Depth and occluded anatomy are estimated; visual acceptance still required",
+        "Retargeting, floor support and character anatomy add separate errors; inspect raw skeleton alongside target body"
+      ]
+    },
+    {
+      "id": "gorilla-front",
+      "label": "Front-facing gorilla exercise",
+      "status": "ready",
+      "source_type": "User-owned human exercise video",
+      "source_sha256": "f74069e711836cedc60962d55a7ad816b71ee29b3b190f03b6a6f3df68e21354",
+      "source_fps": 30.0,
+      "source_frame_count": 239,
+      "source_duration_s": 7.966666666666667,
+      "recovery_reused": true,
+      "frames": 239,
+      "fps": 30,
+      "duration_s": 7.933333333333334,
+      "inference_seconds": 94.9737517000176,
+      "cuda_peak_allocated_bytes": 3674924032,
+      "finite_positions": true,
+      "joint_count": 77,
+      "source_soma_sha256": "081364e4cf975239dca46fbb57932c131edc170785f05c6e5c64c2c2918ddd2d",
+      "prepared_frames_sha256": "d16fc1a9cad3e37091c8dc7d2089c5219b4aff19e6c9d98ecbd3fe6f271fd2fe",
+      "prepared_transform_joint_max_error_m": 3.372570972715039e-06,
+      "estimated_root_path_length_m": 3.5837926864624023,
+      "root_distance_note": "Monocular world estimate, not measured physical travel",
+      "coverage": {
+        "major_joint_count": 15,
+        "frames_at_least_five_projected_major_joints_outside_image": 55,
+        "offscreen_frame_ranges": [
+          [
+            174,
+            221
+          ],
+          [
+            232,
+            238
+          ]
+        ],
+        "missing_or_filled_person_detection_frames": 25,
+        "missing_detection_frame_ranges": [
+          [
+            191,
+            191
+          ],
+          [
+            194,
+            194
+          ],
+          [
+            196,
+            202
+          ],
+          [
+            205,
+            206
+          ],
+          [
+            209,
+            216
+          ],
+          [
+            220,
+            221
+          ],
+          [
+            235,
+            238
+          ]
+        ],
+        "note": "Predicted projection and detector coverage flags, not 3D accuracy scores; zero flags does not establish visibility or good contacts"
+      },
+      "head_below_hips_frame_count": 32,
+      "limitations": [
+        "Camera is fixed, verified from source backgrounds",
+        "Performer approaches into an extreme face close-up; most body joints are unobserved near the end",
+        "Knuckle/hand contacts require independent ground review",
+        "Depth and occluded anatomy are estimated; visual acceptance still required",
+        "Retargeting, floor support and character anatomy add separate errors; inspect raw skeleton alongside target body"
+      ]
+    },
+    {
+      "id": "sumo-stomp",
+      "label": "Sumo stomp",
+      "status": "ready",
+      "source_type": "User-owned human exercise video",
+      "source_sha256": "5a8a1c125f6ba4e08a8feade79cf3e5c3cb104721385abbd2dc1f90b872bfe06",
+      "source_fps": 30.0,
+      "source_frame_count": 218,
+      "source_duration_s": 7.266666666666667,
+      "recovery_reused": true,
+      "frames": 218,
+      "fps": 30,
+      "duration_s": 7.233333333333333,
+      "inference_seconds": 97.9009205000475,
+      "cuda_peak_allocated_bytes": 3674924032,
+      "finite_positions": true,
+      "joint_count": 77,
+      "source_soma_sha256": "7799e08d5d715acdb427e3531e119db9940afe5d2b78f08542b23fbd0e1eb7ea",
+      "prepared_frames_sha256": "d0cee092216c5bd2ff5dda6b7f4589bf7743b9289c76b062193ef9d84b458e12",
+      "prepared_transform_joint_max_error_m": 6.128853328846162e-06,
+      "estimated_root_path_length_m": 1.129881501197815,
+      "root_distance_note": "Monocular world estimate, not measured physical travel",
+      "coverage": {
+        "major_joint_count": 15,
+        "frames_at_least_five_projected_major_joints_outside_image": 0,
+        "offscreen_frame_ranges": [],
+        "missing_or_filled_person_detection_frames": 0,
+        "missing_detection_frame_ranges": [],
+        "note": "Predicted projection and detector coverage flags, not 3D accuracy scores; zero flags does not establish visibility or good contacts"
+      },
+      "head_below_hips_frame_count": 0,
+      "limitations": [
+        "Camera is fixed, verified from static ceiling/door frame",
+        "Large lateral leg lifts can occlude the lifted thigh and torso",
+        "Background hanging bags are not tracked as scene geometry",
+        "Depth and occluded anatomy are estimated; visual acceptance still required",
+        "Retargeting, floor support and character anatomy add separate errors; inspect raw skeleton alongside target body"
+      ]
+    },
+    {
+      "id": "source-094553",
+      "label": "BJJ floor flow / shoulder roll",
+      "status": "ready",
+      "source_type": "User-owned human exercise video",
+      "source_sha256": "be03d1b9d43199c5aa51587944b90393d7e1a2e3d73c05c806f346502fb38ab5",
+      "source_fps": 30.0,
+      "source_frame_count": 237,
+      "source_duration_s": 7.9,
+      "recovery_reused": false,
+      "frames": 237,
+      "fps": 30,
+      "duration_s": 7.866666666666666,
+      "inference_seconds": 109.08897010004148,
+      "cuda_peak_allocated_bytes": 3674924032,
+      "finite_positions": true,
+      "joint_count": 77,
+      "source_soma_sha256": "8ac81a6a09ab6373d3296dd5256957532a380e14dfa5f4edcdb7e3b5680f04b9",
+      "prepared_frames_sha256": "7827c872cebfbc3137f8198d1ff364a86a816ff381e2029dddebc67bd85dfa32",
+      "prepared_transform_joint_max_error_m": 5.898319159314269e-06,
+      "estimated_root_path_length_m": 3.9381184577941895,
+      "root_distance_note": "Monocular world estimate, not measured physical travel",
+      "coverage": {
+        "major_joint_count": 15,
+        "frames_at_least_five_projected_major_joints_outside_image": 0,
+        "offscreen_frame_ranges": [],
+        "missing_or_filled_person_detection_frames": 0,
+        "missing_detection_frame_ranges": [],
+        "note": "Predicted projection and detector coverage flags, not 3D accuracy scores; zero flags does not establish visibility or good contacts"
+      },
+      "head_below_hips_frame_count": 71,
+      "limitations": [
+        "Fixed camera; hand, forearm, hip and shoulder support through sit-through and roll",
+        "Feet partly leave the image boundary; depth and occluded limbs are estimates",
+        "Raw recovery; no standing or foot-contact IK applied",
+        "Depth and occluded anatomy are estimated; visual acceptance still required",
+        "Retargeting, floor support and character anatomy add separate errors; inspect raw skeleton alongside target body"
+      ]
+    },
+    {
+      "id": "h3-dance",
+      "label": "H3 character-swap dance",
+      "status": "ready",
+      "source_type": "AI-generated stylized biped video",
+      "source_sha256": "03938d758aa94266bb73c2dc29d6fb476aaa7dc21e74032a09de68121da1ff98",
+      "source_fps": 24.0,
+      "source_frame_count": 175,
+      "source_duration_s": 7.291666666666667,
+      "recovery_reused": false,
+      "frames": 219,
+      "fps": 30,
+      "duration_s": 7.266666666666667,
+      "inference_seconds": 82.54373060003854,
+      "cuda_peak_allocated_bytes": 3674924032,
+      "finite_positions": true,
+      "joint_count": 77,
+      "source_soma_sha256": "2ef04bd6594c70ed2fac209a9f5c9f706ded3941e323369e2e9d74ec4e20afa4",
+      "prepared_frames_sha256": "afa2904614ff4a1b274c4d9e3e2d2b79e410bdcf79b4a6d6f7b91e7654d30699",
+      "prepared_transform_joint_max_error_m": 3.1866195513430284e-06,
+      "estimated_root_path_length_m": 1.6775099039077759,
+      "root_distance_note": "Monocular world estimate, not measured physical travel",
+      "coverage": {
+        "major_joint_count": 15,
+        "frames_at_least_five_projected_major_joints_outside_image": 0,
+        "offscreen_frame_ranges": [],
+        "missing_or_filled_person_detection_frames": 0,
+        "missing_detection_frame_ranges": [],
+        "note": "Predicted projection and detector coverage flags, not 3D accuracy scores; zero flags does not establish visibility or good contacts"
+      },
+      "head_below_hips_frame_count": 0,
+      "limitations": [
+        "AI-generated reference can contain anatomy or contact inconsistencies",
+        "Human-oriented estimator applied to a stylized biped; identity and limbs are estimates",
+        "Depth and occluded anatomy are estimated; visual acceptance still required",
+        "Retargeting, floor support and character anatomy add separate errors; inspect raw skeleton alongside target body"
+      ]
+    }
+  ],
+  "all_ready": true
+}

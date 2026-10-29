@@ -1,0 +1,229 @@
+{
+  "status": "passed",
+  "scope": "Serialization, provenance, matrix completeness and published artifact identity; not visual acceptance or physical balance",
+  "comparisons": 24,
+  "raw_skeletons": 6,
+  "raw_source_media_published": false,
+  "new_recoveries": 2,
+  "verified_cached_recoveries": 4,
+  "previous_visual_verdicts_preserved": 13,
+  "pages_artifact_mib": 925.15,
+  "results": [
+    {
+      "id": "ukemi",
+      "body": "c08",
+      "path": "docs/biped-motion/models/ukemi-c08.glb",
+      "sha256": "9151866ee443fc695393f349d26eee6297c5176dd6bd68e0ca995352cb8cb498",
+      "frames": 143,
+      "floor_sample_min_m": 0.009503963737213572,
+      "max_joint_export_error_m": 2.119841981905222e-06
+    },
+    {
+      "id": "ukemi",
+      "body": "brek43",
+      "path": "docs/biped-motion/models/ukemi-brek43.glb",
+      "sha256": "8437d31613c559fa231cf8878377eea1a2a130a5dc0fd147fe665e0e021bff28",
+      "frames": 143,
+      "floor_sample_min_m": 0.01086481267517403,
+      "max_joint_export_error_m": 3.6327822656423357e-06
+    },
+    {
+      "id": "ukemi",
+      "body": "eva-k7",
+      "path": "docs/biped-motion/models/ukemi-eva-k7.glb",
+      "sha256": "89fe6b2ef3b12e7534c2bc49a6d6d461d607ff8c6f23fb00417012f72b5c788c",
+      "frames": 143,
+      "floor_sample_min_m": 0.01278151456003851,
+      "max_joint_export_error_m": 1.90785218381186e-06
+    },
+    {
+      "id": "ukemi",
+      "body": "meshy-fighter",
+      "path": "docs/biped-motion/models/ukemi-meshy-fighter.glb",
+      "sha256": "23403df732f98b7a8cb882691a9eb15f8f126f348d49ceab860a4130b41006f1",
+      "frames": 143,
+      "floor_sample_min_m": 0.013084333033689204,
+      "max_joint_export_error_m": 6.715519432844804e-06
+    },
+    {
+      "id": "technical-standup",
+      "body": "c08",
+      "path": "docs/biped-motion/models/technical-standup-c08.glb",
+      "sha256": "21e88955a2596b3d27a1a3e0f8531feb26d4d198dcb4d3f14ab5494e82dfb3d3",
+      "frames": 213,
+      "floor_sample_min_m": 0.009260255289372243,
+      "max_joint_export_error_m": 1.7659357113873473e-06
+    },
+    {
+      "id": "technical-standup",
+      "body": "brek43",
+      "path": "docs/biped-motion/models/technical-standup-brek43.glb",
+      "sha256": "683c51e6b902916f262c60d97b2aa3ac26032951d292225520765ea6a0cdac2d",
+      "frames": 213,
+      "floor_sample_min_m": 0.009984793797193386,
+      "max_joint_export_error_m": 1.4686456435072102e-06
+    },
+    {
+      "id": "technical-standup",
+      "body": "eva-k7",
+      "path": "docs/biped-motion/models/technical-standup-eva-k7.glb",
+      "sha256": "f15cce22b74ea5443cfd4b71d013ca087575de0185d141ac0581d17069e479a6",
+      "frames": 213,
+      "floor_sample_min_m": 0.010328342786039724,
+      "max_joint_export_error_m": 9.739614679102595e-07
+    },
+    {
+      "id": "technical-standup",
+      "body": "meshy-fighter",
+      "path": "docs/biped-motion/models/technical-standup-meshy-fighter.glb",
+      "sha256": "659f9f4c1f7df7d37a5df7f3db2cf4e333ff41dade13b06077537b344919db44",
+      "frames": 213,
+      "floor_sample_min_m": 0.011563099277621672,
+      "max_joint_export_error_m": 9.014185007603527e-06
+    },
+    {
+      "id": "gorilla-front",
+      "body": "c08",
+      "path": "docs/biped-motion/models/gorilla-front-c08.glb",
+      "sha256": "e96f34a6857512800be285575067f17aa7e79fb455f102b6ebea015a03b9238a",
+      "frames": 239,
+      "floor_sample_min_m": 0.013583056179047995,
+      "max_joint_export_error_m": 2.156863158147381e-06
+    },
+    {
+      "id": "gorilla-front",
+      "body": "brek43",
+      "path": "docs/biped-motion/models/gorilla-front-brek43.glb",
+      "sha256": "9c4e5240d639ea35555699cc3a47c492d0df449f28839bd6ee6d1c9978d3d66f",
+      "frames": 239,
+      "floor_sample_min_m": 0.013481470767954917,
+      "max_joint_export_error_m": 3.0976216261853423e-06
+    },
+    {
+      "id": "gorilla-front",
+      "body": "eva-k7",
+      "path": "docs/biped-motion/models/gorilla-front-eva-k7.glb",
+      "sha256": "a92155cadd8a87a20473ffb78edfd880b091e36d3e198769e926d79bb25033be",
+      "frames": 239,
+      "floor_sample_min_m": 0.013562220288147464,
+      "max_joint_export_error_m": 1.9920974945924004e-06
+    },
+    {
+      "id": "gorilla-front",
+      "body": "meshy-fighter",
+      "path": "docs/biped-motion/models/gorilla-front-meshy-fighter.glb",
+      "sha256": "e8a52b47cd5b9478f840d7f3f4826c39a3d6d3f142498721c3594b3b67259651",
+      "frames": 239,
+      "floor_sample_min_m": 0.01402318646281632,
+      "max_joint_export_error_m": 7.895297534518578e-06
+    },
+    {
+      "id": "sumo-stomp",
+      "body": "c08",
+      "path": "docs/biped-motion/models/sumo-stomp-c08.glb",
+      "sha256": "d15108a005fd5b29a60611d0ccfa900d380528bd3a4cd7af0db41c4f6766aa45",
+      "frames": 218,
+      "floor_sample_min_m": 0.01478725530700395,
+      "max_joint_export_error_m": 1.3597772235288691e-06
+    },
+    {
+      "id": "sumo-stomp",
+      "body": "brek43",
+      "path": "docs/biped-motion/models/sumo-stomp-brek43.glb",
+      "sha256": "bcf3777ab780bed22681318dcdd1a6fb06dbc38280bdf6da7d272295bee575b2",
+      "frames": 218,
+      "floor_sample_min_m": 0.014689751556733202,
+      "max_joint_export_error_m": 1.67599119243025e-06
+    },
+    {
+      "id": "sumo-stomp",
+      "body": "eva-k7",
+      "path": "docs/biped-motion/models/sumo-stomp-eva-k7.glb",
+      "sha256": "285b46be908f99d43663f938e73a9eb9300d87d2a2fc6ec08c3c9ca62a3f4d83",
+      "frames": 218,
+      "floor_sample_min_m": 0.01482236164681762,
+      "max_joint_export_error_m": 8.66263825409267e-07
+    },
+    {
+      "id": "sumo-stomp",
+      "body": "meshy-fighter",
+      "path": "docs/biped-motion/models/sumo-stomp-meshy-fighter.glb",
+      "sha256": "93f35a71b1413710fc0c4d3b5acf00da77a45b5c564c364587da3576f3787f07",
+      "frames": 218,
+      "floor_sample_min_m": 0.014844405795140125,
+      "max_joint_export_error_m": 6.804278275811047e-06
+    },
+    {
+      "id": "source-094553",
+      "body": "c08",
+      "path": "docs/biped-motion/models/source-094553-c08.glb",
+      "sha256": "024a5fdfaee3efd29e88a20da1050fbd1e22dde1aad263a06252e17137c08868",
+      "frames": 237,
+      "floor_sample_min_m": 0.013922546697094251,
+      "max_joint_export_error_m": 1.5058204267979707e-06
+    },
+    {
+      "id": "source-094553",
+      "body": "brek43",
+      "path": "docs/biped-motion/models/source-094553-brek43.glb",
+      "sha256": "70ca104751d4da0b31b1881482fc0ee593631e9cf15c429031926dd1a870dba3",
+      "frames": 237,
+      "floor_sample_min_m": 0.012881928933672224,
+      "max_joint_export_error_m": 2.194550948261243e-06
+    },
+    {
+      "id": "source-094553",
+      "body": "eva-k7",
+      "path": "docs/biped-motion/models/source-094553-eva-k7.glb",
+      "sha256": "2000bfc1285171558d1055bddf87acc3bb0a3ad70ea15f042d02148d6d60a22d",
+      "frames": 237,
+      "floor_sample_min_m": 0.013604165973088056,
+      "max_joint_export_error_m": 1.261827403838609e-06
+    },
+    {
+      "id": "source-094553",
+      "body": "meshy-fighter",
+      "path": "docs/biped-motion/models/source-094553-meshy-fighter.glb",
+      "sha256": "6f032e3d976dd5b9a0464a0c1a5400183e3c0be7c67209f13e25ae9ba60dd134",
+      "frames": 237,
+      "floor_sample_min_m": 0.014390509346677963,
+      "max_joint_export_error_m": 9.083101463612754e-06
+    },
+    {
+      "id": "h3-dance",
+      "body": "c08",
+      "path": "docs/biped-motion/models/h3-dance-c08.glb",
+      "sha256": "21199d15377f88b0a22d5389f13cdcc355461d9f990fc71b13963e48d4f5a80d",
+      "frames": 219,
+      "floor_sample_min_m": 0.011253905542487563,
+      "max_joint_export_error_m": 1.9602072667025704e-06
+    },
+    {
+      "id": "h3-dance",
+      "body": "brek43",
+      "path": "docs/biped-motion/models/h3-dance-brek43.glb",
+      "sha256": "bff443559c6187ec60984aeec14667df93eb662bdada56e23c2c2b7cc7b0f7de",
+      "frames": 219,
+      "floor_sample_min_m": 0.0105663749716014,
+      "max_joint_export_error_m": 1.6437390100383448e-06
+    },
+    {
+      "id": "h3-dance",
+      "body": "eva-k7",
+      "path": "docs/biped-motion/models/h3-dance-eva-k7.glb",
+      "sha256": "264ae956e18799fb57145cb66fb800d8888b1a13341b2c7b298139164b0f11ef",
+      "frames": 219,
+      "floor_sample_min_m": 0.012061518145936936,
+      "max_joint_export_error_m": 1.1105586508679612e-06
+    },
+    {
+      "id": "h3-dance",
+      "body": "meshy-fighter",
+      "path": "docs/biped-motion/models/h3-dance-meshy-fighter.glb",
+      "sha256": "a4bd87cc4aa829a2f8856d460856a5dc729487dfa89aff419afaf47569e140f9",
+      "frames": 219,
+      "floor_sample_min_m": 0.012752746852074393,
+      "max_joint_export_error_m": 3.412136659129824e-06
+    }
+  ]
+}

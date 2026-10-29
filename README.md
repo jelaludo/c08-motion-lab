@@ -128,3 +128,8 @@ The catalog records **8,340 genuine neural requests and 4,879 explicitly classif
 All **369 take/body combinations** pass independent sampled geometry checks: 528,123 C08 poses at 120 Hz and 132,123 each for B-REK43/EVA at 30 Hz, with zero triangle/obstacle intersections and final artifact hashes verified. Native continuous sweeps, paired environments, orange/red speeds, four-pose context chains, stance contacts, deterministic scrubbing and displayed-body exports also pass. See [round 4 results](research/reactive-round4-summary.json), [full geometry validation](research/reactive-round4-fullskin-validation.json) and [source preparation](research/reactive-round4-sources/README.md).
 
 Animation quality still needs visual review. Kinematic navigation/contact IK does not provide self-collision, physical balance, arbitrary-terrain support or actor/cat mutual contact. Historical reports describe their named release; earlier accepted downloads pin that release for reproducibility. The Vanilla 15 library and its 30 game bakes remain available unchanged.
+
+
+## Biped capture round 2
+
+Six creator-provided references are recovered with GEM-X and adapted directly from SOMA77 to C08, B-REK43, EVA-K7 and the attributed experimental Meshy fighter: 24 supplied GLB comparisons in [Biped capture](https://jelaludo.github.io/c08-motion-lab/biped-motion/). Four verified recoveries were reused; two new clips were inferred. This is recovery and retargeting, with no MotionBricks inference or G1 intermediate. Raw skeletons, per-body reports and separate body reviews make the remaining contact/weight errors inspectable. Original source videos stay private. The creator's 13 previous-round verdicts are retained separately from browser scores.

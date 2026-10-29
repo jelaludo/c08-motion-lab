@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-29T23:30:24.694656+00:00",
+  "summary": "Biped-only round: six reference motions, four bodies, 24 experimental direct adaptations. Review naturalness, floor support and transitions; finite exports do not establish motion quality.",
+  "bodies": [
+    {
+      "id": "c08",
+      "label": "C08 worker"
+    },
+    {
+      "id": "brek43",
+      "label": "B-REK43"
+    },
+    {
+      "id": "eva-k7",
+      "label": "EVA-K7"
+    },
+    {
+      "id": "meshy-fighter",
+      "label": "Meshy fighter (test only)",
+      "attribution": "BJJ Jiu-Jitsu Woman Girl Fighter Free by Tulio Portela, CC BY 4.0. Experimental rig/skin by C08 Motion Lab. https://sketchfab.com/3d-models/bjj-jiu-jitsu-woman-girl-fighter-free-8077cada67a14af18249b6af687fcc3c"
+    }
+  ],
+  "tests": [
+    {
+      "id": "ukemi",
+      "title": "Ukemi",
+      "version": 1,
+      "source": {
+        "label": "Ukemi",
+        "sha256": "14938dbf21397b14d8b8567d2fecdc6b007610d554674a309a60455cf87eec34",
+        "recovery_reused": true
+      },
+      "description": "Direct recovered SOMA movement adapted independently to four original biped rigs, with synchronized playback. No MotionBricks generation and no G1 intermediate.",
+      "limitations": [
+        "Floor roll and hand/back support; preserve intentional inversion",
+        "Performer is partially cropped near the end",
+        "Monocular recovery estimates depth and hidden limbs; no independent ground truth for these videos.",
+        "Whole-body vertical grounding translates each target to keep its lowest skinned vertex 15 mm above the floor at authored keys. It can alter vertical motion; no support, collision or balance solve.",
+        "Original fingers remain at rest; no source finger capture.",
+        "Experimental derived takes for visual review; not automatically accepted for game use."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "models/ukemi-c08.glb",
+          "report": "reports/ukemi-c08.json",
+          "sha256": "9151866ee443fc695393f349d26eee6297c5176dd6bd68e0ca995352cb8cb498"
+        },
+        {
+          "body": "brek43",
+          "model": "models/ukemi-brek43.glb",
+          "report": "reports/ukemi-brek43.json",
+          "sha256": "8437d31613c559fa231cf8878377eea1a2a130a5dc0fd147fe665e0e021bff28"
+        },
+        {
+          "body": "eva-k7",
+          "model": "models/ukemi-eva-k7.glb",
+          "report": "reports/ukemi-eva-k7.json",
+          "sha256": "89fe6b2ef3b12e7534c2bc49a6d6d461d607ff8c6f23fb00417012f72b5c788c"
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "models/ukemi-meshy-fighter.glb",
+          "report": "reports/ukemi-meshy-fighter.json",
+          "sha256": "23403df732f98b7a8cb882691a9eb15f8f126f348d49ceab860a4130b41006f1"
+        }
+      ],
+      "metrics": {
+        "frames": 143,
+        "fps": 30,
+        "duration_s": 4.733333333333333,
+        "available_bodies": 4,
+        "max_whole_body_ground_correction_m": 0.8680616691275981
+      }
+    },
+    {
+      "id": "technical-standup",
+      "title": "BJJ technical stand-up",
+      "version": 1,
+      "source": {
+        "label": "BJJ technical stand-up",
+        "sha256": "438c4e3a8697ce732c66bf6ad8bb5fef4cc491a98c8f96daf9c55241d85b9a4c",
+        "recovery_reused": true
+      },
+      "description": "Direct recovered SOMA movement adapted independently to four original biped rigs, with synchronized playback. No MotionBricks generation and no G1 intermediate.",
+      "limitations": [
+        "Hand-supported stand-up is not a standing foot-contact exercise",
+        "Feet leave image boundaries during floor transition",
+        "Monocular recovery estimates depth and hidden limbs; no independent ground truth for these videos.",
+        "Whole-body vertical grounding translates each target to keep its lowest skinned vertex 15 mm above the floor at authored keys. It can alter vertical motion; no support, collision or balance solve.",
+        "Original fingers remain at rest; no source finger capture.",
+        "Experimental derived takes for visual review; not automatically accepted for game use."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "models/technical-standup-c08.glb",
+          "report": "reports/technical-standup-c08.json",
+          "sha256": "21e88955a2596b3d27a1a3e0f8531feb26d4d198dcb4d3f14ab5494e82dfb3d3"
+        },
+        {
+          "body": "brek43",
+          "model": "models/technical-standup-brek43.glb",
+          "report": "reports/technical-standup-brek43.json",
+          "sha256": "683c51e6b902916f262c60d97b2aa3ac26032951d292225520765ea6a0cdac2d"
+        },
+        {
+          "body": "eva-k7",
+          "model": "models/technical-standup-eva-k7.glb",
+          "report": "reports/technical-standup-eva-k7.json",
+          "sha256": "f15cce22b74ea5443cfd4b71d013ca087575de0185d141ac0581d17069e479a6"
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "models/technical-standup-meshy-fighter.glb",
+          "report": "reports/technical-standup-meshy-fighter.json",
+          "sha256": "659f9f4c1f7df7d37a5df7f3db2cf4e333ff41dade13b06077537b344919db44"
+        }
+      ],
+      "metrics": {
+        "frames": 213,
+        "fps": 30,
+        "duration_s": 7.066666666666666,
+        "available_bodies": 4,
+        "max_whole_body_ground_correction_m": 0.6240160962763407
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "title": "Front-facing gorilla exercise",
+      "version": 1,
+      "source": {
+        "label": "Front-facing gorilla exercise",
+        "sha256": "f74069e711836cedc60962d55a7ad816b71ee29b3b190f03b6a6f3df68e21354",
+        "recovery_reused": true
+      },
+      "description": "Direct recovered SOMA movement adapted independently to four original biped rigs, with synchronized playback. No MotionBricks generation and no G1 intermediate.",
+      "limitations": [
+        "UNRELIABLE TAIL: 55/239 frames have at least five major projected joints outside the image; 25 detections were filled. Full clip retained for diagnosis.",
+        "Bent posture and hand contacts; no contact solve",
+        "Performer approaches into an extreme close-up; joints unobserved near end",
+        "Monocular recovery estimates depth and hidden limbs; no independent ground truth for these videos.",
+        "Whole-body vertical grounding translates each target to keep its lowest skinned vertex 15 mm above the floor at authored keys. It can alter vertical motion; no support, collision or balance solve.",
+        "Original fingers remain at rest; no source finger capture.",
+        "Experimental derived takes for visual review; not automatically accepted for game use."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "models/gorilla-front-c08.glb",
+          "report": "reports/gorilla-front-c08.json",
+          "sha256": "e96f34a6857512800be285575067f17aa7e79fb455f102b6ebea015a03b9238a"
+        },
+        {
+          "body": "brek43",
+          "model": "models/gorilla-front-brek43.glb",
+          "report": "reports/gorilla-front-brek43.json",
+          "sha256": "9c4e5240d639ea35555699cc3a47c492d0df449f28839bd6ee6d1c9978d3d66f"
+        },
+        {
+          "body": "eva-k7",
+          "model": "models/gorilla-front-eva-k7.glb",
+          "report": "reports/gorilla-front-eva-k7.json",
+          "sha256": "a92155cadd8a87a20473ffb78edfd880b091e36d3e198769e926d79bb25033be"
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "models/gorilla-front-meshy-fighter.glb",
+          "report": "reports/gorilla-front-meshy-fighter.json",
+          "sha256": "e8a52b47cd5b9478f840d7f3f4826c39a3d6d3f142498721c3594b3b67259651"
+        }
+      ],
+      "metrics": {
+        "frames": 239,
+        "fps": 30,
+        "duration_s": 7.933333333333334,
+        "available_bodies": 4,
+        "max_whole_body_ground_correction_m": 1.5772259545912466
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "title": "Sumo stomp",
+      "version": 1,
+      "source": {
+        "label": "Sumo stomp",
+        "sha256": "5a8a1c125f6ba4e08a8feade79cf3e5c3cb104721385abbd2dc1f90b872bfe06",
+        "recovery_reused": true
+      },
+      "description": "Direct recovered SOMA movement adapted independently to four original biped rigs, with synchronized playback. No MotionBricks generation and no G1 intermediate.",
+      "limitations": [
+        "Large lateral leg lifts and self-occlusion; balance is not validated",
+        "Monocular recovery estimates depth and hidden limbs; no independent ground truth for these videos.",
+        "Whole-body vertical grounding translates each target to keep its lowest skinned vertex 15 mm above the floor at authored keys. It can alter vertical motion; no support, collision or balance solve.",
+        "Original fingers remain at rest; no source finger capture.",
+        "Experimental derived takes for visual review; not automatically accepted for game use."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "models/sumo-stomp-c08.glb",
+          "report": "reports/sumo-stomp-c08.json",
+          "sha256": "d15108a005fd5b29a60611d0ccfa900d380528bd3a4cd7af0db41c4f6766aa45"
+        },
+        {
+          "body": "brek43",
+          "model": "models/sumo-stomp-brek43.glb",
+          "report": "reports/sumo-stomp-brek43.json",
+          "sha256": "bcf3777ab780bed22681318dcdd1a6fb06dbc38280bdf6da7d272295bee575b2"
+        },
+        {
+          "body": "eva-k7",
+          "model": "models/sumo-stomp-eva-k7.glb",
+          "report": "reports/sumo-stomp-eva-k7.json",
+          "sha256": "285b46be908f99d43663f938e73a9eb9300d87d2a2fc6ec08c3c9ca62a3f4d83"
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "models/sumo-stomp-meshy-fighter.glb",
+          "report": "reports/sumo-stomp-meshy-fighter.json",
+          "sha256": "93f35a71b1413710fc0c4d3b5acf00da77a45b5c564c364587da3576f3787f07"
+        }
+      ],
+      "metrics": {
+        "frames": 218,
+        "fps": 30,
+        "duration_s": 7.233333333333333,
+        "available_bodies": 4,
+        "max_whole_body_ground_correction_m": 0.5166210168294626
+      }
+    },
+    {
+      "id": "source-094553",
+      "title": "BJJ floor flow / shoulder roll",
+      "version": 1,
+      "source": {
+        "label": "BJJ floor flow / shoulder roll",
+        "sha256": "be03d1b9d43199c5aa51587944b90393d7e1a2e3d73c05c806f346502fb38ab5",
+        "recovery_reused": false
+      },
+      "description": "Direct recovered SOMA movement adapted independently to four original biped rigs, with synchronized playback. No MotionBricks generation and no G1 intermediate.",
+      "limitations": [
+        "Fixed camera; hand, forearm, hip and shoulder support through sit-through and roll",
+        "Feet partly leave the image boundary; depth and occluded limbs are estimates",
+        "Raw recovery; no standing or foot-contact IK applied",
+        "Monocular recovery estimates depth and hidden limbs; no independent ground truth for these videos.",
+        "Whole-body vertical grounding translates each target to keep its lowest skinned vertex 15 mm above the floor at authored keys. It can alter vertical motion; no support, collision or balance solve.",
+        "Original fingers remain at rest; no source finger capture.",
+        "Experimental derived takes for visual review; not automatically accepted for game use."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "models/source-094553-c08.glb",
+          "report": "reports/source-094553-c08.json",
+          "sha256": "024a5fdfaee3efd29e88a20da1050fbd1e22dde1aad263a06252e17137c08868"
+        },
+        {
+          "body": "brek43",
+          "model": "models/source-094553-brek43.glb",
+          "report": "reports/source-094553-brek43.json",
+          "sha256": "70ca104751d4da0b31b1881482fc0ee593631e9cf15c429031926dd1a870dba3"
+        },
+        {
+          "body": "eva-k7",
+          "model": "models/source-094553-eva-k7.glb",
+          "report": "reports/source-094553-eva-k7.json",
+          "sha256": "2000bfc1285171558d1055bddf87acc3bb0a3ad70ea15f042d02148d6d60a22d"
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "models/source-094553-meshy-fighter.glb",
+          "report": "reports/source-094553-meshy-fighter.json",
+          "sha256": "6f032e3d976dd5b9a0464a0c1a5400183e3c0be7c67209f13e25ae9ba60dd134"
+        }
+      ],
+      "metrics": {
+        "frames": 237,
+        "fps": 30,
+        "duration_s": 7.866666666666666,
+        "available_bodies": 4,
+        "max_whole_body_ground_correction_m": 0.6890537967336388
+      }
+    },
+    {
+      "id": "h3-dance",
+      "title": "H3 character-swap dance",
+      "version": 1,
+      "source": {
+        "label": "H3 character-swap dance",
+        "sha256": "03938d758aa94266bb73c2dc29d6fb476aaa7dc21e74032a09de68121da1ff98",
+        "recovery_reused": false
+      },
+      "description": "Direct recovered SOMA movement adapted independently to four original biped rigs, with synchronized playback. No MotionBricks generation and no G1 intermediate.",
+      "limitations": [
+        "AI-generated reference can contain anatomy or contact inconsistencies",
+        "Human-oriented estimator applied to a stylized biped; identity and limbs are estimates",
+        "Monocular recovery estimates depth and hidden limbs; no independent ground truth for these videos.",
+        "Whole-body vertical grounding translates each target to keep its lowest skinned vertex 15 mm above the floor at authored keys. It can alter vertical motion; no support, collision or balance solve.",
+        "Original fingers remain at rest; no source finger capture.",
+        "Experimental derived takes for visual review; not automatically accepted for game use."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "models/h3-dance-c08.glb",
+          "report": "reports/h3-dance-c08.json",
+          "sha256": "21199d15377f88b0a22d5389f13cdcc355461d9f990fc71b13963e48d4f5a80d"
+        },
+        {
+          "body": "brek43",
+          "model": "models/h3-dance-brek43.glb",
+          "report": "reports/h3-dance-brek43.json",
+          "sha256": "bff443559c6187ec60984aeec14667df93eb662bdada56e23c2c2b7cc7b0f7de"
+        },
+        {
+          "body": "eva-k7",
+          "model": "models/h3-dance-eva-k7.glb",
+          "report": "reports/h3-dance-eva-k7.json",
+          "sha256": "264ae956e18799fb57145cb66fb800d8888b1a13341b2c7b298139164b0f11ef"
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "models/h3-dance-meshy-fighter.glb",
+          "report": "reports/h3-dance-meshy-fighter.json",
+          "sha256": "a4bd87cc4aa829a2f8856d460856a5dc729487dfa89aff419afaf47569e140f9"
+        }
+      ],
+      "metrics": {
+        "frames": 219,
+        "fps": 30,
+        "duration_s": 7.266666666666667,
+        "available_bodies": 4,
+        "max_whole_body_ground_correction_m": 0.5794680959441106
+      }
+    }
+  ]
+}

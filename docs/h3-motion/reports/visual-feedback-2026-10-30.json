@@ -1,0 +1,93 @@
+{
+  "schema": "motion-lab-reported-visual-feedback/1",
+  "recorded_date": "2026-10-30",
+  "reviewer": "jelaludo (reported in conversation)",
+  "source": "User visual review supplied in conversation, preserved separately from browser reviews.",
+  "catalog_version_reviewed": 21,
+  "summary": {
+    "looking-good": 5,
+    "failure": 7,
+    "promising-rework": 1
+  },
+  "interpretation": "Looking good is visual feedback, not final game-ready acceptance. These small, different pipelines do not establish a general biped versus quadruped advantage.",
+  "tests": [
+    {
+      "id": "k0-known-motion",
+      "version_reviewed": 3,
+      "verdict": "looking-good",
+      "comment": "Motion recovery control (different angles) seems to work well."
+    },
+    {
+      "id": "k0-pounce-default",
+      "version_reviewed": 2,
+      "verdict": "failure",
+      "comment": "Recorded GLB inspection is a mess of limbs."
+    },
+    {
+      "id": "k0-pounce-no-contacts",
+      "version_reviewed": 2,
+      "verdict": "failure",
+      "comment": "Contact ablation: failure."
+    },
+    {
+      "id": "k0-pounce-soft",
+      "version_reviewed": 2,
+      "verdict": "failure",
+      "comment": "Smoothing comparison: failure."
+    },
+    {
+      "id": "concept-humanoid",
+      "version_reviewed": 1,
+      "verdict": "looking-good",
+      "comment": "Concept robot human-mocap: looking good."
+    },
+    {
+      "id": "c07-jump-reference",
+      "version_reviewed": 2,
+      "verdict": "failure",
+      "comment": "C07 cheetah jump: failure."
+    },
+    {
+      "id": "concept-to-c08",
+      "version_reviewed": 1,
+      "verdict": "looking-good",
+      "comment": "Mocap adapter stress test C08: looking good."
+    },
+    {
+      "id": "c07-known-motion",
+      "version_reviewed": 2,
+      "verdict": "looking-good",
+      "comment": "C07 Cheetah control: looking good."
+    },
+    {
+      "id": "k0-pounce-camera-trained",
+      "version_reviewed": 2,
+      "verdict": "failure",
+      "comment": "K0-Tech camera-trained recovery: failure."
+    },
+    {
+      "id": "k0-known-cameras",
+      "version_reviewed": 2,
+      "verdict": "looking-good",
+      "comment": "K0-Tech known-cameras ablation: looking good."
+    },
+    {
+      "id": "k0-pounce-camera-locked",
+      "version_reviewed": 2,
+      "verdict": "promising-rework",
+      "comment": "Promising but still looking non-natural."
+    },
+    {
+      "id": "c07-jump-no-contacts",
+      "version_reviewed": 2,
+      "verdict": "failure",
+      "comment": "C07 no-contacts ablation: failure."
+    },
+    {
+      "id": "c07-jump-soft",
+      "version_reviewed": 2,
+      "verdict": "failure",
+      "comment": "C07 soft ablation: failure."
+    }
+  ]
+}
