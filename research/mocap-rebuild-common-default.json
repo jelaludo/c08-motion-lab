@@ -1,0 +1,121 @@
+{
+  "status": "measured_not_identical",
+  "generated_clips": 12,
+  "scope": "Common default pose across all twelve original C08 GLBs, distinct from individual loop closure",
+  "results": [
+    {
+      "id": "ukemi",
+      "method": "single",
+      "maximum_default_joint_position_difference_m": 0.0,
+      "maximum_default_rotation_difference_rad": 2.9802322387695312e-08,
+      "bone_rotation_differences_deg": {}
+    },
+    {
+      "id": "ukemi",
+      "method": "window",
+      "maximum_default_joint_position_difference_m": 0.0,
+      "maximum_default_rotation_difference_rad": 2.9802322387695312e-08,
+      "bone_rotation_differences_deg": {}
+    },
+    {
+      "id": "technical-standup",
+      "method": "single",
+      "maximum_default_joint_position_difference_m": 2.384185791015625e-07,
+      "maximum_default_rotation_difference_rad": 0.02163039671486473,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 1.2393304409553898,
+        "HAND_R": 0.9829214861009314
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "window",
+      "maximum_default_joint_position_difference_m": 2.384185791015625e-07,
+      "maximum_default_rotation_difference_rad": 0.02163039671486473,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 1.2393304409553898,
+        "HAND_R": 0.9829214861009314
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "single",
+      "maximum_default_joint_position_difference_m": 1.802542303123011e-07,
+      "maximum_default_rotation_difference_rad": 0.008900024801414524,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 0.5099338586828108,
+        "HAND_R": 0.4304505704708222
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "window",
+      "maximum_default_joint_position_difference_m": 1.802542303123011e-07,
+      "maximum_default_rotation_difference_rad": 0.008900024801414524,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 0.5099338586828108,
+        "HAND_R": 0.4304505704708222
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "single",
+      "maximum_default_joint_position_difference_m": 2.384185791015625e-07,
+      "maximum_default_rotation_difference_rad": 0.005756543243959977,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 0.3298256324634545,
+        "HAND_R": 0.29351624169464713
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "window",
+      "maximum_default_joint_position_difference_m": 2.384185791015625e-07,
+      "maximum_default_rotation_difference_rad": 0.005756543243959977,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 0.3298256324634545,
+        "HAND_R": 0.29351624169464713
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "single",
+      "maximum_default_joint_position_difference_m": 3.4024898714695124e-07,
+      "maximum_default_rotation_difference_rad": 0.014174717546279995,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 0.8121514911918779,
+        "HAND_R": 0.6645088365782911
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "window",
+      "maximum_default_joint_position_difference_m": 3.4024898714695124e-07,
+      "maximum_default_rotation_difference_rad": 0.014174717546279995,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 0.8121514911918779,
+        "HAND_R": 0.6645088365782911
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "single",
+      "maximum_default_joint_position_difference_m": 4.997454719666472e-07,
+      "maximum_default_rotation_difference_rad": 0.029207486896077644,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 1.673465729328906,
+        "HAND_R": 1.5029870380119583
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "window",
+      "maximum_default_joint_position_difference_m": 4.997454719666472e-07,
+      "maximum_default_rotation_difference_rad": 0.029207486896077644,
+      "bone_rotation_differences_deg": {
+        "HAND_L": 1.673465729328906,
+        "HAND_R": 1.5029870380119583
+      }
+    }
+  ]
+}
