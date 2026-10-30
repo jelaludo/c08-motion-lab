@@ -1,3 +1,5 @@
+import {setupLegacyViewer} from '../vanilla/compact-viewer.js';
+setupLegacyViewer('quaternius');
 ﻿import * as T from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
@@ -15,7 +17,7 @@ let randomPhase='idle',randomBag=[],randomQueue=[],randomHistory=[],jumpTravel=n
 const randomRoutines=[['Walk_Loop'],['Jog_Fwd_Loop'],['Sprint_Loop'],['Walk_Formal_Loop'],['Crouch_Idle_Loop'],['Crouch_Fwd_Loop'],['Dance_Loop'],['Interact'],['PickUp_Table'],['Fixing_Kneeling'],['Punch_Jab'],['Punch_Cross'],['Jump_Start','Jump_Loop','Jump_Land'],['Sitting_Enter','Sitting_Idle_Loop','Sitting_Exit']];
 const pretty=n=>n.replaceAll('_',' '),loop=n=>n.endsWith('_Loop');
 const locomotion=new Set(['Walk_Loop','Jog_Fwd_Loop','Sprint_Loop']);
-function view(){const p=position.clone().add(new T.Vector3(sourceActor.visible?1.1:0,1.05,0));orbit.target.copy(p);camera.position.copy(p).add(new T.Vector3(3.5,1.7,6.5));orbit.update();lastFollow.copy(position)}
+function view(){const p=position.clone().add(new T.Vector3(sourceActor.visible?1.1:0,1.05,0));orbit.target.copy(p);const offset=new T.Vector3(3.5,1.7,6.5);if(sourceActor.visible){const half=Math.min(T.MathUtils.degToRad(camera.fov)/2,Math.atan(Math.tan(T.MathUtils.degToRad(camera.fov)/2)*camera.aspect));offset.setLength(Math.max(offset.length(),2.1/Math.sin(half)*1.1))}camera.position.copy(p).add(offset);orbit.update();lastFollow.copy(position)}
 function choose(n,{fade=.25,sync=false,force=false}={}){
  if(name===n&&!force)return;const old=current,oldSource=currentSource,phase=sync&&old?(old.time/old.getClip().duration)%1:0;
  current=actions[n];currentSource=sourceActions[n];if(!current)throw Error('Missing clip '+n);
@@ -49,13 +51,14 @@ $('mode').onchange=()=>setMode($('mode').value);$('clip').onchange=()=>{mode='pr
 $('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Pause':'Play'};$('restart').onclick=()=>{choose(name,{force:true});playing=true;$('play').textContent='Pause'};
 $('timeline').oninput=()=>{mode='preview';$('mode').value=mode;$('keyboard-button').setAttribute('aria-pressed','false');$('random-button').setAttribute('aria-pressed','false');keys.clear();oneShot=false;sequence=[];playing=false;$('play').textContent='Play';current.time=Number($('timeline').value);if(currentSource)currentSource.time=current.time;elapsed=current.time;mixer.update(0);sourceMixer.update(0)};
 $('source').onchange=()=>{sourceActor.visible=$('source').checked;view()};$('skeleton').onchange=()=>{if(helper)helper.visible=$('skeleton').checked};$('camera').onclick=view;
-window.addEventListener('keydown',e=>{if(e.target.closest('input,select,textarea,button,[contenteditable="true"]')||e.ctrlKey||e.altKey||e.metaKey||!gltf)return;if(e.code==='Escape'){setMode('preview');return}if(mode!=='keyboard'){if(['KeyW','KeyA','KeyS','KeyD','Space'].includes(e.code))setMode('keyboard');else return;}
+window.addEventListener('keydown',e=>{if(document.querySelector('dialog[open]')||e.target.closest('input,select,textarea,button,[contenteditable="true"]')||e.ctrlKey||e.altKey||e.metaKey||!gltf)return;if(e.code==='Escape'){setMode('preview');return}if(mode!=='keyboard'){if(['KeyW','KeyA','KeyS','KeyD','Space'].includes(e.code))setMode('keyboard');else return;}
  const mapping={Digit1:'Roll',Digit2:'Dance_Loop',Digit3:'Interact',Digit4:'PickUp_Table',Digit5:'Fixing_Kneeling',Digit6:'Punch_Jab',Digit7:'Punch_Cross'};
  if(!['KeyW','KeyA','KeyS','KeyD','ShiftLeft','ShiftRight','Space','KeyC','KeyE',...Object.keys(mapping)].includes(e.code))return;e.preventDefault();keys.add(e.code);if(e.repeat||oneShot)return;
  if(e.code==='Space'&&!seated){const motion=desiredMovement();jumpTravel=motion.d.multiplyScalar(motion.fast?3:1.1);playSequence(['Jump_Start','Jump_Loop','Jump_Land']);}else if(e.code==='KeyC'&&!seated)crouched=!crouched;else if(e.code==='KeyE')playSequence([seated?'Sitting_Exit':'Sitting_Enter']);else if(mapping[e.code]&&!seated){playSequence([mapping[e.code]]);if(loop(mapping[e.code]))sequence=['Idle_Loop']}
 });
+document.addEventListener('click',e=>{if(e.target.closest('[data-open-panel]'))keys.clear()});
 window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());document.addEventListener('visibilitychange',()=>{if(document.hidden)keys.clear()});
-function resize(){renderer.setSize(stage.clientWidth,stage.clientHeight);camera.aspect=stage.clientWidth/stage.clientHeight;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(stage);resize();view();
+function resize(){renderer.setSize(stage.clientWidth,stage.clientHeight);camera.aspect=stage.clientWidth/stage.clientHeight;camera.updateProjectionMatrix();if(sourceActor.visible)view()}new ResizeObserver(resize).observe(stage);resize();view();
 try{
  const loader=new GLTFLoader();[gltf,source]=await Promise.all([loader.loadAsync('c08-quaternius.glb?v=cupped-hands-1'),loader.loadAsync('quaternius-source.glb')]);actor.add(gltf.scene);sourceActor.add(source.scene);mixer=new T.AnimationMixer(gltf.scene);sourceMixer=new T.AnimationMixer(source.scene);
  for(const clip of gltf.animations){const n=clip.name.replace(/^Q_/,'');actions[n]=mixer.clipAction(clip);const original=source.animations.find(c=>c.name===n);if(original)sourceActions[n]=sourceMixer.clipAction(original);const option=document.createElement('option');option.value=n;option.textContent=pretty(n);$('clip').append(option)}

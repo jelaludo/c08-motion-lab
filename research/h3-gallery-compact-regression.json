@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/h3-motion/",
+  "initial": {
+    "version": 21,
+    "tests": 13,
+    "selected": "k0-pounce-default",
+    "outputs": 3,
+    "reviewVersion": "recovery:v2"
+  },
+  "fixture_only_status_transitions": true,
+  "checks": [
+    "real H3 videos load without unrequested 3D",
+    "status refresh retains exact video node/playback and notes across dialogs",
+    "unrelated catalog refresh keeps current per-test review identity",
+    "material test revision retains old feedback and warns historical Keep",
+    "all-review export includes both recipe versions plus catalog snapshot",
+    "invalid refresh leaves prior manifest/media intact",
+    "actual concept overlay/source seek together with explicit elapsed-time scope",
+    "interactive skeleton report navigates instead of downloading HTML",
+    "actual native ground-truth GLB plays/scrubs over Files panel and closes on mobile",
+    "desktop/mobile have no document overflow"
+  ],
+  "errors": []
+}

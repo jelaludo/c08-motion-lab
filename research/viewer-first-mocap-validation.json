@@ -1,0 +1,214 @@
+{
+  "status": "passed",
+  "sizes": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollHeight": 900,
+      "scrollWidth": 1440,
+      "views": [
+        {
+          "x": 13,
+          "y": 175.734375,
+          "width": 702,
+          "height": 294.375,
+          "bottom": 470.109375,
+          "right": 715
+        },
+        {
+          "x": 725,
+          "y": 175.734375,
+          "width": 702,
+          "height": 294.375,
+          "bottom": 470.109375,
+          "right": 1427
+        },
+        {
+          "x": 13,
+          "y": 545.4375,
+          "width": 702,
+          "height": 294.375,
+          "bottom": 839.8125,
+          "right": 715
+        },
+        {
+          "x": 725,
+          "y": 545.4375,
+          "width": 702,
+          "height": 294.375,
+          "bottom": 839.8125,
+          "right": 1427
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollHeight": 768,
+      "scrollWidth": 1366,
+      "views": [
+        {
+          "x": 13,
+          "y": 175.734375,
+          "width": 665,
+          "height": 228.375,
+          "bottom": 404.109375,
+          "right": 678
+        },
+        {
+          "x": 688,
+          "y": 175.734375,
+          "width": 665,
+          "height": 228.375,
+          "bottom": 404.109375,
+          "right": 1353
+        },
+        {
+          "x": 13,
+          "y": 479.4375,
+          "width": 665,
+          "height": 228.375,
+          "bottom": 707.8125,
+          "right": 678
+        },
+        {
+          "x": 688,
+          "y": 479.4375,
+          "width": 665,
+          "height": 228.375,
+          "bottom": 707.8125,
+          "right": 1353
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "scrollHeight": 1080,
+      "scrollWidth": 1920,
+      "views": [
+        {
+          "x": 13,
+          "y": 175.734375,
+          "width": 942,
+          "height": 384.375,
+          "bottom": 560.109375,
+          "right": 955
+        },
+        {
+          "x": 965,
+          "y": 175.734375,
+          "width": 942,
+          "height": 384.375,
+          "bottom": 560.109375,
+          "right": 1907
+        },
+        {
+          "x": 13,
+          "y": 635.4375,
+          "width": 942,
+          "height": 384.375,
+          "bottom": 1019.8125,
+          "right": 955
+        },
+        {
+          "x": 965,
+          "y": 635.4375,
+          "width": 942,
+          "height": 384.375,
+          "bottom": 1019.8125,
+          "right": 1907
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollHeight": 844,
+      "scrollWidth": 390,
+      "views": [
+        {
+          "x": 7,
+          "y": 292.53125,
+          "width": 184.5,
+          "height": 216.53125,
+          "bottom": 509.0625,
+          "right": 191.5
+        },
+        {
+          "x": 198.5,
+          "y": 292.53125,
+          "width": 184.5,
+          "height": 216.53125,
+          "bottom": 509.0625,
+          "right": 383
+        },
+        {
+          "x": 7,
+          "y": 575.859375,
+          "width": 184.5,
+          "height": 216.546875,
+          "bottom": 792.40625,
+          "right": 191.5
+        },
+        {
+          "x": 198.5,
+          "y": 575.859375,
+          "width": 184.5,
+          "height": 216.546875,
+          "bottom": 792.40625,
+          "right": 383
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "scrollHeight": 390,
+      "scrollWidth": 844,
+      "views": [
+        {
+          "x": 13,
+          "y": 143.390625,
+          "width": 197,
+          "height": 211.8125,
+          "bottom": 355.203125,
+          "right": 210
+        },
+        {
+          "x": 220,
+          "y": 143.390625,
+          "width": 197,
+          "height": 211.8125,
+          "bottom": 355.203125,
+          "right": 417
+        },
+        {
+          "x": 427,
+          "y": 143.390625,
+          "width": 197,
+          "height": 211.8125,
+          "bottom": 355.203125,
+          "right": 624
+        },
+        {
+          "x": 634,
+          "y": 143.390625,
+          "width": 197,
+          "height": 211.8125,
+          "bottom": 355.203125,
+          "right": 831
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "All4animationpanelsfitdesktop/mobileviewportswithoutdocumentscroll",
+    "About/details/reviewpanelsopenandEscapecloses",
+    "Generatedarrivalshortcutsclosepanelandseekcorrecttime",
+    "Permethodreviewsandallreviewexportretainidentity",
+    "Focus/comparealltoggle",
+    "Playbackworks"
+  ],
+  "errors": []
+}

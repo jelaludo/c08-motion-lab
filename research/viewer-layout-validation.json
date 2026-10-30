@@ -1,0 +1,2251 @@
+{
+  "status": "passed",
+  "base_url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/",
+  "pages": 8,
+  "viewport_cases": 32,
+  "checks": [
+    "All main animation/video views and essential controls stay in the first viewport",
+    "No page scrolling across desktop and portrait/landscape phones",
+    "No duplicate DOM ids",
+    "Native panels have labels, focus containment, Escape dismissal and focus restoration",
+    "No page errors"
+  ],
+  "results": [
+    {
+      "folder": "mocap-rebuild",
+      "layouts": [
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "page": [
+            1366,
+            768
+          ],
+          "visible": [
+            {
+              "x": 13,
+              "y": 175.734375,
+              "width": 665,
+              "height": 228.375,
+              "right": 678,
+              "bottom": 404.109375
+            },
+            {
+              "x": 688,
+              "y": 175.734375,
+              "width": 665,
+              "height": 228.375,
+              "right": 1353,
+              "bottom": 404.109375
+            },
+            {
+              "x": 13,
+              "y": 479.4375,
+              "width": 665,
+              "height": 228.375,
+              "right": 678,
+              "bottom": 707.8125
+            },
+            {
+              "x": 688,
+              "y": 479.4375,
+              "width": 665,
+              "height": 228.375,
+              "right": 1353,
+              "bottom": 707.8125
+            }
+          ],
+          "controls": [
+            {
+              "id": "test-select",
+              "x": 146.546875,
+              "y": 50.890625,
+              "width": 245,
+              "height": 30,
+              "right": 391.546875,
+              "bottom": 80.890625
+            },
+            {
+              "id": "play",
+              "x": 22,
+              "y": 96.796875,
+              "width": 39.546875,
+              "height": 31.796875,
+              "right": 61.546875,
+              "bottom": 128.59375
+            },
+            {
+              "id": "timeline",
+              "x": 502.015625,
+              "y": 103.6875,
+              "width": 719.984375,
+              "height": 18,
+              "right": 1222,
+              "bottom": 121.6875
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 8
+        },
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "page": [
+            1440,
+            900
+          ],
+          "visible": [
+            {
+              "x": 13,
+              "y": 175.734375,
+              "width": 702,
+              "height": 294.375,
+              "right": 715,
+              "bottom": 470.109375
+            },
+            {
+              "x": 725,
+              "y": 175.734375,
+              "width": 702,
+              "height": 294.375,
+              "right": 1427,
+              "bottom": 470.109375
+            },
+            {
+              "x": 13,
+              "y": 545.4375,
+              "width": 702,
+              "height": 294.375,
+              "right": 715,
+              "bottom": 839.8125
+            },
+            {
+              "x": 725,
+              "y": 545.4375,
+              "width": 702,
+              "height": 294.375,
+              "right": 1427,
+              "bottom": 839.8125
+            }
+          ],
+          "controls": [
+            {
+              "id": "test-select",
+              "x": 146.546875,
+              "y": 50.890625,
+              "width": 245,
+              "height": 30,
+              "right": 391.546875,
+              "bottom": 80.890625
+            },
+            {
+              "id": "play",
+              "x": 22,
+              "y": 96.796875,
+              "width": 39.546875,
+              "height": 31.796875,
+              "right": 61.546875,
+              "bottom": 128.59375
+            },
+            {
+              "id": "timeline",
+              "x": 502.015625,
+              "y": 103.6875,
+              "width": 793.984375,
+              "height": 18,
+              "right": 1296,
+              "bottom": 121.6875
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 8
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "page": [
+            390,
+            844
+          ],
+          "visible": [
+            {
+              "x": 7,
+              "y": 292.53125,
+              "width": 184.5,
+              "height": 216.53125,
+              "right": 191.5,
+              "bottom": 509.0625
+            },
+            {
+              "x": 198.5,
+              "y": 292.53125,
+              "width": 184.5,
+              "height": 216.53125,
+              "right": 383,
+              "bottom": 509.0625
+            },
+            {
+              "x": 7,
+              "y": 575.859375,
+              "width": 184.5,
+              "height": 216.546875,
+              "right": 191.5,
+              "bottom": 792.40625
+            },
+            {
+              "x": 198.5,
+              "y": 575.859375,
+              "width": 184.5,
+              "height": 216.546875,
+              "right": 383,
+              "bottom": 792.40625
+            }
+          ],
+          "controls": [
+            {
+              "id": "test-select",
+              "x": 38.359375,
+              "y": 74.296875,
+              "width": 313.28125,
+              "height": 30,
+              "right": 351.640625,
+              "bottom": 104.296875
+            },
+            {
+              "id": "play",
+              "x": 12,
+              "y": 171.890625,
+              "width": 33.75,
+              "height": 28.140625,
+              "right": 45.75,
+              "bottom": 200.03125
+            },
+            {
+              "id": "timeline",
+              "x": 69.546875,
+              "y": 208.03125,
+              "width": 306.453125,
+              "height": 18,
+              "right": 376,
+              "bottom": 226.03125
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 8
+        },
+        {
+          "viewport": [
+            844,
+            390
+          ],
+          "page": [
+            844,
+            390
+          ],
+          "visible": [
+            {
+              "x": 13,
+              "y": 143.390625,
+              "width": 197,
+              "height": 211.8125,
+              "right": 210,
+              "bottom": 355.203125
+            },
+            {
+              "x": 220,
+              "y": 143.390625,
+              "width": 197,
+              "height": 211.8125,
+              "right": 417,
+              "bottom": 355.203125
+            },
+            {
+              "x": 427,
+              "y": 143.390625,
+              "width": 197,
+              "height": 211.8125,
+              "right": 624,
+              "bottom": 355.203125
+            },
+            {
+              "x": 634,
+              "y": 143.390625,
+              "width": 197,
+              "height": 211.8125,
+              "right": 831,
+              "bottom": 355.203125
+            }
+          ],
+          "controls": [
+            {
+              "id": "test-select",
+              "x": 47.359375,
+              "y": 35.6875,
+              "width": 245,
+              "height": 30,
+              "right": 292.359375,
+              "bottom": 65.6875
+            },
+            {
+              "id": "play",
+              "x": 20,
+              "y": 75.59375,
+              "width": 39.546875,
+              "height": 31.796875,
+              "right": 59.546875,
+              "bottom": 107.390625
+            },
+            {
+              "id": "timeline",
+              "x": 488.015625,
+              "y": 82.484375,
+              "width": 215.984375,
+              "height": 18,
+              "right": 704,
+              "bottom": 100.484375
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 8
+        }
+      ],
+      "panel_label_focus_escape_restore": true,
+      "errors": []
+    },
+    {
+      "folder": "biped-motion",
+      "layouts": [
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "page": [
+            1366,
+            768
+          ],
+          "visible": [
+            {
+              "x": 11,
+              "y": 127,
+              "width": 667,
+              "height": 230,
+              "right": 678,
+              "bottom": 357
+            },
+            {
+              "x": 688,
+              "y": 127,
+              "width": 667,
+              "height": 230,
+              "right": 1355,
+              "bottom": 357
+            },
+            {
+              "x": 11,
+              "y": 431,
+              "width": 667,
+              "height": 230,
+              "right": 678,
+              "bottom": 661
+            },
+            {
+              "x": 688,
+              "y": 431,
+              "width": 667,
+              "height": 230,
+              "right": 1355,
+              "bottom": 661
+            }
+          ],
+          "controls": [
+            {
+              "id": "test-select",
+              "x": 52,
+              "y": 51,
+              "width": 480,
+              "height": 32,
+              "right": 532,
+              "bottom": 83
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 705.5,
+              "width": 70,
+              "height": 31,
+              "right": 80,
+              "bottom": 736.5
+            },
+            {
+              "id": "timeline",
+              "x": 240,
+              "y": 712,
+              "width": 1001,
+              "height": 18,
+              "right": 1241,
+              "bottom": 730
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 7
+        },
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "page": [
+            1440,
+            900
+          ],
+          "visible": [
+            {
+              "x": 11,
+              "y": 127,
+              "width": 704,
+              "height": 296,
+              "right": 715,
+              "bottom": 423
+            },
+            {
+              "x": 725,
+              "y": 127,
+              "width": 704,
+              "height": 296,
+              "right": 1429,
+              "bottom": 423
+            },
+            {
+              "x": 11,
+              "y": 497,
+              "width": 704,
+              "height": 296,
+              "right": 715,
+              "bottom": 793
+            },
+            {
+              "x": 725,
+              "y": 497,
+              "width": 704,
+              "height": 296,
+              "right": 1429,
+              "bottom": 793
+            }
+          ],
+          "controls": [
+            {
+              "id": "test-select",
+              "x": 52,
+              "y": 51,
+              "width": 480,
+              "height": 32,
+              "right": 532,
+              "bottom": 83
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 837.5,
+              "width": 70,
+              "height": 31,
+              "right": 80,
+              "bottom": 868.5
+            },
+            {
+              "id": "timeline",
+              "x": 240,
+              "y": 844,
+              "width": 1075,
+              "height": 18,
+              "right": 1315,
+              "bottom": 862
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 7
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "page": [
+            390,
+            844
+          ],
+          "visible": [
+            {
+              "x": 6,
+              "y": 124,
+              "width": 185.5,
+              "height": 262,
+              "right": 191.5,
+              "bottom": 386
+            },
+            {
+              "x": 198.5,
+              "y": 124,
+              "width": 185.5,
+              "height": 262,
+              "right": 384,
+              "bottom": 386
+            },
+            {
+              "x": 6,
+              "y": 460,
+              "width": 185.5,
+              "height": 262,
+              "right": 191.5,
+              "bottom": 722
+            },
+            {
+              "x": 198.5,
+              "y": 460,
+              "width": 185.5,
+              "height": 262,
+              "right": 384,
+              "bottom": 722
+            }
+          ],
+          "controls": [
+            {
+              "id": "test-select",
+              "x": 47,
+              "y": 45,
+              "width": 296,
+              "height": 32,
+              "right": 343,
+              "bottom": 77
+            },
+            {
+              "id": "play",
+              "x": 5,
+              "y": 760,
+              "width": 58,
+              "height": 28,
+              "right": 63,
+              "bottom": 788
+            },
+            {
+              "id": "timeline",
+              "x": 7,
+              "y": 795,
+              "width": 380,
+              "height": 18,
+              "right": 387,
+              "bottom": 813
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 7
+        },
+        {
+          "viewport": [
+            844,
+            390
+          ],
+          "page": [
+            844,
+            390
+          ],
+          "visible": [
+            {
+              "x": 11,
+              "y": 97,
+              "width": 198,
+              "height": 211,
+              "right": 209,
+              "bottom": 308
+            },
+            {
+              "x": 219,
+              "y": 97,
+              "width": 198,
+              "height": 211,
+              "right": 417,
+              "bottom": 308
+            },
+            {
+              "x": 427,
+              "y": 97,
+              "width": 198,
+              "height": 211,
+              "right": 625,
+              "bottom": 308
+            },
+            {
+              "x": 635,
+              "y": 97,
+              "width": 198,
+              "height": 211,
+              "right": 833,
+              "bottom": 308
+            }
+          ],
+          "controls": [
+            {
+              "id": "test-select",
+              "x": 52,
+              "y": 36,
+              "width": 480,
+              "height": 32,
+              "right": 532,
+              "bottom": 68
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 339.5,
+              "width": 58,
+              "height": 31,
+              "right": 68,
+              "bottom": 370.5
+            },
+            {
+              "id": "timeline",
+              "x": 216,
+              "y": 346,
+              "width": 513,
+              "height": 18,
+              "right": 729,
+              "bottom": 364
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 7
+        }
+      ],
+      "panel_label_focus_escape_restore": true,
+      "errors": []
+    },
+    {
+      "folder": "h3-motion",
+      "layouts": [
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "page": [
+            1366,
+            768
+          ],
+          "visible": [
+            {
+              "x": 12,
+              "y": 103.796875,
+              "width": 666,
+              "height": 594.40625,
+              "right": 678,
+              "bottom": 698.203125
+            },
+            {
+              "x": 688,
+              "y": 103.796875,
+              "width": 666,
+              "height": 594.40625,
+              "right": 1354,
+              "bottom": 698.203125
+            }
+          ],
+          "controls": [
+            {
+              "id": "quick-test",
+              "x": 52,
+              "y": 51.890625,
+              "width": 620,
+              "height": 32,
+              "right": 672,
+              "bottom": 83.890625
+            },
+            {
+              "id": "play-all",
+              "x": 21,
+              "y": 716.203125,
+              "width": 41.546875,
+              "height": 33.796875,
+              "right": 62.546875,
+              "bottom": 750
+            },
+            {
+              "id": "pause-all",
+              "x": 71.546875,
+              "y": 716.203125,
+              "width": 50.578125,
+              "height": 33.796875,
+              "right": 122.125,
+              "bottom": 750
+            },
+            {
+              "id": "timeline",
+              "x": 341.984375,
+              "y": 724.09375,
+              "width": 896.015625,
+              "height": 18,
+              "right": 1238,
+              "bottom": 742.09375
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 6
+        },
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "page": [
+            1440,
+            900
+          ],
+          "visible": [
+            {
+              "x": 12,
+              "y": 103.796875,
+              "width": 703,
+              "height": 726.40625,
+              "right": 715,
+              "bottom": 830.203125
+            },
+            {
+              "x": 725,
+              "y": 103.796875,
+              "width": 703,
+              "height": 726.40625,
+              "right": 1428,
+              "bottom": 830.203125
+            }
+          ],
+          "controls": [
+            {
+              "id": "quick-test",
+              "x": 52,
+              "y": 51.890625,
+              "width": 620,
+              "height": 32,
+              "right": 672,
+              "bottom": 83.890625
+            },
+            {
+              "id": "play-all",
+              "x": 21,
+              "y": 848.203125,
+              "width": 41.546875,
+              "height": 33.796875,
+              "right": 62.546875,
+              "bottom": 882
+            },
+            {
+              "id": "pause-all",
+              "x": 71.546875,
+              "y": 848.203125,
+              "width": 50.578125,
+              "height": 33.796875,
+              "right": 122.125,
+              "bottom": 882
+            },
+            {
+              "id": "timeline",
+              "x": 341.984375,
+              "y": 856.09375,
+              "width": 970.015625,
+              "height": 18,
+              "right": 1312,
+              "bottom": 874.09375
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 6
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "page": [
+            390,
+            844
+          ],
+          "visible": [
+            {
+              "x": 8,
+              "y": 134.390625,
+              "width": 374,
+              "height": 310.234375,
+              "right": 382,
+              "bottom": 444.625
+            },
+            {
+              "x": 8,
+              "y": 451.625,
+              "width": 374,
+              "height": 310.234375,
+              "right": 382,
+              "bottom": 761.859375
+            }
+          ],
+          "controls": [
+            {
+              "id": "quick-test",
+              "x": 43,
+              "y": 50.6875,
+              "width": 304,
+              "height": 32,
+              "right": 347,
+              "bottom": 82.6875
+            },
+            {
+              "id": "play-all",
+              "x": 14,
+              "y": 773.859375,
+              "width": 31.75,
+              "height": 30.140625,
+              "right": 45.75,
+              "bottom": 804
+            },
+            {
+              "id": "pause-all",
+              "x": 50.75,
+              "y": 773.859375,
+              "width": 40.03125,
+              "height": 30.140625,
+              "right": 90.78125,
+              "bottom": 804
+            },
+            {
+              "id": "timeline",
+              "x": 16,
+              "y": 811,
+              "width": 261,
+              "height": 18,
+              "right": 277,
+              "bottom": 829
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 6
+        },
+        {
+          "viewport": [
+            844,
+            390
+          ],
+          "page": [
+            844,
+            390
+          ],
+          "visible": [
+            {
+              "x": 12,
+              "y": 92.59375,
+              "width": 405,
+              "height": 227.609375,
+              "right": 417,
+              "bottom": 320.203125
+            },
+            {
+              "x": 427,
+              "y": 92.59375,
+              "width": 405,
+              "height": 227.609375,
+              "right": 832,
+              "bottom": 320.203125
+            }
+          ],
+          "controls": [
+            {
+              "id": "quick-test",
+              "x": 48,
+              "y": 45.6875,
+              "width": 448.03125,
+              "height": 32,
+              "right": 496.03125,
+              "bottom": 77.6875
+            },
+            {
+              "id": "play-all",
+              "x": 21,
+              "y": 338.203125,
+              "width": 41.546875,
+              "height": 33.796875,
+              "right": 62.546875,
+              "bottom": 372
+            },
+            {
+              "id": "pause-all",
+              "x": 71.546875,
+              "y": 338.203125,
+              "width": 50.578125,
+              "height": 33.796875,
+              "right": 122.125,
+              "bottom": 372
+            },
+            {
+              "id": "timeline",
+              "x": 341.984375,
+              "y": 346.09375,
+              "width": 374.015625,
+              "height": 18,
+              "right": 716,
+              "bottom": 364.09375
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 6
+        }
+      ],
+      "panel_label_focus_escape_restore": true,
+      "errors": []
+    },
+    {
+      "folder": "lab",
+      "layouts": [
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "page": [
+            1366,
+            768
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 86,
+              "width": 1366,
+              "height": 631,
+              "right": 1366,
+              "bottom": 717
+            }
+          ],
+          "controls": [
+            {
+              "id": "test",
+              "x": 178.953125,
+              "y": 43,
+              "width": 638.0625,
+              "height": 34,
+              "right": 817.015625,
+              "bottom": 77
+            },
+            {
+              "id": "mode",
+              "x": 866.1875,
+              "y": 43,
+              "width": 155,
+              "height": 34,
+              "right": 1021.1875,
+              "bottom": 77
+            },
+            {
+              "id": "play",
+              "x": 14,
+              "y": 727,
+              "width": 50.578125,
+              "height": 32,
+              "right": 64.578125,
+              "bottom": 759
+            },
+            {
+              "id": "time",
+              "x": 272.484375,
+              "y": 735,
+              "width": 858.21875,
+              "height": 16,
+              "right": 1130.703125,
+              "bottom": 751
+            },
+            {
+              "id": "continuous",
+              "x": 1030.1875,
+              "y": 44,
+              "width": 80.734375,
+              "height": 32,
+              "right": 1110.921875,
+              "bottom": 76
+            },
+            {
+              "id": "keyboard",
+              "x": 1119.921875,
+              "y": 44,
+              "width": 111.15625,
+              "height": 32,
+              "right": 1231.078125,
+              "bottom": 76
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 1
+        },
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "page": [
+            1440,
+            900
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 86,
+              "width": 1440,
+              "height": 763,
+              "right": 1440,
+              "bottom": 849
+            }
+          ],
+          "controls": [
+            {
+              "id": "test",
+              "x": 178.953125,
+              "y": 43,
+              "width": 712.0625,
+              "height": 34,
+              "right": 891.015625,
+              "bottom": 77
+            },
+            {
+              "id": "mode",
+              "x": 940.1875,
+              "y": 43,
+              "width": 155,
+              "height": 34,
+              "right": 1095.1875,
+              "bottom": 77
+            },
+            {
+              "id": "play",
+              "x": 14,
+              "y": 859,
+              "width": 50.578125,
+              "height": 32,
+              "right": 64.578125,
+              "bottom": 891
+            },
+            {
+              "id": "time",
+              "x": 272.484375,
+              "y": 867,
+              "width": 932.21875,
+              "height": 16,
+              "right": 1204.703125,
+              "bottom": 883
+            },
+            {
+              "id": "continuous",
+              "x": 1104.1875,
+              "y": 44,
+              "width": 80.734375,
+              "height": 32,
+              "right": 1184.921875,
+              "bottom": 76
+            },
+            {
+              "id": "keyboard",
+              "x": 1193.921875,
+              "y": 44,
+              "width": 111.15625,
+              "height": 32,
+              "right": 1305.078125,
+              "bottom": 76
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 1
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "page": [
+            390,
+            844
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 189,
+              "width": 390,
+              "height": 581,
+              "right": 390,
+              "bottom": 770
+            }
+          ],
+          "controls": [
+            {
+              "id": "test",
+              "x": 51.390625,
+              "y": 107,
+              "width": 329.609375,
+              "height": 34,
+              "right": 381,
+              "bottom": 141
+            },
+            {
+              "id": "mode",
+              "x": 49.171875,
+              "y": 147,
+              "width": 331.828125,
+              "height": 34,
+              "right": 381,
+              "bottom": 181
+            },
+            {
+              "id": "play",
+              "x": 8,
+              "y": 779,
+              "width": 50.578125,
+              "height": 32,
+              "right": 58.578125,
+              "bottom": 811
+            },
+            {
+              "id": "time",
+              "x": 242.484375,
+              "y": 787,
+              "width": 137.515625,
+              "height": 16,
+              "right": 380,
+              "bottom": 803
+            },
+            {
+              "id": "continuous",
+              "x": 207.765625,
+              "y": 37,
+              "width": 69.671875,
+              "height": 29,
+              "right": 277.4375,
+              "bottom": 66
+            },
+            {
+              "id": "keyboard",
+              "x": 283.4375,
+              "y": 37,
+              "width": 97.5625,
+              "height": 29,
+              "right": 381,
+              "bottom": 66
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 1
+        },
+        {
+          "viewport": [
+            844,
+            390
+          ],
+          "page": [
+            844,
+            390
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 86,
+              "width": 844,
+              "height": 253,
+              "right": 844,
+              "bottom": 339
+            }
+          ],
+          "controls": [
+            {
+              "id": "test",
+              "x": 178.953125,
+              "y": 43,
+              "width": 116.0625,
+              "height": 34,
+              "right": 295.015625,
+              "bottom": 77
+            },
+            {
+              "id": "mode",
+              "x": 344.1875,
+              "y": 43,
+              "width": 155,
+              "height": 34,
+              "right": 499.1875,
+              "bottom": 77
+            },
+            {
+              "id": "play",
+              "x": 14,
+              "y": 349,
+              "width": 50.578125,
+              "height": 32,
+              "right": 64.578125,
+              "bottom": 381
+            },
+            {
+              "id": "time",
+              "x": 272.484375,
+              "y": 357,
+              "width": 336.21875,
+              "height": 16,
+              "right": 608.703125,
+              "bottom": 373
+            },
+            {
+              "id": "continuous",
+              "x": 508.1875,
+              "y": 44,
+              "width": 80.734375,
+              "height": 32,
+              "right": 588.921875,
+              "bottom": 76
+            },
+            {
+              "id": "keyboard",
+              "x": 597.921875,
+              "y": 44,
+              "width": 111.15625,
+              "height": 32,
+              "right": 709.078125,
+              "bottom": 76
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 1
+        }
+      ],
+      "panel_label_focus_escape_restore": true,
+      "errors": []
+    },
+    {
+      "folder": "reactive",
+      "layouts": [
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "page": [
+            1366,
+            768
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 131,
+              "width": 1366,
+              "height": 637,
+              "right": 1366,
+              "bottom": 768
+            }
+          ],
+          "controls": [
+            {
+              "id": "scenario",
+              "x": 167.34375,
+              "y": 46,
+              "width": 236,
+              "height": 30,
+              "right": 403.34375,
+              "bottom": 76
+            },
+            {
+              "id": "seed",
+              "x": 445.171875,
+              "y": 46,
+              "width": 45,
+              "height": 30,
+              "right": 490.171875,
+              "bottom": 76
+            },
+            {
+              "id": "body",
+              "x": 532.734375,
+              "y": 46,
+              "width": 83,
+              "height": 30,
+              "right": 615.734375,
+              "bottom": 76
+            },
+            {
+              "id": "play",
+              "x": 52.21875,
+              "y": 89,
+              "width": 48.578125,
+              "height": 28,
+              "right": 100.796875,
+              "bottom": 117
+            },
+            {
+              "id": "timeline",
+              "x": 409.625,
+              "y": 94,
+              "width": 858.25,
+              "height": 18,
+              "right": 1267.875,
+              "bottom": 112
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "page": [
+            1440,
+            900
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 131,
+              "width": 1440,
+              "height": 769,
+              "right": 1440,
+              "bottom": 900
+            }
+          ],
+          "controls": [
+            {
+              "id": "scenario",
+              "x": 167.34375,
+              "y": 46,
+              "width": 236,
+              "height": 30,
+              "right": 403.34375,
+              "bottom": 76
+            },
+            {
+              "id": "seed",
+              "x": 445.171875,
+              "y": 46,
+              "width": 45,
+              "height": 30,
+              "right": 490.171875,
+              "bottom": 76
+            },
+            {
+              "id": "body",
+              "x": 532.734375,
+              "y": 46,
+              "width": 83,
+              "height": 30,
+              "right": 615.734375,
+              "bottom": 76
+            },
+            {
+              "id": "play",
+              "x": 52.21875,
+              "y": 89,
+              "width": 48.578125,
+              "height": 28,
+              "right": 100.796875,
+              "bottom": 117
+            },
+            {
+              "id": "timeline",
+              "x": 409.625,
+              "y": 94,
+              "width": 932.25,
+              "height": 18,
+              "right": 1341.875,
+              "bottom": 112
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "page": [
+            390,
+            844
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 206,
+              "width": 390,
+              "height": 638,
+              "right": 390,
+              "bottom": 844
+            }
+          ],
+          "controls": [
+            {
+              "id": "scenario",
+              "x": 49.671875,
+              "y": 37,
+              "width": 334.328125,
+              "height": 27,
+              "right": 384,
+              "bottom": 64
+            },
+            {
+              "id": "seed",
+              "x": 33.671875,
+              "y": 70,
+              "width": 40,
+              "height": 27,
+              "right": 73.671875,
+              "bottom": 97
+            },
+            {
+              "id": "body",
+              "x": 108,
+              "y": 70,
+              "width": 76,
+              "height": 27,
+              "right": 184,
+              "bottom": 97
+            },
+            {
+              "id": "play",
+              "x": 35.84375,
+              "y": 141,
+              "width": 37.484375,
+              "height": 26,
+              "right": 73.328125,
+              "bottom": 167
+            },
+            {
+              "id": "timeline",
+              "x": 14,
+              "y": 174,
+              "width": 298.5625,
+              "height": 18,
+              "right": 312.5625,
+              "bottom": 192
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            844,
+            390
+          ],
+          "page": [
+            844,
+            390
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 124,
+              "width": 844,
+              "height": 266,
+              "right": 844,
+              "bottom": 390
+            }
+          ],
+          "controls": [
+            {
+              "id": "scenario",
+              "x": 57.4375,
+              "y": 39,
+              "width": 236,
+              "height": 30,
+              "right": 293.4375,
+              "bottom": 69
+            },
+            {
+              "id": "seed",
+              "x": 330.265625,
+              "y": 39,
+              "width": 45,
+              "height": 30,
+              "right": 375.265625,
+              "bottom": 69
+            },
+            {
+              "id": "body",
+              "x": 412.828125,
+              "y": 39,
+              "width": 83,
+              "height": 30,
+              "right": 495.828125,
+              "bottom": 69
+            },
+            {
+              "id": "play",
+              "x": 52.21875,
+              "y": 82,
+              "width": 48.578125,
+              "height": 28,
+              "right": 100.796875,
+              "bottom": 110
+            },
+            {
+              "id": "timeline",
+              "x": 409.625,
+              "y": 87,
+              "width": 336.25,
+              "height": 18,
+              "right": 745.875,
+              "bottom": 105
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        }
+      ],
+      "panel_label_focus_escape_restore": true,
+      "errors": []
+    },
+    {
+      "folder": "mb-predictive",
+      "layouts": [
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "page": [
+            1366,
+            768
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 152,
+              "width": 1366,
+              "height": 616,
+              "right": 1366,
+              "bottom": 768
+            }
+          ],
+          "controls": [
+            {
+              "id": "case",
+              "x": 172.75,
+              "y": 51,
+              "width": 224,
+              "height": 30,
+              "right": 396.75,
+              "bottom": 81
+            },
+            {
+              "id": "body",
+              "x": 439.3125,
+              "y": 51,
+              "width": 212,
+              "height": 30,
+              "right": 651.3125,
+              "bottom": 81
+            },
+            {
+              "id": "play",
+              "x": 65,
+              "y": 94,
+              "width": 77.625,
+              "height": 44,
+              "right": 142.625,
+              "bottom": 138
+            },
+            {
+              "id": "timeline",
+              "x": 550.15625,
+              "y": 108,
+              "width": 728.5,
+              "height": 16,
+              "right": 1278.65625,
+              "bottom": 124
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "page": [
+            1440,
+            900
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 152,
+              "width": 1440,
+              "height": 748,
+              "right": 1440,
+              "bottom": 900
+            }
+          ],
+          "controls": [
+            {
+              "id": "case",
+              "x": 172.75,
+              "y": 51,
+              "width": 224,
+              "height": 30,
+              "right": 396.75,
+              "bottom": 81
+            },
+            {
+              "id": "body",
+              "x": 439.3125,
+              "y": 51,
+              "width": 212,
+              "height": 30,
+              "right": 651.3125,
+              "bottom": 81
+            },
+            {
+              "id": "play",
+              "x": 65,
+              "y": 94,
+              "width": 77.625,
+              "height": 44,
+              "right": 142.625,
+              "bottom": 138
+            },
+            {
+              "id": "timeline",
+              "x": 550.15625,
+              "y": 108,
+              "width": 802.5,
+              "height": 16,
+              "right": 1352.65625,
+              "bottom": 124
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "page": [
+            390,
+            844
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 216,
+              "width": 390,
+              "height": 628,
+              "right": 390,
+              "bottom": 844
+            }
+          ],
+          "controls": [
+            {
+              "id": "case",
+              "x": 61.546875,
+              "y": 37,
+              "width": 322.453125,
+              "height": 27,
+              "right": 384,
+              "bottom": 64
+            },
+            {
+              "id": "body",
+              "x": 34.328125,
+              "y": 72,
+              "width": 135.078125,
+              "height": 27,
+              "right": 169.40625,
+              "bottom": 99
+            },
+            {
+              "id": "play",
+              "x": 58,
+              "y": 110,
+              "width": 68.828125,
+              "height": 42,
+              "right": 126.828125,
+              "bottom": 152
+            },
+            {
+              "id": "timeline",
+              "x": 12,
+              "y": 188,
+              "width": 297.65625,
+              "height": 16,
+              "right": 309.65625,
+              "bottom": 204
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            844,
+            390
+          ],
+          "page": [
+            844,
+            390
+          ],
+          "visible": [
+            {
+              "x": 0,
+              "y": 129,
+              "width": 844,
+              "height": 261,
+              "right": 844,
+              "bottom": 390
+            }
+          ],
+          "controls": [
+            {
+              "id": "case",
+              "x": 61.546875,
+              "y": 37,
+              "width": 205,
+              "height": 27,
+              "right": 266.546875,
+              "bottom": 64
+            },
+            {
+              "id": "body",
+              "x": 302.875,
+              "y": 37,
+              "width": 194,
+              "height": 27,
+              "right": 496.875,
+              "bottom": 64
+            },
+            {
+              "id": "play",
+              "x": 58,
+              "y": 75,
+              "width": 68.828125,
+              "height": 42,
+              "right": 126.828125,
+              "bottom": 117
+            },
+            {
+              "id": "timeline",
+              "x": 484.296875,
+              "y": 88,
+              "width": 279.359375,
+              "height": 16,
+              "right": 763.65625,
+              "bottom": 104
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        }
+      ],
+      "panel_label_focus_escape_restore": true,
+      "errors": []
+    },
+    {
+      "folder": "vanilla",
+      "layouts": [
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "page": [
+            1366,
+            768
+          ],
+          "visible": [
+            {
+              "x": 10,
+              "y": 94,
+              "width": 1346,
+              "height": 599,
+              "right": 1356,
+              "bottom": 693
+            }
+          ],
+          "controls": [
+            {
+              "id": "motion",
+              "x": 51,
+              "y": 51,
+              "width": 520,
+              "height": 32,
+              "right": 571,
+              "bottom": 83
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 704.5,
+              "width": 70,
+              "height": 31,
+              "right": 80,
+              "bottom": 735.5
+            },
+            {
+              "id": "timeline",
+              "x": 166,
+              "y": 711,
+              "width": 1070,
+              "height": 18,
+              "right": 1236,
+              "bottom": 729
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "page": [
+            1440,
+            900
+          ],
+          "visible": [
+            {
+              "x": 10,
+              "y": 94,
+              "width": 1420,
+              "height": 731,
+              "right": 1430,
+              "bottom": 825
+            }
+          ],
+          "controls": [
+            {
+              "id": "motion",
+              "x": 51,
+              "y": 51,
+              "width": 520,
+              "height": 32,
+              "right": 571,
+              "bottom": 83
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 836.5,
+              "width": 70,
+              "height": 31,
+              "right": 80,
+              "bottom": 867.5
+            },
+            {
+              "id": "timeline",
+              "x": 166,
+              "y": 843,
+              "width": 1144,
+              "height": 18,
+              "right": 1310,
+              "bottom": 861
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "page": [
+            390,
+            844
+          ],
+          "visible": [
+            {
+              "x": 5,
+              "y": 85,
+              "width": 380,
+              "height": 670,
+              "right": 385,
+              "bottom": 755
+            }
+          ],
+          "controls": [
+            {
+              "id": "motion",
+              "x": 44,
+              "y": 45.5,
+              "width": 302,
+              "height": 31,
+              "right": 346,
+              "bottom": 76.5
+            },
+            {
+              "id": "play",
+              "x": 5,
+              "y": 763,
+              "width": 63,
+              "height": 28,
+              "right": 68,
+              "bottom": 791
+            },
+            {
+              "id": "timeline",
+              "x": 7,
+              "y": 797.5,
+              "width": 380,
+              "height": 18,
+              "right": 387,
+              "bottom": 815.5
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            844,
+            390
+          ],
+          "page": [
+            844,
+            390
+          ],
+          "visible": [
+            {
+              "x": 10,
+              "y": 72,
+              "width": 824,
+              "height": 262,
+              "right": 834,
+              "bottom": 334
+            }
+          ],
+          "controls": [
+            {
+              "id": "motion",
+              "x": 51,
+              "y": 36,
+              "width": 520,
+              "height": 32,
+              "right": 571,
+              "bottom": 68
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 338,
+              "width": 58,
+              "height": 32,
+              "right": 68,
+              "bottom": 370
+            },
+            {
+              "id": "timeline",
+              "x": 148,
+              "y": 345,
+              "width": 581,
+              "height": 18,
+              "right": 729,
+              "bottom": 363
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        }
+      ],
+      "panel_label_focus_escape_restore": true,
+      "errors": []
+    },
+    {
+      "folder": "quaternius",
+      "layouts": [
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "page": [
+            1366,
+            768
+          ],
+          "visible": [
+            {
+              "x": 10,
+              "y": 94,
+              "width": 1346,
+              "height": 599,
+              "right": 1356,
+              "bottom": 693
+            }
+          ],
+          "controls": [
+            {
+              "id": "clip",
+              "x": 10,
+              "y": 51,
+              "width": 520,
+              "height": 32,
+              "right": 530,
+              "bottom": 83
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 704.5,
+              "width": 70,
+              "height": 31,
+              "right": 80,
+              "bottom": 735.5
+            },
+            {
+              "id": "timeline",
+              "x": 166,
+              "y": 712,
+              "width": 1070,
+              "height": 16,
+              "right": 1236,
+              "bottom": 728
+            },
+            {
+              "id": "keyboard-button",
+              "x": 536,
+              "y": 51.5,
+              "width": 55.28125,
+              "height": 31,
+              "right": 591.28125,
+              "bottom": 82.5
+            },
+            {
+              "id": "random-button",
+              "x": 597.28125,
+              "y": 51.5,
+              "width": 66.515625,
+              "height": 31,
+              "right": 663.796875,
+              "bottom": 82.5
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            1440,
+            900
+          ],
+          "page": [
+            1440,
+            900
+          ],
+          "visible": [
+            {
+              "x": 10,
+              "y": 94,
+              "width": 1420,
+              "height": 731,
+              "right": 1430,
+              "bottom": 825
+            }
+          ],
+          "controls": [
+            {
+              "id": "clip",
+              "x": 10,
+              "y": 51,
+              "width": 520,
+              "height": 32,
+              "right": 530,
+              "bottom": 83
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 836.5,
+              "width": 70,
+              "height": 31,
+              "right": 80,
+              "bottom": 867.5
+            },
+            {
+              "id": "timeline",
+              "x": 166,
+              "y": 844,
+              "width": 1144,
+              "height": 16,
+              "right": 1310,
+              "bottom": 860
+            },
+            {
+              "id": "keyboard-button",
+              "x": 536,
+              "y": 51.5,
+              "width": 55.28125,
+              "height": 31,
+              "right": 591.28125,
+              "bottom": 82.5
+            },
+            {
+              "id": "random-button",
+              "x": 597.28125,
+              "y": 51.5,
+              "width": 66.515625,
+              "height": 31,
+              "right": 663.796875,
+              "bottom": 82.5
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "page": [
+            390,
+            844
+          ],
+          "visible": [
+            {
+              "x": 5,
+              "y": 85,
+              "width": 380,
+              "height": 670,
+              "right": 385,
+              "bottom": 755
+            }
+          ],
+          "controls": [
+            {
+              "id": "clip",
+              "x": 5,
+              "y": 45.5,
+              "width": 268.6875,
+              "height": 31,
+              "right": 273.6875,
+              "bottom": 76.5
+            },
+            {
+              "id": "play",
+              "x": 5,
+              "y": 763,
+              "width": 63,
+              "height": 28,
+              "right": 68,
+              "bottom": 791
+            },
+            {
+              "id": "timeline",
+              "x": 7,
+              "y": 798.5,
+              "width": 380,
+              "height": 16,
+              "right": 387,
+              "bottom": 814.5
+            },
+            {
+              "id": "keyboard-button",
+              "x": 277.6875,
+              "y": 45.5,
+              "width": 46.5,
+              "height": 31,
+              "right": 324.1875,
+              "bottom": 76.5
+            },
+            {
+              "id": "random-button",
+              "x": 328.1875,
+              "y": 45.5,
+              "width": 56.8125,
+              "height": 31,
+              "right": 385,
+              "bottom": 76.5
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        },
+        {
+          "viewport": [
+            844,
+            390
+          ],
+          "page": [
+            844,
+            390
+          ],
+          "visible": [
+            {
+              "x": 10,
+              "y": 72,
+              "width": 824,
+              "height": 262,
+              "right": 834,
+              "bottom": 334
+            }
+          ],
+          "controls": [
+            {
+              "id": "clip",
+              "x": 10,
+              "y": 36,
+              "width": 520,
+              "height": 32,
+              "right": 530,
+              "bottom": 68
+            },
+            {
+              "id": "play",
+              "x": 10,
+              "y": 339,
+              "width": 58,
+              "height": 30,
+              "right": 68,
+              "bottom": 369
+            },
+            {
+              "id": "timeline",
+              "x": 148,
+              "y": 346,
+              "width": 581,
+              "height": 16,
+              "right": 729,
+              "bottom": 362
+            },
+            {
+              "id": "keyboard-button",
+              "x": 536,
+              "y": 36.5,
+              "width": 55.28125,
+              "height": 31,
+              "right": 591.28125,
+              "bottom": 67.5
+            },
+            {
+              "id": "random-button",
+              "x": 597.28125,
+              "y": 36.5,
+              "width": 66.515625,
+              "height": 31,
+              "right": 663.796875,
+              "bottom": 67.5
+            }
+          ],
+          "duplicateIds": [],
+          "dialogs": 3
+        }
+      ],
+      "panel_label_focus_escape_restore": true,
+      "errors": []
+    }
+  ]
+}

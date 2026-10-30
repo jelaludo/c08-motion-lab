@@ -138,3 +138,8 @@ Six creator-provided references are recovered with GEM-X and adapted directly fr
 ## Own capture to MotionBricks pilot
 
 [Mocap rebuild](https://jelaludo.github.io/c08-motion-lab/mocap-rebuild/) compares six performances across raw recovery, matched filtered recovery, and genuine MotionBricks SOMA generation using single-pose versus four-pose targets. The 24 C08 comparisons include 12 generated default/action/default loops from 96 model calls. Neutral holds are authored; the entry, phase transitions and return are neural. Exact conditioning/response identity, exported loops and remaining floor/jitter errors are documented separately. Source recordings and weights remain private. See [reproduction](tools/MOCAP_REBUILD.md) and [release measurements](research/mocap-rebuild-release-validation.json).
+
+
+## Viewer-first layouts
+
+The eight test viewers prioritize animation and playback in the first screen. Comparisons have Focus/Enlarge controls; explanations, diagnostics, downloads and reviews open in accessible panels. Existing motion files and review identities are retained. Desktop and portrait/landscape phone checks are recorded in [viewport validation](research/viewer-layout-validation.json).

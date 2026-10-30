@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "viewports": [
+    {
+      "kind": "vanilla",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "stage": {
+        "x": 10,
+        "y": 94,
+        "right": 1356,
+        "bottom": 693,
+        "width": 1346,
+        "height": 599
+      },
+      "transportBottom": 741
+    },
+    {
+      "kind": "vanilla",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "stage": {
+        "x": 5,
+        "y": 85,
+        "right": 385,
+        "bottom": 755,
+        "width": 380,
+        "height": 670
+      },
+      "transportBottom": 822
+    },
+    {
+      "kind": "vanilla",
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 844,
+      "scrollHeight": 390,
+      "stage": {
+        "x": 10,
+        "y": 72,
+        "right": 834,
+        "bottom": 334,
+        "width": 824,
+        "height": 262
+      },
+      "transportBottom": 371
+    },
+    {
+      "kind": "quaternius",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "stage": {
+        "x": 10,
+        "y": 94,
+        "right": 1356,
+        "bottom": 693,
+        "width": 1346,
+        "height": 599
+      },
+      "transportBottom": 741
+    },
+    {
+      "kind": "quaternius",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "stage": {
+        "x": 5,
+        "y": 85,
+        "right": 385,
+        "bottom": 755,
+        "width": 380,
+        "height": 670
+      },
+      "transportBottom": 822
+    },
+    {
+      "kind": "quaternius",
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 844,
+      "scrollHeight": 390,
+      "stage": {
+        "x": 10,
+        "y": 72,
+        "right": 834,
+        "bottom": 334,
+        "width": 824,
+        "height": 262
+      },
+      "transportBottom": 371
+    }
+  ],
+  "checks": [
+    "Vanilla and Quaternius player and playback fit desktop/phone/landscape with no document overflow",
+    "Vanilla movement selection, playback, skeleton option and persistent review modal",
+    "Quaternius WASD, random mode, source mannequin, clip inspection and keyboard reference",
+    "No page errors"
+  ],
+  "errors": []
+}

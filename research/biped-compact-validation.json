@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "viewports": [
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "cards": [
+        {
+          "x": 10,
+          "y": 94,
+          "right": 679,
+          "bottom": 390,
+          "stageHeight": 230
+        },
+        {
+          "x": 687,
+          "y": 94,
+          "right": 1356,
+          "bottom": 390,
+          "stageHeight": 230
+        },
+        {
+          "x": 10,
+          "y": 398,
+          "right": 679,
+          "bottom": 694,
+          "stageHeight": 230
+        },
+        {
+          "x": 687,
+          "y": 398,
+          "right": 1356,
+          "bottom": 694,
+          "stageHeight": 230
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 900,
+      "cards": [
+        {
+          "x": 10,
+          "y": 94,
+          "right": 716,
+          "bottom": 456,
+          "stageHeight": 296
+        },
+        {
+          "x": 724,
+          "y": 94,
+          "right": 1430,
+          "bottom": 456,
+          "stageHeight": 296
+        },
+        {
+          "x": 10,
+          "y": 464,
+          "right": 716,
+          "bottom": 826,
+          "stageHeight": 296
+        },
+        {
+          "x": 724,
+          "y": 464,
+          "right": 1430,
+          "bottom": 826,
+          "stageHeight": 296
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "cards": [
+        {
+          "x": 5,
+          "y": 85,
+          "right": 192.5,
+          "bottom": 416,
+          "stageHeight": 262
+        },
+        {
+          "x": 197.5,
+          "y": 85,
+          "right": 385,
+          "bottom": 416,
+          "stageHeight": 262
+        },
+        {
+          "x": 5,
+          "y": 421,
+          "right": 192.5,
+          "bottom": 752,
+          "stageHeight": 262
+        },
+        {
+          "x": 197.5,
+          "y": 421,
+          "right": 385,
+          "bottom": 752,
+          "stageHeight": 262
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 844,
+      "scrollHeight": 390,
+      "cards": [
+        {
+          "x": 10,
+          "y": 72,
+          "right": 210,
+          "bottom": 334,
+          "stageHeight": 211
+        },
+        {
+          "x": 218,
+          "y": 72,
+          "right": 418,
+          "bottom": 334,
+          "stageHeight": 211
+        },
+        {
+          "x": 426,
+          "y": 72,
+          "right": 626,
+          "bottom": 334,
+          "stageHeight": 211
+        },
+        {
+          "x": 634,
+          "y": 72,
+          "right": 834,
+          "bottom": 334,
+          "stageHeight": 211
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "All four players and transport fit desktop and phone viewports",
+    "Enlarge/grid controls work",
+    "Body details retain original GLB links and Meshy attribution",
+    "Body-specific review opens and retains notes after close/reopen",
+    "Playback works",
+    "No page errors"
+  ],
+  "errors": []
+}

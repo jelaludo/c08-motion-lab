@@ -1,0 +1,240 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/biped-motion/",
+  "tests": [
+    {
+      "id": "ukemi",
+      "sample": [
+        {
+          "body": "c08",
+          "time": 1.25,
+          "finite": true,
+          "duration": 4.733333110809326,
+          "tracks": 44
+        },
+        {
+          "body": "brek43",
+          "time": 1.25,
+          "finite": true,
+          "duration": 4.733333110809326,
+          "tracks": 44
+        },
+        {
+          "body": "eva-k7",
+          "time": 1.25,
+          "finite": true,
+          "duration": 4.733333110809326,
+          "tracks": 44
+        },
+        {
+          "body": "meshy-fighter",
+          "time": 1.25,
+          "finite": true,
+          "duration": 4.733333110809326,
+          "tracks": 44
+        }
+      ],
+      "framing": {
+        "samples": 17,
+        "failures": []
+      }
+    },
+    {
+      "id": "technical-standup",
+      "sample": [
+        {
+          "body": "c08",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.066666603088379,
+          "tracks": 44
+        },
+        {
+          "body": "brek43",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.066666603088379,
+          "tracks": 44
+        },
+        {
+          "body": "eva-k7",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.066666603088379,
+          "tracks": 44
+        },
+        {
+          "body": "meshy-fighter",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.066666603088379,
+          "tracks": 44
+        }
+      ],
+      "framing": {
+        "samples": 17,
+        "failures": []
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "sample": [
+        {
+          "body": "c08",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.933333396911621,
+          "tracks": 44
+        },
+        {
+          "body": "brek43",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.933333396911621,
+          "tracks": 44
+        },
+        {
+          "body": "eva-k7",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.933333396911621,
+          "tracks": 44
+        },
+        {
+          "body": "meshy-fighter",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.933333396911621,
+          "tracks": 44
+        }
+      ],
+      "framing": {
+        "samples": 17,
+        "failures": []
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "sample": [
+        {
+          "body": "c08",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.233333110809326,
+          "tracks": 44
+        },
+        {
+          "body": "eva-k7",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.233333110809326,
+          "tracks": 44
+        },
+        {
+          "body": "brek43",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.233333110809326,
+          "tracks": 44
+        },
+        {
+          "body": "meshy-fighter",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.233333110809326,
+          "tracks": 44
+        }
+      ],
+      "framing": {
+        "samples": 17,
+        "failures": []
+      }
+    },
+    {
+      "id": "source-094553",
+      "sample": [
+        {
+          "body": "c08",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.866666793823242,
+          "tracks": 44
+        },
+        {
+          "body": "brek43",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.866666793823242,
+          "tracks": 44
+        },
+        {
+          "body": "eva-k7",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.866666793823242,
+          "tracks": 44
+        },
+        {
+          "body": "meshy-fighter",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.866666793823242,
+          "tracks": 44
+        }
+      ],
+      "framing": {
+        "samples": 17,
+        "failures": []
+      }
+    },
+    {
+      "id": "h3-dance",
+      "sample": [
+        {
+          "body": "c08",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.266666889190674,
+          "tracks": 44
+        },
+        {
+          "body": "brek43",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.266666889190674,
+          "tracks": 44
+        },
+        {
+          "body": "eva-k7",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.266666889190674,
+          "tracks": 44
+        },
+        {
+          "body": "meshy-fighter",
+          "time": 1.25,
+          "finite": true,
+          "duration": 7.266666889190674,
+          "tracks": 44
+        }
+      ],
+      "framing": {
+        "samples": 17,
+        "failures": []
+      }
+    }
+  ],
+  "checks": [
+    "all 24 real supplied GLBs load and evaluate finite poses",
+    "all24 camera frames contain sampled full-skin pose bounds at17timestamps",
+    "synchronized timestamps and play/pause",
+    "per-body scores/comments survive selection and reload",
+    "single all-review export includes both body reviews and original 13 reported verdicts separately",
+    "body-specific Keep exports point to the selected body after switching",
+    "body visibility switches",
+    "mobile layout has no overflow",
+    "H3 baseline displays the original reported failure"
+  ],
+  "errors": []
+}
