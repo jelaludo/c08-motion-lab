@@ -1,0 +1,3601 @@
+{
+  "status": "artifact_integrity_passed_visual_review_required",
+  "performances": 6,
+  "comparisons": 24,
+  "actual_neural_calls": 96,
+  "gltf_errors": 0,
+  "gltf_warnings": 0,
+  "maximum_export_joint_error_m": 5.6906352435946335e-06,
+  "ground_calibration": "Raw and cleaned share one raw-first-pose scalar; neural methods use one canonical-neutral first-pose scalar. No per-frame grounding.",
+  "jitter_scope": "Active action only, authored holds excluded. Different generated timing is not a matched fidelity score.",
+  "results": [
+    {
+      "id": "ukemi",
+      "method": "raw",
+      "artifact_sha256": "bea11075737bd49cefd4e9808afb34bf2cb635e8016f3e7150e47227266a0fb5",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "ukemi",
+        "method": "raw",
+        "clip": "MBR_ukemi_raw",
+        "frames": 143,
+        "fps": 30,
+        "duration_s": 4.733333110809326,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.7971568770219205e-06,
+        "max_segment_length_variation_m": 7.572143382317265e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          142
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 3124,
+          "p50": 0.026290757561901603,
+          "p95": 0.11977978485201697,
+          "max": 0.3923417928203406
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 3102,
+          "p50": 19.07213503281488,
+          "p95": 105.8884402057119,
+          "max": 587.2561764330419
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 852,
+          "p50": 0.036842986122483504,
+          "p95": 0.1319399581946073,
+          "max": 0.39201529577246286
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 846,
+          "p50": 24.96925816083932,
+          "p95": 113.51277894761378,
+          "max": 306.9291562930846
+        },
+        "active_root_speed_m_s": {
+          "samples": 142,
+          "p50": 0.579119486868874,
+          "p95": 3.040701824821772,
+          "max": 3.20583953919698
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 140,
+          "p50": 51.81920859261616,
+          "p95": 318.3379357209409,
+          "max": 480.89526143039694
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 4.89462067133659,
+          "maximum_local_joint_orientation_gap_rad": 1.2604787757038105,
+          "root_position_gap_m": 4.188192092380958,
+          "start_root_speed_m_s": 0.3404923113508375,
+          "end_root_speed_m_s": 0.41173032638034696,
+          "start_max_local_joint_speed_rad_s": 0.6663806717186133,
+          "end_max_local_joint_speed_rad_s": 2.1906517508024237
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.1782623749041946,
+        "lowest_skin_distribution_m": {
+          "samples": 39,
+          "p50": 0.01201807194247348,
+          "p95": 0.17800692978748567,
+          "max": 0.27357836028938876
+        },
+        "skin_samples_below_floor": 13,
+        "floor_sample_count": 39,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.1782623749041946,
+        "floor_samples_below_ground": 13,
+        "local_joint_step_p95_deg": 6.862876143005602,
+        "local_joint_step_max_deg": 22.47952885520166,
+        "local_joint_angular_acceleration_p95_rad_s2": 105.8884402057119,
+        "arm_angular_acceleration_p95_rad_s2": 113.51277894761378,
+        "root_seam_gap_m": 4.188192092380958,
+        "maximum_joint_seam_gap_m": 4.89462067133659,
+        "rotation_seam_deg": 72.22011401364547,
+        "start_root_speed_m_s": 0.3404923113508375,
+        "end_root_speed_m_s": 0.41173032638034696,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "ukemi",
+      "method": "cleaned",
+      "artifact_sha256": "b8de9aabf8c46ff1186dcede5fa22abebec5aeb818e2ebf35835512e38d82b7a",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "ukemi",
+        "method": "cleaned",
+        "clip": "MBR_ukemi_cleaned",
+        "frames": 143,
+        "fps": 30,
+        "duration_s": 4.733333110809326,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 2.6450316241190276e-06,
+        "max_segment_length_variation_m": 4.0228287628840675e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          142
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 3124,
+          "p50": 0.019773404803520345,
+          "p95": 0.09050550439723255,
+          "max": 0.3087620995621573
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 3102,
+          "p50": 6.323871440240625,
+          "p95": 31.598498070057033,
+          "max": 112.11010137203048
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 852,
+          "p50": 0.029063650876909188,
+          "p95": 0.11094107673034388,
+          "max": 0.19842211457256334
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 846,
+          "p50": 9.211192467035644,
+          "p95": 40.529342531382895,
+          "max": 112.11010137203048
+        },
+        "active_root_speed_m_s": {
+          "samples": 142,
+          "p50": 0.5780074129411921,
+          "p95": 3.0642068224423946,
+          "max": 3.129620304008622
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 140,
+          "p50": 17.73704009029034,
+          "p95": 130.83170067861337,
+          "max": 215.28999984398612
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 4.869043827595038,
+          "maximum_local_joint_orientation_gap_rad": 1.2340248352345855,
+          "root_position_gap_m": 4.178762638132661,
+          "start_root_speed_m_s": 0.24194790670617328,
+          "end_root_speed_m_s": 0.37418100621613887,
+          "start_max_local_joint_speed_rad_s": 0.4685524625426927,
+          "end_max_local_joint_speed_rad_s": 1.3038514108644865
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.1822950627175537,
+        "lowest_skin_distribution_m": {
+          "samples": 39,
+          "p50": 0.010378386647612106,
+          "p95": 0.17299104668377108,
+          "max": 0.2784127380953951
+        },
+        "skin_samples_below_floor": 14,
+        "floor_sample_count": 39,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.1822950627175537,
+        "floor_samples_below_ground": 14,
+        "local_joint_step_p95_deg": 5.185583424664139,
+        "local_joint_step_max_deg": 17.690765178509736,
+        "local_joint_angular_acceleration_p95_rad_s2": 31.598498070057033,
+        "arm_angular_acceleration_p95_rad_s2": 40.529342531382895,
+        "root_seam_gap_m": 4.178762638132661,
+        "maximum_joint_seam_gap_m": 4.869043827595038,
+        "rotation_seam_deg": 70.70441487326855,
+        "start_root_speed_m_s": 0.24194790670617328,
+        "end_root_speed_m_s": 0.37418100621613887,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "ukemi",
+      "method": "single",
+      "artifact_sha256": "c77c66293d9ea49e0db599abae4e509463ed83af8760ce0a746d92b5fede79e2",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "ukemi",
+        "method": "single",
+        "clip": "MBR_ukemi_single",
+        "frames": 480,
+        "fps": 30,
+        "duration_s": 15.966666221618652,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 5.6906352435946335e-06,
+        "max_segment_length_variation_m": 1.1789459658517742e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          467
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 10032,
+          "p50": 0.012836863675806961,
+          "p95": 0.08547788104673991,
+          "max": 0.4484034569851838
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 10010,
+          "p50": 5.277204678225085,
+          "p95": 41.27138808997505,
+          "max": 265.44006719431604
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 2736,
+          "p50": 0.024361656909906052,
+          "p95": 0.11397257283351855,
+          "max": 0.33935795619960324
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 2730,
+          "p50": 9.736720526711826,
+          "p95": 55.193322550120186,
+          "max": 195.67612299683202
+        },
+        "active_root_speed_m_s": {
+          "samples": 456,
+          "p50": 0.21262974714720953,
+          "p95": 2.860360624890729,
+          "max": 3.7492997780206863
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 454,
+          "p50": 7.313504272917761,
+          "p95": 48.425814730290156,
+          "max": 231.72579902898912
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.008873016424381886,
+              "p95": 0.04126539150915155,
+              "max": 0.07063197803940036
+            },
+            "root_step_m": 0.0006376611542353097
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.018289276402399544,
+              "p95": 0.0674944540970906,
+              "max": 0.11506391946734844
+            },
+            "root_step_m": 0.0007403189811667883
+          },
+          {
+            "frame": 126,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.015583172910808714,
+              "p95": 0.04963055730358109,
+              "max": 0.0666235396096298
+            },
+            "root_step_m": 0.0030747680401546603
+          },
+          {
+            "frame": 183,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.023636202602460736,
+              "p95": 0.07174048584512673,
+              "max": 0.09306468509053135
+            },
+            "root_step_m": 0.0009504189295577525
+          },
+          {
+            "frame": 240,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.05765428042391556,
+              "p95": 0.11340311398582537,
+              "max": 0.29646793671749627
+            },
+            "root_step_m": 0.00945276045708309
+          },
+          {
+            "frame": 297,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.023168962495990337,
+              "p95": 0.11601456963760852,
+              "max": 0.16927648122012662
+            },
+            "root_step_m": 0.0011894164588076195
+          },
+          {
+            "frame": 354,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.018600875164286403,
+              "p95": 0.0654147950660109,
+              "max": 0.08974112449928912
+            },
+            "root_step_m": 0.0009976684177471725
+          },
+          {
+            "frame": 411,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.021652677728657598,
+              "p95": 0.09060232243428412,
+              "max": 0.1366286916607063
+            },
+            "root_step_m": 0.007079028329133695
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.531789991142091,
+        "lowest_skin_distribution_m": {
+          "samples": 129,
+          "p50": 0.015953210638892892,
+          "p95": 0.05765075790072583,
+          "max": 0.3289397600217419
+        },
+        "skin_samples_below_floor": 33,
+        "floor_sample_count": 129,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.531789991142091,
+        "floor_samples_below_ground": 33,
+        "local_joint_step_p95_deg": 4.897521825699488,
+        "local_joint_step_max_deg": 25.691625604326983,
+        "local_joint_angular_acceleration_p95_rad_s2": 41.27138808997505,
+        "arm_angular_acceleration_p95_rad_s2": 55.193322550120186,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "ukemi",
+      "method": "window",
+      "artifact_sha256": "80628fe1b01082adcadf6fd6d959a5e244fb10dec3ee9c52328083476213b9e8",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "ukemi",
+        "method": "window",
+        "clip": "MBR_ukemi_window",
+        "frames": 268,
+        "fps": 30,
+        "duration_s": 8.899999618530273,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 3.2271209459819713e-06,
+        "max_segment_length_variation_m": 1.6413760750566553e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          255
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 5368,
+          "p50": 0.027765775649295502,
+          "p95": 0.17838642895307527,
+          "max": 1.1007437364414279
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 5346,
+          "p50": 11.303727881315703,
+          "p95": 84.24224319269626,
+          "max": 544.2391407680226
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1464,
+          "p50": 0.04670554768992025,
+          "p95": 0.15869048878666342,
+          "max": 0.3434330454833788
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1458,
+          "p50": 20.197261462459856,
+          "p95": 95.0579974757855,
+          "max": 251.1581623468676
+        },
+        "active_root_speed_m_s": {
+          "samples": 244,
+          "p50": 0.6181079143100531,
+          "p95": 3.5968302711422555,
+          "max": 3.7917031632016083
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 242,
+          "p50": 19.213576306478164,
+          "p95": 82.8236109750321,
+          "max": 520.8015809961346
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.008285218967330478,
+              "p95": 0.03911911817468905,
+              "max": 0.07138886162916287
+            },
+            "root_step_m": 0.0010112138685688448
+          },
+          {
+            "frame": 41,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.020128740048226384,
+              "p95": 0.07143913369293102,
+              "max": 0.08845752594978423
+            },
+            "root_step_m": 0.008544715792860732
+          },
+          {
+            "frame": 70,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.027881474321658276,
+              "p95": 0.08665879350619611,
+              "max": 0.10734265381227408
+            },
+            "root_step_m": 0.02258256596389487
+          },
+          {
+            "frame": 87,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.04071577401211597,
+              "p95": 0.08368847893747934,
+              "max": 0.10510537703055196
+            },
+            "root_step_m": 0.02561003545100833
+          },
+          {
+            "frame": 128,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.11556036274465221,
+              "p95": 0.3216508898726771,
+              "max": 0.3583394325508765
+            },
+            "root_step_m": 0.043520918306471076
+          },
+          {
+            "frame": 145,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.043436664989672656,
+              "p95": 0.10856833376548226,
+              "max": 0.31448480175387256
+            },
+            "root_step_m": 0.020122271261486108
+          },
+          {
+            "frame": 174,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.024134519539753936,
+              "p95": 0.0694150107354245,
+              "max": 0.16173226676036612
+            },
+            "root_step_m": 0.009931553234129293
+          },
+          {
+            "frame": 199,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03971670374968874,
+              "p95": 0.11385165539445549,
+              "max": 0.18680995069550488
+            },
+            "root_step_m": 0.008239779229229718
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.36963105685083497,
+        "lowest_skin_distribution_m": {
+          "samples": 73,
+          "p50": 0.022382683922835468,
+          "p95": 0.07274293106453356,
+          "max": 0.32517697940418344
+        },
+        "skin_samples_below_floor": 20,
+        "floor_sample_count": 73,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.36963105685083497,
+        "floor_samples_below_ground": 20,
+        "local_joint_step_p95_deg": 10.220789501421526,
+        "local_joint_step_max_deg": 63.06797042355445,
+        "local_joint_angular_acceleration_p95_rad_s2": 84.24224319269626,
+        "arm_angular_acceleration_p95_rad_s2": 95.0579974757855,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "raw",
+      "artifact_sha256": "ba9ee2819e96ce85c0778b844ed9c3b2ff131bc2c34fb3b08b6234e945ca5de5",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "technical-standup",
+        "method": "raw",
+        "clip": "MBR_technical_standup_raw",
+        "frames": 213,
+        "fps": 30,
+        "duration_s": 7.066666603088379,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.3781056018335305e-06,
+        "max_segment_length_variation_m": 2.769397941526641e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          212
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 4664,
+          "p50": 0.02488846224688841,
+          "p95": 0.10639175080888758,
+          "max": 0.3251850869932269
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 4642,
+          "p50": 17.99403374700914,
+          "p95": 69.65415399688447,
+          "max": 210.49342282758656
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1272,
+          "p50": 0.02893807241715572,
+          "p95": 0.11822594637416557,
+          "max": 0.3251850869932269
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1266,
+          "p50": 20.219531826693647,
+          "p95": 60.58967099949732,
+          "max": 137.93224446275192
+        },
+        "active_root_speed_m_s": {
+          "samples": 212,
+          "p50": 0.3811817888489699,
+          "p95": 1.3407427591112733,
+          "max": 1.8496179304385951
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 210,
+          "p50": 48.761818950108605,
+          "p95": 185.5131175370336,
+          "max": 407.86199979516357
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 1.814323096672345,
+          "maximum_local_joint_orientation_gap_rad": 1.5536621993555104,
+          "root_position_gap_m": 0.8791664960079558,
+          "start_root_speed_m_s": 0.4948947414834965,
+          "end_root_speed_m_s": 0.08897793300618712,
+          "start_max_local_joint_speed_rad_s": 0.8414830326136138,
+          "end_max_local_joint_speed_rad_s": 1.1557898811811402
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.3084500601234951,
+        "lowest_skin_distribution_m": {
+          "samples": 58,
+          "p50": -0.08449313237522565,
+          "p95": 0.04783691571504667,
+          "max": 0.10949748543390325
+        },
+        "skin_samples_below_floor": 49,
+        "floor_sample_count": 58,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.3084500601234951,
+        "floor_samples_below_ground": 49,
+        "local_joint_step_p95_deg": 6.09579829635682,
+        "local_joint_step_max_deg": 18.631733045306422,
+        "local_joint_angular_acceleration_p95_rad_s2": 69.65415399688447,
+        "arm_angular_acceleration_p95_rad_s2": 60.58967099949732,
+        "root_seam_gap_m": 0.8791664960079558,
+        "maximum_joint_seam_gap_m": 1.814323096672345,
+        "rotation_seam_deg": 89.01828681208387,
+        "start_root_speed_m_s": 0.4948947414834965,
+        "end_root_speed_m_s": 0.08897793300618712,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "cleaned",
+      "artifact_sha256": "5573dacf46956c23662f4bfa687124c47494e92c97a247b782c0f923b35039cb",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "technical-standup",
+        "method": "cleaned",
+        "clip": "MBR_technical_standup_cleaned",
+        "frames": 213,
+        "fps": 30,
+        "duration_s": 7.066666603088379,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.338672950380599e-06,
+        "max_segment_length_variation_m": 3.1266527839024505e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          212
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 4664,
+          "p50": 0.019641020081938028,
+          "p95": 0.09305360001106946,
+          "max": 0.2795314300259097
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 4642,
+          "p50": 5.7310412726321305,
+          "p95": 24.629814465246962,
+          "max": 68.24624096876536
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1272,
+          "p50": 0.0232974218117483,
+          "p95": 0.10759163803342861,
+          "max": 0.2795314300259097
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1266,
+          "p50": 6.902446531250303,
+          "p95": 27.11900057161752,
+          "max": 66.76707325231426
+        },
+        "active_root_speed_m_s": {
+          "samples": 212,
+          "p50": 0.3679776137337052,
+          "p95": 1.2455657229077486,
+          "max": 1.6687044265141482
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 210,
+          "p50": 19.167017198921872,
+          "p95": 71.39641995752984,
+          "max": 154.53337403401508
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 1.7949309209690238,
+          "maximum_local_joint_orientation_gap_rad": 1.565699681957136,
+          "root_position_gap_m": 0.87085103957725,
+          "start_root_speed_m_s": 0.37724237714242403,
+          "end_root_speed_m_s": 0.0556403487788054,
+          "start_max_local_joint_speed_rad_s": 0.5141297512915555,
+          "end_max_local_joint_speed_rad_s": 0.6289235256229577
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.3138477503441006,
+        "lowest_skin_distribution_m": {
+          "samples": 58,
+          "p50": -0.08612365104294373,
+          "p95": 0.0544397859583583,
+          "max": 0.08820083777134213
+        },
+        "skin_samples_below_floor": 49,
+        "floor_sample_count": 58,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.3138477503441006,
+        "floor_samples_below_ground": 49,
+        "local_joint_step_p95_deg": 5.331578549132791,
+        "local_joint_step_max_deg": 16.015971181741122,
+        "local_joint_angular_acceleration_p95_rad_s2": 24.629814465246962,
+        "arm_angular_acceleration_p95_rad_s2": 27.11900057161752,
+        "root_seam_gap_m": 0.87085103957725,
+        "maximum_joint_seam_gap_m": 1.7949309209690238,
+        "rotation_seam_deg": 89.7079837611192,
+        "start_root_speed_m_s": 0.37724237714242403,
+        "end_root_speed_m_s": 0.0556403487788054,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "single",
+      "artifact_sha256": "78c43443d3d6d9cfab9249857016187af60725871b7ed0e41779fe4a64358fbf",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "technical-standup",
+        "method": "single",
+        "clip": "MBR_technical_standup_single",
+        "frames": 440,
+        "fps": 30,
+        "duration_s": 14.633333206176758,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 2.432207766431455e-06,
+        "max_segment_length_variation_m": 1.2876123062222078e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          427
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 9152,
+          "p50": 0.018075086564169604,
+          "p95": 0.06800182368686872,
+          "max": 1.5705917837965175
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 9130,
+          "p50": 7.041647206622674,
+          "p95": 32.59399016001784,
+          "max": 1470.9038818775664
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 2496,
+          "p50": 0.03143185270080916,
+          "p95": 0.08680052644702335,
+          "max": 0.1699872417299911
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 2490,
+          "p50": 13.431856352870218,
+          "p95": 43.88537500278524,
+          "max": 158.57853410100296
+        },
+        "active_root_speed_m_s": {
+          "samples": 416,
+          "p50": 0.1313964356788433,
+          "p95": 0.6220144056193502,
+          "max": 1.3494825983392655
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 414,
+          "p50": 9.887270217428876,
+          "p95": 32.47844237758648,
+          "max": 82.59517410686259
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.008502379307775546,
+              "p95": 0.055525455615946316,
+              "max": 0.0646026530023669
+            },
+            "root_step_m": 0.0009138141633571447
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.032097060210033515,
+              "p95": 0.07894088884573215,
+              "max": 0.10884105887470247
+            },
+            "root_step_m": 0.0018350573269542397
+          },
+          {
+            "frame": 126,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.027541759422923036,
+              "p95": 0.09565672262419604,
+              "max": 0.12706405593321343
+            },
+            "root_step_m": 0.00042062311989219525
+          },
+          {
+            "frame": 143,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03268498844939467,
+              "p95": 0.1261055907470979,
+              "max": 0.14961785511654732
+            },
+            "root_step_m": 0.002517028505263248
+          },
+          {
+            "frame": 200,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.02291210601790566,
+              "p95": 0.09695528440925817,
+              "max": 0.16928848786043618
+            },
+            "root_step_m": 0.0006282926148507621
+          },
+          {
+            "frame": 257,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.026975145746603462,
+              "p95": 0.06105833802800131,
+              "max": 0.10245979415558538
+            },
+            "root_step_m": 0.0011776139202907257
+          },
+          {
+            "frame": 314,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03399756742322188,
+              "p95": 0.0822288652235589,
+              "max": 0.15274383977753436
+            },
+            "root_step_m": 0.002694073812799652
+          },
+          {
+            "frame": 371,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.029971094088977763,
+              "p95": 0.07425888975597596,
+              "max": 0.09153269462457589
+            },
+            "root_step_m": 0.003904972645257052
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.07329138126792353,
+        "lowest_skin_distribution_m": {
+          "samples": 119,
+          "p50": 0.05145712764240962,
+          "p95": 0.2801302539673133,
+          "max": 0.3591742324721997
+        },
+        "skin_samples_below_floor": 18,
+        "floor_sample_count": 119,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.07329138126792353,
+        "floor_samples_below_ground": 18,
+        "local_joint_step_p95_deg": 3.896217496450329,
+        "local_joint_step_max_deg": 89.98828054946394,
+        "local_joint_angular_acceleration_p95_rad_s2": 32.59399016001784,
+        "arm_angular_acceleration_p95_rad_s2": 43.88537500278524,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "window",
+      "artifact_sha256": "6172ab6495b9dd901ee62f6c4342417bf5180d66e654eea8f2a8d36eb5f02604",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "technical-standup",
+        "method": "window",
+        "clip": "MBR_technical_standup_window",
+        "frames": 324,
+        "fps": 30,
+        "duration_s": 10.766666412353516,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 2.2013488624095434e-06,
+        "max_segment_length_variation_m": 1.0914577541765169e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          311
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 6600,
+          "p50": 0.022968468078772043,
+          "p95": 0.08704077459176128,
+          "max": 0.2523245381204323
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 6578,
+          "p50": 9.266575881685513,
+          "p95": 45.45569022826933,
+          "max": 226.01670635131777
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1800,
+          "p50": 0.03954828849854585,
+          "p95": 0.1104594676477474,
+          "max": 0.2482203926225509
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1794,
+          "p50": 16.588284956397576,
+          "p95": 59.51889743210123,
+          "max": 226.01670635131777
+        },
+        "active_root_speed_m_s": {
+          "samples": 300,
+          "p50": 0.2530932463077459,
+          "p95": 0.9089685615225476,
+          "max": 1.3412559814645482
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 298,
+          "p50": 13.275485861278042,
+          "p95": 54.03652498393512,
+          "max": 140.22150756278924
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.008938944577923666,
+              "p95": 0.048650251135158064,
+              "max": 0.06176751598282881
+            },
+            "root_step_m": 0.0005198062219832468
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03807418060840232,
+              "p95": 0.09303489078832333,
+              "max": 0.1448646606238099
+            },
+            "root_step_m": 0.007492926740027483
+          },
+          {
+            "frame": 110,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03558800238345493,
+              "p95": 0.11071600435578717,
+              "max": 0.1928789082188231
+            },
+            "root_step_m": 0.003389890216467386
+          },
+          {
+            "frame": 127,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03785236214292009,
+              "p95": 0.10524303972266688,
+              "max": 0.18425426701286465
+            },
+            "root_step_m": 0.0026575944746316904
+          },
+          {
+            "frame": 164,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03887861198037103,
+              "p95": 0.11858242983413593,
+              "max": 0.1817121963004346
+            },
+            "root_step_m": 0.026709639881542298
+          },
+          {
+            "frame": 185,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.050118733467087534,
+              "p95": 0.12879119514102633,
+              "max": 0.16654152723785193
+            },
+            "root_step_m": 0.01620108215433018
+          },
+          {
+            "frame": 202,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03902288389023643,
+              "p95": 0.09067740159734965,
+              "max": 0.2090424957400772
+            },
+            "root_step_m": 0.01277632219062442
+          },
+          {
+            "frame": 255,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.045014570664528124,
+              "p95": 0.08365246197738291,
+              "max": 0.09155453553519446
+            },
+            "root_step_m": 0.003262444861929483
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.14608572875986603,
+        "lowest_skin_distribution_m": {
+          "samples": 88,
+          "p50": 0.04542186158486205,
+          "p95": 0.2849855831524981,
+          "max": 0.3291434967948001
+        },
+        "skin_samples_below_floor": 13,
+        "floor_sample_count": 88,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.14608572875986603,
+        "floor_samples_below_ground": 13,
+        "local_joint_step_p95_deg": 4.9870690296574525,
+        "local_joint_step_max_deg": 14.457131101888626,
+        "local_joint_angular_acceleration_p95_rad_s2": 45.45569022826933,
+        "arm_angular_acceleration_p95_rad_s2": 59.51889743210123,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "raw",
+      "artifact_sha256": "4bc54ab913f12f0e9265ec42be22c6a364e7970a9e0702832c3946386efb6698",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "gorilla-front",
+        "method": "raw",
+        "clip": "MBR_gorilla_front_raw",
+        "frames": 239,
+        "fps": 30,
+        "duration_s": 7.933333396911621,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.9652582070489193e-06,
+        "max_segment_length_variation_m": 3.715512392754583e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          238
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 5236,
+          "p50": 0.018652475637967476,
+          "p95": 0.07630110317266332,
+          "max": 0.5891134928562577
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 5214,
+          "p50": 14.227204917495758,
+          "p95": 73.73433560702883,
+          "max": 392.827062485893
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1428,
+          "p50": 0.022711036407500676,
+          "p95": 0.0788488674454267,
+          "max": 0.5891134928562577
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1422,
+          "p50": 15.006519151104595,
+          "p95": 74.54344523058161,
+          "max": 392.827062485893
+        },
+        "active_root_speed_m_s": {
+          "samples": 238,
+          "p50": 0.4921431717861831,
+          "p95": 0.7516914041273798,
+          "max": 0.8390827531510867
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 236,
+          "p50": 34.741270388925535,
+          "p95": 118.94486314976973,
+          "max": 300.64024298438983
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 2.9763944955693167,
+          "maximum_local_joint_orientation_gap_rad": 1.4587201279458153,
+          "root_position_gap_m": 2.9148295403820015,
+          "start_root_speed_m_s": 0.2016991181983976,
+          "end_root_speed_m_s": 0.055048095538072106,
+          "start_max_local_joint_speed_rad_s": 1.0437090977542933,
+          "end_max_local_joint_speed_rad_s": 3.1010606487480796
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.044286700369004006,
+        "lowest_skin_distribution_m": {
+          "samples": 65,
+          "p50": 0.41367850313652327,
+          "p95": 0.7105013988211397,
+          "max": 0.813891517780542
+        },
+        "skin_samples_below_floor": 4,
+        "floor_sample_count": 65,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.044286700369004006,
+        "floor_samples_below_ground": 4,
+        "local_joint_step_p95_deg": 4.3717311839858635,
+        "local_joint_step_max_deg": 33.75371679487394,
+        "local_joint_angular_acceleration_p95_rad_s2": 73.73433560702883,
+        "arm_angular_acceleration_p95_rad_s2": 74.54344523058161,
+        "root_seam_gap_m": 2.9148295403820015,
+        "maximum_joint_seam_gap_m": 2.9763944955693167,
+        "rotation_seam_deg": 83.57850682207867,
+        "start_root_speed_m_s": 0.2016991181983976,
+        "end_root_speed_m_s": 0.055048095538072106,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "cleaned",
+      "artifact_sha256": "d312a6a5293efd208858119e33f8bc3e15212d560b077ee46c911f925e8ae055",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "gorilla-front",
+        "method": "cleaned",
+        "clip": "MBR_gorilla_front_cleaned",
+        "frames": 239,
+        "fps": 30,
+        "duration_s": 7.933333396911621,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 2.2347364488919046e-06,
+        "max_segment_length_variation_m": 6.08802827595234e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          238
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 5236,
+          "p50": 0.014886893539136517,
+          "p95": 0.05879845466064378,
+          "max": 0.3201612402841941
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 5214,
+          "p50": 4.6285246924368435,
+          "p95": 20.584741743204763,
+          "max": 104.8888309838693
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1428,
+          "p50": 0.018886674448279708,
+          "p95": 0.06239203027038245,
+          "max": 0.3201612402841941
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1422,
+          "p50": 5.453470232103333,
+          "p95": 22.838510785665758,
+          "max": 104.8888309838693
+        },
+        "active_root_speed_m_s": {
+          "samples": 238,
+          "p50": 0.49306025661807784,
+          "p95": 0.7388225960763934,
+          "max": 0.7898884619655405
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 236,
+          "p50": 10.860555015750842,
+          "p95": 28.556306846976444,
+          "max": 78.71565593900492
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 2.9727580903966313,
+          "maximum_local_joint_orientation_gap_rad": 1.4808403733132818,
+          "root_position_gap_m": 2.9120776998426003,
+          "start_root_speed_m_s": 0.16202227514424083,
+          "end_root_speed_m_s": 0.03854336989831547,
+          "start_max_local_joint_speed_rad_s": 0.6450279898725322,
+          "end_max_local_joint_speed_rad_s": 1.7069382481166269
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.04046532448749188,
+        "lowest_skin_distribution_m": {
+          "samples": 65,
+          "p50": 0.40857612921086817,
+          "p95": 0.7102635339578776,
+          "max": 0.8243655579619531
+        },
+        "skin_samples_below_floor": 4,
+        "floor_sample_count": 65,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.04046532448749188,
+        "floor_samples_below_ground": 4,
+        "local_joint_step_p95_deg": 3.368903293946214,
+        "local_joint_step_max_deg": 18.343887831958156,
+        "local_joint_angular_acceleration_p95_rad_s2": 20.584741743204763,
+        "arm_angular_acceleration_p95_rad_s2": 22.838510785665758,
+        "root_seam_gap_m": 2.9120776998426003,
+        "maximum_joint_seam_gap_m": 2.9727580903966313,
+        "rotation_seam_deg": 84.8459035234283,
+        "start_root_speed_m_s": 0.16202227514424083,
+        "end_root_speed_m_s": 0.03854336989831547,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "single",
+      "artifact_sha256": "2e5e626a35b488aa4d0dcfe840fd36b37f5abaec20d50ff921eea0d1115ec097",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "gorilla-front",
+        "method": "single",
+        "clip": "MBR_gorilla_front_single",
+        "frames": 480,
+        "fps": 30,
+        "duration_s": 15.966666221618652,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 2.3967238433178623e-06,
+        "max_segment_length_variation_m": 1.3313352897892372e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          467
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 10032,
+          "p50": 0.013339223654341151,
+          "p95": 0.06024835816138956,
+          "max": 0.306900355463359
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 10010,
+          "p50": 5.603870869662916,
+          "p95": 26.779504472105284,
+          "max": 354.52564289787904
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 2736,
+          "p50": 0.023343057476755538,
+          "p95": 0.10012195233464143,
+          "max": 0.306900355463359
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 2730,
+          "p50": 10.902364761224934,
+          "p95": 39.74908217130783,
+          "max": 354.52564289787904
+        },
+        "active_root_speed_m_s": {
+          "samples": 456,
+          "p50": 0.15482695003902835,
+          "p95": 1.2952338971699155,
+          "max": 1.9853022480682194
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 454,
+          "p50": 8.91280609895885,
+          "p95": 31.074158584247368,
+          "max": 150.4516788032022
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.012185021262628586,
+              "p95": 0.042940615130690904,
+              "max": 0.0760378065664713
+            },
+            "root_step_m": 0.0010699262741874927
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.02466016596339626,
+              "p95": 0.09282909603107753,
+              "max": 0.12837478890133636
+            },
+            "root_step_m": 0.001838835899432414
+          },
+          {
+            "frame": 126,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.0247024440976606,
+              "p95": 0.13884678255691302,
+              "max": 0.23307773829993958
+            },
+            "root_step_m": 0.0030034966096299026
+          },
+          {
+            "frame": 183,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.027577222119071793,
+              "p95": 0.1400706699469165,
+              "max": 0.24811690088142474
+            },
+            "root_step_m": 0.001098097508596496
+          },
+          {
+            "frame": 240,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.02575783732296391,
+              "p95": 0.11001862761294307,
+              "max": 0.23996497246477658
+            },
+            "root_step_m": 0.0025297022086165437
+          },
+          {
+            "frame": 297,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.025537178887768422,
+              "p95": 0.14409390675514117,
+              "max": 0.23935615506892105
+            },
+            "root_step_m": 0.002077369572795318
+          },
+          {
+            "frame": 354,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03382122092273392,
+              "p95": 0.12784071413532516,
+              "max": 0.306900355463359
+            },
+            "root_step_m": 0.002283170443360424
+          },
+          {
+            "frame": 411,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.035954855485987515,
+              "p95": 0.12560975558214535,
+              "max": 0.2364004617170782
+            },
+            "root_step_m": 0.002735271746729005
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.09950103077853885,
+        "lowest_skin_distribution_m": {
+          "samples": 129,
+          "p50": 0.1363717234203058,
+          "p95": 0.5916243924033673,
+          "max": 0.6484859229215325
+        },
+        "skin_samples_below_floor": 7,
+        "floor_sample_count": 129,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.09950103077853885,
+        "floor_samples_below_ground": 7,
+        "local_joint_step_p95_deg": 3.4519766452401903,
+        "local_joint_step_max_deg": 17.584095099115206,
+        "local_joint_angular_acceleration_p95_rad_s2": 26.779504472105284,
+        "arm_angular_acceleration_p95_rad_s2": 39.74908217130783,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "window",
+      "artifact_sha256": "d4b5f7dc5ff462f04e91d5f9fc5075910efa941fe686aecb3c0399726840bcc9",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "gorilla-front",
+        "method": "window",
+        "clip": "MBR_gorilla_front_window",
+        "frames": 312,
+        "fps": 30,
+        "duration_s": 10.366666793823242,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 2.446967347041105e-06,
+        "max_segment_length_variation_m": 9.8006364745995e-08,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          299
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 6336,
+          "p50": 0.019343991293891867,
+          "p95": 0.08495858760398509,
+          "max": 0.3395767139266331
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 6314,
+          "p50": 7.245561845284969,
+          "p95": 37.972668072214425,
+          "max": 495.21176213287004
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1728,
+          "p50": 0.03338704315111166,
+          "p95": 0.12955819859618198,
+          "max": 0.3395767139266331
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1722,
+          "p50": 13.591421903845529,
+          "p95": 54.645947071124624,
+          "max": 495.21176213287004
+        },
+        "active_root_speed_m_s": {
+          "samples": 288,
+          "p50": 0.37417072168289195,
+          "p95": 1.6580986112317768,
+          "max": 2.248106884197917
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 286,
+          "p50": 12.208077526750463,
+          "p95": 54.40253314482108,
+          "max": 235.08000831588896
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.0094982282125428,
+              "p95": 0.04165974659139687,
+              "max": 0.09001996031819007
+            },
+            "root_step_m": 0.0009404451951530954
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.02855169709759816,
+              "p95": 0.13036313780596187,
+              "max": 0.18834420974698768
+            },
+            "root_step_m": 0.004451704869204477
+          },
+          {
+            "frame": 118,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03630015998954575,
+              "p95": 0.14733129371134276,
+              "max": 0.23363032014579185
+            },
+            "root_step_m": 0.018745677273326024
+          },
+          {
+            "frame": 135,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.038735912486003256,
+              "p95": 0.15068727908379437,
+              "max": 0.2712345153038008
+            },
+            "root_step_m": 0.016782431443651265
+          },
+          {
+            "frame": 152,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.04021652223186031,
+              "p95": 0.11786008342161924,
+              "max": 0.3395767139266331
+            },
+            "root_step_m": 0.021872123382653264
+          },
+          {
+            "frame": 173,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03884829761674993,
+              "p95": 0.14290012551481693,
+              "max": 0.19724736706072152
+            },
+            "root_step_m": 0.01726775129791223
+          },
+          {
+            "frame": 190,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.04348139566425333,
+              "p95": 0.1885220336515736,
+              "max": 0.29679374584977447
+            },
+            "root_step_m": 0.0063390743010423405
+          },
+          {
+            "frame": 243,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.04359208965266815,
+              "p95": 0.1257526551941744,
+              "max": 0.298792937251888
+            },
+            "root_step_m": 0.017423554800276964
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.01757057109684907,
+        "lowest_skin_distribution_m": {
+          "samples": 84,
+          "p50": 0.07223940692292535,
+          "p95": 0.5712817069798009,
+          "max": 0.664123256895729
+        },
+        "skin_samples_below_floor": 3,
+        "floor_sample_count": 84,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.01757057109684907,
+        "floor_samples_below_ground": 3,
+        "local_joint_step_p95_deg": 4.867768503100819,
+        "local_joint_step_max_deg": 19.4563125289174,
+        "local_joint_angular_acceleration_p95_rad_s2": 37.972668072214425,
+        "arm_angular_acceleration_p95_rad_s2": 54.645947071124624,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "raw",
+      "artifact_sha256": "7d1a3b1e671462e60fe9c1fb3728854a338966c9a454fc95b73b422ed92ee56d",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "sumo-stomp",
+        "method": "raw",
+        "clip": "MBR_sumo_stomp_raw",
+        "frames": 218,
+        "fps": 30,
+        "duration_s": 7.233333110809326,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.0269498094695597e-06,
+        "max_segment_length_variation_m": 3.136583657803449e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          217
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 4774,
+          "p50": 0.011935342714702884,
+          "p95": 0.05080449697267538,
+          "max": 0.3449179249768463
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 4752,
+          "p50": 10.47332407035928,
+          "p95": 37.85356176188459,
+          "max": 188.1046342820222
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1302,
+          "p50": 0.020357410599500293,
+          "p95": 0.07542885053452632,
+          "max": 0.3449179249768463
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1296,
+          "p50": 15.827053498209011,
+          "p95": 43.73335051206528,
+          "max": 188.1046342820222
+        },
+        "active_root_speed_m_s": {
+          "samples": 217,
+          "p50": 0.11362917993179047,
+          "p95": 0.34872249682994017,
+          "max": 0.4873383728309725
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 215,
+          "p50": 11.200931441967414,
+          "p95": 31.1393884788674,
+          "max": 59.73795420565676
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 1.4184157595354008,
+          "maximum_local_joint_orientation_gap_rad": 1.569437840614962,
+          "root_position_gap_m": 0.40026974648026487,
+          "start_root_speed_m_s": 0.0987016010792796,
+          "end_root_speed_m_s": 0.03523344495310841,
+          "start_max_local_joint_speed_rad_s": 0.975385768055075,
+          "end_max_local_joint_speed_rad_s": 0.8732498494609433
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.05658448084765881,
+        "lowest_skin_distribution_m": {
+          "samples": 59,
+          "p50": 0.04068536485775326,
+          "p95": 0.28411527175184226,
+          "max": 0.3411399413259121
+        },
+        "skin_samples_below_floor": 11,
+        "floor_sample_count": 59,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.05658448084765881,
+        "floor_samples_below_ground": 11,
+        "local_joint_step_p95_deg": 2.910883256819467,
+        "local_joint_step_max_deg": 19.76234137958326,
+        "local_joint_angular_acceleration_p95_rad_s2": 37.85356176188459,
+        "arm_angular_acceleration_p95_rad_s2": 43.73335051206528,
+        "root_seam_gap_m": 0.40026974648026487,
+        "maximum_joint_seam_gap_m": 1.4184157595354008,
+        "rotation_seam_deg": 89.9221644753629,
+        "start_root_speed_m_s": 0.0987016010792796,
+        "end_root_speed_m_s": 0.03523344495310841,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "cleaned",
+      "artifact_sha256": "da8f2be00426a939b61b06a131a926c8ce256ac49ed4a9d61936aef8c4ef9ed0",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "sumo-stomp",
+        "method": "cleaned",
+        "clip": "MBR_sumo_stomp_cleaned",
+        "frames": 218,
+        "fps": 30,
+        "duration_s": 7.233333110809326,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.3750026736930612e-06,
+        "max_segment_length_variation_m": 3.2809586553161907e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          217
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 4774,
+          "p50": 0.008217929965467897,
+          "p95": 0.045811196581640366,
+          "max": 0.2272588167557815
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 4752,
+          "p50": 2.525833009259333,
+          "p95": 9.703690667367672,
+          "max": 59.31594858542394
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1302,
+          "p50": 0.01653416214130552,
+          "p95": 0.06785177145668728,
+          "max": 0.2272588167557815
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1296,
+          "p50": 4.452996903612865,
+          "p95": 13.197731783370518,
+          "max": 59.31594858542394
+        },
+        "active_root_speed_m_s": {
+          "samples": 217,
+          "p50": 0.10865357570300715,
+          "p95": 0.35432081960332096,
+          "max": 0.4797644859104986
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 215,
+          "p50": 3.1419301091052443,
+          "p95": 8.398863389731623,
+          "max": 14.654819713597668
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 1.419240622486945,
+          "maximum_local_joint_orientation_gap_rad": 1.5767117843072735,
+          "root_position_gap_m": 0.39935335489540885,
+          "start_root_speed_m_s": 0.07432068087539956,
+          "end_root_speed_m_s": 0.022380490949886877,
+          "start_max_local_joint_speed_rad_s": 0.61824639050782,
+          "end_max_local_joint_speed_rad_s": 0.5305184835870943
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.05494249273003782,
+        "lowest_skin_distribution_m": {
+          "samples": 59,
+          "p50": 0.04174046189158055,
+          "p95": 0.28353056620464634,
+          "max": 0.3380393203163552
+        },
+        "skin_samples_below_floor": 11,
+        "floor_sample_count": 59,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.05494249273003782,
+        "floor_samples_below_ground": 11,
+        "local_joint_step_p95_deg": 2.624788218572137,
+        "local_joint_step_max_deg": 13.020971057243235,
+        "local_joint_angular_acceleration_p95_rad_s2": 9.703690667367672,
+        "arm_angular_acceleration_p95_rad_s2": 13.197731783370518,
+        "root_seam_gap_m": 0.39935335489540885,
+        "maximum_joint_seam_gap_m": 1.419240622486945,
+        "rotation_seam_deg": 90.33893074934815,
+        "start_root_speed_m_s": 0.07432068087539956,
+        "end_root_speed_m_s": 0.022380490949886877,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "single",
+      "artifact_sha256": "0daaf00531a7f49301341d1521e4736f8ab6642c396792cb127570b0cf21f601",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "sumo-stomp",
+        "method": "single",
+        "clip": "MBR_sumo_stomp_single",
+        "frames": 392,
+        "fps": 30,
+        "duration_s": 13.033333778381348,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.5346056778197551e-06,
+        "max_segment_length_variation_m": 1.0715009124417918e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          379
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 8096,
+          "p50": 0.010810363912597076,
+          "p95": 0.04683278949151622,
+          "max": 0.18724095756611445
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 8074,
+          "p50": 4.412599674904799,
+          "p95": 21.20888789874246,
+          "max": 149.9631972813457
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 2208,
+          "p50": 0.021183396491395213,
+          "p95": 0.0635466255082684,
+          "max": 0.11614304839654054
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 2202,
+          "p50": 8.200014905753953,
+          "p95": 29.530870728416673,
+          "max": 149.9631972813457
+        },
+        "active_root_speed_m_s": {
+          "samples": 368,
+          "p50": 0.05900461019590225,
+          "p95": 0.44887144495620507,
+          "max": 0.6427974242562059
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 366,
+          "p50": 7.114190925477811,
+          "p95": 23.008961255396272,
+          "max": 93.30083577095736
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.006944807697954188,
+              "p95": 0.043346989491854886,
+              "max": 0.07121232724309212
+            },
+            "root_step_m": 7.382681156415067e-05
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.021368623562684545,
+              "p95": 0.061446586400529135,
+              "max": 0.11614304839654054
+            },
+            "root_step_m": 0.0009620502052381922
+          },
+          {
+            "frame": 126,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.017866400843367842,
+              "p95": 0.06916769159100539,
+              "max": 0.095106934929208
+            },
+            "root_step_m": 0.0006237126434360651
+          },
+          {
+            "frame": 159,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.019924071503469743,
+              "p95": 0.07597059303911947,
+              "max": 0.0969094579456091
+            },
+            "root_step_m": 0.0010543671974468833
+          },
+          {
+            "frame": 208,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.019956592894219586,
+              "p95": 0.06449502716899529,
+              "max": 0.08795673961325098
+            },
+            "root_step_m": 0.0009523937424634393
+          },
+          {
+            "frame": 257,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.021750337498518735,
+              "p95": 0.08130834519981818,
+              "max": 0.09933236610520728
+            },
+            "root_step_m": 0.0006038723838702408
+          },
+          {
+            "frame": 278,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.024511680239511464,
+              "p95": 0.08371420793138346,
+              "max": 0.10366991198972843
+            },
+            "root_step_m": 0.001143445884341763
+          },
+          {
+            "frame": 323,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.032189900636512184,
+              "p95": 0.08996635765094795,
+              "max": 0.1034116920537635
+            },
+            "root_step_m": 0.002089554123187639
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.01905407611123852,
+        "lowest_skin_distribution_m": {
+          "samples": 106,
+          "p50": 0.014599033293822582,
+          "p95": 0.0682158911791193,
+          "max": 0.29162891901623617
+        },
+        "skin_samples_below_floor": 20,
+        "floor_sample_count": 106,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.01905407611123852,
+        "floor_samples_below_ground": 20,
+        "local_joint_step_p95_deg": 2.683321180688512,
+        "local_joint_step_max_deg": 10.728116620526496,
+        "local_joint_angular_acceleration_p95_rad_s2": 21.20888789874246,
+        "arm_angular_acceleration_p95_rad_s2": 29.530870728416673,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "window",
+      "artifact_sha256": "f93173042494bb8578f3b8a1fc2b24052b294024bf5e05c47b0264289f38cad3",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "sumo-stomp",
+        "method": "window",
+        "clip": "MBR_sumo_stomp_window",
+        "frames": 296,
+        "fps": 30,
+        "duration_s": 9.833333015441895,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.112400459161613e-06,
+        "max_segment_length_variation_m": 9.090664748745425e-08,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          283
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 5984,
+          "p50": 0.015471682287376148,
+          "p95": 0.06260123124910927,
+          "max": 0.19045065413587361
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 5962,
+          "p50": 5.520297569213732,
+          "p95": 27.2399637846364,
+          "max": 212.90239741018925
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1632,
+          "p50": 0.02969157431658367,
+          "p95": 0.08486030053572415,
+          "max": 0.19045065413587361
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1626,
+          "p50": 10.374701745357777,
+          "p95": 41.07016646966496,
+          "max": 212.90239741018925
+        },
+        "active_root_speed_m_s": {
+          "samples": 272,
+          "p50": 0.087171627307255,
+          "p95": 0.459268639835969,
+          "max": 0.6196267479418482
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 270,
+          "p50": 8.597010923271608,
+          "p95": 28.21030663093509,
+          "max": 111.9568794411258
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.008882162900910756,
+              "p95": 0.051109462101957034,
+              "max": 0.07898759836723213
+            },
+            "root_step_m": 0.0002745492567443518
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.021811414063105963,
+              "p95": 0.06056756478751051,
+              "max": 0.08683929505143337
+            },
+            "root_step_m": 0.0027670680132595615
+          },
+          {
+            "frame": 106,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.02249708302615243,
+              "p95": 0.09011218750877642,
+              "max": 0.11906398152855995
+            },
+            "root_step_m": 0.004061507916744823
+          },
+          {
+            "frame": 123,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.022665503327698577,
+              "p95": 0.09045014548800405,
+              "max": 0.12142767901719248
+            },
+            "root_step_m": 0.002515893141378594
+          },
+          {
+            "frame": 140,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.030071446769962804,
+              "p95": 0.10067457548494792,
+              "max": 0.13797171062286134
+            },
+            "root_step_m": 0.00972182556650826
+          },
+          {
+            "frame": 157,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.029244623363737603,
+              "p95": 0.08246155956513694,
+              "max": 0.12243786915707938
+            },
+            "root_step_m": 0.005963758516992998
+          },
+          {
+            "frame": 174,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03157482569708537,
+              "p95": 0.10218877217030714,
+              "max": 0.11843751316643479
+            },
+            "root_step_m": 0.0036659348853813225
+          },
+          {
+            "frame": 227,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03395829505769793,
+              "p95": 0.09270428766591264,
+              "max": 0.1904506541358736
+            },
+            "root_step_m": 0.002043126997090334
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.05605157526607578,
+        "lowest_skin_distribution_m": {
+          "samples": 80,
+          "p50": 0.008502639396609168,
+          "p95": 0.09428321422915287,
+          "max": 0.3586557126999539
+        },
+        "skin_samples_below_floor": 24,
+        "floor_sample_count": 80,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.05605157526607578,
+        "floor_samples_below_ground": 24,
+        "local_joint_step_p95_deg": 3.5867863428964437,
+        "local_joint_step_max_deg": 10.912018687491313,
+        "local_joint_angular_acceleration_p95_rad_s2": 27.2399637846364,
+        "arm_angular_acceleration_p95_rad_s2": 41.07016646966496,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "raw",
+      "artifact_sha256": "b7efcdafb9bc85d93e5482869bda9d7c2e5d36b05303d034a3a65946fecea6f6",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "source-094553",
+        "method": "raw",
+        "clip": "MBR_source_094553_raw",
+        "frames": 237,
+        "fps": 30,
+        "duration_s": 7.866666793823242,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.928697532646372e-06,
+        "max_segment_length_variation_m": 3.6658292495994615e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          236
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 5192,
+          "p50": 0.019395911872003933,
+          "p95": 0.08260474433450543,
+          "max": 0.36510921268823987
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 5170,
+          "p50": 15.202559664557565,
+          "p95": 61.877878892994154,
+          "max": 312.5315571596572
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1416,
+          "p50": 0.024623241030272015,
+          "p95": 0.0891143032692215,
+          "max": 0.36510921268823987
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1410,
+          "p50": 17.002865526837166,
+          "p95": 48.38293456496385,
+          "max": 162.8630207276365
+        },
+        "active_root_speed_m_s": {
+          "samples": 236,
+          "p50": 0.34353413824012646,
+          "p95": 1.4557742100607536,
+          "max": 1.6984266976959235
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 234,
+          "p50": 34.621932813472604,
+          "p95": 149.94304892513438,
+          "max": 269.07016509775474
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 1.5979633245524485,
+          "maximum_local_joint_orientation_gap_rad": 1.7874747138486788,
+          "root_position_gap_m": 0.21485746645718737,
+          "start_root_speed_m_s": 0.17035294198243403,
+          "end_root_speed_m_s": 0.2468534227183432,
+          "start_max_local_joint_speed_rad_s": 1.5244130387967774,
+          "end_max_local_joint_speed_rad_s": 2.2365354316872286
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.09143850212589322,
+        "lowest_skin_distribution_m": {
+          "samples": 64,
+          "p50": 0.28879899000471276,
+          "p95": 0.4357644534806406,
+          "max": 0.48083620482462003
+        },
+        "skin_samples_below_floor": 3,
+        "floor_sample_count": 64,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.09143850212589322,
+        "floor_samples_below_ground": 3,
+        "local_joint_step_p95_deg": 4.732903218124359,
+        "local_joint_step_max_deg": 20.91921694838047,
+        "local_joint_angular_acceleration_p95_rad_s2": 61.877878892994154,
+        "arm_angular_acceleration_p95_rad_s2": 48.38293456496385,
+        "root_seam_gap_m": 0.21485746645718737,
+        "maximum_joint_seam_gap_m": 1.5979633245524485,
+        "rotation_seam_deg": 102.41475708988382,
+        "start_root_speed_m_s": 0.17035294198243403,
+        "end_root_speed_m_s": 0.2468534227183432,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "cleaned",
+      "artifact_sha256": "44b58ac27e47e5ff954e8e9766381e33abd9a3a4cba675e0cb9641c4dd22885b",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "source-094553",
+        "method": "cleaned",
+        "clip": "MBR_source_094553_cleaned",
+        "frames": 237,
+        "fps": 30,
+        "duration_s": 7.866666793823242,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.4619321379399407e-06,
+        "max_segment_length_variation_m": 2.816499149460583e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          236
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 5192,
+          "p50": 0.014805481543809142,
+          "p95": 0.06935201617417969,
+          "max": 0.2555565137077534
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 5170,
+          "p50": 3.9771905928978866,
+          "p95": 17.15854021272115,
+          "max": 105.40242842059067
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1416,
+          "p50": 0.01951940209976295,
+          "p95": 0.08176771540973912,
+          "max": 0.2555565137077534
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1410,
+          "p50": 4.959058096385968,
+          "p95": 18.663413943784906,
+          "max": 105.40242842059067
+        },
+        "active_root_speed_m_s": {
+          "samples": 236,
+          "p50": 0.3422878192412323,
+          "p95": 1.4294680282941306,
+          "max": 1.61070381075374
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 234,
+          "p50": 9.772406810244327,
+          "p95": 48.023360270753486,
+          "max": 67.13270469924511
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 1.5998640285659214,
+          "maximum_local_joint_orientation_gap_rad": 1.7888964237876857,
+          "root_position_gap_m": 0.21718837974181845,
+          "start_root_speed_m_s": 0.09497025018971068,
+          "end_root_speed_m_s": 0.14244014551749523,
+          "start_max_local_joint_speed_rad_s": 1.0440330306807328,
+          "end_max_local_joint_speed_rad_s": 1.608012988289141
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.08664189961705149,
+        "lowest_skin_distribution_m": {
+          "samples": 64,
+          "p50": 0.28559527291110387,
+          "p95": 0.4313577460611366,
+          "max": 0.46663922220578985
+        },
+        "skin_samples_below_floor": 3,
+        "floor_sample_count": 64,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.08664189961705149,
+        "floor_samples_below_ground": 3,
+        "local_joint_step_p95_deg": 3.9735778275035187,
+        "local_joint_step_max_deg": 14.64230966253144,
+        "local_joint_angular_acceleration_p95_rad_s2": 17.15854021272115,
+        "arm_angular_acceleration_p95_rad_s2": 18.663413943784906,
+        "root_seam_gap_m": 0.21718837974181845,
+        "maximum_joint_seam_gap_m": 1.5998640285659214,
+        "rotation_seam_deg": 102.49621506908072,
+        "start_root_speed_m_s": 0.09497025018971068,
+        "end_root_speed_m_s": 0.14244014551749523,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "single",
+      "artifact_sha256": "feeb6d1f6711fe50e5075b3dfb4a46d54d6177c4f456938fb4a97fb6021f4b2d",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "source-094553",
+        "method": "single",
+        "clip": "MBR_source_094553_single",
+        "frames": 480,
+        "fps": 30,
+        "duration_s": 15.966666221618652,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.8392620407940697e-06,
+        "max_segment_length_variation_m": 1.7096783433423468e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          467
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 10032,
+          "p50": 0.01771968070725596,
+          "p95": 0.06134049750881213,
+          "max": 0.17098230231805864
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 10010,
+          "p50": 6.715371577965022,
+          "p95": 29.79466445747076,
+          "max": 161.05286527592972
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 2736,
+          "p50": 0.03130889109277763,
+          "p95": 0.08172772243736563,
+          "max": 0.17098230231805864
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 2730,
+          "p50": 13.135264357716569,
+          "p95": 43.21821047414932,
+          "max": 161.05286527592972
+        },
+        "active_root_speed_m_s": {
+          "samples": 456,
+          "p50": 0.21302624977867246,
+          "p95": 0.5813323828775462,
+          "max": 1.0119683815033982
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 454,
+          "p50": 9.473284850813913,
+          "p95": 29.59009067131317,
+          "max": 90.80563113465404
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.0083517851245494,
+              "p95": 0.04379584781805448,
+              "max": 0.08043570665903904
+            },
+            "root_step_m": 0.0014825649615544012
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.02330843637795862,
+              "p95": 0.10502250024623433,
+              "max": 0.16041240782067523
+            },
+            "root_step_m": 0.0010282228480367112
+          },
+          {
+            "frame": 126,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.028445462420620394,
+              "p95": 0.08307893379326556,
+              "max": 0.09757040914447505
+            },
+            "root_step_m": 0.0008616896448327468
+          },
+          {
+            "frame": 183,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03676998253846216,
+              "p95": 0.10308829173864748,
+              "max": 0.1393411574380842
+            },
+            "root_step_m": 0.004899483737411437
+          },
+          {
+            "frame": 240,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.029644386655367803,
+              "p95": 0.08208079138188812,
+              "max": 0.10243730122456211
+            },
+            "root_step_m": 0.0012546770010578674
+          },
+          {
+            "frame": 297,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.02211159867020312,
+              "p95": 0.06136924953972042,
+              "max": 0.10317602150426008
+            },
+            "root_step_m": 0.0035985742230961737
+          },
+          {
+            "frame": 354,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.028503924420414314,
+              "p95": 0.0670302426306318,
+              "max": 0.08446615780348324
+            },
+            "root_step_m": 0.0032742416976249216
+          },
+          {
+            "frame": 411,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.0346756705119047,
+              "p95": 0.07828581465381,
+              "max": 0.11440959717712211
+            },
+            "root_step_m": 0.0029001179047011267
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.3291937714497627,
+        "lowest_skin_distribution_m": {
+          "samples": 129,
+          "p50": -0.034277164872468235,
+          "p95": 0.16152681909164657,
+          "max": 0.2687931152226414
+        },
+        "skin_samples_below_floor": 87,
+        "floor_sample_count": 129,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.3291937714497627,
+        "floor_samples_below_ground": 87,
+        "local_joint_step_p95_deg": 3.5145516204876754,
+        "local_joint_step_max_deg": 9.796564294254672,
+        "local_joint_angular_acceleration_p95_rad_s2": 29.79466445747076,
+        "arm_angular_acceleration_p95_rad_s2": 43.21821047414932,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "window",
+      "artifact_sha256": "08348dbf5568c253ea3c58d13f1de72c892bc31c2e97b1b8b9d147b874a8ca65",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "source-094553",
+        "method": "window",
+        "clip": "MBR_source_094553_window",
+        "frames": 348,
+        "fps": 30,
+        "duration_s": 11.566666603088379,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 3.0129927884509975e-06,
+        "max_segment_length_variation_m": 1.5762871707902804e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          335
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 7128,
+          "p50": 0.022819443200261563,
+          "p95": 0.0861557419012656,
+          "max": 0.687842764682925
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 7106,
+          "p50": 7.826471309930689,
+          "p95": 44.79855866131834,
+          "max": 308.4102733819797
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1944,
+          "p50": 0.0398818437815389,
+          "p95": 0.12528978409560917,
+          "max": 0.687842764682925
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1938,
+          "p50": 15.87499214703869,
+          "p95": 69.26008620839544,
+          "max": 308.4102733819797
+        },
+        "active_root_speed_m_s": {
+          "samples": 324,
+          "p50": 0.2307753758645057,
+          "p95": 1.2281855985757175,
+          "max": 1.5743223321356428
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 322,
+          "p50": 11.39650467137846,
+          "p95": 45.98888933753535,
+          "max": 190.90150866167602
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.007216945492307304,
+              "p95": 0.04816224925380686,
+              "max": 0.08572750293334576
+            },
+            "root_step_m": 0.0010410916962116077
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.025701363246193785,
+              "p95": 0.12431026748353607,
+              "max": 0.1963909507265518
+            },
+            "root_step_m": 0.0025044314915726815
+          },
+          {
+            "frame": 126,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.032064715240908384,
+              "p95": 0.09349717756813161,
+              "max": 0.11860461134763482
+            },
+            "root_step_m": 0.008169305791429311
+          },
+          {
+            "frame": 167,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.037373899334672195,
+              "p95": 0.11786640484680085,
+              "max": 0.1372097235959772
+            },
+            "root_step_m": 0.02698475035655453
+          },
+          {
+            "frame": 224,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03642964953234822,
+              "p95": 0.1015837843742579,
+              "max": 0.14385484558798828
+            },
+            "root_step_m": 0.005709073698533112
+          },
+          {
+            "frame": 245,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.04125594731071308,
+              "p95": 0.12930273386107563,
+              "max": 0.17534346079577717
+            },
+            "root_step_m": 0.04963805593040694
+          },
+          {
+            "frame": 262,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.046618894336163695,
+              "p95": 0.12450728912701277,
+              "max": 0.18726738806297397
+            },
+            "root_step_m": 0.050490534865762125
+          },
+          {
+            "frame": 279,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.04156176804226461,
+              "p95": 0.12060292007797702,
+              "max": 0.17397658226117607
+            },
+            "root_step_m": 0.0045403999593268485
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.29366291872409367,
+        "lowest_skin_distribution_m": {
+          "samples": 94,
+          "p50": -0.022424814258321712,
+          "p95": 0.1469831503031439,
+          "max": 0.23111165990430188
+        },
+        "skin_samples_below_floor": 54,
+        "floor_sample_count": 94,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.29366291872409367,
+        "floor_samples_below_ground": 54,
+        "local_joint_step_p95_deg": 4.9363603917609415,
+        "local_joint_step_max_deg": 39.41048738494184,
+        "local_joint_angular_acceleration_p95_rad_s2": 44.79855866131834,
+        "arm_angular_acceleration_p95_rad_s2": 69.26008620839544,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "raw",
+      "artifact_sha256": "8f2b7b94590507bb98b5b428a6813e667f6e1d45bca9ef934a81baa3d0a30ac1",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "h3-dance",
+        "method": "raw",
+        "clip": "MBR_h3_dance_raw",
+        "frames": 219,
+        "fps": 30,
+        "duration_s": 7.266666889190674,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.9041098593096877e-06,
+        "max_segment_length_variation_m": 2.656496828623567e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          218
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 4796,
+          "p50": 0.013775599188710241,
+          "p95": 0.08366741702411161,
+          "max": 0.34239152374198895
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 4774,
+          "p50": 15.967170381264607,
+          "p95": 61.498717387805904,
+          "max": 254.19639155688435
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1308,
+          "p50": 0.02105841624343859,
+          "p95": 0.09056265492155333,
+          "max": 0.278066678884792
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1302,
+          "p50": 22.91121916345488,
+          "p95": 63.657412672787466,
+          "max": 159.96820668665777
+        },
+        "active_root_speed_m_s": {
+          "samples": 218,
+          "p50": 0.06642217360149112,
+          "p95": 0.5896139897916288,
+          "max": 0.8955217541215138
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 216,
+          "p50": 37.9015149676471,
+          "p95": 169.68896342319113,
+          "max": 339.85596767345936
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0.6948992224258035,
+          "maximum_local_joint_orientation_gap_rad": 1.1287857898854896,
+          "root_position_gap_m": 0.306752030553129,
+          "start_root_speed_m_s": 0.05617405896624671,
+          "end_root_speed_m_s": 0.043152616814094664,
+          "start_max_local_joint_speed_rad_s": 1.3710301378662337,
+          "end_max_local_joint_speed_rad_s": 1.6476921590125675
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.021132195330515326,
+        "lowest_skin_distribution_m": {
+          "samples": 60,
+          "p50": 0.13945098003429982,
+          "p95": 0.2775049268547499,
+          "max": 0.2806367052594276
+        },
+        "skin_samples_below_floor": 4,
+        "floor_sample_count": 60,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.021132195330515326,
+        "floor_samples_below_ground": 4,
+        "local_joint_step_p95_deg": 4.793789878242609,
+        "local_joint_step_max_deg": 19.61758925146929,
+        "local_joint_angular_acceleration_p95_rad_s2": 61.498717387805904,
+        "arm_angular_acceleration_p95_rad_s2": 63.657412672787466,
+        "root_seam_gap_m": 0.306752030553129,
+        "maximum_joint_seam_gap_m": 0.6948992224258035,
+        "rotation_seam_deg": 64.67466173477949,
+        "start_root_speed_m_s": 0.05617405896624671,
+        "end_root_speed_m_s": 0.043152616814094664,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "cleaned",
+      "artifact_sha256": "3c34e9c20b76f99b80cecd0611113f339523ee40b356b8905d55679a56bd28bb",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "h3-dance",
+        "method": "cleaned",
+        "clip": "MBR_h3_dance_cleaned",
+        "frames": 219,
+        "fps": 30,
+        "duration_s": 7.266666889190674,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.485215168866838e-06,
+        "max_segment_length_variation_m": 2.3792234599140372e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          0,
+          218
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 4796,
+          "p50": 0.007961459290223606,
+          "p95": 0.07024348238441655,
+          "max": 0.23731391298796226
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 4774,
+          "p50": 3.7512331570303257,
+          "p95": 23.00325870024968,
+          "max": 108.88261423867866
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1308,
+          "p50": 0.013618100315986006,
+          "p95": 0.07422729672553566,
+          "max": 0.18928177038990818
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1302,
+          "p50": 5.693080431399398,
+          "p95": 25.295809638258376,
+          "max": 54.138813036615225
+        },
+        "active_root_speed_m_s": {
+          "samples": 218,
+          "p50": 0.06410287856079082,
+          "p95": 0.5513057072498315,
+          "max": 0.7626884374893148
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 216,
+          "p50": 8.331453793333328,
+          "p95": 57.01241158493065,
+          "max": 139.7576368992424
+        },
+        "segment_boundaries": [],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0.7023921212187956,
+          "maximum_local_joint_orientation_gap_rad": 1.1319769164370925,
+          "root_position_gap_m": 0.3069041825214693,
+          "start_root_speed_m_s": 0.024159633144369468,
+          "end_root_speed_m_s": 0.030085703196682936,
+          "start_max_local_joint_speed_rad_s": 0.5400487010045575,
+          "end_max_local_joint_speed_rad_s": 0.6131470311554278
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.020583202217875407,
+        "lowest_skin_distribution_m": {
+          "samples": 60,
+          "p50": 0.1440538851850227,
+          "p95": 0.27935548729485377,
+          "max": 0.28058382030419377
+        },
+        "skin_samples_below_floor": 3,
+        "floor_sample_count": 60,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.020583202217875407,
+        "floor_samples_below_ground": 3,
+        "local_joint_step_p95_deg": 4.024655078928612,
+        "local_joint_step_max_deg": 13.59708563394509,
+        "local_joint_angular_acceleration_p95_rad_s2": 23.00325870024968,
+        "arm_angular_acceleration_p95_rad_s2": 25.295809638258376,
+        "root_seam_gap_m": 0.3069041825214693,
+        "maximum_joint_seam_gap_m": 0.7023921212187956,
+        "rotation_seam_deg": 64.85749981807847,
+        "start_root_speed_m_s": 0.024159633144369468,
+        "end_root_speed_m_s": 0.030085703196682936,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "single",
+      "artifact_sha256": "5748e8dd0aa7107a49c6d450a2ef24b73a708361aa3f17fc931264aa6f420ded",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "h3-dance",
+        "method": "single",
+        "clip": "MBR_h3_dance_single",
+        "frames": 372,
+        "fps": 30,
+        "duration_s": 12.366666793823242,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.1844499852830905e-06,
+        "max_segment_length_variation_m": 1.400640756710203e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          359
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 7656,
+          "p50": 0.013949924017674335,
+          "p95": 0.05169418806121876,
+          "max": 0.15766172745033974
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 7634,
+          "p50": 5.0415675124036845,
+          "p95": 21.941409137171657,
+          "max": 140.51006350530903
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 2088,
+          "p50": 0.02235213219948642,
+          "p95": 0.05896534802765847,
+          "max": 0.10779102821346434
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 2082,
+          "p50": 9.325614858404387,
+          "p95": 31.079307337205446,
+          "max": 96.95357119400283
+        },
+        "active_root_speed_m_s": {
+          "samples": 348,
+          "p50": 0.07548848705637337,
+          "p95": 0.44662590454660817,
+          "max": 0.6184818688830205
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 346,
+          "p50": 8.415337943833094,
+          "p95": 33.96143268178657,
+          "max": 109.46099139075912
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.010510104138294053,
+              "p95": 0.052906324859658044,
+              "max": 0.07907040594857642
+            },
+            "root_step_m": 0.0013153982509960939
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.01872434686741969,
+              "p95": 0.051667926902938775,
+              "max": 0.07236231875001278
+            },
+            "root_step_m": 0.003363469275023555
+          },
+          {
+            "frame": 90,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.015058662395093928,
+              "p95": 0.045993480080375834,
+              "max": 0.06528426559226029
+            },
+            "root_step_m": 0.0021875521337963995
+          },
+          {
+            "frame": 107,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.022679588289110927,
+              "p95": 0.0644523645156257,
+              "max": 0.09176006908317369
+            },
+            "root_step_m": 0.0014702526383772298
+          },
+          {
+            "frame": 140,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.027706907716771735,
+              "p95": 0.07487549950631477,
+              "max": 0.08998005096622808
+            },
+            "root_step_m": 0.00279498033096703
+          },
+          {
+            "frame": 197,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.022605957811655877,
+              "p95": 0.06300848995976871,
+              "max": 0.07735437472196462
+            },
+            "root_step_m": 0.0027043513142634263
+          },
+          {
+            "frame": 246,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.02368532080552829,
+              "p95": 0.06879605090558338,
+              "max": 0.15766172745033977
+            },
+            "root_step_m": 0.0019184649035277144
+          },
+          {
+            "frame": 303,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.027979583143525923,
+              "p95": 0.07334983533496156,
+              "max": 0.09757197663012378
+            },
+            "root_step_m": 0.0014243161903608767
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": 0.008821981103062669,
+        "lowest_skin_distribution_m": {
+          "samples": 100,
+          "p50": 0.06696812107308893,
+          "p95": 0.1800141730440464,
+          "max": 0.29105187306883784
+        },
+        "skin_samples_below_floor": 0,
+        "floor_sample_count": 100,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": 0.008821981103062669,
+        "floor_samples_below_ground": 0,
+        "local_joint_step_p95_deg": 2.9618588012634026,
+        "local_joint_step_max_deg": 9.033351573646344,
+        "local_joint_angular_acceleration_p95_rad_s2": 21.941409137171657,
+        "arm_angular_acceleration_p95_rad_s2": 31.079307337205446,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "window",
+      "artifact_sha256": "7dce62f394a33a683cbfae9d6d4dc14298a82bb5adaf388bb0bff8655013428e",
+      "validation": {
+        "status": "artifact_integrity_passed_visual_review_required",
+        "id": "h3-dance",
+        "method": "window",
+        "clip": "MBR_h3_dance_window",
+        "frames": 320,
+        "fps": 30,
+        "duration_s": 10.633333206176758,
+        "body": "c08",
+        "three_revision": "160",
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_exported_joint_position_error_m": 1.161242705702827e-06,
+        "max_segment_length_variation_m": 1.4163258288402147e-07,
+        "independent_clones": true,
+        "prohibited_animation_tracks": [],
+        "active_frame_range": [
+          12,
+          307
+        ],
+        "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+        "active_local_joint_angular_step_rad": {
+          "samples": 6512,
+          "p50": 0.017147566572020143,
+          "p95": 0.06438660540875515,
+          "max": 0.3134946881352287
+        },
+        "active_local_joint_angular_acceleration_rad_s2": {
+          "samples": 6490,
+          "p50": 5.867836749363398,
+          "p95": 30.328228701123937,
+          "max": 227.84076340401433
+        },
+        "active_arm_angular_step_rad": {
+          "samples": 1776,
+          "p50": 0.02641553369799976,
+          "p95": 0.07433513713778725,
+          "max": 0.17814879639165776
+        },
+        "active_arm_angular_acceleration_rad_s2": {
+          "samples": 1770,
+          "p50": 10.64506460659484,
+          "p95": 44.282186012322654,
+          "max": 168.35459857792384
+        },
+        "active_root_speed_m_s": {
+          "samples": 296,
+          "p50": 0.1044960984634668,
+          "p95": 0.45606957453584285,
+          "max": 0.9769678070414827
+        },
+        "active_root_jerk_m_s3": {
+          "samples": 294,
+          "p50": 11.245203935297148,
+          "p95": 49.29399019525739,
+          "max": 88.83727044377116
+        },
+        "segment_boundaries": [
+          {
+            "frame": 12,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.011362177808841597,
+              "p95": 0.05990935177693619,
+              "max": 0.08997782190828969
+            },
+            "root_step_m": 0.0007545775502999747
+          },
+          {
+            "frame": 69,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.023777007323861232,
+              "p95": 0.06495142543339749,
+              "max": 0.07546496108677919
+            },
+            "root_step_m": 0.00239641953755132
+          },
+          {
+            "frame": 86,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.020608880609135835,
+              "p95": 0.06438031001051185,
+              "max": 0.09080784448338057
+            },
+            "root_step_m": 0.0022038981336558634
+          },
+          {
+            "frame": 103,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.030802203549895324,
+              "p95": 0.09244990433162317,
+              "max": 0.1605771956791836
+            },
+            "root_step_m": 0.0019456184209097791
+          },
+          {
+            "frame": 120,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.04177619650106616,
+              "p95": 0.1529945976722261,
+              "max": 0.2273349491929908
+            },
+            "root_step_m": 0.015759581278318613
+          },
+          {
+            "frame": 169,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.029901139302408303,
+              "p95": 0.08624455575261128,
+              "max": 0.1241297238693716
+            },
+            "root_step_m": 0.010835520231114464
+          },
+          {
+            "frame": 194,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.034885437679558755,
+              "p95": 0.09309333806477005,
+              "max": 0.2528248396136982
+            },
+            "root_step_m": 0.013764512766556719
+          },
+          {
+            "frame": 251,
+            "neighborhood_frames": 2,
+            "local_joint_angular_step_rad": {
+              "samples": 110,
+              "p50": 0.03387016719246648,
+              "p95": 0.08735214818566306,
+              "max": 0.12160446558617143
+            },
+            "root_step_m": 0.0016047238315874005
+          }
+        ],
+        "seam": {
+          "maximum_joint_world_position_gap_m": 0,
+          "maximum_local_joint_orientation_gap_rad": 0,
+          "root_position_gap_m": 0,
+          "start_root_speed_m_s": 0,
+          "end_root_speed_m_s": 0,
+          "start_max_local_joint_speed_rad_s": 0,
+          "end_max_local_joint_speed_rad_s": 0
+        },
+        "joint_sampling_hz": 120,
+        "full_skin_sampling_hz": 8,
+        "skinned_geometry_min_floor_y_m": -0.023584681043411215,
+        "lowest_skin_distribution_m": {
+          "samples": 87,
+          "p50": 0.049718811546463015,
+          "p95": 0.1510005950904026,
+          "max": 0.25886899915162714
+        },
+        "skin_samples_below_floor": 8,
+        "floor_sample_count": 87,
+        "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+        "limitations": [
+          "Full skin checked8Hz, not continuous collision proof",
+          "No physical balance, self-collision or hand/foot contact guarantee",
+          "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+          "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+        ]
+      },
+      "metrics": {
+        "minimum_skin_floor_m": -0.023584681043411215,
+        "floor_samples_below_ground": 8,
+        "local_joint_step_p95_deg": 3.6890807470958693,
+        "local_joint_step_max_deg": 17.961922529918567,
+        "local_joint_angular_acceleration_p95_rad_s2": 30.328228701123937,
+        "arm_angular_acceleration_p95_rad_s2": 44.282186012322654,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    }
+  ]
+}

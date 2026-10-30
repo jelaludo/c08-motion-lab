@@ -133,3 +133,8 @@ Animation quality still needs visual review. Kinematic navigation/contact IK doe
 ## Biped capture round 2
 
 Six creator-provided references are recovered with GEM-X and adapted directly from SOMA77 to C08, B-REK43, EVA-K7 and the attributed experimental Meshy fighter: 24 supplied GLB comparisons in [Biped capture](https://jelaludo.github.io/c08-motion-lab/biped-motion/). Four verified recoveries were reused; two new clips were inferred. This is recovery and retargeting, with no MotionBricks inference or G1 intermediate. Raw skeletons, per-body reports and separate body reviews make the remaining contact/weight errors inspectable. Original source videos stay private. The creator's 13 previous-round verdicts are retained separately from browser scores.
+
+
+## Own capture to MotionBricks pilot
+
+[Mocap rebuild](https://jelaludo.github.io/c08-motion-lab/mocap-rebuild/) compares six performances across raw recovery, matched filtered recovery, and genuine MotionBricks SOMA generation using single-pose versus four-pose targets. The 24 C08 comparisons include 12 generated default/action/default loops from 96 model calls. Neutral holds are authored; the entry, phase transitions and return are neural. Exact conditioning/response identity, exported loops and remaining floor/jitter errors are documented separately. Source recordings and weights remain private. See [reproduction](tools/MOCAP_REBUILD.md) and [release measurements](research/mocap-rebuild-release-validation.json).

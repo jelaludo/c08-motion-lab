@@ -1,0 +1,43 @@
+"""Publish the measured reconstruction pilot without personal video or weights."""
+from pathlib import Path
+import argparse,datetime,hashlib,json,shutil
+import os
+_candidates=[Path(os.environ['MOTION_LAB_WORKSPACE'])] if os.environ.get('MOTION_LAB_WORKSPACE') else list(Path(__file__).resolve().parents)
+ROOT=next((p for p in _candidates if (p/'evaluation').is_dir() and (p/'video-mocap').is_dir() and (p/'assets').is_dir()),None)
+if ROOT is None:raise RuntimeError('Set MOTION_LAB_WORKSPACE to the original workspace; private captures and recovered SOMA inputs are not bundled.')
+parser=argparse.ArgumentParser();parser.add_argument('--allow-partial',action='store_true');args=parser.parse_args()
+PUBLIC=ROOT/'public/c08-motion-lab';OUT=PUBLIC/'docs/mocap-rebuild'
+for name in ['models','reports','traces']:(OUT/name).mkdir(parents=True,exist_ok=True)
+load=lambda p:json.loads(p.read_text(encoding='utf-8'))
+digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+source_manifest=load(ROOT/'video-mocap/biped-round-2026-10-30.json')
+METHODS=[{'id':'raw','label':'Raw recovery','description':'Unfiltered recovered motion; one constant calibration, original source timing. Not a closed loop.'},{'id':'cleaned','label':'Cleaned recovery','description':'Modest local quaternion/root filtering; exactly the raw control ground calibration. Original source timing; not a closed loop.'},{'id':'single','label':'MotionBricks / single poses','description':'Genuine SOMA neural in-betweening through individual cleaned source landmarks, with generated entry/return and authored neutral holds.'},{'id':'window','label':'MotionBricks / motion windows','description':'Same landmarks, four consecutive target poses around each arrival; neural entry/return and authored neutral holds.'}]
+tests=[];comparisons=[]
+for case in source_manifest['cases']:
+ slug=case['id'];plan_path=ROOT/'evaluation/mocap-rebuild'/slug/'key-plan.json';plan=load(plan_path);outputs=[]
+ for method_info in METHODS:
+  method=method_info['id'];private=ROOT/'evaluation/mocap-rebuild/exports'/slug/method
+  qa_path=ROOT/'evaluation/mocap-rebuild/validation'/slug/(method+'.json')
+  if not (private/'c08-mocap.glb').exists() or not qa_path.exists():
+   if args.allow_partial:continue
+   raise RuntimeError('Not ready: '+slug+'/'+method)
+  qa=load(qa_path);retarget=load(private/'retarget-report.json');provenance=load(ROOT/'evaluation/mocap-rebuild'/slug/method/'source-metadata.json')
+  assert qa['gltf_errors']==qa['gltf_warnings']==0 and qa['max_exported_joint_position_error_m']<.001
+  model=private/'c08-mocap.glb';stem=slug+'-'+method;sha=digest(model);shutil.copy2(model,OUT/'models'/(stem+'.glb'))
+  flat={'minimum_skin_floor_m':qa['skinned_geometry_min_floor_y_m'],'floor_samples_below_ground':qa['skin_samples_below_floor'],'local_joint_step_p95_deg':qa['active_local_joint_angular_step_rad']['p95']*180/3.141592653589793,'local_joint_step_max_deg':qa['active_local_joint_angular_step_rad']['max']*180/3.141592653589793,'local_joint_angular_acceleration_p95_rad_s2':qa['active_local_joint_angular_acceleration_rad_s2']['p95'],'arm_angular_acceleration_p95_rad_s2':qa['active_arm_angular_acceleration_rad_s2']['p95'],'root_seam_gap_m':qa['seam']['root_position_gap_m'],'maximum_joint_seam_gap_m':qa['seam']['maximum_joint_world_position_gap_m'],'rotation_seam_deg':qa['seam']['maximum_local_joint_orientation_gap_rad']*180/3.141592653589793,'start_root_speed_m_s':qa['seam']['start_root_speed_m_s'],'end_root_speed_m_s':qa['seam']['end_root_speed_m_s'],'actual_neural_calls':provenance['actual_neural_calls']}
+  report={'id':slug,'method':method,'frames':qa['frames'],'pipeline':provenance['pipeline'],'artifact_sha256':sha,'source_prepared_sha256':plan['source_prepared_sha256'],'source_motion_sha256':provenance['source_motion_sha256'],'ground_policy':retarget['ground_policy'],'constant_ground_offset_m':retarget['ground_vertical_offsets_m'][0],'source_to_target_root_scale':retarget['source_to_target_root_scale'],'source_asset_sha256':retarget['source_asset_sha256'],'validation':qa,'provenance':provenance,'metrics':flat,'limitations':retarget['limitations']}
+  (OUT/'reports'/(stem+'.json')).write_text(json.dumps(report,indent=2),encoding='utf-8')
+  output={'method':method,'model':'models/'+stem+'.glb','report':'reports/'+stem+'.json','version':1,'sha256':sha,'frames':qa['frames'],'duration_s':qa['duration_s'],'metrics':flat}
+  if method in ('single','window'):
+   trace={'schema':'motion-lab-soma-rebuild-trace/1','id':slug,'method':method,'model':provenance['model'],'model_precision':provenance['model_precision'],'model_sha256':provenance['model_sha256'],'actual_neural_calls':provenance['actual_neural_calls'],'segments':provenance['segments'],'active_frame_range':provenance['active_frame_range'],'neutral_hold_frames_per_side':provenance['neutral_hold_frames'],'loop_policy':provenance['loop_policy'],'final_endpoint_numeric_snap_max_matrix_error':provenance['final_endpoint_numeric_snap_max_matrix_error'],'private_exact_request_and_response_arrays_retained':True,'source_video_included':False,'target_selection':plan}
+   (OUT/'traces'/(stem+'.json')).write_text(json.dumps(trace,indent=2),encoding='utf-8');output['trace']='traces/'+stem+'.json'
+  comparisons.append({'id':slug,'method':method,'artifact_sha256':sha,'validation':qa,'metrics':flat});outputs.append(output)
+ keyframes=[{'frame':int(frame),'time_s':float(frame)/30,'label':'Selected source landmark '+str(i+1)} for i,frame in enumerate(plan['source_key_indices'])]
+ limits=case['limitations']+['All variants use a constant avatar vertical calibration, never a per-frame floor clamp. Penetration/hovering can remain; inspect floor measurements.','Raw and cleaned share identical calibration and source timing. Neural duration and performance interpretation may differ.','Neutral holds are authored, and excluded from active-action jitter summaries. A closed seam is not proof of natural entry or recovery.','No physical balance, self-collision, finger capture, hand or foot support solve.','Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes.']
+ if plan['excluded_source_frame_ranges']:limits.insert(0,'Neural reconstruction deliberately excludes unreliable source ranges '+str(plan['excluded_source_frame_ranges'])+'; raw/cleaned retain the complete reference. See key plan.')
+ tests.append({'id':slug,'title':case['label'],'version':1,'description':'One owned reference, four C08 methods: original recovery, modest cleanup, and two genuine MotionBricks SOMA reconstructions. Neural methods deliberately reinterpret the movement.','source':{'label':case['label'],'sha256':case['source_sha256'],'source_frames':case['source_frame_count'],'source_fps':case['source_fps']},'limitations':limits,'outputs':outputs,'keyframes':keyframes,'metrics':{'original_recovered_frames':case['frames'],'keyframe_selection':plan['key_policy'],'neural_used_source_frame_range':plan['used_source_frame_range'],'neural_excluded_source_frame_ranges':plan['excluded_source_frame_ranges']},'historical_raw_preview':'../biped-motion/?test='+slug+'&body=c08'})
+catalog={'version':1,'updated_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'summary':'Six owned performances, four C08 methods. Genuine SOMA in-betweening compares single-pose targets with short motion windows; all new exports use constant floor calibration. Computed results remain candidates for visual review.','body':'c08','methods':METHODS,'tests':tests}
+(OUT/'catalog.json').write_text(json.dumps(catalog,indent=2),encoding='utf-8')
+report={'status':'artifact_integrity_passed_visual_review_required','performances':len(tests),'comparisons':len(comparisons),'actual_neural_calls':sum(r['metrics']['actual_neural_calls'] for r in comparisons),'gltf_errors':sum(r['validation']['gltf_errors'] for r in comparisons),'gltf_warnings':sum(r['validation']['gltf_warnings'] for r in comparisons),'maximum_export_joint_error_m':max(r['validation']['max_exported_joint_position_error_m'] for r in comparisons),'ground_calibration':'Raw and cleaned share one raw-first-pose scalar; neural methods use one canonical-neutral first-pose scalar. No per-frame grounding.','jitter_scope':'Active action only, authored holds excluded. Different generated timing is not a matched fidelity score.','results':comparisons}
+(PUBLIC/'research/mocap-rebuild-validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+print('REBUILD_CATALOG',len(tests),'performances',len(comparisons),'comparisons',report['actual_neural_calls'],'genuineNNcalls')

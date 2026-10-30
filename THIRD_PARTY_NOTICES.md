@@ -34,3 +34,8 @@ The H3 Motion tests use creator-supplied generated videos of creator-owned robot
 ## Biped recovery comparison round
 
 The six-reference Biped capture gallery reuses the existing GEM-X/SOMA recovery setup and directly adapts its estimated transforms to the four lab rigs. No model weights or personal source footage are redistributed. The Tulio Portela Meshy fighter attribution, CC BY 4.0 license link and modification notice accompany its six derived GLBs and catalog entry. Its experimental-only role remains unchanged. The robot designs remain creator-owned. These outputs are recovery/adaptation experiments, not MotionBricks generation or certified contact/dynamic control.
+
+
+## Own-capture MotionBricks SOMA reconstruction pilot
+
+The six-performance Mocap rebuild pilot uses creator-owned human/H3 references recovered by the existing GEM-X/SOMA pipeline and genuinely regenerated with MotionBricks-SOMA-RP-v1 FP32 under its existing NVIDIA Open Model Agreement terms. The output skeleton retains the recovered native77 hierarchy; the engine conditions on its required30-joint subset. No bundled evaluation motion is used as conditioning. Original source footage, trained weights and exact private conditioning/response arrays are excluded. C08 remains creator-owned. Neutral holds and numerical endpoint correction are identified separately from neural frames; contact and balance quality are not certified.

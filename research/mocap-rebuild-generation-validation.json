@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "neural_variants": 12,
+  "actual_neural_calls": 96,
+  "model_sha256": "856419dc72aeb14e591eebf4dd0ea05734a2506ddb00bcd39dd6dac2ad60f4fb",
+  "checks": [
+    "All requests use SOMA native77 hierarchy and the same verified FP32 model",
+    "Single/window use identical seven source landmarks and 1/4 consecutive target frames",
+    "Every next context equals the last four actually played poses after FP32 upload conversion",
+    "Cached raw outputs retain every NN frame; only coincident shared playback endpoints are removed",
+    "Generated phases are copied without interpolation; final neutral numeric residual below1e-5",
+    "Twelve authored neutral frames at each end establish exact pose and zero boundary velocity",
+    "Original source preparation hashes unchanged"
+  ],
+  "results": [
+    {
+      "id": "ukemi",
+      "method": "single",
+      "frames": 480,
+      "neural_calls": 8,
+      "target_window_frames": 1,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281872417883,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "ukemi",
+      "method": "window",
+      "frames": 268,
+      "neural_calls": 8,
+      "target_window_frames": 4,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281276371435,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "technical-standup",
+      "method": "single",
+      "frames": 440,
+      "neural_calls": 8,
+      "target_window_frames": 1,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281276371435,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "technical-standup",
+      "method": "window",
+      "frames": 324,
+      "neural_calls": 8,
+      "target_window_frames": 4,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281276371435,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "gorilla-front",
+      "method": "single",
+      "frames": 480,
+      "neural_calls": 8,
+      "target_window_frames": 1,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281872417883,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "gorilla-front",
+      "method": "window",
+      "frames": 312,
+      "neural_calls": 8,
+      "target_window_frames": 4,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.995128246846433,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "single",
+      "frames": 392,
+      "neural_calls": 8,
+      "target_window_frames": 1,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281276371435,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "window",
+      "frames": 296,
+      "neural_calls": 8,
+      "target_window_frames": 4,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951280680324988,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "source-094553",
+      "method": "single",
+      "frames": 480,
+      "neural_calls": 8,
+      "target_window_frames": 1,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281276371435,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "source-094553",
+      "method": "window",
+      "frames": 348,
+      "neural_calls": 8,
+      "target_window_frames": 4,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951280680324988,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "h3-dance",
+      "method": "single",
+      "frames": 372,
+      "neural_calls": 8,
+      "target_window_frames": 1,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281276371435,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    },
+    {
+      "id": "h3-dance",
+      "method": "window",
+      "frames": 320,
+      "neural_calls": 8,
+      "target_window_frames": 4,
+      "max_played_context_element_error": 2.775230767415593e-08,
+      "max_cached_to_played_element_error": 1.9951281872417883,
+      "loop_endpoint_matrix_error": 0.0,
+      "authored_neutral_hold_frames_each_end": 12,
+      "shared_endpoint_playback_dedup_verified": true
+    }
+  ]
+}

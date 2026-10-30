@@ -1,0 +1,669 @@
+{
+  "status": "artifact_integrity_passed_visual_review_required",
+  "performances": 6,
+  "comparisons": 24,
+  "neural_variants": 12,
+  "actual_neural_calls": 96,
+  "closed_neutral_loops": 12,
+  "previous_source_artifacts_unchanged": 56,
+  "pages_artifact_mib": 954.74,
+  "scope": "Matching endpoints and valid exports do not establish natural motion, contacts or balance. Measured penetrations remain visible. Authored holds are excluded from active jitter metrics.",
+  "results": [
+    {
+      "id": "ukemi",
+      "method": "raw",
+      "path": "docs/mocap-rebuild/models/ukemi-raw.glb",
+      "sha256": "bea11075737bd49cefd4e9808afb34bf2cb635e8016f3e7150e47227266a0fb5",
+      "frames": 143,
+      "metrics": {
+        "minimum_skin_floor_m": -0.1782623749041946,
+        "floor_samples_below_ground": 13,
+        "local_joint_step_p95_deg": 6.862876143005602,
+        "local_joint_step_max_deg": 22.47952885520166,
+        "local_joint_angular_acceleration_p95_rad_s2": 105.8884402057119,
+        "arm_angular_acceleration_p95_rad_s2": 113.51277894761378,
+        "root_seam_gap_m": 4.188192092380958,
+        "maximum_joint_seam_gap_m": 4.89462067133659,
+        "rotation_seam_deg": 72.22011401364547,
+        "start_root_speed_m_s": 0.3404923113508375,
+        "end_root_speed_m_s": 0.41173032638034696,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "ukemi",
+      "method": "cleaned",
+      "path": "docs/mocap-rebuild/models/ukemi-cleaned.glb",
+      "sha256": "b8de9aabf8c46ff1186dcede5fa22abebec5aeb818e2ebf35835512e38d82b7a",
+      "frames": 143,
+      "metrics": {
+        "minimum_skin_floor_m": -0.1822950627175537,
+        "floor_samples_below_ground": 14,
+        "local_joint_step_p95_deg": 5.185583424664139,
+        "local_joint_step_max_deg": 17.690765178509736,
+        "local_joint_angular_acceleration_p95_rad_s2": 31.598498070057033,
+        "arm_angular_acceleration_p95_rad_s2": 40.529342531382895,
+        "root_seam_gap_m": 4.178762638132661,
+        "maximum_joint_seam_gap_m": 4.869043827595038,
+        "rotation_seam_deg": 70.70441487326855,
+        "start_root_speed_m_s": 0.24194790670617328,
+        "end_root_speed_m_s": 0.37418100621613887,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "ukemi",
+      "method": "single",
+      "path": "docs/mocap-rebuild/models/ukemi-single.glb",
+      "sha256": "c77c66293d9ea49e0db599abae4e509463ed83af8760ce0a746d92b5fede79e2",
+      "frames": 480,
+      "metrics": {
+        "minimum_skin_floor_m": -0.531789991142091,
+        "floor_samples_below_ground": 33,
+        "local_joint_step_p95_deg": 4.897521825699488,
+        "local_joint_step_max_deg": 25.691625604326983,
+        "local_joint_angular_acceleration_p95_rad_s2": 41.27138808997505,
+        "arm_angular_acceleration_p95_rad_s2": 55.193322550120186,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "ukemi",
+      "method": "window",
+      "path": "docs/mocap-rebuild/models/ukemi-window.glb",
+      "sha256": "80628fe1b01082adcadf6fd6d959a5e244fb10dec3ee9c52328083476213b9e8",
+      "frames": 268,
+      "metrics": {
+        "minimum_skin_floor_m": -0.36963105685083497,
+        "floor_samples_below_ground": 20,
+        "local_joint_step_p95_deg": 10.220789501421526,
+        "local_joint_step_max_deg": 63.06797042355445,
+        "local_joint_angular_acceleration_p95_rad_s2": 84.24224319269626,
+        "arm_angular_acceleration_p95_rad_s2": 95.0579974757855,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "raw",
+      "path": "docs/mocap-rebuild/models/technical-standup-raw.glb",
+      "sha256": "ba9ee2819e96ce85c0778b844ed9c3b2ff131bc2c34fb3b08b6234e945ca5de5",
+      "frames": 213,
+      "metrics": {
+        "minimum_skin_floor_m": -0.3084500601234951,
+        "floor_samples_below_ground": 49,
+        "local_joint_step_p95_deg": 6.09579829635682,
+        "local_joint_step_max_deg": 18.631733045306422,
+        "local_joint_angular_acceleration_p95_rad_s2": 69.65415399688447,
+        "arm_angular_acceleration_p95_rad_s2": 60.58967099949732,
+        "root_seam_gap_m": 0.8791664960079558,
+        "maximum_joint_seam_gap_m": 1.814323096672345,
+        "rotation_seam_deg": 89.01828681208387,
+        "start_root_speed_m_s": 0.4948947414834965,
+        "end_root_speed_m_s": 0.08897793300618712,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "cleaned",
+      "path": "docs/mocap-rebuild/models/technical-standup-cleaned.glb",
+      "sha256": "5573dacf46956c23662f4bfa687124c47494e92c97a247b782c0f923b35039cb",
+      "frames": 213,
+      "metrics": {
+        "minimum_skin_floor_m": -0.3138477503441006,
+        "floor_samples_below_ground": 49,
+        "local_joint_step_p95_deg": 5.331578549132791,
+        "local_joint_step_max_deg": 16.015971181741122,
+        "local_joint_angular_acceleration_p95_rad_s2": 24.629814465246962,
+        "arm_angular_acceleration_p95_rad_s2": 27.11900057161752,
+        "root_seam_gap_m": 0.87085103957725,
+        "maximum_joint_seam_gap_m": 1.7949309209690238,
+        "rotation_seam_deg": 89.7079837611192,
+        "start_root_speed_m_s": 0.37724237714242403,
+        "end_root_speed_m_s": 0.0556403487788054,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "single",
+      "path": "docs/mocap-rebuild/models/technical-standup-single.glb",
+      "sha256": "78c43443d3d6d9cfab9249857016187af60725871b7ed0e41779fe4a64358fbf",
+      "frames": 440,
+      "metrics": {
+        "minimum_skin_floor_m": -0.07329138126792353,
+        "floor_samples_below_ground": 18,
+        "local_joint_step_p95_deg": 3.896217496450329,
+        "local_joint_step_max_deg": 89.98828054946394,
+        "local_joint_angular_acceleration_p95_rad_s2": 32.59399016001784,
+        "arm_angular_acceleration_p95_rad_s2": 43.88537500278524,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "technical-standup",
+      "method": "window",
+      "path": "docs/mocap-rebuild/models/technical-standup-window.glb",
+      "sha256": "6172ab6495b9dd901ee62f6c4342417bf5180d66e654eea8f2a8d36eb5f02604",
+      "frames": 324,
+      "metrics": {
+        "minimum_skin_floor_m": -0.14608572875986603,
+        "floor_samples_below_ground": 13,
+        "local_joint_step_p95_deg": 4.9870690296574525,
+        "local_joint_step_max_deg": 14.457131101888626,
+        "local_joint_angular_acceleration_p95_rad_s2": 45.45569022826933,
+        "arm_angular_acceleration_p95_rad_s2": 59.51889743210123,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "raw",
+      "path": "docs/mocap-rebuild/models/gorilla-front-raw.glb",
+      "sha256": "4bc54ab913f12f0e9265ec42be22c6a364e7970a9e0702832c3946386efb6698",
+      "frames": 239,
+      "metrics": {
+        "minimum_skin_floor_m": -0.044286700369004006,
+        "floor_samples_below_ground": 4,
+        "local_joint_step_p95_deg": 4.3717311839858635,
+        "local_joint_step_max_deg": 33.75371679487394,
+        "local_joint_angular_acceleration_p95_rad_s2": 73.73433560702883,
+        "arm_angular_acceleration_p95_rad_s2": 74.54344523058161,
+        "root_seam_gap_m": 2.9148295403820015,
+        "maximum_joint_seam_gap_m": 2.9763944955693167,
+        "rotation_seam_deg": 83.57850682207867,
+        "start_root_speed_m_s": 0.2016991181983976,
+        "end_root_speed_m_s": 0.055048095538072106,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "cleaned",
+      "path": "docs/mocap-rebuild/models/gorilla-front-cleaned.glb",
+      "sha256": "d312a6a5293efd208858119e33f8bc3e15212d560b077ee46c911f925e8ae055",
+      "frames": 239,
+      "metrics": {
+        "minimum_skin_floor_m": -0.04046532448749188,
+        "floor_samples_below_ground": 4,
+        "local_joint_step_p95_deg": 3.368903293946214,
+        "local_joint_step_max_deg": 18.343887831958156,
+        "local_joint_angular_acceleration_p95_rad_s2": 20.584741743204763,
+        "arm_angular_acceleration_p95_rad_s2": 22.838510785665758,
+        "root_seam_gap_m": 2.9120776998426003,
+        "maximum_joint_seam_gap_m": 2.9727580903966313,
+        "rotation_seam_deg": 84.8459035234283,
+        "start_root_speed_m_s": 0.16202227514424083,
+        "end_root_speed_m_s": 0.03854336989831547,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "single",
+      "path": "docs/mocap-rebuild/models/gorilla-front-single.glb",
+      "sha256": "2e5e626a35b488aa4d0dcfe840fd36b37f5abaec20d50ff921eea0d1115ec097",
+      "frames": 480,
+      "metrics": {
+        "minimum_skin_floor_m": -0.09950103077853885,
+        "floor_samples_below_ground": 7,
+        "local_joint_step_p95_deg": 3.4519766452401903,
+        "local_joint_step_max_deg": 17.584095099115206,
+        "local_joint_angular_acceleration_p95_rad_s2": 26.779504472105284,
+        "arm_angular_acceleration_p95_rad_s2": 39.74908217130783,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "method": "window",
+      "path": "docs/mocap-rebuild/models/gorilla-front-window.glb",
+      "sha256": "d4b5f7dc5ff462f04e91d5f9fc5075910efa941fe686aecb3c0399726840bcc9",
+      "frames": 312,
+      "metrics": {
+        "minimum_skin_floor_m": -0.01757057109684907,
+        "floor_samples_below_ground": 3,
+        "local_joint_step_p95_deg": 4.867768503100819,
+        "local_joint_step_max_deg": 19.4563125289174,
+        "local_joint_angular_acceleration_p95_rad_s2": 37.972668072214425,
+        "arm_angular_acceleration_p95_rad_s2": 54.645947071124624,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "raw",
+      "path": "docs/mocap-rebuild/models/sumo-stomp-raw.glb",
+      "sha256": "7d1a3b1e671462e60fe9c1fb3728854a338966c9a454fc95b73b422ed92ee56d",
+      "frames": 218,
+      "metrics": {
+        "minimum_skin_floor_m": -0.05658448084765881,
+        "floor_samples_below_ground": 11,
+        "local_joint_step_p95_deg": 2.910883256819467,
+        "local_joint_step_max_deg": 19.76234137958326,
+        "local_joint_angular_acceleration_p95_rad_s2": 37.85356176188459,
+        "arm_angular_acceleration_p95_rad_s2": 43.73335051206528,
+        "root_seam_gap_m": 0.40026974648026487,
+        "maximum_joint_seam_gap_m": 1.4184157595354008,
+        "rotation_seam_deg": 89.9221644753629,
+        "start_root_speed_m_s": 0.0987016010792796,
+        "end_root_speed_m_s": 0.03523344495310841,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "cleaned",
+      "path": "docs/mocap-rebuild/models/sumo-stomp-cleaned.glb",
+      "sha256": "da8f2be00426a939b61b06a131a926c8ce256ac49ed4a9d61936aef8c4ef9ed0",
+      "frames": 218,
+      "metrics": {
+        "minimum_skin_floor_m": -0.05494249273003782,
+        "floor_samples_below_ground": 11,
+        "local_joint_step_p95_deg": 2.624788218572137,
+        "local_joint_step_max_deg": 13.020971057243235,
+        "local_joint_angular_acceleration_p95_rad_s2": 9.703690667367672,
+        "arm_angular_acceleration_p95_rad_s2": 13.197731783370518,
+        "root_seam_gap_m": 0.39935335489540885,
+        "maximum_joint_seam_gap_m": 1.419240622486945,
+        "rotation_seam_deg": 90.33893074934815,
+        "start_root_speed_m_s": 0.07432068087539956,
+        "end_root_speed_m_s": 0.022380490949886877,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "single",
+      "path": "docs/mocap-rebuild/models/sumo-stomp-single.glb",
+      "sha256": "0daaf00531a7f49301341d1521e4736f8ab6642c396792cb127570b0cf21f601",
+      "frames": 392,
+      "metrics": {
+        "minimum_skin_floor_m": -0.01905407611123852,
+        "floor_samples_below_ground": 20,
+        "local_joint_step_p95_deg": 2.683321180688512,
+        "local_joint_step_max_deg": 10.728116620526496,
+        "local_joint_angular_acceleration_p95_rad_s2": 21.20888789874246,
+        "arm_angular_acceleration_p95_rad_s2": 29.530870728416673,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "window",
+      "path": "docs/mocap-rebuild/models/sumo-stomp-window.glb",
+      "sha256": "f93173042494bb8578f3b8a1fc2b24052b294024bf5e05c47b0264289f38cad3",
+      "frames": 296,
+      "metrics": {
+        "minimum_skin_floor_m": -0.05605157526607578,
+        "floor_samples_below_ground": 24,
+        "local_joint_step_p95_deg": 3.5867863428964437,
+        "local_joint_step_max_deg": 10.912018687491313,
+        "local_joint_angular_acceleration_p95_rad_s2": 27.2399637846364,
+        "arm_angular_acceleration_p95_rad_s2": 41.07016646966496,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "raw",
+      "path": "docs/mocap-rebuild/models/source-094553-raw.glb",
+      "sha256": "b7efcdafb9bc85d93e5482869bda9d7c2e5d36b05303d034a3a65946fecea6f6",
+      "frames": 237,
+      "metrics": {
+        "minimum_skin_floor_m": -0.09143850212589322,
+        "floor_samples_below_ground": 3,
+        "local_joint_step_p95_deg": 4.732903218124359,
+        "local_joint_step_max_deg": 20.91921694838047,
+        "local_joint_angular_acceleration_p95_rad_s2": 61.877878892994154,
+        "arm_angular_acceleration_p95_rad_s2": 48.38293456496385,
+        "root_seam_gap_m": 0.21485746645718737,
+        "maximum_joint_seam_gap_m": 1.5979633245524485,
+        "rotation_seam_deg": 102.41475708988382,
+        "start_root_speed_m_s": 0.17035294198243403,
+        "end_root_speed_m_s": 0.2468534227183432,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "cleaned",
+      "path": "docs/mocap-rebuild/models/source-094553-cleaned.glb",
+      "sha256": "44b58ac27e47e5ff954e8e9766381e33abd9a3a4cba675e0cb9641c4dd22885b",
+      "frames": 237,
+      "metrics": {
+        "minimum_skin_floor_m": -0.08664189961705149,
+        "floor_samples_below_ground": 3,
+        "local_joint_step_p95_deg": 3.9735778275035187,
+        "local_joint_step_max_deg": 14.64230966253144,
+        "local_joint_angular_acceleration_p95_rad_s2": 17.15854021272115,
+        "arm_angular_acceleration_p95_rad_s2": 18.663413943784906,
+        "root_seam_gap_m": 0.21718837974181845,
+        "maximum_joint_seam_gap_m": 1.5998640285659214,
+        "rotation_seam_deg": 102.49621506908072,
+        "start_root_speed_m_s": 0.09497025018971068,
+        "end_root_speed_m_s": 0.14244014551749523,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "single",
+      "path": "docs/mocap-rebuild/models/source-094553-single.glb",
+      "sha256": "feeb6d1f6711fe50e5075b3dfb4a46d54d6177c4f456938fb4a97fb6021f4b2d",
+      "frames": 480,
+      "metrics": {
+        "minimum_skin_floor_m": -0.3291937714497627,
+        "floor_samples_below_ground": 87,
+        "local_joint_step_p95_deg": 3.5145516204876754,
+        "local_joint_step_max_deg": 9.796564294254672,
+        "local_joint_angular_acceleration_p95_rad_s2": 29.79466445747076,
+        "arm_angular_acceleration_p95_rad_s2": 43.21821047414932,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "source-094553",
+      "method": "window",
+      "path": "docs/mocap-rebuild/models/source-094553-window.glb",
+      "sha256": "08348dbf5568c253ea3c58d13f1de72c892bc31c2e97b1b8b9d147b874a8ca65",
+      "frames": 348,
+      "metrics": {
+        "minimum_skin_floor_m": -0.29366291872409367,
+        "floor_samples_below_ground": 54,
+        "local_joint_step_p95_deg": 4.9363603917609415,
+        "local_joint_step_max_deg": 39.41048738494184,
+        "local_joint_angular_acceleration_p95_rad_s2": 44.79855866131834,
+        "arm_angular_acceleration_p95_rad_s2": 69.26008620839544,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "raw",
+      "path": "docs/mocap-rebuild/models/h3-dance-raw.glb",
+      "sha256": "8f2b7b94590507bb98b5b428a6813e667f6e1d45bca9ef934a81baa3d0a30ac1",
+      "frames": 219,
+      "metrics": {
+        "minimum_skin_floor_m": -0.021132195330515326,
+        "floor_samples_below_ground": 4,
+        "local_joint_step_p95_deg": 4.793789878242609,
+        "local_joint_step_max_deg": 19.61758925146929,
+        "local_joint_angular_acceleration_p95_rad_s2": 61.498717387805904,
+        "arm_angular_acceleration_p95_rad_s2": 63.657412672787466,
+        "root_seam_gap_m": 0.306752030553129,
+        "maximum_joint_seam_gap_m": 0.6948992224258035,
+        "rotation_seam_deg": 64.67466173477949,
+        "start_root_speed_m_s": 0.05617405896624671,
+        "end_root_speed_m_s": 0.043152616814094664,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "cleaned",
+      "path": "docs/mocap-rebuild/models/h3-dance-cleaned.glb",
+      "sha256": "3c34e9c20b76f99b80cecd0611113f339523ee40b356b8905d55679a56bd28bb",
+      "frames": 219,
+      "metrics": {
+        "minimum_skin_floor_m": -0.020583202217875407,
+        "floor_samples_below_ground": 3,
+        "local_joint_step_p95_deg": 4.024655078928612,
+        "local_joint_step_max_deg": 13.59708563394509,
+        "local_joint_angular_acceleration_p95_rad_s2": 23.00325870024968,
+        "arm_angular_acceleration_p95_rad_s2": 25.295809638258376,
+        "root_seam_gap_m": 0.3069041825214693,
+        "maximum_joint_seam_gap_m": 0.7023921212187956,
+        "rotation_seam_deg": 64.85749981807847,
+        "start_root_speed_m_s": 0.024159633144369468,
+        "end_root_speed_m_s": 0.030085703196682936,
+        "actual_neural_calls": 0
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "single",
+      "path": "docs/mocap-rebuild/models/h3-dance-single.glb",
+      "sha256": "5748e8dd0aa7107a49c6d450a2ef24b73a708361aa3f17fc931264aa6f420ded",
+      "frames": 372,
+      "metrics": {
+        "minimum_skin_floor_m": 0.008821981103062669,
+        "floor_samples_below_ground": 0,
+        "local_joint_step_p95_deg": 2.9618588012634026,
+        "local_joint_step_max_deg": 9.033351573646344,
+        "local_joint_angular_acceleration_p95_rad_s2": 21.941409137171657,
+        "arm_angular_acceleration_p95_rad_s2": 31.079307337205446,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    },
+    {
+      "id": "h3-dance",
+      "method": "window",
+      "path": "docs/mocap-rebuild/models/h3-dance-window.glb",
+      "sha256": "7dce62f394a33a683cbfae9d6d4dc14298a82bb5adaf388bb0bff8655013428e",
+      "frames": 320,
+      "metrics": {
+        "minimum_skin_floor_m": -0.023584681043411215,
+        "floor_samples_below_ground": 8,
+        "local_joint_step_p95_deg": 3.6890807470958693,
+        "local_joint_step_max_deg": 17.961922529918567,
+        "local_joint_angular_acceleration_p95_rad_s2": 30.328228701123937,
+        "arm_angular_acceleration_p95_rad_s2": 44.282186012322654,
+        "root_seam_gap_m": 0,
+        "maximum_joint_seam_gap_m": 0,
+        "rotation_seam_deg": 0.0,
+        "start_root_speed_m_s": 0,
+        "end_root_speed_m_s": 0,
+        "actual_neural_calls": 8
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "ukemi",
+      "methods": {
+        "raw": {
+          "duration_s": 4.733333110809326,
+          "floor_minimum_m": -0.1782623749041946,
+          "active_angular_acceleration_p95_rad_s2": 105.8884402057119
+        },
+        "cleaned": {
+          "duration_s": 4.733333110809326,
+          "floor_minimum_m": -0.1822950627175537,
+          "active_angular_acceleration_p95_rad_s2": 31.598498070057033
+        },
+        "single": {
+          "duration_s": 15.966666221618652,
+          "floor_minimum_m": -0.531789991142091,
+          "active_angular_acceleration_p95_rad_s2": 41.27138808997505
+        },
+        "window": {
+          "duration_s": 8.899999618530273,
+          "floor_minimum_m": -0.36963105685083497,
+          "active_angular_acceleration_p95_rad_s2": 84.24224319269626
+        }
+      }
+    },
+    {
+      "id": "technical-standup",
+      "methods": {
+        "raw": {
+          "duration_s": 7.066666603088379,
+          "floor_minimum_m": -0.3084500601234951,
+          "active_angular_acceleration_p95_rad_s2": 69.65415399688447
+        },
+        "cleaned": {
+          "duration_s": 7.066666603088379,
+          "floor_minimum_m": -0.3138477503441006,
+          "active_angular_acceleration_p95_rad_s2": 24.629814465246962
+        },
+        "single": {
+          "duration_s": 14.633333206176758,
+          "floor_minimum_m": -0.07329138126792353,
+          "active_angular_acceleration_p95_rad_s2": 32.59399016001784
+        },
+        "window": {
+          "duration_s": 10.766666412353516,
+          "floor_minimum_m": -0.14608572875986603,
+          "active_angular_acceleration_p95_rad_s2": 45.45569022826933
+        }
+      }
+    },
+    {
+      "id": "gorilla-front",
+      "methods": {
+        "raw": {
+          "duration_s": 7.933333396911621,
+          "floor_minimum_m": -0.044286700369004006,
+          "active_angular_acceleration_p95_rad_s2": 73.73433560702883
+        },
+        "cleaned": {
+          "duration_s": 7.933333396911621,
+          "floor_minimum_m": -0.04046532448749188,
+          "active_angular_acceleration_p95_rad_s2": 20.584741743204763
+        },
+        "single": {
+          "duration_s": 15.966666221618652,
+          "floor_minimum_m": -0.09950103077853885,
+          "active_angular_acceleration_p95_rad_s2": 26.779504472105284
+        },
+        "window": {
+          "duration_s": 10.366666793823242,
+          "floor_minimum_m": -0.01757057109684907,
+          "active_angular_acceleration_p95_rad_s2": 37.972668072214425
+        }
+      }
+    },
+    {
+      "id": "sumo-stomp",
+      "methods": {
+        "raw": {
+          "duration_s": 7.233333110809326,
+          "floor_minimum_m": -0.05658448084765881,
+          "active_angular_acceleration_p95_rad_s2": 37.85356176188459
+        },
+        "cleaned": {
+          "duration_s": 7.233333110809326,
+          "floor_minimum_m": -0.05494249273003782,
+          "active_angular_acceleration_p95_rad_s2": 9.703690667367672
+        },
+        "single": {
+          "duration_s": 13.033333778381348,
+          "floor_minimum_m": -0.01905407611123852,
+          "active_angular_acceleration_p95_rad_s2": 21.20888789874246
+        },
+        "window": {
+          "duration_s": 9.833333015441895,
+          "floor_minimum_m": -0.05605157526607578,
+          "active_angular_acceleration_p95_rad_s2": 27.2399637846364
+        }
+      }
+    },
+    {
+      "id": "source-094553",
+      "methods": {
+        "raw": {
+          "duration_s": 7.866666793823242,
+          "floor_minimum_m": -0.09143850212589322,
+          "active_angular_acceleration_p95_rad_s2": 61.877878892994154
+        },
+        "cleaned": {
+          "duration_s": 7.866666793823242,
+          "floor_minimum_m": -0.08664189961705149,
+          "active_angular_acceleration_p95_rad_s2": 17.15854021272115
+        },
+        "single": {
+          "duration_s": 15.966666221618652,
+          "floor_minimum_m": -0.3291937714497627,
+          "active_angular_acceleration_p95_rad_s2": 29.79466445747076
+        },
+        "window": {
+          "duration_s": 11.566666603088379,
+          "floor_minimum_m": -0.29366291872409367,
+          "active_angular_acceleration_p95_rad_s2": 44.79855866131834
+        }
+      }
+    },
+    {
+      "id": "h3-dance",
+      "methods": {
+        "raw": {
+          "duration_s": 7.266666889190674,
+          "floor_minimum_m": -0.021132195330515326,
+          "active_angular_acceleration_p95_rad_s2": 61.498717387805904
+        },
+        "cleaned": {
+          "duration_s": 7.266666889190674,
+          "floor_minimum_m": -0.020583202217875407,
+          "active_angular_acceleration_p95_rad_s2": 23.00325870024968
+        },
+        "single": {
+          "duration_s": 12.366666793823242,
+          "floor_minimum_m": 0.008821981103062669,
+          "active_angular_acceleration_p95_rad_s2": 21.941409137171657
+        },
+        "window": {
+          "duration_s": 10.633333206176758,
+          "floor_minimum_m": -0.023584681043411215,
+          "active_angular_acceleration_p95_rad_s2": 30.328228701123937
+        }
+      }
+    }
+  ]
+}

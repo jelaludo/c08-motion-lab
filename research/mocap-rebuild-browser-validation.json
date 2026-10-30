@@ -1,0 +1,393 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/mocap-rebuild/",
+  "tests": [
+    {
+      "id": "ukemi",
+      "rows": [
+        {
+          "method": "raw",
+          "time": 1.25,
+          "duration": 4.733333110809326,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "cleaned",
+          "time": 1.25,
+          "duration": 4.733333110809326,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "single",
+          "time": 1.25,
+          "duration": 15.966666221618652,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "window",
+          "time": 1.25,
+          "duration": 8.899999618530273,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        }
+      ],
+      "framing": []
+    },
+    {
+      "id": "technical-standup",
+      "rows": [
+        {
+          "method": "raw",
+          "time": 1.25,
+          "duration": 7.066666603088379,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "cleaned",
+          "time": 1.25,
+          "duration": 7.066666603088379,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "single",
+          "time": 1.25,
+          "duration": 14.633333206176758,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "window",
+          "time": 1.25,
+          "duration": 10.766666412353516,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        }
+      ],
+      "framing": []
+    },
+    {
+      "id": "gorilla-front",
+      "rows": [
+        {
+          "method": "raw",
+          "time": 1.25,
+          "duration": 7.933333396911621,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "cleaned",
+          "time": 1.25,
+          "duration": 7.933333396911621,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "single",
+          "time": 1.25,
+          "duration": 15.966666221618652,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "window",
+          "time": 1.25,
+          "duration": 10.366666793823242,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        }
+      ],
+      "framing": []
+    },
+    {
+      "id": "sumo-stomp",
+      "rows": [
+        {
+          "method": "raw",
+          "time": 1.25,
+          "duration": 7.233333110809326,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "single",
+          "time": 1.25,
+          "duration": 13.033333778381348,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "window",
+          "time": 1.25,
+          "duration": 9.833333015441895,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "cleaned",
+          "time": 1.25,
+          "duration": 7.233333110809326,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        }
+      ],
+      "framing": []
+    },
+    {
+      "id": "source-094553",
+      "rows": [
+        {
+          "method": "raw",
+          "time": 1.25,
+          "duration": 7.866666793823242,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "cleaned",
+          "time": 1.25,
+          "duration": 7.866666793823242,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "single",
+          "time": 1.25,
+          "duration": 15.966666221618652,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "window",
+          "time": 1.25,
+          "duration": 11.566666603088379,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        }
+      ],
+      "framing": []
+    },
+    {
+      "id": "h3-dance",
+      "rows": [
+        {
+          "method": "raw",
+          "time": 1.25,
+          "duration": 7.266666889190674,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "cleaned",
+          "time": 1.25,
+          "duration": 7.266666889190674,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "single",
+          "time": 1.25,
+          "duration": 12.366666793823242,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "window",
+          "time": 1.25,
+          "duration": 10.633333206176758,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        }
+      ],
+      "framing": []
+    }
+  ],
+  "arrival_seek_checks": [
+    {
+      "id": "ukemi",
+      "method": "single",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "ukemi",
+      "method": "single",
+      "index": 7,
+      "time_s": 15.566666666666666
+    },
+    {
+      "id": "ukemi",
+      "method": "window",
+      "index": 0,
+      "time_s": 1.3333333333333333
+    },
+    {
+      "id": "ukemi",
+      "method": "window",
+      "index": 7,
+      "time_s": 8.5
+    },
+    {
+      "id": "technical-standup",
+      "method": "single",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "technical-standup",
+      "method": "single",
+      "index": 7,
+      "time_s": 14.233333333333333
+    },
+    {
+      "id": "technical-standup",
+      "method": "window",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "technical-standup",
+      "method": "window",
+      "index": 7,
+      "time_s": 10.366666666666667
+    },
+    {
+      "id": "gorilla-front",
+      "method": "single",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "gorilla-front",
+      "method": "single",
+      "index": 7,
+      "time_s": 15.566666666666666
+    },
+    {
+      "id": "gorilla-front",
+      "method": "window",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "gorilla-front",
+      "method": "window",
+      "index": 7,
+      "time_s": 9.966666666666667
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "single",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "single",
+      "index": 7,
+      "time_s": 12.633333333333333
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "window",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "sumo-stomp",
+      "method": "window",
+      "index": 7,
+      "time_s": 9.433333333333334
+    },
+    {
+      "id": "source-094553",
+      "method": "single",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "source-094553",
+      "method": "single",
+      "index": 7,
+      "time_s": 15.566666666666666
+    },
+    {
+      "id": "source-094553",
+      "method": "window",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "source-094553",
+      "method": "window",
+      "index": 7,
+      "time_s": 11.166666666666666
+    },
+    {
+      "id": "h3-dance",
+      "method": "single",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "h3-dance",
+      "method": "single",
+      "index": 7,
+      "time_s": 11.966666666666667
+    },
+    {
+      "id": "h3-dance",
+      "method": "window",
+      "index": 0,
+      "time_s": 2.2666666666666666
+    },
+    {
+      "id": "h3-dance",
+      "method": "window",
+      "index": 7,
+      "time_s": 10.233333333333333
+    }
+  ],
+  "checks": [
+    "All24 supplied C08 animations load with finite evaluated bones",
+    "408 full-skin sampled pose bounds fit initial cameras",
+    "First/final arrival buttons on all12 neural variants use actual generated timestamps",
+    "Elapsed time and explicitly disclosed normalized progress modes",
+    "Play/pause and method visibility",
+    "Method-specific comments/scores persist through switching and reload",
+    "All-review export retains two independent method records and pilot snapshot",
+    "Kept manifests link each actual method GLB",
+    "Mobile layout has no horizontal overflow",
+    "No page errors"
+  ],
+  "errors": []
+}

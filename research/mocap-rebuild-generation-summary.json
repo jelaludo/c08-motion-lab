@@ -1,0 +1,207 @@
+{
+  "status": "complete",
+  "model_sha256": "856419dc72aeb14e591eebf4dd0ea05734a2506ddb00bcd39dd6dac2ad60f4fb",
+  "precision": "FP32",
+  "wall_seconds": 92.85558549989946,
+  "actual_neural_calls": 96,
+  "results": [
+    {
+      "source": "ukemi",
+      "variant": "single",
+      "frames": 480,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "ukemi",
+      "variant": "window",
+      "frames": 268,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "technical-standup",
+      "variant": "single",
+      "frames": 440,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "technical-standup",
+      "variant": "window",
+      "frames": 324,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "gorilla-front",
+      "variant": "single",
+      "frames": 480,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "gorilla-front",
+      "variant": "window",
+      "frames": 312,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "sumo-stomp",
+      "variant": "single",
+      "frames": 392,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "sumo-stomp",
+      "variant": "window",
+      "frames": 296,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "source-094553",
+      "variant": "single",
+      "frames": 480,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "source-094553",
+      "variant": "window",
+      "frames": 348,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "h3-dance",
+      "variant": "single",
+      "frames": 372,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    },
+    {
+      "source": "h3-dance",
+      "variant": "window",
+      "frames": 320,
+      "actual_neural_calls": 8,
+      "loop_endpoint_world_matrix_max_error": 0.0
+    }
+  ],
+  "cached_deduplication": {
+    "status": "passed",
+    "additional_neural_calls": 0,
+    "results": [
+      {
+        "source": "ukemi",
+        "variant": "single",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 464,
+        "played_neural_frames": 456
+      },
+      {
+        "source": "ukemi",
+        "variant": "window",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 252,
+        "played_neural_frames": 244
+      },
+      {
+        "source": "technical-standup",
+        "variant": "single",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 424,
+        "played_neural_frames": 416
+      },
+      {
+        "source": "technical-standup",
+        "variant": "window",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 308,
+        "played_neural_frames": 300
+      },
+      {
+        "source": "gorilla-front",
+        "variant": "single",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 464,
+        "played_neural_frames": 456
+      },
+      {
+        "source": "gorilla-front",
+        "variant": "window",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 296,
+        "played_neural_frames": 288
+      },
+      {
+        "source": "sumo-stomp",
+        "variant": "single",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 376,
+        "played_neural_frames": 368
+      },
+      {
+        "source": "sumo-stomp",
+        "variant": "window",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 280,
+        "played_neural_frames": 272
+      },
+      {
+        "source": "source-094553",
+        "variant": "single",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 464,
+        "played_neural_frames": 456
+      },
+      {
+        "source": "source-094553",
+        "variant": "window",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 332,
+        "played_neural_frames": 324
+      },
+      {
+        "source": "h3-dance",
+        "variant": "single",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 356,
+        "played_neural_frames": 348
+      },
+      {
+        "source": "h3-dance",
+        "variant": "window",
+        "calls": 8,
+        "exact_float32_context_chain": true,
+        "shared_starts_removed": 8,
+        "raw_frames": 304,
+        "played_neural_frames": 296
+      }
+    ]
+  }
+}

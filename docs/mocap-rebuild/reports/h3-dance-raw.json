@@ -1,0 +1,209 @@
+{
+  "id": "h3-dance",
+  "method": "raw",
+  "frames": 219,
+  "pipeline": "Own reference -> GEM-X SOMA77 control; no MotionBricks inference",
+  "artifact_sha256": "8f2b7b94590507bb98b5b428a6813e667f6e1d45bca9ef934a81baa3d0a30ac1",
+  "source_prepared_sha256": "afa2904614ff4a1b274c4d9e3e2d2b79e410bdcf79b4a6d6f7b91e7654d30699",
+  "source_motion_sha256": "2ef04bd6594c70ed2fac209a9f5c9f706ded3941e323369e2e9d74ec4e20afa4",
+  "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+  "constant_ground_offset_m": 0.00951367335002061,
+  "source_to_target_root_scale": 1.2543386129243748,
+  "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+  "validation": {
+    "status": "artifact_integrity_passed_visual_review_required",
+    "id": "h3-dance",
+    "method": "raw",
+    "clip": "MBR_h3_dance_raw",
+    "frames": 219,
+    "fps": 30,
+    "duration_s": 7.266666889190674,
+    "body": "c08",
+    "three_revision": "160",
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "max_exported_joint_position_error_m": 1.9041098593096877e-06,
+    "max_segment_length_variation_m": 2.656496828623567e-07,
+    "independent_clones": true,
+    "prohibited_animation_tracks": [],
+    "active_frame_range": [
+      0,
+      218
+    ],
+    "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+    "active_local_joint_angular_step_rad": {
+      "samples": 4796,
+      "p50": 0.013775599188710241,
+      "p95": 0.08366741702411161,
+      "max": 0.34239152374198895
+    },
+    "active_local_joint_angular_acceleration_rad_s2": {
+      "samples": 4774,
+      "p50": 15.967170381264607,
+      "p95": 61.498717387805904,
+      "max": 254.19639155688435
+    },
+    "active_arm_angular_step_rad": {
+      "samples": 1308,
+      "p50": 0.02105841624343859,
+      "p95": 0.09056265492155333,
+      "max": 0.278066678884792
+    },
+    "active_arm_angular_acceleration_rad_s2": {
+      "samples": 1302,
+      "p50": 22.91121916345488,
+      "p95": 63.657412672787466,
+      "max": 159.96820668665777
+    },
+    "active_root_speed_m_s": {
+      "samples": 218,
+      "p50": 0.06642217360149112,
+      "p95": 0.5896139897916288,
+      "max": 0.8955217541215138
+    },
+    "active_root_jerk_m_s3": {
+      "samples": 216,
+      "p50": 37.9015149676471,
+      "p95": 169.68896342319113,
+      "max": 339.85596767345936
+    },
+    "segment_boundaries": [],
+    "seam": {
+      "maximum_joint_world_position_gap_m": 0.6948992224258035,
+      "maximum_local_joint_orientation_gap_rad": 1.1287857898854896,
+      "root_position_gap_m": 0.306752030553129,
+      "start_root_speed_m_s": 0.05617405896624671,
+      "end_root_speed_m_s": 0.043152616814094664,
+      "start_max_local_joint_speed_rad_s": 1.3710301378662337,
+      "end_max_local_joint_speed_rad_s": 1.6476921590125675
+    },
+    "joint_sampling_hz": 120,
+    "full_skin_sampling_hz": 8,
+    "skinned_geometry_min_floor_y_m": -0.021132195330515326,
+    "lowest_skin_distribution_m": {
+      "samples": 60,
+      "p50": 0.13945098003429982,
+      "p95": 0.2775049268547499,
+      "max": 0.2806367052594276
+    },
+    "skin_samples_below_floor": 4,
+    "floor_sample_count": 60,
+    "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+    "limitations": [
+      "Full skin checked8Hz, not continuous collision proof",
+      "No physical balance, self-collision or hand/foot contact guarantee",
+      "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+      "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+    ]
+  },
+  "provenance": {
+    "id": "rebuild_h3-dance_raw",
+    "source_file_id": "h3-dance",
+    "variant": "raw",
+    "provenance_type": "creator_supplied_generated_biped_reference",
+    "pipeline": "Own reference -> GEM-X SOMA77 control; no MotionBricks inference",
+    "frames": 219,
+    "sample_rate": 30,
+    "duration_s": 7.266666666666667,
+    "source_joint_count": 77,
+    "source_space": "Y up, metres; source first heading removed and origin/floor translated once",
+    "source_motion_sha256": "2ef04bd6594c70ed2fac209a9f5c9f706ded3941e323369e2e9d74ec4e20afa4",
+    "source_prepared_sha256": "afa2904614ff4a1b274c4d9e3e2d2b79e410bdcf79b4a6d6f7b91e7654d30699",
+    "surface_bounds_note": "Joint-coordinate bounds only, not recovered or target skinned geometry. Do not use as full-skin ground proof.",
+    "limitations": [
+      "Monocular depth and hidden joints remain estimates",
+      "No physical contact/balance/self-collision solve",
+      "No source video, source frames or model weights published",
+      "Non-model fingers stay at reference during neural output; source finger articulation is not regenerated"
+    ],
+    "active_frame_range": [
+      0,
+      218
+    ],
+    "neutral_hold_frames": 0,
+    "actual_neural_calls": 0,
+    "generated_segment_boundaries": [],
+    "loop_policy": "Original full source motion; not closed",
+    "basis": {
+      "source_id": "h3-dance",
+      "source_prepared_sha256": "afa2904614ff4a1b274c4d9e3e2d2b79e410bdcf79b4a6d6f7b91e7654d30699",
+      "original_frames": 219,
+      "used_source_frame_range": [
+        0,
+        218
+      ],
+      "excluded_source_frame_ranges": [],
+      "exclusion_note": "Gorilla uses the explicitly reported reliable prefix before >=5 major projected joints leave image; original raw/cleaned controls remain full length. Coverage is not accuracy.",
+      "source_key_indices": [
+        0,
+        43,
+        62,
+        93,
+        101,
+        119,
+        215
+      ],
+      "source_key_times_s": [
+        0.0,
+        1.4333333333333333,
+        2.066666666666667,
+        3.1,
+        3.3666666666666667,
+        3.966666666666667,
+        7.166666666666667
+      ],
+      "key_policy": "Greedy largest body-trajectory deviation from piecewise linear paths, seven landmarks with >=8-frame spacing, using head/hands/feet/shins/root; corrected by modest smoothing, no authored source poses.",
+      "cleaning": {
+        "quaternion_filter": "Sign-continuous local quaternion normalized Gaussian average",
+        "sigma_frames": 1.15,
+        "root_position_filter": "Gaussian sigma1.15 frames",
+        "child_translation_policy": "Constant median local bone translations",
+        "foot_or_hand_ik": false,
+        "per_frame_floor_translation": false
+      },
+      "initial_heading_removed_rad": -2.9186971326694966,
+      "single_constant_input_translation": [
+        0.0,
+        -0.5196126103401184,
+        0.0
+      ],
+      "default_stance": "Authored relaxed T-bind delta: upper arms \u00b175deg worldZ, thighs -4deg/shins +4deg worldX, feet reference orientation; reference-proportioned hips height. Not recovered performance or neural generation.",
+      "neutral_hold_frames": 12
+    },
+    "motion_metrics_full_clip": {
+      "angular_speed_p95_rad_s": 1.3799355992130664,
+      "angular_acceleration_p95_rad_s2": 44.84987887000278,
+      "maximum_local_rotation_step_deg": 19.617561302570508
+    },
+    "motion_metrics_active": {
+      "angular_speed_p95_rad_s": 1.3799355992130664,
+      "angular_acceleration_p95_rad_s2": 44.84987887000278,
+      "maximum_local_rotation_step_deg": 19.617561302570508
+    }
+  },
+  "metrics": {
+    "minimum_skin_floor_m": -0.021132195330515326,
+    "floor_samples_below_ground": 4,
+    "local_joint_step_p95_deg": 4.793789878242609,
+    "local_joint_step_max_deg": 19.61758925146929,
+    "local_joint_angular_acceleration_p95_rad_s2": 61.498717387805904,
+    "arm_angular_acceleration_p95_rad_s2": 63.657412672787466,
+    "root_seam_gap_m": 0.306752030553129,
+    "maximum_joint_seam_gap_m": 0.6948992224258035,
+    "rotation_seam_deg": 64.67466173477949,
+    "start_root_speed_m_s": 0.05617405896624671,
+    "end_root_speed_m_s": 0.043152616814094664,
+    "actual_neural_calls": 0
+  },
+  "limitations": [
+    "Monocular depth and hidden joints remain estimates",
+    "No physical contact/balance/self-collision solve",
+    "No source video, source frames or model weights published",
+    "Non-model fingers stay at reference during neural output; source finger articulation is not regenerated",
+    "Target proportions differ from the performer",
+    "A constant first-pose ground calibration does not establish later support: visible hovering or penetration can remain",
+    "No hand/foot pinning or armor self-collision solve",
+    "Fingers remain at original rig rest pose; source hand detail is not reproduced",
+    "MotionBricks methods are single/window; cleaned is non-neural. No G1 intermediate or physical robot control"
+  ]
+}

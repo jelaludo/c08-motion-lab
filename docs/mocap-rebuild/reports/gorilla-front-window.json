@@ -1,0 +1,502 @@
+{
+  "id": "gorilla-front",
+  "method": "window",
+  "frames": 312,
+  "pipeline": "Own reference -> GEM-X SOMA77 -> MotionBricks SOMA",
+  "artifact_sha256": "d4b5f7dc5ff462f04e91d5f9fc5075910efa941fe686aecb3c0399726840bcc9",
+  "source_prepared_sha256": "d16fc1a9cad3e37091c8dc7d2089c5219b4aff19e6c9d98ecbd3fe6f271fd2fe",
+  "source_motion_sha256": "081364e4cf975239dca46fbb57932c131edc170785f05c6e5c64c2c2918ddd2d",
+  "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+  "constant_ground_offset_m": 0.03705552494525709,
+  "source_to_target_root_scale": 1.1660449318381032,
+  "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+  "validation": {
+    "status": "artifact_integrity_passed_visual_review_required",
+    "id": "gorilla-front",
+    "method": "window",
+    "clip": "MBR_gorilla_front_window",
+    "frames": 312,
+    "fps": 30,
+    "duration_s": 10.366666793823242,
+    "body": "c08",
+    "three_revision": "160",
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "max_exported_joint_position_error_m": 2.446967347041105e-06,
+    "max_segment_length_variation_m": 9.8006364745995e-08,
+    "independent_clones": true,
+    "prohibited_animation_tracks": [],
+    "active_frame_range": [
+      12,
+      299
+    ],
+    "angular_metrics_note": "Shortest-arc local joint rotation differences at30Hz, active action only. Engineered neutral holds excluded. Angular acceleration is a kinematic diagnostic, not measured torque or proof of visual smoothness. Generated timing differs from source timing.",
+    "active_local_joint_angular_step_rad": {
+      "samples": 6336,
+      "p50": 0.019343991293891867,
+      "p95": 0.08495858760398509,
+      "max": 0.3395767139266331
+    },
+    "active_local_joint_angular_acceleration_rad_s2": {
+      "samples": 6314,
+      "p50": 7.245561845284969,
+      "p95": 37.972668072214425,
+      "max": 495.21176213287004
+    },
+    "active_arm_angular_step_rad": {
+      "samples": 1728,
+      "p50": 0.03338704315111166,
+      "p95": 0.12955819859618198,
+      "max": 0.3395767139266331
+    },
+    "active_arm_angular_acceleration_rad_s2": {
+      "samples": 1722,
+      "p50": 13.591421903845529,
+      "p95": 54.645947071124624,
+      "max": 495.21176213287004
+    },
+    "active_root_speed_m_s": {
+      "samples": 288,
+      "p50": 0.37417072168289195,
+      "p95": 1.6580986112317768,
+      "max": 2.248106884197917
+    },
+    "active_root_jerk_m_s3": {
+      "samples": 286,
+      "p50": 12.208077526750463,
+      "p95": 54.40253314482108,
+      "max": 235.08000831588896
+    },
+    "segment_boundaries": [
+      {
+        "frame": 12,
+        "neighborhood_frames": 2,
+        "local_joint_angular_step_rad": {
+          "samples": 110,
+          "p50": 0.0094982282125428,
+          "p95": 0.04165974659139687,
+          "max": 0.09001996031819007
+        },
+        "root_step_m": 0.0009404451951530954
+      },
+      {
+        "frame": 69,
+        "neighborhood_frames": 2,
+        "local_joint_angular_step_rad": {
+          "samples": 110,
+          "p50": 0.02855169709759816,
+          "p95": 0.13036313780596187,
+          "max": 0.18834420974698768
+        },
+        "root_step_m": 0.004451704869204477
+      },
+      {
+        "frame": 118,
+        "neighborhood_frames": 2,
+        "local_joint_angular_step_rad": {
+          "samples": 110,
+          "p50": 0.03630015998954575,
+          "p95": 0.14733129371134276,
+          "max": 0.23363032014579185
+        },
+        "root_step_m": 0.018745677273326024
+      },
+      {
+        "frame": 135,
+        "neighborhood_frames": 2,
+        "local_joint_angular_step_rad": {
+          "samples": 110,
+          "p50": 0.038735912486003256,
+          "p95": 0.15068727908379437,
+          "max": 0.2712345153038008
+        },
+        "root_step_m": 0.016782431443651265
+      },
+      {
+        "frame": 152,
+        "neighborhood_frames": 2,
+        "local_joint_angular_step_rad": {
+          "samples": 110,
+          "p50": 0.04021652223186031,
+          "p95": 0.11786008342161924,
+          "max": 0.3395767139266331
+        },
+        "root_step_m": 0.021872123382653264
+      },
+      {
+        "frame": 173,
+        "neighborhood_frames": 2,
+        "local_joint_angular_step_rad": {
+          "samples": 110,
+          "p50": 0.03884829761674993,
+          "p95": 0.14290012551481693,
+          "max": 0.19724736706072152
+        },
+        "root_step_m": 0.01726775129791223
+      },
+      {
+        "frame": 190,
+        "neighborhood_frames": 2,
+        "local_joint_angular_step_rad": {
+          "samples": 110,
+          "p50": 0.04348139566425333,
+          "p95": 0.1885220336515736,
+          "max": 0.29679374584977447
+        },
+        "root_step_m": 0.0063390743010423405
+      },
+      {
+        "frame": 243,
+        "neighborhood_frames": 2,
+        "local_joint_angular_step_rad": {
+          "samples": 110,
+          "p50": 0.04359208965266815,
+          "p95": 0.1257526551941744,
+          "max": 0.298792937251888
+        },
+        "root_step_m": 0.017423554800276964
+      }
+    ],
+    "seam": {
+      "maximum_joint_world_position_gap_m": 0,
+      "maximum_local_joint_orientation_gap_rad": 0,
+      "root_position_gap_m": 0,
+      "start_root_speed_m_s": 0,
+      "end_root_speed_m_s": 0,
+      "start_max_local_joint_speed_rad_s": 0,
+      "end_max_local_joint_speed_rad_s": 0
+    },
+    "joint_sampling_hz": 120,
+    "full_skin_sampling_hz": 8,
+    "skinned_geometry_min_floor_y_m": -0.01757057109684907,
+    "lowest_skin_distribution_m": {
+      "samples": 84,
+      "p50": 0.07223940692292535,
+      "p95": 0.5712817069798009,
+      "max": 0.664123256895729
+    },
+    "skin_samples_below_floor": 3,
+    "floor_sample_count": 84,
+    "ground_policy": "One constant whole-avatar vertical offset places the first pose lowest skinned vertex 15 mm above the floor. No per-frame grounding, no foot locks, no limb stretching. Later penetration and hovering are retained and measured, not silently repaired.",
+    "limitations": [
+      "Full skin checked8Hz, not continuous collision proof",
+      "No physical balance, self-collision or hand/foot contact guarantee",
+      "Raw and cleaned use exactly the same constant first-raw-pose calibration; no per-frame grounding in any new variant",
+      "Visible penetrations/hovering intentionally retained instead of framewise grounding"
+    ]
+  },
+  "provenance": {
+    "id": "rebuild_gorilla-front_window",
+    "source_file_id": "gorilla-front",
+    "variant": "window",
+    "provenance_type": "user_owned_mocap",
+    "pipeline": "Own reference -> GEM-X SOMA77 -> MotionBricks SOMA",
+    "frames": 312,
+    "sample_rate": 30,
+    "duration_s": 10.366666666666667,
+    "source_joint_count": 77,
+    "source_space": "Y up, metres; source first heading removed and origin/floor translated once",
+    "source_motion_sha256": "081364e4cf975239dca46fbb57932c131edc170785f05c6e5c64c2c2918ddd2d",
+    "source_prepared_sha256": "d16fc1a9cad3e37091c8dc7d2089c5219b4aff19e6c9d98ecbd3fe6f271fd2fe",
+    "surface_bounds_note": "Joint-coordinate bounds only, not recovered or target skinned geometry. Do not use as full-skin ground proof.",
+    "limitations": [
+      "Monocular depth and hidden joints remain estimates",
+      "No physical contact/balance/self-collision solve",
+      "No source video, source frames or model weights published",
+      "Non-model fingers stay at reference during neural output; source finger articulation is not regenerated"
+    ],
+    "basis": {
+      "source_id": "gorilla-front",
+      "source_prepared_sha256": "d16fc1a9cad3e37091c8dc7d2089c5219b4aff19e6c9d98ecbd3fe6f271fd2fe",
+      "original_frames": 239,
+      "used_source_frame_range": [
+        0,
+        173
+      ],
+      "excluded_source_frame_ranges": [
+        [
+          174,
+          238
+        ]
+      ],
+      "exclusion_note": "Gorilla uses the explicitly reported reliable prefix before >=5 major projected joints leave image; original raw/cleaned controls remain full length. Coverage is not accuracy.",
+      "source_key_indices": [
+        0,
+        42,
+        67,
+        86,
+        110,
+        125,
+        170
+      ],
+      "source_key_times_s": [
+        0.0,
+        1.4,
+        2.2333333333333334,
+        2.8666666666666667,
+        3.6666666666666665,
+        4.166666666666667,
+        5.666666666666667
+      ],
+      "key_policy": "Greedy largest body-trajectory deviation from piecewise linear paths, seven landmarks with >=8-frame spacing, using head/hands/feet/shins/root; corrected by modest smoothing, no authored source poses.",
+      "cleaning": {
+        "quaternion_filter": "Sign-continuous local quaternion normalized Gaussian average",
+        "sigma_frames": 1.15,
+        "root_position_filter": "Gaussian sigma1.15 frames",
+        "child_translation_policy": "Constant median local bone translations",
+        "foot_or_hand_ik": false,
+        "per_frame_floor_translation": false
+      },
+      "initial_heading_removed_rad": 3.083902945845149,
+      "single_constant_input_translation": [
+        0.0,
+        -0.7815483808517456,
+        0.0
+      ],
+      "default_stance": "Authored relaxed T-bind delta: upper arms \u00b175deg worldZ, thighs -4deg/shins +4deg worldX, feet reference orientation; reference-proportioned hips height. Not recovered performance or neural generation.",
+      "neutral_hold_frames": 12
+    },
+    "active_frame_range": [
+      12,
+      299
+    ],
+    "neutral_hold_frames": 12,
+    "generated_segment_boundaries": [
+      12,
+      69,
+      118,
+      135,
+      152,
+      173,
+      190,
+      243
+    ],
+    "source_key_indices": [
+      0,
+      42,
+      67,
+      86,
+      110,
+      125,
+      170
+    ],
+    "actual_neural_calls": 8,
+    "model": "MotionBricks-SOMA-RP-v1",
+    "model_precision": "FP32",
+    "model_sha256": "856419dc72aeb14e591eebf4dd0ea05734a2506ddb00bcd39dd6dac2ad60f4fb",
+    "model_sample_rate": 30,
+    "source_to_model_skeleton": "Original native77 hierarchy passed to official engine; required30joint subset used by model; noG1intermediate",
+    "loop_policy": "Authored12frame neutral hold -> genuine neural phase targets -> genuine neural return to exactsame neutral -> authored12frame neutral hold; model durations freely reinterpreted",
+    "final_endpoint_numeric_snap_max_matrix_error": 1.5022809957132566e-07,
+    "loop_endpoint_world_matrix_max_error": 0.0,
+    "final_hold_start_frame": 300,
+    "generated_duration_not_original_timing": true,
+    "segments": [
+      {
+        "segment": 0,
+        "output_frame_start": 12,
+        "frames": 57,
+        "source_key_index": 0,
+        "target_window_frames": 4,
+        "inference_seconds": 0.006175900110974908,
+        "endpoint_matrix_max_error": 1.5889258708767784e-07,
+        "context_sha256": "ce16e048322a2fbd01752b4baa46daeafe34f9648a16a2e736219a7feed989f4",
+        "target_sha256": "8b4226bf600bd424ee80bfe59821a9f12887404101079258c3c5c5c75b106238",
+        "output_sha256": "8745fd6c1036d0e4b6188f2f0f87cc573b9490096d3563a8fc44b81e89c672eb",
+        "context_is_last_four_actual_played_poses": true,
+        "kind": "neural_between_source_landmarks",
+        "raw_frames": 58,
+        "played_frames": 57,
+        "used_start_index": 1,
+        "shared_endpoint_removed": true,
+        "shared_endpoint_matrix_gap": 1.2649256397878617e-07,
+        "input_storage_dtype": "float32",
+        "context_chain_comparison": "Exact after float32 engine-upload conversion"
+      },
+      {
+        "segment": 1,
+        "output_frame_start": 69,
+        "frames": 49,
+        "source_key_index": 42,
+        "target_window_frames": 4,
+        "inference_seconds": 0.005373999942094088,
+        "endpoint_matrix_max_error": 1.8674721291578322e-07,
+        "context_sha256": "f6f5a1457704a37c531af1dd790344ced5e703f0a011c110bae0ee3ce4c0b549",
+        "target_sha256": "5f9fb148bdf47945fb33e637272bdfc30a4e5dd5e9a8bf230ec539424c9ea26f",
+        "output_sha256": "537b14e5168ecf7501473fea99e8e8735deb9062ad0e3f3dabb0dd24c32e50f4",
+        "context_is_last_four_actual_played_poses": true,
+        "kind": "neural_between_source_landmarks",
+        "raw_frames": 50,
+        "played_frames": 49,
+        "used_start_index": 1,
+        "shared_endpoint_removed": true,
+        "shared_endpoint_matrix_gap": 1.6632589960874355e-07,
+        "input_storage_dtype": "float32",
+        "context_chain_comparison": "Exact after float32 engine-upload conversion"
+      },
+      {
+        "segment": 2,
+        "output_frame_start": 118,
+        "frames": 17,
+        "source_key_index": 67,
+        "target_window_frames": 4,
+        "inference_seconds": 0.005295999813824892,
+        "endpoint_matrix_max_error": 1.712438901790847e-07,
+        "context_sha256": "fb6620555f1af1b79854000835177dafe09d9b4c2159452dfbc02d04f694cb92",
+        "target_sha256": "ed44ce52e6c19a8dcd18007a090dc644a282a597ab1dbe7e839763feee5d15e7",
+        "output_sha256": "f129a18c3b7738d0b7bd0e92705986e56f485cb38af6756de7341f55e85db12d",
+        "context_is_last_four_actual_played_poses": true,
+        "kind": "neural_between_source_landmarks",
+        "raw_frames": 18,
+        "played_frames": 17,
+        "used_start_index": 1,
+        "shared_endpoint_removed": true,
+        "shared_endpoint_matrix_gap": 9.665430322769453e-08,
+        "input_storage_dtype": "float32",
+        "context_chain_comparison": "Exact after float32 engine-upload conversion"
+      },
+      {
+        "segment": 3,
+        "output_frame_start": 135,
+        "frames": 17,
+        "source_key_index": 86,
+        "target_window_frames": 4,
+        "inference_seconds": 0.005354400025680661,
+        "endpoint_matrix_max_error": 1.3209385751888902e-07,
+        "context_sha256": "541d21907d135d15adbb9cbf68f163ccfe2a3f84b8104c6300720771417caedd",
+        "target_sha256": "6d9c829cea7a4c5fefa92664bd72a1500845ce0164cc0bfdacd3aa739ac18e83",
+        "output_sha256": "6388d0205ea953883a6d84f05f2f963dd7e881881bd263086e32be7a32291d70",
+        "context_is_last_four_actual_played_poses": true,
+        "kind": "neural_between_source_landmarks",
+        "raw_frames": 18,
+        "played_frames": 17,
+        "used_start_index": 1,
+        "shared_endpoint_removed": true,
+        "shared_endpoint_matrix_gap": 1.595695421907628e-07,
+        "input_storage_dtype": "float32",
+        "context_chain_comparison": "Exact after float32 engine-upload conversion"
+      },
+      {
+        "segment": 4,
+        "output_frame_start": 152,
+        "frames": 21,
+        "source_key_index": 110,
+        "target_window_frames": 4,
+        "inference_seconds": 0.0053032999858260155,
+        "endpoint_matrix_max_error": 1.6904414967822134e-07,
+        "context_sha256": "01828192427db67e57352c4093cd778e4c02d696b624d366c8d30d192be95a27",
+        "target_sha256": "0bdd29c3f56526944e5c2f8b6b73a6132f5b47e84e37cf98aa63e50248b53c70",
+        "output_sha256": "05750fce966b5c4753cdfa124dbffc63ea33c495b797466039ab11cbd8dab7db",
+        "context_is_last_four_actual_played_poses": true,
+        "kind": "neural_between_source_landmarks",
+        "raw_frames": 22,
+        "played_frames": 21,
+        "used_start_index": 1,
+        "shared_endpoint_removed": true,
+        "shared_endpoint_matrix_gap": 1.857650637759889e-07,
+        "input_storage_dtype": "float32",
+        "context_chain_comparison": "Exact after float32 engine-upload conversion"
+      },
+      {
+        "segment": 5,
+        "output_frame_start": 173,
+        "frames": 17,
+        "source_key_index": 125,
+        "target_window_frames": 4,
+        "inference_seconds": 0.0068292999640107155,
+        "endpoint_matrix_max_error": 1.7429295218196472e-07,
+        "context_sha256": "63ebdef4d0d1846d19b1038706ccbb85ae77cb8cbd2bd22f153d94121a91e887",
+        "target_sha256": "52893042f3ad4bfca3aa2572e147c119c25c5c501e664cc1f1d727c342e5dafe",
+        "output_sha256": "85df1cf6bcc6a4232bf8ef3bd22c6e8e0eb497abe72243d19e9ccde9d053e058",
+        "context_is_last_four_actual_played_poses": true,
+        "kind": "neural_between_source_landmarks",
+        "raw_frames": 18,
+        "played_frames": 17,
+        "used_start_index": 1,
+        "shared_endpoint_removed": true,
+        "shared_endpoint_matrix_gap": 1.6874334662908552e-07,
+        "input_storage_dtype": "float32",
+        "context_chain_comparison": "Exact after float32 engine-upload conversion"
+      },
+      {
+        "segment": 6,
+        "output_frame_start": 190,
+        "frames": 53,
+        "source_key_index": 170,
+        "target_window_frames": 4,
+        "inference_seconds": 0.0053801999893039465,
+        "endpoint_matrix_max_error": 1.7911098998402153e-07,
+        "context_sha256": "154e9606e70ad50313d0b2a0b26a4945eb94dc46a1dcbaf1a6b63ca5be3f846c",
+        "target_sha256": "d59ac76fcd5ade1a33c8069329da122007533a84dc5eac592b819eb96ecc5cae",
+        "output_sha256": "50aa3954624625ff9c54b6e238b654a12d263135540a424be81043feb08ea215",
+        "context_is_last_four_actual_played_poses": true,
+        "kind": "neural_between_source_landmarks",
+        "raw_frames": 54,
+        "played_frames": 53,
+        "used_start_index": 1,
+        "shared_endpoint_removed": true,
+        "shared_endpoint_matrix_gap": 9.35051007178167e-08,
+        "input_storage_dtype": "float32",
+        "context_chain_comparison": "Exact after float32 engine-upload conversion"
+      },
+      {
+        "segment": 7,
+        "output_frame_start": 243,
+        "frames": 57,
+        "source_key_index": null,
+        "target_window_frames": 4,
+        "inference_seconds": 0.005360499955713749,
+        "endpoint_matrix_max_error": 1.5022809957132566e-07,
+        "context_sha256": "ac3d66d8c0457a7d538a8a0d8aa1c602826d579af2fc267471758f786e010a24",
+        "target_sha256": "ce16e048322a2fbd01752b4baa46daeafe34f9648a16a2e736219a7feed989f4",
+        "output_sha256": "75ef5b39532eb68476f0d30ca7272572768f808e262ef2c06154b12dc40ff20a",
+        "context_is_last_four_actual_played_poses": true,
+        "kind": "neural_return_to_default",
+        "raw_frames": 58,
+        "played_frames": 57,
+        "used_start_index": 1,
+        "shared_endpoint_removed": true,
+        "shared_endpoint_matrix_gap": 1.8162895126794254e-07,
+        "input_storage_dtype": "float32",
+        "context_chain_comparison": "Exact after float32 engine-upload conversion"
+      }
+    ],
+    "motion_metrics_full_clip": {
+      "angular_speed_p95_rad_s": 1.2901933082550212,
+      "angular_acceleration_p95_rad_s2": 18.9682824650505,
+      "maximum_local_rotation_step_deg": 19.456303995486326
+    },
+    "motion_metrics_active": {
+      "angular_speed_p95_rad_s": 1.3452803701127005,
+      "angular_acceleration_p95_rad_s2": 19.59810263919382,
+      "maximum_local_rotation_step_deg": 19.456303995486326
+    },
+    "shared_endpoint_deduplication": "One coincident start sample removed at each segment; complete raw NN arrays retained. No pose interpolation or output smoothing added.",
+    "contacts_note": "Native neural predicted values within generated segments; authored neutral holds use ones as an explicit display label, not a measured contact solve."
+  },
+  "metrics": {
+    "minimum_skin_floor_m": -0.01757057109684907,
+    "floor_samples_below_ground": 3,
+    "local_joint_step_p95_deg": 4.867768503100819,
+    "local_joint_step_max_deg": 19.4563125289174,
+    "local_joint_angular_acceleration_p95_rad_s2": 37.972668072214425,
+    "arm_angular_acceleration_p95_rad_s2": 54.645947071124624,
+    "root_seam_gap_m": 0,
+    "maximum_joint_seam_gap_m": 0,
+    "rotation_seam_deg": 0.0,
+    "start_root_speed_m_s": 0,
+    "end_root_speed_m_s": 0,
+    "actual_neural_calls": 8
+  },
+  "limitations": [
+    "Monocular depth and hidden joints remain estimates",
+    "No physical contact/balance/self-collision solve",
+    "No source video, source frames or model weights published",
+    "Non-model fingers stay at reference during neural output; source finger articulation is not regenerated",
+    "Target proportions differ from the performer",
+    "A constant first-pose ground calibration does not establish later support: visible hovering or penetration can remain",
+    "No hand/foot pinning or armor self-collision solve",
+    "Fingers remain at original rig rest pose; source hand detail is not reproduced",
+    "MotionBricks methods are single/window; cleaned is non-neural. No G1 intermediate or physical robot control"
+  ]
+}
