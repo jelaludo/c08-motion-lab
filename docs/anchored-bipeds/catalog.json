@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "summary": "Anchored cleanup across all four bipeds. Shared timeline, six moves, independent body reviews.",
+  "bodies": [
+    {
+      "id": "c08",
+      "label": "C08 worker"
+    },
+    {
+      "id": "brek43",
+      "label": "B-REK43"
+    },
+    {
+      "id": "eva-k7",
+      "label": "EVA-K7"
+    },
+    {
+      "id": "meshy-fighter",
+      "label": "Meshy fighter (test only)",
+      "attribution": "BJJ Jiu-Jitsu Woman Girl Fighter Free by Tulio Portela, CC BY 4.0. Experimental rig/skin by C08 Motion Lab. https://sketchfab.com/3d-models/bjj-jiu-jitsu-woman-girl-fighter-free-8077cada67a14af18249b6af687fcc3c"
+    }
+  ],
+  "tests": [
+    {
+      "id": "ukemi",
+      "title": "Ukemi",
+      "version": 1,
+      "method": "anchored-bipeds",
+      "source": {
+        "anchored_sha256": "7ad11a06e8ec5cb9305af54398a2fdae26c7b47a3e7a5c0d977ac4a933a4febd"
+      },
+      "description": "Same anchored C08 performance, synchronized across four original biped rigs. C08 is unchanged; other bodies use proportional retargeting and support-phase leg IK.",
+      "limitations": [
+        "C08 is the reviewed source; other bodies are new visual-review candidates.",
+        "Target bind geometry, weights and limb lengths are preserved. Scaled travel and constant initial floor calibration; no per-frame body-floor clamp.",
+        "Support IK may reach its limb limit on different proportions; armor, floor rolls and hand/back contacts require review.",
+        "Meshy fighter is an attributed CC BY 4.0 experiment, excluded from production."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "../mocap-rebuild/models/ukemi-anchored.glb",
+          "report": "../mocap-rebuild/reports/ukemi-anchored.json"
+        },
+        {
+          "body": "brek43",
+          "model": "../biped-motion/models/ukemi-brek43.glb",
+          "anchor_model": "../mocap-rebuild/models/ukemi-anchored.glb",
+          "contacts": "ukemi-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "eva-k7",
+          "model": "../biped-motion/models/ukemi-eva-k7.glb",
+          "anchor_model": "../mocap-rebuild/models/ukemi-anchored.glb",
+          "contacts": "ukemi-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "../biped-motion/models/ukemi-meshy-fighter.glb",
+          "anchor_model": "../mocap-rebuild/models/ukemi-anchored.glb",
+          "contacts": "ukemi-contacts.json",
+          "runtime_retarget": true
+        }
+      ]
+    },
+    {
+      "id": "technical-standup",
+      "title": "BJJ technical stand-up",
+      "version": 1,
+      "method": "anchored-bipeds",
+      "source": {
+        "anchored_sha256": "d1dd5b9ebece25db1d5e353e10b9cda734e190b266eef85b34f3a46f5e4d257c"
+      },
+      "description": "Same anchored C08 performance, synchronized across four original biped rigs. C08 is unchanged; other bodies use proportional retargeting and support-phase leg IK.",
+      "limitations": [
+        "C08 is the reviewed source; other bodies are new visual-review candidates.",
+        "Target bind geometry, weights and limb lengths are preserved. Scaled travel and constant initial floor calibration; no per-frame body-floor clamp.",
+        "Support IK may reach its limb limit on different proportions; armor, floor rolls and hand/back contacts require review.",
+        "Meshy fighter is an attributed CC BY 4.0 experiment, excluded from production."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "../mocap-rebuild/models/technical-standup-anchored.glb",
+          "report": "../mocap-rebuild/reports/technical-standup-anchored.json"
+        },
+        {
+          "body": "brek43",
+          "model": "../biped-motion/models/technical-standup-brek43.glb",
+          "anchor_model": "../mocap-rebuild/models/technical-standup-anchored.glb",
+          "contacts": "technical-standup-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "eva-k7",
+          "model": "../biped-motion/models/technical-standup-eva-k7.glb",
+          "anchor_model": "../mocap-rebuild/models/technical-standup-anchored.glb",
+          "contacts": "technical-standup-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "../biped-motion/models/technical-standup-meshy-fighter.glb",
+          "anchor_model": "../mocap-rebuild/models/technical-standup-anchored.glb",
+          "contacts": "technical-standup-contacts.json",
+          "runtime_retarget": true
+        }
+      ]
+    },
+    {
+      "id": "gorilla-front",
+      "title": "Front-facing gorilla exercise",
+      "version": 1,
+      "method": "anchored-bipeds",
+      "source": {
+        "anchored_sha256": "f6314da1a5340c22837b7647389f843f3f08d765af4a598689edcecd80f73d06"
+      },
+      "description": "Same anchored C08 performance, synchronized across four original biped rigs. C08 is unchanged; other bodies use proportional retargeting and support-phase leg IK.",
+      "limitations": [
+        "C08 is the reviewed source; other bodies are new visual-review candidates.",
+        "Target bind geometry, weights and limb lengths are preserved. Scaled travel and constant initial floor calibration; no per-frame body-floor clamp.",
+        "Support IK may reach its limb limit on different proportions; armor, floor rolls and hand/back contacts require review.",
+        "Meshy fighter is an attributed CC BY 4.0 experiment, excluded from production."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "../mocap-rebuild/models/gorilla-front-anchored.glb",
+          "report": "../mocap-rebuild/reports/gorilla-front-anchored.json"
+        },
+        {
+          "body": "brek43",
+          "model": "../biped-motion/models/gorilla-front-brek43.glb",
+          "anchor_model": "../mocap-rebuild/models/gorilla-front-anchored.glb",
+          "contacts": "gorilla-front-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "eva-k7",
+          "model": "../biped-motion/models/gorilla-front-eva-k7.glb",
+          "anchor_model": "../mocap-rebuild/models/gorilla-front-anchored.glb",
+          "contacts": "gorilla-front-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "../biped-motion/models/gorilla-front-meshy-fighter.glb",
+          "anchor_model": "../mocap-rebuild/models/gorilla-front-anchored.glb",
+          "contacts": "gorilla-front-contacts.json",
+          "runtime_retarget": true
+        }
+      ]
+    },
+    {
+      "id": "sumo-stomp",
+      "title": "Sumo stomp",
+      "version": 1,
+      "method": "anchored-bipeds",
+      "source": {
+        "anchored_sha256": "eef9e09ae550bde6354e22d0063d3ce66f5480e73a2ec294fd2c93e4ab3c513f"
+      },
+      "description": "Same anchored C08 performance, synchronized across four original biped rigs. C08 is unchanged; other bodies use proportional retargeting and support-phase leg IK.",
+      "limitations": [
+        "C08 is the reviewed source; other bodies are new visual-review candidates.",
+        "Target bind geometry, weights and limb lengths are preserved. Scaled travel and constant initial floor calibration; no per-frame body-floor clamp.",
+        "Support IK may reach its limb limit on different proportions; armor, floor rolls and hand/back contacts require review.",
+        "Meshy fighter is an attributed CC BY 4.0 experiment, excluded from production."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "../mocap-rebuild/models/sumo-stomp-anchored.glb",
+          "report": "../mocap-rebuild/reports/sumo-stomp-anchored.json"
+        },
+        {
+          "body": "brek43",
+          "model": "../biped-motion/models/sumo-stomp-brek43.glb",
+          "anchor_model": "../mocap-rebuild/models/sumo-stomp-anchored.glb",
+          "contacts": "sumo-stomp-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "eva-k7",
+          "model": "../biped-motion/models/sumo-stomp-eva-k7.glb",
+          "anchor_model": "../mocap-rebuild/models/sumo-stomp-anchored.glb",
+          "contacts": "sumo-stomp-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "../biped-motion/models/sumo-stomp-meshy-fighter.glb",
+          "anchor_model": "../mocap-rebuild/models/sumo-stomp-anchored.glb",
+          "contacts": "sumo-stomp-contacts.json",
+          "runtime_retarget": true
+        }
+      ]
+    },
+    {
+      "id": "source-094553",
+      "title": "BJJ floor flow / shoulder roll",
+      "version": 1,
+      "method": "anchored-bipeds",
+      "source": {
+        "anchored_sha256": "31c490a9e59d2f49c03154e29528b2e0532169baff208d1f78460d89d1aa4c8d"
+      },
+      "description": "Same anchored C08 performance, synchronized across four original biped rigs. C08 is unchanged; other bodies use proportional retargeting and support-phase leg IK.",
+      "limitations": [
+        "C08 is the reviewed source; other bodies are new visual-review candidates.",
+        "Target bind geometry, weights and limb lengths are preserved. Scaled travel and constant initial floor calibration; no per-frame body-floor clamp.",
+        "Support IK may reach its limb limit on different proportions; armor, floor rolls and hand/back contacts require review.",
+        "Meshy fighter is an attributed CC BY 4.0 experiment, excluded from production."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "../mocap-rebuild/models/source-094553-anchored.glb",
+          "report": "../mocap-rebuild/reports/source-094553-anchored.json"
+        },
+        {
+          "body": "brek43",
+          "model": "../biped-motion/models/source-094553-brek43.glb",
+          "anchor_model": "../mocap-rebuild/models/source-094553-anchored.glb",
+          "contacts": "source-094553-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "eva-k7",
+          "model": "../biped-motion/models/source-094553-eva-k7.glb",
+          "anchor_model": "../mocap-rebuild/models/source-094553-anchored.glb",
+          "contacts": "source-094553-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "../biped-motion/models/source-094553-meshy-fighter.glb",
+          "anchor_model": "../mocap-rebuild/models/source-094553-anchored.glb",
+          "contacts": "source-094553-contacts.json",
+          "runtime_retarget": true
+        }
+      ]
+    },
+    {
+      "id": "h3-dance",
+      "title": "H3 character-swap dance",
+      "version": 1,
+      "method": "anchored-bipeds",
+      "source": {
+        "anchored_sha256": "ac03832b019715d299ba849f6815b210131d12a0a0f062e0caec9b1a15a98401"
+      },
+      "description": "Same anchored C08 performance, synchronized across four original biped rigs. C08 is unchanged; other bodies use proportional retargeting and support-phase leg IK.",
+      "limitations": [
+        "C08 is the reviewed source; other bodies are new visual-review candidates.",
+        "Target bind geometry, weights and limb lengths are preserved. Scaled travel and constant initial floor calibration; no per-frame body-floor clamp.",
+        "Support IK may reach its limb limit on different proportions; armor, floor rolls and hand/back contacts require review.",
+        "Meshy fighter is an attributed CC BY 4.0 experiment, excluded from production."
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "model": "../mocap-rebuild/models/h3-dance-anchored.glb",
+          "report": "../mocap-rebuild/reports/h3-dance-anchored.json"
+        },
+        {
+          "body": "brek43",
+          "model": "../biped-motion/models/h3-dance-brek43.glb",
+          "anchor_model": "../mocap-rebuild/models/h3-dance-anchored.glb",
+          "contacts": "h3-dance-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "eva-k7",
+          "model": "../biped-motion/models/h3-dance-eva-k7.glb",
+          "anchor_model": "../mocap-rebuild/models/h3-dance-anchored.glb",
+          "contacts": "h3-dance-contacts.json",
+          "runtime_retarget": true
+        },
+        {
+          "body": "meshy-fighter",
+          "model": "../biped-motion/models/h3-dance-meshy-fighter.glb",
+          "anchor_model": "../mocap-rebuild/models/h3-dance-anchored.glb",
+          "contacts": "h3-dance-contacts.json",
+          "runtime_retarget": true
+        }
+      ]
+    }
+  ]
+}

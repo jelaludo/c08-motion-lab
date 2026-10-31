@@ -1,0 +1,454 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "id": "ukemi",
+      "durations": [
+        8.899999618530273,
+        8.899999618530273,
+        8.899999618530273,
+        8.899999618530273
+      ],
+      "retargets": [
+        {
+          "body": "c08"
+        },
+        {
+          "body": "brek43",
+          "report": {
+            "source": "CLEAN_ukemi_anchored",
+            "scale": 1.5454544301860682,
+            "constant_floor_lift_m": -0.01885088653106834,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 8.789714511792113e-10,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "eva-k7",
+          "report": {
+            "source": "CLEAN_ukemi_anchored",
+            "scale": 0.9090908795348842,
+            "constant_floor_lift_m": -0.02108127323883329,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 2.7755575615628914e-16,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "meshy-fighter",
+          "report": {
+            "source": "CLEAN_ukemi_anchored",
+            "scale": 0.8090909348426805,
+            "constant_floor_lift_m": -0.015312662370621939,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 0.0000014085770687066734,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        }
+      ],
+      "samples": 68
+    },
+    {
+      "id": "technical-standup",
+      "durations": [
+        11.233333587646484,
+        11.233333587646484,
+        11.233333587646484,
+        11.233333587646484
+      ],
+      "retargets": [
+        {
+          "body": "c08"
+        },
+        {
+          "body": "brek43",
+          "report": {
+            "source": "CLEAN_technical_standup_anchored",
+            "scale": 1.5454544301860682,
+            "constant_floor_lift_m": -0.01885088653106834,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 6.57979037921308e-9,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "eva-k7",
+          "report": {
+            "source": "CLEAN_technical_standup_anchored",
+            "scale": 0.9090908795348842,
+            "constant_floor_lift_m": -0.02108127323883329,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 2.7755575615628914e-16,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "meshy-fighter",
+          "report": {
+            "source": "CLEAN_technical_standup_anchored",
+            "scale": 0.8090909348426805,
+            "constant_floor_lift_m": -0.015312662370621939,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 0.0000016094668393584755,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        }
+      ],
+      "samples": 68
+    },
+    {
+      "id": "gorilla-front",
+      "durations": [
+        9.933333396911621,
+        9.933333396911621,
+        9.933333396911621,
+        9.933333396911621
+      ],
+      "retargets": [
+        {
+          "body": "c08"
+        },
+        {
+          "body": "eva-k7",
+          "report": {
+            "source": "CLEAN_gorilla_front_anchored",
+            "scale": 0.9090908795348842,
+            "constant_floor_lift_m": -0.02108127323883329,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 2.7755575615628914e-16,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "brek43",
+          "report": {
+            "source": "CLEAN_gorilla_front_anchored",
+            "scale": 1.5454544301860682,
+            "constant_floor_lift_m": -0.01885088653106834,
+            "unreachable_frame_sides": 2,
+            "max_segment_length_error_m": 8.716630750527088e-10,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "meshy-fighter",
+          "report": {
+            "source": "CLEAN_gorilla_front_anchored",
+            "scale": 0.8090909348426805,
+            "constant_floor_lift_m": -0.015312662370621939,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 0.0000012517063707750964,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        }
+      ],
+      "samples": 68
+    },
+    {
+      "id": "sumo-stomp",
+      "durations": [
+        11.399999618530273,
+        11.399999618530273,
+        11.399999618530273,
+        11.399999618530273
+      ],
+      "retargets": [
+        {
+          "body": "c08"
+        },
+        {
+          "body": "eva-k7",
+          "report": {
+            "source": "CLEAN_sumo_stomp_anchored",
+            "scale": 0.9090908795348842,
+            "constant_floor_lift_m": -0.02108127323883329,
+            "unreachable_frame_sides": 7,
+            "max_segment_length_error_m": 3.885780586188048e-16,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "brek43",
+          "report": {
+            "source": "CLEAN_sumo_stomp_anchored",
+            "scale": 1.5454544301860682,
+            "constant_floor_lift_m": -0.01885088653106834,
+            "unreachable_frame_sides": 123,
+            "max_segment_length_error_m": 1.0408990336330248e-8,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "meshy-fighter",
+          "report": {
+            "source": "CLEAN_sumo_stomp_anchored",
+            "scale": 0.8090909348426805,
+            "constant_floor_lift_m": -0.015312662370621939,
+            "unreachable_frame_sides": 50,
+            "max_segment_length_error_m": 0.0000012195304326390044,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        }
+      ],
+      "samples": 68
+    },
+    {
+      "id": "source-094553",
+      "durations": [
+        12.033333778381348,
+        12.033333778381348,
+        12.033333778381348,
+        12.033333778381348
+      ],
+      "retargets": [
+        {
+          "body": "c08"
+        },
+        {
+          "body": "brek43",
+          "report": {
+            "source": "CLEAN_source_094553_anchored",
+            "scale": 1.5454544301860682,
+            "constant_floor_lift_m": -0.01885088653106834,
+            "unreachable_frame_sides": 1,
+            "max_segment_length_error_m": 1.7364797377794616e-9,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "eva-k7",
+          "report": {
+            "source": "CLEAN_source_094553_anchored",
+            "scale": 0.9090908795348842,
+            "constant_floor_lift_m": -0.02108127323883329,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 2.220446049250313e-16,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "meshy-fighter",
+          "report": {
+            "source": "CLEAN_source_094553_anchored",
+            "scale": 0.8090909348426805,
+            "constant_floor_lift_m": -0.015312662370621939,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 0.0000015163348843771907,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        }
+      ],
+      "samples": 68
+    },
+    {
+      "id": "h3-dance",
+      "durations": [
+        11.433333396911621,
+        11.433333396911621,
+        11.433333396911621,
+        11.433333396911621
+      ],
+      "retargets": [
+        {
+          "body": "c08"
+        },
+        {
+          "body": "brek43",
+          "report": {
+            "source": "CLEAN_h3_dance_anchored",
+            "scale": 1.5454544301860682,
+            "constant_floor_lift_m": -0.01885088653106834,
+            "unreachable_frame_sides": 1,
+            "max_segment_length_error_m": 1.1814903499995921e-9,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "eva-k7",
+          "report": {
+            "source": "CLEAN_h3_dance_anchored",
+            "scale": 0.9090908795348842,
+            "constant_floor_lift_m": -0.02108127323883329,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 2.7755575615628914e-16,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        },
+        {
+          "body": "meshy-fighter",
+          "report": {
+            "source": "CLEAN_h3_dance_anchored",
+            "scale": 0.8090909348426805,
+            "constant_floor_lift_m": -0.015312662370621939,
+            "unreachable_frame_sides": 0,
+            "max_segment_length_error_m": 0.0000012562881059885456,
+            "policy": "Fixed target bind lengths, source world rotation deltas, scaled pelvis travel, declared support-phase leg IK; no per-frame floor clamp. Target floor/armor contacts require visual review."
+          }
+        }
+      ],
+      "samples": 68
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "views": [
+        {
+          "width": 667,
+          "height": 230,
+          "bottom": 357
+        },
+        {
+          "width": 667,
+          "height": 230,
+          "bottom": 357
+        },
+        {
+          "width": 667,
+          "height": 230,
+          "bottom": 661
+        },
+        {
+          "width": 667,
+          "height": 230,
+          "bottom": 661
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 900,
+      "views": [
+        {
+          "width": 704,
+          "height": 296,
+          "bottom": 423
+        },
+        {
+          "width": 704,
+          "height": 296,
+          "bottom": 423
+        },
+        {
+          "width": 704,
+          "height": 296,
+          "bottom": 793
+        },
+        {
+          "width": 704,
+          "height": 296,
+          "bottom": 793
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "views": [
+        {
+          "width": 185.5,
+          "height": 262,
+          "bottom": 386
+        },
+        {
+          "width": 186.5,
+          "height": 262,
+          "bottom": 386
+        },
+        {
+          "width": 186.5,
+          "height": 262,
+          "bottom": 722
+        },
+        {
+          "width": 186.5,
+          "height": 262,
+          "bottom": 722
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 844,
+      "scrollHeight": 390,
+      "views": [
+        {
+          "width": 198,
+          "height": 211,
+          "bottom": 308
+        },
+        {
+          "width": 210.5,
+          "height": 211,
+          "bottom": 308
+        },
+        {
+          "width": 210.5,
+          "height": 211,
+          "bottom": 308
+        },
+        {
+          "width": 210.5,
+          "height": 211,
+          "bottom": 308
+        }
+      ]
+    }
+  ],
+  "export_validation": {
+    "numErrors": 0,
+    "numWarnings": 6,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [
+      {
+        "code": "NODE_SKINNED_MESH_NON_ROOT",
+        "message": "Node with a skinned mesh is not root. Parent transforms will not affect a skinned mesh.",
+        "severity": 1,
+        "pointer": "/nodes/64"
+      },
+      {
+        "code": "NODE_SKINNED_MESH_NON_ROOT",
+        "message": "Node with a skinned mesh is not root. Parent transforms will not affect a skinned mesh.",
+        "severity": 1,
+        "pointer": "/nodes/65"
+      },
+      {
+        "code": "NODE_SKINNED_MESH_NON_ROOT",
+        "message": "Node with a skinned mesh is not root. Parent transforms will not affect a skinned mesh.",
+        "severity": 1,
+        "pointer": "/nodes/66"
+      },
+      {
+        "code": "NODE_SKINNED_MESH_NON_ROOT",
+        "message": "Node with a skinned mesh is not root. Parent transforms will not affect a skinned mesh.",
+        "severity": 1,
+        "pointer": "/nodes/67"
+      },
+      {
+        "code": "NODE_SKINNED_MESH_NON_ROOT",
+        "message": "Node with a skinned mesh is not root. Parent transforms will not affect a skinned mesh.",
+        "severity": 1,
+        "pointer": "/nodes/68"
+      },
+      {
+        "code": "NODE_SKINNED_MESH_NON_ROOT",
+        "message": "Node with a skinned mesh is not root. Parent transforms will not affect a skinned mesh.",
+        "severity": 1,
+        "pointer": "/nodes/69"
+      }
+    ],
+    "truncated": false
+  },
+  "review_reload": true,
+  "errors": []
+}
