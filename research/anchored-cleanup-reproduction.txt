@@ -1,0 +1,48 @@
+C08 ANCHORED CLEANUP: REPRODUCTION AND LIMITS
+
+All six frozen candidates are authored kinematic cleanup, not MotionBricks inference.
+The original cleaned recordings and existing MotionBricks candidates remain unchanged.
+Only sumo-stomp uses planted-foot IK during the captured performance. Other five
+preserve captured leg rotations and use the smooth body-floor envelope; their action
+foot anchoring is N/A. Every case adds authored sequential foot placement into and
+out of a single shared neutral posture, at its original horizontal end location.
+The return is an authored pose transition, not a physics-based stand-up simulation.
+
+Private inputs: evaluation/mocap-rebuild/exports/<id>/cleaned/c08-mocap.blend,
+the matching original GLB (provenance hash), and ukemi/single/c08-mocap.blend
+(shared neutral). No source video is required at this stage. Published cleaned GLBs
+are available for inspection but importing them as exact replacement .blend inputs
+has not been validated: importer bone basis and sampling can change the result.
+
+Use Blender 4.5 and Python with NumPy and SciPy. Run from the original workspace.
+Scripts discover the workspace from their ancestors, or set MOTIONBRICKS_ROOT to
+an absolute workspace path. Output is evaluation/anchored-cleanup; use a separate
+workspace/copy to avoid replacing frozen results.
+
+1. blender --background --python tools/anchored_extract.py
+2. python tools/anchored_process.py ukemi technical-standup gorilla-front sumo-stomp source-094553 h3-dance
+3. blender --background --python tools/anchored_bake.py -- ukemi technical-standup gorilla-front sumo-stomp source-094553 h3-dance
+4. python tools/anchored_annotate.py
+
+The processing/baking scripts default to the ukemi/sumo pilot when no IDs are given.
+Evaluation uses 120 Hz actual IK solves, not merely interpolated 30 Hz output keys.
+Captured action starts at output frame188, with fractional original30Hz source
+indices in cleanup-data.npz. Neutral holds are .4seconds. Root motion is retained;
+shared-pose seams and world-root displacement are separate measurements.
+
+Reports distinguish true planted support confidence from swing IK control. A swing
+may have full foot IK influence while support_weights remains zero. Only accepted
+full support should be judged as a fixed contact. Floorflow has33 unanchored reach
+projections, not failed plants. All six final reports have zero support releases.
+
+Historical processing_script_sha256 values identify scripts at generation time;
+reproduction_script_sha256 identifies the later portable-root wrappers. Do not
+replace the historical hash with the current file hash. script-archive contains the
+latest exact source snapshots before wrapper changes, bySHA; earlier per-case
+revisions may not be archived. Frozen GLB and NPZ poses were not changed by wrappers.
+
+Independent actual-GLB QA is recorded percase in independent-qa.json. It validates
+mesh/rig integrity, fullskin floor clearance, actual sole corners, FK parity, shared
+neutral posture, and contact drift. These checks do not establish physical balance,
+selfcollision freedom, natural floor recovery, or visual quality. Authored swing
+approaches still merit visual review. No claim of uniformly better motion quality.

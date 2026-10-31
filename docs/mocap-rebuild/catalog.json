@@ -1,7 +1,7 @@
 {
-  "version": 1,
-  "updated_at": "2026-10-30T00:03:31.944359+00:00",
-  "summary": "Six owned performances, four C08 methods. Genuine SOMA in-betweening compares single-pose targets with short motion windows; all new exports use constant floor calibration. Computed results remain candidates for visual review.",
+  "version": 2,
+  "updated_at": "2026-10-31T01:27:17.440955+00:00",
+  "summary": "Compare the preferred cleaned capture with a new support-aware cleanup and authored return to the default stance. Original MotionBricks research comparisons, including the promising dance, remain available.",
   "body": "c08",
   "methods": [
     {
@@ -23,6 +23,11 @@
       "id": "window",
       "label": "MotionBricks / motion windows",
       "description": "Same landmarks, four consecutive target poses around each arrival; neural entry/return and authored neutral holds."
+    },
+    {
+      "id": "anchored",
+      "label": "Anchored cleanup",
+      "description": "Cleaned capture with measured support-specific foot anchors, flat soles, smooth body-floor constraints and authored neutral entry/recovery. Root travel is retained. No new MotionBricks inference."
     }
   ],
   "tests": [
@@ -40,11 +45,13 @@
       "limitations": [
         "Floor roll and hand/back support; preserve intentional inversion",
         "Performer is partially cropped near the end",
-        "All variants use a constant avatar vertical calibration, never a per-frame floor clamp. Penetration/hovering can remain; inspect floor measurements.",
         "Raw and cleaned share identical calibration and source timing. Neural duration and performance interpretation may differ.",
         "Neutral holds are authored, and excluded from active-action jitter summaries. A closed seam is not proof of natural entry or recovery.",
         "No physical balance, self-collision, finger capture, hand or foot support solve.",
-        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes."
+        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes.",
+        "The original four research variants use their original constant floor calibration. Anchored cleanup is a separate, explicitly authored support/IK pass.",
+        "The anchored candidate returns to its default posture at the ending root position. Root displacement is deliberate travel, not a broken posture seam.",
+        "Foot anchors apply only to declared support phases. Hand/back support and dynamic balance are not solved."
       ],
       "outputs": [
         {
@@ -140,6 +147,36 @@
             "actual_neural_calls": 8
           },
           "trace": "traces/ukemi-window.json"
+        },
+        {
+          "method": "anchored",
+          "model": "models/ukemi-anchored.glb",
+          "report": "reports/ukemi-anchored.json",
+          "version": 1,
+          "sha256": "7ad11a06e8ec5cb9305af54398a2fdae26c7b47a3e7a5c0d977ac4a933a4febd",
+          "frames": 1069,
+          "duration_s": 8.9,
+          "metrics": {
+            "minimum_skin_floor_m": 0.004000203767311916,
+            "whole_skin_min_floor_m": 0.004000203767311916,
+            "floor_samples_below_ground": 0,
+            "foot_support_speed_p95_m_s": null,
+            "foot_center_drift_p95_m": null,
+            "sole_tilt_p95_deg": null,
+            "sole_height_p95_m": null,
+            "root_relative_joint_position_gap_m": 7.369415929271719e-07,
+            "root_seam_gap_m": 4.178762638132661,
+            "rotation_seam_deg": 0.0,
+            "start_root_speed_m_s": 8.016084437842994e-08,
+            "end_root_speed_m_s": 8.015993968624374e-08,
+            "action_support_frame_sides": 0,
+            "action_support_retention_fraction": null,
+            "support_release_count": 0,
+            "actual_neural_calls": 0,
+            "local_joint_step_p95_deg": 5.185592749222294,
+            "local_joint_angular_acceleration_p95_rad_s2": 31.598738971857163
+          },
+          "description": "New authored support cleanup with neutral entry and return at the finishing root location; original capture timing retained over the declared action range. This candidate preserves the captured action leg motion; foot planting is limited to the authored neutral transitions. Action support metrics are N/A."
         }
       ],
       "keyframes": [
@@ -204,11 +241,13 @@
       "limitations": [
         "Hand-supported stand-up is not a standing foot-contact exercise",
         "Feet leave image boundaries during floor transition",
-        "All variants use a constant avatar vertical calibration, never a per-frame floor clamp. Penetration/hovering can remain; inspect floor measurements.",
         "Raw and cleaned share identical calibration and source timing. Neural duration and performance interpretation may differ.",
         "Neutral holds are authored, and excluded from active-action jitter summaries. A closed seam is not proof of natural entry or recovery.",
         "No physical balance, self-collision, finger capture, hand or foot support solve.",
-        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes."
+        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes.",
+        "The original four research variants use their original constant floor calibration. Anchored cleanup is a separate, explicitly authored support/IK pass.",
+        "The anchored candidate returns to its default posture at the ending root position. Root displacement is deliberate travel, not a broken posture seam.",
+        "Foot anchors apply only to declared support phases. Hand/back support and dynamic balance are not solved."
       ],
       "outputs": [
         {
@@ -304,6 +343,36 @@
             "actual_neural_calls": 8
           },
           "trace": "traces/technical-standup-window.json"
+        },
+        {
+          "method": "anchored",
+          "model": "models/technical-standup-anchored.glb",
+          "report": "reports/technical-standup-anchored.json",
+          "version": 1,
+          "sha256": "d1dd5b9ebece25db1d5e353e10b9cda734e190b266eef85b34f3a46f5e4d257c",
+          "frames": 1349,
+          "duration_s": 11.233333333333333,
+          "metrics": {
+            "minimum_skin_floor_m": 0.003999760228896587,
+            "whole_skin_min_floor_m": 0.003999760228896587,
+            "floor_samples_below_ground": 0,
+            "foot_support_speed_p95_m_s": null,
+            "foot_center_drift_p95_m": null,
+            "sole_tilt_p95_deg": null,
+            "sole_height_p95_m": null,
+            "root_relative_joint_position_gap_m": 3.3213001058009383e-07,
+            "root_seam_gap_m": 0.87085103957725,
+            "rotation_seam_deg": 0.0,
+            "start_root_speed_m_s": 2.9682411346371865e-08,
+            "end_root_speed_m_s": 2.9682404366293297e-08,
+            "action_support_frame_sides": 0,
+            "action_support_retention_fraction": null,
+            "support_release_count": 0,
+            "actual_neural_calls": 0,
+            "local_joint_step_p95_deg": 5.331571290239668,
+            "local_joint_angular_acceleration_p95_rad_s2": 24.63005724543857
+          },
+          "description": "New authored support cleanup with neutral entry and return at the finishing root location; original capture timing retained over the declared action range. This candidate preserves the captured action leg motion; foot planting is limited to the authored neutral transitions. Action support metrics are N/A."
         }
       ],
       "keyframes": [
@@ -369,11 +438,13 @@
         "Neural reconstruction deliberately excludes unreliable source ranges [[174, 238]]; raw/cleaned retain the complete reference. See key plan.",
         "Bent posture and hand contacts; no contact solve",
         "Performer approaches into an extreme close-up; joints unobserved near end",
-        "All variants use a constant avatar vertical calibration, never a per-frame floor clamp. Penetration/hovering can remain; inspect floor measurements.",
         "Raw and cleaned share identical calibration and source timing. Neural duration and performance interpretation may differ.",
         "Neutral holds are authored, and excluded from active-action jitter summaries. A closed seam is not proof of natural entry or recovery.",
         "No physical balance, self-collision, finger capture, hand or foot support solve.",
-        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes."
+        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes.",
+        "The original four research variants use their original constant floor calibration. Anchored cleanup is a separate, explicitly authored support/IK pass.",
+        "The anchored candidate returns to its default posture at the ending root position. Root displacement is deliberate travel, not a broken posture seam.",
+        "Foot anchors apply only to declared support phases. Hand/back support and dynamic balance are not solved."
       ],
       "outputs": [
         {
@@ -469,6 +540,36 @@
             "actual_neural_calls": 8
           },
           "trace": "traces/gorilla-front-window.json"
+        },
+        {
+          "method": "anchored",
+          "model": "models/gorilla-front-anchored.glb",
+          "report": "reports/gorilla-front-anchored.json",
+          "version": 1,
+          "sha256": "f6314da1a5340c22837b7647389f843f3f08d765af4a598689edcecd80f73d06",
+          "frames": 1193,
+          "duration_s": 9.933333333333334,
+          "metrics": {
+            "minimum_skin_floor_m": 0.003999823267688218,
+            "whole_skin_min_floor_m": 0.003999823267688218,
+            "floor_samples_below_ground": 0,
+            "foot_support_speed_p95_m_s": null,
+            "foot_center_drift_p95_m": null,
+            "sole_tilt_p95_deg": null,
+            "sole_height_p95_m": null,
+            "root_relative_joint_position_gap_m": 7.859234030810214e-07,
+            "root_seam_gap_m": 2.0162310357718054,
+            "rotation_seam_deg": 0.0,
+            "start_root_speed_m_s": 7.895357108943004e-08,
+            "end_root_speed_m_s": 7.89535799740948e-08,
+            "action_support_frame_sides": 0,
+            "action_support_retention_fraction": null,
+            "support_release_count": 0,
+            "actual_neural_calls": 0,
+            "local_joint_step_p95_deg": 2.761116483593861,
+            "local_joint_angular_acceleration_p95_rad_s2": 14.353065882402287
+          },
+          "description": "New authored support cleanup with neutral entry and return at the finishing root location; original capture timing retained over the declared action range. This candidate preserves the captured action leg motion; foot planting is limited to the authored neutral transitions. Action support metrics are N/A."
         }
       ],
       "keyframes": [
@@ -537,11 +638,13 @@
       },
       "limitations": [
         "Large lateral leg lifts and self-occlusion; balance is not validated",
-        "All variants use a constant avatar vertical calibration, never a per-frame floor clamp. Penetration/hovering can remain; inspect floor measurements.",
         "Raw and cleaned share identical calibration and source timing. Neural duration and performance interpretation may differ.",
         "Neutral holds are authored, and excluded from active-action jitter summaries. A closed seam is not proof of natural entry or recovery.",
         "No physical balance, self-collision, finger capture, hand or foot support solve.",
-        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes."
+        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes.",
+        "The original four research variants use their original constant floor calibration. Anchored cleanup is a separate, explicitly authored support/IK pass.",
+        "The anchored candidate returns to its default posture at the ending root position. Root displacement is deliberate travel, not a broken posture seam.",
+        "Foot anchors apply only to declared support phases. Hand/back support and dynamic balance are not solved."
       ],
       "outputs": [
         {
@@ -637,6 +740,36 @@
             "actual_neural_calls": 8
           },
           "trace": "traces/sumo-stomp-window.json"
+        },
+        {
+          "method": "anchored",
+          "model": "models/sumo-stomp-anchored.glb",
+          "report": "reports/sumo-stomp-anchored.json",
+          "version": 1,
+          "sha256": "eef9e09ae550bde6354e22d0063d3ce66f5480e73a2ec294fd2c93e4ab3c513f",
+          "frames": 1369,
+          "duration_s": 11.4,
+          "metrics": {
+            "minimum_skin_floor_m": 0.003999954420012321,
+            "whole_skin_min_floor_m": 0.003999954420012321,
+            "floor_samples_below_ground": 0,
+            "foot_support_speed_p95_m_s": 4.046010287480649e-05,
+            "foot_center_drift_p95_m": 2.6219216312844853e-07,
+            "sole_tilt_p95_deg": 1.8251595920314006e-05,
+            "sole_height_p95_m": 0.006000093421317458,
+            "root_relative_joint_position_gap_m": 6.729617339375566e-07,
+            "root_seam_gap_m": 0.39935335489540885,
+            "rotation_seam_deg": 0.0,
+            "start_root_speed_m_s": 5.903218369549616e-08,
+            "end_root_speed_m_s": 5.903150832117423e-08,
+            "action_support_frame_sides": 1467,
+            "action_support_retention_fraction": 1,
+            "support_release_count": 0,
+            "actual_neural_calls": 0,
+            "local_joint_step_p95_deg": 2.729418914664807,
+            "local_joint_angular_acceleration_p95_rad_s2": 10.4284184543173
+          },
+          "description": "New authored support cleanup with neutral entry and return at the finishing root location; original capture timing retained over the declared action range."
         }
       ],
       "keyframes": [
@@ -702,11 +835,13 @@
         "Fixed camera; hand, forearm, hip and shoulder support through sit-through and roll",
         "Feet partly leave the image boundary; depth and occluded limbs are estimates",
         "Raw recovery; no standing or foot-contact IK applied",
-        "All variants use a constant avatar vertical calibration, never a per-frame floor clamp. Penetration/hovering can remain; inspect floor measurements.",
         "Raw and cleaned share identical calibration and source timing. Neural duration and performance interpretation may differ.",
         "Neutral holds are authored, and excluded from active-action jitter summaries. A closed seam is not proof of natural entry or recovery.",
         "No physical balance, self-collision, finger capture, hand or foot support solve.",
-        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes."
+        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes.",
+        "The original four research variants use their original constant floor calibration. Anchored cleanup is a separate, explicitly authored support/IK pass.",
+        "The anchored candidate returns to its default posture at the ending root position. Root displacement is deliberate travel, not a broken posture seam.",
+        "Foot anchors apply only to declared support phases. Hand/back support and dynamic balance are not solved."
       ],
       "outputs": [
         {
@@ -802,6 +937,36 @@
             "actual_neural_calls": 8
           },
           "trace": "traces/source-094553-window.json"
+        },
+        {
+          "method": "anchored",
+          "model": "models/source-094553-anchored.glb",
+          "report": "reports/source-094553-anchored.json",
+          "version": 1,
+          "sha256": "31c490a9e59d2f49c03154e29528b2e0532169baff208d1f78460d89d1aa4c8d",
+          "frames": 1445,
+          "duration_s": 12.033333333333333,
+          "metrics": {
+            "minimum_skin_floor_m": 0.003999388062681297,
+            "whole_skin_min_floor_m": 0.003999388062681297,
+            "floor_samples_below_ground": 0,
+            "foot_support_speed_p95_m_s": null,
+            "foot_center_drift_p95_m": null,
+            "sole_tilt_p95_deg": null,
+            "sole_height_p95_m": null,
+            "root_relative_joint_position_gap_m": 2.7065889598971584e-07,
+            "root_seam_gap_m": 0.2171883695839517,
+            "rotation_seam_deg": 0.0,
+            "start_root_speed_m_s": 2.2505661397701312e-08,
+            "end_root_speed_m_s": 2.2505664848134787e-08,
+            "action_support_frame_sides": 0,
+            "action_support_retention_fraction": null,
+            "support_release_count": 0,
+            "actual_neural_calls": 0,
+            "local_joint_step_p95_deg": 3.973709208923151,
+            "local_joint_angular_acceleration_p95_rad_s2": 17.158418401610856
+          },
+          "description": "New authored support cleanup with neutral entry and return at the finishing root location; original capture timing retained over the declared action range. This candidate preserves the captured action leg motion; foot planting is limited to the authored neutral transitions. Action support metrics are N/A."
         }
       ],
       "keyframes": [
@@ -866,11 +1031,13 @@
       "limitations": [
         "AI-generated reference can contain anatomy or contact inconsistencies",
         "Human-oriented estimator applied to a stylized biped; identity and limbs are estimates",
-        "All variants use a constant avatar vertical calibration, never a per-frame floor clamp. Penetration/hovering can remain; inspect floor measurements.",
         "Raw and cleaned share identical calibration and source timing. Neural duration and performance interpretation may differ.",
         "Neutral holds are authored, and excluded from active-action jitter summaries. A closed seam is not proof of natural entry or recovery.",
         "No physical balance, self-collision, finger capture, hand or foot support solve.",
-        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes."
+        "Raw reference videos and exact internal request arrays remain local; reports contain pose/response hashes.",
+        "The original four research variants use their original constant floor calibration. Anchored cleanup is a separate, explicitly authored support/IK pass.",
+        "The anchored candidate returns to its default posture at the ending root position. Root displacement is deliberate travel, not a broken posture seam.",
+        "Foot anchors apply only to declared support phases. Hand/back support and dynamic balance are not solved."
       ],
       "outputs": [
         {
@@ -966,6 +1133,36 @@
             "actual_neural_calls": 8
           },
           "trace": "traces/h3-dance-window.json"
+        },
+        {
+          "method": "anchored",
+          "model": "models/h3-dance-anchored.glb",
+          "report": "reports/h3-dance-anchored.json",
+          "version": 1,
+          "sha256": "ac03832b019715d299ba849f6815b210131d12a0a0f062e0caec9b1a15a98401",
+          "frames": 1373,
+          "duration_s": 11.433333333333334,
+          "metrics": {
+            "minimum_skin_floor_m": 0.004000042201314183,
+            "whole_skin_min_floor_m": 0.004000042201314183,
+            "floor_samples_below_ground": 0,
+            "foot_support_speed_p95_m_s": null,
+            "foot_center_drift_p95_m": null,
+            "sole_tilt_p95_deg": null,
+            "sole_height_p95_m": null,
+            "root_relative_joint_position_gap_m": 2.446355120404572e-07,
+            "root_seam_gap_m": 0.30690418227481514,
+            "rotation_seam_deg": 0.0,
+            "start_root_speed_m_s": 2.139685961435868e-08,
+            "end_root_speed_m_s": 2.139686055223187e-08,
+            "action_support_frame_sides": 0,
+            "action_support_retention_fraction": null,
+            "support_release_count": 0,
+            "actual_neural_calls": 0,
+            "local_joint_step_p95_deg": 4.024636572892883,
+            "local_joint_angular_acceleration_p95_rad_s2": 23.004959690989608
+          },
+          "description": "New authored support cleanup with neutral entry and return at the finishing root location; original capture timing retained over the declared action range. This candidate preserves the captured action leg motion; foot planting is limited to the authored neutral transitions. Action support metrics are N/A."
         }
       ],
       "keyframes": [

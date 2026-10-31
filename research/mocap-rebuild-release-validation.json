@@ -2,12 +2,15 @@
   "status": "artifact_integrity_passed_visual_review_required",
   "performances": 6,
   "comparisons": 24,
+  "additional_methods_checked_separately": [
+    "anchored"
+  ],
   "neural_variants": 12,
   "actual_neural_calls": 96,
   "closed_neutral_loops": 12,
   "previous_source_artifacts_unchanged": 56,
-  "pages_artifact_mib": 954.74,
-  "scope": "Matching endpoints and valid exports do not establish natural motion, contacts or balance. Measured penetrations remain visible. Authored holds are excluded from active jitter metrics.",
+  "pages_artifact_mib": 964.48,
+  "scope": "Original four-method pilot only. Matching endpoints and valid exports do not establish natural motion, contacts or balance. Measured penetrations remain visible. Authored holds are excluded from active jitter metrics.",
   "results": [
     {
       "id": "ukemi",

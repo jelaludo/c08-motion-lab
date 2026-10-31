@@ -4,13 +4,15 @@ import hashlib,json
 ROOT=Path(__file__).resolve().parents[1];FOLDER=ROOT/'docs/mocap-rebuild'
 load=lambda p:json.loads(p.read_text(encoding='utf-8'))
 catalog=load(FOLDER/'catalog.json');methods={'raw','cleaned','single','window'}
-assert {m['id'] for m in catalog['methods']}==methods and catalog['body']=='c08'
+catalog_methods={m['id'] for m in catalog['methods']}
+assert methods<=catalog_methods<=methods|{'anchored'} and catalog['body']=='c08'
 assert len(catalog['tests'])==6
 calls=0;rows=[];findings=[]
 for test in catalog['tests']:
- assert len(test['outputs'])==4 and {o['method'] for o in test['outputs']}==methods
+ assert len(test['outputs'])==len(catalog_methods) and {o['method'] for o in test['outputs']}==catalog_methods
  reports={}
  for output in test['outputs']:
+  if output['method'] not in methods:continue # Separate cleanup audit; preserve the original four-way protocol.
   model=FOLDER/output['model'];report=load(FOLDER/output['report']);qa=report['validation'];method=output['method']
   assert hashlib.sha256(model.read_bytes()).hexdigest()==output['sha256']==report['artifact_sha256']
   assert qa['gltf_errors']==qa['gltf_warnings']==0
@@ -50,6 +52,6 @@ for path in FOLDER.rglob('*'):
   text=path.read_text(encoding='utf-8')
   assert 'source_local_path' not in text and 'C:\\Users\\' not in text and 'G:\\Dev\\' not in text,path
 size=sum(p.stat().st_size for p in (ROOT/'docs').rglob('*') if p.is_file());assert size<970*1024**2
-result={'status':'artifact_integrity_passed_visual_review_required','performances':6,'comparisons':24,'neural_variants':12,'actual_neural_calls':96,'closed_neutral_loops':12,'previous_source_artifacts_unchanged':56,'pages_artifact_mib':round(size/1024**2,2),'scope':'Matching endpoints and valid exports do not establish natural motion, contacts or balance. Measured penetrations remain visible. Authored holds are excluded from active jitter metrics.','results':rows,'findings':findings}
+result={'status':'artifact_integrity_passed_visual_review_required','performances':6,'comparisons':24,'additional_methods_checked_separately':sorted(catalog_methods-methods),'neural_variants':12,'actual_neural_calls':96,'closed_neutral_loops':12,'previous_source_artifacts_unchanged':56,'pages_artifact_mib':round(size/1024**2,2),'scope':'Original four-method pilot only. Matching endpoints and valid exports do not establish natural motion, contacts or balance. Measured penetrations remain visible. Authored holds are excluded from active jitter metrics.','results':rows,'findings':findings}
 (ROOT/'research/mocap-rebuild-release-validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
 print(json.dumps({k:v for k,v in result.items() if k not in {'results','findings'}},indent=2))

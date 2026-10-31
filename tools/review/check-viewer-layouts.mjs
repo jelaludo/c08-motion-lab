@@ -8,11 +8,12 @@ try{for(const[folder,api,count,selector]of cases.filter(c=>!process.argv[3]||c[0
  await page.setViewportSize({width:1366,height:768});await page.goto(new URL(folder+'/',base).href);
  await page.waitForFunction(name=>!!window[name],api,{timeout:90000});
  if(folder==='reactive')await page.waitForFunction(()=>!reactiveTest.loading);
+ const expectedViews=folder==='mocap-rebuild'?await page.evaluate(()=>RebuildLab.catalog.methods.some(m=>m.id==='anchored')?2:4):count;
  const layouts=[];
  for(const[width,height]of sizes){await page.setViewportSize({width,height});await page.waitForTimeout(180);
   const measured=await page.evaluate(({selector,controls})=>{const rect=n=>{const r=n.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom}};return{viewport:[innerWidth,innerHeight],page:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],visible:[...document.querySelectorAll(selector)].filter(n=>n.getClientRects().length&&getComputedStyle(n).visibility!=='hidden').map(rect),controls:controls.map(id=>({id,...rect(document.getElementById(id))})),duplicateIds:[...document.querySelectorAll('[id]')].map(n=>n.id).filter((id,i,a)=>a.indexOf(id)!==i),dialogs:document.querySelectorAll('dialog.viewer-panel').length}}, {selector,controls:essentials[folder]});
   if(measured.page[0]>width+1||measured.page[1]>height+1)throw Error(folder+' page scrolls '+JSON.stringify(measured));
-  if(measured.visible.length!==count)throw Error(folder+' hidden primary view '+JSON.stringify(measured));
+  if(measured.visible.length!==expectedViews)throw Error(folder+' hidden primary view '+JSON.stringify(measured));
   if(measured.visible.some(r=>r.x<-.5||r.y<-.5||r.right>width+.5||r.bottom>height+.5||r.height<80))throw Error(folder+' clipped viewport '+JSON.stringify(measured));
   if(measured.controls.some(r=>r.width<10||r.height<10||r.x<-.5||r.y<-.5||r.right>width+.5||r.bottom>height+.5))throw Error(folder+' hidden/clipped essential controls '+JSON.stringify(measured.controls));
   if(measured.duplicateIds.length)throw Error(folder+' duplicate IDs '+measured.duplicateIds);

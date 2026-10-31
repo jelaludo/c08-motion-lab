@@ -1,0 +1,61 @@
+{
+  "schema": "motion-lab-reported-visual-feedback/1",
+  "recorded_date": "2026-10-31",
+  "reviewer": "jelaludo (reported in conversation)",
+  "source": "User feedback supplied in conversation, preserved separately from browser scores and comments.",
+  "collection": "mocap-rebuild-pilot",
+  "catalog_version_reviewed": 1,
+  "interpretation": "These are qualitative comparative verdicts, not invented numerical scores or final game-ready acceptance. The dance feedback does not select one of the two MotionBricks variants.",
+  "observations": [
+    {
+      "id": "ukemi",
+      "methods": ["cleaned"],
+      "versions_reviewed": {"cleaned": 1},
+      "verdict": "preferred-rework",
+      "comment": "Cleaned Recovery is the best, still needs work.",
+      "requested_change": "Cleaned recovery with a clean return to the default pose to help transitions."
+    },
+    {
+      "id": "ukemi",
+      "methods": ["single", "window"],
+      "versions_reviewed": {"single": 1, "window": 1},
+      "verdict": "failure",
+      "comment": "MotionBricks/single poses and MotionBricks/motion windows led to gibberish movements."
+    },
+    {
+      "id": "sumo-stomp",
+      "methods": ["cleaned"],
+      "versions_reviewed": {"cleaned": 1},
+      "verdict": "preferred-rework",
+      "comment": "Sumo stomp same; cleaned recovery best but needs some work.",
+      "requested_change": "Return to the default pose, with grounded, flat feet rather than floating feet."
+    },
+    {
+      "id": "sumo-stomp",
+      "methods": ["single", "window"],
+      "versions_reviewed": {"single": 1, "window": 1},
+      "verdict": "failure",
+      "comment": "Sumo stomp same.",
+      "scope_note": "The reviewer applied the preceding ukemi comparison to sumo stomp; no separate numerical scores were supplied."
+    },
+    {
+      "id": "h3-dance",
+      "methods": ["single", "window"],
+      "versions_reviewed": {"single": 1, "window": 1},
+      "verdict": "promising",
+      "comment": "Dance: here MotionBricks looks pretty good.",
+      "scope_note": "Feedback applies to the MotionBricks approaches as a family; an individual variant was not selected."
+    }
+  ],
+  "family_feedback": [
+    {
+      "method": "cleaned",
+      "verdict": "rework",
+      "comment": "Cleaned recovery could use more grounding and anchoring of the feet; they often flutter.",
+      "requested_change": "Ground and anchor supporting feet and provide a clean default-pose transition.",
+      "implementation_note": "The cleanup plan must retain intentional lifted feet and non-foot support during rolls."
+    }
+  ],
+  "browser_reviews_seeded": false,
+  "numerical_scores_invented": false
+}

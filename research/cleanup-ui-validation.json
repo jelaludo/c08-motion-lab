@@ -1,0 +1,177 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/mocap-rebuild/",
+  "fixture_only": false,
+  "fixture_note": null,
+  "performances": [
+    {
+      "id": "ukemi",
+      "visible": [
+        "cleaned",
+        "anchored"
+      ],
+      "models": 5,
+      "duration": 8.899999618530273,
+      "expectedDuration": 8.899999618530273
+    },
+    {
+      "id": "technical-standup",
+      "visible": [
+        "cleaned",
+        "anchored"
+      ],
+      "models": 5,
+      "duration": 11.233333587646484,
+      "expectedDuration": 11.233333587646484
+    },
+    {
+      "id": "gorilla-front",
+      "visible": [
+        "cleaned",
+        "anchored"
+      ],
+      "models": 5,
+      "duration": 9.933333396911621,
+      "expectedDuration": 9.933333396911621
+    },
+    {
+      "id": "sumo-stomp",
+      "visible": [
+        "cleaned",
+        "anchored"
+      ],
+      "models": 5,
+      "duration": 11.399999618530273,
+      "expectedDuration": 11.399999618530273
+    },
+    {
+      "id": "source-094553",
+      "visible": [
+        "cleaned",
+        "anchored"
+      ],
+      "models": 5,
+      "duration": 12.033333778381348,
+      "expectedDuration": 12.033333778381348
+    },
+    {
+      "id": "h3-dance",
+      "visible": [
+        "cleaned",
+        "anchored"
+      ],
+      "models": 5,
+      "duration": 11.433333396911621,
+      "expectedDuration": 11.433333396911621
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1366,
+      "height": 768,
+      "scroll": [
+        1366,
+        768
+      ],
+      "players": [
+        {
+          "x": 13,
+          "y": 175.734375,
+          "right": 678,
+          "bottom": 707.8125,
+          "height": 532.078125
+        },
+        {
+          "x": 688,
+          "y": 175.734375,
+          "right": 1353,
+          "bottom": 707.8125,
+          "height": 532.078125
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scroll": [
+        1440,
+        900
+      ],
+      "players": [
+        {
+          "x": 13,
+          "y": 175.734375,
+          "right": 715,
+          "bottom": 839.8125,
+          "height": 664.078125
+        },
+        {
+          "x": 725,
+          "y": 175.734375,
+          "right": 1427,
+          "bottom": 839.8125,
+          "height": 664.078125
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scroll": [
+        390,
+        844
+      ],
+      "players": [
+        {
+          "x": 7,
+          "y": 292.53125,
+          "right": 383,
+          "bottom": 509.0625,
+          "height": 216.53125
+        },
+        {
+          "x": 7,
+          "y": 575.859375,
+          "right": 383,
+          "bottom": 792.40625,
+          "height": 216.546875
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "scroll": [
+        844,
+        390
+      ],
+      "players": [
+        {
+          "x": 13,
+          "y": 143.390625,
+          "right": 417,
+          "bottom": 355.203125,
+          "height": 211.8125
+        },
+        {
+          "x": 427,
+          "y": 143.390625,
+          "right": 831,
+          "bottom": 355.203125,
+          "height": 211.8125
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "Default cleaned/anchored pair fits four viewport sizes",
+    "Hidden neural methods do not extend pair playback",
+    "Research preset and old method deep links remain available",
+    "At most four visible methods; custom selections persist by URL",
+    "Original cleaned/new anchored reviews stay independent through reload and all-review export",
+    "Conversation verdicts attach separately without fabricated scores or browser seeding",
+    "Keep manifest links the anchored candidate",
+    "MotionBricks dance retains family-level promising feedback"
+  ],
+  "errors": []
+}

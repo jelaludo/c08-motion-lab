@@ -1,0 +1,1799 @@
+{
+  "id": "ukemi",
+  "method": "anchored",
+  "frames": 1069,
+  "fps": 120,
+  "pipeline": "Filtered recovered C08 motion plus explicitly authored transitions, smooth constrained body-floor trajectory and kinematic support IK. No MotionBricks inference.",
+  "artifact_sha256": "7ad11a06e8ec5cb9305af54398a2fdae26c7b47a3e7a5c0d977ac4a933a4febd",
+  "source_cleaned_model_sha256": "b8de9aabf8c46ff1186dcede5fa22abebec5aeb818e2ebf35835512e38d82b7a",
+  "source_prepared_sha256": "a22a34e7ca9a4c1d2709ac03eb0b7cedcc1a53901f54259aa56103c2910be79d",
+  "ground_policy": "Support-specific flat sole anchors and fixed-length leg IK, coupled with smooth body-floor and reach constraints. Unsupported/roll phases release foot anchors. This is explicitly authored kinematic cleanup, not physical balance or a per-frame display grounding trick.",
+  "generator": {
+    "schema": "c08-authored-support-cleanup/1",
+    "id": "ukemi",
+    "method": "anchored",
+    "fps": 120,
+    "frames": 1069,
+    "duration_s": 8.9,
+    "source_frames": 143,
+    "source_used_frames": 143,
+    "source_action_range": [
+      188,
+      756
+    ],
+    "source_action_timing_preserved": true,
+    "excluded_source_frame_ranges": [],
+    "entry_frames": [
+      48,
+      187
+    ],
+    "recovery_frames": [
+      757,
+      1020
+    ],
+    "neutral_hold_frames": 48,
+    "root_motion_delta_blender": [
+      1.380911111831665,
+      -3.944000720977783,
+      0.0
+    ],
+    "support_sole_target_m": 0.006,
+    "floor_envelope_clearance_m": 0.004,
+    "floor_solver": {
+      "solver_status": 0,
+      "optimality": 6.93093766840347e-06,
+      "iterations": 150
+    },
+    "stance_root_solver": {
+      "solver_status": 0,
+      "optimality": 0.00038162412862430273,
+      "iterations": 150
+    },
+    "incompatible_body_floor_reach_frames": [],
+    "minimum_baked_skin_floor_m": 0.00399999999999992,
+    "support_release_count": 0,
+    "support_releases": [],
+    "contact_segments": [
+      {
+        "id": 0,
+        "side": "L",
+        "range": [
+          0,
+          184
+        ],
+        "anchor_blender": [
+          0.23999996230711854,
+          -0.07009065130541792,
+          0.006
+        ],
+        "yaw_rad": 0.0,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 1,
+        "side": "L",
+        "range": [
+          760,
+          796
+        ],
+        "anchor_blender": [
+          1.6053034821177707,
+          -3.9498695003288087,
+          0.006
+        ],
+        "yaw_rad": 0.9224471284530973,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 2,
+        "side": "L",
+        "range": [
+          800,
+          848
+        ],
+        "anchor_blender": [
+          1.565203125987899,
+          -4.0272985283721745,
+          0.006
+        ],
+        "yaw_rad": 0.52061254845964,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 3,
+        "side": "L",
+        "range": [
+          852,
+          1068
+        ],
+        "anchor_blender": [
+          1.6209110741387835,
+          -4.014091372283201,
+          0.006
+        ],
+        "yaw_rad": 0.0,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 4,
+        "side": "R",
+        "range": [
+          0,
+          108
+        ],
+        "anchor_blender": [
+          -0.23999998865593938,
+          -0.07009065125878108,
+          0.006
+        ],
+        "yaw_rad": 0.0,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 5,
+        "side": "R",
+        "range": [
+          112,
+          184
+        ],
+        "anchor_blender": [
+          -0.31822080663021923,
+          -0.3870074761360498,
+          0.006
+        ],
+        "yaw_rad": -0.33239938113637135,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 6,
+        "side": "R",
+        "range": [
+          760,
+          824
+        ],
+        "anchor_blender": [
+          1.2023385786504108,
+          -4.302061421632609,
+          0.006
+        ],
+        "yaw_rad": 0.39946351143000913,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 7,
+        "side": "R",
+        "range": [
+          828,
+          940
+        ],
+        "anchor_blender": [
+          1.1162273172885588,
+          -4.156942366098897,
+          0.006
+        ],
+        "yaw_rad": 0.056819948288222524,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 8,
+        "side": "R",
+        "range": [
+          944,
+          1068
+        ],
+        "anchor_blender": [
+          1.1409111231757256,
+          -4.014091372236564,
+          0.006
+        ],
+        "yaw_rad": 0.0,
+        "kind": "kinematic_support",
+        "source_frame_range": null
+      },
+      {
+        "id": 9,
+        "side": "L",
+        "range": [
+          48,
+          56
+        ],
+        "anchor_blender": [
+          0.23999996230711854,
+          -0.07009065130541792,
+          0.006000063882650453
+        ],
+        "yaw_rad": 1.6055397011882637e-09,
+        "kind": "authored_transition_plant",
+        "source_frame_range": null
+      },
+      {
+        "id": 10,
+        "side": "R",
+        "range": [
+          48,
+          120
+        ],
+        "anchor_blender": [
+          -0.23999998865593938,
+          -0.07009065125878108,
+          0.006000063926362542
+        ],
+        "yaw_rad": -7.416646852220765e-09,
+        "kind": "authored_transition_plant",
+        "source_frame_range": null
+      },
+      {
+        "id": 11,
+        "side": "L",
+        "range": [
+          904,
+          1020
+        ],
+        "anchor_blender": [
+          1.6209110741387835,
+          -4.014091372283201,
+          0.006000063882650453
+        ],
+        "yaw_rad": 1.605539720270222e-09,
+        "kind": "authored_transition_plant",
+        "source_frame_range": null
+      },
+      {
+        "id": 12,
+        "side": "R",
+        "range": [
+          1008,
+          1020
+        ],
+        "anchor_blender": [
+          1.1409111231757256,
+          -4.014091372236564,
+          0.006000063926362542
+        ],
+        "yaw_rad": -7.4166470121947965e-09,
+        "kind": "authored_transition_plant",
+        "source_frame_range": null
+      }
+    ],
+    "source_file_sha256": "b8de9aabf8c46ff1186dcede5fa22abebec5aeb818e2ebf35835512e38d82b7a",
+    "provenance": "Filtered recovered C08 motion plus explicitly authored transitions, smooth constrained body-floor trajectory and kinematic support IK. No MotionBricks inference.",
+    "limitations": [
+      "Kinematic contact cleanup, not physical balance or self-collision",
+      "No hand/back pinning; roll and floor-support phases explicitly avoid foot locks",
+      "Authored pose-blend recovery is not captured stand-up motion",
+      "Core source timing retained; first/last10 horizontal root samples ease velocity without changing duration",
+      "Contact intervals are heuristic/action-specific, not sensor ground truth",
+      "Unreachable feet release instead of stretching limbs; releases reported"
+    ],
+    "recipe_version": "support-cleanup-2026-10-31-v1",
+    "neutral_hold_duration_s": 0.4,
+    "core_foot_policy": "Preserve cleaned leg rotations; no foot IK or pinning in the captured action",
+    "authored_placement": "Sequential left/right foot placement with9cm swing arcs during entry and recovery; one stance foot remains planted where its source/default pose is flat",
+    "root_smoothing": "Quadratic body-floor/reach fit with first/second difference penalties scaled by sample rate and its square",
+    "processing_script_sha256": "4779756332c673e3fd270ef99dfebdeebb6303908b39e7e1f457025c1067fbf0",
+    "original_action_fps": 30,
+    "export": {
+      "sha256": "7ad11a06e8ec5cb9305af54398a2fdae26c7b47a3e7a5c0d977ac4a933a4febd",
+      "bytes": 1551184,
+      "animated_clip": "CLEAN_ukemi_anchored",
+      "animations": 1,
+      "bones": 55,
+      "mesh_nodes": 1,
+      "unskinned_mesh_nodes": 0,
+      "geometry_unchanged": true,
+      "bone_widgets_removed": true,
+      "fps": 120
+    },
+    "ik_reach_events": [],
+    "unanchored_reach_projection_count": 0,
+    "action_foot_anchoring_applicable": false,
+    "action_support_coverage": {
+      "L": {
+        "full_support_keys": 0,
+        "action_keys": 569,
+        "fraction": 0.0
+      },
+      "R": {
+        "full_support_keys": 0,
+        "action_keys": 569,
+        "fraction": 0.0
+      }
+    },
+    "metadata_annotation_script_sha256": "951f8098c8a10c92be52eb06210f45b35430933f86bb84082c37e6afc0e57faf",
+    "reproduction_script_sha256": {
+      "anchored_extract.py": "1a48211305116da469ab36cf3f0a3406b235d721941ff0e9a2e242ca5cd6904a",
+      "anchored_process.py": "72897e8c537c13d1fdbc2bd5ebd7938de2bf759edc181808aa04412e73607063",
+      "anchored_bake.py": "21f33f23f41e582d02c7e01486f472124f65355e0111fb7cfa58b6c93460d68e",
+      "anchored_annotate.py": "c0373d80fc01f7100a5a5cc77483fbec31e7e5aaf446e6d0b7cc0f1dc66db23b"
+    },
+    "historical_processing_hash_note": "processing_script_sha256 identifies the source bytes used to generate this frozen output; reproduction_script_sha256 identifies later portable-root wrappers. Historical hashes are retained. Latest exact source snapshots are archived privately; older per-case source revisions may not be archived."
+  },
+  "validation": {
+    "status": "measured_motion_requires_visual_review",
+    "id": "ukemi",
+    "frames": 1069,
+    "duration_s": 8.9,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "max_segment_length_variation_m": 5.436811620906923e-07,
+    "independent_clones": true,
+    "full_skin_sampling_hz": 120,
+    "critical_boundary_skin_sampling_hz": 120,
+    "support_sole_sampling_hz": 120,
+    "whole_skin_min_floor_m": 0.004000203767311916,
+    "skin_key_samples_below_minus_1mm": 0,
+    "whole_skin_key_floor_distribution_m": {
+      "samples": 1069,
+      "min": 0.004000203767311916,
+      "p50": 0.01888693142938888,
+      "p95": 0.18409853352972935,
+      "max": 0.40741573013967425
+    },
+    "whole_skin_boundary_floor_distribution_m": {
+      "samples": 0,
+      "min": null,
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "active_source_frames_retained_once_in_order": true,
+    "source_action_samples": 143,
+    "seam": {
+      "root_displacement_m": 4.178762638132661,
+      "root_delta_xyz_m": [
+        1.380911111831665,
+        0,
+        3.944000720977783
+      ],
+      "root_relative_joint_position_gap_m": 7.369415929271719e-07,
+      "maximum_local_orientation_gap_rad": 0,
+      "start_max_joint_world_speed_m_s": 8.016084437842994e-08,
+      "end_max_joint_world_speed_m_s": 8.015993968624374e-08
+    },
+    "anchored_action_support": {
+      "samples_120hz": 0,
+      "center_height_m": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "sole_plane_tilt_deg": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "absolute_pitch_deg": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "absolute_roll_deg": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "center_horizontal_drift_m": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "maximum_corner_drift_m": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "center_speed_m_s": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "requested_anchor_error_m": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      }
+    },
+    "old_cleaned_matched_support": {
+      "samples": 0,
+      "center_height_m": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "sole_plane_tilt_deg": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "center_horizontal_drift_m": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "center_speed_m_s": {
+        "samples": 0,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      }
+    },
+    "active_jitter": {
+      "joint_step_rad": {
+        "samples": 3124,
+        "min": 0,
+        "p50": 0.01977379047675323,
+        "p95": 0.09050566714147365,
+        "max": 0.30876429165276026
+      },
+      "joint_angular_acceleration_rad_s2": {
+        "samples": 3102,
+        "min": 0,
+        "p50": 6.323662922601206,
+        "p95": 31.598738971857163,
+        "max": 112.1098295866129
+      },
+      "arm_angular_acceleration_rad_s2": {
+        "samples": 846,
+        "min": 0.3293205673879416,
+        "p50": 9.211480391654197,
+        "p95": 40.529916883701894,
+        "max": 112.1098295866129
+      },
+      "leg_angular_acceleration_rad_s2": {
+        "samples": 1128,
+        "min": 0.18144667157458155,
+        "p50": 7.22206938884427,
+        "p95": 33.79212120436904,
+        "max": 100.62697142263086
+      },
+      "pelvis_speed_m_s": {
+        "samples": 142,
+        "min": 0.10896606799137679,
+        "p50": 0.6594915555313507,
+        "p95": 3.1086479792623383,
+        "max": 3.411683994384876
+      },
+      "pelvis_acceleration_m_s2": {
+        "samples": 141,
+        "min": 0.06086087893831192,
+        "p50": 2.5761895772321135,
+        "p95": 10.430903546297122,
+        "max": 17.74008551836133
+      },
+      "pelvis_jerk_m_s3": {
+        "samples": 140,
+        "min": 3.3477522043036134,
+        "p50": 29.467058398246486,
+        "p95": 156.56506486514948,
+        "max": 321.68230970423315
+      }
+    },
+    "old_cleaned_matched_jitter": {
+      "joint_step_rad": {
+        "samples": 3124,
+        "min": 0,
+        "p50": 0.019773404803520345,
+        "p95": 0.09050550439723255,
+        "max": 0.3087620995621573
+      },
+      "joint_angular_acceleration_rad_s2": {
+        "samples": 3102,
+        "min": 0,
+        "p50": 6.323871440240625,
+        "p95": 31.598498070057033,
+        "max": 112.11010137203048
+      },
+      "arm_angular_acceleration_rad_s2": {
+        "samples": 846,
+        "min": 0.32922320603907196,
+        "p50": 9.211192467035644,
+        "p95": 40.529342531382895,
+        "max": 112.11010137203048
+      },
+      "leg_angular_acceleration_rad_s2": {
+        "samples": 1128,
+        "min": 0.18136691509056702,
+        "p50": 7.221980680649061,
+        "p95": 33.79263460765745,
+        "max": 100.62856083570715
+      },
+      "pelvis_speed_m_s": {
+        "samples": 142,
+        "min": 0.1080812594613764,
+        "p50": 0.6437517149527875,
+        "p95": 3.097894287835184,
+        "max": 3.274783906846032
+      },
+      "pelvis_acceleration_m_s2": {
+        "samples": 141,
+        "min": 0.0939704531622943,
+        "p50": 2.320083101700168,
+        "p95": 9.44902179325222,
+        "max": 17.370269397433233
+      },
+      "pelvis_jerk_m_s3": {
+        "samples": 140,
+        "min": 3.326521936194201,
+        "p50": 25.99491979800784,
+        "p95": 155.09425030635745,
+        "max": 316.2612701703119
+      }
+    },
+    "phase_core_contact_counts": {
+      "neutral": {
+        "core_samples": 192
+      },
+      "entry": {
+        "core_samples": 82
+      },
+      "recovery": {
+        "core_samples": 130
+      }
+    },
+    "contact_segments": [
+      {
+        "side": "L",
+        "id": 0,
+        "start_s": 0,
+        "end_s": 0.375,
+        "core_samples": 46,
+        "action_core_samples": 0,
+        "center_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "corner_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "speed_m_s": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "height_m": {
+          "samples": 46,
+          "min": 0.006000121539444039,
+          "p50": 0.006000123897011569,
+          "p95": 0.00600012604025504,
+          "max": 0.006000126361741711
+        },
+        "tilt_deg": {
+          "samples": 46,
+          "min": 6.557959812547712e-06,
+          "p50": 6.557959812547712e-06,
+          "p95": 6.6133022267264155e-06,
+          "max": 6.6133022267264155e-06
+        },
+        "anchor_error_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        }
+      },
+      {
+        "side": "R",
+        "id": 4,
+        "start_s": 0,
+        "end_s": 0.375,
+        "core_samples": 46,
+        "action_core_samples": 0,
+        "center_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "corner_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "speed_m_s": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "height_m": {
+          "samples": 46,
+          "min": 0.006000090796491789,
+          "p50": 0.0060000950710194095,
+          "p95": 0.006000098956953484,
+          "max": 0.006000099539843387
+        },
+        "tilt_deg": {
+          "samples": 46,
+          "min": 4.676310850554341e-06,
+          "p50": 4.7536104815230715e-06,
+          "p95": 4.7536104815230715e-06,
+          "max": 4.7536104815230715e-06
+        },
+        "anchor_error_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        }
+      },
+      {
+        "side": "L",
+        "id": 9,
+        "start_s": 0.38333333333333336,
+        "end_s": 0.4666666666666667,
+        "core_samples": 11,
+        "action_core_samples": 0,
+        "center_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "corner_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "speed_m_s": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "height_m": {
+          "samples": 11,
+          "min": 0.006000041106572692,
+          "p50": 0.006000121325119703,
+          "p95": 0.006000142948459122,
+          "max": 0.006000151051401033
+        },
+        "tilt_deg": {
+          "samples": 11,
+          "min": 0,
+          "p50": 3.5201989238640496e-06,
+          "p95": 6.557959812547712e-06,
+          "max": 6.776618231767655e-06
+        },
+        "anchor_error_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        }
+      },
+      {
+        "side": "R",
+        "id": 10,
+        "start_s": 0.38333333333333336,
+        "end_s": 1,
+        "core_samples": 75,
+        "action_core_samples": 0,
+        "center_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "corner_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "speed_m_s": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "height_m": {
+          "samples": 75,
+          "min": 0.006000019372245048,
+          "p50": 0.006000080414675916,
+          "p95": 0.00600013770370485,
+          "max": 0.006000144172926192
+        },
+        "tilt_deg": {
+          "samples": 75,
+          "min": 0,
+          "p50": 1.2074182697257333e-06,
+          "p95": 3.91248236030638e-06,
+          "max": 6.2155659652833185e-06
+        },
+        "anchor_error_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        }
+      },
+      {
+        "side": "L",
+        "id": 11,
+        "start_s": 7.533333333333333,
+        "end_s": 8.508333333333333,
+        "core_samples": 118,
+        "action_core_samples": 0,
+        "center_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "corner_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "speed_m_s": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "height_m": {
+          "samples": 118,
+          "min": 0.0059999686786009355,
+          "p50": 0.006000186025001985,
+          "p95": 0.006000327105758855,
+          "max": 0.0060003866549161716
+        },
+        "tilt_deg": {
+          "samples": 118,
+          "min": 0,
+          "p50": 2.2588727439225506e-06,
+          "p95": 6.557959812547712e-06,
+          "max": 1.314367821619951e-05
+        },
+        "anchor_error_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        }
+      },
+      {
+        "side": "R",
+        "id": 12,
+        "start_s": 8.4,
+        "end_s": 8.508333333333333,
+        "core_samples": 14,
+        "action_core_samples": 0,
+        "center_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "corner_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "speed_m_s": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "height_m": {
+          "samples": 14,
+          "min": 0.006000233085613964,
+          "p50": 0.006000278332857861,
+          "p95": 0.006000317237782373,
+          "max": 0.006000342786186847
+        },
+        "tilt_deg": {
+          "samples": 14,
+          "min": 0,
+          "p50": 8.537736462515939e-07,
+          "p95": 3.7215130446689415e-06,
+          "max": 4.676310850554341e-06
+        },
+        "anchor_error_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        }
+      },
+      {
+        "side": "L",
+        "id": 3,
+        "start_s": 8.516666666666667,
+        "end_s": 8.9,
+        "core_samples": 47,
+        "action_core_samples": 0,
+        "center_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "corner_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "speed_m_s": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "height_m": {
+          "samples": 47,
+          "min": 0.006000011912550254,
+          "p50": 0.006000014377275178,
+          "p95": 0.006000016520518538,
+          "max": 0.006000016842005209
+        },
+        "tilt_deg": {
+          "samples": 47,
+          "min": 6.557959812547712e-06,
+          "p50": 6.557959812547712e-06,
+          "p95": 6.6133022267264155e-06,
+          "max": 6.6133022267264155e-06
+        },
+        "anchor_error_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        }
+      },
+      {
+        "side": "R",
+        "id": 8,
+        "start_s": 8.516666666666667,
+        "end_s": 8.9,
+        "core_samples": 47,
+        "action_core_samples": 0,
+        "center_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "corner_drift_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "speed_m_s": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "height_m": {
+          "samples": 47,
+          "min": 0.006000289367720582,
+          "p50": 0.006000293836544726,
+          "p95": 0.006000297722478801,
+          "max": 0.006000298305359933
+        },
+        "tilt_deg": {
+          "samples": 47,
+          "min": 4.676310850554341e-06,
+          "p50": 4.676310850554341e-06,
+          "p95": 4.676310850554341e-06,
+          "max": 4.676310850554341e-06
+        },
+        "anchor_error_m": {
+          "samples": 0,
+          "min": null,
+          "p50": null,
+          "p95": null,
+          "max": null
+        }
+      }
+    ],
+    "sole_geometry": {
+      "L": {
+        "lowest_original_vertices": 16,
+        "rest_low_y_m": 0.006000000983476639,
+        "width_m": 0.2939999848604202,
+        "length_m": 0.4339999854564667
+      },
+      "R": {
+        "lowest_original_vertices": 16,
+        "rest_low_y_m": 0.006000000983476639,
+        "width_m": 0.2939999848604202,
+        "length_m": 0.4339999854564667
+      }
+    },
+    "scope": "Actual GLB skinned sole corners and complete original skin, not solver-provided points. Full skin 120Hz plus support-boundary windows120Hz; soles and limb lengths120Hz. These sampled checks are not continuous collision or physical-balance proof. Jitter/support comparisons exclude authored transitions and holds; jitter is sampled at the original30Hz source times.",
+    "max_exported_joint_position_error_m": 3.196670924506756e-06,
+    "export_joint_position_samples": 23518,
+    "fps": 120,
+    "excluded_source_frame_ranges": [],
+    "all_source_frames_retained": true,
+    "artifact_sha256": "7ad11a06e8ec5cb9305af54398a2fdae26c7b47a3e7a5c0d977ac4a933a4febd",
+    "baseline_cleaned_sha256": "b8de9aabf8c46ff1186dcede5fa22abebec5aeb818e2ebf35835512e38d82b7a",
+    "maximum_limb_length_difference_from_original_m": 4.377896679064186e-07,
+    "original_vertex_count": 23475,
+    "output_vertex_count": 23475,
+    "structural_pass": true,
+    "support_numerical_pass": null,
+    "sampled_floor_pass": true,
+    "prohibited_animation_tracks": [],
+    "foot_support_speed_p95_m_s": null,
+    "foot_center_drift_p95_m": null,
+    "sole_tilt_p95_deg": null,
+    "sole_height_p95_m": null,
+    "near_ground_motion_proxy": {
+      "definition": "Flat sole tilt<10deg, lowest corner between -2mm and35mm; horizontal center speed diagnostic, not independently labelled contact truth",
+      "by_phase": {
+        "neutral": {
+          "speed_m_s": {
+            "samples": 190,
+            "min": 2.5556641521219173e-08,
+            "p50": 3.8781760974466274e-08,
+            "p95": 3.87835798742966e-08,
+            "max": 1.0546541783343368e-05
+          },
+          "samples_over_50mm_s": 0,
+          "largest_events": []
+        },
+        "entry": {
+          "speed_m_s": {
+            "samples": 209,
+            "min": 2.525802030503362e-07,
+            "p50": 5.854846752128765e-06,
+            "p95": 0.2126507528781236,
+            "max": 0.7738379668217182
+          },
+          "samples_over_50mm_s": 31,
+          "largest_events": [
+            {
+              "time_s": 1.125,
+              "output_frame": 135,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.7738379668217182,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.24527049199845768,
+                0.04536638550633233,
+                0.11353889564967662
+              ]
+            },
+            {
+              "time_s": 1.1166666666666667,
+              "output_frame": 134,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.7738338707074901,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.24449395515191766,
+                0.03778382279687362,
+                0.10713717136769235
+              ]
+            },
+            {
+              "time_s": 1.1083333333333334,
+              "output_frame": 133,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.7738270200586947,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.24371740668005623,
+                0.03020121390588766,
+                0.10073548288038699
+              ]
+            },
+            {
+              "time_s": 1.1333333333333333,
+              "output_frame": 136,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.7738192191622008,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.24604700229244372,
+                0.05294893189178662,
+                0.11994046577682774
+              ]
+            },
+            {
+              "time_s": 1.0833333333333333,
+              "output_frame": 130,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.4859241127381616,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.2419656257411365,
+                0.016331928159897133,
+                0.08629417704144399
+              ]
+            },
+            {
+              "time_s": 1.1,
+              "output_frame": 132,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.4859177851515627,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.24294085284780328,
+                0.022618633433125597,
+                0.09433385255055352
+              ]
+            },
+            {
+              "time_s": 1.0916666666666666,
+              "output_frame": 131,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.4859151649534111,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.2424532247370829,
+                0.01947525110995575,
+                0.09031400556431632
+              ]
+            },
+            {
+              "time_s": 1.075,
+              "output_frame": 129,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.48590859722555413,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.24147793292173633,
+                0.013188546184922566,
+                0.0822742847887022
+              ]
+            },
+            {
+              "time_s": 0.6083333333333333,
+              "output_frame": 73,
+              "source_frame": -1,
+              "side": "L",
+              "speed_m_s": 0.24664569197921188,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                0.23529616720726765,
+                0.0342377037657561,
+                0.05983937204379794
+              ]
+            },
+            {
+              "time_s": 1.5416666666666667,
+              "output_frame": 185,
+              "source_frame": -1,
+              "side": "L",
+              "speed_m_s": 0.21304307530457003,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                0.2105831944605329,
+                0.0409402083076008,
+                0.008498694898726067
+              ]
+            },
+            {
+              "time_s": 1.0416666666666667,
+              "output_frame": 125,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.21265612638213194,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.24035016933820957,
+                0.007357410150800508,
+                0.07297695330688568
+              ]
+            },
+            {
+              "time_s": 1.0583333333333333,
+              "output_frame": 127,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.2126507528781236,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                -0.24077693827039082,
+                0.009149252888806698,
+                0.07649534148559575
+              ]
+            }
+          ]
+        },
+        "source_action": {
+          "speed_m_s": {
+            "samples": 79,
+            "min": 0.07562086938986975,
+            "p50": 0.3471690639205874,
+            "p95": 1.9193049594034983,
+            "max": 2.340088968796679
+          },
+          "samples_over_50mm_s": 79,
+          "largest_events": [
+            {
+              "time_s": 6.141666666666667,
+              "output_frame": 737,
+              "source_frame": 137.25,
+              "side": "R",
+              "speed_m_s": 2.340088968796679,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.3077089213478905,
+                0.03813639018006068,
+                4.164083505049083
+              ]
+            },
+            {
+              "time_s": 6.15,
+              "output_frame": 738,
+              "source_frame": 137.5,
+              "side": "R",
+              "speed_m_s": 2.33404542272797,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.3125646817019119,
+                0.03644580795083334,
+                4.1829180163531205
+              ]
+            },
+            {
+              "time_s": 6.158333333333333,
+              "output_frame": 739,
+              "source_frame": 137.75,
+              "side": "R",
+              "speed_m_s": 2.327390251374494,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.317465991160342,
+                0.03494670004671312,
+                4.201683411082678
+              ]
+            },
+            {
+              "time_s": 6.166666666666667,
+              "output_frame": 740,
+              "source_frame": 138,
+              "side": "R",
+              "speed_m_s": 2.320312610340536,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.3224111591146683,
+                0.03363976538518124,
+                4.220376292841957
+              ]
+            },
+            {
+              "time_s": 6.175,
+              "output_frame": 741,
+              "source_frame": 138.25,
+              "side": "R",
+              "speed_m_s": 1.9193049594034983,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.3207511410191948,
+                0.0331164580789343,
+                4.236284122024814
+              ]
+            },
+            {
+              "time_s": 6.183333333333334,
+              "output_frame": 742,
+              "source_frame": 138.5,
+              "side": "R",
+              "speed_m_s": 1.9123028578954253,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.3190941802411198,
+                0.03275357890159074,
+                4.252133602270467
+              ]
+            },
+            {
+              "time_s": 6.191666666666666,
+              "output_frame": 743,
+              "source_frame": 138.75,
+              "side": "R",
+              "speed_m_s": 1.904888886182541,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.317440945727979,
+                0.03255187601862057,
+                4.267921352035324
+              ]
+            },
+            {
+              "time_s": 6.2,
+              "output_frame": 744,
+              "source_frame": 139,
+              "side": "R",
+              "speed_m_s": 1.897112962891882,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.3157907500580621,
+                0.03251205633024961,
+                4.283644265903277
+              ]
+            },
+            {
+              "time_s": 6.108333333333333,
+              "output_frame": 733,
+              "source_frame": 136.25,
+              "side": "R",
+              "speed_m_s": 1.7539319427503608,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.286839605093347,
+                0.048335041195769354,
+                4.104523940295632
+              ]
+            },
+            {
+              "time_s": 6.116666666666666,
+              "output_frame": 734,
+              "source_frame": 136.5,
+              "side": "R",
+              "speed_m_s": 1.751368137012029,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.292152559279409,
+                0.04550208754963343,
+                4.118117276612206
+              ]
+            },
+            {
+              "time_s": 6.125,
+              "output_frame": 735,
+              "source_frame": 136.75,
+              "side": "R",
+              "speed_m_s": 1.7487956686445585,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.2975063688931028,
+                0.04272890293619465,
+                4.131671527422485
+              ]
+            },
+            {
+              "time_s": 6.133333333333334,
+              "output_frame": 736,
+              "source_frame": 137,
+              "side": "R",
+              "speed_m_s": 1.7460085666598875,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.302899786089744,
+                0.040017407572083136,
+                4.145185062428659
+              ]
+            }
+          ]
+        },
+        "recovery": {
+          "speed_m_s": {
+            "samples": 373,
+            "min": 1.113261931957398e-07,
+            "p50": 1.4820415192136197e-05,
+            "p95": 0.3044299583886156,
+            "max": 0.6956041679468762
+          },
+          "samples_over_50mm_s": 102,
+          "largest_events": [
+            {
+              "time_s": 8.166666666666666,
+              "output_frame": 980,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.6956041679468762,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.1612694163818806,
+                0.028731483871558244,
+                4.062941701770493
+              ]
+            },
+            {
+              "time_s": 8.158333333333333,
+              "output_frame": 979,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.6955383208423835,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.163499332089637,
+                0.03346920488546741,
+                4.068292330056211
+              ]
+            },
+            {
+              "time_s": 7.875,
+              "output_frame": 945,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.6489854816841965,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.2535628780218828,
+                0.041717075191054186,
+                4.284403310204224
+              ]
+            },
+            {
+              "time_s": 8.175,
+              "output_frame": 981,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.5740110991517489,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.1594293686344481,
+                0.02564503226224192,
+                4.05852634369639
+              ]
+            },
+            {
+              "time_s": 8.191666666666666,
+              "output_frame": 983,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.5740013249316246,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.1557492725669487,
+                0.019472026056144173,
+                4.049695833786784
+              ]
+            },
+            {
+              "time_s": 8.183333333333334,
+              "output_frame": 982,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.5739980555335924,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.1575893215075261,
+                0.02255853905621405,
+                4.054111103121794
+              ]
+            },
+            {
+              "time_s": 8.2,
+              "output_frame": 984,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.5739950943679758,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.153909237584504,
+                0.01638559912993272,
+                4.045280614884517
+              ]
+            },
+            {
+              "time_s": 7.841666666666667,
+              "output_frame": 941,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.52144944820501,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.2606578269324984,
+                0.032494604649201696,
+                4.301427899097206
+              ]
+            },
+            {
+              "time_s": 7.85,
+              "output_frame": 942,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.5214427045657205,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.2589862535775298,
+                0.03442111064292047,
+                4.2974169191461336
+              ]
+            },
+            {
+              "time_s": 7.858333333333333,
+              "output_frame": 943,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.5214377368883744,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.2573147406455174,
+                0.03634758952693414,
+                4.293405958862526
+              ]
+            },
+            {
+              "time_s": 7.866666666666666,
+              "output_frame": 944,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.5213938784245737,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.2556433109414122,
+                0.03827411118518364,
+                4.289395359849567
+              ]
+            },
+            {
+              "time_s": 8.216666666666667,
+              "output_frame": 986,
+              "source_frame": -1,
+              "side": "R",
+              "speed_m_s": 0.44024970762671367,
+              "support_weight": 0,
+              "segment_id": -1,
+              "center": [
+                1.1510867354981427,
+                0.013134398678745548,
+                4.038507860880712
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "authored_and_action_core_support_by_phase": {
+      "neutral": {
+        "samples_120hz": 192,
+        "center_height_m": {
+          "samples": 192,
+          "min": 0.006000011912550254,
+          "p50": 0.006000099928436989,
+          "p95": 0.006000296362401805,
+          "max": 0.006000298305359933
+        },
+        "sole_plane_tilt_deg": {
+          "samples": 192,
+          "min": 4.676310850554341e-06,
+          "p50": 4.7536104815230715e-06,
+          "p95": 6.6133022267264155e-06,
+          "max": 6.6133022267264155e-06
+        },
+        "center_horizontal_drift_m": {
+          "samples": 192,
+          "min": 0,
+          "p50": 5.53750412717693e-09,
+          "p95": 1.3251041831407835e-08,
+          "max": 1.486700800912313e-08
+        },
+        "maximum_corner_drift_m": {
+          "samples": 192,
+          "min": 0,
+          "p50": 6.410757413819532e-09,
+          "p95": 1.5461238409971016e-08,
+          "max": 1.7346738130328747e-08
+        },
+        "center_speed_m_s": {
+          "samples": 184,
+          "min": 2.8609300088688278e-08,
+          "p50": 2.861064448085446e-08,
+          "p95": 4.525244426073346e-08,
+          "max": 4.525252842825549e-08
+        },
+        "yaw_drift_deg": {
+          "samples": 192,
+          "min": 0,
+          "p50": 0,
+          "p95": 1.46569343103713e-14,
+          "max": 1.4656934405159217e-14
+        },
+        "requested_anchor_error_m": {
+          "samples": 192,
+          "min": 7.873163344399633e-08,
+          "p50": 1.3111098897803125e-07,
+          "p95": 3.8304017578797185e-07,
+          "max": 3.8647720971895473e-07
+        }
+      },
+      "entry": {
+        "samples_120hz": 82,
+        "center_height_m": {
+          "samples": 82,
+          "min": 0.006000019372245048,
+          "p50": 0.006000082875766347,
+          "p95": 0.006000141712283815,
+          "max": 0.006000151051401033
+        },
+        "sole_plane_tilt_deg": {
+          "samples": 82,
+          "min": 0,
+          "p50": 1.2074182697257333e-06,
+          "p95": 3.91248236030638e-06,
+          "max": 6.776618231767655e-06
+        },
+        "center_horizontal_drift_m": {
+          "samples": 82,
+          "min": 0,
+          "p50": 2.7050081877440246e-08,
+          "p95": 1.0642128238753637e-07,
+          "max": 1.6804823424404967e-07
+        },
+        "maximum_corner_drift_m": {
+          "samples": 82,
+          "min": 0,
+          "p50": 6.929195945034256e-08,
+          "p95": 1.3068053538926816e-07,
+          "max": 1.9000446649647275e-07
+        },
+        "center_speed_m_s": {
+          "samples": 80,
+          "min": 1.3786134129676377e-06,
+          "p50": 6.688707972291456e-06,
+          "p95": 1.2119133336186895e-05,
+          "max": 2.0701919315659958e-05
+        },
+        "yaw_drift_deg": {
+          "samples": 82,
+          "min": 0,
+          "p50": 3.301282714752781e-07,
+          "p95": 2.3684762136075126e-06,
+          "max": 4.434246544693883e-06
+        },
+        "requested_anchor_error_m": {
+          "samples": 82,
+          "min": 4.686188113422873e-08,
+          "p50": 9.81407360325835e-08,
+          "p95": 1.21310246987183e-07,
+          "max": 1.3584112426245547e-07
+        }
+      },
+      "recovery": {
+        "samples_120hz": 130,
+        "center_height_m": {
+          "samples": 130,
+          "min": 0.0059999686786009355,
+          "p50": 0.006000199656894797,
+          "p95": 0.006000327105758855,
+          "max": 0.0060003866549161716
+        },
+        "sole_plane_tilt_deg": {
+          "samples": 130,
+          "min": 0,
+          "p50": 2.2588727439225506e-06,
+          "p95": 6.273929367455621e-06,
+          "max": 1.314367821619951e-05
+        },
+        "center_horizontal_drift_m": {
+          "samples": 130,
+          "min": 0,
+          "p50": 5.2609354251358594e-08,
+          "p95": 1.2204327872944323e-07,
+          "max": 2.251553033262443e-07
+        },
+        "maximum_corner_drift_m": {
+          "samples": 130,
+          "min": 0,
+          "p50": 1.5531753877762752e-07,
+          "p95": 2.7799964870305145e-07,
+          "max": 3.6654316960130875e-07
+        },
+        "center_speed_m_s": {
+          "samples": 128,
+          "min": 1.8017473171710965e-06,
+          "p50": 8.112087114773958e-06,
+          "p95": 1.5450997318792867e-05,
+          "max": 1.862589924714182e-05
+        },
+        "yaw_drift_deg": {
+          "samples": 130,
+          "min": 0,
+          "p50": 8.379929325569974e-07,
+          "p95": 2.705515310495761e-06,
+          "max": 4.338959269715203e-06
+        },
+        "requested_anchor_error_m": {
+          "samples": 130,
+          "min": 1.2280532484235744e-07,
+          "p50": 2.3244255111781286e-07,
+          "p95": 3.9440217494923016e-07,
+          "max": 4.7525075946523875e-07
+        }
+      }
+    },
+    "core_contact_source_frames_with_head_below_pelvis": [],
+    "unanchored_reach_projections": {
+      "count": 0,
+      "classification_verified_against_weight_arrays": true,
+      "maximum_reach_excess_m": 0,
+      "scope": "Unanchored IK reach projections have requested and actual support weight zero; these are free-foot trajectory corrections, not broken planted contacts."
+    },
+    "support_coverage": {
+      "requested_core_frame_sides": 404,
+      "accepted_core_frame_sides": 404,
+      "requested_action_core_frame_sides": 0,
+      "accepted_action_core_frame_sides": 0,
+      "action_retention_fraction": null,
+      "release_count": 0,
+      "sampling_hz": 120,
+      "scope": "Action support is separate from authored default holds. No requested action support means N/A, not proof of anchoring."
+    },
+    "root_vertical_correction_m": {
+      "samples": 1069,
+      "min": -0.05051748593040677,
+      "p50": 0,
+      "p95": 0.15240086712998333,
+      "max": 0.2000163872151188
+    },
+    "max_abs_root_vertical_correction_m": 0.2000163872151188,
+    "root_vertical_correction_speed_m_s": {
+      "samples": 1068,
+      "min": 0,
+      "p50": 0.051215032924228736,
+      "p95": 0.2965776480823348,
+      "max": 0.4747836122590188
+    },
+    "root_vertical_correction_acceleration_m_s2": {
+      "samples": 1067,
+      "min": 0,
+      "p50": 0.1370869734419966,
+      "p95": 1.1354968467460735,
+      "max": 25.364697933872197
+    },
+    "swing_and_core_support_overlap": 0,
+    "support_coverage_warning": false
+  },
+  "metrics": {
+    "minimum_skin_floor_m": 0.004000203767311916,
+    "whole_skin_min_floor_m": 0.004000203767311916,
+    "floor_samples_below_ground": 0,
+    "foot_support_speed_p95_m_s": null,
+    "foot_center_drift_p95_m": null,
+    "sole_tilt_p95_deg": null,
+    "sole_height_p95_m": null,
+    "root_relative_joint_position_gap_m": 7.369415929271719e-07,
+    "root_seam_gap_m": 4.178762638132661,
+    "rotation_seam_deg": 0.0,
+    "start_root_speed_m_s": 8.016084437842994e-08,
+    "end_root_speed_m_s": 8.015993968624374e-08,
+    "action_support_frame_sides": 0,
+    "action_support_retention_fraction": null,
+    "support_release_count": 0,
+    "actual_neural_calls": 0,
+    "local_joint_step_p95_deg": 5.185592749222294,
+    "local_joint_angular_acceleration_p95_rad_s2": 31.598738971857163
+  },
+  "limitations": [
+    "Kinematic contact cleanup, not physical balance or self-collision",
+    "No hand/back pinning; roll and floor-support phases explicitly avoid foot locks",
+    "Authored pose-blend recovery is not captured stand-up motion",
+    "Core source timing retained; first/last10 horizontal root samples ease velocity without changing duration",
+    "Contact intervals are heuristic/action-specific, not sensor ground truth",
+    "Unreachable feet release instead of stretching limbs; releases reported"
+  ],
+  "provenance": {
+    "variant": "anchored",
+    "actual_neural_calls": 0,
+    "source_cleaned_model_sha256": "b8de9aabf8c46ff1186dcede5fa22abebec5aeb818e2ebf35835512e38d82b7a",
+    "neutral_hold_frames": 48,
+    "source_action_range": [
+      188,
+      756
+    ],
+    "source_action_timing_preserved": true,
+    "root_motion_delta_blender": [
+      1.380911111831665,
+      -3.944000720977783,
+      0.0
+    ]
+  }
+}

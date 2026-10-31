@@ -1,0 +1,32 @@
+{
+  "status": "artifact_integrity_passed_visual_review_required",
+  "candidates": 6,
+  "new_neural_calls": 0,
+  "results": [
+    {
+      "id": "ukemi",
+      "sha256": "7ad11a06e8ec5cb9305af54398a2fdae26c7b47a3e7a5c0d977ac4a933a4febd"
+    },
+    {
+      "id": "technical-standup",
+      "sha256": "d1dd5b9ebece25db1d5e353e10b9cda734e190b266eef85b34f3a46f5e4d257c"
+    },
+    {
+      "id": "gorilla-front",
+      "sha256": "f6314da1a5340c22837b7647389f843f3f08d765af4a598689edcecd80f73d06"
+    },
+    {
+      "id": "sumo-stomp",
+      "sha256": "eef9e09ae550bde6354e22d0063d3ce66f5480e73a2ec294fd2c93e4ab3c513f"
+    },
+    {
+      "id": "source-094553",
+      "sha256": "31c490a9e59d2f49c03154e29528b2e0532169baff208d1f78460d89d1aa4c8d"
+    },
+    {
+      "id": "h3-dance",
+      "sha256": "ac03832b019715d299ba849f6815b210131d12a0a0f062e0caec9b1a15a98401"
+    }
+  ],
+  "scope": "Checks integrity and reported kinematic measurements; does not certify naturalness, balance or self-collision."
+}
