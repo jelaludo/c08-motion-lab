@@ -36,6 +36,14 @@
           "tracks": 44,
           "finite": true,
           "bone_count": 55
+        },
+        {
+          "method": "anchored",
+          "time": 1.25,
+          "duration": 8.899999618530273,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
         }
       ],
       "framing": []
@@ -74,6 +82,14 @@
           "tracks": 44,
           "finite": true,
           "bone_count": 55
+        },
+        {
+          "method": "anchored",
+          "time": 1.25,
+          "duration": 11.233333587646484,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
         }
       ],
       "framing": []
@@ -98,6 +114,14 @@
           "bone_count": 55
         },
         {
+          "method": "window",
+          "time": 1.25,
+          "duration": 10.366666793823242,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
           "method": "single",
           "time": 1.25,
           "duration": 15.966666221618652,
@@ -106,9 +130,9 @@
           "bone_count": 55
         },
         {
-          "method": "window",
+          "method": "anchored",
           "time": 1.25,
-          "duration": 10.366666793823242,
+          "duration": 9.933333396911621,
           "tracks": 44,
           "finite": true,
           "bone_count": 55
@@ -150,6 +174,14 @@
           "tracks": 44,
           "finite": true,
           "bone_count": 55
+        },
+        {
+          "method": "anchored",
+          "time": 1.25,
+          "duration": 11.399999618530273,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
         }
       ],
       "framing": []
@@ -188,6 +220,14 @@
           "tracks": 44,
           "finite": true,
           "bone_count": 55
+        },
+        {
+          "method": "anchored",
+          "time": 1.25,
+          "duration": 12.033333778381348,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
         }
       ],
       "framing": []
@@ -223,6 +263,14 @@
           "method": "window",
           "time": 1.25,
           "duration": 10.633333206176758,
+          "tracks": 44,
+          "finite": true,
+          "bone_count": 55
+        },
+        {
+          "method": "anchored",
+          "time": 1.25,
+          "duration": 11.433333396911621,
           "tracks": 44,
           "finite": true,
           "bone_count": 55
@@ -378,7 +426,7 @@
     }
   ],
   "checks": [
-    "All24 supplied C08 animations load with finite evaluated bones",
+    "All supplied C08 animations load with finite evaluated bones; original24 research views retained",
     "408 full-skin sampled pose bounds fit initial cameras",
     "First/final arrival buttons on all12 neural variants use actual generated timestamps",
     "Elapsed time and explicitly disclosed normalized progress modes",
