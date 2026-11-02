@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "url": "https://jelaludo.github.io/c08-motion-lab/dev-log/",
+  "entries": 31,
+  "words": 11141,
+  "checks": [
+    "prominent unresolved crouch/arm feedback",
+    "dated entries and working in-page index",
+    "all local destinations and cited repository reports exist",
+    "navigation added to all seven principal pages",
+    "live embedded synchronized comparison loads and pauses",
+    "desktop/mobile page and iframe have no horizontal overflow",
+    "no page errors"
+  ],
+  "local_urls_checked": 34,
+  "errors": []
+}

@@ -6,9 +6,14 @@ body:
     id: scene
     attributes:
       label: Scene or motion
-      description: A chapter name or a motion-inspector test
+      description: Page/tab plus take or motion ID and seed, or paste the page URL
     validations:
       required: true
+  - type: input
+    id: character
+    attributes:
+      label: Character and control preset
+      placeholder: "C08 / B-REK43 / EVA-K7 / Meshy; Hybrid or Lab when applicable"
   - type: input
     id: time
     attributes:

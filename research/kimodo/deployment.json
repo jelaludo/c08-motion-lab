@@ -1,0 +1,22 @@
+{
+  "status": "verified_live",
+  "verified_content_commit": "9b704d3df00777772438d1770b62124abf323110",
+  "pages_run": 41475984876,
+  "pages_run_conclusion": "success",
+  "public_site": "https://jelaludo.github.io/c08-motion-lab/",
+  "dev_log": "https://jelaludo.github.io/c08-motion-lab/dev-log/",
+  "game_kit": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/?controls=hybrid",
+  "gallery": "https://jelaludo.github.io/c08-motion-lab/kimodo-bipeds/",
+  "control_study": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/controls.html",
+  "source_clips_verified": 736,
+  "source_joint_samples": 35900,
+  "max_source_joint_error_m": 3.3592867207959285e-05,
+  "game_clips_loaded": 376,
+  "game_loop_endpoint_component_error": 0,
+  "source_download_gltf_errors": 0,
+  "source_download_gltf_warnings": 0,
+  "mesh_fighter_attribution_retained": true,
+  "dev_log_entries": 31,
+  "doc_words": 11141,
+  "scope": "Live recorded playback/controller/export verification. Physical balance, ground/seat/traversal contacts and consuming-engine acceptance remain open."
+}

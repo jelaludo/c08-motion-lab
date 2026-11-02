@@ -36,5 +36,6 @@
       "Private human reference videos",
       "Third-party manuals and game screenshots"
     ]
-  }
+  },
+  "live_verification": "deployment.json"
 }
