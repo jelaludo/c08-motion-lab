@@ -1,0 +1,26 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8801/",
+    "pilot_examples_loaded": [
+      "pilot-jump-effortful-seed101",
+      "pilot-jump-effortful-seed202",
+      "pilot-jump-effortful-seed303",
+      "pilot-jump-nimble-seed101",
+      "pilot-jump-nimble-seed202",
+      "pilot-jump-nimble-seed303",
+      "pilot-walk-heavy-seed101",
+      "pilot-walk-heavy-seed202",
+      "pilot-walk-heavy-seed303",
+      "pilot-walk-limp-left-seed101",
+      "pilot-walk-limp-left-seed202",
+      "pilot-walk-limp-left-seed303",
+      "pilot-walk-neutral-seed101",
+      "pilot-walk-neutral-seed202",
+      "pilot-walk-neutral-seed303"
+    ],
+    "playback_frame_changes": true,
+    "errors": []
+  }
+}

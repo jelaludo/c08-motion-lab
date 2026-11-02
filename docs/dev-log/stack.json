@@ -58,5 +58,19 @@
     ],
     "peak_generation_vram": "not measured",
     "excluded_from_warm_time": "initialization/Blender/retarget/export/validation"
+  },
+  "kimodo_snapshot": {
+    "captured": "2026-11-02",
+    "source_commit": "e1c219c99b4b94ba48be1fb6a1cbc64ecee4c954",
+    "model": "Kimodo-SOMA-RP-v1.2",
+    "model_revision": "0e3c89024d896064b6851201373f7834784a386b",
+    "python": "3.12.14",
+    "torch": "2.10.0+cu128",
+    "transformers": "5.1",
+    "text_encoder": "Official Meta Llama 3 + McGill LLM2Vec adapters",
+    "native_postprocessing": true,
+    "native_motion_correction_build": "Windows / w64devkit",
+    "browser_inference": false,
+    "public_playback": "Shared original meshes + compressed exact source tracks; generated game derivatives remain separately identified."
   }
 }

@@ -1,0 +1,1346 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "integrity_passed_visual_review_required",
+    "new_combat_takes": 36,
+    "new_body_clips": 144,
+    "total_takes": 90,
+    "total_body_clips": 360,
+    "generation_seconds_excluding_loading": 75.79710520152003,
+    "scope": "Single-actor shadow combat, not two-person contact or validated martial technique. Continuous stance transitions are authored preview steps/blends, not baked into source GLBs.",
+    "results": [
+      {
+        "take": "fight-block-counter-seed101",
+        "body": "brek43",
+        "sha256": "53c8b1d496a99e8f75715d2d43f835e90f29aabb9816c7645b5fd8c6c93f8c6f",
+        "floor_minimum_m": 0.004333656304305128,
+        "fk_error_m": 1.1306133192541348e-06,
+        "segment_length_error_m": 5.249740895330035e-07
+      },
+      {
+        "take": "fight-block-counter-seed101",
+        "body": "c08",
+        "sha256": "b4ccf45b3bf07daed6425f1bd13358db20ef0dfd5074460793d1e0caef83b27f",
+        "floor_minimum_m": -0.025210272205345927,
+        "fk_error_m": 1.4093596676697546e-06,
+        "segment_length_error_m": 6.745870322344416e-07
+      },
+      {
+        "take": "fight-block-counter-seed101",
+        "body": "eva-k7",
+        "sha256": "62a223c7371aef51248983eb5c53d8b1c67b69b2c9d3928e6f711ef4b7ec1356",
+        "floor_minimum_m": -0.003204461830939028,
+        "fk_error_m": 8.103520841243266e-07,
+        "segment_length_error_m": 5.865708741503717e-07
+      },
+      {
+        "take": "fight-block-counter-seed101",
+        "body": "meshy-fighter",
+        "sha256": "8bf7058e9782498d36f2b3ffabc2ca1dfc2055d712dd161e867c808f29573958",
+        "floor_minimum_m": 0.009182759400226882,
+        "fk_error_m": 1.657844069926119e-06,
+        "segment_length_error_m": 3.4168460522066013e-07
+      },
+      {
+        "take": "fight-block-counter-seed202",
+        "body": "brek43",
+        "sha256": "9f85a30bb15fc6a36198e857dc6149c5244b9b225e1e4c1d901bda7b1b078493",
+        "floor_minimum_m": 0.0016306520037994016,
+        "fk_error_m": 1.5006228514453986e-06,
+        "segment_length_error_m": 3.447046916793539e-07
+      },
+      {
+        "take": "fight-block-counter-seed202",
+        "body": "c08",
+        "sha256": "c180808fc56c2d4ba5d8350ae1e547d6cff8f09a98726ee7772c0af34b35e7c1",
+        "floor_minimum_m": -0.06744063260216876,
+        "fk_error_m": 8.58707520490608e-07,
+        "segment_length_error_m": 4.226027554565803e-07
+      },
+      {
+        "take": "fight-block-counter-seed202",
+        "body": "eva-k7",
+        "sha256": "a093e310a64356397e81f9459f7c3eaf04e7a90cf68376236cd8dad34d57892a",
+        "floor_minimum_m": -0.021253979929813788,
+        "fk_error_m": 1.0069230999020893e-06,
+        "segment_length_error_m": 4.5823274336109776e-07
+      },
+      {
+        "take": "fight-block-counter-seed202",
+        "body": "meshy-fighter",
+        "sha256": "3e51b5a2ec52af7d0d9d1e1c6a2a6bba27bea37e7961b5a42903f20a1210160d",
+        "floor_minimum_m": 0.011151903486302076,
+        "fk_error_m": 1.7605750883124296e-06,
+        "segment_length_error_m": 3.5730075040318887e-07
+      },
+      {
+        "take": "fight-block-counter-seed303",
+        "body": "brek43",
+        "sha256": "8c0d19f58662c872473b078ac99543829295317756cd89229f143e1637b44b73",
+        "floor_minimum_m": 0.004617466692690879,
+        "fk_error_m": 1.8937338904725424e-06,
+        "segment_length_error_m": 3.156145836902269e-07
+      },
+      {
+        "take": "fight-block-counter-seed303",
+        "body": "c08",
+        "sha256": "c60cff666ba400c1825216d0669ef2fc78910086e1606ddc021b69d12da953db",
+        "floor_minimum_m": -0.032774321444705254,
+        "fk_error_m": 1.01820225521994e-06,
+        "segment_length_error_m": 3.538150812332219e-07
+      },
+      {
+        "take": "fight-block-counter-seed303",
+        "body": "eva-k7",
+        "sha256": "ab307811f59c0b90cb859d2d90f73202a0e549019febbaefe653580611fa6371",
+        "floor_minimum_m": -0.006252122660095186,
+        "fk_error_m": 9.241287680486009e-07,
+        "segment_length_error_m": 3.3977388019801325e-07
+      },
+      {
+        "take": "fight-block-counter-seed303",
+        "body": "meshy-fighter",
+        "sha256": "430992806c7839c54be5029b646fa2fa3453e9f19aac9a38b7577d70c3d824ef",
+        "floor_minimum_m": 0.009536793912032219,
+        "fk_error_m": 1.5242062991504689e-06,
+        "segment_length_error_m": 4.0180539295775475e-07
+      },
+      {
+        "take": "fight-footwork-seed101",
+        "body": "brek43",
+        "sha256": "e11debd541e0b1169d76c4382af1d98da53b7bd707d464c9d6c04c450f194628",
+        "floor_minimum_m": 0.004274706745406388,
+        "fk_error_m": 3.5478143100116227e-06,
+        "segment_length_error_m": 3.454111677791971e-07
+      },
+      {
+        "take": "fight-footwork-seed101",
+        "body": "c08",
+        "sha256": "42cabcadeef1a60c755a21239774dffcbd723c487f4c137a68366f5556fbadb0",
+        "floor_minimum_m": -0.06712606877795974,
+        "fk_error_m": 2.3325014795508044e-06,
+        "segment_length_error_m": 5.247990562118332e-07
+      },
+      {
+        "take": "fight-footwork-seed101",
+        "body": "eva-k7",
+        "sha256": "0a359bc9bafc105b783f31979fcec55a4aa1072ced18005432a0692055c432a9",
+        "floor_minimum_m": -0.012757450734452239,
+        "fk_error_m": 1.6551744894319681e-06,
+        "segment_length_error_m": 7.568641502975204e-07
+      },
+      {
+        "take": "fight-footwork-seed101",
+        "body": "meshy-fighter",
+        "sha256": "8ddbfafefa2f9b2c1c21b28dfd7414840d44175575c549f370ed8d4fc9ac0e39",
+        "floor_minimum_m": 0.009998576137959856,
+        "fk_error_m": 2.0499223488405475e-06,
+        "segment_length_error_m": 3.40761177164417e-07
+      },
+      {
+        "take": "fight-footwork-seed202",
+        "body": "brek43",
+        "sha256": "5629bdda624266a14d2ecbae32589bc3d22b5b60362bccf69fcc32da63ae8ad2",
+        "floor_minimum_m": -0.002804962134131609,
+        "fk_error_m": 3.031108437442438e-06,
+        "segment_length_error_m": 7.832987553579862e-07
+      },
+      {
+        "take": "fight-footwork-seed202",
+        "body": "c08",
+        "sha256": "8d9bf768e0a447846339e0e7030af556ce3dce8b2e81bd53b276deb3d3df3091",
+        "floor_minimum_m": -0.060453757367014006,
+        "fk_error_m": 1.6982767515490418e-06,
+        "segment_length_error_m": 4.4444952712607844e-07
+      },
+      {
+        "take": "fight-footwork-seed202",
+        "body": "eva-k7",
+        "sha256": "6de609bee15667e21d47b585e92932d628d92c1879edc4a89021845a95237d55",
+        "floor_minimum_m": -0.012916868306314694,
+        "fk_error_m": 2.0424110940611587e-06,
+        "segment_length_error_m": 4.77758109296289e-07
+      },
+      {
+        "take": "fight-footwork-seed202",
+        "body": "meshy-fighter",
+        "sha256": "31aef9c014e6c8d09629829b2b09c59321e088195382ae491a7ff760d616fb8a",
+        "floor_minimum_m": 0.008867628638817628,
+        "fk_error_m": 2.15240975895081e-06,
+        "segment_length_error_m": 6.497732951693536e-07
+      },
+      {
+        "take": "fight-footwork-seed303",
+        "body": "brek43",
+        "sha256": "d08623d97b2f6b26c354fce69222cbe2b2564986d68b35a986bb83e9d4f6a4ce",
+        "floor_minimum_m": -0.0003853695106246814,
+        "fk_error_m": 1.6534992624145004e-06,
+        "segment_length_error_m": 4.4584494363064664e-07
+      },
+      {
+        "take": "fight-footwork-seed303",
+        "body": "c08",
+        "sha256": "a9140dbb7c9a4d65381a90669478001cc914b19e6125547db2b1690b7313a17d",
+        "floor_minimum_m": -0.058113873652210865,
+        "fk_error_m": 1.2043686736723274e-06,
+        "segment_length_error_m": 2.072747737891234e-07
+      },
+      {
+        "take": "fight-footwork-seed303",
+        "body": "eva-k7",
+        "sha256": "8500e2f4419c63a1a2747e44ae8d26465b7b11485c25902340370343ac877ed7",
+        "floor_minimum_m": -0.010495412632086504,
+        "fk_error_m": 9.083424243353754e-07,
+        "segment_length_error_m": 3.8117176254237606e-07
+      },
+      {
+        "take": "fight-footwork-seed303",
+        "body": "meshy-fighter",
+        "sha256": "bc4cefba5609434cb5758fc459218319fd03e84e6ce72b5647ed0302cdd3c61c",
+        "floor_minimum_m": 0.011440083171016847,
+        "fk_error_m": 1.6530508049565579e-06,
+        "segment_length_error_m": 4.2790406368231615e-07
+      },
+      {
+        "take": "fight-front-kick-seed101",
+        "body": "brek43",
+        "sha256": "747fa5b4995e76d568ca0c9da019b2c833ca4a867bc337c1e0d81db1d237d967",
+        "floor_minimum_m": -0.046587144397676396,
+        "fk_error_m": 1.3679361355049068e-06,
+        "segment_length_error_m": 3.8690659254214665e-07
+      },
+      {
+        "take": "fight-front-kick-seed101",
+        "body": "c08",
+        "sha256": "8c8d1e8b00d9c341b30c8d61d5917fcf6d7e4d308e954df3280dff60026c0c43",
+        "floor_minimum_m": -0.14555119575872805,
+        "fk_error_m": 1.0738479590904246e-06,
+        "segment_length_error_m": 1.9698786513089317e-07
+      },
+      {
+        "take": "fight-front-kick-seed101",
+        "body": "eva-k7",
+        "sha256": "feb9cdeeb5d01637541ece9428b103376de9518621cf36ae176961cd607290e9",
+        "floor_minimum_m": -0.06172984435066645,
+        "fk_error_m": 8.739953859992441e-07,
+        "segment_length_error_m": 1.7350875092247975e-07
+      },
+      {
+        "take": "fight-front-kick-seed101",
+        "body": "meshy-fighter",
+        "sha256": "7fd0fd196aced34d7eeb4458a26d36d51de0cd2bc631a200ded96c11b39e413b",
+        "floor_minimum_m": -0.041805773151539743,
+        "fk_error_m": 5.996700267860263e-06,
+        "segment_length_error_m": 7.013110139286738e-07
+      },
+      {
+        "take": "fight-front-kick-seed202",
+        "body": "brek43",
+        "sha256": "2b5b151850bd2e3cb4380ef5dcd36c44f3fef7a53fbb03dc356c235a1faa323b",
+        "floor_minimum_m": -0.03728435290469385,
+        "fk_error_m": 1.2792005416338366e-06,
+        "segment_length_error_m": 3.974649996907331e-07
+      },
+      {
+        "take": "fight-front-kick-seed202",
+        "body": "c08",
+        "sha256": "2e740827f87282382df42d6249a26b50b0a460349a5906b377fc271198a32803",
+        "floor_minimum_m": -0.11722880400274516,
+        "fk_error_m": 8.802537710395542e-07,
+        "segment_length_error_m": 3.587452950259973e-07
+      },
+      {
+        "take": "fight-front-kick-seed202",
+        "body": "eva-k7",
+        "sha256": "29c2ecc7131f0f7fcb2bdaf5398576d4fc1af24859b9beef9758c6cd4f01538f",
+        "floor_minimum_m": -0.046982931582971475,
+        "fk_error_m": 7.566083212691668e-07,
+        "segment_length_error_m": 2.0659927923993848e-07
+      },
+      {
+        "take": "fight-front-kick-seed202",
+        "body": "meshy-fighter",
+        "sha256": "c5ba1e392c5522a22caf8891319344e6e179ec34824eedc1aa481a9cbfed97a4",
+        "floor_minimum_m": -0.02687155834654074,
+        "fk_error_m": 3.6475013803834067e-06,
+        "segment_length_error_m": 6.427485854110238e-07
+      },
+      {
+        "take": "fight-front-kick-seed303",
+        "body": "brek43",
+        "sha256": "3861ddd90d19e8f6640a811c74589ad7e9a8fd1ed812e01795df0fa49c1e4350",
+        "floor_minimum_m": -0.042711495436008155,
+        "fk_error_m": 1.4484021170050506e-06,
+        "segment_length_error_m": 3.3366215662633536e-07
+      },
+      {
+        "take": "fight-front-kick-seed303",
+        "body": "c08",
+        "sha256": "fc9e2a61278f0d65d7195efc8d065b3b655ed832e1b87c32d9d6962c18d27fbe",
+        "floor_minimum_m": -0.11904254858760427,
+        "fk_error_m": 1.2197526787142675e-06,
+        "segment_length_error_m": 2.958326951185697e-07
+      },
+      {
+        "take": "fight-front-kick-seed303",
+        "body": "eva-k7",
+        "sha256": "2ba0d43f69c6213c85de6b4d5ba0f0c7ee6e6c32340715e6ef089f4e0dbe5c57",
+        "floor_minimum_m": -0.04897463479445955,
+        "fk_error_m": 1.0582125647747248e-06,
+        "segment_length_error_m": 1.89720666066151e-07
+      },
+      {
+        "take": "fight-front-kick-seed303",
+        "body": "meshy-fighter",
+        "sha256": "cb1af3d8c6339a02bac78ea4633603cfb1d48e7c6c4b21c275f3db32c9ab21e4",
+        "floor_minimum_m": -0.03146430676151324,
+        "fk_error_m": 3.324842926440453e-06,
+        "segment_length_error_m": 6.078939505660408e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed101",
+        "body": "brek43",
+        "sha256": "21cc90c5aac1b717d12e08632510e0b905d5362451fab6e0bf233d81ad04c501",
+        "floor_minimum_m": 0.002875882973590375,
+        "fk_error_m": 1.6540407297182678e-06,
+        "segment_length_error_m": 6.597257302121129e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed101",
+        "body": "c08",
+        "sha256": "62f36b8eeb0e8ee4f1d039d5b5e44ecbd576c1ecef96dfbd77203513b4d11de6",
+        "floor_minimum_m": -0.028856906450237904,
+        "fk_error_m": 1.0644805588101433e-06,
+        "segment_length_error_m": 3.6541209263996066e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed101",
+        "body": "eva-k7",
+        "sha256": "d7b5331de0e3dee96922bce269c472a50167ffc74debd8859e8c6c7dc1d10337",
+        "floor_minimum_m": -0.003977702302477022,
+        "fk_error_m": 7.333944529477636e-07,
+        "segment_length_error_m": 8.9584458240477e-08
+      },
+      {
+        "take": "fight-grab-pull-turn-seed101",
+        "body": "meshy-fighter",
+        "sha256": "7481ea944844a2e42f69b777e08f586578efe2c2161e8fe48d4b58550c9e1a23",
+        "floor_minimum_m": 0.0054939344610036404,
+        "fk_error_m": 1.4951880760842178e-06,
+        "segment_length_error_m": 4.183861312401227e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed202",
+        "body": "brek43",
+        "sha256": "8982da340bebf472782de6c56410d9f5c318517841ea9837972079e90cc20cb5",
+        "floor_minimum_m": -0.0023201319605655355,
+        "fk_error_m": 1.7728070608378295e-06,
+        "segment_length_error_m": 4.265875632181171e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed202",
+        "body": "c08",
+        "sha256": "b3cf3c3299d9bf976de2d7b6f683019f5904138979cd2392ae30f34c310617e6",
+        "floor_minimum_m": -0.04443997432075922,
+        "fk_error_m": 1.03686821225909e-06,
+        "segment_length_error_m": 4.975087692371538e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed202",
+        "body": "eva-k7",
+        "sha256": "d50d4906f1cf6ae7af5fb5dc872f35861432ce3151b38ae9a3a3af2e5a75e75c",
+        "floor_minimum_m": -0.01593459772083701,
+        "fk_error_m": 8.948775151012544e-07,
+        "segment_length_error_m": 3.732004332235306e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed202",
+        "body": "meshy-fighter",
+        "sha256": "5ef8b656d5b409be9879b6987f485819fe5c9b49ed4e768cf5a42c0b9291f8fa",
+        "floor_minimum_m": 0.002757001764882086,
+        "fk_error_m": 1.5767607172775278e-06,
+        "segment_length_error_m": 5.086431666967428e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed303",
+        "body": "brek43",
+        "sha256": "4aacc0129089a6d8434f0fb12aaa0dcd2ea4fa53a7df06c1496ab8ae90b9bb2f",
+        "floor_minimum_m": 0.006447522545780605,
+        "fk_error_m": 2.96670852271181e-06,
+        "segment_length_error_m": 3.756446855796014e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed303",
+        "body": "c08",
+        "sha256": "3ab6ef9a3716656d20355bbd549ed34fbfcb2a78bb43baadfb1d42e10851b4ec",
+        "floor_minimum_m": -0.03357439222211864,
+        "fk_error_m": 8.742470276692543e-07,
+        "segment_length_error_m": 2.7033428257050574e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed303",
+        "body": "eva-k7",
+        "sha256": "dccc6747735b284e58a214dcf25badc6a64b005eec7afa5858d374a544a02ba6",
+        "floor_minimum_m": -0.007061961419560614,
+        "fk_error_m": 9.119325069646323e-07,
+        "segment_length_error_m": 3.1141984829785585e-07
+      },
+      {
+        "take": "fight-grab-pull-turn-seed303",
+        "body": "meshy-fighter",
+        "sha256": "29d0d9f27eb3e2c554b3693118de2da1a244e87f933482d803fd74af5cbe5c12",
+        "floor_minimum_m": 0.007226612818454488,
+        "fk_error_m": 1.3000574972525337e-06,
+        "segment_length_error_m": 4.2268974467796205e-07
+      },
+      {
+        "take": "fight-guard-seed101",
+        "body": "brek43",
+        "sha256": "bd19e4ab32a3ebb1ae1f2711898913469142995e2e476b4e5295cba8880ddbfa",
+        "floor_minimum_m": 0.006644442165531345,
+        "fk_error_m": 1.3462598117033903e-06,
+        "segment_length_error_m": 3.0842422438226436e-07
+      },
+      {
+        "take": "fight-guard-seed101",
+        "body": "c08",
+        "sha256": "02b784005d01ccc2c7125da50d1b57b2976a0156fd365571d10c53e766d26d2d",
+        "floor_minimum_m": -0.0011987314014226605,
+        "fk_error_m": 1.013445814936693e-06,
+        "segment_length_error_m": 1.925270529667955e-07
+      },
+      {
+        "take": "fight-guard-seed101",
+        "body": "eva-k7",
+        "sha256": "e81cd3faaddd52534fc0e6546a846aeb24b029694f3a92d15e7cd77e793e809f",
+        "floor_minimum_m": 0.009103987770284778,
+        "fk_error_m": 7.895047046956382e-07,
+        "segment_length_error_m": 4.2077080147917556e-07
+      },
+      {
+        "take": "fight-guard-seed101",
+        "body": "meshy-fighter",
+        "sha256": "b8b7d34d5a8489448a7463088e89fc5c2ff074d6434cd0080f76818d2bf546d5",
+        "floor_minimum_m": 0.010049202060693619,
+        "fk_error_m": 1.374953749617065e-06,
+        "segment_length_error_m": 3.152271186857014e-07
+      },
+      {
+        "take": "fight-guard-seed202",
+        "body": "brek43",
+        "sha256": "e345ca00b8e2d2b25fbcb516bbe1c0679b5a2c984b89bf7c123431d0cd61b5ff",
+        "floor_minimum_m": 0.002143637594776787,
+        "fk_error_m": 1.1765851337266273e-06,
+        "segment_length_error_m": 3.9120005546067205e-07
+      },
+      {
+        "take": "fight-guard-seed202",
+        "body": "c08",
+        "sha256": "510d1e5bcb100c8635e2e9f108e2b9b50e2a447a3d67786e3be899a4b4170cbd",
+        "floor_minimum_m": -0.001544295653621689,
+        "fk_error_m": 8.916579922087398e-07,
+        "segment_length_error_m": 2.4882931731751157e-07
+      },
+      {
+        "take": "fight-guard-seed202",
+        "body": "eva-k7",
+        "sha256": "c0734eb16ffc6b9efdf1a717bc08852bb4cd0faecd3edb315a34d282edc435c0",
+        "floor_minimum_m": 0.0072804372072680056,
+        "fk_error_m": 6.958104154144629e-07,
+        "segment_length_error_m": 3.04778940085626e-07
+      },
+      {
+        "take": "fight-guard-seed202",
+        "body": "meshy-fighter",
+        "sha256": "7e891da92caae2feb9607c3026c10209a73b64fd3cec2d5305935136e33d2807",
+        "floor_minimum_m": 0.011699515210306276,
+        "fk_error_m": 1.3408196086015102e-06,
+        "segment_length_error_m": 2.771923328093173e-07
+      },
+      {
+        "take": "fight-guard-seed303",
+        "body": "brek43",
+        "sha256": "02799e93b07a5b0b4940b7f03413d13ce149882bdb343f8826339566970e1eca",
+        "floor_minimum_m": 0.0064776510866494455,
+        "fk_error_m": 1.8084286373404278e-06,
+        "segment_length_error_m": 3.748909794820676e-07
+      },
+      {
+        "take": "fight-guard-seed303",
+        "body": "c08",
+        "sha256": "8dedb74edd51c9f0e3913cd2d4da3be8f7ab1fffa0c16f08f9e23f74993e38f3",
+        "floor_minimum_m": -0.014944483271547092,
+        "fk_error_m": 1.0997030344850168e-06,
+        "segment_length_error_m": 4.393726000251341e-07
+      },
+      {
+        "take": "fight-guard-seed303",
+        "body": "eva-k7",
+        "sha256": "90c28d54942332aded8f96adbfe2909dae305d6f1a72cb1a225db6efcccf9e7c",
+        "floor_minimum_m": 0.004765260233423434,
+        "fk_error_m": 8.701792072317468e-07,
+        "segment_length_error_m": 2.2839982483091603e-07
+      },
+      {
+        "take": "fight-guard-seed303",
+        "body": "meshy-fighter",
+        "sha256": "fe93f265fceaa368aa827c7667969e0e976c9d307f5e9a659086bbdcf80c2213",
+        "floor_minimum_m": 0.014960268358547808,
+        "fk_error_m": 1.74480633177789e-06,
+        "segment_length_error_m": 4.4733603665747523e-07
+      },
+      {
+        "take": "fight-hook-cross-seed101",
+        "body": "brek43",
+        "sha256": "d3eb23dc6d9ead2254cf698ddda63789914a78d1dc23a553d4e6281c788816aa",
+        "floor_minimum_m": -0.007052237881981428,
+        "fk_error_m": 1.311789172943673e-06,
+        "segment_length_error_m": 2.8351797226600084e-07
+      },
+      {
+        "take": "fight-hook-cross-seed101",
+        "body": "c08",
+        "sha256": "9eb2a9de831e5356219a42970723b78abad04a9aa1a7b143033d8a76361d3d4c",
+        "floor_minimum_m": -0.04469867878739563,
+        "fk_error_m": 1.1681939337767726e-06,
+        "segment_length_error_m": 3.9990723632588043e-07
+      },
+      {
+        "take": "fight-hook-cross-seed101",
+        "body": "eva-k7",
+        "sha256": "128a187784e286b5ffb64b045fe4954b2426670a5ebed4176385046728f70969",
+        "floor_minimum_m": -0.007675677663336749,
+        "fk_error_m": 1.0080591709508977e-06,
+        "segment_length_error_m": 2.389600341490272e-07
+      },
+      {
+        "take": "fight-hook-cross-seed101",
+        "body": "meshy-fighter",
+        "sha256": "cd1ce8486f4163eb2cd4154635771afa4223f316754ed114710bc636a6c04b2d",
+        "floor_minimum_m": 0.008874870530749208,
+        "fk_error_m": 1.427016729503551e-06,
+        "segment_length_error_m": 3.192327459600186e-07
+      },
+      {
+        "take": "fight-hook-cross-seed202",
+        "body": "brek43",
+        "sha256": "34db91de1c3e87dfd2ddcf36bfcd9edbc53897097ea2a56fea1c4fcfd81349ae",
+        "floor_minimum_m": 0.008721175411768972,
+        "fk_error_m": 1.2894811869061728e-06,
+        "segment_length_error_m": 2.5210936360764435e-07
+      },
+      {
+        "take": "fight-hook-cross-seed202",
+        "body": "c08",
+        "sha256": "8979230fb58cb2126793e4129799f692dde47e68aeabcd20bfeff55dc16e82df",
+        "floor_minimum_m": -0.0713655412671533,
+        "fk_error_m": 1.6770778320546657e-06,
+        "segment_length_error_m": 2.936846014156558e-07
+      },
+      {
+        "take": "fight-hook-cross-seed202",
+        "body": "eva-k7",
+        "sha256": "7371ebec3a69ce21d4d0f3096261c94b589cda5f908c65641b09f259e8f90c40",
+        "floor_minimum_m": -0.021092292318938943,
+        "fk_error_m": 8.499233040682997e-07,
+        "segment_length_error_m": 1.62912439816143e-07
+      },
+      {
+        "take": "fight-hook-cross-seed202",
+        "body": "meshy-fighter",
+        "sha256": "c0d0acc7cd183f1f96791fce58d22d45926bf1922af1d978545a9b59645508f1",
+        "floor_minimum_m": 0.008929340903084518,
+        "fk_error_m": 1.6100754222594945e-06,
+        "segment_length_error_m": 3.8733950441516285e-07
+      },
+      {
+        "take": "fight-hook-cross-seed303",
+        "body": "brek43",
+        "sha256": "e1c67ed3e08562187cba3249f3a92cb65904cc5f22904845f59d02e60f534c28",
+        "floor_minimum_m": -0.003885543282727409,
+        "fk_error_m": 1.5241337408752476e-06,
+        "segment_length_error_m": 4.467760545967536e-07
+      },
+      {
+        "take": "fight-hook-cross-seed303",
+        "body": "c08",
+        "sha256": "f6a0fd987fe4153d74359c87a4c587911b2f9652013c4e54a5c5e45e2a2ccf28",
+        "floor_minimum_m": -0.07097405936864123,
+        "fk_error_m": 1.2042293062678134e-06,
+        "segment_length_error_m": 3.658951562290902e-07
+      },
+      {
+        "take": "fight-hook-cross-seed303",
+        "body": "eva-k7",
+        "sha256": "09e80b339d92194e4b910d3a315769e266fa1bfbb6a1cf87480ff1e25398f046",
+        "floor_minimum_m": -0.015299930565146114,
+        "fk_error_m": 7.630574700494651e-07,
+        "segment_length_error_m": 5.044213802762876e-07
+      },
+      {
+        "take": "fight-hook-cross-seed303",
+        "body": "meshy-fighter",
+        "sha256": "8ba40473bb077c09f47d84d1a10e3854e21d987ffef1f38183b2fe43ed776705",
+        "floor_minimum_m": 0.009637570955977512,
+        "fk_error_m": 1.8897204245645823e-06,
+        "segment_length_error_m": 5.511729759266615e-07
+      },
+      {
+        "take": "fight-jab-cross-seed101",
+        "body": "brek43",
+        "sha256": "9d9c8b70777f37196a1170e223f5a306c201a7b226e43076e4ce596e23793fc3",
+        "floor_minimum_m": -0.006391553746787709,
+        "fk_error_m": 1.8798968359895721e-06,
+        "segment_length_error_m": 8.187955631289157e-07
+      },
+      {
+        "take": "fight-jab-cross-seed101",
+        "body": "c08",
+        "sha256": "47625b1985edd532c616821c7a396532376087a43f870676c6bf11a13ee4c393",
+        "floor_minimum_m": -0.06330045835803053,
+        "fk_error_m": 1.008216534685574e-06,
+        "segment_length_error_m": 4.1854259968943097e-07
+      },
+      {
+        "take": "fight-jab-cross-seed101",
+        "body": "eva-k7",
+        "sha256": "1a475e66df9d24db78e8c68ca828b47211c07a849ef40bd57f1fda1fd3925502",
+        "floor_minimum_m": -0.016077787511374286,
+        "fk_error_m": 7.662549916799095e-07,
+        "segment_length_error_m": 4.4399655296789575e-07
+      },
+      {
+        "take": "fight-jab-cross-seed101",
+        "body": "meshy-fighter",
+        "sha256": "9bf6803496e4c62c5994bce64bbf3e3f94f37ae6afdcd4168452d741fa48b516",
+        "floor_minimum_m": 0.008614882394840264,
+        "fk_error_m": 1.4416833739962105e-06,
+        "segment_length_error_m": 3.073264935871123e-07
+      },
+      {
+        "take": "fight-jab-cross-seed202",
+        "body": "brek43",
+        "sha256": "81f69c5832f272fcd433405a1d3f238e3e2f2c4c73081555f5deab02738c3d4c",
+        "floor_minimum_m": 0.005191521979821194,
+        "fk_error_m": 1.3746178131461933e-06,
+        "segment_length_error_m": 6.226759947103311e-07
+      },
+      {
+        "take": "fight-jab-cross-seed202",
+        "body": "c08",
+        "sha256": "46ef961fc1b2fa513c3dd8869caefebeffcf6a9f482becf791947d5d54cb9ee4",
+        "floor_minimum_m": -0.07938823188769444,
+        "fk_error_m": 1.2195056957203718e-06,
+        "segment_length_error_m": 3.8590732054366583e-07
+      },
+      {
+        "take": "fight-jab-cross-seed202",
+        "body": "eva-k7",
+        "sha256": "7949540ee3a4a184d595f81b8159c870e719fa9646af3f9802a35c94dcae3268",
+        "floor_minimum_m": -0.02356580724977722,
+        "fk_error_m": 6.603061303429923e-07,
+        "segment_length_error_m": 2.0680335360845348e-07
+      },
+      {
+        "take": "fight-jab-cross-seed202",
+        "body": "meshy-fighter",
+        "sha256": "acfdb86a12152c1d68aedac64b563ad0ae25eeb4abfd45e1c7d943b2b8200d3e",
+        "floor_minimum_m": 0.008373518465523859,
+        "fk_error_m": 1.637496922387142e-06,
+        "segment_length_error_m": 4.0779972021454114e-07
+      },
+      {
+        "take": "fight-jab-cross-seed303",
+        "body": "brek43",
+        "sha256": "644f5f0d6dea8d5b2e63ba30ab4047493cde2d1a821f92c996422865d93f6deb",
+        "floor_minimum_m": -0.0035588370598698925,
+        "fk_error_m": 1.3842205602943493e-06,
+        "segment_length_error_m": 5.948148975587486e-07
+      },
+      {
+        "take": "fight-jab-cross-seed303",
+        "body": "c08",
+        "sha256": "98b1b84179a91fc31f19fe366c961c816b4415bca46b7f078a492cb30bf0ed45",
+        "floor_minimum_m": -0.06599354643034999,
+        "fk_error_m": 9.194955538912765e-07,
+        "segment_length_error_m": 3.25211352347754e-07
+      },
+      {
+        "take": "fight-jab-cross-seed303",
+        "body": "eva-k7",
+        "sha256": "31e86102aee5943218d2727212df1a3341df4e4a2880e90d2110dfe9ce84d775",
+        "floor_minimum_m": -0.015857923235798155,
+        "fk_error_m": 7.442795827274305e-07,
+        "segment_length_error_m": 1.8394379647235226e-07
+      },
+      {
+        "take": "fight-jab-cross-seed303",
+        "body": "meshy-fighter",
+        "sha256": "89561afc031ddf1d06c35185f53336dfea8be7c4100ac4b85292fba1cc722219",
+        "floor_minimum_m": 0.012832657141210395,
+        "fk_error_m": 1.7657553450504235e-06,
+        "segment_length_error_m": 3.3095777479674737e-07
+      },
+      {
+        "take": "fight-right-straight-seed101",
+        "body": "brek43",
+        "sha256": "7b35b1b7370106683087bda1305d587e7465ddfc5f7a374daa2bf6a95ad20893",
+        "floor_minimum_m": -0.002558277938983538,
+        "fk_error_m": 1.403246492096318e-06,
+        "segment_length_error_m": 3.036337575257342e-07
+      },
+      {
+        "take": "fight-right-straight-seed101",
+        "body": "c08",
+        "sha256": "6e48c51462022c012decae9eca1a5f28964a20b7eb141a2b581c8bcc4ee416f1",
+        "floor_minimum_m": -0.014894668060160312,
+        "fk_error_m": 9.203150468659837e-07,
+        "segment_length_error_m": 4.036108018912188e-07
+      },
+      {
+        "take": "fight-right-straight-seed101",
+        "body": "eva-k7",
+        "sha256": "900a1d140687bd5e457f2e8ef627323fdc40ad59e3346f94708e7872caddee0c",
+        "floor_minimum_m": 0.0009929588262758814,
+        "fk_error_m": 8.487199863279474e-07,
+        "segment_length_error_m": 5.006487247549707e-07
+      },
+      {
+        "take": "fight-right-straight-seed101",
+        "body": "meshy-fighter",
+        "sha256": "7a87a6090e1b118d7b9958827e4e665cd1b1adc9757a93ee9d26568a8385be55",
+        "floor_minimum_m": 0.004537763285332967,
+        "fk_error_m": 1.089520589803834e-06,
+        "segment_length_error_m": 2.360010771529364e-07
+      },
+      {
+        "take": "fight-right-straight-seed202",
+        "body": "brek43",
+        "sha256": "8532ba0c50f750d49be4d3dbb695d6d9cd071658b96526187e0a6e50c8dcb2de",
+        "floor_minimum_m": 0.004060295679845834,
+        "fk_error_m": 1.275741928773161e-06,
+        "segment_length_error_m": 6.881332303421139e-07
+      },
+      {
+        "take": "fight-right-straight-seed202",
+        "body": "c08",
+        "sha256": "0e64a8bed0ce82dd6d99df732602f382e9d07b8f91c92cacf377e3e8bd07355c",
+        "floor_minimum_m": -0.01779510878414582,
+        "fk_error_m": 8.733658521648952e-07,
+        "segment_length_error_m": 5.632768246832676e-07
+      },
+      {
+        "take": "fight-right-straight-seed202",
+        "body": "eva-k7",
+        "sha256": "3410659e166cb0b81e7d7d2d321c4d9fceae4b3ad0e55358c64a6f29d5e6d971",
+        "floor_minimum_m": 0.00033634221854791577,
+        "fk_error_m": 1.0107151171045042e-06,
+        "segment_length_error_m": 3.226637120268272e-07
+      },
+      {
+        "take": "fight-right-straight-seed202",
+        "body": "meshy-fighter",
+        "sha256": "178f2bc41a7f92d89320baaaf0877f5bcdbbb84278b3c55983c5effd71ac621c",
+        "floor_minimum_m": 0.00843200997357351,
+        "fk_error_m": 1.497628450501875e-06,
+        "segment_length_error_m": 3.0739896209053263e-07
+      },
+      {
+        "take": "fight-right-straight-seed303",
+        "body": "brek43",
+        "sha256": "906247883eaf5f987e9de9e4d86518d4de9194fe9ee0920a2c11b6ead859c77e",
+        "floor_minimum_m": 0.007195677296422353,
+        "fk_error_m": 1.510502218971962e-06,
+        "segment_length_error_m": 8.756243401464303e-07
+      },
+      {
+        "take": "fight-right-straight-seed303",
+        "body": "c08",
+        "sha256": "b51bb1f9aebac621947fc36998b96b14c93576e3b91ed8a664f07d7f328f3cb8",
+        "floor_minimum_m": -0.028788848820944957,
+        "fk_error_m": 7.254730618288914e-07,
+        "segment_length_error_m": 3.799272712545765e-07
+      },
+      {
+        "take": "fight-right-straight-seed303",
+        "body": "eva-k7",
+        "sha256": "2ae839d5834abdb1876229aefc3b8c5ea133daed7ac0487dd360f22b5855f0d8",
+        "floor_minimum_m": -0.006311144537085374,
+        "fk_error_m": 6.25696213215177e-07,
+        "segment_length_error_m": 1.9419686136945558e-07
+      },
+      {
+        "take": "fight-right-straight-seed303",
+        "body": "meshy-fighter",
+        "sha256": "c9c7b678fad4a7e6cf8c56d6f1ef9a0b50e84446e39989693b052f7f5b604ac8",
+        "floor_minimum_m": 0.009129869833240004,
+        "fk_error_m": 1.4164036893056487e-06,
+        "segment_length_error_m": 5.60427457441115e-07
+      },
+      {
+        "take": "fight-roundhouse-seed101",
+        "body": "brek43",
+        "sha256": "7e0ced9c07d24f3c428d2a26f0f8ce8ba700d593fa3fdcbcc4a487098b7da705",
+        "floor_minimum_m": -0.03788486882369519,
+        "fk_error_m": 1.5335649641247552e-06,
+        "segment_length_error_m": 4.3244003372633344e-07
+      },
+      {
+        "take": "fight-roundhouse-seed101",
+        "body": "c08",
+        "sha256": "8c8baa48ca339bb8286ceca1f3a479ef6b9d7bc61a4b1837cacaddad35f26529",
+        "floor_minimum_m": -0.15790633460845957,
+        "fk_error_m": 1.0994305311571133e-06,
+        "segment_length_error_m": 2.209906068695311e-07
+      },
+      {
+        "take": "fight-roundhouse-seed101",
+        "body": "eva-k7",
+        "sha256": "df662fa90a0f9a51c6c5e744cfb27bddfb9fa8c5657fd9f2b5475d68b351150f",
+        "floor_minimum_m": -0.061103146851399934,
+        "fk_error_m": 9.144809991912209e-07,
+        "segment_length_error_m": 4.1320913285458616e-07
+      },
+      {
+        "take": "fight-roundhouse-seed101",
+        "body": "meshy-fighter",
+        "sha256": "3755fa7907c6e8f40366b7d5732ee5b4107ec08dfc726010db295484553bed7a",
+        "floor_minimum_m": -0.04027423626216222,
+        "fk_error_m": 4.946391864109188e-06,
+        "segment_length_error_m": 5.826909053041618e-07
+      },
+      {
+        "take": "fight-roundhouse-seed202",
+        "body": "brek43",
+        "sha256": "4e2dcad10cd276c460da09b71741c14bf5ac8920b0e3db9ddae5638c8878428a",
+        "floor_minimum_m": -0.03697297169007894,
+        "fk_error_m": 2.09375437382789e-06,
+        "segment_length_error_m": 3.947048081154314e-07
+      },
+      {
+        "take": "fight-roundhouse-seed202",
+        "body": "c08",
+        "sha256": "02673e425400ea19efb39e60a2b811ae94d0cd62be6cd99abf5c29e03055db28",
+        "floor_minimum_m": -0.1384824363178615,
+        "fk_error_m": 1.0558225940884437e-06,
+        "segment_length_error_m": 4.4007501287524065e-07
+      },
+      {
+        "take": "fight-roundhouse-seed202",
+        "body": "eva-k7",
+        "sha256": "de504e5b7ee0c0f4806891a7cd93239f8438bff57ecaadbddb0811a9f55c6992",
+        "floor_minimum_m": -0.05072448405027329,
+        "fk_error_m": 9.921788146330246e-07,
+        "segment_length_error_m": 2.4739500664727743e-07
+      },
+      {
+        "take": "fight-roundhouse-seed202",
+        "body": "meshy-fighter",
+        "sha256": "c69f6c02ebd898d06c5ec098c49eafe82cbe245750c35970c56ac11b0a3f729b",
+        "floor_minimum_m": -0.032261816105363224,
+        "fk_error_m": 4.7333860381433305e-06,
+        "segment_length_error_m": 5.462977684667081e-07
+      },
+      {
+        "take": "fight-roundhouse-seed303",
+        "body": "brek43",
+        "sha256": "6b5352f16e4aee1d08cf01c2ba458591c88cd68af783b262ee074b2fbe1950aa",
+        "floor_minimum_m": -0.03785904889881274,
+        "fk_error_m": 1.9200668422098192e-06,
+        "segment_length_error_m": 4.595263948248274e-07
+      },
+      {
+        "take": "fight-roundhouse-seed303",
+        "body": "c08",
+        "sha256": "9d942e77027017b2c107817a3585bbc99c0aa3e762498df8562e54201b547124",
+        "floor_minimum_m": -0.13769587344723036,
+        "fk_error_m": 9.696403230575354e-07,
+        "segment_length_error_m": 5.46702391912568e-07
+      },
+      {
+        "take": "fight-roundhouse-seed303",
+        "body": "eva-k7",
+        "sha256": "611aa5864fe787016e82e54d3b50cc6193da0b56052cfaa5a35a7531148b95ac",
+        "floor_minimum_m": -0.05346585264188122,
+        "fk_error_m": 1.034384567249909e-06,
+        "segment_length_error_m": 2.929425150788312e-07
+      },
+      {
+        "take": "fight-roundhouse-seed303",
+        "body": "meshy-fighter",
+        "sha256": "686eba0186950d28be487a45d052165fd97b9c9c5c206a9d2fdae3fa73247c52",
+        "floor_minimum_m": -0.033488688570361004,
+        "fk_error_m": 4.282261579654857e-06,
+        "segment_length_error_m": 9.214206042607032e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed101",
+        "body": "brek43",
+        "sha256": "121c0899be6bf74141c533f18d07231305028049bf798f3b162e675974b7fce2",
+        "floor_minimum_m": -0.01193218611678792,
+        "fk_error_m": 2.020347589149555e-06,
+        "segment_length_error_m": 4.151358172777009e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed101",
+        "body": "c08",
+        "sha256": "242c214c3d498a8fa56ca5de020ce03c53b08f1a650af3485637eb9aa3fbdc07",
+        "floor_minimum_m": -0.08197094860995144,
+        "fk_error_m": 2.24759223610238e-06,
+        "segment_length_error_m": 6.713442984862539e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed101",
+        "body": "eva-k7",
+        "sha256": "e0f5fe03745b8c22d9e0c9cf887037858258c575c7e73dacc747dcac2dfbbbdf",
+        "floor_minimum_m": -0.022858280952490748,
+        "fk_error_m": 1.5430125421423988e-06,
+        "segment_length_error_m": 2.871795311554237e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed101",
+        "body": "meshy-fighter",
+        "sha256": "cd005ffd96ab81a32884f365a1f06e6112b74b197320dbc26daec9f402db9353",
+        "floor_minimum_m": 0.006383084220632215,
+        "fk_error_m": 1.5950248704352114e-06,
+        "segment_length_error_m": 4.830595348170874e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed202",
+        "body": "brek43",
+        "sha256": "0c7f6b20dfaac89463b5d53a0d4254d83a35da16dde401a10d5d7a2a751983af",
+        "floor_minimum_m": -0.02266019225993727,
+        "fk_error_m": 1.7607407285190862e-06,
+        "segment_length_error_m": 3.4840896812049493e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed202",
+        "body": "c08",
+        "sha256": "9859b31770468e8d82ac08d1848695f26b97a17c5d6c5c2205b7dd0ae3eb6553",
+        "floor_minimum_m": -0.08658343148446615,
+        "fk_error_m": 2.104191205178083e-06,
+        "segment_length_error_m": 5.445682905169669e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed202",
+        "body": "eva-k7",
+        "sha256": "a1e8c7abd90548a405d3bfbfab0537384e39ef78a398664259e1e2ecc851bf4b",
+        "floor_minimum_m": -0.02565810331663311,
+        "fk_error_m": 1.1221193254643565e-06,
+        "segment_length_error_m": 2.0142387974209086e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed202",
+        "body": "meshy-fighter",
+        "sha256": "38e83adc666b5a4b081523ac6b686e10398cf9c596d39cc51662970e49f60d65",
+        "floor_minimum_m": 0.005462026662984858,
+        "fk_error_m": 2.2612828544902586e-06,
+        "segment_length_error_m": 4.878811981079423e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed303",
+        "body": "brek43",
+        "sha256": "5086e4afc4815dd8c065a58c491c83c744725d38fc92c671c5f95b369e8c89d6",
+        "floor_minimum_m": -0.019908582016303272,
+        "fk_error_m": 1.889049641223775e-06,
+        "segment_length_error_m": 4.3069721006316897e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed303",
+        "body": "c08",
+        "sha256": "0b337b516d46c05a34e4bb613284d045e68202c9e044366a427f77ce11cf8aa6",
+        "floor_minimum_m": -0.0835399259526336,
+        "fk_error_m": 1.4035540529935874e-06,
+        "segment_length_error_m": 4.778421179296721e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed303",
+        "body": "eva-k7",
+        "sha256": "18343781ec2e8d53b4460756b76bba15cb7b7083ec7e25a37a67cee3fba82921",
+        "floor_minimum_m": -0.01979055302289258,
+        "fk_error_m": 9.007939790633491e-07,
+        "segment_length_error_m": 3.413638213212167e-07
+      },
+      {
+        "take": "fight-shadowboxing-seed303",
+        "body": "meshy-fighter",
+        "sha256": "5da77ba7432ab247c2ef69b72e83d7d193890546edacf03ddca5a4102dc4b962",
+        "floor_minimum_m": 0.007057901049127578,
+        "fk_error_m": 2.2775850640033263e-06,
+        "segment_length_error_m": 6.004399277226291e-07
+      },
+      {
+        "take": "fight-slip-counter-seed101",
+        "body": "brek43",
+        "sha256": "e2c25a32b10f47e0307b5ab800dc938dfb7419ddac6383876ff1be21ddeba0fd",
+        "floor_minimum_m": 0.0021232841166226903,
+        "fk_error_m": 1.7848649201089734e-06,
+        "segment_length_error_m": 2.5435393280481833e-07
+      },
+      {
+        "take": "fight-slip-counter-seed101",
+        "body": "c08",
+        "sha256": "09456f6f220c9a7b7927b4fab7c0fbe5b465024f2234a812f9716dceba4fa783",
+        "floor_minimum_m": -0.01630384661943779,
+        "fk_error_m": 8.156862167022811e-07,
+        "segment_length_error_m": 3.3964588525003947e-07
+      },
+      {
+        "take": "fight-slip-counter-seed101",
+        "body": "eva-k7",
+        "sha256": "0cb1b5415d16a8a2390577cfdc9f82d36729188e3864ef0b3b7396e65546ec41",
+        "floor_minimum_m": 0.002924062263178231,
+        "fk_error_m": 5.768760165854908e-07,
+        "segment_length_error_m": 1.7796513840373507e-07
+      },
+      {
+        "take": "fight-slip-counter-seed101",
+        "body": "meshy-fighter",
+        "sha256": "1fc5ee346995fb4fb69ebf7fcec30883a4491ee80812238ec4fb85794846b1c6",
+        "floor_minimum_m": 0.008119300019367282,
+        "fk_error_m": 1.8908387058499631e-06,
+        "segment_length_error_m": 3.9886884606321615e-07
+      },
+      {
+        "take": "fight-slip-counter-seed202",
+        "body": "brek43",
+        "sha256": "6bc680c6372088db52b40792147110a4ccc112c129e2dbb57b39d6eafa00940e",
+        "floor_minimum_m": 0.001828933607911018,
+        "fk_error_m": 2.0409043638121683e-06,
+        "segment_length_error_m": 3.1927116650454224e-07
+      },
+      {
+        "take": "fight-slip-counter-seed202",
+        "body": "c08",
+        "sha256": "8a9a84733b1d6c4eb912b2c286febd662534e9952fb96a62364c30798735f661",
+        "floor_minimum_m": -0.07357694082545205,
+        "fk_error_m": 9.345400915871592e-07,
+        "segment_length_error_m": 4.268601310197795e-07
+      },
+      {
+        "take": "fight-slip-counter-seed202",
+        "body": "eva-k7",
+        "sha256": "f0ff35442db39959a04692afd7cae3ab1611f54202cf9387c1a5f20f185ff53e",
+        "floor_minimum_m": -0.02276280133121636,
+        "fk_error_m": 9.349366729317946e-07,
+        "segment_length_error_m": 3.2000329586168164e-07
+      },
+      {
+        "take": "fight-slip-counter-seed202",
+        "body": "meshy-fighter",
+        "sha256": "e9f8196f216f0ba44823a8002e5b67e7829132a9826441bd07130d931044ae7b",
+        "floor_minimum_m": 0.010307319313851844,
+        "fk_error_m": 1.4055595916219843e-06,
+        "segment_length_error_m": 3.733116331061659e-07
+      },
+      {
+        "take": "fight-slip-counter-seed303",
+        "body": "brek43",
+        "sha256": "9ebbfaf3f54bdd4b850774a5e56935893dd7d76a37262aeee7006f0a72427d84",
+        "floor_minimum_m": -0.0068842216556646504,
+        "fk_error_m": 1.5704740441860983e-06,
+        "segment_length_error_m": 3.10548529114385e-07
+      },
+      {
+        "take": "fight-slip-counter-seed303",
+        "body": "c08",
+        "sha256": "938dbf55fb8aadf4d9b4ae7089a854bb8f0181a3fc7ee3713f949eba04b65018",
+        "floor_minimum_m": -0.06999357407466036,
+        "fk_error_m": 1.2819361749185332e-06,
+        "segment_length_error_m": 2.587040344170788e-07
+      },
+      {
+        "take": "fight-slip-counter-seed303",
+        "body": "eva-k7",
+        "sha256": "8197a1e1239b86697a64a6b659c4275194b7057971342760336fe2a811ec1d03",
+        "floor_minimum_m": -0.011215170698262944,
+        "fk_error_m": 1.005360341375747e-06,
+        "segment_length_error_m": 1.471595028057493e-07
+      },
+      {
+        "take": "fight-slip-counter-seed303",
+        "body": "meshy-fighter",
+        "sha256": "653c6672be624052d0db5c8f615f45cac0df7da44f3b487c9a5bf947d8a6d819",
+        "floor_minimum_m": 0.012043019220654047,
+        "fk_error_m": 1.916955115734853e-06,
+        "segment_length_error_m": 3.711641322623471e-07
+      },
+      {
+        "take": "fight-uppercut-seed101",
+        "body": "brek43",
+        "sha256": "09aa9a698b52d4294fed467629628767623856435f679e358565bbb10e67cea7",
+        "floor_minimum_m": -0.0021698091906670013,
+        "fk_error_m": 1.2058372648870716e-06,
+        "segment_length_error_m": 3.1566527558535284e-07
+      },
+      {
+        "take": "fight-uppercut-seed101",
+        "body": "c08",
+        "sha256": "d216103a8f2e57aada03ce58cbfbc5a9f79b25dcd569597d3184c15872d3fd64",
+        "floor_minimum_m": -0.043757724962614195,
+        "fk_error_m": 1.0008007846830657e-06,
+        "segment_length_error_m": 2.7874349356471484e-07
+      },
+      {
+        "take": "fight-uppercut-seed101",
+        "body": "eva-k7",
+        "sha256": "a8039afeb6ea5a7072eb982289f58d998cf7923bc1fc2c203b47ef395724ac1f",
+        "floor_minimum_m": -0.008065895667231204,
+        "fk_error_m": 7.994580816163278e-07,
+        "segment_length_error_m": 5.805421440796543e-07
+      },
+      {
+        "take": "fight-uppercut-seed101",
+        "body": "meshy-fighter",
+        "sha256": "d0c66656e6666dbfb28f8b94ca309341d9f303634f0c38bbbfc2c2231596ba9d",
+        "floor_minimum_m": 0.009460112011880887,
+        "fk_error_m": 1.4779193858815792e-06,
+        "segment_length_error_m": 3.922544088430513e-07
+      },
+      {
+        "take": "fight-uppercut-seed202",
+        "body": "brek43",
+        "sha256": "3a0614a6f17811cc9680f3093a5975d11a33d05f8257b36c1bc20840c7747cc1",
+        "floor_minimum_m": 0.005080825698818766,
+        "fk_error_m": 2.4605037323397813e-06,
+        "segment_length_error_m": 3.245552270825236e-07
+      },
+      {
+        "take": "fight-uppercut-seed202",
+        "body": "c08",
+        "sha256": "73dc952986e4b16db6792bd588be670c6e089848f599bb27877dae7dffebb59f",
+        "floor_minimum_m": -0.03284600233336805,
+        "fk_error_m": 1.2007080468491232e-06,
+        "segment_length_error_m": 3.02856774825333e-07
+      },
+      {
+        "take": "fight-uppercut-seed202",
+        "body": "eva-k7",
+        "sha256": "e024a31a422865d114b91f0d4af993b82229320521169d54a9977ba1b74dbdc6",
+        "floor_minimum_m": -0.003925402926945926,
+        "fk_error_m": 7.25033417064932e-07,
+        "segment_length_error_m": 2.681600749787627e-07
+      },
+      {
+        "take": "fight-uppercut-seed202",
+        "body": "meshy-fighter",
+        "sha256": "addf95cc3c86b53a8bdc46b72cf5ec74598db0091a51192bc696044efd58d97a",
+        "floor_minimum_m": 0.0015987861855720588,
+        "fk_error_m": 1.5945318100151576e-06,
+        "segment_length_error_m": 5.08723148329171e-07
+      },
+      {
+        "take": "fight-uppercut-seed303",
+        "body": "brek43",
+        "sha256": "4560676bfd82d72fd554753b437be8d3e01e14d69b9bcee6168e3cb1f9ea8235",
+        "floor_minimum_m": 0.0014071164746100578,
+        "fk_error_m": 1.7754849973606561e-06,
+        "segment_length_error_m": 3.666156123127706e-07
+      },
+      {
+        "take": "fight-uppercut-seed303",
+        "body": "c08",
+        "sha256": "f8eded681b7101f035a8b37fd07814e5affdd88180e03f8c238877fc1ee55b06",
+        "floor_minimum_m": -0.08106944447140732,
+        "fk_error_m": 1.0012446147849402e-06,
+        "segment_length_error_m": 3.2220960161088996e-07
+      },
+      {
+        "take": "fight-uppercut-seed303",
+        "body": "eva-k7",
+        "sha256": "85561d3b933c366bec41b7a77a99160af011e5821a10c8788fb28502049328fb",
+        "floor_minimum_m": -0.022401459427019807,
+        "fk_error_m": 8.06191549116132e-07,
+        "segment_length_error_m": 1.7052793804817057e-07
+      },
+      {
+        "take": "fight-uppercut-seed303",
+        "body": "meshy-fighter",
+        "sha256": "ed853c6909718704f469859200bf7d5f73252522f921ceceb580649975488373",
+        "floor_minimum_m": 0.011966939384411367,
+        "fk_error_m": 1.7266370088056923e-06,
+        "segment_length_error_m": 3.5564100464569037e-07
+      }
+    ],
+    "preservation": {
+      "status": "passed",
+      "immutable_old_artifacts": 1631,
+      "old_review_identities_unchanged": 54,
+      "display_only_roll_corrections": [
+        "r2-ukemi-forward-seed101",
+        "r2-ukemi-forward-seed202",
+        "r2-ukemi-forward-seed303"
+      ]
+    },
+    "continuous": {
+      "status": "passed",
+      "category_counts": {
+        "all": 90,
+        "basic": 39,
+        "ground": 9,
+        "gestures": 6,
+        "fight": 36
+      },
+      "neutral_error": {
+        "angle_rad": 0,
+        "position_m": 3.308722450212111e-24,
+        "root_horizontal_drift_m": 6.156510342885507e-08
+      },
+      "neutral_swap_max_world_joint_gap_m": 6.284472175988043e-08,
+      "ground_neutral_error": {
+        "angle_rad": 0,
+        "position_m": 1.3234889800848443e-23,
+        "root_horizontal_drift_m": 5.7924963155947404e-08
+      },
+      "instance_reuse": true,
+      "review_pauses": true,
+      "download_links_updated": true,
+      "category_reload": true,
+      "errors": []
+    },
+    "standing_transition": {
+      "status": "passed",
+      "rows": [
+        {
+          "id": "fight-right-straight-seed101",
+          "phase": "neutral",
+          "neutral": {
+            "angle_rad": 0,
+            "position_m": 8.271806125530277e-24,
+            "root_horizontal_drift_m": 6.129350859356455e-08
+          },
+          "diagnostics": {
+            "max_reach_projection_m": 0,
+            "max_leg_length_error_m": 2.9676845645920658e-06
+          },
+          "nonfinite": 0
+        },
+        {
+          "id": "fight-front-kick-seed101",
+          "phase": "neutral",
+          "neutral": {
+            "angle_rad": 0,
+            "position_m": 4.963083675318166e-24,
+            "root_horizontal_drift_m": 6.088102626118507e-08
+          },
+          "diagnostics": {
+            "max_reach_projection_m": 0.04231755243756652,
+            "max_leg_length_error_m": 8.744960612316888e-07
+          },
+          "nonfinite": 0
+        },
+        {
+          "id": "fight-roundhouse-seed101",
+          "phase": "neutral",
+          "neutral": {
+            "angle_rad": 0,
+            "position_m": 1.3234889800848443e-23,
+            "root_horizontal_drift_m": 6.652009580860958e-08
+          },
+          "diagnostics": {
+            "max_reach_projection_m": 0.02646908133517334,
+            "max_leg_length_error_m": 2.4010470506263815e-07
+          },
+          "nonfinite": 0
+        },
+        {
+          "id": "fight-grab-pull-turn-seed101",
+          "phase": "neutral",
+          "neutral": {
+            "angle_rad": 0,
+            "position_m": 6.692369231320437e-24,
+            "root_horizontal_drift_m": 6.867571085374165e-08
+          },
+          "diagnostics": {
+            "max_reach_projection_m": 0.0033994335935370046,
+            "max_leg_length_error_m": 5.904335129147675e-07
+          },
+          "nonfinite": 0
+        },
+        {
+          "id": "r2-run-fast-seed101",
+          "phase": "neutral",
+          "neutral": {
+            "angle_rad": 0,
+            "position_m": 1.857172113976446e-22,
+            "root_horizontal_drift_m": 3.672821645150599e-06
+          },
+          "diagnostics": {
+            "max_reach_projection_m": 0.04934214615795918,
+            "max_leg_length_error_m": 3.5008371209177547e-06
+          },
+          "nonfinite": 0
+        },
+        {
+          "id": "r2-crouch-walk-seed101",
+          "phase": "neutral",
+          "neutral": {
+            "angle_rad": 0,
+            "position_m": 4.6772054500656634e-23,
+            "root_horizontal_drift_m": 2.2507125993909135e-07
+          },
+          "diagnostics": {
+            "max_reach_projection_m": 0,
+            "max_leg_length_error_m": 3.4885920676130944e-06
+          },
+          "nonfinite": 0
+        }
+      ],
+      "errors": [],
+      "scope": "Standing authored footsteps/IK sampled across six actions and all four bodies; reach projections are reported, not a physical balance guarantee."
+    },
+    "realtime": {
+      "status": "passed",
+      "current": "fight-roundhouse-seed202",
+      "history": [
+        {
+          "phase": "return",
+          "take": "fight-guard-seed101"
+        },
+        {
+          "phase": "neutral",
+          "take": "fight-guard-seed101"
+        },
+        {
+          "phase": "loading",
+          "take": "fight-guard-seed101"
+        },
+        {
+          "phase": "entry",
+          "take": "fight-guard-seed101"
+        },
+        {
+          "phase": "action",
+          "take": "fight-guard-seed101"
+        },
+        {
+          "phase": "return",
+          "take": "fight-guard-seed101"
+        },
+        {
+          "phase": "neutral",
+          "take": "fight-guard-seed101"
+        },
+        {
+          "phase": "loading",
+          "take": "fight-guard-seed101"
+        },
+        {
+          "phase": "entry",
+          "take": "fight-roundhouse-seed202"
+        },
+        {
+          "phase": "action",
+          "take": "fight-roundhouse-seed202"
+        }
+      ],
+      "diagnostics": {
+        "max_reach_projection_m": 0.0041855881900645375,
+        "max_leg_length_error_m": 2.9902501223477707e-06
+      },
+      "active": true,
+      "stop_works": true,
+      "errors": []
+    }
+  }
+}

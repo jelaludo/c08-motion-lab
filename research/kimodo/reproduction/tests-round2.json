@@ -1,0 +1,18 @@
+{
+ "model":"Kimodo-SOMA-RP-v1.2",
+ "duration_s":6,
+ "seeds":[101,202,303],
+ "cases":[
+  {"id":"r2-run-slow","prompt":"A person jogs forward slowly at an easy, relaxed pace with short light strides."},
+  {"id":"r2-run-medium","prompt":"A person runs forward at a brisk steady pace with rhythmic arm swings and medium length strides."},
+  {"id":"r2-run-fast","prompt":"A person sprints forward at high speed with powerful arm swings and long rapid strides."},
+  {"id":"r2-crouch-down-up","prompt":"A person standing upright bends both knees into a deep crouch, holds briefly, and rises back to a relaxed standing posture."},
+  {"id":"r2-crouch-walk","prompt":"A person walks forward in a low crouch, keeping the knees deeply bent and the torso lowered while taking deliberate alternating steps."},
+  {"id":"r2-crawl-hands-knees","prompt":"A person crawls forward on hands and knees along the floor, alternating the arms and legs smoothly."},
+  {"id":"r2-crawl-low","prompt":"A person crawls forward very low along the floor on forearms and knees with the chest close to the ground."},
+  {"id":"r2-wave-right","duration_s":5,"prompt":"A person stands still, raises the right hand and waves a friendly greeting, then lowers the hand to a relaxed standing posture."},
+  {"id":"r2-point-right","duration_s":5,"prompt":"A person stands still, extends the right arm to point clearly forward, holds the pointing gesture briefly, then lowers the arm."},
+  {"id":"r2-ukemi-forward","duration_s":7,"prompt":"A person performs one controlled judo forward shoulder roll diagonally across the back, tucking the head and rolling from one shoulder toward the opposite hip, then regains a balanced standing posture."}
+ ],
+ "scope":"Round2: text-conditioned full-speed generation, no playback speed substitution or new MotionBricks calls. Three seeds per behavior; actual source root speeds measured rather than assumed from prompt labels. Crawl/ukemi hand, knee, back contacts require visual review."
+}

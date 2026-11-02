@@ -1,0 +1,3350 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8802/kimodo-bipeds/",
+    "tests": [
+      {
+        "id": "fight-guard-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-guard-seed202",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-guard-seed303",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-right-straight-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-right-straight-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-right-straight-seed303",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-jab-cross-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-jab-cross-seed202",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-jab-cross-seed303",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-hook-cross-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-hook-cross-seed202",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-hook-cross-seed303",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-uppercut-seed101",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-uppercut-seed202",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-uppercut-seed303",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-slip-counter-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-slip-counter-seed202",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-slip-counter-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-block-counter-seed101",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-block-counter-seed202",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-block-counter-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-footwork-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-footwork-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-footwork-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-shadowboxing-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-shadowboxing-seed202",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-shadowboxing-seed303",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 7.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-front-kick-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-front-kick-seed202",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-front-kick-seed303",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-roundhouse-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-roundhouse-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-roundhouse-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-grab-pull-turn-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-grab-pull-turn-seed202",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "fight-grab-pull-turn-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-slow-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-slow-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-slow-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-medium-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-medium-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-medium-seed303",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-fast-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-fast-seed202",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-run-fast-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-jog-1p2-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-jog-1p2-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-jog-1p2-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-run-3-seed101",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-run-3-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-run-3-seed303",
+        "sample": [
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-sprint-5-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-sprint-5-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-speed-sprint-5-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crouch-down-up-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crouch-down-up-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crouch-down-up-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crouch-walk-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crouch-walk-seed202",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crouch-walk-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crawl-hands-knees-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crawl-hands-knees-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crawl-hands-knees-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crawl-low-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crawl-low-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-crawl-low-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 5.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-wave-right-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-wave-right-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-wave-right-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-point-right-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-point-right-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-point-right-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 4.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-ukemi-forward-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-ukemi-forward-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "r2-ukemi-forward-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 6.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-neutral-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-neutral-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-neutral-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-heavy-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-heavy-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-heavy-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-limp-left-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-limp-left-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "walk-limp-left-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "jump-nimble-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "jump-nimble-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "jump-nimble-seed303",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "jump-effortful-seed101",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "jump-effortful-seed202",
+        "sample": [
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      },
+      {
+        "id": "jump-effortful-seed303",
+        "sample": [
+          {
+            "body": "eva-k7",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "c08",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "brek43",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          },
+          {
+            "body": "meshy-fighter",
+            "time": 1.25,
+            "finite": true,
+            "duration": 3.9666666984558105,
+            "tracks": 44
+          }
+        ],
+        "framing": {
+          "samples": 17,
+          "failures": []
+        }
+      }
+    ],
+    "checks": [
+      "all360 real Kimodo derived GLBs load and evaluate finite poses",
+      "all360 camera frames contain sampled full-skin pose bounds at17timestamps",
+      "synchronized timestamps and play/pause",
+      "per-body scores/comments survive selection and reload",
+      "single all-review export includes both body reviews in the new Kimodo collection",
+      "body-specific Keep exports point to the selected body after switching",
+      "body visibility switches",
+      "mobile layout has no overflow"
+    ],
+    "errors": []
+  }
+}

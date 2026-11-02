@@ -1,0 +1,40 @@
+{
+  "schema": "kimodo-publication/1",
+  "generated_gallery": {
+    "takes": 90,
+    "bodies": 4,
+    "body_clips": 360
+  },
+  "game_kit": {
+    "motion_types": 94,
+    "takes": 188,
+    "bodies": 2,
+    "body_clips": 376,
+    "default_packs": 2
+  },
+  "transport": {
+    "status": "passed",
+    "exact_source_track_roundtrips": 736,
+    "original_gallery_takes": 90,
+    "game_takes": 188,
+    "unique_asset_files": 1856,
+    "total_asset_bytes": 144523711,
+    "source_scope": "Generated motion and user-provided character assets only; no weights, tokens, source performance videos, bundled motion dataset or text encoder files."
+  },
+  "model": "Kimodo-SOMA-RP-v1.2",
+  "model_revision": "0e3c89024d896064b6851201373f7834784a386b",
+  "upstream_commit": "e1c219c99b4b94ba48be1fb6a1cbc64ecee4c954",
+  "scope": "Recorded generated output, browser playback/controller and compact transport. Source motion tracks are float32-exact; reconstructed GLBs have new binary bytes. Contacts, balance and consuming-engine acceptance remain open.",
+  "rights": {
+    "model_outputs": "NVIDIA Open Model License says outputs are not Derivative Models and NVIDIA claims no ownership in outputs; user remains responsible for their use.",
+    "model_license": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "model_card": "https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.2",
+    "characters": "Creator-owned robots. Meshy-described fighter by Tulio Portela, CC BY 4.0, test-only; full attribution retained in gallery and asset.",
+    "not_redistributed": [
+      "Model weights / text encoder / credentials",
+      "Bundled training motion datasets",
+      "Private human reference videos",
+      "Third-party manuals and game screenshots"
+    ]
+  }
+}

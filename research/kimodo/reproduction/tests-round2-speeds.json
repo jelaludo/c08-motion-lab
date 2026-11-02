@@ -1,0 +1,9 @@
+{
+ "model":"Kimodo-SOMA-RP-v1.2","duration_s":6,"seeds":[101,202,303],
+ "cases":[
+  {"id":"r2-speed-jog-1p2","label":"Jog / path target 1.2 m/s","speed_m_s":1.2,"prompt":"A person jogs forward slowly with relaxed rhythmic arm swings."},
+  {"id":"r2-speed-run-3","label":"Run / path target 3 m/s","speed_m_s":3.0,"prompt":"A person runs forward briskly with strong alternating strides and arm swings."},
+  {"id":"r2-speed-sprint-5","label":"Sprint / path target 5 m/s","speed_m_s":5.0,"prompt":"A person sprints forward quickly with long powerful strides and vigorous arm swings."}
+ ],
+ "scope":"Paired native Kimodo dense root-path constraints; no posthoc root stretching or playback speed changes. Targets are source SOMA-scale speeds. Actual hip/root speed and constraint errors must be measured."
+}

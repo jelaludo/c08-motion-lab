@@ -1,0 +1,129 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "passed",
+    "checks": [
+      {
+        "name": "single page content and evidence",
+        "status": "passed",
+        "games": 5,
+        "rows": 14,
+        "sources": 9,
+        "links": [
+          "https://images.pcgamingwiki.com/3/3b/Red_Dead_Redemption_2_Key_Mapping_settings.png",
+          "https://cdn-l-thewitcher.cdprojektred.com/media/TW3/Pdf/Manuals/PC/The_Witcher_3_Wild_Hunt_Game_Manual_PC_EN.pdf",
+          "https://vulkk.com/2022/02/26/elden-ring-pc-and-console-controls-guide-and-lists/",
+          "https://www.fromsoftware.jp/manual/eldenring/win/operation_appendix.html",
+          "https://game.capcom.com/manual/re4/en/steam/page/2/1",
+          "https://frondtech.com/resident-evil-4-remake-controls-and-key-bindings/",
+          "https://docs.fivem.net/docs/game-references/controls/",
+          "https://www.rockstargames.com/newswire/article/51974aa3a724o2/rockstar-game-tips-tailoring-your-settings-and-controls-in",
+          "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/107"
+        ],
+        "p0": 9
+      },
+      {
+        "name": "key filter and interactive map",
+        "status": "passed",
+        "filter": true,
+        "keyboard_map": true,
+        "all_audit_families": 13
+      },
+      {
+        "name": "study viewport",
+        "status": "passed",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "name": "study viewport",
+        "status": "passed",
+        "width": 844,
+        "height": 390
+      },
+      {
+        "name": "Hybrid profile and free/focus movement",
+        "status": "passed",
+        "free": {
+          "facing": -1.5707963267948961,
+          "p": [
+            -3.6400252333214067,
+            0,
+            0
+          ],
+          "clip": "game-walk-forward"
+        },
+        "focused": {
+          "focus": true,
+          "facing": -3.643497941663484e-16,
+          "p": [
+            -3.6400252333214067,
+            0,
+            0
+          ],
+          "clip": "game-walk-right"
+        }
+      },
+      {
+        "name": "record and reload key separation",
+        "status": "passed",
+        "r_reserved": true,
+        "shift_r_records": true
+      },
+      {
+        "name": "Alt dodge and Q recenter",
+        "status": "passed",
+        "yaw": 0.4
+      },
+      {
+        "name": "context E and prompt",
+        "status": "passed",
+        "terminal_prompt": true,
+        "carried_priority": true
+      },
+      {
+        "name": "sprint toggle, pause and modal isolation",
+        "status": "passed",
+        "sprint_toggle": true,
+        "modifier_no_leak": true,
+        "escape_pause": true,
+        "modal_isolation": true
+      },
+      {
+        "name": "preset persistence and original Lab bindings",
+        "status": "passed",
+        "lab_q": true,
+        "lab_r": true,
+        "hybrid_persists": true
+      },
+      {
+        "name": "game viewport",
+        "status": "passed",
+        "w": 1366,
+        "h": 768,
+        "sw": 1366,
+        "sh": 768,
+        "canvas": 656
+      },
+      {
+        "name": "game viewport",
+        "status": "passed",
+        "w": 390,
+        "h": 844,
+        "sw": 390,
+        "sh": 844,
+        "canvas": 642
+      },
+      {
+        "name": "game viewport",
+        "status": "passed",
+        "w": 844,
+        "h": 390,
+        "sw": 844,
+        "sh": 390,
+        "canvas": 318
+      }
+    ],
+    "errors": []
+  }
+}

@@ -1,0 +1,647 @@
+{
+  "schema": "kimodo-controls-study/1",
+  "checked": "2026-11-02",
+  "scope": "PC on-foot keyboard/mouse references. RE4 means 2023 remake; not the 2005 tank-control original. Default/reference layouts are not locally verified installed builds. Player expectations below are design inferences, not a user survey.",
+  "games": [
+    {
+      "id": "rdr2",
+      "name": "RDR2",
+      "scope": "PC on-foot reference capture",
+      "sources": [
+        "rdr"
+      ],
+      "lesson": "Keep item handling and prompts readable; distinguish environmental use from combat input. Weight should come from animation without hiding the accepted input."
+    },
+    {
+      "id": "witcher3",
+      "name": "The Witcher 3",
+      "scope": "Classic PC manual",
+      "sources": [
+        "witcher"
+      ],
+      "lesson": "Separate a short evasive step from a long roll. Combat targeting changes movement expectations; one generic dodge is insufficient."
+    },
+    {
+      "id": "eldenring",
+      "name": "Elden Ring*",
+      "scope": "Launch-era PC reference; conflicting publisher variant below",
+      "sources": [
+        "er-observed",
+        "er-manual"
+      ],
+      "lesson": "Target-facing combat, attack commitment and evasion need explicit states. Adopt those ideas independently of its shared dash/dodge key."
+    },
+    {
+      "id": "re4",
+      "name": "Resident Evil 4",
+      "scope": "2023 remake, PC reported defaults",
+      "sources": [
+        "capcom",
+        "re4-observed"
+      ],
+      "lesson": "Over-the-shoulder focus, quick turn and contextual traversal provide distinct modes. A dedicated parry key is not a free-jump key."
+    },
+    {
+      "id": "gta5",
+      "name": "GTA V",
+      "scope": "On-foot default input reference",
+      "sources": [
+        "gta",
+        "rockstar"
+      ],
+      "lesson": "Use clear transitions between locomotion, aim-strafing, cover and object/vehicle interaction. Vehicle systems are outside this lab's current scope."
+    }
+  ],
+  "key_rows": [
+    {
+      "key": "WASD",
+      "values": {
+        "rdr2": "Move",
+        "witcher3": "Move",
+        "eldenring": "Move",
+        "re4": "Move",
+        "gta5": "Move"
+      }
+    },
+    {
+      "key": "Mouse",
+      "values": {
+        "rdr2": "Camera / aim",
+        "witcher3": "Camera / aim",
+        "eldenring": "Camera / target selection",
+        "re4": "Camera / aim",
+        "gta5": "Camera / aim"
+      }
+    },
+    {
+      "key": "E",
+      "values": {
+        "rdr2": "Interact / mount / enter; other uses are contextual",
+        "witcher3": "Interact / dismount",
+        "eldenring": "Event action / examine / interact",
+        "re4": "Crouch / stand / contextual evade",
+        "gta5": "Context / pickup / talk"
+      }
+    },
+    {
+      "key": "F",
+      "values": {
+        "rdr2": "Melee / context action 2",
+        "witcher3": "Second consumable slot",
+        "eldenring": "Jump*",
+        "re4": "Interact / examine / contextual melee",
+        "gta5": "Enter / exit vehicle"
+      }
+    },
+    {
+      "key": "Shift",
+      "values": {
+        "rdr2": "Run / sprint",
+        "witcher3": "Faster movement; modifies strong attacks",
+        "eldenring": "Heavy attack / skill modifier*",
+        "re4": "Run",
+        "gta5": "Sprint"
+      }
+    },
+    {
+      "key": "Space",
+      "values": {
+        "rdr2": "Jump / context action",
+        "witcher3": "Jump / climb / surface; hold for combat roll",
+        "eldenring": "Tap backstep / directional roll; hold dash*",
+        "re4": "Ready knife / parry; no free jump",
+        "gta5": "Jump / climb context"
+      }
+    },
+    {
+      "key": "C / Ctrl / X",
+      "values": {
+        "rdr2": "Ctrl crouch; C look behind; X shoulder change",
+        "witcher3": "Ctrl walk/run; C sheathe; X call/stop horse",
+        "eldenring": "X crouch; Alt controls movement speed*",
+        "re4": "E crouch; Ctrl partner command",
+        "gta5": "Ctrl stealth; C look behind"
+      }
+    },
+    {
+      "key": "Alt",
+      "values": {
+        "rdr2": "Not assigned a core on-foot action here",
+        "witcher3": "Short dodge",
+        "eldenring": "Movement-speed modifier*",
+        "re4": "Scope zoom",
+        "gta5": "Character wheel"
+      }
+    },
+    {
+      "key": "Q",
+      "values": {
+        "rdr2": "Cover / contextual combat command",
+        "witcher3": "Cast selected sign",
+        "eldenring": "Camera reset / lock-on (also MMB)",
+        "re4": "Quick turn",
+        "gta5": "Take / leave cover"
+      }
+    },
+    {
+      "key": "LMB",
+      "values": {
+        "rdr2": "Attack / fire",
+        "witcher3": "Fast attack; Shift modifier for strong",
+        "eldenring": "Attack",
+        "re4": "Fire / knife attack",
+        "gta5": "Attack / fire"
+      }
+    },
+    {
+      "key": "RMB",
+      "values": {
+        "rdr2": "Aim / interaction focus",
+        "witcher3": "Senses outside combat; parry / counter in combat",
+        "eldenring": "Guard / left-hand action",
+        "re4": "Aim",
+        "gta5": "Aim"
+      }
+    },
+    {
+      "key": "R",
+      "values": {
+        "rdr2": "Reload; take/carry or melee block by context",
+        "witcher3": "First consumable slot",
+        "eldenring": "Use selected item",
+        "re4": "Reload",
+        "gta5": "Reload"
+      }
+    },
+    {
+      "key": "Tab",
+      "values": {
+        "rdr2": "Weapon menu / holster context",
+        "witcher3": "Quick-access menu",
+        "eldenring": "Not a core action in this reference",
+        "re4": "Attache case / inventory",
+        "gta5": "Weapon wheel"
+      }
+    },
+    {
+      "key": "1-4",
+      "values": {
+        "rdr2": "Weapon slots",
+        "witcher3": "Sword / sign selection begins here",
+        "eldenring": "Not a shared numeric-slot convention",
+        "re4": "Weapon shortcuts",
+        "gta5": "Weapon selection shortcuts"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "rdr",
+      "label": "RDR2 in-game Key Mapping capture",
+      "url": "https://images.pcgamingwiki.com/3/3b/Red_Dead_Redemption_2_Key_Mapping_settings.png",
+      "kind": "Primary game UI, hosted by PCGamingWiki",
+      "note": "Inspected the on-foot and combat sections. Host reports capture uploaded October 2024; the image itself does not prove factory-reset settings."
+    },
+    {
+      "id": "witcher",
+      "label": "CD Projekt RED PC game manual, p. 4",
+      "url": "https://cdn-l-thewitcher.cdprojektred.com/media/TW3/Pdf/Manuals/PC/The_Witcher_3_Wild_Hunt_Game_Manual_PC_EN.pdf",
+      "kind": "Publisher manual",
+      "note": "Classic keyboard assignment; not a claim that every optional next-gen control scheme is identical."
+    },
+    {
+      "id": "er-observed",
+      "label": "VULKK: first-hand PC control tests",
+      "url": "https://vulkk.com/2022/02/26/elden-ring-pc-and-console-controls-guide-and-lists/",
+      "kind": "First-hand reported testing, with in-game captures",
+      "note": "Author explicitly reports testing the controls. Use the PC Defaults column, not the Change to recommendations. Reference for the familiar launch-era layout."
+    },
+    {
+      "id": "er-manual",
+      "label": "FromSoftware PC online manual: keyboard appendix",
+      "url": "https://www.fromsoftware.jp/manual/eldenring/win/operation_appendix.html",
+      "kind": "Publisher manual, Japanese",
+      "note": "Currently lists Shift dash/roll, Space jump, G crouch and X speed modifier. Conflicts with the launch reference. No evidence here that an update changed all installed defaults; do not infer that."
+    },
+    {
+      "id": "capcom",
+      "label": "Capcom RE4 (2023) official manual: controls",
+      "url": "https://game.capcom.com/manual/re4/en/steam/page/2/1",
+      "kind": "Publisher manual",
+      "note": "Confirms action vocabulary, configurable run/crouch hold or toggle, quick turn and repeated-input alternatives. Steam manual diagrams describe controller Type A, not a keyboard binding chart."
+    },
+    {
+      "id": "re4-observed",
+      "label": "Akash Roy: first-hand reported RE4 PC defaults",
+      "url": "https://frondtech.com/resident-evil-4-remake-controls-and-key-bindings/",
+      "kind": "First-hand reported default settings",
+      "note": "Author states listed bindings are unchanged defaults, March 2023. Keyboard rows below use this report; publisher manual separately supports action behavior. Not re-tested in a local RE4 installation."
+    },
+    {
+      "id": "gta",
+      "label": "Cfx.re GTA V input-control reference",
+      "url": "https://docs.fivem.net/docs/game-references/controls/",
+      "kind": "Platform developer reference",
+      "note": "GTA input IDs/default QWERTY mappings. Game scripts and multiplayer servers can change contextual behavior; this is not a universal FiveM server layout."
+    },
+    {
+      "id": "rockstar",
+      "label": "Rockstar: GTAV PC control customization",
+      "url": "https://www.rockstargames.com/newswire/article/51974aa3a724o2/rockstar-game-tips-tailoring-your-settings-and-controls-in",
+      "kind": "Publisher guidance",
+      "note": "Confirms most in-game inputs can be rebound, with menu navigation exceptions."
+    },
+    {
+      "id": "accessibility",
+      "label": "Microsoft Xbox Accessibility Guideline 107: Input",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/107",
+      "kind": "Platform accessibility guidance",
+      "note": "Supports action remapping, updated prompts, digital alternatives and options that reduce holding or repeated presses."
+    }
+  ],
+  "hybrid": [
+    {
+      "action": "Movement / camera",
+      "input": "WASD + mouse",
+      "live": "Implemented",
+      "detail": "Explore facing travel. Hold RMB to face camera heading and strafe. Mouse look uses browser pointer capture; first captured click does not attack."
+    },
+    {
+      "action": "Faster movement",
+      "input": "Shift",
+      "live": "Implemented",
+      "detail": "Sprint separated from jump and dodge. Choose Hold or Toggle in Controls. Normalize diagonals; keep crouch/carry speed limits."
+    },
+    {
+      "action": "Walk modifier",
+      "input": "Caps Lock",
+      "live": "Implemented",
+      "detail": "Walk/jog toggle. Numeric 1-4 remain explicit lab speed overrides; a finished game could use those slots for equipment."
+    },
+    {
+      "action": "Jump",
+      "input": "Space",
+      "live": "Implemented",
+      "detail": "Speed-sensitive jump on press. Air height, landing and control remain game-controller responsibilities. Variable-height hold/release jumping is not implemented."
+    },
+    {
+      "action": "Evade",
+      "input": "Left Alt + direction",
+      "live": "Implemented: existing dodge actions",
+      "detail": "Keeps Space unambiguous. Current clips are one-shots; a displacement-aware sidestep/roll system and invulnerability rules remain missing."
+    },
+    {
+      "action": "Crouch / prone",
+      "input": "C / Z",
+      "live": "Implemented",
+      "detail": "C toggles crouch; Z toggles prone. Crouch-to-stand checks headroom. Ctrl alias, hold-crouch, faster transitions and headroom checks on every stance exit need further work."
+    },
+    {
+      "action": "Context interaction",
+      "input": "E",
+      "live": "Implemented: box / terminal / bench",
+      "detail": "Show the action and target before pressing. A carried box gets put down; otherwise use the nearest usable object. View/occlusion scoring and progress/cancel affordances remain planned."
+    },
+    {
+      "action": "Primary attack / secondary melee",
+      "input": "LMB / F",
+      "live": "Implemented",
+      "detail": "LMB jab/cross, F front kick. Movement-aware combat, hit validation and weapon layers are not implemented."
+    },
+    {
+      "action": "Focus / guard",
+      "input": "Hold RMB / B",
+      "live": "Focus implemented; held guard missing",
+      "detail": "RMB selects facing/strafe behavior, not a fictional weapon aim or held guard. B triggers the existing one-shot block."
+    },
+    {
+      "action": "Target lock / recenter",
+      "input": "Q or MMB",
+      "live": "Recenter implemented; lock-on missing",
+      "detail": "Without a target system this recenters the camera. Actual lock acquisition, target switching and target-facing strafes need implementation."
+    },
+    {
+      "action": "Reload / camera shoulder",
+      "input": "R / V",
+      "live": "R reserved; V camera side implemented",
+      "detail": "This lab has no weapon/reload system. Reserve R now rather than training recording muscle memory there. V swaps camera side while focused."
+    },
+    {
+      "action": "Lab recording",
+      "input": "Shift+R or Record button",
+      "live": "Implemented",
+      "detail": "Recording stays available without consuming the usual reload key. Original Lab preset retains R."
+    },
+    {
+      "action": "Pause / pointer release",
+      "input": "Esc; P alternative",
+      "live": "Implemented",
+      "detail": "Esc pauses and releases mouse in Hybrid. Menus keep keyboard focus and gameplay input is suppressed."
+    },
+    {
+      "action": "Personal control choices",
+      "input": "Remap; hold/toggle; sensitivity / invert",
+      "live": "Sprint toggle implemented; rest planned",
+      "detail": "Action rebinding, binding conflict checks, camera sensitivity/inversion and keyboard camera alternatives remain controller work. Not new animation requirements."
+    }
+  ],
+  "audit": [
+    {
+      "id": "phase",
+      "priority": "P0",
+      "name": "Gait phase, starts/stops and pivots",
+      "status": "Partial: existing clips + controller gap",
+      "existing": [
+        "game-walk-forward",
+        "game-jog-forward",
+        "game-run-forward",
+        "game-sprint-forward",
+        "game-start-run",
+        "game-stop-run",
+        "game-turn-left",
+        "game-turn-right",
+        "game-turn-back"
+      ],
+      "missing": [
+        "Left/right foot phase tags",
+        "Phase-aligned gait changes",
+        "Foot-led starts/stops in multiple directions",
+        "45 / 90 / 180 degree moving pivots",
+        "Turn-in-place wiring"
+      ],
+      "work": "Both: metadata/controller first, then targeted motion variants.",
+      "test": "Walk to jog to sprint to stop, on both lead feet; turn 90 degrees and reverse 180 degrees without foot snaps. Current motion() resets phase when changing clips."
+    },
+    {
+      "id": "guard",
+      "priority": "P0",
+      "name": "Sustained combat-ready posture",
+      "status": "Game loops missing; earlier guard sources exist",
+      "existing": [
+        "game-block",
+        "game-jab",
+        "game-cross",
+        "game-combo",
+        "game-kick"
+      ],
+      "missing": [
+        "Guard enter / idle loop / exit",
+        "Guard walk and strafe in eight directions",
+        "Guard-hit / parry success / recovery"
+      ],
+      "work": "Reuse earlier Fight guard/footwork takes before new generation; derive proper loops and add state/interrupt rules.",
+      "test": "Hold focus for 10 seconds, circle and backpedal, attack and return to guard without dropping into relaxed idle.",
+      "prior_lab": [
+        "fight-guard-seed101",
+        "fight-footwork-seed101",
+        "fight-block-counter-seed101"
+      ]
+    },
+    {
+      "id": "target",
+      "priority": "P0",
+      "name": "Real target-facing locomotion",
+      "status": "Ordinary strafe clips exist; target system missing",
+      "existing": [
+        "game-walk-left",
+        "game-walk-right",
+        "game-walk-backward",
+        "game-run-left",
+        "game-run-right"
+      ],
+      "missing": [
+        "Target acquisition / switching / loss",
+        "Actor-local direction selection around a target",
+        "Camera-target coordination",
+        "Sprint / dodge lock-on policies"
+      ],
+      "work": "Controller and camera first. Existing directional loops can seed the test.",
+      "test": "Circle a moving target clockwise/counterclockwise and retreat while facing it. A focus camera-heading strafe is not target lock.",
+      "prior_lab": [
+        "fight-footwork-seed101"
+      ]
+    },
+    {
+      "id": "evasion",
+      "priority": "P0",
+      "name": "Short dodge versus long roll",
+      "status": "Four directional dodge probes; no roll set",
+      "existing": [
+        "game-dodge-forward",
+        "game-dodge-backward",
+        "game-dodge-left",
+        "game-dodge-right"
+      ],
+      "missing": [
+        "Compact sidestep / backstep / return",
+        "Forward/back/left/right rolls",
+        "World displacement curves",
+        "Recovery and cancel windows"
+      ],
+      "work": "Reuse the earlier backward shoulder-roll and slip sources where suitable. Still needs a directional roll set and controller travel, timing and recovery.",
+      "test": "A dodge must change world position and clear a marked threat lane; a roll travels farther. Test input during recovery.",
+      "prior_lab": [
+        "r2-ukemi-forward-seed101",
+        "fight-slip-counter-seed101"
+      ]
+    },
+    {
+      "id": "jump",
+      "priority": "P0",
+      "name": "Reusable airborne / fall / landing states",
+      "status": "Full jump candidates exist; phase library partial",
+      "existing": [
+        "game-jump-standing",
+        "game-jump-walk",
+        "game-jump-jog",
+        "game-jump-run",
+        "game-jump-sprint",
+        "game-jump-high",
+        "game-jump-left",
+        "game-jump-right",
+        "game-jump-backward",
+        "game-land-hard"
+      ],
+      "missing": [
+        "Reusable rise / apex / falling loops",
+        "Soft landing + left/right running landings",
+        "Step-off ledge fall",
+        "Jump backward-left/right diagonals",
+        "Land-to-run / stumble / roll-out"
+      ],
+      "work": "Segment/tag existing jumps first; generate only missing recovery/fall variants.",
+      "test": "Jump at different approach speeds and off a ledge, land early/late, then continue in the held direction without replaying an entire jump."
+    },
+    {
+      "id": "stance",
+      "priority": "P0",
+      "name": "Responsive stance transitions",
+      "status": "Loops exist; transitions need responsiveness work",
+      "existing": [
+        "game-crouch-down",
+        "game-crouch-up",
+        "game-crouch-idle",
+        "game-crouch-forward",
+        "game-crouch-backward",
+        "game-crouch-left",
+        "game-crouch-right",
+        "game-prone-down",
+        "game-getup-front"
+      ],
+      "missing": [
+        "Moving stand-to-crouch and crouch-to-stand transitions",
+        "Headroom checks across every stance exit, including prone",
+        "Prone entry/exit support contacts",
+        "Intent buffering on rapid press/release"
+      ],
+      "work": "Trim and tag transition windows, then controller rules; contact retakes only where needed.",
+      "test": "Crouch during a run and release under a low ceiling. Full source transition durations are currently several seconds; do not confuse this with game input responsiveness."
+    },
+    {
+      "id": "carry",
+      "priority": "P0",
+      "name": "Carrying under real interaction conditions",
+      "status": "Baseline present; support and variants partial",
+      "existing": [
+        "game-carry-idle",
+        "game-carry-forward",
+        "game-carry-backward",
+        "game-carry-left",
+        "game-carry-right",
+        "game-carry-jog",
+        "game-pickup",
+        "game-putdown"
+      ],
+      "missing": [
+        "Diagonal carry loops / turning starts-stops",
+        "Different box weights/heights",
+        "Shelf pickup and placement",
+        "Interrupt / drop / stagger while loaded",
+        "Grip contacts and finger curl"
+      ],
+      "work": "Both. Fix grip/contact rules and prop parenting before requesting many more clips.",
+      "test": "Lift, rotate, carry diagonally, stop, put down on a marked surface and interrupt safely. Record props separately: current character GLB recording excludes them."
+    },
+    {
+      "id": "actions",
+      "priority": "P0",
+      "name": "Action timing, buffering and safe context",
+      "status": "Controller gap, not mainly a motion gap",
+      "existing": [
+        "game-panel",
+        "game-pickup",
+        "game-putdown",
+        "game-sit",
+        "game-stand-seat"
+      ],
+      "missing": [
+        "Action acceptance feedback",
+        "Short bounded input buffer",
+        "Explicit interruptible / committed windows",
+        "View / angle / occlusion scoring beyond prototype distance checks",
+        "Root ownership and action event markers"
+      ],
+      "work": "Controller/metadata first.",
+      "test": "Tap jump/evade during attack recovery; avoid stale actions later. E must show which object will respond. Inputs currently get rejected while another action is active."
+    },
+    {
+      "id": "weapon",
+      "priority": "P1",
+      "name": "Weapon aim, draw and reload",
+      "status": "Missing; no weapon rig/system",
+      "existing": [],
+      "missing": [
+        "Draw / holster",
+        "Aim idle + standing/crouched 8-way movement",
+        "Upper-body aim offsets",
+        "Standing/crouched/moving reload",
+        "Recoil, aim enter/exit, interrupted reload"
+      ],
+      "work": "Requires weapon props, attachment rig and animation layers as well as clips.",
+      "test": "Aim over either shoulder, move and reload while feet continue their gait. Do not claim an RMB focus mode supplies these animations."
+    },
+    {
+      "id": "cover",
+      "priority": "P1",
+      "name": "Cover and contextual traversal",
+      "status": "Vault/mantle/ladder probes only",
+      "existing": [
+        "game-vault",
+        "game-mantle",
+        "game-ladder",
+        "game-balance"
+      ],
+      "missing": [
+        "Cover enter / idle / shuffle / exit",
+        "Corner and peek states",
+        "Ladder mount / idle / up / down / dismount",
+        "Low/high vault and mantle variants",
+        "Contact markers / ledge-height adaptation"
+      ],
+      "work": "Environment alignment, collision and contact IK plus targeted clips.",
+      "test": "Same action at several real obstacle heights with hands and feet staying attached. A text-prompt vault is not validated contact traversal."
+    },
+    {
+      "id": "reactions",
+      "priority": "P1",
+      "name": "Directional reactions and ground recovery",
+      "status": "Partial contact probes",
+      "existing": [
+        "game-hit-front",
+        "game-hit-left",
+        "game-knockdown",
+        "game-death",
+        "game-getup-front",
+        "game-getup-back"
+      ],
+      "missing": [
+        "Right/back hits and directional knockdowns",
+        "Downed idle / side get-up",
+        "Moving flinch, carried-object interruption",
+        "Support-aware get-up and floor clearance"
+      ],
+      "work": "Repair existing body/floor contacts before multiplying variants.",
+      "test": "Both robots recover without armour, head or hands passing through floor or seats. Raw ground intersections remain measured in this kit."
+    },
+    {
+      "id": "tools",
+      "priority": "P0",
+      "name": "Remapping and readable input feedback",
+      "status": "Partial controller/UI support",
+      "existing": [],
+      "missing": [
+        "Full action rebinding + conflict detection",
+        "Updated hints after remapping",
+        "Hold/toggle crouch and focus",
+        "Sensitivity / inversion / digital camera alternatives",
+        "Gamepad deadzones and action map"
+      ],
+      "work": "Input/UI work. Requires no new mocap.",
+      "test": "Navigate controls with keyboard, remap E, reload and export settings, and verify prompts/menus preserve the same action semantics."
+    },
+    {
+      "id": "optional",
+      "priority": "P2",
+      "name": "Genre-specific expansion",
+      "status": "Deferred until gameplay requires it",
+      "existing": [],
+      "missing": [
+        "Swim / underwater",
+        "Vehicle enter / driving / exit",
+        "Mount / ride / dismount",
+        "Paired grapples / throws / assists",
+        "Magic / flight / transformations"
+      ],
+      "work": "New gameplay, props and motions; not baseline locomotion requirements.",
+      "test": "Add only after the level and game design need that mechanic; do not copy every feature from all five games into one controller."
+    }
+  ],
+  "principles": [
+    "Use a stable action vocabulary: move, sprint, jump, evade, interact, focus. Nearby keys are not evidence of identical mechanics.",
+    "Separate free exploration, focused strafing and real target lock. Camera orbit alone must not drag an idle character around.",
+    "Keep interactions explicit and targeted. Show the target before E; do not turn a harmless interaction key into an attack.",
+    "Define action timing and interruption. A clip ending and a character being ready for the next input are separate decisions.",
+    "Preserve stride phase, contacts and travel. More generated clips do not substitute for animation state metadata and collision.",
+    "Offer personal input choices. Remapping and hold/toggle options matter more than declaring C or Ctrl universally correct."
+  ]
+}

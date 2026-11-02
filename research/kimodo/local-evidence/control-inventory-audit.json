@@ -1,0 +1,336 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "schema": "kimodo-control-audit/1",
+    "status": "passed",
+    "checked": "2026-11-02",
+    "catalog_motion_types": 94,
+    "catalog_takes": 188,
+    "bodies": [
+      "c08",
+      "brek43"
+    ],
+    "referenced_existing_motion_ids": 62,
+    "priorities": {
+      "P0": 9,
+      "P1": 3,
+      "P2": 1
+    },
+    "families": [
+      {
+        "id": "phase",
+        "priority": "P0",
+        "name": "Gait phase, starts/stops and pivots",
+        "status": "Partial: existing clips + controller gap",
+        "existing": [
+          "game-walk-forward",
+          "game-jog-forward",
+          "game-run-forward",
+          "game-sprint-forward",
+          "game-start-run",
+          "game-stop-run",
+          "game-turn-left",
+          "game-turn-right",
+          "game-turn-back"
+        ],
+        "missing": [
+          "Left/right foot phase tags",
+          "Phase-aligned gait changes",
+          "Foot-led starts/stops in multiple directions",
+          "45 / 90 / 180 degree moving pivots",
+          "Turn-in-place wiring"
+        ],
+        "work": "Both: metadata/controller first, then targeted motion variants.",
+        "test": "Walk to jog to sprint to stop, on both lead feet; turn 90 degrees and reverse 180 degrees without foot snaps. Current motion() resets phase when changing clips."
+      },
+      {
+        "id": "guard",
+        "priority": "P0",
+        "name": "Sustained combat-ready posture",
+        "status": "Game loops missing; earlier guard sources exist",
+        "existing": [
+          "game-block",
+          "game-jab",
+          "game-cross",
+          "game-combo",
+          "game-kick"
+        ],
+        "missing": [
+          "Guard enter / idle loop / exit",
+          "Guard walk and strafe in eight directions",
+          "Guard-hit / parry success / recovery"
+        ],
+        "work": "Reuse earlier Fight guard/footwork takes before new generation; derive proper loops and add state/interrupt rules.",
+        "test": "Hold focus for 10 seconds, circle and backpedal, attack and return to guard without dropping into relaxed idle.",
+        "prior_lab": [
+          "fight-guard-seed101",
+          "fight-footwork-seed101",
+          "fight-block-counter-seed101"
+        ]
+      },
+      {
+        "id": "target",
+        "priority": "P0",
+        "name": "Real target-facing locomotion",
+        "status": "Ordinary strafe clips exist; target system missing",
+        "existing": [
+          "game-walk-left",
+          "game-walk-right",
+          "game-walk-backward",
+          "game-run-left",
+          "game-run-right"
+        ],
+        "missing": [
+          "Target acquisition / switching / loss",
+          "Actor-local direction selection around a target",
+          "Camera-target coordination",
+          "Sprint / dodge lock-on policies"
+        ],
+        "work": "Controller and camera first. Existing directional loops can seed the test.",
+        "test": "Circle a moving target clockwise/counterclockwise and retreat while facing it. A focus camera-heading strafe is not target lock.",
+        "prior_lab": [
+          "fight-footwork-seed101"
+        ]
+      },
+      {
+        "id": "evasion",
+        "priority": "P0",
+        "name": "Short dodge versus long roll",
+        "status": "Four directional dodge probes; no roll set",
+        "existing": [
+          "game-dodge-forward",
+          "game-dodge-backward",
+          "game-dodge-left",
+          "game-dodge-right"
+        ],
+        "missing": [
+          "Compact sidestep / backstep / return",
+          "Forward/back/left/right rolls",
+          "World displacement curves",
+          "Recovery and cancel windows"
+        ],
+        "work": "Reuse the earlier backward shoulder-roll and slip sources where suitable. Still needs a directional roll set and controller travel, timing and recovery.",
+        "test": "A dodge must change world position and clear a marked threat lane; a roll travels farther. Test input during recovery.",
+        "prior_lab": [
+          "r2-ukemi-forward-seed101",
+          "fight-slip-counter-seed101"
+        ]
+      },
+      {
+        "id": "jump",
+        "priority": "P0",
+        "name": "Reusable airborne / fall / landing states",
+        "status": "Full jump candidates exist; phase library partial",
+        "existing": [
+          "game-jump-standing",
+          "game-jump-walk",
+          "game-jump-jog",
+          "game-jump-run",
+          "game-jump-sprint",
+          "game-jump-high",
+          "game-jump-left",
+          "game-jump-right",
+          "game-jump-backward",
+          "game-land-hard"
+        ],
+        "missing": [
+          "Reusable rise / apex / falling loops",
+          "Soft landing + left/right running landings",
+          "Step-off ledge fall",
+          "Jump backward-left/right diagonals",
+          "Land-to-run / stumble / roll-out"
+        ],
+        "work": "Segment/tag existing jumps first; generate only missing recovery/fall variants.",
+        "test": "Jump at different approach speeds and off a ledge, land early/late, then continue in the held direction without replaying an entire jump."
+      },
+      {
+        "id": "stance",
+        "priority": "P0",
+        "name": "Responsive stance transitions",
+        "status": "Loops exist; transitions need responsiveness work",
+        "existing": [
+          "game-crouch-down",
+          "game-crouch-up",
+          "game-crouch-idle",
+          "game-crouch-forward",
+          "game-crouch-backward",
+          "game-crouch-left",
+          "game-crouch-right",
+          "game-prone-down",
+          "game-getup-front"
+        ],
+        "missing": [
+          "Moving stand-to-crouch and crouch-to-stand transitions",
+          "Headroom checks across every stance exit, including prone",
+          "Prone entry/exit support contacts",
+          "Intent buffering on rapid press/release"
+        ],
+        "work": "Trim and tag transition windows, then controller rules; contact retakes only where needed.",
+        "test": "Crouch during a run and release under a low ceiling. Full source transition durations are currently several seconds; do not confuse this with game input responsiveness."
+      },
+      {
+        "id": "carry",
+        "priority": "P0",
+        "name": "Carrying under real interaction conditions",
+        "status": "Baseline present; support and variants partial",
+        "existing": [
+          "game-carry-idle",
+          "game-carry-forward",
+          "game-carry-backward",
+          "game-carry-left",
+          "game-carry-right",
+          "game-carry-jog",
+          "game-pickup",
+          "game-putdown"
+        ],
+        "missing": [
+          "Diagonal carry loops / turning starts-stops",
+          "Different box weights/heights",
+          "Shelf pickup and placement",
+          "Interrupt / drop / stagger while loaded",
+          "Grip contacts and finger curl"
+        ],
+        "work": "Both. Fix grip/contact rules and prop parenting before requesting many more clips.",
+        "test": "Lift, rotate, carry diagonally, stop, put down on a marked surface and interrupt safely. Record props separately: current character GLB recording excludes them."
+      },
+      {
+        "id": "actions",
+        "priority": "P0",
+        "name": "Action timing, buffering and safe context",
+        "status": "Controller gap, not mainly a motion gap",
+        "existing": [
+          "game-panel",
+          "game-pickup",
+          "game-putdown",
+          "game-sit",
+          "game-stand-seat"
+        ],
+        "missing": [
+          "Action acceptance feedback",
+          "Short bounded input buffer",
+          "Explicit interruptible / committed windows",
+          "View / angle / occlusion scoring beyond prototype distance checks",
+          "Root ownership and action event markers"
+        ],
+        "work": "Controller/metadata first.",
+        "test": "Tap jump/evade during attack recovery; avoid stale actions later. E must show which object will respond. Inputs currently get rejected while another action is active."
+      },
+      {
+        "id": "weapon",
+        "priority": "P1",
+        "name": "Weapon aim, draw and reload",
+        "status": "Missing; no weapon rig/system",
+        "existing": [],
+        "missing": [
+          "Draw / holster",
+          "Aim idle + standing/crouched 8-way movement",
+          "Upper-body aim offsets",
+          "Standing/crouched/moving reload",
+          "Recoil, aim enter/exit, interrupted reload"
+        ],
+        "work": "Requires weapon props, attachment rig and animation layers as well as clips.",
+        "test": "Aim over either shoulder, move and reload while feet continue their gait. Do not claim an RMB focus mode supplies these animations."
+      },
+      {
+        "id": "cover",
+        "priority": "P1",
+        "name": "Cover and contextual traversal",
+        "status": "Vault/mantle/ladder probes only",
+        "existing": [
+          "game-vault",
+          "game-mantle",
+          "game-ladder",
+          "game-balance"
+        ],
+        "missing": [
+          "Cover enter / idle / shuffle / exit",
+          "Corner and peek states",
+          "Ladder mount / idle / up / down / dismount",
+          "Low/high vault and mantle variants",
+          "Contact markers / ledge-height adaptation"
+        ],
+        "work": "Environment alignment, collision and contact IK plus targeted clips.",
+        "test": "Same action at several real obstacle heights with hands and feet staying attached. A text-prompt vault is not validated contact traversal."
+      },
+      {
+        "id": "reactions",
+        "priority": "P1",
+        "name": "Directional reactions and ground recovery",
+        "status": "Partial contact probes",
+        "existing": [
+          "game-hit-front",
+          "game-hit-left",
+          "game-knockdown",
+          "game-death",
+          "game-getup-front",
+          "game-getup-back"
+        ],
+        "missing": [
+          "Right/back hits and directional knockdowns",
+          "Downed idle / side get-up",
+          "Moving flinch, carried-object interruption",
+          "Support-aware get-up and floor clearance"
+        ],
+        "work": "Repair existing body/floor contacts before multiplying variants.",
+        "test": "Both robots recover without armour, head or hands passing through floor or seats. Raw ground intersections remain measured in this kit."
+      },
+      {
+        "id": "tools",
+        "priority": "P0",
+        "name": "Remapping and readable input feedback",
+        "status": "Partial controller/UI support",
+        "existing": [],
+        "missing": [
+          "Full action rebinding + conflict detection",
+          "Updated hints after remapping",
+          "Hold/toggle crouch and focus",
+          "Sensitivity / inversion / digital camera alternatives",
+          "Gamepad deadzones and action map"
+        ],
+        "work": "Input/UI work. Requires no new mocap.",
+        "test": "Navigate controls with keyboard, remap E, reload and export settings, and verify prompts/menus preserve the same action semantics."
+      },
+      {
+        "id": "optional",
+        "priority": "P2",
+        "name": "Genre-specific expansion",
+        "status": "Deferred until gameplay requires it",
+        "existing": [],
+        "missing": [
+          "Swim / underwater",
+          "Vehicle enter / driving / exit",
+          "Mount / ride / dismount",
+          "Paired grapples / throws / assists",
+          "Magic / flight / transformations"
+        ],
+        "work": "New gameplay, props and motions; not baseline locomotion requirements.",
+        "test": "Add only after the level and game design need that mechanic; do not copy every feature from all five games into one controller."
+      }
+    ],
+    "runtime_source_sha256": "ce17f9b4885c1259272855436923653b8418d3c48497746b2fd35552a4d0746f",
+    "scope": "Static inventory/code audit. Existing candidate IDs do not establish accepted motion quality or completed game states.",
+    "earlier_lab_take_count": 90,
+    "prior_lab_sources": {
+      "fight-block-counter-seed101": {
+        "title": "Fight / block + counter / seed 101",
+        "url": "../kimodo-bipeds/?test=fight-block-counter-seed101&category=fight"
+      },
+      "fight-footwork-seed101": {
+        "title": "Fight / lateral footwork / seed 101",
+        "url": "../kimodo-bipeds/?test=fight-footwork-seed101&category=fight"
+      },
+      "fight-guard-seed101": {
+        "title": "Fight / boxing guard / seed 101",
+        "url": "../kimodo-bipeds/?test=fight-guard-seed101&category=fight"
+      },
+      "fight-slip-counter-seed101": {
+        "title": "Fight / slip + counter / seed 101",
+        "url": "../kimodo-bipeds/?test=fight-slip-counter-seed101&category=fight"
+      },
+      "r2-ukemi-forward-seed101": {
+        "title": "Backward shoulder roll / seed 101",
+        "url": "../kimodo-bipeds/?test=r2-ukemi-forward-seed101&category=ground"
+      }
+    }
+  }
+}

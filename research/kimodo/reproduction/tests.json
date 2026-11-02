@@ -1,0 +1,13 @@
+{
+  "model": "Kimodo-SOMA-RP-v1.2",
+  "duration_s": 4,
+  "seeds": [101, 202, 303],
+  "cases": [
+    {"id":"walk-neutral","prompt":"A person walks forward at a relaxed, steady pace."},
+    {"id":"walk-heavy","prompt":"A person walks forward slowly with heavy, deliberate footfalls and pronounced weight shifts."},
+    {"id":"walk-limp-left","prompt":"A person limps forward, keeping weight off the left leg and taking short uneven steps."},
+    {"id":"jump-nimble","prompt":"A person takes a short run-up and jumps lightly over a low obstacle, landing smoothly on both feet."},
+    {"id":"jump-effortful","prompt":"A person approaches a low obstacle cautiously, bends deeply, jumps over it with visible effort and regains balance after landing."}
+  ],
+  "scope":"First round: text-only comparisons, five behaviors and three fixed seeds. No obstacle geometry constraints yet. These prompts describe physical motion; robot identity is supplied by later retargeting."
+}

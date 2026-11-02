@@ -1,0 +1,5 @@
+Kimodo game-motion candidates: see ../dev-log/#game-kit and controls.html.
+This public site uses recorded generated clips with a browser controller.
+Source-motion GLBs are rebuilt; in-place packs exclude runtime controller and IK.
+Save take bakes the displayed character movement/IK, excluding props.
+Technical checks do not establish physical balance or production game acceptance.

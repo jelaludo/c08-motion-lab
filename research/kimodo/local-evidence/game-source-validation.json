@@ -1,0 +1,15 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "passed",
+    "source_takes": 188,
+    "body_clips": 376,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "max_fk_error_m": 3.805988175795037e-05,
+    "max_segment_length_error_m": 8.346643666778952e-06,
+    "source_hashes_match": true,
+    "raw_skin_floor_min_m": -0.6589823813819649,
+    "scope": "Structural/export fidelity checks. Finite data and valid GLBs do not certify contacts, balance, clearance, technique or visual acceptance."
+  }
+}

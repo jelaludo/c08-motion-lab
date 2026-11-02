@@ -143,3 +143,14 @@ Six creator-provided references are recovered with GEM-X and adapted directly fr
 ## Viewer-first layouts
 
 The eight test viewers prioritize animation and playback in the first screen. Comparisons have Focus/Enlarge controls; explanations, diagnostics, downloads and reviews open in accessible panels. Existing motion files and review identities are retained. Desktop and portrait/landscape phone checks are recorded in [viewport validation](research/viewer-layout-validation.json).
+# November update: Kimodo and a playable game-motion kit
+
+**[Game Kit / Hybrid controls](https://jelaludo.github.io/c08-motion-lab/kimodo-game/?controls=hybrid)** · **[Kimodo gallery](https://jelaludo.github.io/c08-motion-lab/kimodo-bipeds/)** · **[Five-game control study](https://jelaludo.github.io/c08-motion-lab/kimodo-game/controls.html)** · **[Updated dev log](https://jelaludo.github.io/c08-motion-lab/dev-log/)**
+
+The new public pages share 90 recorded Kimodo takes across four characters and a separate 94-type, two-take Game Kit for C08 Worker and B-REK43. The browser runs playback, blending, collision and contact adjustments; AI generation happened offline. Review both seeds, choose preferred/kept clips, export a character pack or record a play chain. Ground, seat and traversal contacts remain probes. Held guard, actual target lock and production engine acceptance remain unfinished.
+
+The control study compares PC references for RDR2, The Witcher 3, Elden Ring, Resident Evil 4 (2023) and GTA V. It distinguishes source/version uncertainty, a playable Hybrid subset and thirteen motion/controller audit families. Original Lab controls and all earlier experiments remain available. Reviews are origin-local: transfer localhost feedback with Export all reviews and Import.
+
+Large meshes and compressed animation tracks are content-addressed under `research/kimodo/assets/` and fetched from GitHub's raw asset host. Pages contains the UI and catalogs. Float32 source track arrays are preserved exactly; browser-exported GLBs are rebuilt files, not byte-identical originals. No model weights, encoder files, credentials, training dataset or private source videos are included. See [publication and rights scope](research/kimodo/publication.json), [asset/source evidence](research/kimodo/assets-manifest.json) and [playback validation](research/kimodo/public-playback-validation.json).
+
+To rebuild from the separate local Kimodo workspace: install the locked review dependencies in `tools/review`, run `tools/prepare_kimodo_assets.mjs --kimodo-root <workspace>`, then `tools/publish_kimodo_pages.py --kimodo-root <workspace>`. The raw workspace remains private. `tools/update_kimodo_dev_log.py` records the dated notebook entries. Public source/asset SHA values and expected joint samples support independent playback checks without downloading inference models.

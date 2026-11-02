@@ -1,0 +1,40 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "passed",
+    "results": [
+      {
+        "file": "web/kimodo-game/packs/c08-game-kit.glb",
+        "height_m": 1.9,
+        "travel_m": null,
+        "clips": 94,
+        "errors": 0,
+        "warnings": 0
+      },
+      {
+        "file": "web/kimodo-game/packs/brek43-game-kit.glb",
+        "height_m": 1.8999999999999995,
+        "travel_m": null,
+        "clips": 94,
+        "errors": 0,
+        "warnings": 0
+      },
+      {
+        "file": "logs/game-recording-validation.glb",
+        "height_m": 1.9612274649886063,
+        "travel_m": 2.5357701953415885,
+        "clips": 1,
+        "errors": 0,
+        "warnings": 0
+      },
+      {
+        "file": "logs/game-kept-validation.glb",
+        "height_m": 1.9,
+        "travel_m": null,
+        "clips": 1,
+        "errors": 0,
+        "warnings": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "passed",
+    "unchanged_previous_artifacts": 1631,
+    "selected_takes": 188,
+    "motion_types": 94,
+    "raw_game_trials": 272,
+    "all_jump_sources_detected_airborne": true,
+    "jump_sources": 18,
+    "free_disk_gib": 526.8,
+    "unchanged_combat_glbs": 144
+  }
+}

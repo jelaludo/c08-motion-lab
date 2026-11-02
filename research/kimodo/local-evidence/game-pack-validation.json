@@ -1,0 +1,39 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "passed",
+    "results": [
+      {
+        "name": "c08",
+        "bytes": 6362836,
+        "clips": 94,
+        "samples": 1598,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_segment_length_error_m": 1.261904323701657e-06,
+        "messages": []
+      },
+      {
+        "name": "brek43",
+        "bytes": 6678464,
+        "clips": 94,
+        "samples": 1598,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_segment_length_error_m": 1.7064151959234053e-06,
+        "messages": []
+      },
+      {
+        "name": "recording",
+        "bytes": 1317212,
+        "clips": 1,
+        "samples": 17,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "max_segment_length_error_m": 5.898333610421247e-08,
+        "messages": []
+      }
+    ],
+    "errors": []
+  }
+}

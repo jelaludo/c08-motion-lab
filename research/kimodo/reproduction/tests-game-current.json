@@ -1,0 +1,1194 @@
+{
+  "model": "Kimodo-SOMA-RP-v1.2",
+  "duration_s": 6,
+  "seeds": [
+    411,
+    822
+  ],
+  "cases": [
+    {
+      "id": "game-idle",
+      "label": "Idle",
+      "prompt": "A person stands relaxed and upright, breathing subtly with arms resting at the sides.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "speed": 0
+    },
+    {
+      "id": "game-idle-look",
+      "label": "Idle / look around",
+      "prompt": "A person stands relaxed and looks slowly left and right, then faces forward again.",
+      "group": "gestures",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-walk-forward",
+      "label": "Walk / forward",
+      "prompt": "A person walks forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "walk",
+      "direction": [
+        0,
+        1
+      ],
+      "velocity_m_s": [
+        0.0,
+        1.25
+      ],
+      "speed": 1.25
+    },
+    {
+      "id": "game-walk-backward",
+      "label": "Walk / backward",
+      "prompt": "A person walks backward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "walk",
+      "direction": [
+        0,
+        -1
+      ],
+      "velocity_m_s": [
+        0.0,
+        -0.9750000000000001
+      ],
+      "speed": 0.9750000000000001
+    },
+    {
+      "id": "game-walk-left",
+      "label": "Walk / left",
+      "prompt": "A person walks sideways to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "walk",
+      "direction": [
+        -1,
+        0
+      ],
+      "velocity_m_s": [
+        1.125,
+        0.0
+      ],
+      "speed": 1.125
+    },
+    {
+      "id": "game-walk-right",
+      "label": "Walk / right",
+      "prompt": "A person walks sideways to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "walk",
+      "direction": [
+        1,
+        0
+      ],
+      "velocity_m_s": [
+        -1.125,
+        0.0
+      ],
+      "speed": 1.125
+    },
+    {
+      "id": "game-walk-forward-left",
+      "label": "Walk / forward-left",
+      "prompt": "A person walks diagonally forward to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "walk",
+      "direction": [
+        -0.7071,
+        0.7071
+      ],
+      "velocity_m_s": [
+        0.7954874999999999,
+        0.7954874999999999
+      ],
+      "speed": 1.125
+    },
+    {
+      "id": "game-walk-forward-right",
+      "label": "Walk / forward-right",
+      "prompt": "A person walks diagonally forward to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "walk",
+      "direction": [
+        0.7071,
+        0.7071
+      ],
+      "velocity_m_s": [
+        -0.7954874999999999,
+        0.7954874999999999
+      ],
+      "speed": 1.125
+    },
+    {
+      "id": "game-walk-backward-left",
+      "label": "Walk / backward-left",
+      "prompt": "A person walks diagonally backward to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "walk",
+      "direction": [
+        -0.7071,
+        -0.7071
+      ],
+      "velocity_m_s": [
+        0.6894225,
+        -0.6894225
+      ],
+      "speed": 0.9750000000000001
+    },
+    {
+      "id": "game-walk-backward-right",
+      "label": "Walk / backward-right",
+      "prompt": "A person walks diagonally backward to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "walk",
+      "direction": [
+        0.7071,
+        -0.7071
+      ],
+      "velocity_m_s": [
+        -0.6894225,
+        -0.6894225
+      ],
+      "speed": 0.9750000000000001
+    },
+    {
+      "id": "game-jog-forward",
+      "label": "Jog / forward",
+      "prompt": "A person jogs forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "jog",
+      "direction": [
+        0,
+        1
+      ],
+      "velocity_m_s": [
+        0.0,
+        2.4
+      ],
+      "speed": 2.4
+    },
+    {
+      "id": "game-jog-backward",
+      "label": "Jog / backward",
+      "prompt": "A person jogs backward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "jog",
+      "direction": [
+        0,
+        -1
+      ],
+      "velocity_m_s": [
+        0.0,
+        -1.8719999999999999
+      ],
+      "speed": 1.8719999999999999
+    },
+    {
+      "id": "game-jog-left",
+      "label": "Jog / left",
+      "prompt": "A person jogs sideways to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "jog",
+      "direction": [
+        -1,
+        0
+      ],
+      "velocity_m_s": [
+        2.16,
+        0.0
+      ],
+      "speed": 2.16
+    },
+    {
+      "id": "game-jog-right",
+      "label": "Jog / right",
+      "prompt": "A person jogs sideways to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "jog",
+      "direction": [
+        1,
+        0
+      ],
+      "velocity_m_s": [
+        -2.16,
+        0.0
+      ],
+      "speed": 2.16
+    },
+    {
+      "id": "game-jog-forward-left",
+      "label": "Jog / forward-left",
+      "prompt": "A person jogs diagonally forward to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "jog",
+      "direction": [
+        -0.7071,
+        0.7071
+      ],
+      "velocity_m_s": [
+        1.527336,
+        1.527336
+      ],
+      "speed": 2.16
+    },
+    {
+      "id": "game-jog-forward-right",
+      "label": "Jog / forward-right",
+      "prompt": "A person jogs diagonally forward to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "jog",
+      "direction": [
+        0.7071,
+        0.7071
+      ],
+      "velocity_m_s": [
+        -1.527336,
+        1.527336
+      ],
+      "speed": 2.16
+    },
+    {
+      "id": "game-jog-backward-left",
+      "label": "Jog / backward-left",
+      "prompt": "A person jogs diagonally backward to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "jog",
+      "direction": [
+        -0.7071,
+        -0.7071
+      ],
+      "velocity_m_s": [
+        1.3236911999999998,
+        -1.3236911999999998
+      ],
+      "speed": 1.8719999999999999
+    },
+    {
+      "id": "game-jog-backward-right",
+      "label": "Jog / backward-right",
+      "prompt": "A person jogs diagonally backward to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "jog",
+      "direction": [
+        0.7071,
+        -0.7071
+      ],
+      "velocity_m_s": [
+        -1.3236911999999998,
+        -1.3236911999999998
+      ],
+      "speed": 1.8719999999999999
+    },
+    {
+      "id": "game-run-forward",
+      "label": "Run / forward",
+      "prompt": "A person runs forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "run",
+      "direction": [
+        0,
+        1
+      ],
+      "velocity_m_s": [
+        0.0,
+        3.8
+      ],
+      "speed": 3.8
+    },
+    {
+      "id": "game-run-backward",
+      "label": "Run / backward",
+      "prompt": "A person runs backward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "run",
+      "direction": [
+        0,
+        -1
+      ],
+      "velocity_m_s": [
+        0.0,
+        -2.964
+      ],
+      "speed": 2.964
+    },
+    {
+      "id": "game-run-left",
+      "label": "Run / left",
+      "prompt": "A person runs sideways to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "run",
+      "direction": [
+        -1,
+        0
+      ],
+      "velocity_m_s": [
+        3.42,
+        0.0
+      ],
+      "speed": 3.42
+    },
+    {
+      "id": "game-run-right",
+      "label": "Run / right",
+      "prompt": "A person runs sideways to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "run",
+      "direction": [
+        1,
+        0
+      ],
+      "velocity_m_s": [
+        -3.42,
+        0.0
+      ],
+      "speed": 3.42
+    },
+    {
+      "id": "game-run-forward-left",
+      "label": "Run / forward-left",
+      "prompt": "A person runs diagonally forward to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "run",
+      "direction": [
+        -0.7071,
+        0.7071
+      ],
+      "velocity_m_s": [
+        2.4182819999999996,
+        2.4182819999999996
+      ],
+      "speed": 3.42
+    },
+    {
+      "id": "game-run-forward-right",
+      "label": "Run / forward-right",
+      "prompt": "A person runs diagonally forward to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "run",
+      "direction": [
+        0.7071,
+        0.7071
+      ],
+      "velocity_m_s": [
+        -2.4182819999999996,
+        2.4182819999999996
+      ],
+      "speed": 3.42
+    },
+    {
+      "id": "game-run-backward-left",
+      "label": "Run / backward-left",
+      "prompt": "A person runs diagonally backward to the left while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "run",
+      "direction": [
+        -0.7071,
+        -0.7071
+      ],
+      "velocity_m_s": [
+        2.0958444,
+        -2.0958444
+      ],
+      "speed": 2.964
+    },
+    {
+      "id": "game-run-backward-right",
+      "label": "Run / backward-right",
+      "prompt": "A person runs diagonally backward to the right while facing forward at a steady pace with rhythmic alternating footfalls and a stable upright torso.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "run",
+      "direction": [
+        0.7071,
+        -0.7071
+      ],
+      "velocity_m_s": [
+        -2.0958444,
+        -2.0958444
+      ],
+      "speed": 2.964
+    },
+    {
+      "id": "game-sprint-forward",
+      "label": "Sprint / forward",
+      "prompt": "A person sprints straight forward with long powerful strides and strong coordinated arm swings.",
+      "group": "locomotion",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "sprint",
+      "direction": [
+        0,
+        1
+      ],
+      "velocity_m_s": [
+        0,
+        6
+      ],
+      "speed": 6
+    },
+    {
+      "id": "game-crouch-idle",
+      "label": "Crouch / idle",
+      "prompt": "A person holds a low crouching stance with bent knees, both feet flat on the floor and a balanced torso.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "speed": 0
+    },
+    {
+      "id": "game-crouch-forward",
+      "label": "Crouch / forward",
+      "prompt": "A person walks forward in a low crouch, keeping knees bent and taking distinct alternating steps without standing up.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crouch",
+      "direction": [
+        0,
+        1
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.75
+      ],
+      "speed": 0.75
+    },
+    {
+      "id": "game-crouch-backward",
+      "label": "Crouch / backward",
+      "prompt": "A person walks backward in a low crouch, keeping knees bent and taking distinct alternating steps without standing up.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crouch",
+      "direction": [
+        0,
+        -1
+      ],
+      "velocity_m_s": [
+        0.0,
+        -0.75
+      ],
+      "speed": 0.75
+    },
+    {
+      "id": "game-crouch-left",
+      "label": "Crouch / left",
+      "prompt": "A person walks sideways to the left while facing forward in a low crouch, keeping knees bent and taking distinct alternating steps without standing up.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crouch",
+      "direction": [
+        -1,
+        0
+      ],
+      "velocity_m_s": [
+        0.75,
+        0.0
+      ],
+      "speed": 0.75
+    },
+    {
+      "id": "game-crouch-right",
+      "label": "Crouch / right",
+      "prompt": "A person walks sideways to the right while facing forward in a low crouch, keeping knees bent and taking distinct alternating steps without standing up.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crouch",
+      "direction": [
+        1,
+        0
+      ],
+      "velocity_m_s": [
+        -0.75,
+        0.0
+      ],
+      "speed": 0.75
+    },
+    {
+      "id": "game-crouch-forward-left",
+      "label": "Crouch / forward-left",
+      "prompt": "A person walks diagonally forward to the left while facing forward in a low crouch, keeping knees bent and taking distinct alternating steps without standing up.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crouch",
+      "direction": [
+        -0.7071,
+        0.7071
+      ],
+      "velocity_m_s": [
+        0.5303249999999999,
+        0.5303249999999999
+      ],
+      "speed": 0.75
+    },
+    {
+      "id": "game-crouch-forward-right",
+      "label": "Crouch / forward-right",
+      "prompt": "A person walks diagonally forward to the right while facing forward in a low crouch, keeping knees bent and taking distinct alternating steps without standing up.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crouch",
+      "direction": [
+        0.7071,
+        0.7071
+      ],
+      "velocity_m_s": [
+        -0.5303249999999999,
+        0.5303249999999999
+      ],
+      "speed": 0.75
+    },
+    {
+      "id": "game-crouch-backward-left",
+      "label": "Crouch / backward-left",
+      "prompt": "A person walks diagonally backward to the left while facing forward in a low crouch, keeping knees bent and taking distinct alternating steps without standing up.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crouch",
+      "direction": [
+        -0.7071,
+        -0.7071
+      ],
+      "velocity_m_s": [
+        0.5303249999999999,
+        -0.5303249999999999
+      ],
+      "speed": 0.75
+    },
+    {
+      "id": "game-crouch-backward-right",
+      "label": "Crouch / backward-right",
+      "prompt": "A person walks diagonally backward to the right while facing forward in a low crouch, keeping knees bent and taking distinct alternating steps without standing up.",
+      "group": "crouch",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crouch",
+      "direction": [
+        0.7071,
+        -0.7071
+      ],
+      "velocity_m_s": [
+        -0.5303249999999999,
+        -0.5303249999999999
+      ],
+      "speed": 0.75
+    },
+    {
+      "id": "game-crawl-forward",
+      "label": "Prone crawl / forward",
+      "prompt": "A person crawls forward on forearms and knees, keeping the body close to the floor.",
+      "group": "ground",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crawl",
+      "direction": [
+        0,
+        1
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.45
+      ],
+      "speed": 0.45
+    },
+    {
+      "id": "game-crawl-backward",
+      "label": "Prone crawl / backward",
+      "prompt": "A person crawls backward on forearms and knees, keeping the body close to the floor.",
+      "group": "ground",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crawl",
+      "direction": [
+        0,
+        -1
+      ],
+      "velocity_m_s": [
+        0.0,
+        -0.45
+      ],
+      "speed": 0.45
+    },
+    {
+      "id": "game-crawl-left",
+      "label": "Prone crawl / left",
+      "prompt": "A person crawls sideways to the left while facing forward on forearms and knees, keeping the body close to the floor.",
+      "group": "ground",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crawl",
+      "direction": [
+        -1,
+        0
+      ],
+      "velocity_m_s": [
+        0.45,
+        0.0
+      ],
+      "speed": 0.45
+    },
+    {
+      "id": "game-crawl-right",
+      "label": "Prone crawl / right",
+      "prompt": "A person crawls sideways to the right while facing forward on forearms and knees, keeping the body close to the floor.",
+      "group": "ground",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "crawl",
+      "direction": [
+        1,
+        0
+      ],
+      "velocity_m_s": [
+        -0.45,
+        0.0
+      ],
+      "speed": 0.45
+    },
+    {
+      "id": "game-prone-idle",
+      "label": "Prone / idle",
+      "prompt": "A person lies prone on the floor propped on the forearms, holding a still relaxed posture.",
+      "group": "ground",
+      "kind": "loop",
+      "duration_s": 6,
+      "speed": 0
+    },
+    {
+      "id": "game-carry-idle",
+      "label": "Box / carry idle",
+      "prompt": "A person stands holding a medium box securely with both hands in front of the waist, elbows bent and forearms supporting its sides.",
+      "group": "carry",
+      "kind": "loop",
+      "duration_s": 6,
+      "speed": 0
+    },
+    {
+      "id": "game-carry-forward",
+      "label": "Box / walk forward",
+      "prompt": "A person walks forward while holding a medium box steadily with both hands in front of the waist, elbows bent.",
+      "group": "carry",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "carry",
+      "direction": [
+        0,
+        1
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.95
+      ],
+      "speed": 0.95
+    },
+    {
+      "id": "game-carry-backward",
+      "label": "Box / walk backward",
+      "prompt": "A person walks backward while holding a medium box steadily with both hands in front of the waist, elbows bent.",
+      "group": "carry",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "carry",
+      "direction": [
+        0,
+        -1
+      ],
+      "velocity_m_s": [
+        0.0,
+        -0.95
+      ],
+      "speed": 0.95
+    },
+    {
+      "id": "game-carry-left",
+      "label": "Box / walk left",
+      "prompt": "A person walks sideways to the left while facing forward while holding a medium box steadily with both hands in front of the waist, elbows bent.",
+      "group": "carry",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "carry",
+      "direction": [
+        -1,
+        0
+      ],
+      "velocity_m_s": [
+        0.95,
+        0.0
+      ],
+      "speed": 0.95
+    },
+    {
+      "id": "game-carry-right",
+      "label": "Box / walk right",
+      "prompt": "A person walks sideways to the right while facing forward while holding a medium box steadily with both hands in front of the waist, elbows bent.",
+      "group": "carry",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "carry",
+      "direction": [
+        1,
+        0
+      ],
+      "velocity_m_s": [
+        -0.95,
+        0.0
+      ],
+      "speed": 0.95
+    },
+    {
+      "id": "game-carry-jog",
+      "label": "Box / jog forward",
+      "prompt": "A person jogs forward carefully while carrying a medium box securely with both hands in front of the waist.",
+      "group": "carry",
+      "kind": "loop",
+      "duration_s": 6,
+      "gait": "carry-jog",
+      "direction": [
+        0,
+        1
+      ],
+      "velocity_m_s": [
+        0,
+        1.9
+      ],
+      "speed": 1.9
+    },
+    {
+      "id": "game-crouch-down",
+      "label": "Enter crouch",
+      "prompt": "A person starts standing, bends both knees and lowers smoothly into a stable crouch, then stays crouched.",
+      "group": "transition",
+      "kind": "action",
+      "duration_s": 4
+    },
+    {
+      "id": "game-crouch-up",
+      "label": "Leave crouch",
+      "prompt": "A person starts in a low crouch, straightens both legs and rises smoothly to a relaxed standing posture.",
+      "group": "transition",
+      "kind": "action",
+      "duration_s": 4
+    },
+    {
+      "id": "game-prone-down",
+      "label": "Enter prone",
+      "prompt": "A person kneels, places hands on the ground and lowers the body carefully into a prone position.",
+      "group": "transition",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-getup-front",
+      "label": "Get up / front",
+      "prompt": "A person starts lying face down, presses up with the hands, brings a foot underneath the body and stands upright.",
+      "group": "ground",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-getup-back",
+      "label": "Get up / back",
+      "prompt": "A person starts lying on the back, rolls to one side and pushes up carefully into a balanced standing posture.",
+      "group": "ground",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-pickup",
+      "label": "Box / pick up",
+      "prompt": "A person stands near a medium box on the floor, bends the knees, grasps it with both hands and lifts it to waist height while standing.",
+      "group": "carry",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-putdown",
+      "label": "Box / put down",
+      "prompt": "A person starts holding a medium box at waist height, bends the knees to place it gently on the floor and stands with empty hands.",
+      "group": "carry",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-push",
+      "label": "Push crate",
+      "prompt": "A person leans forward and pushes a heavy crate forward with both hands, taking slow firm steps.",
+      "group": "interaction",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-pull",
+      "label": "Pull crate",
+      "prompt": "A person leans backward and pulls a heavy crate toward the body with both hands, taking slow backward steps.",
+      "group": "interaction",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-panel",
+      "label": "Use terminal",
+      "prompt": "A person stands upright, reaches forward with the right hand, presses several buttons on a panel and lowers the hand.",
+      "group": "interaction",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-door",
+      "label": "Open door",
+      "prompt": "A person reaches forward to grasp a door handle with the right hand, pulls the door open and steps through.",
+      "group": "interaction",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-sit",
+      "label": "Sit on bench",
+      "prompt": "A person starts standing in front of a seat, bends the knees and sits down gently with an upright torso.",
+      "group": "interaction",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-stand-seat",
+      "label": "Stand from bench",
+      "prompt": "A person starts sitting upright on a seat, leans forward, pushes through both feet and stands up.",
+      "group": "interaction",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-wave",
+      "label": "Wave",
+      "prompt": "A person stands upright and waves hello with the right hand, then returns the arm to the side.",
+      "group": "gestures",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-point",
+      "label": "Point forward",
+      "prompt": "A person stands upright, points forward with the right arm, then lowers the arm to the side.",
+      "group": "gestures",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-turn-left",
+      "label": "Turn / 90 left",
+      "prompt": "A person stands still, turns ninety degrees to the left with small deliberate steps and stops.",
+      "group": "transition",
+      "kind": "action",
+      "duration_s": 4
+    },
+    {
+      "id": "game-turn-right",
+      "label": "Turn / 90 right",
+      "prompt": "A person stands still, turns ninety degrees to the right with small deliberate steps and stops.",
+      "group": "transition",
+      "kind": "action",
+      "duration_s": 4
+    },
+    {
+      "id": "game-turn-back",
+      "label": "Turn / 180",
+      "prompt": "A person stands still, turns around one hundred and eighty degrees with small steps and stops.",
+      "group": "transition",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-start-run",
+      "label": "Start running",
+      "prompt": "A person starts standing still, leans forward and accelerates into a steady forward run.",
+      "group": "transition",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-stop-run",
+      "label": "Stop running",
+      "prompt": "A person starts running forward, takes shorter braking steps and stops in a balanced standing posture.",
+      "group": "transition",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-hit-front",
+      "label": "Hit / front",
+      "prompt": "A person stands upright and recoils from a single impact to the chest, steps back to regain balance and returns upright.",
+      "group": "reactions",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-hit-left",
+      "label": "Hit / left",
+      "prompt": "A person stands upright and recoils sideways from a single impact to the left shoulder, then regains balance.",
+      "group": "reactions",
+      "kind": "action",
+      "duration_s": 5
+    },
+    {
+      "id": "game-knockdown",
+      "label": "Knockdown / backward",
+      "prompt": "A person stands upright, loses balance from a strong frontal impact and falls backward onto the ground.",
+      "group": "reactions",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-death",
+      "label": "Collapse / downed",
+      "prompt": "A person stands upright, staggers, collapses onto the side on the ground and remains still.",
+      "group": "reactions",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-vault",
+      "label": "Vault low barrier",
+      "prompt": "A person runs forward, plants one hand on a low waist-high barrier and vaults over it, landing on both feet.",
+      "group": "traversal",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-mantle",
+      "label": "Mantle ledge",
+      "prompt": "A person reaches both hands onto a chest-high ledge, pulls the body upward and steps onto the ledge.",
+      "group": "traversal",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-ladder",
+      "label": "Climb ladder",
+      "prompt": "A person climbs upward on a ladder using alternating hands and feet in a steady rhythm.",
+      "group": "traversal",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-balance",
+      "label": "Balance beam",
+      "prompt": "A person walks carefully forward along a narrow beam with arms extended sideways for balance.",
+      "group": "traversal",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-jump-standing",
+      "label": "Jump / standing",
+      "prompt": "A person jumps straight up high into the air and lands on both feet.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 4,
+      "constraint_file": "game-derived/constraints/game-jump-standing.json"
+    },
+    {
+      "id": "game-jump-walk",
+      "label": "Jump / walking",
+      "prompt": "A person walks forward, bends the knees briefly, jumps forward over a small gap and lands softly, then regains balance.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 6
+    },
+    {
+      "id": "game-jump-jog",
+      "label": "Jump / jogging",
+      "prompt": "A person jogs into a forward jump over a low hurdle and lands.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 4,
+      "constraint_file": "game-derived/constraints/game-jump-jog.json"
+    },
+    {
+      "id": "game-jump-run",
+      "label": "Jump / running",
+      "prompt": "A person takes a running long jump forward and lands on both feet.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 4,
+      "constraint_file": "game-derived/constraints/game-jump-run.json"
+    },
+    {
+      "id": "game-jump-sprint",
+      "label": "Jump / sprinting",
+      "prompt": "A person sprints and takes a long forward leap, landing on both feet.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 4,
+      "constraint_file": "game-derived/constraints/game-jump-sprint.json"
+    },
+    {
+      "id": "game-jump-high",
+      "label": "Jump / high",
+      "prompt": "A person stands still, crouches deeply and swings both arms to jump as high as possible, then absorbs the landing and stands upright.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 6
+    },
+    {
+      "id": "game-jump-backward",
+      "label": "Jump / backward",
+      "prompt": "A person jumps backward with both feet off the ground and lands.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 4,
+      "constraint_file": "game-derived/constraints/game-jump-backward.json"
+    },
+    {
+      "id": "game-jump-left",
+      "label": "Jump / left",
+      "prompt": "A person jumps sideways to the left with both feet off the ground and lands.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 4,
+      "constraint_file": "game-derived/constraints/game-jump-left.json"
+    },
+    {
+      "id": "game-jump-right",
+      "label": "Jump / right",
+      "prompt": "A person jumps sideways to the right with both feet off the ground and lands.",
+      "group": "jump",
+      "kind": "jump",
+      "duration_s": 4,
+      "constraint_file": "game-derived/constraints/game-jump-right.json"
+    },
+    {
+      "id": "game-land-hard",
+      "label": "Landing / hard",
+      "prompt": "A person drops from a high step, lands on both feet with a deep knee bend and brief stagger, then regains balance.",
+      "group": "jump",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-dodge-forward",
+      "label": "Dodge / forward",
+      "prompt": "A person from a balanced standing stance makes a quick low forward dodge step and regains a fighting stance.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-dodge-backward",
+      "label": "Dodge / backward",
+      "prompt": "A person from a fighting stance makes a quick backward evasive hop and regains guard.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-dodge-left",
+      "label": "Dodge / left",
+      "prompt": "A person from a fighting stance makes a quick low sideways evasive step to the left and regains guard.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-dodge-right",
+      "label": "Dodge / right",
+      "prompt": "A person from a fighting stance makes a quick low sideways evasive step to the right and regains guard.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-jab",
+      "label": "Combat / jab",
+      "prompt": "A person stands in a boxing stance, throws one fast left jab forward and returns to guard.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-cross",
+      "label": "Combat / cross",
+      "prompt": "A person stands in a boxing stance, throws one powerful right straight punch forward and returns to guard.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-combo",
+      "label": "Combat / jab cross",
+      "prompt": "A person from a boxing stance throws a left jab followed by a right cross and returns to guard.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-kick",
+      "label": "Combat / front kick",
+      "prompt": "A person from a fighting stance raises one knee, extends a front kick, retracts the leg and returns to guard.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    },
+    {
+      "id": "game-block",
+      "label": "Combat / block",
+      "prompt": "A person from a fighting stance raises both forearms to block a high strike, then returns to guard.",
+      "group": "combat",
+      "kind": "action",
+      "duration_s": 6
+    }
+  ],
+  "scope": "Canonical selected game round: corrected anatomical lateral paths and full-body-conditioned jump sources. Original trial plans and outputs retained. Run only into a fresh output round."
+}

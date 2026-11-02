@@ -1,0 +1,712 @@
+{
+  "evidence_scope": "Recorded local test result; separate public playback validation accompanies publication.",
+  "result": {
+    "status": "passed",
+    "keyboard_and_mouse": true,
+    "progress": [
+      {
+        "index": 0,
+        "p": [
+          0,
+          0,
+          0.02264824052363917
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 0
+      },
+      {
+        "index": 1,
+        "p": [
+          0,
+          0,
+          8.136206404288096
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 6
+      },
+      {
+        "index": 2,
+        "p": [
+          0,
+          0,
+          17.672730417600288
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 10
+      },
+      {
+        "index": 3,
+        "p": [
+          0,
+          0,
+          40.89932245488699
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 16
+      },
+      {
+        "index": 4,
+        "p": [
+          0.5089517943539709,
+          0,
+          64.07543395573168
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 20
+      },
+      {
+        "index": 5,
+        "p": [
+          11.76546754381444,
+          0,
+          62.80893432367099
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 23
+      },
+      {
+        "index": 6,
+        "p": [
+          11.997737699696806,
+          0,
+          42.66873783171658
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 29
+      },
+      {
+        "index": 7,
+        "p": [
+          11.999605468119876,
+          0,
+          40.46929430425169
+        ],
+        "action": "game-crouch-down",
+        "stance": "stand",
+        "pending": 0,
+        "time": 31
+      },
+      {
+        "index": 8,
+        "p": [
+          11.999608941747656,
+          0,
+          40.403595999280604
+        ],
+        "stance": "crouch",
+        "pending": 0,
+        "time": 35
+      },
+      {
+        "index": 9,
+        "p": [
+          11.99998540277544,
+          0,
+          26.53765014274686
+        ],
+        "action": "game-crouch-up",
+        "stance": "crouch",
+        "pending": 0,
+        "time": 54
+      },
+      {
+        "index": 10,
+        "p": [
+          11.999986218050827,
+          0,
+          25.78297019675124
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 58
+      },
+      {
+        "index": 11,
+        "p": [
+          10.739976476207158,
+          0,
+          12.425695924909231
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 64
+      },
+      {
+        "index": 12,
+        "p": [
+          -1.8154328200517156,
+          0,
+          3.1365306816933507
+        ],
+        "action": "game-pickup",
+        "stance": "stand",
+        "pending": 0,
+        "time": 69
+      },
+      {
+        "index": 13,
+        "p": [
+          -2.5525377447445536,
+          0,
+          3.635498552161597
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 75
+      },
+      {
+        "index": 14,
+        "p": [
+          -8.564299312595384,
+          0,
+          7.705059726491365
+        ],
+        "action": "game-putdown",
+        "stance": "stand",
+        "pending": 0,
+        "time": 81
+      },
+      {
+        "index": 15,
+        "p": [
+          -8.567433664085375,
+          0,
+          7.707181473168503
+        ],
+        "action": "game-wave",
+        "stance": "stand",
+        "pending": 0,
+        "time": 87
+      },
+      {
+        "index": 16,
+        "p": [
+          -8.567433664085375,
+          0,
+          7.707181473168503
+        ],
+        "action": "game-combo",
+        "stance": "stand",
+        "pending": 0,
+        "time": 93
+      },
+      {
+        "index": 17,
+        "p": [
+          -8.567433664085375,
+          0,
+          7.707181473168503
+        ],
+        "action": "game-hit-front",
+        "stance": "stand",
+        "pending": 0,
+        "time": 99
+      },
+      {
+        "index": 18,
+        "p": [
+          -8.567433664085375,
+          0,
+          7.707181473168503
+        ],
+        "action": "game-knockdown",
+        "stance": "stand",
+        "pending": 0,
+        "time": 105
+      },
+      {
+        "index": 19,
+        "p": [
+          -8.567433664085375,
+          0,
+          7.707181473168503
+        ],
+        "action": "game-getup-back",
+        "stance": "down",
+        "pending": 0,
+        "time": 111
+      },
+      {
+        "index": -1,
+        "p": [
+          -8.567433664085375,
+          0,
+          7.707181473168503
+        ],
+        "stance": "stand",
+        "pending": 0,
+        "time": 117
+      }
+    ],
+    "final": {
+      "tour": null,
+      "events": [
+        {
+          "time": 0,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 0.16670000000000001,
+          "type": "motion",
+          "id": "game-jog-forward-seed411",
+          "body": "c08",
+          "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
+        },
+        {
+          "time": 1.1672999999999998,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 1.3172999999999995,
+          "type": "reset"
+        },
+        {
+          "time": 1.3172999999999995,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 1.3672999999999995,
+          "type": "motion",
+          "id": "game-walk-forward-seed411",
+          "body": "c08",
+          "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
+        },
+        {
+          "time": 6.617299999999984,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 6.667299999999984,
+          "type": "motion",
+          "id": "game-jog-forward-seed411",
+          "body": "c08",
+          "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
+        },
+        {
+          "time": 11.317300000000026,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 11.367300000000027,
+          "type": "motion",
+          "id": "game-run-forward-seed411",
+          "body": "c08",
+          "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
+        },
+        {
+          "time": 16.917300000000104,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 16.967300000000105,
+          "type": "motion",
+          "id": "game-sprint-forward-seed411",
+          "body": "c08",
+          "source_sha256": "93c3b4c2b8b5988723dff3b70172fc0a5f0ec81ae14ac2ec9bb88a8f512b0b77"
+        },
+        {
+          "time": 21.217300000000165,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 21.267300000000166,
+          "type": "motion",
+          "id": "game-sprint-forward-seed411",
+          "body": "c08",
+          "source_sha256": "93c3b4c2b8b5988723dff3b70172fc0a5f0ec81ae14ac2ec9bb88a8f512b0b77"
+        },
+        {
+          "time": 21.967300000000176,
+          "type": "motion",
+          "id": "game-run-forward-seed411",
+          "body": "c08",
+          "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
+        },
+        {
+          "time": 23.967300000000204,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 24.017300000000205,
+          "type": "motion",
+          "id": "game-run-forward-seed411",
+          "body": "c08",
+          "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
+        },
+        {
+          "time": 27.667300000000257,
+          "type": "action-start",
+          "id": "game-jump-run"
+        },
+        {
+          "time": 27.667300000000257,
+          "type": "motion",
+          "id": "game-jump-run-seed411",
+          "body": "c08",
+          "source_sha256": "26693b815004b7ef93c6e540488a97b4c8b51776c2b9292f6023912cf20f9d93"
+        },
+        {
+          "time": 29.41730000000028,
+          "type": "action-end",
+          "id": "game-jump-run"
+        },
+        {
+          "time": 29.467300000000282,
+          "type": "motion",
+          "id": "game-run-forward-seed411",
+          "body": "c08",
+          "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
+        },
+        {
+          "time": 29.817300000000287,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 29.867300000000288,
+          "type": "motion",
+          "id": "game-walk-forward-seed411",
+          "body": "c08",
+          "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
+        },
+        {
+          "time": 32.11730000000031,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 32.16730000000031,
+          "type": "action-start",
+          "id": "game-crouch-down"
+        },
+        {
+          "time": 32.16730000000031,
+          "type": "motion",
+          "id": "game-crouch-down-seed411",
+          "body": "c08",
+          "source_sha256": "27d02ff6e762e1a41191c822639b27b6e782ee2f527d6cba43302b65523e3c40"
+        },
+        {
+          "time": 36.16730000000008,
+          "type": "action-end",
+          "id": "game-crouch-down"
+        },
+        {
+          "time": 36.21730000000008,
+          "type": "motion",
+          "id": "game-crouch-idle-seed411",
+          "body": "c08",
+          "source_sha256": "c92dd75e09f936854d1f0ca0cdfe0e0a18954347acfdb67812e7ff0435d1f97a"
+        },
+        {
+          "time": 36.26730000000008,
+          "type": "motion",
+          "id": "game-crouch-forward-seed411",
+          "body": "c08",
+          "source_sha256": "94e490e20880ee57b852ba0bb4a076090afcf90ffafaec6bec59708230078cfa"
+        },
+        {
+          "time": 54.86729999999902,
+          "type": "motion",
+          "id": "game-crouch-idle-seed411",
+          "body": "c08",
+          "source_sha256": "c92dd75e09f936854d1f0ca0cdfe0e0a18954347acfdb67812e7ff0435d1f97a"
+        },
+        {
+          "time": 54.91729999999902,
+          "type": "action-start",
+          "id": "game-crouch-up"
+        },
+        {
+          "time": 54.91729999999902,
+          "type": "motion",
+          "id": "game-crouch-up-seed411",
+          "body": "c08",
+          "source_sha256": "0f1760701ef089091e9eafe85c9d92cfe9c4d6f4763c9b832434516247a97e30"
+        },
+        {
+          "time": 58.91729999999879,
+          "type": "action-end",
+          "id": "game-crouch-up"
+        },
+        {
+          "time": 58.96729999999879,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 59.017299999998784,
+          "type": "motion",
+          "id": "game-jog-forward-seed411",
+          "body": "c08",
+          "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
+        },
+        {
+          "time": 61.817299999998625,
+          "type": "action-start",
+          "id": "game-jump-jog"
+        },
+        {
+          "time": 61.817299999998625,
+          "type": "motion",
+          "id": "game-jump-jog-seed411",
+          "body": "c08",
+          "source_sha256": "1df7713618cc3642f95f598b0c14a04bd68e7b15174914164028703807361460"
+        },
+        {
+          "time": 63.66729999999852,
+          "type": "action-end",
+          "id": "game-jump-jog"
+        },
+        {
+          "time": 63.71729999999852,
+          "type": "motion",
+          "id": "game-jog-forward-seed411",
+          "body": "c08",
+          "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
+        },
+        {
+          "time": 64.86729999999845,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 64.91729999999845,
+          "type": "motion",
+          "id": "game-run-forward-seed411",
+          "body": "c08",
+          "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
+        },
+        {
+          "time": 69.46729999999819,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 69.51729999999819,
+          "type": "action-start",
+          "id": "game-pickup"
+        },
+        {
+          "time": 69.51729999999819,
+          "type": "motion",
+          "id": "game-pickup-seed411",
+          "body": "c08",
+          "source_sha256": "72f79db311a2a789aaa3612c77c7d6f2c3983121d62c53e8fbb0efc489e57f66"
+        },
+        {
+          "time": 75.51729999999785,
+          "type": "action-end",
+          "id": "game-pickup"
+        },
+        {
+          "time": 75.56729999999784,
+          "type": "motion",
+          "id": "game-carry-idle-seed411",
+          "body": "c08",
+          "source_sha256": "fd8db5fe6f0d556df51369310efa09e0533057c8346f20342e0a8700e3ae6279"
+        },
+        {
+          "time": 75.71729999999783,
+          "type": "motion",
+          "id": "game-carry-forward-seed411",
+          "body": "c08",
+          "source_sha256": "0ebe850ceb1093d52325b2a835ff17ac04f2f2ddc82d09009bb40d29a4202ae9"
+        },
+        {
+          "time": 82.16729999999747,
+          "type": "motion",
+          "id": "game-carry-idle-seed411",
+          "body": "c08",
+          "source_sha256": "fd8db5fe6f0d556df51369310efa09e0533057c8346f20342e0a8700e3ae6279"
+        },
+        {
+          "time": 82.21729999999746,
+          "type": "action-start",
+          "id": "game-putdown"
+        },
+        {
+          "time": 82.21729999999746,
+          "type": "motion",
+          "id": "game-putdown-seed411",
+          "body": "c08",
+          "source_sha256": "42fc919ca907f2c1aeead896c365e5c4710da5796d8f78a0c4dab84aca04698a"
+        },
+        {
+          "time": 88.21729999999712,
+          "type": "action-end",
+          "id": "game-putdown"
+        },
+        {
+          "time": 88.26729999999712,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 88.31729999999712,
+          "type": "action-start",
+          "id": "game-wave"
+        },
+        {
+          "time": 88.36729999999712,
+          "type": "motion",
+          "id": "game-wave-seed411",
+          "body": "c08",
+          "source_sha256": "a846ccd576cf23fbdc48ba80aec478cd20fad529b50b948503835d887ded66bc"
+        },
+        {
+          "time": 93.36729999999683,
+          "type": "action-end",
+          "id": "game-wave"
+        },
+        {
+          "time": 93.41729999999683,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 93.46729999999683,
+          "type": "action-start",
+          "id": "game-combo"
+        },
+        {
+          "time": 93.8172999999968,
+          "type": "motion",
+          "id": "game-combo-seed411",
+          "body": "c08",
+          "source_sha256": "4e31e921c77e6354b79400b63bb42bc624d89713fc9c395c815107b1f09db6c7"
+        },
+        {
+          "time": 99.91729999999646,
+          "type": "action-end",
+          "id": "game-combo"
+        },
+        {
+          "time": 99.96729999999646,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 100.01729999999645,
+          "type": "action-start",
+          "id": "game-hit-front"
+        },
+        {
+          "time": 100.36729999999643,
+          "type": "motion",
+          "id": "game-hit-front-seed411",
+          "body": "c08",
+          "source_sha256": "3139dbe123508c073ca1a2f3cbc626e8d5f627a22b1c4065a2e116e84f6e43df"
+        },
+        {
+          "time": 105.36729999999615,
+          "type": "action-end",
+          "id": "game-hit-front"
+        },
+        {
+          "time": 105.41729999999615,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 105.46729999999614,
+          "type": "action-start",
+          "id": "game-knockdown"
+        },
+        {
+          "time": 105.61729999999613,
+          "type": "motion",
+          "id": "game-knockdown-seed411",
+          "body": "c08",
+          "source_sha256": "db7bd899d4356174719903859de1856ca543e8f3ae1181f3f1b8ee17ee58de3c"
+        },
+        {
+          "time": 111.66729999999579,
+          "type": "action-end",
+          "id": "game-knockdown"
+        },
+        {
+          "time": 111.76729999999579,
+          "type": "action-start",
+          "id": "game-getup-back"
+        },
+        {
+          "time": 111.96729999999577,
+          "type": "motion",
+          "id": "game-getup-back-seed411",
+          "body": "c08",
+          "source_sha256": "771dc4da71bb576945f61de1eede7cae6e16fefc907561d21d3eec7d0f530e35"
+        },
+        {
+          "time": 117.96729999999543,
+          "type": "action-end",
+          "id": "game-getup-back"
+        },
+        {
+          "time": 118.01729999999543,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        }
+      ],
+      "reach": 0.08512729193333102,
+      "length": 2.045068220324353e-08,
+      "p": [
+        -8.567433664085375,
+        0,
+        7.707181473168503
+      ]
+    },
+    "errors": []
+  }
+}

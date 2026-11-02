@@ -1,0 +1,32 @@
+// Extract exact source animation tracks and share meshes, keeping Pages compact.
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import{gzipSync}from'node:zlib';import{fileURLToPath,pathToFileURL}from'node:url';
+const REPO=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const arg=(key,fallback)=>process.argv.includes(key)?process.argv[process.argv.indexOf(key)+1]:fallback;
+const K=path.resolve(arg('--kimodo-root',process.env.KIMODO_WORKSPACE||'G:/Dev/Kimodo'));
+const modules=arg('--node-modules',path.join(REPO,'tools/review/node_modules'));
+const T=await import(pathToFileURL(path.join(modules,'three/build/three.module.js'))),{GLTFLoader}=await import(pathToFileURL(path.join(modules,'three/examples/jsm/loaders/GLTFLoader.js')));
+globalThis.self=globalThis;globalThis.createImageBitmap=async()=>({width:1,height:1,close(){}});globalThis.ProgressEvent??=class{constructor(type,args){Object.assign(this,args)}};
+const OUT=path.join(REPO,'research/kimodo'),WEB=path.join(K,'web'),REMOTE='https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/';fs.mkdirSync(OUT,{recursive:true});
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex'),json=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+let assets=new Map(),roundTrips=0;
+function add(bytes,type){const digest=sha(bytes),relative='research/kimodo/assets/'+digest+type,p=path.join(REPO,relative);fs.mkdirSync(path.dirname(p),{recursive:true});if(!fs.existsSync(p))fs.writeFileSync(p,bytes);else if(sha(fs.readFileSync(p))!==digest)throw Error('Content address collision');assets.set(relative,{sha256:digest,bytes:bytes.length});return {url:REMOTE+relative,sha256:digest,bytes:bytes.length}}
+function signature(clip){return clip.tracks.map(t=>({name:t.name,type:t.ValueTypeName,interpolation:t.getInterpolation(),times_sha256:sha(Buffer.from(t.times.buffer,t.times.byteOffset,t.times.byteLength)),values_sha256:sha(Buffer.from(t.values.buffer,t.values.byteOffset,t.values.byteLength))}))}
+async function extract(file){
+ const bytes=fs.readFileSync(file),g=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');const clip=g.animations[0],data=T.AnimationClip.toJSON(clip);delete data.uuid;
+ const parsed=T.AnimationClip.parse(data),before=signature(clip),after=signature(parsed);if(JSON.stringify(before)!==JSON.stringify(after)||clip.duration!==parsed.duration||clip.name!==parsed.name)throw Error('Animation round-trip changed '+file);roundTrips++;
+ const packed=add(gzipSync(Buffer.from(JSON.stringify(data)),{level:9} ),'.json.gz');
+ g.scene.traverse(o=>{o.geometry?.dispose();for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){for(const value of Object.values(m))if(value?.isTexture)value.dispose();m.dispose()}});
+ return {...packed,source_glb_sha256:sha(bytes),duration_s:clip.duration,name:clip.name,tracks:clip.tracks.length,signature:before};
+}
+function expected(take,body){const r=json(path.join(K,'retarget',take,body,'retarget-report.json')),all=r.sample_positions_blender;return {source_character_sha256:r.source_asset_sha256,expected_joint_samples:[0,.25,.5,.75,1].map(u=>{const frame=Math.round((all.length-1)*u);return {time:frame/30,positions:Object.fromEntries(Object.entries(all[frame]).map(([name,p])=>[name,[p[0],p[2],-p[1]]]))}})}}
+function clean(value){if(Array.isArray(value))return value.map(clean);if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).filter(([k])=>!['source_local_path','source_path','local_path','constraint_file','sample_positions_blender','source_pelvis_before_ground_blender','ground_vertical_offsets_m'].includes(k)).map(([k,v])=>[k,clean(v)]));if(typeof value==='string'&&/^[A-Z]:[\\/]/i.test(value))return '[local path omitted]';return value}
+function report(file){return add(Buffer.from(JSON.stringify(clean(json(file)))),'.json')}
+const result={schema:'kimodo-public-assets/1',model:'Kimodo-SOMA-RP-v1.2',model_revision:'0e3c89024d896064b6851201373f7834784a386b',upstream_commit:'e1c219c99b4b94ba48be1fb6a1cbc64ecee4c954',transport:'Exact AnimationClip arrays; shared original character meshes. Gzip and JSON do not alter float32 track values. GLBs downloaded in the browser are reconstructed files, not the original binary hashes.',gallery:{models:{},takes:{}},game:{models:{},takes:{},packs:{}}};
+const gallery=json(path.join(WEB,'kimodo-bipeds/catalog.json'));
+for(const body of gallery.bodies){const output=gallery.tests.find(t=>t.id==='walk-neutral-seed101').outputs.find(o=>o.body===body.id);result.gallery.models[body.id]=add(fs.readFileSync(path.join(WEB,'kimodo-bipeds',output.model)),'.glb')}
+for(const take of gallery.tests){const rows={};for(const output of take.outputs){const clip=await extract(path.join(WEB,'kimodo-bipeds',output.model));if(clip.source_glb_sha256!==output.sha256)throw Error('Gallery source hash mismatch');rows[output.body]={animation:{...clip,...expected(take.id,output.body)},report:report(path.join(WEB,'kimodo-bipeds',output.report))}}result.gallery.takes[take.id]=rows;console.log('PACKED gallery',take.id)}
+const game=json(path.join(WEB,'kimodo-game/catalog.json'));
+for(const body of game.bodies){result.game.models[body.id]=add(fs.readFileSync(path.join(WEB,'kimodo-game',body.model)),'.glb');result.game.packs[body.id]=add(fs.readFileSync(path.join(WEB,'kimodo-game/packs',body.id+'-game-kit.glb')),'.glb')}
+for(const take of game.takes){const rows={};for(const output of take.outputs){const clip=await extract(path.join(WEB,'kimodo-game',output.source_glb));rows[output.body]={raw:{...clip,...expected(take.id,output.body)},processed:add(gzipSync(fs.readFileSync(path.join(WEB,'kimodo-game',output.clip)),{level:9}),'.json.gz'),report:report(path.join(WEB,'kimodo-game',output.report))}}result.game.takes[take.id]=rows;console.log('PACKED game',take.id)}
+result.validation={status:'passed',exact_source_track_roundtrips:roundTrips,original_gallery_takes:gallery.tests.length,game_takes:game.takes.length,unique_asset_files:assets.size,total_asset_bytes:[...assets.values()].reduce((n,a)=>n+a.bytes,0),source_scope:'Generated motion and user-provided character assets only; no weights, tokens, source performance videos, bundled motion dataset or text encoder files.'};
+result.assets=Object.fromEntries(assets);fs.writeFileSync(path.join(OUT,'assets-manifest.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result.validation));

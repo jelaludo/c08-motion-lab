@@ -1,0 +1,18 @@
+{
+ "model":"Kimodo-SOMA-RP-v1.2","duration_s":6,"seeds":[101,202,303],
+ "cases":[
+  {"id":"fight-guard","label":"Fight / boxing guard","duration_s":5,"prompt":"A person stands in a boxing stance with both hands raised in guard, lightly shifting weight between the feet."},
+  {"id":"fight-right-straight","label":"Fight / right straight","duration_s":5,"prompt":"A person in a boxing stance throws a fast right straight punch forward, then retracts the hand back to guard."},
+  {"id":"fight-jab-cross","label":"Fight / left jab + right cross","prompt":"A person in a boxing stance throws a left jab followed by a right cross forward, shifting weight into the punches and returning the hands to guard."},
+  {"id":"fight-hook-cross","label":"Fight / left hook + right cross","prompt":"A person in a boxing stance throws a left hook followed by a right straight punch, rotating the torso and returning to guard."},
+  {"id":"fight-uppercut","label":"Fight / right uppercut","duration_s":5,"prompt":"A person in a boxing stance dips slightly and throws a right uppercut upward in front of the body, then returns to guard."},
+  {"id":"fight-slip-counter","label":"Fight / slip + counter","prompt":"A person in a boxing stance slips the head to one side to evade an imaginary punch, then throws a right straight counter punch forward."},
+  {"id":"fight-block-counter","label":"Fight / block + counter","prompt":"A person in a boxing stance raises both forearms to block an imaginary strike, then throws a left straight punch forward and returns to guard."},
+  {"id":"fight-footwork","label":"Fight / lateral footwork","prompt":"A person maintains a boxing guard while taking quick short lateral steps to the left and right, keeping the knees slightly bent."},
+  {"id":"fight-shadowboxing","label":"Fight / shadow boxing","duration_s":8,"prompt":"A person shadow boxes in place, throwing rhythmic alternating jabs and crosses while lightly shifting weight and keeping the hands near guard between punches."},
+  {"id":"fight-front-kick","label":"Fight / front kick","prompt":"A person in a fighting stance raises the right knee and performs a right front kick forward, retracts the leg and returns to guard."},
+  {"id":"fight-roundhouse","label":"Fight / roundhouse kick","prompt":"A person in a fighting stance pivots on the left foot and swings a right roundhouse kick across in front, then lowers the leg into a balanced fighting stance."},
+  {"id":"fight-grab-pull-turn","label":"Fight / mimed grab + pull + turn","duration_s":7,"prompt":"A person steps forward, mimes grabbing an imaginary opponent's arm with both hands, then pulls the hands inward while turning the torso to one side."}
+ ],
+ "scope":"Single-actor shadow combat: no second body, physical opponent contact, collision solve or validated martial technique. Person-based prompts follow official Kimodo guidance; robot appearance comes from original body retargeting."
+}
