@@ -43,6 +43,22 @@ export function heroLandingPose(a,elapsed){
   return {kneeError:point(a.bones.KNEE_R).distanceTo(knee),fistError:point(a.bones.HAND_L).distanceTo(groundFist),length:Math.max(...legs.map(l=>l.length),down.length,up.length),reach:Math.max(...legs.map(l=>l.reach),down.reach,up.reach)};
  });return {weight:w,...report};
 }
+export function sideStumblePose(a,flight){
+ const elapsed=flight.elapsed,w=phase(elapsed,0,.24)*(1-phase(elapsed,.94,flight.duration)),side=flight.side,sign=side==='L'?1:-1,other=side==='L'?'R':'L';
+ const report=blendPose(a,w,()=>{
+  const r=a.rig,kneeOffset=a.id==='c08'?.14:.065,hipY=.40,handY=a.id==='c08'?.065:.095,torso=r.shoulderHeight-r.points.PELVIS.y,pitch=Math.acos(T.MathUtils.clamp((handY+r.arm*.78-hipY)/torso,.25,.65));
+  orient(a,'PELVIS',pitch);pelvis(a,sign*.06,hipY,-.12);orient(a,'CHEST',pitch);orient(a,'NECK',.05);orient(a,'HEAD',-.12);a.asset.updateMatrixWorld(true);
+  const hip=point(a.bones['HIP_'+side]),dy=hip.y-a.group.position.y-kneeOffset,knee=hip.clone().addScaledVector(v(Math.sin(a.group.rotation.y),0,Math.cos(a.group.rotation.y)),Math.sqrt(Math.max(.001,r.thigh*r.thigh-dy*dy)));knee.y=a.group.position.y+kneeOffset;
+  const ankle=knee.clone().addScaledVector(v(Math.sin(a.group.rotation.y),0,Math.cos(a.group.rotation.y)),-Math.sqrt(Math.max(.001,r.calf*r.calf-(kneeOffset-r.ankleHeight)**2)));ankle.y=a.group.position.y+r.ankleHeight;
+  const foot=s=>a.group.getWorldQuaternion(new T.Quaternion()).multiply(r.rotations['ANKLE_'+s]);
+  const legs=[solveChain(a.bones['HIP_'+side],a.bones['KNEE_'+side],a.bones['ANKLE_'+side],ankle,foot(side),knee),solveChain(a.bones['HIP_'+other],a.bones['KNEE_'+other],a.bones['ANKLE_'+other],local(a,-sign*(Math.abs(r.points.ANKLE_L.x)+.05),r.ankleHeight,.48),foot(other),local(a,-sign*.3,.7,1))];
+  const shoulder=a.group.worldToLocal(point(a.bones['UPPER_ARM_'+side])),goal=local(a,shoulder.x+sign*.12,handY,shoulder.z+.07),down=solveArm(a,side,goal,local(a,sign*.9,.4,.3));
+  // Flat open support palm; do not apply the superhero clenched fist layer.
+  orient(a,'HAND_'+side,Math.PI/2);
+  const up=solveArm(a,other,local(a,-sign*.38,.97,.30),local(a,-sign*.65,1.10,.05));
+  return {kneeError:point(a.bones['KNEE_'+side]).distanceTo(knee),handError:point(a.bones['HAND_'+side]).distanceTo(goal),length:Math.max(...legs.map(l=>l.length),down.length,up.length),reach:Math.max(...legs.map(l=>l.reach),down.reach,up.reach)};
+ });return {weight:w,side,...report};
+}
 export function ledgeGrabPose(a,flight){
  const t=flight.elapsed,reach=phase(t,.12,.48)*(1-phase(t,1.25,1.65)),w=phase(t,.12,.42)*(1-phase(t,2.12,2.45));let length=0,error=0;
  blendPose(a,w,()=>{

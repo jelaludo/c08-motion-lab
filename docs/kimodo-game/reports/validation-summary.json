@@ -6,19 +6,19 @@
     "body_clips": 360
   },
   "game_kit": {
-    "motion_types": 94,
-    "takes": 188,
+    "motion_types": 96,
+    "takes": 198,
     "bodies": 2,
-    "body_clips": 376,
+    "body_clips": 396,
     "default_packs": 2
   },
   "transport": {
     "status": "passed",
-    "exact_source_track_roundtrips": 736,
+    "exact_source_track_roundtrips": 756,
     "original_gallery_takes": 90,
-    "game_takes": 188,
-    "unique_asset_files": 1856,
-    "total_asset_bytes": 144523711,
+    "game_takes": 198,
+    "unique_asset_files": 1924,
+    "total_asset_bytes": 147311193,
     "source_scope": "Generated motion and user-provided character assets only; no weights, tokens, source performance videos, bundled motion dataset or text encoder files."
   },
   "model": "Kimodo-SOMA-RP-v1.2",

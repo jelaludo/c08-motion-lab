@@ -1,0 +1,132 @@
+{
+  "schema": "kimodo-variety-ukemi/1",
+  "date": "2026-11-04",
+  "method": "Three new fullbody-constrained Kimodo forward ukemi predictions from creator-owned performance landmarks; two earlier complete backward rolls reused. Four new root2d 6 m/s sprint predictions. Authored lateral brace and controller paths.",
+  "counts": {
+    "motion_types": 96,
+    "takes": 198,
+    "game_body_clips": 396,
+    "unchanged_base_motion_types": 94,
+    "unchanged_base_takes": 188,
+    "unchanged_default_pack_clips_per_body": 94
+  },
+  "variety": {
+    "default_on": true,
+    "selection": "state-entry shuffle bag; no immediate repeat with alternatives; hold seed during action/locomotion state; same seed for compared bodies",
+    "rejected": "Current-version Game Kit Reject reviews excluded",
+    "preferred": "Variety off uses eligible preferred takes, falling back to first eligible; manual-only takes require explicit library preview",
+    "recording": "variant-choice and action-start events preserve selected IDs and seeds; live bone/controller layers are baked in Save take; static source exports omit runtime layers"
+  },
+  "ukemi": {
+    "forward_seeds": [
+      1101,
+      2202,
+      3303
+    ],
+    "backward_seeds": [
+      101,
+      202
+    ],
+    "manual_incomplete_backward_seeds": [
+      303
+    ],
+    "source_direction_diagnostics": [
+      {
+        "take": "game-ukemi-forward-seed1101",
+        "signed_hip_turn_degrees": 360.0,
+        "automatic_eligible": true
+      },
+      {
+        "take": "game-ukemi-forward-seed2202",
+        "signed_hip_turn_degrees": 360.0,
+        "automatic_eligible": true
+      },
+      {
+        "take": "game-ukemi-forward-seed3303",
+        "signed_hip_turn_degrees": 360.0,
+        "automatic_eligible": true
+      },
+      {
+        "take": "game-ukemi-backward-seed101",
+        "signed_hip_turn_degrees": -361.0777587890625,
+        "automatic_eligible": true
+      },
+      {
+        "take": "game-ukemi-backward-seed202",
+        "signed_hip_turn_degrees": -362.5755615234375,
+        "automatic_eligible": true
+      },
+      {
+        "take": "game-ukemi-backward-seed303",
+        "signed_hip_turn_degrees": -1.6148662567138672,
+        "automatic_eligible": false
+      }
+    ],
+    "contacts": "12\u201370cm grounded solid, >=0.65m/s, standing locomotion; forward/back from velocity versus facing; clear rollout required; jump/crouch/carry excluded",
+    "recovery_interrupt_fraction": 0.72,
+    "cooldown_after_s": 0.8,
+    "target_cleanup": "Per-body, full-skin vertical clearance envelope sampled at30Hz; raw source preserved; this is not learned support or physical balance"
+  },
+  "modifier": {
+    "ctrl_s": "Backward walk at1.25m/s",
+    "ctrl_a_d": "Lateral walk at1.25m/s",
+    "focus": "Only game canvas captures mapped Ctrl chords; dialogs/forms and other browser shortcuts pass",
+    "side_reaction": "Grounded lateral collision with solid >=12cm, including taller walls; mirrored knee + open support hand, authored1.55sec pose and20cm recoil on approach side"
+  },
+  "sprint": {
+    "automatic_seeds": [
+      411,
+      1233,
+      1644,
+      2055,
+      2466
+    ],
+    "preview_only_seeds": [
+      822
+    ],
+    "reason": "Creator reports822 glides; new seeds require visual comparison, no claim that generation alone fixes foot slip"
+  },
+  "runtime_sha256": {
+    "game.js": "6a93d66691cf611cdfc88b3a72fd5da9b7536bfa916ad6ce413a6b61f7346266",
+    "variation.js": "f733e295eeb7e525a33ac13904fe4f4fd8d2b78ada664830ae4a0453a994c109",
+    "breakfalls.js": "db426b1f5572e1e2e591a6930ea885a0693bf09737bd2d2a443ebb2f099a864f",
+    "contact-actions.js": "b291038a1f0b9b6fa5b2d7ad4d65181e8d0d8669f2c7a70b8e7923b9460d419f",
+    "world.js": "303df2b1963fc2d9a29143188cb35842a62d365d10e6abbace3550a7a367471e",
+    "index.html": "924403a90782de30808706cb97baaa8e076be4b5c61edf5c4d53401caf6c69f0"
+  },
+  "hash_scope": "UTF8 LF Git blob bytes",
+  "private_material_not_published": [
+    "Video frames",
+    "Full performance constraints",
+    "Prompt embeddings",
+    "Model weights",
+    "Credentials"
+  ],
+  "scope": "Motion/contact candidates for review; automated finite/contact checks do not certify visual naturalness, martial-arts technique or full-mesh collision physics.",
+  "recordings": [
+    {
+      "body": "c08",
+      "file": "reaction-takes/c08-side-brace.glb",
+      "sha256": "ee7a7769e8a38a7545ae5d7e78cc0623055c50ccdb6adfe3edbaef36c9888605",
+      "bytes": 1427968
+    },
+    {
+      "body": "c08",
+      "file": "reaction-takes/c08-side-brace.json",
+      "sha256": "194b67126554265544e938f65eaa14eef8d3a2722cb074084d87868741cfc63b",
+      "bytes": 3322
+    },
+    {
+      "body": "brek43",
+      "file": "reaction-takes/brek43-side-brace.glb",
+      "sha256": "5faa96e8927fc87374814280211af4c22aaf7dfa2699bb0cb0dbbd1e9bcc0b16",
+      "bytes": 1779332
+    },
+    {
+      "body": "brek43",
+      "file": "reaction-takes/brek43-side-brace.json",
+      "sha256": "2d3947878212b64bc28e29d467068ac00a430f566b0180d1605337d961e0b814",
+      "bytes": 3337
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "ukemi-game-derivation/1",
+  "take": "game-ukemi-forward-seed3303",
+  "source_take": "game-ukemi-forward-seed3303",
+  "body": "brek43",
+  "source_motion_sha256": "4317bbd2f118bfb9c800ab3d19f37c7a6ee5c0d8a5a584b48d4305d697cf5dd4",
+  "source_asset_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+  "source_glb_sha256": "85895856d0090a372e29d911177a966b87b15555c7315441bfec55badf31dc97",
+  "source_window": [
+    18,
+    123
+  ],
+  "frames": 106,
+  "inversion_frames": 19,
+  "floor_cleanup": {
+    "min_correction_m": -0.2637984360476161,
+    "max_correction_m": 0.04450783747068664,
+    "sampled_clearance_lower_bound_m": 0.012
+  },
+  "conditioning": {
+    "kind": "creator-owned forward ukemi landmarks",
+    "source_sha256": "3322605775d5bf73e196ac25321cb01566d60b31a995fe34e4a29b50ba95dc48",
+    "source_frames": [
+      0,
+      34,
+      54,
+      62,
+      70,
+      78,
+      86,
+      94,
+      110
+    ],
+    "target_frames": [
+      0,
+      12,
+      28,
+      38,
+      48,
+      58,
+      68,
+      78,
+      95,
+      119,
+      134
+    ],
+    "private_constraint_sha256": "ef29ebb11fdc3944a456314f507edb906e11a3c01501672f992410b47137689f",
+    "cached_prompt_embedding": true
+  },
+  "automatic_eligible": true,
+  "scope": "Authored game derivative; raw generated source is retained separately. Clearance envelope is not physical balance or martial-arts technique validation."
+}

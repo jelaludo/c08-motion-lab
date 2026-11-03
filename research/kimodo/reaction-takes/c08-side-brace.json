@@ -1,0 +1,134 @@
+{
+  "schema": "kimodo-game-recording/1",
+  "body": "c08",
+  "ended": "2026-11-03T15:28:18.122Z",
+  "duration_s": 4.700000000000008,
+  "frames": 95,
+  "events": [
+    {
+      "time": 0,
+      "type": "record-start",
+      "body": "c08"
+    },
+    {
+      "time": 0.025000000000000022,
+      "type": "variant-choice",
+      "motion": "game-walk-left",
+      "seeds": {
+        "c08": 822,
+        "brek43": 822
+      },
+      "takes": {
+        "c08": "game-walk-left-seed822",
+        "brek43": "game-walk-left-seed822"
+      },
+      "policy": "shuffle-bag-no-repeat",
+      "draw": 17,
+      "pool": [
+        "game-walk-left-seed411",
+        "game-walk-left-seed822"
+      ]
+    },
+    {
+      "time": 0.025000000000000022,
+      "type": "motion",
+      "id": "game-walk-left-seed822",
+      "body": "c08",
+      "source_sha256": "c9748f6f565869ea1b8650b7b93a08536e520a2058091b44129a2d2e67312da1"
+    },
+    {
+      "time": 2.899999999999991,
+      "type": "side-object-stumble",
+      "obstacle": "trip hurdle 14",
+      "direction": "side-left",
+      "incoming_speed_m_s": 1.2499999999942215,
+      "destination": [
+        -30,
+        0,
+        13.269900667401432
+      ]
+    },
+    {
+      "time": 2.899999999999991,
+      "type": "variant-choice",
+      "motion": "game-land-hard",
+      "seeds": {
+        "c08": 822,
+        "brek43": 822
+      },
+      "takes": {
+        "c08": "game-land-hard-seed822",
+        "brek43": "game-land-hard-seed822"
+      },
+      "policy": "shuffle-bag-no-repeat",
+      "draw": 18,
+      "pool": [
+        "game-land-hard-seed411",
+        "game-land-hard-seed822"
+      ]
+    },
+    {
+      "time": 2.899999999999991,
+      "type": "action-start",
+      "id": "game-land-hard",
+      "takes": {
+        "c08": "game-land-hard-seed822",
+        "brek43": "game-land-hard-seed822"
+      },
+      "seeds": {
+        "c08": 822,
+        "brek43": 822
+      }
+    },
+    {
+      "time": 2.899999999999991,
+      "type": "motion",
+      "id": "game-land-hard-seed822",
+      "body": "c08",
+      "source_sha256": "904f8817e1c3022dd2437688bba42129c5a89a2735ade321401237e192f4467c"
+    },
+    {
+      "time": 4.475000000000005,
+      "type": "traversal-end",
+      "kind": "stumble",
+      "obstacle": "trip hurdle 14"
+    },
+    {
+      "time": 4.475000000000005,
+      "type": "action-end",
+      "id": "game-land-hard"
+    },
+    {
+      "time": 4.500000000000005,
+      "type": "variant-choice",
+      "motion": "game-idle",
+      "seeds": {
+        "c08": 822,
+        "brek43": 822
+      },
+      "takes": {
+        "c08": "game-idle-seed822",
+        "brek43": "game-idle-seed822"
+      },
+      "policy": "shuffle-bag-no-repeat",
+      "draw": 19,
+      "pool": [
+        "game-idle-seed411",
+        "game-idle-seed822"
+      ]
+    },
+    {
+      "time": 4.500000000000005,
+      "type": "motion",
+      "id": "game-idle-seed822",
+      "body": "c08",
+      "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
+    }
+  ],
+  "baked": [
+    "controller world translation and rotation",
+    "retargeted skeletal poses",
+    "runtime foot and carrying-hand IK"
+  ],
+  "scope": "Sampled live play session. Review collision, contacts, props and balance before shipping. Prop mesh and its trajectory are not included in this character recording."
+}

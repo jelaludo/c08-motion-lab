@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "original_game_takes_unchanged": 188,
+  "original_gallery_takes_unchanged": 90,
+  "original_assets_unchanged": 1856,
+  "new_game_takes": 198,
+  "raw_animation_body_clips": 756,
+  "unique_asset_files": 1924,
+  "total_asset_bytes": 147311193,
+  "scope": "Original manifest rows and content-addressed source/processed/model bytes compared with git HEAD. New assets add ten takes; no original raw, derived, or shared model rows changed."
+}

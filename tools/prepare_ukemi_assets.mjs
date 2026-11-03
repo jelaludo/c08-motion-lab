@@ -1,0 +1,19 @@
+// Incrementally publish added ukemi and sprint takes. Never rederive base tracks.
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {gzipSync} from 'node:zlib';import {fileURLToPath,pathToFileURL} from 'node:url';
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),K=process.env.KIMODO_WORKSPACE||'G:/Dev/Kimodo',M=process.env.MOTION_REVIEW_NODE_MODULES||path.join(ROOT,'tools/review/node_modules'),T=await import(pathToFileURL(path.join(M,'three/build/three.module.js'))),{GLTFLoader}=await import(pathToFileURL(path.join(M,'three/examples/jsm/loaders/GLTFLoader.js')));
+globalThis.self=globalThis;globalThis.createImageBitmap=async()=>({width:1,height:1,close(){}});globalThis.ProgressEvent??=class{constructor(t,p){Object.assign(this,p)}};
+const read=f=>JSON.parse(fs.readFileSync(f)),sha=b=>crypto.createHash('sha256').update(b).digest('hex'),file=path.join(ROOT,'research/kimodo/assets-manifest.json'),manifest=read(file),catalog=read(path.join(K,'web/kimodo-game/catalog.json')),base='https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/';
+function add(bytes,ext){const digest=sha(bytes),rel='research/kimodo/assets/'+digest+ext,target=path.join(ROOT,rel);if(!fs.existsSync(target))fs.writeFileSync(target,bytes);else if(sha(fs.readFileSync(target))!==digest)throw Error('Hash mismatch');manifest.assets[rel]={sha256:digest,bytes:bytes.length};return {url:base+rel,sha256:digest,bytes:bytes.length}}
+function signature(clip){return clip.tracks.map(t=>({name:t.name,type:t.ValueTypeName,interpolation:t.getInterpolation(),times_sha256:sha(Buffer.from(t.times.buffer,t.times.byteOffset,t.times.byteLength)),values_sha256:sha(Buffer.from(t.values.buffer,t.values.byteOffset,t.values.byteLength))}))}
+let count=0;
+for(const take of catalog.takes.filter(t=>t.motion.startsWith('game-ukemi-')||t.source_round==='game-variants')){
+ const rows={};for(const o of take.outputs){
+  const bytes=fs.readFileSync(path.join(K,'web/kimodo-game',o.source_glb)),g=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),''),clip=g.animations[0],data=T.AnimationClip.toJSON(clip);delete data.uuid;const sig=signature(clip);if(JSON.stringify(sig)!==JSON.stringify(signature(T.AnimationClip.parse(data))))throw Error('Source roundtrip changed');
+  const report=read(path.join(K,'retarget',take.source_take||take.id,o.body,'retarget-report.json')),samples=report.sample_positions_blender,raw={...add(gzipSync(Buffer.from(JSON.stringify(data)),{level:9}),'.json.gz'),source_glb_sha256:sha(bytes),duration_s:clip.duration,name:clip.name,tracks:clip.tracks.length,signature:sig,source_character_sha256:report.source_asset_sha256,expected_joint_samples:[0,.25,.5,.75,1].map(u=>{const frame=Math.round((samples.length-1)*u);return {time:frame/30,positions:Object.fromEntries(Object.entries(samples[frame]).map(([n,p])=>[n,[p[0],p[2],-p[1]]]))}})};
+  rows[o.body]={raw,processed:add(gzipSync(fs.readFileSync(path.join(K,'web/kimodo-game',o.clip)),{level:9}),'.json.gz'),report:add(fs.readFileSync(path.join(K,'web/kimodo-game',o.report)),'.json')};count++;
+  g.scene.traverse(o=>{o.geometry?.dispose();for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[])m.dispose()});
+ }
+ manifest.game.takes[take.id]=rows;
+}
+Object.assign(manifest.validation,{game_takes:Object.keys(manifest.game.takes).length,exact_source_track_roundtrips:Object.values(manifest.gallery.takes).reduce((s,t)=>s+Object.keys(t).length,0)+Object.values(manifest.game.takes).reduce((s,t)=>s+Object.keys(t).length,0),unique_asset_files:Object.keys(manifest.assets).length,total_asset_bytes:Object.values(manifest.assets).reduce((s,a)=>s+a.bytes,0)});
+fs.writeFileSync(file,JSON.stringify(manifest,null,2));console.log('Packed',count,'added ukemi/sprint body takes; original manifest entries/assets retained.');

@@ -1,0 +1,22 @@
+{
+  "schema": "ukemi-game-derivation/1",
+  "take": "game-ukemi-backward-seed303",
+  "source_take": "r2-ukemi-forward-seed303",
+  "body": "c08",
+  "source_motion_sha256": "8f6bed3825663a965985e822e5d013a11d91ec10e5a4827c80a772511ac16da3",
+  "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+  "source_glb_sha256": "54132559a6b8ec17e8bd77cbbc99c3b265528ce9a92290d71d4d2281031458f1",
+  "source_window": [
+    30,
+    209
+  ],
+  "frames": 180,
+  "inversion_frames": 0,
+  "floor_cleanup": {
+    "min_correction_m": 0.008796225491694674,
+    "max_correction_m": 0.21637217137342418,
+    "sampled_clearance_lower_bound_m": 0.012
+  },
+  "automatic_eligible": false,
+  "scope": "Authored game derivative; raw generated source is retained separately. Clearance envelope is not physical balance or martial-arts technique validation."
+}

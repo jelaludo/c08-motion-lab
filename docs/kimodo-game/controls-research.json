@@ -1,6 +1,6 @@
 {
   "schema": "kimodo-controls-study/1",
-  "checked": "2026-11-03",
+  "checked": "2026-11-04",
   "scope": "PC on-foot keyboard/mouse references. RE4 means 2023 remake; not the 2005 tank-control original. Default/reference layouts are not locally verified installed builds. Player expectations below are design inferences, not a user survey.",
   "games": [
     {
@@ -264,7 +264,7 @@
       "action": "Movement / camera",
       "input": "WASD + mouse",
       "live": "Implemented",
-      "detail": "Explore facing travel. Hold RMB to face camera heading and strafe. Mouse look uses browser pointer capture; first captured click does not attack."
+      "detail": "Explore facing travel. Hold RMB to face camera heading and strafe. Ctrl+S walks backward and Ctrl+A/D walk sideways at 1.25 m/s while keeping camera heading. These mapped chords suppress browser Save/Select All/Bookmark only in the focused game viewport. First captured left click attacks."
     },
     {
       "action": "Faster movement",
@@ -294,7 +294,7 @@
       "action": "Crouch / prone",
       "input": "C / quick C C / Z",
       "live": "Implemented",
-      "detail": "Single C immediately enters crouch locomotion; C C within 300 ms selects static kneeling/seiza. Movement leaves seiza into crouch. Space jumps from either with a headroom check. Prone support contacts and hold-crouch remain incomplete. C is unmodified: Ctrl+C and other Ctrl/Command browser shortcuts bypass gameplay. Ctrl+Space is the explicit high-jump exception."
+      "detail": "Single C immediately enters crouch locomotion; C C within 300 ms selects static kneeling/seiza. Movement leaves seiza into crouch. Space jumps from either with a headroom check. Prone support contacts and hold-crouch remain incomplete. C is unmodified: Ctrl+C and other Ctrl/Command browser shortcuts bypass gameplay. Ctrl+Space is the high-jump exception; focused Ctrl+A/S/D are explicit locomotion chords."
     },
     {
       "action": "Context interaction",

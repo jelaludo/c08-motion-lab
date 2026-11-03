@@ -16,8 +16,18 @@
     }
   ],
   "seeds": [
+    101,
+    202,
+    303,
     411,
-    822
+    822,
+    1101,
+    1233,
+    1644,
+    2055,
+    2202,
+    2466,
+    3303
   ],
   "motions": [
     {
@@ -797,6 +807,22 @@
       "label": "Combat / block",
       "group": "combat",
       "kind": "action"
+    },
+    {
+      "id": "game-ukemi-forward",
+      "label": "Ukemi / forward",
+      "group": "ground",
+      "kind": "action",
+      "addon": true,
+      "default_seed": 1101
+    },
+    {
+      "id": "game-ukemi-backward",
+      "label": "Ukemi / backward",
+      "group": "ground",
+      "kind": "action",
+      "addon": true,
+      "default_seed": 101
     }
   ],
   "takes": [
@@ -7790,6 +7816,10 @@
           "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/9d5829a80fdc30a8e1fc03a88e56cfa4c672023766089723538c67d11df8a25f.json.gz",
           "source_glb_sha256": "508e18e89695637e48aca86addbdd0626d60e4b4e0e179902eebe3df172ac48a"
         }
+      ],
+      "automatic_eligible": false,
+      "limitations": [
+        "Creator reports excessive gliding; retained for explicit comparison, excluded from automatic sprint variety."
       ]
     },
     {
@@ -9165,6 +9195,438 @@
           "jump": null,
           "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/e25f1c3ee3ac77c5a2cff2121503658472f6291b7aaa706568a03b0dffd3de04.json.gz",
           "source_glb_sha256": "208ff17f376f9169e13f934f26928ab619b3e5327672b9fc4f9ef02b0fa8d327"
+        }
+      ]
+    },
+    {
+      "id": "game-ukemi-forward-seed1101",
+      "motion": "game-ukemi-forward",
+      "label": "Ukemi / forward",
+      "group": "ground",
+      "kind": "action",
+      "seed": 1101,
+      "version": 1,
+      "method": "kimodo-game-ukemi",
+      "source_take": "game-ukemi-forward-seed1101",
+      "source_round": "game-ukemi",
+      "source_sha256": "70eb67bff23b70c287f71d8e7d735c9cb6dd0dd067ec2814c7128fe4d0f0b3c8",
+      "prompt": "A person performs one controlled judo forward shoulder roll diagonally across the back, tucking the head and rolling from one shoulder toward the opposite hip, then regains a balanced standing posture.",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/1860dc4a9d75d77175f0e8d738c02a531f6f151e3bf8d33ccca3a79f6c443084.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/3324078466321d2531ee5338d80d2b26e190ee4542b814dabc64540eff749c55.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/e4409df80a846716baaa5c3e9d21e3cb9df0ab126ff729a9c28c759af0268fa6.json.gz",
+          "source_glb_sha256": "15d0cbfefd0d7c99e021b83e07efb94a4ccde68a2ba920e1a7127a5fecef0833"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/08582c52174086e5861791124aa100aa5ef193d6f08633a6947ea8e4d03cd99d.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/83ad1df41e99f801cc5fe01ea76a500c87810ffbdf168017f09c06025c1399f4.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/a0b6c512977ef911b462d74656ecff0154597c8d1b50bccb90b3d99a91ee47b4.json.gz",
+          "source_glb_sha256": "5a6a3638b30d7298ed75c004c628b4513ab8f1880a7920f982bc9c164c75b135"
+        }
+      ],
+      "limitations": [
+        "Candidate roll/breakfall; not certified ukemi technique."
+      ]
+    },
+    {
+      "id": "game-ukemi-forward-seed2202",
+      "motion": "game-ukemi-forward",
+      "label": "Ukemi / forward",
+      "group": "ground",
+      "kind": "action",
+      "seed": 2202,
+      "version": 1,
+      "method": "kimodo-game-ukemi",
+      "source_take": "game-ukemi-forward-seed2202",
+      "source_round": "game-ukemi",
+      "source_sha256": "7d47c9ec45a7e6bb96a0229fca83f47c56e29a981d6a9a6da5002053426af972",
+      "prompt": "A person performs one controlled judo forward shoulder roll diagonally across the back, tucking the head and rolling from one shoulder toward the opposite hip, then regains a balanced standing posture.",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/127ca14d667460eff99452f8d15d8ccf1adc56ce2871a49f5d9f02b327ad51b2.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8f7cb9e9b37c3f7ce92b60ba9d2ebce8b8d8c7761ab4ef52d1c469bc84fe227f.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/9837a16f2777f9f059ba4c42f3becd74d2e8e2bf9e560a3ccc9faca93ae4c3b3.json.gz",
+          "source_glb_sha256": "3ef8eb6d2503756ea100f576e744b3b1be2381bb37d7becf83c4d356fbfda93c"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/6822ada8f313bcebb4c55a1ba6ee61a1ae8489f9024a44c6105b9ed47ff2c287.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/770ec9da29d19aa665d9b3fbdaedce1aaeaa660ea85096b4ff42c582d555c0cb.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/7f7d9354353633e16fa4f2760d112fe3ab8b99e0a9892e7f9e6f50d66797fd10.json.gz",
+          "source_glb_sha256": "f302071bb14cda8c78394733b4586be958ace52213bebf8d780db0bd37fa7c6b"
+        }
+      ],
+      "limitations": [
+        "Candidate roll/breakfall; not certified ukemi technique."
+      ]
+    },
+    {
+      "id": "game-ukemi-forward-seed3303",
+      "motion": "game-ukemi-forward",
+      "label": "Ukemi / forward",
+      "group": "ground",
+      "kind": "action",
+      "seed": 3303,
+      "version": 1,
+      "method": "kimodo-game-ukemi",
+      "source_take": "game-ukemi-forward-seed3303",
+      "source_round": "game-ukemi",
+      "source_sha256": "4317bbd2f118bfb9c800ab3d19f37c7a6ee5c0d8a5a584b48d4305d697cf5dd4",
+      "prompt": "A person performs one controlled judo forward shoulder roll diagonally across the back, tucking the head and rolling from one shoulder toward the opposite hip, then regains a balanced standing posture.",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/32178b295a9371335baddc8460fdb5a9362dd67750a09e7c157bdab4207ec483.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/b2d0b9031f3fc5bad15b28b7004fb80f8505061b3769d47b9460edc1821a79c1.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/861e3bb4205eb3c798acfd332b547ac453e3edd39ecc69df3eb092c2558d21db.json.gz",
+          "source_glb_sha256": "2097b1292859a43668b5aff600c264d8f7249e1f90bf9b547b2a9decb5b78344"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/fe778deaf06472c0d2430c72e21f109532f274d2879097220821e81f334c8779.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/b97a5e5d3aa00fbf4faff18bc2ed219607bbeacfdedbc51b4410e8199dc75bbe.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/940a89d502e026ac78f9650b0f086abc2400041dc9801fe18d8d754f031fa66a.json.gz",
+          "source_glb_sha256": "85895856d0090a372e29d911177a966b87b15555c7315441bfec55badf31dc97"
+        }
+      ],
+      "limitations": [
+        "Candidate roll/breakfall; not certified ukemi technique."
+      ]
+    },
+    {
+      "id": "game-ukemi-backward-seed101",
+      "motion": "game-ukemi-backward",
+      "label": "Ukemi / backward",
+      "group": "ground",
+      "kind": "action",
+      "seed": 101,
+      "version": 1,
+      "method": "kimodo-game-ukemi",
+      "source_take": "r2-ukemi-forward-seed101",
+      "source_round": "round2",
+      "source_sha256": "fe3c0007ef48d34d512643d272a93b8a97420e4c5e0ed3de71b8c97ad7f7eeb2",
+      "prompt": "A person performs one controlled judo forward shoulder roll diagonally across the back, tucking the head and rolling from one shoulder toward the opposite hip, then regains a balanced standing posture.",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/eb77b2284a0595fbd706e2181a35e9721d41df77bbe05dc5806401cf89ac2ad3.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/4c48d5820dd95e4b2988bdf1118cfb1e3947d0b747b23b2f68fe7ac35f03c797.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/6ade6d65f2e6de69409834a61c4f9b3fe3f3e6bef52cb71602b4ffef09e957aa.json.gz",
+          "source_glb_sha256": "38474e76a8675770a02f7a468e2b6f7dfdb4713f236b42dc0e945784b07e37e4"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/71f3faec23482f6e4b66e9929c88d4e5c18103f9d445bb40d50cc1f91a845943.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/832c7b82ccdd1404dfdf056ab1c88df2b292e50d034e02f06410c4e6581f0a90.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d3a02934c2187b7ae7bce3ea0c7d9443c64bb63df9296a8f4aedc5ebc2038428.json.gz",
+          "source_glb_sha256": "7ee4691accf901daf8f75c8f5a1b4b817ef77b455146dd5bce9814e710da5f65"
+        }
+      ],
+      "limitations": [
+        "Candidate roll/breakfall; not certified ukemi technique."
+      ]
+    },
+    {
+      "id": "game-ukemi-backward-seed202",
+      "motion": "game-ukemi-backward",
+      "label": "Ukemi / backward",
+      "group": "ground",
+      "kind": "action",
+      "seed": 202,
+      "version": 1,
+      "method": "kimodo-game-ukemi",
+      "source_take": "r2-ukemi-forward-seed202",
+      "source_round": "round2",
+      "source_sha256": "8b2bcb7d4a83e3d678a3aeafc7728803925f8dd01b9adac4d3b3165a404f6979",
+      "prompt": "A person performs one controlled judo forward shoulder roll diagonally across the back, tucking the head and rolling from one shoulder toward the opposite hip, then regains a balanced standing posture.",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/3adea0a0a16ef843c9fd775f3c4f2539de608f0760c4f3c06344097c3e29191b.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/584094cccf2a8247ecccec240c83a35bb5a3bfea8d0fcf8b99920a319e1a2f85.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/9bbbd5db0e2bdef8477f1b724ee40d76ae29684afbd1d37425bc9c29abdc57ba.json.gz",
+          "source_glb_sha256": "7f92e0a86feb7253550fa6df5f6761db1b5664457ada50c81627a51bd0ed7a69"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/7a8711c57433b1bddaa64c2657d85f1d2c3f37872d1270db9068c4fe512e9cba.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/f30844bc6bef0889a2bed2cd995b3cfb52fd2e65776612838fb1886eda4258aa.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/e1598b4afcfa0235dfc8015be6c6475ab65895e5ac6a0e0ecc63295a5f9bd042.json.gz",
+          "source_glb_sha256": "b0d6f211d667f45df1d85f1bfbd87dc9dc4c56454a1f4cdf7de6f686c170327b"
+        }
+      ],
+      "limitations": [
+        "Candidate roll/breakfall; not certified ukemi technique."
+      ]
+    },
+    {
+      "id": "game-ukemi-backward-seed303",
+      "motion": "game-ukemi-backward",
+      "label": "Ukemi / backward",
+      "group": "ground",
+      "kind": "action",
+      "seed": 303,
+      "version": 1,
+      "method": "kimodo-game-ukemi",
+      "source_take": "r2-ukemi-forward-seed303",
+      "source_round": "round2",
+      "source_sha256": "8f6bed3825663a965985e822e5d013a11d91ec10e5a4827c80a772511ac16da3",
+      "prompt": "A person performs one controlled judo forward shoulder roll diagonally across the back, tucking the head and rolling from one shoulder toward the opposite hip, then regains a balanced standing posture.",
+      "automatic_eligible": false,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/9c5d09cceb362683063121561426a45b00ddfde5e1a15f7a13987ffb1a8b2b9d.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/2be57ad62b387ccff9a2102f4351fa08e4002e8c13d41297c59b1ed98275518f.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/f2f4591292cfb1c1cd5498bb483b7810c2db2e44a48956bec998dd24b8dc02ec.json.gz",
+          "source_glb_sha256": "54132559a6b8ec17e8bd77cbbc99c3b265528ce9a92290d71d4d2281031458f1"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/ea79b38291f7f983515fcc79e717c06100df57fa62ec4d53a8dc93f49c74be5c.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/de3a1c254651ab2e31e9146395fa51a51fef8b5a4da606dfce2f12615d8b7272.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/7c1ba86d7cda78321f134e0fb140f106b8777fde1738cb7e08a56bc05bad3635.json.gz",
+          "source_glb_sha256": "84944956790788430ec6dba0caf90158f54c5a35c9c974bb5fc86c4cd5ff3c8b"
+        }
+      ],
+      "limitations": [
+        "No complete head-below-hips inversion detected; retained for manual review, excluded from automatic rolls."
+      ]
+    },
+    {
+      "id": "game-sprint-forward-seed1233",
+      "motion": "game-sprint-forward",
+      "label": "Sprint / forward",
+      "group": "locomotion",
+      "kind": "loop",
+      "seed": 1233,
+      "prompt": "A person sprints straight forward with long powerful strides and strong coordinated arm swings.",
+      "version": 1,
+      "method": "kimodo-game-kit",
+      "source_round": "game-variants",
+      "source_sha256": "fd86946b15576fa3ff920d88470b4849581893f29b28eddd9cb74cbc563813fd",
+      "source_speed_m_s": 5.9999799728393555,
+      "desired_speed_m_s": 6,
+      "direction": [
+        0,
+        1
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/55c7e30567c4c6ab6c48998ed6728583d95a3a99d9367f32a7b8858aad9a4584.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/492a159e55657969e6215895554cbca1647f3517f458526fb039d46084bee7be.json",
+          "raw_seam_score": 0.19038529226081022,
+          "bind_height_m": 2.2854126167117457,
+          "measured_target_speed_m_s": 6.565838439532432,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/0f3920982cf8089ce9041128ff161d063b0e865b349c08dcb4e4da91b6496847.json.gz",
+          "source_glb_sha256": "69734f5268a570c750d22140d273d4f1e22cb4923598f9b7a96a5a3b38b66ed4"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/fc874d921a1fb4d2a05828dd8bfc6956bc4cdc6c3862b5779110571a21d5e059.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/43b1cd3db4b9ee094bdfee92f54452c8cfef45ffc63e7ee192869cff0fe43cb4.json",
+          "raw_seam_score": 0.19327706264741024,
+          "bind_height_m": 2.709000166151103,
+          "measured_target_speed_m_s": 10.147207276314477,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/56b6a0cff075d8937a41be1178b9c5de93faadbb1de99b31438fd8ac07fc18cf.json.gz",
+          "source_glb_sha256": "c68495778a6105d3519096326441ef6a9b81f7f8b4706b8e61e6d3647881f098"
+        }
+      ]
+    },
+    {
+      "id": "game-sprint-forward-seed1644",
+      "motion": "game-sprint-forward",
+      "label": "Sprint / forward",
+      "group": "locomotion",
+      "kind": "loop",
+      "seed": 1644,
+      "prompt": "A person sprints straight forward with long powerful strides and strong coordinated arm swings.",
+      "version": 1,
+      "method": "kimodo-game-kit",
+      "source_round": "game-variants",
+      "source_sha256": "f84d477e213023d069d188f0d97ed51c9d2b9043b548ca4e969d02df25afdf23",
+      "source_speed_m_s": 6.000003814697266,
+      "desired_speed_m_s": 6,
+      "direction": [
+        0,
+        1
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/f281e3e5d9f8c1c6f06780720ef2ecec09855059c2afe941a1e5301edaebcead.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/143d24d6bdedec42174141fb255a7952d7d64c2110c9780679e195a8a0db9cf6.json",
+          "raw_seam_score": 0.23923663088124736,
+          "bind_height_m": 2.2854126167117457,
+          "measured_target_speed_m_s": 6.4566884054849725,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/ac4c9d15a6cfb69a67c5dcdf28b658d0fb8bbf784911343abcbca34fe7768579.json.gz",
+          "source_glb_sha256": "8eb3c4d74a767af2af918c0a9a9ec125d9abef92d6f11fd372c64fb5cc9784f9"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8be9d8482c68eee3e8cec68c331793f96d1287037156fd04729976d34d41650b.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/189dce63a692f4eccd6df0077db73a1f577446e64ef70c56ff05904cc01172b0.json",
+          "raw_seam_score": 0.2650148591017294,
+          "bind_height_m": 2.709000166151103,
+          "measured_target_speed_m_s": 9.978519643893554,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/ba13528d5eebf1c5034fdd0c0af340f527a079066d36843e26b568554bcf0897.json.gz",
+          "source_glb_sha256": "cd15cc78518ffdf4dc84b82bdd03dc4d53266395c0d9f0e55207c04c5b495c0b"
+        }
+      ]
+    },
+    {
+      "id": "game-sprint-forward-seed2055",
+      "motion": "game-sprint-forward",
+      "label": "Sprint / forward",
+      "group": "locomotion",
+      "kind": "loop",
+      "seed": 2055,
+      "prompt": "A person sprints straight forward with long powerful strides and strong coordinated arm swings.",
+      "version": 1,
+      "method": "kimodo-game-kit",
+      "source_round": "game-variants",
+      "source_sha256": "8349703535c166f976a40ba2bf02d6f42b1158e0430867e70050552af8116f47",
+      "source_speed_m_s": 5.99226713180542,
+      "desired_speed_m_s": 6,
+      "direction": [
+        0,
+        1
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/dc338e223fcde710a7efd113e0e6c4c03cedcdca9a91f34733572acea886bccd.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/31ef94dd6321873f1a13a01ef8ea756a6141bea3cb200724e8ec696e84b79dfb.json",
+          "raw_seam_score": 0.31234358800004014,
+          "bind_height_m": 2.2854126167117457,
+          "measured_target_speed_m_s": 6.514784198438384,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/bf07b395a6065c7615cfbc613f61e5fcfab6d6e4d5a1fc1381bc8e3c0b62ea42.json.gz",
+          "source_glb_sha256": "468428c1a37b1329b13b4d8477f62ae9fdaaafd522fd09e37c1763a376fefccc"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/e0619cc75b1bac2249ddc754f7cae8d53e10d1949a020a08cac828e7e8619d1e.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/9d5e8767e48525efda80e8025b2482edc47f5ae70935ba32d2ab47876340d4f3.json",
+          "raw_seam_score": 0.31836077741821744,
+          "bind_height_m": 2.709000166151103,
+          "measured_target_speed_m_s": 10.068302351952502,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/63dc1c37144b3d69fd96827f22b50ef7819afda9dff8172e92e13e78aa2d46de.json.gz",
+          "source_glb_sha256": "9acf9a62b16eee79bc95c459657972f09950faac574c985cf77af9074fe59ba6"
+        }
+      ]
+    },
+    {
+      "id": "game-sprint-forward-seed2466",
+      "motion": "game-sprint-forward",
+      "label": "Sprint / forward",
+      "group": "locomotion",
+      "kind": "loop",
+      "seed": 2466,
+      "prompt": "A person sprints straight forward with long powerful strides and strong coordinated arm swings.",
+      "version": 1,
+      "method": "kimodo-game-kit",
+      "source_round": "game-variants",
+      "source_sha256": "0d8fcd041b3e628686fc4406fd1902ec8f186a7cbecc1bc7fabd50c255fd2c98",
+      "source_speed_m_s": 5.996467590332031,
+      "desired_speed_m_s": 6,
+      "direction": [
+        0,
+        1
+      ],
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/526f9d8610009085d324a7469e807290fdc44ede7f510b13e5c6345d94acdfd2.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/83dd7d69dc8dc200fd1e1fe2a103b4a85559c414053afbdc30034534184175a1.json",
+          "raw_seam_score": 0.20624037269645434,
+          "bind_height_m": 2.2854126167117457,
+          "measured_target_speed_m_s": 6.476836901115765,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/258c077fa7dab6490c380de3ae7a9ea3b805b75c9adc7827e3c37c4f55c34550.json.gz",
+          "source_glb_sha256": "dcbef4c01b10d8a16ef913dc49ea12a53a5253056b494dcda82e002b4237abb3"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/47cc2f6f81b9a9b8bf0a8ee41eb83f844bd93fb1f319f1904e2e83e558801fd2.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/e7f6058064712df00e1ad668c40169609f9d04eae69ef32ff6716104288ba260.json",
+          "raw_seam_score": 0.20855749185205066,
+          "bind_height_m": 2.709000166151103,
+          "measured_target_speed_m_s": 10.009658123090787,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/58b7c5beec9f1e85e7c44f44d088e81d198a8d902b0df10d49a48cc560604058.json.gz",
+          "source_glb_sha256": "187e4b91e935d5c556d6920c5be71371a33f9b2fba1e211e0340dcf4bb1e8cd2"
         }
       ]
     }

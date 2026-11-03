@@ -1,0 +1,169 @@
+{
+  "schema": "responsive-controls-qa/1",
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/kimodo-game/?controls=hybrid",
+  "staged": true,
+  "checked": "2026-11-03T15:24:05.945Z",
+  "checks": [
+    {
+      "name": "c08 Alt immediately yields to Space and movement",
+      "status": "passed",
+      "action": "game-jump-standing",
+      "elapsed": 0,
+      "flight": "jump",
+      "stance": "stand",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "motion": "game-jump-standing",
+      "actor_facing_preserved": true
+    },
+    {
+      "name": "c08 immediate crouch, double-C seiza, crouch jump",
+      "status": "passed",
+      "crouch_move": [
+        0,
+        0,
+        0.37602602576165584
+      ],
+      "static_seiza": true
+    },
+    {
+      "name": "c08 repeated LMB restarts and Space preempts attack",
+      "status": "passed",
+      "first": "game-jab",
+      "second": "game-cross",
+      "airborne_attack_lands": true
+    },
+    {
+      "name": "c08 contextual barrier vault and wall mantle",
+      "status": "passed",
+      "vault": {
+        "stance": "stand",
+        "p": [
+          6,
+          0,
+          12.8
+        ],
+        "motion": "game-idle"
+      },
+      "mantle": {
+        "stance": "stand",
+        "p": [
+          7,
+          1.55,
+          6.880000000000001
+        ],
+        "motion": "game-idle"
+      },
+      "maxY": 0.96
+    },
+    {
+      "name": "c08 clearance checks, prop cancellation and air continuity",
+      "status": "passed",
+      "headroom_reject": true,
+      "boundary_reject": true,
+      "box": [
+        -2,
+        0.23,
+        1.8
+      ]
+    },
+    {
+      "name": "c08 traversal rejects occupied destinations and aborts blocked routes",
+      "status": "passed",
+      "occupied_landing_rejected": true,
+      "blocked_route_aborted": true,
+      "consecutive_double_c_only": true
+    },
+    {
+      "name": "brek43 Alt immediately yields to Space and movement",
+      "status": "passed",
+      "action": "game-jump-standing",
+      "elapsed": 0,
+      "flight": "jump",
+      "stance": "stand",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "motion": "game-jump-standing",
+      "actor_facing_preserved": true
+    },
+    {
+      "name": "brek43 immediate crouch, double-C seiza, crouch jump",
+      "status": "passed",
+      "crouch_move": [
+        0,
+        0,
+        0.37602602576165584
+      ],
+      "static_seiza": true
+    },
+    {
+      "name": "brek43 repeated LMB restarts and Space preempts attack",
+      "status": "passed",
+      "first": "game-jab",
+      "second": "game-cross",
+      "airborne_attack_lands": true
+    },
+    {
+      "name": "brek43 contextual barrier vault and wall mantle",
+      "status": "passed",
+      "vault": {
+        "stance": "stand",
+        "p": [
+          6,
+          0,
+          12.8
+        ],
+        "motion": "game-idle"
+      },
+      "mantle": {
+        "stance": "stand",
+        "p": [
+          7,
+          1.55,
+          6.880000000000001
+        ],
+        "motion": "game-idle"
+      },
+      "maxY": 0.96
+    },
+    {
+      "name": "brek43 clearance checks, prop cancellation and air continuity",
+      "status": "passed",
+      "headroom_reject": true,
+      "boundary_reject": true,
+      "box": [
+        -2,
+        0.23,
+        1.8
+      ]
+    },
+    {
+      "name": "brek43 traversal rejects occupied destinations and aborts blocked routes",
+      "status": "passed",
+      "occupied_landing_rejected": true,
+      "blocked_route_aborted": true,
+      "consecutive_double_c_only": true
+    },
+    {
+      "name": "late source load cannot resurrect cancelled action",
+      "status": "passed",
+      "cancelled_take": "game-wave-seed822",
+      "latest_input_wins": true
+    },
+    {
+      "name": "recorded responsive chain contains finite poses",
+      "status": "passed",
+      "frames": 43,
+      "ready": true,
+      "finite": true
+    }
+  ],
+  "errors": []
+}

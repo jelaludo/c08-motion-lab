@@ -1,13 +1,13 @@
 {
   "status": "passed",
-  "environment": "live GitHub Pages and raw host",
-  "url": "https://jelaludo.github.io/c08-motion-lab/",
+  "environment": "staged exact-byte raw-host interception",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/",
   "checks": [
     {
       "name": "all source clips on shared meshes match original export joints",
       "status": "passed",
-      "clips": 736,
-      "joint_samples": 35900,
+      "clips": 756,
+      "joint_samples": 36900,
       "max_error_m": 0.000033592867207959285,
       "gzip_and_sha256_verified": true
     },
@@ -27,8 +27,9 @@
     {
       "name": "all game clips load and preserve cyclic endpoints",
       "status": "passed",
-      "count": 376,
-      "seam": 0
+      "count": 396,
+      "seam": 0,
+      "expected": 396
     },
     {
       "name": "Hybrid input context review and recording",

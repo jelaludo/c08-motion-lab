@@ -1,9 +1,9 @@
 {
   "schema": "kimodo-control-audit/1",
   "status": "passed",
-  "checked": "2026-11-03",
-  "catalog_motion_types": 94,
-  "catalog_takes": 188,
+  "checked": "2026-11-04",
+  "catalog_motion_types": 96,
+  "catalog_takes": 198,
   "bodies": [
     "c08",
     "brek43"
@@ -302,7 +302,7 @@
       "test": "Add only after the level and game design need that mechanic; do not copy every feature from all five games into one controller."
     }
   ],
-  "runtime_source_sha256": "8170d74c4a084129ad70f86c3fba18070944bd6ac9d9a1550b2473c5df98dbc5",
+  "runtime_source_sha256": "6a93d66691cf611cdfc88b3a72fd5da9b7536bfa916ad6ce413a6b61f7346266",
   "scope": "Static inventory/code audit. Existing candidate IDs do not establish accepted motion quality or completed game states.",
   "earlier_lab_take_count": 90,
   "prior_lab_sources": {
@@ -327,6 +327,6 @@
       "url": "../kimodo-bipeds/?test=r2-ukemi-forward-seed101&category=ground"
     }
   },
-  "local_source_runtime_sha256": "a183214ebe835dec567c476e1075531a2cdad09be1e05442e8c33b9f99fe7476",
+  "local_source_runtime_sha256": "5c2eb09dec5e74d95e9c2d5faa1758e95292ace1743cb8fefe925660f28a5ba7",
   "publication_transport": "Compressed static track assets; animation/controller behavior retained."
 }

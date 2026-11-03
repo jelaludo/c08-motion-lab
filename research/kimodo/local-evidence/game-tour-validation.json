@@ -158,7 +158,7 @@
         ],
         "action": "game-combo",
         "stance": "stand",
-        "pending": 0,
+        "pending": 2,
         "time": 73
       },
       {
@@ -213,122 +213,426 @@
       "events": [
         {
           "time": 0,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 1,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 0,
+          "type": "motion",
+          "id": "game-idle-seed822",
+          "body": "c08",
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
+        },
+        {
+          "time": 0.1702,
+          "type": "variant-choice",
+          "motion": "game-jog-forward",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-jog-forward-seed822",
+            "brek43": "game-jog-forward-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 2,
+          "pool": [
+            "game-jog-forward-seed411",
+            "game-jog-forward-seed822"
+          ]
+        },
+        {
+          "time": 0.1702,
+          "type": "motion",
+          "id": "game-jog-forward-seed822",
+          "body": "c08",
+          "source_sha256": "6b6afd54ce652f7d3ab542ec780a60981481fca8c76b1ca703d34dee6bd63466"
+        },
+        {
+          "time": 1.1694,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 3,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 1.2044000000000001,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 0.18320000000000006,
-          "type": "motion",
-          "id": "game-jog-forward-seed411",
-          "body": "c08",
-          "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
+          "time": 1.3275000000000003,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 4,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
         },
         {
-          "time": 1.1836,
-          "type": "motion",
-          "id": "game-idle-seed411",
-          "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
-        },
-        {
-          "time": 1.3336999999999992,
+          "time": 1.3275000000000003,
           "type": "reset"
         },
         {
-          "time": 1.3336999999999992,
+          "time": 1.3275000000000003,
           "type": "motion",
-          "id": "game-idle-seed411",
+          "id": "game-idle-seed822",
           "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
         },
         {
-          "time": 1.3836999999999993,
+          "time": 1.3775000000000004,
+          "type": "variant-choice",
+          "motion": "game-walk-forward",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-walk-forward-seed411",
+            "brek43": "game-walk-forward-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 5,
+          "pool": [
+            "game-walk-forward-seed411",
+            "game-walk-forward-seed822"
+          ]
+        },
+        {
+          "time": 1.3775000000000004,
           "type": "motion",
           "id": "game-walk-forward-seed411",
           "body": "c08",
           "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
         },
         {
-          "time": 6.633699999999983,
+          "time": 6.627499999999984,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 6,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 6.627499999999984,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 6.683699999999983,
+          "time": 6.677499999999984,
+          "type": "variant-choice",
+          "motion": "game-jog-forward",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-jog-forward-seed411",
+            "brek43": "game-jog-forward-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 7,
+          "pool": [
+            "game-jog-forward-seed411",
+            "game-jog-forward-seed822"
+          ]
+        },
+        {
+          "time": 6.677499999999984,
           "type": "motion",
           "id": "game-jog-forward-seed411",
           "body": "c08",
           "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
         },
         {
-          "time": 11.333700000000025,
+          "time": 11.327500000000027,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 8,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 11.327500000000027,
+          "type": "motion",
+          "id": "game-idle-seed822",
+          "body": "c08",
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
+        },
+        {
+          "time": 11.377500000000028,
+          "type": "variant-choice",
+          "motion": "game-run-forward",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-run-forward-seed822",
+            "brek43": "game-run-forward-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 9,
+          "pool": [
+            "game-run-forward-seed411",
+            "game-run-forward-seed822"
+          ]
+        },
+        {
+          "time": 11.377500000000028,
+          "type": "motion",
+          "id": "game-run-forward-seed822",
+          "body": "c08",
+          "source_sha256": "4a73dac1f65de3bf24f7fe9ef86066150f6bd11ce5d2bf3278d045c8ae5bfb25"
+        },
+        {
+          "time": 16.927500000000105,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 10,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 16.927500000000105,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 11.383700000000026,
-          "type": "motion",
-          "id": "game-run-forward-seed411",
-          "body": "c08",
-          "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
+          "time": 16.977500000000106,
+          "type": "variant-choice",
+          "motion": "game-sprint-forward",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-sprint-forward-seed822",
+            "brek43": "game-sprint-forward-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 11,
+          "pool": [
+            "game-sprint-forward-seed411",
+            "game-sprint-forward-seed822"
+          ]
         },
         {
-          "time": 16.933700000000105,
+          "time": 16.977500000000106,
           "type": "motion",
-          "id": "game-idle-seed411",
+          "id": "game-sprint-forward-seed822",
           "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          "source_sha256": "ff173022afe2b79efb583a09fd889dd2d76bd7107906335c6688fe87152c44b9"
         },
         {
-          "time": 16.983700000000105,
+          "time": 21.227500000000166,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 12,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 21.227500000000166,
+          "type": "motion",
+          "id": "game-idle-seed822",
+          "body": "c08",
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
+        },
+        {
+          "time": 21.277500000000167,
+          "type": "variant-choice",
+          "motion": "game-sprint-forward",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-sprint-forward-seed411",
+            "brek43": "game-sprint-forward-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 13,
+          "pool": [
+            "game-sprint-forward-seed411",
+            "game-sprint-forward-seed822"
+          ]
+        },
+        {
+          "time": 21.277500000000167,
           "type": "motion",
           "id": "game-sprint-forward-seed411",
           "body": "c08",
           "source_sha256": "93c3b4c2b8b5988723dff3b70172fc0a5f0ec81ae14ac2ec9bb88a8f512b0b77"
         },
         {
-          "time": 21.233700000000166,
-          "type": "motion",
-          "id": "game-idle-seed411",
-          "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          "time": 21.977500000000177,
+          "type": "variant-choice",
+          "motion": "game-run-forward",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-run-forward-seed411",
+            "brek43": "game-run-forward-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 14,
+          "pool": [
+            "game-run-forward-seed411",
+            "game-run-forward-seed822"
+          ]
         },
         {
-          "time": 21.283700000000167,
-          "type": "motion",
-          "id": "game-sprint-forward-seed411",
-          "body": "c08",
-          "source_sha256": "93c3b4c2b8b5988723dff3b70172fc0a5f0ec81ae14ac2ec9bb88a8f512b0b77"
-        },
-        {
-          "time": 21.983700000000177,
-          "type": "motion",
-          "id": "game-run-forward-seed411",
-          "body": "c08",
-          "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
-        },
-        {
-          "time": 23.983700000000205,
-          "type": "motion",
-          "id": "game-idle-seed411",
-          "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
-        },
-        {
-          "time": 24.033700000000206,
+          "time": 21.977500000000177,
           "type": "motion",
           "id": "game-run-forward-seed411",
           "body": "c08",
           "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
         },
         {
-          "time": 27.983700000000262,
+          "time": 23.977500000000205,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 15,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 23.977500000000205,
+          "type": "motion",
+          "id": "game-idle-seed411",
+          "body": "c08",
+          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+        },
+        {
+          "time": 24.027500000000206,
+          "type": "variant-choice",
+          "motion": "game-run-forward",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-run-forward-seed822",
+            "brek43": "game-run-forward-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 16,
+          "pool": [
+            "game-run-forward-seed411",
+            "game-run-forward-seed822"
+          ]
+        },
+        {
+          "time": 24.027500000000206,
+          "type": "motion",
+          "id": "game-run-forward-seed822",
+          "body": "c08",
+          "source_sha256": "4a73dac1f65de3bf24f7fe9ef86066150f6bd11ce5d2bf3278d045c8ae5bfb25"
+        },
+        {
+          "time": 27.977500000000262,
           "type": "traversal-start",
           "kind": "vault",
           "obstacle": "medium jump",
@@ -339,89 +643,249 @@
           ]
         },
         {
-          "time": 27.983700000000262,
-          "type": "action-start",
-          "id": "game-vault"
+          "time": 27.977500000000262,
+          "type": "variant-choice",
+          "motion": "game-vault",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-vault-seed411",
+            "brek43": "game-vault-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 17,
+          "pool": [
+            "game-vault-seed411",
+            "game-vault-seed822"
+          ]
         },
         {
-          "time": 27.983700000000262,
+          "time": 27.977500000000262,
+          "type": "action-start",
+          "id": "game-vault",
+          "takes": {
+            "c08": "game-vault-seed411",
+            "brek43": "game-vault-seed411"
+          },
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          }
+        },
+        {
+          "time": 27.977500000000262,
           "type": "motion",
           "id": "game-vault-seed411",
           "body": "c08",
           "source_sha256": "3adf6260130202843342ee8c0baffe74a3e95ee6410e4f543399fe5e9dee9420"
         },
         {
-          "time": 28.783700000000273,
+          "time": 28.777500000000273,
           "type": "traversal-end",
           "kind": "vault",
           "obstacle": "medium jump"
         },
         {
-          "time": 28.783700000000273,
+          "time": 28.777500000000273,
           "type": "action-end",
           "id": "game-vault"
         },
         {
-          "time": 28.833700000000274,
+          "time": 28.827500000000274,
+          "type": "variant-choice",
+          "motion": "game-run-forward",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-run-forward-seed411",
+            "brek43": "game-run-forward-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 18,
+          "pool": [
+            "game-run-forward-seed411",
+            "game-run-forward-seed822"
+          ]
+        },
+        {
+          "time": 28.827500000000274,
           "type": "motion",
           "id": "game-run-forward-seed411",
           "body": "c08",
           "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
         },
         {
-          "time": 29.88370000000029,
+          "time": 29.87750000000029,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 19,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 29.87750000000029,
+          "type": "motion",
+          "id": "game-idle-seed822",
+          "body": "c08",
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
+        },
+        {
+          "time": 29.92750000000029,
+          "type": "variant-choice",
+          "motion": "game-walk-forward",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-walk-forward-seed822",
+            "brek43": "game-walk-forward-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 20,
+          "pool": [
+            "game-walk-forward-seed411",
+            "game-walk-forward-seed822"
+          ]
+        },
+        {
+          "time": 29.92750000000029,
+          "type": "motion",
+          "id": "game-walk-forward-seed822",
+          "body": "c08",
+          "source_sha256": "f765a72ff9e5e32dd4336ccbd4200e68a93edec19ff39cbc482736e5c84f19a7"
+        },
+        {
+          "time": 32.12750000000031,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 21,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 32.12750000000031,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 29.93370000000029,
-          "type": "motion",
-          "id": "game-walk-forward-seed411",
-          "body": "c08",
-          "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
+          "time": 32.17750000000031,
+          "type": "variant-choice",
+          "motion": "game-crouch-forward",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-crouch-forward-seed411",
+            "brek43": "game-crouch-forward-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 22,
+          "pool": [
+            "game-crouch-forward-seed411",
+            "game-crouch-forward-seed822"
+          ]
         },
         {
-          "time": 32.13370000000031,
-          "type": "motion",
-          "id": "game-idle-seed411",
-          "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
-        },
-        {
-          "time": 32.18370000000031,
+          "time": 32.17750000000031,
           "type": "stance",
           "stance": "crouch"
         },
         {
-          "time": 32.18370000000031,
+          "time": 32.17750000000031,
           "type": "motion",
           "id": "game-crouch-forward-seed411",
           "body": "c08",
           "source_sha256": "94e490e20880ee57b852ba0bb4a076090afcf90ffafaec6bec59708230078cfa"
         },
         {
-          "time": 50.98369999999924,
+          "time": 50.97749999999924,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 23,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 50.97749999999924,
           "type": "stance",
           "stance": "stand"
         },
         {
-          "time": 50.98369999999924,
+          "time": 50.97749999999924,
           "type": "motion",
-          "id": "game-idle-seed411",
+          "id": "game-idle-seed822",
           "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
         },
         {
-          "time": 51.08369999999923,
-          "type": "motion",
-          "id": "game-jog-forward-seed411",
-          "body": "c08",
-          "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
+          "time": 51.07749999999923,
+          "type": "variant-choice",
+          "motion": "game-jog-forward",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-jog-forward-seed822",
+            "brek43": "game-jog-forward-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 24,
+          "pool": [
+            "game-jog-forward-seed411",
+            "game-jog-forward-seed822"
+          ]
         },
         {
-          "time": 54.233699999999054,
+          "time": 51.07749999999923,
+          "type": "motion",
+          "id": "game-jog-forward-seed822",
+          "body": "c08",
+          "source_sha256": "6b6afd54ce652f7d3ab542ec780a60981481fca8c76b1ca703d34dee6bd63466"
+        },
+        {
+          "time": 54.227499999999054,
           "type": "traversal-start",
           "kind": "vault",
           "obstacle": "low jump",
@@ -432,234 +896,697 @@
           ]
         },
         {
-          "time": 54.233699999999054,
+          "time": 54.227499999999054,
+          "type": "variant-choice",
+          "motion": "game-vault",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-vault-seed822",
+            "brek43": "game-vault-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 25,
+          "pool": [
+            "game-vault-seed411",
+            "game-vault-seed822"
+          ]
+        },
+        {
+          "time": 54.227499999999054,
           "type": "action-start",
-          "id": "game-vault"
+          "id": "game-vault",
+          "takes": {
+            "c08": "game-vault-seed822",
+            "brek43": "game-vault-seed822"
+          },
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          }
         },
         {
-          "time": 54.233699999999054,
+          "time": 54.227499999999054,
           "type": "motion",
-          "id": "game-vault-seed411",
+          "id": "game-vault-seed822",
           "body": "c08",
-          "source_sha256": "3adf6260130202843342ee8c0baffe74a3e95ee6410e4f543399fe5e9dee9420"
+          "source_sha256": "aa417a1cf217c716daeb035219e36268fab75737e4250d3c30d3b677914d964b"
         },
         {
-          "time": 55.03369999999901,
+          "time": 55.02749999999901,
           "type": "traversal-end",
           "kind": "vault",
           "obstacle": "low jump"
         },
         {
-          "time": 55.03369999999901,
+          "time": 55.02749999999901,
           "type": "action-end",
           "id": "game-vault"
         },
         {
-          "time": 55.083699999999006,
+          "time": 55.077499999999006,
+          "type": "variant-choice",
+          "motion": "game-jog-forward",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-jog-forward-seed411",
+            "brek43": "game-jog-forward-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 26,
+          "pool": [
+            "game-jog-forward-seed411",
+            "game-jog-forward-seed822"
+          ]
+        },
+        {
+          "time": 55.077499999999006,
           "type": "motion",
           "id": "game-jog-forward-seed411",
           "body": "c08",
           "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
         },
         {
-          "time": 56.683699999998915,
+          "time": 56.677499999998915,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 27,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 56.677499999998915,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 56.73369999999891,
-          "type": "motion",
-          "id": "game-run-forward-seed411",
-          "body": "c08",
-          "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
+          "time": 56.72749999999891,
+          "type": "variant-choice",
+          "motion": "game-run-forward",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-run-forward-seed822",
+            "brek43": "game-run-forward-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 28,
+          "pool": [
+            "game-run-forward-seed411",
+            "game-run-forward-seed822"
+          ]
         },
         {
-          "time": 61.28369999999865,
+          "time": 56.72749999999891,
           "type": "motion",
-          "id": "game-idle-seed411",
+          "id": "game-run-forward-seed822",
           "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          "source_sha256": "4a73dac1f65de3bf24f7fe9ef86066150f6bd11ce5d2bf3278d045c8ae5bfb25"
         },
         {
-          "time": 61.33369999999865,
+          "time": 61.27749999999865,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 29,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 61.27749999999865,
+          "type": "motion",
+          "id": "game-idle-seed822",
+          "body": "c08",
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
+        },
+        {
+          "time": 61.32749999999865,
+          "type": "variant-choice",
+          "motion": "game-pickup",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-pickup-seed822",
+            "brek43": "game-pickup-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 30,
+          "pool": [
+            "game-pickup-seed411",
+            "game-pickup-seed822"
+          ]
+        },
+        {
+          "time": 61.32749999999865,
           "type": "action-start",
-          "id": "game-pickup"
+          "id": "game-pickup",
+          "takes": {
+            "c08": "game-pickup-seed822",
+            "brek43": "game-pickup-seed822"
+          },
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          }
         },
         {
-          "time": 61.33369999999865,
+          "time": 61.32749999999865,
           "type": "motion",
-          "id": "game-pickup-seed411",
+          "id": "game-pickup-seed822",
           "body": "c08",
-          "source_sha256": "72f79db311a2a789aaa3612c77c7d6f2c3983121d62c53e8fbb0efc489e57f66"
+          "source_sha256": "6e2ed383f9d57753177d2f818c83b0fadfb4e75c52bbff958edf0444667b8295"
         },
         {
-          "time": 61.933699999998616,
+          "time": 61.927499999998616,
           "type": "action-end",
           "id": "game-pickup"
         },
         {
-          "time": 61.98369999999861,
-          "type": "motion",
-          "id": "game-carry-idle-seed411",
-          "body": "c08",
-          "source_sha256": "fd8db5fe6f0d556df51369310efa09e0533057c8346f20342e0a8700e3ae6279"
+          "time": 61.977499999998614,
+          "type": "variant-choice",
+          "motion": "game-carry-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-carry-idle-seed822",
+            "brek43": "game-carry-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 31,
+          "pool": [
+            "game-carry-idle-seed411",
+            "game-carry-idle-seed822"
+          ]
         },
         {
-          "time": 62.33369999999859,
+          "time": 61.977499999998614,
+          "type": "motion",
+          "id": "game-carry-idle-seed822",
+          "body": "c08",
+          "source_sha256": "35ee68047b1d009531f698b573597a9220de5b845cd84e0aae16b2224a403fe4"
+        },
+        {
+          "time": 62.02749999999861,
+          "type": "variant-choice",
+          "motion": "game-carry-forward",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-carry-forward-seed411",
+            "brek43": "game-carry-forward-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 32,
+          "pool": [
+            "game-carry-forward-seed411",
+            "game-carry-forward-seed822"
+          ]
+        },
+        {
+          "time": 62.2774999999986,
           "type": "motion",
           "id": "game-carry-forward-seed411",
           "body": "c08",
           "source_sha256": "0ebe850ceb1093d52325b2a835ff17ac04f2f2ddc82d09009bb40d29a4202ae9"
         },
         {
-          "time": 68.58369999999825,
+          "time": 68.57749999999824,
+          "type": "variant-choice",
+          "motion": "game-carry-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-carry-idle-seed411",
+            "brek43": "game-carry-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 33,
+          "pool": [
+            "game-carry-idle-seed411",
+            "game-carry-idle-seed822"
+          ]
+        },
+        {
+          "time": 68.57749999999824,
           "type": "motion",
           "id": "game-carry-idle-seed411",
           "body": "c08",
           "source_sha256": "fd8db5fe6f0d556df51369310efa09e0533057c8346f20342e0a8700e3ae6279"
         },
         {
-          "time": 68.63369999999824,
+          "time": 68.62749999999824,
+          "type": "variant-choice",
+          "motion": "game-putdown",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-putdown-seed822",
+            "brek43": "game-putdown-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 34,
+          "pool": [
+            "game-putdown-seed411",
+            "game-putdown-seed822"
+          ]
+        },
+        {
+          "time": 68.62749999999824,
           "type": "action-start",
-          "id": "game-putdown"
+          "id": "game-putdown",
+          "takes": {
+            "c08": "game-putdown-seed822",
+            "brek43": "game-putdown-seed822"
+          },
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          }
         },
         {
-          "time": 68.63369999999824,
+          "time": 68.62749999999824,
           "type": "motion",
-          "id": "game-putdown-seed411",
+          "id": "game-putdown-seed822",
           "body": "c08",
-          "source_sha256": "42fc919ca907f2c1aeead896c365e5c4710da5796d8f78a0c4dab84aca04698a"
+          "source_sha256": "0a062ad1857c7923a512ca5effbecd10ee212be8a8902f0733e9ed692371fb13"
         },
         {
-          "time": 69.18369999999821,
+          "time": 69.1774999999982,
           "type": "action-end",
           "id": "game-putdown"
         },
         {
-          "time": 69.23369999999821,
+          "time": 69.2274999999982,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 35,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 69.2274999999982,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 69.2836999999982,
-          "type": "action-start",
-          "id": "game-wave"
+          "time": 69.2774999999982,
+          "type": "variant-choice",
+          "motion": "game-wave",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-wave-seed411",
+            "brek43": "game-wave-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 36,
+          "pool": [
+            "game-wave-seed411",
+            "game-wave-seed822"
+          ]
         },
         {
-          "time": 69.3836999999982,
+          "time": 69.2774999999982,
+          "type": "action-start",
+          "id": "game-wave",
+          "takes": {
+            "c08": "game-wave-seed411",
+            "brek43": "game-wave-seed411"
+          },
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          }
+        },
+        {
+          "time": 69.3774999999982,
           "type": "motion",
           "id": "game-wave-seed411",
           "body": "c08",
           "source_sha256": "a846ccd576cf23fbdc48ba80aec478cd20fad529b50b948503835d887ded66bc"
         },
         {
-          "time": 74.23369999999792,
+          "time": 74.22749999999792,
           "type": "action-end",
           "id": "game-wave"
         },
         {
-          "time": 74.28369999999792,
-          "type": "motion",
-          "id": "game-idle-seed411",
-          "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          "time": 74.27749999999791,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 37,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
         },
         {
-          "time": 74.33369999999792,
+          "time": 74.27749999999791,
+          "type": "motion",
+          "id": "game-idle-seed822",
+          "body": "c08",
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
+        },
+        {
+          "time": 74.32749999999791,
+          "type": "variant-choice",
+          "motion": "game-combo",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-combo-seed822",
+            "brek43": "game-combo-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 38,
+          "pool": [
+            "game-combo-seed411",
+            "game-combo-seed822"
+          ]
+        },
+        {
+          "time": 74.32749999999791,
           "type": "action-start",
-          "id": "game-combo"
+          "id": "game-combo",
+          "takes": {
+            "c08": "game-combo-seed822",
+            "brek43": "game-combo-seed822"
+          },
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          }
         },
         {
-          "time": 74.38369999999792,
+          "time": 74.5274999999979,
           "type": "motion",
-          "id": "game-combo-seed411",
+          "id": "game-combo-seed822",
           "body": "c08",
-          "source_sha256": "4e31e921c77e6354b79400b63bb42bc624d89713fc9c395c815107b1f09db6c7"
+          "source_sha256": "2182133f972a0a5283930dcc86fa20609db410b813c2cf2ddffc2b89f729aca0"
         },
         {
-          "time": 80.28369999999758,
+          "time": 80.27749999999757,
           "type": "action-end",
           "id": "game-combo"
         },
         {
-          "time": 80.33369999999758,
+          "time": 80.32749999999757,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 39,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 80.32749999999757,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 80.38369999999757,
-          "type": "action-start",
-          "id": "game-hit-front"
+          "time": 80.37749999999757,
+          "type": "variant-choice",
+          "motion": "game-hit-front",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-hit-front-seed411",
+            "brek43": "game-hit-front-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 40,
+          "pool": [
+            "game-hit-front-seed411",
+            "game-hit-front-seed822"
+          ]
         },
         {
-          "time": 80.38369999999757,
+          "time": 80.37749999999757,
+          "type": "action-start",
+          "id": "game-hit-front",
+          "takes": {
+            "c08": "game-hit-front-seed411",
+            "brek43": "game-hit-front-seed411"
+          },
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          }
+        },
+        {
+          "time": 80.37749999999757,
           "type": "motion",
           "id": "game-hit-front-seed411",
           "body": "c08",
           "source_sha256": "3139dbe123508c073ca1a2f3cbc626e8d5f627a22b1c4065a2e116e84f6e43df"
         },
         {
-          "time": 85.3336999999973,
+          "time": 85.32749999999729,
           "type": "action-end",
           "id": "game-hit-front"
         },
         {
-          "time": 85.38369999999729,
+          "time": 85.37749999999728,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-idle-seed822",
+            "brek43": "game-idle-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 41,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 85.37749999999728,
           "type": "motion",
-          "id": "game-idle-seed411",
+          "id": "game-idle-seed822",
           "body": "c08",
-          "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          "source_sha256": "f7a0d7affdd20ce60210d43c4384f41c73565f6008a8e47e3d04b6478b0f7ccc"
         },
         {
-          "time": 85.43369999999729,
+          "time": 85.42749999999728,
+          "type": "variant-choice",
+          "motion": "game-knockdown",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-knockdown-seed411",
+            "brek43": "game-knockdown-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 42,
+          "pool": [
+            "game-knockdown-seed411",
+            "game-knockdown-seed822"
+          ]
+        },
+        {
+          "time": 85.42749999999728,
           "type": "action-start",
-          "id": "game-knockdown"
+          "id": "game-knockdown",
+          "takes": {
+            "c08": "game-knockdown-seed411",
+            "brek43": "game-knockdown-seed411"
+          },
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          }
         },
         {
-          "time": 85.73369999999727,
+          "time": 85.87749999999726,
           "type": "motion",
           "id": "game-knockdown-seed411",
           "body": "c08",
           "source_sha256": "db7bd899d4356174719903859de1856ca543e8f3ae1181f3f1b8ee17ee58de3c"
         },
         {
-          "time": 91.38369999999695,
+          "time": 91.37749999999694,
           "type": "action-end",
           "id": "game-knockdown"
         },
         {
-          "time": 91.48369999999694,
+          "time": 91.42749999999694,
+          "type": "variant-choice",
+          "motion": "game-death",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-death-seed822",
+            "brek43": "game-death-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 43,
+          "pool": [
+            "game-death-seed411",
+            "game-death-seed822"
+          ]
+        },
+        {
+          "time": 91.47749999999694,
+          "type": "variant-choice",
+          "motion": "game-getup-back",
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          },
+          "takes": {
+            "c08": "game-getup-back-seed822",
+            "brek43": "game-getup-back-seed822"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 44,
+          "pool": [
+            "game-getup-back-seed411",
+            "game-getup-back-seed822"
+          ]
+        },
+        {
+          "time": 91.47749999999694,
           "type": "action-start",
-          "id": "game-getup-back"
+          "id": "game-getup-back",
+          "takes": {
+            "c08": "game-getup-back-seed822",
+            "brek43": "game-getup-back-seed822"
+          },
+          "seeds": {
+            "c08": 822,
+            "brek43": 822
+          }
         },
         {
-          "time": 91.88369999999692,
+          "time": 92.37749999999689,
           "type": "motion",
-          "id": "game-getup-back-seed411",
+          "id": "game-getup-back-seed822",
           "body": "c08",
-          "source_sha256": "771dc4da71bb576945f61de1eede7cae6e16fefc907561d21d3eec7d0f530e35"
+          "source_sha256": "cb2a25681dbca9deffa0024ef46d051545baf939059e81045079e8dcee93d007"
         },
         {
-          "time": 97.4336999999966,
+          "time": 97.4274999999966,
           "type": "action-end",
           "id": "game-getup-back"
         },
         {
-          "time": 97.4836999999966,
+          "time": 97.4774999999966,
+          "type": "variant-choice",
+          "motion": "game-idle",
+          "seeds": {
+            "c08": 411,
+            "brek43": 411
+          },
+          "takes": {
+            "c08": "game-idle-seed411",
+            "brek43": "game-idle-seed411"
+          },
+          "policy": "shuffle-bag-no-repeat",
+          "draw": 45,
+          "pool": [
+            "game-idle-seed411",
+            "game-idle-seed822"
+          ]
+        },
+        {
+          "time": 97.4774999999966,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         }
       ],
-      "reach": 0.1271661122161054,
-      "length": 1.9887007374208565e-08,
+      "reach": 0.0997066882412041,
+      "length": 4.043136131448577e-08,
       "p": [
         -8.566666748320614,
         0,

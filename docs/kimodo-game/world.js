@@ -16,6 +16,7 @@ export function createWorld(scene){
  box('high ledge platform',20,7,8,3,2.65,'#7776a2');obstacles.at(-1).traversal='ledge';label('SPACE / LEDGE GRAB',20,3.3,undefined,.035,.6);
  lane('DROP / HERO LANDING',20,12.5,8,6,'#654d70');
  for(const b of obstacles){if(['low jump','medium jump','training vault barrier'].includes(b.name))b.traversal='vault';if(['solid wall','stacked freight','training climb wall'].includes(b.name))b.traversal='mantle'}
+ label('LOW-OBJECT / UKEMI',-30,7);for(const [z,h]of [[14,.28],[23,.45],[32,.64]])box('trip hurdle '+z,-30,z,6,.5,h,'#aa7756');
  label('BOX YARD',-12,0);for(let i=0;i<3;i++)box('stacked freight',-18-i*1.6,6,1.2,1.2,1.2+(i%2)*1.2,'#747663');
  const makeCrate=()=>{const m=new T.Mesh(new T.BoxGeometry(.58,.46,.5),mat('#d5aa69'));m.castShadow=true;const edges=new T.LineSegments(new T.EdgesGeometry(m.geometry),new T.LineBasicMaterial({color:0x54402a}));m.add(edges);return m};
  const crate=makeCrate();crate.position.set(-2,.23,2);scene.add(crate);props.push(crate);
@@ -24,11 +25,11 @@ export function createWorld(scene){
  const terminal=box('terminal',-8,20,1,.6,1.1,'#516a7a');box('screen',-8,19.67,.7,.03,.45,'#60bfa9',.6,false);
  label('INTERACTION',-8,23);label('START',0,-2);
  for(const [x,z,w,d]of [[0,-15,100,1],[0,95,100,1],[-50,40,1,110],[50,40,1,110]])box('boundary',x,z,w,d,2.5,'#3a5556');
- const state={collisions:0,lastCollision:null};
+ const state={collisions:0,lastCollision:null,moveHits:[]};
  function intersects(x,z,r,b){return Math.hypot(x-T.MathUtils.clamp(x,b.x-b.w/2,b.x+b.w/2),z-T.MathUtils.clamp(z,b.z-b.d/2,b.z+b.d/2))<r-1e-6}
  function fits(pos,height,r=.27){return !obstacles.some(b=>pos.y+.04<b.top&&pos.y+height>b.bottom+.01&&intersects(pos.x,pos.z,r,b))}
- function move(pos,delta,height,r=.27){const n=Math.max(1,Math.ceil(delta.length()/.08)),step=delta.clone().multiplyScalar(1/n),out=pos.clone();for(let i=0;i<n;i++){
-  for(const axis of ['x','z']){const candidate=out.clone();candidate[axis]+=step[axis];const hit=obstacles.find(b=>candidate.y+.04<b.top&&candidate.y+height>b.bottom+.01&&intersects(candidate.x,candidate.z,r,b));if(!hit)out[axis]=candidate[axis];else{state.collisions++;state.lastCollision=hit.name}}
+ function move(pos,delta,height,r=.27){state.moveHits=[];const n=Math.max(1,Math.ceil(delta.length()/.08)),step=delta.clone().multiplyScalar(1/n),out=pos.clone();for(let i=0;i<n;i++){
+  for(const axis of ['x','z']){const candidate=out.clone();candidate[axis]+=step[axis];const hit=obstacles.find(b=>candidate.y+.04<b.top&&candidate.y+height>b.bottom+.01&&intersects(candidate.x,candidate.z,r,b));if(!hit)out[axis]=candidate[axis];else{state.collisions++;state.lastCollision=hit.name;if(!state.moveHits.some(h=>h.obstacle===hit))state.moveHits.push({obstacle:hit})}}
  }return out}
  function floor(x,z,y=0){let top=0;for(const b of obstacles)if(b.top<=y+.06&&intersects(x,z,.27,b))top=Math.max(top,b.top);return top}
  return {obstacles,props,crate,ghostCrate,bench,terminal,makeCrate,state,move,fits,floor,zone(pos){return Math.abs(pos.x)<=3.5&&pos.z>=19&&pos.z<=43?'orange':Math.abs(pos.x)<=3.5&&pos.z>43&&pos.z<=67?'red':'free'},reset(){crate.position.set(-2,.23,2);crate.rotation.set(0,0,0);state.collisions=0;state.lastCollision=null}};
