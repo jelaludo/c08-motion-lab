@@ -1,0 +1,354 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "coverage",
+      "status": "passed",
+      "motions": 94,
+      "takes": 188,
+      "bodies": [
+        "c08",
+        "brek43"
+      ]
+    },
+    {
+      "name": "forward and strafe directions",
+      "status": "passed",
+      "forward": {
+        "p": [
+          0,
+          0,
+          2.3900252349961137
+        ],
+        "motion": "game-walk-forward"
+      },
+      "right": {
+        "p": [
+          -2.3900252349961137,
+          0,
+          0
+        ],
+        "motion": "game-walk-right"
+      }
+    },
+    {
+      "name": "orange and red speeds",
+      "status": "passed",
+      "orange": {
+        "speed": 3.799994790355471,
+        "motion": "game-run-forward"
+      },
+      "red": {
+        "speed": 5.999991774245482,
+        "motion": "game-sprint-forward"
+      }
+    },
+    {
+      "name": "solid collision and crouch headroom",
+      "status": "passed",
+      "standing": {
+        "z": 28.702525469777054,
+        "contacts": 11
+      },
+      "crouched": {
+        "z": 38.93401513999308,
+        "stance": "crouch",
+        "head": 0.9212585990236798
+      }
+    },
+    {
+      "name": "jump load flight and landing",
+      "status": "passed",
+      "maxY": 1,
+      "end": {
+        "p": [
+          12,
+          0,
+          53.24068105793901
+        ]
+      },
+      "phases": [
+        {
+          "y": 0.10248073362207907,
+          "action": "vault",
+          "z": 46.70592631032071
+        },
+        {
+          "y": 0.3474346822797315,
+          "action": "vault",
+          "z": 46.70592631032071
+        },
+        {
+          "y": 0.64112946766008,
+          "action": "vault",
+          "z": 46.70592631032071
+        },
+        {
+          "y": 0.8898327114502474,
+          "action": "vault",
+          "z": 46.70592631032071
+        },
+        {
+          "y": 0.9998120353373566,
+          "action": "vault",
+          "z": 46.759927108373226
+        },
+        {
+          "y": 1,
+          "action": "vault",
+          "z": 46.95613763519538
+        },
+        {
+          "y": 1,
+          "action": "vault",
+          "z": 47.255315785422745
+        },
+        {
+          "y": 1,
+          "action": "vault",
+          "z": 47.61455838263651
+        },
+        {
+          "y": 1,
+          "action": "vault",
+          "z": 47.990962250417766
+        },
+        {
+          "y": 1,
+          "action": "vault",
+          "z": 48.34162421234777
+        },
+        {
+          "y": 1,
+          "action": "vault",
+          "z": 48.623641092007574
+        },
+        {
+          "y": 1,
+          "action": "vault",
+          "z": 48.79410971297844
+        },
+        {
+          "y": 1,
+          "action": "vault",
+          "z": 48.825
+        },
+        {
+          "y": 0.8521857695411408,
+          "action": "vault",
+          "z": 48.825
+        },
+        {
+          "y": 0.48052386136379976,
+          "action": "vault",
+          "z": 48.825
+        },
+        {
+          "y": 0.12027040193678673,
+          "action": "vault",
+          "z": 48.825
+        },
+        {
+          "y": 0,
+          "z": 48.825
+        },
+        {
+          "y": 0,
+          "z": 48.89385065119187
+        },
+        {
+          "y": 0,
+          "z": 49.00660241584116
+        },
+        {
+          "y": 0,
+          "z": 49.147346766318435
+        },
+        {
+          "y": 0,
+          "z": 49.305939977556335
+        },
+        {
+          "y": 0,
+          "z": 49.47591412488957
+        },
+        {
+          "y": 0,
+          "z": 49.65314507746901
+        },
+        {
+          "y": 0,
+          "z": 49.83500317336428
+        },
+        {
+          "y": 0,
+          "z": 50.0198116660993
+        },
+        {
+          "y": 0,
+          "z": 50.2065014149178
+        },
+        {
+          "y": 0,
+          "z": 50.39439070557554
+        },
+        {
+          "y": 0,
+          "z": 50.58304485787902
+        },
+        {
+          "y": 0,
+          "z": 50.77218670749993
+        },
+        {
+          "y": 0,
+          "z": 50.961639526659894
+        },
+        {
+          "y": 0,
+          "z": 51.15129062875225
+        },
+        {
+          "y": 0,
+          "z": 51.34106816162431
+        },
+        {
+          "y": 0,
+          "z": 51.530926310320716
+        },
+        {
+          "y": 0,
+          "z": 51.72083586193621
+        },
+        {
+          "y": 0,
+          "z": 51.91077818949997
+        },
+        {
+          "y": 0,
+          "z": 52.100741415931054
+        },
+        {
+          "y": 0,
+          "z": 52.290717968068286
+        },
+        {
+          "y": 0,
+          "z": 52.48070301705088
+        },
+        {
+          "y": 0,
+          "z": 52.67069348386128
+        },
+        {
+          "y": 0,
+          "z": 52.86068740523122
+        },
+        {
+          "y": 0,
+          "z": 53.05068352932556
+        },
+        {
+          "y": 0,
+          "z": 53.24068105793901
+        }
+      ]
+    },
+    {
+      "name": "box pick carry put down",
+      "status": "passed",
+      "carrying": {
+        "motion": "game-carry-forward",
+        "reach": 0.07371736387925087,
+        "length": 1.988700576438518e-08,
+        "box": [
+          -2,
+          1.04,
+          3.7800252349961134
+        ]
+      }
+    },
+    {
+      "name": "all candidate clips finite and loops closed",
+      "status": "passed",
+      "clips": 376,
+      "loopSeam": 0
+    },
+    {
+      "name": "body switch and companion",
+      "status": "passed",
+      "active": "brek43",
+      "visible": 2,
+      "renderers": 1
+    },
+    {
+      "name": "review persistence and all-review export",
+      "status": "passed",
+      "persisted": true,
+      "exported_reviews": 1
+    },
+    {
+      "name": "record and export playable chain",
+      "status": "passed",
+      "frames": 41,
+      "seconds": 2.0000000000000013,
+      "ready": true
+    },
+    {
+      "name": "viewport",
+      "status": "passed",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "canvas": {
+        "x": 0,
+        "y": 56,
+        "width": 1366,
+        "height": 656,
+        "top": 56,
+        "right": 1366,
+        "bottom": 712,
+        "left": 0
+      }
+    },
+    {
+      "name": "viewport",
+      "status": "passed",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "canvas": {
+        "x": 0,
+        "y": 83,
+        "width": 390,
+        "height": 678,
+        "top": 83,
+        "right": 390,
+        "bottom": 761,
+        "left": 0
+      }
+    },
+    {
+      "name": "viewport",
+      "status": "passed",
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 844,
+      "scrollHeight": 390,
+      "canvas": {
+        "x": 0,
+        "y": 36,
+        "width": 844,
+        "height": 318,
+        "top": 36,
+        "right": 844,
+        "bottom": 354,
+        "left": 0
+      }
+    }
+  ],
+  "errors": [],
+  "evidence_scope": "Observed local runtime; public runtime is checked separately."
+}

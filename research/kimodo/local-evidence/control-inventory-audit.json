@@ -3,7 +3,7 @@
   "result": {
     "schema": "kimodo-control-audit/1",
     "status": "passed",
-    "checked": "2026-11-02",
+    "checked": "2026-11-03",
     "catalog_motion_types": 94,
     "catalog_takes": 188,
     "bodies": [
@@ -96,7 +96,7 @@
         "id": "evasion",
         "priority": "P0",
         "name": "Short dodge versus long roll",
-        "status": "Four directional dodge probes; no roll set",
+        "status": "Short directional bursts wired; long roll set missing",
         "existing": [
           "game-dodge-forward",
           "game-dodge-backward",
@@ -104,13 +104,12 @@
           "game-dodge-right"
         ],
         "missing": [
-          "Compact sidestep / backstep / return",
-          "Forward/back/left/right rolls",
-          "World displacement curves",
-          "Recovery and cancel windows"
+          "Directional long roll set",
+          "Threat/hit validation and invulnerability policy",
+          "Visually accepted travel/pose alignment"
         ],
-        "work": "Reuse the earlier backward shoulder-roll and slip sources where suitable. Still needs a directional roll set and controller travel, timing and recovery.",
-        "test": "A dodge must change world position and clear a marked threat lane; a roll travels farther. Test input during recovery.",
+        "work": "Active source windows and a 0.32-second displacement curve now drive interruptible evades. Assess their visual quality before adding directional rolls.",
+        "test": "Evade in each direction, then immediately move, C, punch or Space. Confirm cancellation without a second Alt press and solid-wall collision.",
         "prior_lab": [
           "r2-ukemi-forward-seed101",
           "fight-slip-counter-seed101"
@@ -120,7 +119,7 @@
         "id": "jump",
         "priority": "P0",
         "name": "Reusable airborne / fall / landing states",
-        "status": "Full jump candidates exist; phase library partial",
+        "status": "Jump arc and step-off gravity wired; reusable fall poses partial",
         "existing": [
           "game-jump-standing",
           "game-jump-walk",
@@ -136,7 +135,6 @@
         "missing": [
           "Reusable rise / apex / falling loops",
           "Soft landing + left/right running landings",
-          "Step-off ledge fall",
           "Jump backward-left/right diagonals",
           "Land-to-run / stumble / roll-out"
         ],
@@ -147,7 +145,7 @@
         "id": "stance",
         "priority": "P0",
         "name": "Responsive stance transitions",
-        "status": "Loops exist; transitions need responsiveness work",
+        "status": "Immediate crouch and double-C seiza wired; support variants partial",
         "existing": [
           "game-crouch-down",
           "game-crouch-up",
@@ -166,7 +164,7 @@
           "Intent buffering on rapid press/release"
         ],
         "work": "Trim and tag transition windows, then controller rules; contact retakes only where needed.",
-        "test": "Crouch during a run and release under a low ceiling. Full source transition durations are currently several seconds; do not confuse this with game input responsiveness."
+        "test": "C immediately selects crouch locomotion; C C holds seiza; Space preempts either. Standing and jump exits must reject a low ceiling. Assess the short pose blend and support contacts visually."
       },
       {
         "id": "carry",
@@ -197,7 +195,7 @@
         "id": "actions",
         "priority": "P0",
         "name": "Action timing, buffering and safe context",
-        "status": "Controller gap, not mainly a motion gap",
+        "status": "Immediate replacement / repeat attack wired; deeper context rules partial",
         "existing": [
           "game-panel",
           "game-pickup",
@@ -206,14 +204,13 @@
           "game-stand-seat"
         ],
         "missing": [
-          "Action acceptance feedback",
-          "Short bounded input buffer",
-          "Explicit interruptible / committed windows",
-          "View / angle / occlusion scoring beyond prototype distance checks",
-          "Root ownership and action event markers"
+          "Short bounded input buffer around actual landing",
+          "Combat-specific commitment rules and damage events",
+          "View / occlusion scoring for E objects",
+          "Visually authored contact event markers"
         ],
         "work": "Controller/metadata first.",
-        "test": "Tap jump/evade during attack recovery; avoid stale actions later. E must show which object will respond. Inputs currently get rejected while another action is active."
+        "test": "Alt to Space, crouch to Space, repeated LMB, punch to Space and cold-load cancellation must keep the latest input. Pickup/putdown cancellation must preserve the actual attachment event."
       },
       {
         "id": "weapon",
@@ -235,7 +232,7 @@
         "id": "cover",
         "priority": "P1",
         "name": "Cover and contextual traversal",
-        "status": "Vault/mantle/ladder probes only",
+        "status": "Space-triggered vault/mantle paths wired; contact quality remains a probe",
         "existing": [
           "game-vault",
           "game-mantle",
@@ -249,7 +246,7 @@
           "Low/high vault and mantle variants",
           "Contact markers / ledge-height adaptation"
         ],
-        "work": "Environment alignment, collision and contact IK plus targeted clips.",
+        "work": "Explicit surface tags, facing/height/range tests, free destination checks, collision-limited authored trajectories and independent fall gravity are implemented. Exact hand/foot attachment and height-specific clips remain open.",
         "test": "Same action at several real obstacle heights with hands and feet staying attached. A text-prompt vault is not validated contact traversal."
       },
       {
@@ -307,7 +304,7 @@
         "test": "Add only after the level and game design need that mechanic; do not copy every feature from all five games into one controller."
       }
     ],
-    "runtime_source_sha256": "ce17f9b4885c1259272855436923653b8418d3c48497746b2fd35552a4d0746f",
+    "runtime_source_sha256": "bb02c66789e56bb0ecda16baed085b8167a36303556bfb0125e960e36f771165",
     "scope": "Static inventory/code audit. Existing candidate IDs do not establish accepted motion quality or completed game states.",
     "earlier_lab_take_count": 90,
     "prior_lab_sources": {

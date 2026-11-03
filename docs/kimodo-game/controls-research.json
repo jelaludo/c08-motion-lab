@@ -1,6 +1,6 @@
 {
   "schema": "kimodo-controls-study/1",
-  "checked": "2026-11-02",
+  "checked": "2026-11-03",
   "scope": "PC on-foot keyboard/mouse references. RE4 means 2023 remake; not the 2005 tank-control original. Default/reference layouts are not locally verified installed builds. Player expectations below are design inferences, not a user survey.",
   "games": [
     {
@@ -281,20 +281,20 @@
     {
       "action": "Jump",
       "input": "Space",
-      "live": "Implemented",
-      "detail": "Speed-sensitive jump on press. Air height, landing and control remain game-controller responsibilities. Variable-height hold/release jumping is not implemented."
+      "live": "Implemented; contextual traversal prototypes",
+      "detail": "Space preempts ground actions and crouch/seiza. Selects a vault or mantle at explicitly tagged, reachable surfaces with free landing room; otherwise jumps from approach speed. Ctrl+Space forces a normal high jump. Exact hand/foot contacts are still probes."
     },
     {
       "action": "Evade",
       "input": "Left Alt + direction",
-      "live": "Implemented: existing dodge actions",
-      "detail": "Keeps Space unambiguous. Current clips are one-shots; a displacement-aware sidestep/roll system and invulnerability rules remain missing."
+      "live": "Implemented: short interruptible directional burst",
+      "detail": "Alt triggers a 0.32-second evade with collision-limited world travel. Fresh movement, another action, C or Space replaces it immediately. Directional rolls and invulnerability remain unimplemented."
     },
     {
       "action": "Crouch / prone",
-      "input": "C / Z",
+      "input": "C / quick C C / Z",
       "live": "Implemented",
-      "detail": "C toggles crouch; Z toggles prone. Crouch-to-stand checks headroom. Ctrl alias, hold-crouch, faster transitions and headroom checks on every stance exit need further work."
+      "detail": "Single C immediately enters crouch locomotion; C C within 300 ms selects static kneeling/seiza. Movement leaves seiza into crouch. Space jumps from either with a headroom check. Prone support contacts and hold-crouch remain incomplete."
     },
     {
       "action": "Context interaction",
@@ -306,7 +306,7 @@
       "action": "Primary attack / secondary melee",
       "input": "LMB / F",
       "live": "Implemented",
-      "detail": "LMB jab/cross, F front kick. Movement-aware combat, hit validation and weapon layers are not implemented."
+      "detail": "Every LMB click starts/restarts alternating jab/cross, including the initial capture click. F kicks. Short sampled source windows replace full-clip locks; Space preempts attacks and fresh movement cancels them. Hit validation, weapon layers and upper-body movement blending remain missing."
     },
     {
       "action": "Focus / guard",
@@ -425,7 +425,7 @@
       "id": "evasion",
       "priority": "P0",
       "name": "Short dodge versus long roll",
-      "status": "Four directional dodge probes; no roll set",
+      "status": "Short directional bursts wired; long roll set missing",
       "existing": [
         "game-dodge-forward",
         "game-dodge-backward",
@@ -433,13 +433,12 @@
         "game-dodge-right"
       ],
       "missing": [
-        "Compact sidestep / backstep / return",
-        "Forward/back/left/right rolls",
-        "World displacement curves",
-        "Recovery and cancel windows"
+        "Directional long roll set",
+        "Threat/hit validation and invulnerability policy",
+        "Visually accepted travel/pose alignment"
       ],
-      "work": "Reuse the earlier backward shoulder-roll and slip sources where suitable. Still needs a directional roll set and controller travel, timing and recovery.",
-      "test": "A dodge must change world position and clear a marked threat lane; a roll travels farther. Test input during recovery.",
+      "work": "Active source windows and a 0.32-second displacement curve now drive interruptible evades. Assess their visual quality before adding directional rolls.",
+      "test": "Evade in each direction, then immediately move, C, punch or Space. Confirm cancellation without a second Alt press and solid-wall collision.",
       "prior_lab": [
         "r2-ukemi-forward-seed101",
         "fight-slip-counter-seed101"
@@ -449,7 +448,7 @@
       "id": "jump",
       "priority": "P0",
       "name": "Reusable airborne / fall / landing states",
-      "status": "Full jump candidates exist; phase library partial",
+      "status": "Jump arc and step-off gravity wired; reusable fall poses partial",
       "existing": [
         "game-jump-standing",
         "game-jump-walk",
@@ -465,7 +464,6 @@
       "missing": [
         "Reusable rise / apex / falling loops",
         "Soft landing + left/right running landings",
-        "Step-off ledge fall",
         "Jump backward-left/right diagonals",
         "Land-to-run / stumble / roll-out"
       ],
@@ -476,7 +474,7 @@
       "id": "stance",
       "priority": "P0",
       "name": "Responsive stance transitions",
-      "status": "Loops exist; transitions need responsiveness work",
+      "status": "Immediate crouch and double-C seiza wired; support variants partial",
       "existing": [
         "game-crouch-down",
         "game-crouch-up",
@@ -495,7 +493,7 @@
         "Intent buffering on rapid press/release"
       ],
       "work": "Trim and tag transition windows, then controller rules; contact retakes only where needed.",
-      "test": "Crouch during a run and release under a low ceiling. Full source transition durations are currently several seconds; do not confuse this with game input responsiveness."
+      "test": "C immediately selects crouch locomotion; C C holds seiza; Space preempts either. Standing and jump exits must reject a low ceiling. Assess the short pose blend and support contacts visually."
     },
     {
       "id": "carry",
@@ -526,7 +524,7 @@
       "id": "actions",
       "priority": "P0",
       "name": "Action timing, buffering and safe context",
-      "status": "Controller gap, not mainly a motion gap",
+      "status": "Immediate replacement / repeat attack wired; deeper context rules partial",
       "existing": [
         "game-panel",
         "game-pickup",
@@ -535,14 +533,13 @@
         "game-stand-seat"
       ],
       "missing": [
-        "Action acceptance feedback",
-        "Short bounded input buffer",
-        "Explicit interruptible / committed windows",
-        "View / angle / occlusion scoring beyond prototype distance checks",
-        "Root ownership and action event markers"
+        "Short bounded input buffer around actual landing",
+        "Combat-specific commitment rules and damage events",
+        "View / occlusion scoring for E objects",
+        "Visually authored contact event markers"
       ],
       "work": "Controller/metadata first.",
-      "test": "Tap jump/evade during attack recovery; avoid stale actions later. E must show which object will respond. Inputs currently get rejected while another action is active."
+      "test": "Alt to Space, crouch to Space, repeated LMB, punch to Space and cold-load cancellation must keep the latest input. Pickup/putdown cancellation must preserve the actual attachment event."
     },
     {
       "id": "weapon",
@@ -564,7 +561,7 @@
       "id": "cover",
       "priority": "P1",
       "name": "Cover and contextual traversal",
-      "status": "Vault/mantle/ladder probes only",
+      "status": "Space-triggered vault/mantle paths wired; contact quality remains a probe",
       "existing": [
         "game-vault",
         "game-mantle",
@@ -578,7 +575,7 @@
         "Low/high vault and mantle variants",
         "Contact markers / ledge-height adaptation"
       ],
-      "work": "Environment alignment, collision and contact IK plus targeted clips.",
+      "work": "Explicit surface tags, facing/height/range tests, free destination checks, collision-limited authored trajectories and independent fall gravity are implemented. Exact hand/foot attachment and height-specific clips remain open.",
       "test": "Same action at several real obstacle heights with hands and feet staying attached. A text-prompt vault is not validated contact traversal."
     },
     {

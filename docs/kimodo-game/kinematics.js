@@ -32,3 +32,13 @@ export function carryHands(actor,box){
  }
  return {reach,length};
 }
+export function mantleHands(actor,flight,controllerPosition){
+ const u=flight.elapsed/flight.duration,s=x=>{x=T.MathUtils.clamp(x,0,1);return x*x*(3-2*x)},weight=s((u-.08)/.1)*(1-s((u-.4)/.13));let reach=0,length=0;
+ if(weight<=0)return {reach,length};
+ const dir=flight.destination.clone().sub(flight.start).setY(0).normalize(),side=new T.Vector3(dir.z,0,-dir.x),offset=actor.group.position.clone().sub(controllerPosition);
+ for(const [suffix,sign]of [['L',1],['R',-1]]){
+  const upper=actor.bones['UPPER_ARM_'+suffix],fore=actor.bones['FOREARM_'+suffix],hand=actor.bones['HAND_'+suffix],edge=flight.edge.clone().addScaledVector(side,.23*sign).addScaledVector(dir,.03).add(offset);edge.y+=.035;
+  const goal=point(hand).lerp(edge,weight),r=solveChain(upper,fore,hand,goal);reach=Math.max(reach,r.reach);length=Math.max(length,r.length);
+ }
+ return {reach,length};
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "responsive-game-controller/1",
+  "date": "2026-11-03",
+  "files": {
+    "game.js": "9753a66c3935197573c0d579bbabd783cf3f8e97313c4bd7de5683627f1e362a",
+    "world.js": "afb1b33dd2b2f5fff5cbe05a7356f7c25aad6b0a9b3a2effa6d219b6f5938b32",
+    "traversal.js": "4fff2606c3487ca2546d2c87702562a83e7688a745fb1c838b48c2ec5d79dd21",
+    "kinematics.js": "3bd56d2720cfe798350ef2866428d66793cfd19d957302045a467c596eb744dc",
+    "action-profiles.json": "ae40a13fc727e510c8251336b9e321c02f269cca7c1af085a8d6aeff651712b3",
+    "index.html": "9cf6733615a1bdce883b8a6d19ce844496a862f5d8f18e9bc0d5dff1b3f51c5e"
+  },
+  "original_motion_assets": "Unchanged; no clips, model meshes or default 94-clip packs regenerated.",
+  "scope": "Short source windows, latest-action cancellation, independent flight, immediate crouch/double-C seiza and explicitly tagged vault/mantle prototypes. Technical checks do not establish visual acceptance or exact support contact.",
+  "qa": "responsive-controls-validation.json",
+  "entry": "../../docs/dev-log/#responsive-controls"
+}

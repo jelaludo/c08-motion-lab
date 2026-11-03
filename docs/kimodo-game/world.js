@@ -11,6 +11,9 @@ export function createWorld(scene){
  label('JUMP + CROUCH COURSE',12,5);box('low jump',12,18,7,.65,.42,'#b89654');box('medium jump',12,48,7,.65,.64,'#b89654');
  box('crouch tunnel roof',12,33,6,8,.25,'#587f94',1.4);box('tunnel left',8.85,33,.3,8,1.65,'#587f94');box('tunnel right',15.15,33,.3,8,1.65,'#587f94');
  for(const [x,z]of [[-17,26],[-23,35],[-17,44],[26,23],[31,39],[25,58]])box('solid wall',x,z,4,2,2.4,'#526970');
+ box('training climb wall',7,7,4,1.2,1.55,'#557e9b');label('SPACE / CLIMB',7,4.6,undefined,.035,.55);
+ box('training vault barrier',6,12,4,.6,.6,'#b89654');label('SPACE / VAULT',6,10,undefined,.035,.55);
+ for(const b of obstacles){if(['low jump','medium jump','training vault barrier'].includes(b.name))b.traversal='vault';if(['solid wall','stacked freight','training climb wall'].includes(b.name))b.traversal='mantle'}
  label('BOX YARD',-12,0);for(let i=0;i<3;i++)box('stacked freight',-18-i*1.6,6,1.2,1.2,1.2+(i%2)*1.2,'#747663');
  const makeCrate=()=>{const m=new T.Mesh(new T.BoxGeometry(.58,.46,.5),mat('#d5aa69'));m.castShadow=true;const edges=new T.LineSegments(new T.EdgesGeometry(m.geometry),new T.LineBasicMaterial({color:0x54402a}));m.add(edges);return m};
  const crate=makeCrate();crate.position.set(-2,.23,2);scene.add(crate);props.push(crate);

@@ -14,19 +14,24 @@
     "crawl_m_s": 0.45,
     "carry_walk_m_s": 0.95,
     "carry_jog_m_s": 1.9,
-    "locomotion_blend_s": 0.18,
-    "stance_blend_s": 0.28
+    "locomotion_blend_s": 0.14,
+    "stance_blend_s": 0.1
   },
   "transitions": [
     [
       "stand",
-      "game-crouch-down",
+      "immediate crouch-forward support pose",
       "crouch"
     ],
     [
       "crouch",
-      "game-crouch-up",
+      "immediate idle with headroom check",
       "stand"
+    ],
+    [
+      "crouch",
+      "quick double-C end pose",
+      "seiza"
     ],
     [
       "stand",
@@ -69,6 +74,16 @@
       "stand"
     ]
   ],
+  "responsive_controls": {
+    "action_windows": "../action-profiles.json",
+    "evade_s": 0.32,
+    "double_c_ms": 300,
+    "jump_anticipation_s": 0.065,
+    "action_blend_s": 0.065,
+    "cancel": "latest explicit action wins; fresh movement cancels evade/attack",
+    "flight": "independent of animation action",
+    "traversal": "explicit tags, range/facing/height and free destination; authored collision-checked path; exact contact IK remains open"
+  },
   "loop_policy": "Phase-searched interior window plus overlap crossfade. Position/quaternion endpoints match. Review velocity, contacts and balance separately.",
   "jump_policy": "Anticipation / airborne / landing source windows; controller supplies jump height and airtime. Jump source airborne root arc removed in game clip to avoid double height.",
   "runtime_not_in_default_pack": [
