@@ -36,5 +36,20 @@
       "Private human reference videos",
       "Third-party manuals and game screenshots"
     ]
+  },
+  "live_verification": {
+    "status": "passed",
+    "verified_content_commit": "da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+    "pages_run": 41664311236,
+    "pages_run_conclusion": "success",
+    "verified_at": "2026-11-03T15:32:48.462436+00:00",
+    "live_browser_reports": [
+      "variety-ukemi-validation.json",
+      "modifier-sprint-validation.json",
+      "public-playback-validation.json"
+    ],
+    "dev_log_entries": 34,
+    "dev_log_words": 13471,
+    "scope": "Live hosted playback, modifier-key control boundaries, pooled take choices, directional collisions, selected support skin, source parity and GLB export checks. Animation naturalness, sprint gliding and complete body/environment contact still require reviewer acceptance."
   }
 }

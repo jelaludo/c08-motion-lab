@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "verified_content_commit": "da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+  "pages_run": 41664311236,
+  "pages_run_conclusion": "success",
+  "verified_at": "2026-11-03T15:32:48.462436+00:00",
+  "frontend_and_recording_bytes": [
+    {
+      "file": "game.js",
+      "sha256": "6a93d66691cf611cdfc88b3a72fd5da9b7536bfa916ad6ce413a6b61f7346266",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/game.js?verified=da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+      "bytes": 55287,
+      "verified": true
+    },
+    {
+      "file": "variation.js",
+      "sha256": "f733e295eeb7e525a33ac13904fe4f4fd8d2b78ada664830ae4a0453a994c109",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/variation.js?verified=da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+      "bytes": 967,
+      "verified": true
+    },
+    {
+      "file": "breakfalls.js",
+      "sha256": "db426b1f5572e1e2e591a6930ea885a0693bf09737bd2d2a443ebb2f099a864f",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/breakfalls.js?verified=da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+      "bytes": 2813,
+      "verified": true
+    },
+    {
+      "file": "contact-actions.js",
+      "sha256": "b291038a1f0b9b6fa5b2d7ad4d65181e8d0d8669f2c7a70b8e7923b9460d419f",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/contact-actions.js?verified=da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+      "bytes": 8078,
+      "verified": true
+    },
+    {
+      "file": "world.js",
+      "sha256": "303df2b1963fc2d9a29143188cb35842a62d365d10e6abbace3550a7a367471e",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/world.js?verified=da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+      "bytes": 4860,
+      "verified": true
+    },
+    {
+      "file": "index.html",
+      "sha256": "924403a90782de30808706cb97baaa8e076be4b5c61edf5c4d53401caf6c69f0",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/index.html?verified=da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+      "bytes": 13609,
+      "verified": true
+    },
+    {
+      "file": "reaction-takes/c08-side-brace.glb",
+      "sha256": "ee7a7769e8a38a7545ae5d7e78cc0623055c50ccdb6adfe3edbaef36c9888605",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/da4eafaf04a2c181c23de31aef9e8ed396f8cd61/research/kimodo/reaction-takes/c08-side-brace.glb",
+      "bytes": 1427968,
+      "verified": true
+    },
+    {
+      "file": "reaction-takes/c08-side-brace.json",
+      "sha256": "194b67126554265544e938f65eaa14eef8d3a2722cb074084d87868741cfc63b",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/da4eafaf04a2c181c23de31aef9e8ed396f8cd61/research/kimodo/reaction-takes/c08-side-brace.json",
+      "bytes": 3322,
+      "verified": true
+    },
+    {
+      "file": "reaction-takes/brek43-side-brace.glb",
+      "sha256": "5faa96e8927fc87374814280211af4c22aaf7dfa2699bb0cb0dbbd1e9bcc0b16",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/da4eafaf04a2c181c23de31aef9e8ed396f8cd61/research/kimodo/reaction-takes/brek43-side-brace.glb",
+      "bytes": 1779332,
+      "verified": true
+    },
+    {
+      "file": "reaction-takes/brek43-side-brace.json",
+      "sha256": "2d3947878212b64bc28e29d467068ac00a430f566b0180d1605337d961e0b814",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/da4eafaf04a2c181c23de31aef9e8ed396f8cd61/research/kimodo/reaction-takes/brek43-side-brace.json",
+      "bytes": 3337,
+      "verified": true
+    }
+  ],
+  "live_browser_reports": [
+    "variety-ukemi-validation.json",
+    "modifier-sprint-validation.json",
+    "public-playback-validation.json"
+  ],
+  "dev_log_entries": 34,
+  "dev_log_words": 13471,
+  "scope": "Live hosted playback, modifier-key control boundaries, pooled take choices, directional collisions, selected support skin, source parity and GLB export checks. Animation naturalness, sprint gliding and complete body/environment contact still require reviewer acceptance."
+}

@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/kimodo-game/?controls=hybrid",
+  "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/?controls=hybrid",
   "checks": [
     {
       "body": "c08",
@@ -12,16 +12,16 @@
         2466
       ],
       "sprint_draws": [
+        2055,
         411,
         1644,
         2466,
-        2055,
         1233,
         1644,
-        2055,
-        2466,
+        1233,
         411,
-        1233
+        2055,
+        2466
       ],
       "seed822_preview_available": true
     },
@@ -115,16 +115,16 @@
         2466
       ],
       "sprint_draws": [
-        1644,
-        411,
-        1233,
         2466,
+        411,
+        1644,
+        2055,
+        1233,
+        1644,
+        1233,
         2055,
         2466,
-        1233,
-        1644,
-        411,
-        2055
+        411
       ],
       "seed822_preview_available": true
     },

@@ -1,13 +1,13 @@
 {
   "status": "passed",
-  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/kimodo-game/?controls=hybrid",
+  "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/?controls=hybrid",
   "checks": [
     {
       "body": "c08",
       "direction": "forward",
       "gait": "walk",
       "selected": {
-        "take": "game-ukemi-forward-seed1101",
+        "take": "game-ukemi-forward-seed3303",
         "kind": "forward",
         "tripCount": 1
       },
@@ -17,7 +17,7 @@
           0,
           16.3
         ],
-        "length": 5.060829533221067e-9,
+        "length": 6.146503861437225e-9,
         "tripCount": 1
       }
     },
@@ -26,7 +26,7 @@
       "direction": "forward",
       "gait": "run",
       "selected": {
-        "take": "game-ukemi-forward-seed2202",
+        "take": "game-ukemi-forward-seed1101",
         "kind": "forward",
         "tripCount": 2
       },
@@ -36,7 +36,7 @@
           0,
           17.370852577070774
         ],
-        "length": 5.060829533221067e-9,
+        "length": 6.146503861437225e-9,
         "tripCount": 2
       }
     },
@@ -45,7 +45,7 @@
       "direction": "backward",
       "gait": "walk",
       "selected": {
-        "take": "game-ukemi-backward-seed202",
+        "take": "game-ukemi-backward-seed101",
         "kind": "backward",
         "tripCount": 3
       },
@@ -55,7 +55,7 @@
           0,
           11.7
         ],
-        "length": 5.060829533221067e-9,
+        "length": 6.146503861437225e-9,
         "tripCount": 3
       }
     },
@@ -64,7 +64,7 @@
       "direction": "backward",
       "gait": "run",
       "selected": {
-        "take": "game-ukemi-backward-seed101",
+        "take": "game-ukemi-backward-seed202",
         "kind": "backward",
         "tripCount": 4
       },
@@ -74,7 +74,7 @@
           0,
           10.687371150759725
         ],
-        "length": 5.060829533221067e-9,
+        "length": 6.146503861437225e-9,
         "tripCount": 4
       }
     },
@@ -101,11 +101,11 @@
       ],
       "high_wall_and_crouch_excluded": true,
       "rolls": [
+        2202,
         3303,
         2202,
         1101,
         3303,
-        1101,
         2202
       ],
       "filtered": [
@@ -134,7 +134,7 @@
           0,
           16.3
         ],
-        "length": 5.060829533221067e-9,
+        "length": 6.146503861437225e-9,
         "tripCount": 5
       }
     },
@@ -143,7 +143,7 @@
       "direction": "forward",
       "gait": "run",
       "selected": {
-        "take": "game-ukemi-forward-seed1101",
+        "take": "game-ukemi-forward-seed3303",
         "kind": "forward",
         "tripCount": 6
       },
@@ -153,7 +153,7 @@
           0,
           17.370852577070774
         ],
-        "length": 5.060829533221067e-9,
+        "length": 6.146503861437225e-9,
         "tripCount": 6
       }
     },
@@ -172,7 +172,7 @@
           0,
           11.7
         ],
-        "length": 5.060829533221067e-9,
+        "length": 6.146503861437225e-9,
         "tripCount": 7
       }
     },
@@ -191,21 +191,21 @@
           0,
           10.687371150759725
         ],
-        "length": 5.060829533221067e-9,
+        "length": 6.146503861437225e-9,
         "tripCount": 8
       }
     },
     {
       "body": "brek43",
       "base_choices": [
-        "game-wave-seed822",
         "game-wave-seed411",
         "game-wave-seed822",
         "game-wave-seed411",
         "game-wave-seed822",
         "game-wave-seed411",
         "game-wave-seed822",
-        "game-wave-seed411"
+        "game-wave-seed411",
+        "game-wave-seed822"
       ],
       "forward_preview_seeds": [
         1101,
@@ -218,12 +218,12 @@
       ],
       "high_wall_and_crouch_excluded": true,
       "rolls": [
-        3303,
         1101,
         2202,
+        1101,
         3303,
-        2202,
-        1101
+        1101,
+        3303
       ],
       "filtered": [
         822,

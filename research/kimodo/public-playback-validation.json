@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "environment": "staged exact-byte raw-host interception",
-  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/",
+  "environment": "live GitHub Pages and raw host",
+  "url": "https://jelaludo.github.io/c08-motion-lab/",
   "checks": [
     {
       "name": "all source clips on shared meshes match original export joints",
