@@ -27,7 +27,10 @@
     2055,
     2202,
     2466,
-    3303
+    3303,
+    4411,
+    5522,
+    6633
   ],
   "motions": [
     {
@@ -823,6 +826,22 @@
       "kind": "action",
       "addon": true,
       "default_seed": 101
+    },
+    {
+      "id": "game-ukemi-side-left",
+      "label": "Side ukemi / left",
+      "group": "ground",
+      "kind": "action",
+      "addon": true,
+      "default_seed": 4411
+    },
+    {
+      "id": "game-ukemi-side-right",
+      "label": "Side ukemi / right",
+      "group": "ground",
+      "kind": "action",
+      "addon": true,
+      "default_seed": 4411
     }
   ],
   "takes": [
@@ -9628,6 +9647,264 @@
           "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/58b7c5beec9f1e85e7c44f44d088e81d198a8d902b0df10d49a48cc560604058.json.gz",
           "source_glb_sha256": "187e4b91e935d5c556d6920c5be71371a33f9b2fba1e211e0340dcf4bb1e8cd2"
         }
+      ]
+    },
+    {
+      "id": "game-ukemi-side-left-seed4411",
+      "motion": "game-ukemi-side-left",
+      "label": "Side ukemi / left",
+      "group": "ground",
+      "kind": "action",
+      "seed": 4411,
+      "version": 1,
+      "method": "kimodo-game-side-ukemi",
+      "source_take": "game-ukemi-side-left-seed4411",
+      "source_round": "game-side-ukemi",
+      "source_sha256": "7765027313607316d146fe6a1bfca1e1a1ab06b3dfa749ce11d3e9abe9403ac6",
+      "prompt": "A person standing upright loses balance and falls sideways to the left. They tuck their chin, bend their knees, land softly on their left side and shoulder, roll smoothly across their upper back in a judo side breakfall, then get back up to a relaxed standing posture.",
+      "style": "judo",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/94ac97f785a75c06607f6ac5fc48f61745790af96e2b8223657537ceb66a7bdb.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/7d4c95c05fcf39c74782129dc364d1e4860702742a419b65b5eadff010d1bbb8.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/de73c16551d513beea6391bcffb82c3af82c61265c5315cb0582d635fcb4fd4a.json.gz",
+          "source_glb_sha256": "0db48f8b8b2ccc79d43f98bef8dad312eb6e50f96a3b09b696f87587342e0503"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/689c7601d770dac926924773dd65323b147fc0a9ea9d3020e419f82a9cf8095e.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/f0a5bbb11ab33bb94f693a3fefc1de48e3c7210541500f80d3abedf39cc10953.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/94491da9704e9af03447dd5bd2e1dab8d46b3cfd3a94a99981d04071c2e9246f.json.gz",
+          "source_glb_sha256": "7e6b7b02b4785d87cb7a6619daa7ace0235cc12c087413d61d82a056738715bd"
+        }
+      ],
+      "limitations": [
+        "Candidate lateral roll/breakfall; ground contact and technique require visual review."
+      ]
+    },
+    {
+      "id": "game-ukemi-side-left-seed5522",
+      "motion": "game-ukemi-side-left",
+      "label": "Side ukemi / left",
+      "group": "ground",
+      "kind": "action",
+      "seed": 5522,
+      "version": 1,
+      "method": "kimodo-game-side-ukemi",
+      "source_take": "game-ukemi-side-left-seed5522",
+      "source_round": "game-side-ukemi",
+      "source_sha256": "73f549066f777667e14e3520bbe4849d2b1a06ff85bc5f5a504d3e9dd688a786",
+      "prompt": "A person standing upright loses balance and falls sideways to the left. They tuck their chin, bend their knees, land softly on their left side and shoulder, roll smoothly across their upper back in a judo side breakfall, then get back up to a relaxed standing posture.",
+      "style": "judo",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/5b03ca903b7533c0a61a8db5535257c0be439a095c3f3eb7866d42e8590cb005.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/2512a01ac3a88bb40d76117afaee6fb402204bae77e25df46b6c0e25e48f181d.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/2805632639b7cf723b607cb4e552f7160946a312138b99d70bee6f3eb631a9bb.json.gz",
+          "source_glb_sha256": "0cb5ab20d249930cbbd3af928406c97b69a2dbdd05f0a2880d71d4d2fa69129b"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/fa83cdcdb7400c34693c0be5e04393f24a0876114d749839d0480a5518a0a0f6.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/dd3cc9f4b1e6c47b9377d5a72f2f98976906539d3d1a26b59f28cb63226ebb62.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/697918f68cca2c30c97194b2b2f88ceac8f0f1c5a88b108ba9d03952e26bd454.json.gz",
+          "source_glb_sha256": "39e4452e7e9b8999ee28f6e4e543c7540ab9e5c2ad5353baa00bc9e06b35a8ac"
+        }
+      ],
+      "limitations": [
+        "Candidate lateral roll/breakfall; ground contact and technique require visual review."
+      ]
+    },
+    {
+      "id": "game-ukemi-side-left-seed6633",
+      "motion": "game-ukemi-side-left",
+      "label": "Side ukemi / left",
+      "group": "ground",
+      "kind": "action",
+      "seed": 6633,
+      "version": 1,
+      "method": "kimodo-game-side-ukemi",
+      "source_take": "game-ukemi-side-left-seed6633",
+      "source_round": "game-side-ukemi",
+      "source_sha256": "4f118b274ad41efc096a8097002da8880312b401fe2cf7c3ddcc3e911c1f9c8b",
+      "prompt": "A person trips sideways to the left like a skateboarder falling off a board. They crouch and tuck, fall onto their left shoulder and side, curl into a sideways shoulder roll across their back to absorb the fall, then smoothly stand up again.",
+      "style": "skateboard",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/685ad8a376a8c51e324a99593833b81e05bd131d3b3c46847402d150902a7c7f.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/c94dbddba82fc1113d892d2304ee0021c7e6960e90905fef5b4dc25b94e08233.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/402af3316a001885231159963b2d61d9072a43e75b084679e23fba7fd7d5176d.json.gz",
+          "source_glb_sha256": "7728e0506c8dd6aa6ec72aa6fb6224e448a2143cc678ed47fb2365db5bbeb705"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/27a96032aa53132800a374970918b5d6a9a403aa5c3cd4f0d83d4f0f7b9c996c.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/7a87fa0ee8e946d11943c7e4999df5463e80a6a02ce273c5714fb67ac8e137b7.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/c9c04ee5ef082aa754c99c9a880b3847a83a60ece9af8ff6a1a713b925056e1a.json.gz",
+          "source_glb_sha256": "dfaa2772bcdbc16f8b8ff3deaac91695f54ef915b58c01737f348cf18d243a27"
+        }
+      ],
+      "limitations": [
+        "Candidate lateral roll/breakfall; ground contact and technique require visual review."
+      ]
+    },
+    {
+      "id": "game-ukemi-side-right-seed4411",
+      "motion": "game-ukemi-side-right",
+      "label": "Side ukemi / right",
+      "group": "ground",
+      "kind": "action",
+      "seed": 4411,
+      "version": 1,
+      "method": "kimodo-game-side-ukemi",
+      "source_take": "game-ukemi-side-right-seed4411",
+      "source_round": "game-side-ukemi",
+      "source_sha256": "972f8af33c3176a9bea8281dffea8cdde61341f9462c8f8f7aa9f98ef740a86d",
+      "prompt": "A person standing upright loses balance and falls sideways to the right. They tuck their chin, bend their knees, land softly on their right side and shoulder, roll smoothly across their upper back in a judo side breakfall, then get back up to a relaxed standing posture.",
+      "style": "judo",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8c293492eb1989962b3f6ea3c2468c3fdeb94b66d6d60ab4000cfb020d672f68.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/67b84275ec81dc0b3a8c3e409c436e6ace462c8b10fa2f199edf796c500fa332.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/f1ebf5d1f5e57ca838673583906ce1837ca4b678b3be61a96937ad56c35f81c3.json.gz",
+          "source_glb_sha256": "525fc24c28c44fedc0f7ea4deafc889cd3531047030ffccd3082f7778a3af43b"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/17704d2877515d91376628ee883bd678112999e2c09aa6febf47b7adfc4c69d4.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/c05986c2b1b3e5fb4809614ffceccf2963dd5852efa3deb8c149c1a7fd18f7d0.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/7e0559ae24623c86c76c9aebfe3d2ee5ec00bab6c31a424e69750e3b1b7cce18.json.gz",
+          "source_glb_sha256": "0cf881e155ffb77ba161a17e5ac3d2af9b6b8e1d1ca4944325fcc08f24f0db37"
+        }
+      ],
+      "limitations": [
+        "Candidate lateral roll/breakfall; ground contact and technique require visual review."
+      ]
+    },
+    {
+      "id": "game-ukemi-side-right-seed5522",
+      "motion": "game-ukemi-side-right",
+      "label": "Side ukemi / right",
+      "group": "ground",
+      "kind": "action",
+      "seed": 5522,
+      "version": 1,
+      "method": "kimodo-game-side-ukemi",
+      "source_take": "game-ukemi-side-right-seed5522",
+      "source_round": "game-side-ukemi",
+      "source_sha256": "d4003c986d2b5a098bc99a2707209b0158b142851e941b93eab16bf062449cea",
+      "prompt": "A person standing upright loses balance and falls sideways to the right. They tuck their chin, bend their knees, land softly on their right side and shoulder, roll smoothly across their upper back in a judo side breakfall, then get back up to a relaxed standing posture.",
+      "style": "judo",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/ef38b6c76c93b6c5eb048aae192f85977d37b20e1438c166a6ef8e50cb8e85c7.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/31bdd9f607836554ffda90a9b93f3b1a7b452f4522d3eec2115894ff22f23d91.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/dbf711982b89283ef5a7ee5481396667dfaefff7655a58d21294b1f32378e47a.json.gz",
+          "source_glb_sha256": "efb52a477c1d69f935b90f8ec75d96f15b113a82350b73ff9879f16d37aacca4"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/e57b077fc625fe53f0890126dd9dd0eae0f8433bbe37e12766579f805b326a98.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/6185cdb35f03b4003d30e266f627e8c3bf36ef7f1ad817203192b57bb838467c.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/eecd106676c60a9e5f5b626ba7addd78a20fc43b3d69aa59ce245faa70c1015f.json.gz",
+          "source_glb_sha256": "f07e46d50357c82e657fd9921efb099e6747a5f394d3bb4fe2668ae52598090f"
+        }
+      ],
+      "limitations": [
+        "Candidate lateral roll/breakfall; ground contact and technique require visual review."
+      ]
+    },
+    {
+      "id": "game-ukemi-side-right-seed6633",
+      "motion": "game-ukemi-side-right",
+      "label": "Side ukemi / right",
+      "group": "ground",
+      "kind": "action",
+      "seed": 6633,
+      "version": 1,
+      "method": "kimodo-game-side-ukemi",
+      "source_take": "game-ukemi-side-right-seed6633",
+      "source_round": "game-side-ukemi",
+      "source_sha256": "b88e2b357e079968f51d4fd8a2e1731f7b2f46772f2099fc1701231234119894",
+      "prompt": "A person trips sideways to the right like a skateboarder falling off a board. They crouch and tuck, fall onto their right shoulder and side, curl into a sideways shoulder roll across their back to absorb the fall, then smoothly stand up again.",
+      "style": "skateboard",
+      "automatic_eligible": true,
+      "outputs": [
+        {
+          "body": "c08",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/e298231f88501c0a8eeaca44d2e020307e9e3fa177dc5bcf1f8d2059fb4f04e1.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/d6e9919c76cbb0a6505f0defdc38efe6400cb89441c8e8a53c802d86ab54d7b9.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/9b17f951750bd718fa99c1cbaa15980a4673741a5060f959ab01a725306f8905.json",
+          "bind_height_m": 2.2854126167,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/187b306a8d82371c3f3d747be45b2001a06fbca0a4a62769cf54118db6572c54.json.gz",
+          "source_glb_sha256": "ea3d3502d93c5d6388a12fb9ca920448113f1338473629a479d3acb0c934af65"
+        },
+        {
+          "body": "brek43",
+          "clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/f1720bffc831bc62f058b588bf39e6e3d6e81f858cb103e62782da46e550d94e.json.gz",
+          "source_glb": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/8cb67eb3ddb3957c0b03ef0fc9a6768e66f0880d4a87d78ab4519080648af704.glb",
+          "report": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/75ffe44952a40a3835ea474e7cbc0a4441dc9b158bc9c225b968fa9043d923b6.json",
+          "bind_height_m": 2.7090001662,
+          "measured_target_speed_m_s": 0,
+          "jump": null,
+          "raw_clip": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/main/research/kimodo/assets/9260dbd3d5bd1208be9d7cabec73347bcc65ff464cdc1bb1f5dc4718deb32a52.json.gz",
+          "source_glb_sha256": "0f6e7bb9e0b2648aabb64cd212974a982a705f73cfb01e4b17a3b1696855793d"
+        }
+      ],
+      "limitations": [
+        "Candidate lateral roll/breakfall; ground contact and technique require visual review."
       ]
     }
   ],

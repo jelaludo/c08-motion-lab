@@ -1,0 +1,653 @@
+{
+  "status": "derived",
+  "new_motion_types": 2,
+  "takes": 6,
+  "body_clips": 12,
+  "preserved_existing_takes": 198,
+  "automatic_takes": [
+    "game-ukemi-side-left-seed4411",
+    "game-ukemi-side-left-seed5522",
+    "game-ukemi-side-left-seed6633",
+    "game-ukemi-side-right-seed4411",
+    "game-ukemi-side-right-seed5522",
+    "game-ukemi-side-right-seed6633"
+  ],
+  "results": [
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-left-seed4411",
+      "source_take": "game-ukemi-side-left-seed4411",
+      "body": "c08",
+      "side": "left",
+      "style": "judo",
+      "source_motion_sha256": "7765027313607316d146fe6a1bfca1e1a1ab06b3dfa749ce11d3e9abe9403ac6",
+      "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+      "source_glb_sha256": "0db48f8b8b2ccc79d43f98bef8dad312eb6e50f96a3b09b696f87587342e0503",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.18197427690029144,
+        "min_head_y_m": 0.14631029963493347,
+        "max_lateral_tilt": 0.894145131111145,
+        "min_up_y": -0.6721699833869934,
+        "lateral_displacement_m": 1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.8154325038194656
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.3072504997253418,
+        "head_side_offset_max_m": 0.409684956073761,
+        "hip_drop_m": 0.8923491090536118
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": 0.007396814384897226,
+        "max_correction_m": 0.6772596797366173,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": 1.8,
+        "constraint_sha256": "4e3f1c1e081a5095153e0ac5808b11a0de88ae95ecb30bd85b58acdccb9d9c2f"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-left-seed4411",
+      "source_take": "game-ukemi-side-left-seed4411",
+      "body": "brek43",
+      "side": "left",
+      "style": "judo",
+      "source_motion_sha256": "7765027313607316d146fe6a1bfca1e1a1ab06b3dfa749ce11d3e9abe9403ac6",
+      "source_asset_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+      "source_glb_sha256": "7e6b7b02b4785d87cb7a6619daa7ace0235cc12c087413d61d82a056738715bd",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.18197427690029144,
+        "min_head_y_m": 0.14631029963493347,
+        "max_lateral_tilt": 0.894145131111145,
+        "min_up_y": -0.6721699833869934,
+        "lateral_displacement_m": 1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.8154325038194656
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.19919252395629883,
+        "head_side_offset_max_m": 0.2523149251937866,
+        "hip_drop_m": 1.379084974527359
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": -0.009896041122041229,
+        "max_correction_m": 0.1877537330153829,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": 1.8,
+        "constraint_sha256": "4e3f1c1e081a5095153e0ac5808b11a0de88ae95ecb30bd85b58acdccb9d9c2f"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-left-seed5522",
+      "source_take": "game-ukemi-side-left-seed5522",
+      "body": "c08",
+      "side": "left",
+      "style": "judo",
+      "source_motion_sha256": "73f549066f777667e14e3520bbe4849d2b1a06ff85bc5f5a504d3e9dd688a786",
+      "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+      "source_glb_sha256": "0cb5ab20d249930cbbd3af928406c97b69a2dbdd05f0a2880d71d4d2fa69129b",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.17376650869846344,
+        "min_head_y_m": 0.09182871878147125,
+        "max_lateral_tilt": 0.990318775177002,
+        "min_up_y": -0.9654431343078613,
+        "lateral_displacement_m": 1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.8236402720212936
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.4083273410797119,
+        "head_side_offset_max_m": 0.7564008235931396,
+        "hip_drop_m": 0.9013310968875885
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": 0.007478897952277501,
+        "max_correction_m": 0.6706247657936761,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": 1.8,
+        "constraint_sha256": "4e3f1c1e081a5095153e0ac5808b11a0de88ae95ecb30bd85b58acdccb9d9c2f"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-left-seed5522",
+      "source_take": "game-ukemi-side-left-seed5522",
+      "body": "brek43",
+      "side": "left",
+      "style": "judo",
+      "source_motion_sha256": "73f549066f777667e14e3520bbe4849d2b1a06ff85bc5f5a504d3e9dd688a786",
+      "source_asset_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+      "source_glb_sha256": "39e4452e7e9b8999ee28f6e4e543c7540ab9e5c2ad5353baa00bc9e06b35a8ac",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.17376650869846344,
+        "min_head_y_m": 0.09182871878147125,
+        "max_lateral_tilt": 0.990318775177002,
+        "min_up_y": -0.9654431343078613,
+        "lateral_displacement_m": 1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.8236402720212936
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.2642042636871338,
+        "head_side_offset_max_m": 0.5526820421218872,
+        "hip_drop_m": 1.3929662108421326
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": -0.09849720513171203,
+        "max_correction_m": 0.22140027280906183,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": 1.8,
+        "constraint_sha256": "4e3f1c1e081a5095153e0ac5808b11a0de88ae95ecb30bd85b58acdccb9d9c2f"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-left-seed6633",
+      "source_take": "game-ukemi-side-left-seed6633",
+      "body": "c08",
+      "side": "left",
+      "style": "skateboard",
+      "source_motion_sha256": "4f118b274ad41efc096a8097002da8880312b401fe2cf7c3ddcc3e911c1f9c8b",
+      "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+      "source_glb_sha256": "7728e0506c8dd6aa6ec72aa6fb6224e448a2143cc678ed47fb2365db5bbeb705",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.147126704454422,
+        "min_head_y_m": 0.1250959187746048,
+        "max_lateral_tilt": 0.9253072142601013,
+        "min_up_y": -0.8748486638069153,
+        "lateral_displacement_m": 1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.8502800762653351
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.4266347885131836,
+        "head_side_offset_max_m": 0.6060400009155273,
+        "hip_drop_m": 0.9304837286472321
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": 0.01171735845213652,
+        "max_correction_m": 0.7014354281442415,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": 1.8,
+        "constraint_sha256": "4e3f1c1e081a5095153e0ac5808b11a0de88ae95ecb30bd85b58acdccb9d9c2f"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-left-seed6633",
+      "source_take": "game-ukemi-side-left-seed6633",
+      "body": "brek43",
+      "side": "left",
+      "style": "skateboard",
+      "source_motion_sha256": "4f118b274ad41efc096a8097002da8880312b401fe2cf7c3ddcc3e911c1f9c8b",
+      "source_asset_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+      "source_glb_sha256": "dfaa2772bcdbc16f8b8ff3deaac91695f54ef915b58c01737f348cf18d243a27",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.147126704454422,
+        "min_head_y_m": 0.1250959187746048,
+        "max_lateral_tilt": 0.9253072142601013,
+        "min_up_y": -0.8748486638069153,
+        "lateral_displacement_m": 1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.8502800762653351
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.29328131675720215,
+        "head_side_offset_max_m": 0.41463661193847656,
+        "hip_drop_m": 1.4380202889442444
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": -0.008156848606883803,
+        "max_correction_m": 0.18326733132891232,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": 1.8,
+        "constraint_sha256": "4e3f1c1e081a5095153e0ac5808b11a0de88ae95ecb30bd85b58acdccb9d9c2f"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-right-seed4411",
+      "source_take": "game-ukemi-side-right-seed4411",
+      "body": "c08",
+      "side": "right",
+      "style": "judo",
+      "source_motion_sha256": "972f8af33c3176a9bea8281dffea8cdde61341f9462c8f8f7aa9f98ef740a86d",
+      "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+      "source_glb_sha256": "525fc24c28c44fedc0f7ea4deafc889cd3531047030ffccd3082f7778a3af43b",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.200219064950943,
+        "min_head_y_m": 0.17102932929992676,
+        "max_lateral_tilt": 0.9884863495826721,
+        "min_up_y": -0.8558271527290344,
+        "lateral_displacement_m": -1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.7971877157688141
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.9487780332565308,
+        "head_side_offset_max_m": 0.8917132616043091,
+        "hip_drop_m": 0.8723833709955215
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": 0.007398816638055962,
+        "max_correction_m": 0.6368245948341005,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": -1.8,
+        "constraint_sha256": "7d2b08f8a466b5fe7bc667b50112aae83c3077bdf4ecfc71879d621bb22752db"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-right-seed4411",
+      "source_take": "game-ukemi-side-right-seed4411",
+      "body": "brek43",
+      "side": "right",
+      "style": "judo",
+      "source_motion_sha256": "972f8af33c3176a9bea8281dffea8cdde61341f9462c8f8f7aa9f98ef740a86d",
+      "source_asset_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+      "source_glb_sha256": "0cf881e155ffb77ba161a17e5ac3d2af9b6b8e1d1ca4944325fcc08f24f0db37",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.200219064950943,
+        "min_head_y_m": 0.17102932929992676,
+        "max_lateral_tilt": 0.9884863495826721,
+        "min_up_y": -0.8558271527290344,
+        "lateral_displacement_m": -1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.7971877157688141
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.7294609546661377,
+        "head_side_offset_max_m": 0.7165102958679199,
+        "hip_drop_m": 1.3482288122177124
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": -0.15705097067787174,
+        "max_correction_m": 0.11663991548769705,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": -1.8,
+        "constraint_sha256": "7d2b08f8a466b5fe7bc667b50112aae83c3077bdf4ecfc71879d621bb22752db"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-right-seed5522",
+      "source_take": "game-ukemi-side-right-seed5522",
+      "body": "c08",
+      "side": "right",
+      "style": "judo",
+      "source_motion_sha256": "d4003c986d2b5a098bc99a2707209b0158b142851e941b93eab16bf062449cea",
+      "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+      "source_glb_sha256": "efb52a477c1d69f935b90f8ec75d96f15b113a82350b73ff9879f16d37aacca4",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.2263573408126831,
+        "min_head_y_m": 0.19897080957889557,
+        "max_lateral_tilt": 0.9486996531486511,
+        "min_up_y": -0.8012975454330444,
+        "lateral_displacement_m": -1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.771049439907074
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.5548655390739441,
+        "head_side_offset_max_m": 0.19437825679779053,
+        "hip_drop_m": 0.8437795639038086
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": 0.010143629332918383,
+        "max_correction_m": 0.5235628157786801,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": -1.8,
+        "constraint_sha256": "7d2b08f8a466b5fe7bc667b50112aae83c3077bdf4ecfc71879d621bb22752db"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-right-seed5522",
+      "source_take": "game-ukemi-side-right-seed5522",
+      "body": "brek43",
+      "side": "right",
+      "style": "judo",
+      "source_motion_sha256": "d4003c986d2b5a098bc99a2707209b0158b142851e941b93eab16bf062449cea",
+      "source_asset_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+      "source_glb_sha256": "f07e46d50357c82e657fd9921efb099e6747a5f394d3bb4fe2668ae52598090f",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.2263573408126831,
+        "min_head_y_m": 0.19897080957889557,
+        "max_lateral_tilt": 0.9486996531486511,
+        "min_up_y": -0.8012975454330444,
+        "lateral_displacement_m": -1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.771049439907074
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.3898392915725708,
+        "head_side_offset_max_m": 0.07799005508422852,
+        "hip_drop_m": 1.3040229380130768
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": -0.035394370802927864,
+        "max_correction_m": 0.07827008053320104,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": -1.8,
+        "constraint_sha256": "7d2b08f8a466b5fe7bc667b50112aae83c3077bdf4ecfc71879d621bb22752db"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-right-seed6633",
+      "source_take": "game-ukemi-side-right-seed6633",
+      "body": "c08",
+      "side": "right",
+      "style": "skateboard",
+      "source_motion_sha256": "b88e2b357e079968f51d4fd8a2e1731f7b2f46772f2099fc1701231234119894",
+      "source_asset_sha256": "44714a9ea5cea3ac797e670dc8aba57930e618f3a78809077a0b19597007a368",
+      "source_glb_sha256": "ea3d3502d93c5d6388a12fb9ca920448113f1338473629a479d3acb0c934af65",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.19425234198570251,
+        "min_head_y_m": 0.12959077954292297,
+        "max_lateral_tilt": 0.9858402609825134,
+        "min_up_y": -0.9427958130836487,
+        "lateral_displacement_m": -1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.8031544387340546
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.8289223313331604,
+        "head_side_offset_max_m": 0.3910866975784302,
+        "hip_drop_m": 0.8789129108190536
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": 0.013043639922183468,
+        "max_correction_m": 0.678405741167496,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": -1.8,
+        "constraint_sha256": "7d2b08f8a466b5fe7bc667b50112aae83c3077bdf4ecfc71879d621bb22752db"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    },
+    {
+      "schema": "side-ukemi-game-derivation/1",
+      "take": "game-ukemi-side-right-seed6633",
+      "source_take": "game-ukemi-side-right-seed6633",
+      "body": "brek43",
+      "side": "right",
+      "style": "skateboard",
+      "source_motion_sha256": "b88e2b357e079968f51d4fd8a2e1731f7b2f46772f2099fc1701231234119894",
+      "source_asset_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+      "source_glb_sha256": "0f6e7bb9e0b2648aabb64cd212974a982a705f73cfb01e4b17a3b1696855793d",
+      "source_window": [
+        0,
+        149
+      ],
+      "frames": 150,
+      "source_diagnostics": {
+        "min_hip_y_m": 0.19425234198570251,
+        "min_head_y_m": 0.12959077954292297,
+        "max_lateral_tilt": 0.9858402609825134,
+        "min_up_y": -0.9427958130836487,
+        "lateral_displacement_m": -1.7999999523162842,
+        "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+        "standing_hip_y_m": 0.9974067807197571,
+        "hip_drop_m": 0.8031544387340546
+      },
+      "target_diagnostics": {
+        "head_side_offset_min_m": -0.632927417755127,
+        "head_side_offset_max_m": 0.24367594718933105,
+        "hip_drop_m": 1.3583199381828308
+      },
+      "automatic_screen": {
+        "min_hip_drop_m": 0.25,
+        "min_lateral_tilt": 0.6,
+        "passed": true
+      },
+      "floor_cleanup": {
+        "min_correction_m": -0.06299195584783673,
+        "max_correction_m": 0.20555042120576095,
+        "sampled_clearance_lower_bound_m": 0.012
+      },
+      "conditioning": {
+        "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+        "frame_indices": [
+          0,
+          137,
+          149
+        ],
+        "lateral_destination_m": -1.8,
+        "constraint_sha256": "7d2b08f8a466b5fe7bc667b50112aae83c3077bdf4ecfc71879d621bb22752db"
+      },
+      "automatic_eligible": true,
+      "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+    }
+  ]
+}

@@ -4,8 +4,8 @@
     "schema": "kimodo-control-audit/1",
     "status": "passed",
     "checked": "2026-11-04",
-    "catalog_motion_types": 96,
-    "catalog_takes": 198,
+    "catalog_motion_types": 98,
+    "catalog_takes": 204,
     "bodies": [
       "c08",
       "brek43"
@@ -304,7 +304,7 @@
         "test": "Add only after the level and game design need that mechanic; do not copy every feature from all five games into one controller."
       }
     ],
-    "runtime_source_sha256": "5c2eb09dec5e74d95e9c2d5faa1758e95292ace1743cb8fefe925660f28a5ba7",
+    "runtime_source_sha256": "da8222e3f6616229c378736b730dedb6987dea4bca64726e2b728c0573ff095a",
     "scope": "Static inventory/code audit. Existing candidate IDs do not establish accepted motion quality or completed game states.",
     "earlier_lab_take_count": 90,
     "prior_lab_sources": {

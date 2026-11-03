@@ -129,12 +129,22 @@
     "strafe": "Ctrl+A/D: 1.25m/s lateral walk, camera heading held",
     "browser": "Only mapped Ctrl+A/S/D and Ctrl+Space prevent browser defaults in the viewport; other Ctrl/Meta shortcuts pass through"
   },
-  "side_stumble": {
-    "trigger": "grounded standing lateral collision against grounded solid >=12cm, including tall walls",
-    "pose": "mirrored knee + same-side open hand brace, free arm for balance",
-    "duration_s": 1.55,
-    "path": "20cm recoil on approach side; no crossing through obstacle",
-    "method": "Authored mirrored contact layer over existing game-land-hard source; not new model inference"
+  "side_ukemi": {
+    "seeds_per_side": [
+      4411,
+      5522,
+      6633
+    ],
+    "styles": {
+      "4411": "judo",
+      "5522": "judo",
+      "6633": "skateboard shoulder roll"
+    },
+    "duration_s": 3.6,
+    "low_obstacle": "Continue sideways across low hurdle only with clear rollout",
+    "high_obstacle": "Redirect into clear space away from wall; select opposite side pool",
+    "method": "Six new text-conditioned Kimodo predictions with native idle start/end constraints; per-body sampled skin-floor cleanup",
+    "recording": "Save take bakes selected source, controller path, transitions and IK; source exports retain the generated source"
   },
   "breakfalls": {
     "low_object_height_m": [
@@ -5131,6 +5141,22 @@
       "kind": "action",
       "addon": true,
       "default_seed": 101
+    },
+    {
+      "id": "game-ukemi-side-left",
+      "label": "Side ukemi / left",
+      "group": "ground",
+      "kind": "action",
+      "addon": true,
+      "default_seed": 4411
+    },
+    {
+      "id": "game-ukemi-side-right",
+      "label": "Side ukemi / right",
+      "group": "ground",
+      "kind": "action",
+      "addon": true,
+      "default_seed": 4411
     }
   ]
 }

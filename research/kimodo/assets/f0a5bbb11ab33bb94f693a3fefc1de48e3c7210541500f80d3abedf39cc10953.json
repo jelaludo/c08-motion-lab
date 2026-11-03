@@ -1,0 +1,53 @@
+{
+  "schema": "side-ukemi-game-derivation/1",
+  "take": "game-ukemi-side-left-seed4411",
+  "source_take": "game-ukemi-side-left-seed4411",
+  "body": "brek43",
+  "side": "left",
+  "style": "judo",
+  "source_motion_sha256": "7765027313607316d146fe6a1bfca1e1a1ab06b3dfa749ce11d3e9abe9403ac6",
+  "source_asset_sha256": "59a461ef42f5c9e3abe81af5bd6a6bfdf100fa040482fce6ce2b66110354a798",
+  "source_glb_sha256": "7e6b7b02b4785d87cb7a6619daa7ace0235cc12c087413d61d82a056738715bd",
+  "source_window": [
+    0,
+    149
+  ],
+  "frames": 150,
+  "source_diagnostics": {
+    "min_hip_y_m": 0.18197427690029144,
+    "min_head_y_m": 0.14631029963493347,
+    "max_lateral_tilt": 0.894145131111145,
+    "min_up_y": -0.6721699833869934,
+    "lateral_displacement_m": 1.7999999523162842,
+    "peak_torch_gpu_allocated_gib": 1.1354193687438965,
+    "standing_hip_y_m": 0.9974067807197571,
+    "hip_drop_m": 0.8154325038194656
+  },
+  "target_diagnostics": {
+    "head_side_offset_min_m": -0.19919252395629883,
+    "head_side_offset_max_m": 0.2523149251937866,
+    "hip_drop_m": 1.379084974527359
+  },
+  "automatic_screen": {
+    "min_hip_drop_m": 0.25,
+    "min_lateral_tilt": 0.6,
+    "passed": true
+  },
+  "floor_cleanup": {
+    "min_correction_m": -0.009896041122041229,
+    "max_correction_m": 0.1877537330153829,
+    "sampled_clearance_lower_bound_m": 0.012
+  },
+  "conditioning": {
+    "kind": "Text-conditioned lateral breakfall with native idle start/end keyframes",
+    "frame_indices": [
+      0,
+      137,
+      149
+    ],
+    "lateral_destination_m": 1.8,
+    "constraint_sha256": "4e3f1c1e081a5095153e0ac5808b11a0de88ae95ecb30bd85b58acdccb9d9c2f"
+  },
+  "automatic_eligible": true,
+  "scope": "New Kimodo source prediction with native idle endpoint constraints. Target floor cleanup is authored and sampled; it does not validate support/balance, full environment collision or judo technique."
+}

@@ -1,0 +1,136 @@
+{
+  "schema": "kimodo-game-recording/1",
+  "body": "c08",
+  "ended": "2026-11-03T22:23:35.990Z",
+  "duration_s": 6.900000000000031,
+  "frames": 139,
+  "events": [
+    {
+      "time": 0,
+      "type": "record-start",
+      "body": "c08"
+    },
+    {
+      "time": 0.02500000000000001,
+      "type": "variant-choice",
+      "motion": "game-walk-left",
+      "seeds": {
+        "c08": 822,
+        "brek43": 822
+      },
+      "takes": {
+        "c08": "game-walk-left-seed822",
+        "brek43": "game-walk-left-seed822"
+      },
+      "policy": "shuffle-bag-no-repeat",
+      "draw": 11,
+      "pool": [
+        "game-walk-left-seed411",
+        "game-walk-left-seed822"
+      ]
+    },
+    {
+      "time": 0.02500000000000001,
+      "type": "motion",
+      "id": "game-walk-left-seed822",
+      "body": "c08",
+      "source_sha256": "c9748f6f565869ea1b8650b7b93a08536e520a2058091b44129a2d2e67312da1"
+    },
+    {
+      "time": 2.8999999999999937,
+      "type": "side-object-ukemi",
+      "obstacle": "trip hurdle 14",
+      "direction": "side-left",
+      "redirected": false,
+      "incoming_speed_m_s": 1.2499999999942215,
+      "destination": [
+        -30,
+        0,
+        16.3
+      ]
+    },
+    {
+      "time": 2.8999999999999937,
+      "type": "variant-choice",
+      "motion": "game-ukemi-side-left",
+      "seeds": {
+        "c08": 4411,
+        "brek43": 4411
+      },
+      "takes": {
+        "c08": "game-ukemi-side-left-seed4411",
+        "brek43": "game-ukemi-side-left-seed4411"
+      },
+      "policy": "shuffle-bag-no-repeat",
+      "draw": 12,
+      "pool": [
+        "game-ukemi-side-left-seed4411",
+        "game-ukemi-side-left-seed5522",
+        "game-ukemi-side-left-seed6633"
+      ]
+    },
+    {
+      "time": 2.8999999999999937,
+      "type": "action-start",
+      "id": "game-ukemi-side-left",
+      "takes": {
+        "c08": "game-ukemi-side-left-seed4411",
+        "brek43": "game-ukemi-side-left-seed4411"
+      },
+      "seeds": {
+        "c08": 4411,
+        "brek43": 4411
+      }
+    },
+    {
+      "time": 2.8999999999999937,
+      "type": "motion",
+      "id": "game-ukemi-side-left-seed4411",
+      "body": "c08",
+      "source_sha256": "7765027313607316d146fe6a1bfca1e1a1ab06b3dfa749ce11d3e9abe9403ac6"
+    },
+    {
+      "time": 6.525000000000026,
+      "type": "traversal-end",
+      "kind": "ukemi",
+      "obstacle": "trip hurdle 14"
+    },
+    {
+      "time": 6.525000000000026,
+      "type": "action-end",
+      "id": "game-ukemi-side-left"
+    },
+    {
+      "time": 6.5500000000000265,
+      "type": "variant-choice",
+      "motion": "game-idle",
+      "seeds": {
+        "c08": 411,
+        "brek43": 411
+      },
+      "takes": {
+        "c08": "game-idle-seed411",
+        "brek43": "game-idle-seed411"
+      },
+      "policy": "shuffle-bag-no-repeat",
+      "draw": 13,
+      "pool": [
+        "game-idle-seed411",
+        "game-idle-seed822"
+      ]
+    },
+    {
+      "time": 6.5500000000000265,
+      "type": "motion",
+      "id": "game-idle-seed411",
+      "body": "c08",
+      "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+    }
+  ],
+  "baked": [
+    "controller world translation and rotation",
+    "retargeted skeletal poses",
+    "runtime foot and carrying-hand IK"
+  ],
+  "scope": "Sampled live play session. Review collision, contacts, props and balance before shipping. Prop mesh and its trajectory are not included in this character recording."
+}

@@ -1,0 +1,666 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/kimodo-game/?controls=hybrid",
+  "checks": [
+    {
+      "body": "c08",
+      "side": "left",
+      "pool": [
+        4411,
+        5522,
+        6633
+      ],
+      "draws": [
+        6633,
+        5522,
+        4411,
+        5522,
+        6633,
+        4411
+      ],
+      "compared_seeds_synced": true
+    },
+    {
+      "body": "c08",
+      "side": "left",
+      "seed": 4411,
+      "pose": {
+        "take": "game-ukemi-side-left-seed4411",
+        "seed": 4411,
+        "first": {
+          "frame": 0,
+          "hip": 0.9364901747511678,
+          "tilt": 0.018902439789462842,
+          "pelvisTilt": 0.012465531269895596,
+          "upright": 0.9944063440935357
+        },
+        "last": {
+          "frame": 149,
+          "hip": 0.9364901747511678,
+          "tilt": 0.01890244121242629,
+          "pelvisTilt": 0.012465539795421593,
+          "upright": 0.9944063454659658
+        },
+        "min_hip": 0.5972421913559505,
+        "max_lateral_tilt": 0.4495556737030491,
+        "max_pelvis_lateral_tilt": 0.8971609889602323,
+        "peak_frame": 43,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "c08",
+      "side": "left",
+      "seed": 5522,
+      "pose": {
+        "take": "game-ukemi-side-left-seed5522",
+        "seed": 5522,
+        "first": {
+          "frame": 0,
+          "hip": 0.9364901747511678,
+          "tilt": 0.018902439789462842,
+          "pelvisTilt": 0.012465531269895596,
+          "upright": 0.9944063440935357
+        },
+        "last": {
+          "frame": 149,
+          "hip": 0.9370846113563523,
+          "tilt": 0.018902440570824127,
+          "pelvisTilt": 0.01246554246298221,
+          "upright": 0.9944063459652245
+        },
+        "min_hip": 0.4485285329907666,
+        "max_lateral_tilt": 0.8009997433227387,
+        "max_pelvis_lateral_tilt": 0.9912359708534981,
+        "peak_frame": 45,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "c08",
+      "side": "left",
+      "seed": 6633,
+      "pose": {
+        "take": "game-ukemi-side-left-seed6633",
+        "seed": 6633,
+        "first": {
+          "frame": 0,
+          "hip": 0.9364901747511678,
+          "tilt": 0.018902439789462842,
+          "pelvisTilt": 0.012465531269895596,
+          "upright": 0.9944063440935357
+        },
+        "last": {
+          "frame": 149,
+          "hip": 0.9365533051475504,
+          "tilt": 0.018902436938455246,
+          "pelvisTilt": 0.012465535344689683,
+          "upright": 0.9944063464263612
+        },
+        "min_hip": 0.5165229926217605,
+        "max_lateral_tilt": 0.6677857505656931,
+        "max_pelvis_lateral_tilt": 0.9278731638203086,
+        "peak_frame": 51,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "c08",
+      "side": "left",
+      "low_object_collision": true,
+      "selected": {
+        "kind": "side-left",
+        "id": "game-ukemi-side-left",
+        "seed": 5522,
+        "take": "game-ukemi-side-left-seed5522",
+        "duration": 3.6,
+        "start": [
+          -30,
+          0,
+          13.469900667401431
+        ],
+        "destination": [
+          -30,
+          0,
+          16.3
+        ],
+        "position": [
+          -30,
+          0,
+          13.469900667401431
+        ]
+      },
+      "middle": {
+        "take": "game-ukemi-side-left-seed5522",
+        "seed": 5522,
+        "clear": true,
+        "old_brace": false,
+        "length": 5.6201306941616735e-9
+      },
+      "end": {
+        "p": [
+          -30,
+          0,
+          16.3
+        ],
+        "clear": true
+      }
+    },
+    {
+      "body": "c08",
+      "recording": {
+        "file": "c08-side-ukemi.glb",
+        "bytes": 1516868,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "seed_trace": true
+      }
+    },
+    {
+      "body": "c08",
+      "side": "right",
+      "pool": [
+        4411,
+        5522,
+        6633
+      ],
+      "draws": [
+        6633,
+        4411,
+        5522,
+        6633,
+        4411,
+        5522
+      ],
+      "compared_seeds_synced": true
+    },
+    {
+      "body": "c08",
+      "side": "right",
+      "seed": 4411,
+      "pose": {
+        "take": "game-ukemi-side-right-seed4411",
+        "seed": 4411,
+        "first": {
+          "frame": 0,
+          "hip": 0.9364901747511678,
+          "tilt": 0.10391689273902825,
+          "pelvisTilt": 0.07060383621311743,
+          "upright": 0.9944063440935356
+        },
+        "last": {
+          "frame": 149,
+          "hip": 0.9364901747511678,
+          "tilt": 0.10391687559710126,
+          "pelvisTilt": 0.0706037990718784,
+          "upright": 0.994406345913939
+        },
+        "min_hip": 0.457483981096133,
+        "max_lateral_tilt": 0.6467578276059884,
+        "max_pelvis_lateral_tilt": 0.552441415241239,
+        "peak_frame": 62,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "c08",
+      "side": "right",
+      "seed": 5522,
+      "pose": {
+        "take": "game-ukemi-side-right-seed5522",
+        "seed": 5522,
+        "first": {
+          "frame": 0,
+          "hip": 0.9364901747511678,
+          "tilt": 0.10391689273902825,
+          "pelvisTilt": 0.07060383621311743,
+          "upright": 0.9944063440935356
+        },
+        "last": {
+          "frame": 149,
+          "hip": 0.9365134646148254,
+          "tilt": 0.10391687090609454,
+          "pelvisTilt": 0.07060379901544372,
+          "upright": 0.9944063463904719
+        },
+        "min_hip": 0.5669565977375054,
+        "max_lateral_tilt": 0.985883593568279,
+        "max_pelvis_lateral_tilt": 0.5978329851595693,
+        "peak_frame": 65,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "c08",
+      "side": "right",
+      "seed": 6633,
+      "pose": {
+        "take": "game-ukemi-side-right-seed6633",
+        "seed": 6633,
+        "first": {
+          "frame": 0,
+          "hip": 0.9364901747511678,
+          "tilt": 0.10391689273902825,
+          "pelvisTilt": 0.07060383621311743,
+          "upright": 0.9944063440935356
+        },
+        "last": {
+          "frame": 149,
+          "hip": 0.9364901747511678,
+          "tilt": 0.10391686594762621,
+          "pelvisTilt": 0.07060379159856274,
+          "upright": 0.9944063470123596
+        },
+        "min_hip": 0.4965829050987315,
+        "max_lateral_tilt": 0.925158302560298,
+        "max_pelvis_lateral_tilt": 0.7256416403640299,
+        "peak_frame": 79,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "c08",
+      "side": "right",
+      "low_object_collision": true,
+      "selected": {
+        "kind": "side-right",
+        "id": "game-ukemi-side-right",
+        "seed": 6633,
+        "take": "game-ukemi-side-right-seed6633",
+        "duration": 3.6,
+        "start": [
+          -30,
+          0,
+          13.469900667401431
+        ],
+        "destination": [
+          -30,
+          0,
+          16.3
+        ],
+        "position": [
+          -30,
+          0,
+          13.469900667401431
+        ]
+      },
+      "middle": {
+        "take": "game-ukemi-side-right-seed6633",
+        "seed": 6633,
+        "clear": true,
+        "old_brace": false,
+        "length": 9.910033738069757e-9
+      },
+      "end": {
+        "p": [
+          -30,
+          0,
+          16.3
+        ],
+        "clear": true
+      }
+    },
+    {
+      "body": "c08",
+      "tall_wall_redirect": true,
+      "selected": {
+        "kind": "side-right",
+        "id": "game-ukemi-side-right",
+        "seed": 5522,
+        "take": "game-ukemi-side-right-seed5522",
+        "duration": 3.6,
+        "start": [
+          -17,
+          0,
+          24.719908449460416
+        ],
+        "destination": [
+          -17,
+          0,
+          22.519908449460416
+        ],
+        "position": [
+          -17,
+          0,
+          24.719908449460416
+        ]
+      }
+    },
+    {
+      "body": "c08",
+      "early_roll_committed": true,
+      "recovery_jump_interrupt": true
+    },
+    {
+      "body": "brek43",
+      "side": "left",
+      "pool": [
+        4411,
+        5522,
+        6633
+      ],
+      "draws": [
+        6633,
+        4411,
+        5522,
+        6633,
+        5522,
+        4411
+      ],
+      "compared_seeds_synced": true
+    },
+    {
+      "body": "brek43",
+      "side": "left",
+      "seed": 4411,
+      "pose": {
+        "take": "game-ukemi-side-left-seed4411",
+        "seed": 4411,
+        "first": {
+          "frame": 0,
+          "hip": 1.1906230391450585,
+          "tilt": 0.014862794926494647,
+          "pelvisTilt": 0.012465531269871532,
+          "upright": 0.9947107853366278
+        },
+        "last": {
+          "frame": 149,
+          "hip": 1.1906230391450585,
+          "tilt": 0.014862796033234704,
+          "pelvisTilt": 0.01246553979539778,
+          "upright": 0.9947107860245114
+        },
+        "min_hip": 0.3022929831189563,
+        "max_lateral_tilt": 0.3520933668168164,
+        "max_pelvis_lateral_tilt": 0.8971609700771915,
+        "peak_frame": 43,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "brek43",
+      "side": "left",
+      "seed": 5522,
+      "pose": {
+        "take": "game-ukemi-side-left-seed5522",
+        "seed": 5522,
+        "first": {
+          "frame": 0,
+          "hip": 1.1906230391450585,
+          "tilt": 0.014862794926494647,
+          "pelvisTilt": 0.012465531269871532,
+          "upright": 0.9947107853366278
+        },
+        "last": {
+          "frame": 149,
+          "hip": 1.1910684259559638,
+          "tilt": 0.014862795658597444,
+          "pelvisTilt": 0.012465542463986212,
+          "upright": 0.9947107863665539
+        },
+        "min_hip": 0.3383641519272128,
+        "max_lateral_tilt": 0.7477495919400752,
+        "max_pelvis_lateral_tilt": 0.9912359687086035,
+        "peak_frame": 45,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "brek43",
+      "side": "left",
+      "seed": 6633,
+      "pose": {
+        "take": "game-ukemi-side-left-seed6633",
+        "seed": 6633,
+        "first": {
+          "frame": 0,
+          "hip": 1.1906230391450585,
+          "tilt": 0.014862794926494647,
+          "pelvisTilt": 0.012465531269871532,
+          "upright": 0.9947107853366278
+        },
+        "last": {
+          "frame": 149,
+          "hip": 1.19094710884265,
+          "tilt": 0.014862791303296633,
+          "pelvisTilt": 0.01246553534466625,
+          "upright": 0.9947107872949645
+        },
+        "min_hip": 0.29562152429611405,
+        "max_lateral_tilt": 0.5968629209124651,
+        "max_pelvis_lateral_tilt": 0.9278731748184759,
+        "peak_frame": 51,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "brek43",
+      "side": "left",
+      "low_object_collision": true,
+      "selected": {
+        "kind": "side-left",
+        "id": "game-ukemi-side-left",
+        "seed": 6633,
+        "take": "game-ukemi-side-left-seed6633",
+        "duration": 3.6,
+        "start": [
+          -30,
+          0,
+          13.469900667401431
+        ],
+        "destination": [
+          -30,
+          0,
+          16.3
+        ],
+        "position": [
+          -30,
+          0,
+          13.469900667401431
+        ]
+      },
+      "middle": {
+        "take": "game-ukemi-side-left-seed6633",
+        "seed": 6633,
+        "clear": true,
+        "old_brace": false,
+        "length": 1.157210138824638e-8
+      },
+      "end": {
+        "p": [
+          -30,
+          0,
+          16.3
+        ],
+        "clear": true
+      }
+    },
+    {
+      "body": "brek43",
+      "recording": {
+        "file": "brek43-side-ukemi.glb",
+        "bytes": 1880932,
+        "gltf_errors": 0,
+        "gltf_warnings": 0,
+        "seed_trace": true
+      }
+    },
+    {
+      "body": "brek43",
+      "side": "right",
+      "pool": [
+        4411,
+        5522,
+        6633
+      ],
+      "draws": [
+        6633,
+        4411,
+        5522,
+        4411,
+        5522,
+        6633
+      ],
+      "compared_seeds_synced": true
+    },
+    {
+      "body": "brek43",
+      "side": "right",
+      "seed": 4411,
+      "pose": {
+        "take": "game-ukemi-side-right-seed4411",
+        "seed": 4411,
+        "first": {
+          "frame": 0,
+          "hip": 1.1906230391450585,
+          "tilt": 0.10163439802528634,
+          "pelvisTilt": 0.0706038941831003,
+          "upright": 0.9947107853366278
+        },
+        "last": {
+          "frame": 149,
+          "hip": 1.1906230391450585,
+          "tilt": 0.10163438634729594,
+          "pelvisTilt": 0.07060385704186067,
+          "upright": 0.9947107865618865
+        },
+        "min_hip": 0.328341631835159,
+        "max_lateral_tilt": 0.709155748097629,
+        "max_pelvis_lateral_tilt": 0.5524414132871942,
+        "peak_frame": 62,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "brek43",
+      "side": "right",
+      "seed": 5522,
+      "pose": {
+        "take": "game-ukemi-side-right-seed5522",
+        "seed": 5522,
+        "first": {
+          "frame": 0,
+          "hip": 1.1906230391450585,
+          "tilt": 0.10163439802528634,
+          "pelvisTilt": 0.0706038941831003,
+          "upright": 0.9947107853366278
+        },
+        "last": {
+          "frame": 149,
+          "hip": 1.1906230391450585,
+          "tilt": 0.10163438302462484,
+          "pelvisTilt": 0.07060385698542554,
+          "upright": 0.994710786893089
+        },
+        "min_hip": 0.3122122875139831,
+        "max_lateral_tilt": 0.9990770884694788,
+        "max_pelvis_lateral_tilt": 0.5978329363978194,
+        "peak_frame": 65,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "brek43",
+      "side": "right",
+      "seed": 6633,
+      "pose": {
+        "take": "game-ukemi-side-right-seed6633",
+        "seed": 6633,
+        "first": {
+          "frame": 0,
+          "hip": 1.1906230391450585,
+          "tilt": 0.10163439802528634,
+          "pelvisTilt": 0.0706038941831003,
+          "upright": 0.9947107853366278
+        },
+        "last": {
+          "frame": 149,
+          "hip": 1.1906230391450585,
+          "tilt": 0.10163437387299097,
+          "pelvisTilt": 0.07060384956854567,
+          "upright": 0.994710787908569
+        },
+        "min_hip": 0.3560064067690071,
+        "max_lateral_tilt": 0.9499175070796598,
+        "max_pelvis_lateral_tilt": 0.7256417131601158,
+        "peak_frame": 79,
+        "old_brace_active": false
+      }
+    },
+    {
+      "body": "brek43",
+      "side": "right",
+      "low_object_collision": true,
+      "selected": {
+        "kind": "side-right",
+        "id": "game-ukemi-side-right",
+        "seed": 4411,
+        "take": "game-ukemi-side-right-seed4411",
+        "duration": 3.6,
+        "start": [
+          -30,
+          0,
+          13.469900667401431
+        ],
+        "destination": [
+          -30,
+          0,
+          16.3
+        ],
+        "position": [
+          -30,
+          0,
+          13.469900667401431
+        ]
+      },
+      "middle": {
+        "take": "game-ukemi-side-right-seed4411",
+        "seed": 4411,
+        "clear": true,
+        "old_brace": false,
+        "length": 1.157210138824638e-8
+      },
+      "end": {
+        "p": [
+          -30,
+          0,
+          16.3
+        ],
+        "clear": true
+      }
+    },
+    {
+      "body": "brek43",
+      "tall_wall_redirect": true,
+      "selected": {
+        "kind": "side-right",
+        "id": "game-ukemi-side-right",
+        "seed": 5522,
+        "take": "game-ukemi-side-right-seed5522",
+        "duration": 3.6,
+        "start": [
+          -17,
+          0,
+          24.719908449460416
+        ],
+        "destination": [
+          -17,
+          0,
+          22.519908449460416
+        ],
+        "position": [
+          -17,
+          0,
+          24.719908449460416
+        ]
+      }
+    },
+    {
+      "body": "brek43",
+      "early_roll_committed": true,
+      "recovery_jump_interrupt": true
+    }
+  ],
+  "errors": [],
+  "scope": "Generated lateral fall, seed variety, controller clearance, recovery and character export checks; final animation style and full mesh/environment contacts require reviewer assessment."
+}

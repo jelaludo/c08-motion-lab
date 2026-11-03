@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "environment": "staged exact-byte raw-host interception",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/",
+  "checks": [
+    {
+      "name": "all source clips on shared meshes match original export joints",
+      "status": "passed",
+      "clips": 768,
+      "joint_samples": 37500,
+      "max_error_m": 0.000033592867207959285,
+      "gzip_and_sha256_verified": true
+    },
+    {
+      "name": "gallery views categories and continuous neutral",
+      "status": "passed",
+      "categories": true,
+      "continuous": true
+    },
+    {
+      "name": "rebuilt Meshy source download retains attribution",
+      "status": "passed",
+      "gltf_errors": 0,
+      "gltf_warnings": 0,
+      "attribution": true
+    },
+    {
+      "name": "all game clips load and preserve cyclic endpoints",
+      "status": "passed",
+      "count": 408,
+      "seam": 0,
+      "expected": 408
+    },
+    {
+      "name": "Hybrid input context review and recording",
+      "status": "passed",
+      "hybrid": true,
+      "context": true,
+      "recording": true,
+      "reviews": true
+    },
+    {
+      "name": "public study and prior sources",
+      "status": "passed",
+      "game_columns": 5,
+      "sources": 9
+    },
+    {
+      "name": "responsive page",
+      "status": "passed",
+      "page": "kimodo-game/?controls=hybrid",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "name": "responsive page",
+      "status": "passed",
+      "page": "kimodo-game/?controls=hybrid",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "responsive page",
+      "status": "passed",
+      "page": "kimodo-bipeds/",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "name": "responsive page",
+      "status": "passed",
+      "page": "kimodo-bipeds/",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "responsive page",
+      "status": "passed",
+      "page": "kimodo-game/controls.html",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "name": "responsive page",
+      "status": "passed",
+      "page": "kimodo-game/controls.html",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "responsive page",
+      "status": "passed",
+      "page": "dev-log/",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "name": "responsive page",
+      "status": "passed",
+      "page": "dev-log/",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "errors": []
+}

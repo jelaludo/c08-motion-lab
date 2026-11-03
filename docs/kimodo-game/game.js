@@ -2,12 +2,12 @@ import {readMotionJSON,loadMotionModel} from '../shared/motion-asset-io.js';
 import * as T from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {ReviewStore,SCORE_FIELDS} from '../shared/review-store.js';
-import {groundFeet,carryHands,mantleHands,point} from './kinematics.js?v=modifier-stumble-1';
-import {createWorld} from './world.js?v=modifier-stumble-1';
-import {traversalTarget,traversalPosition} from './traversal.js?v=modifier-stumble-1';
-import {CONTACT_RULES,calibrateRig,heroLandingPose,ledgeGrabPose,sideStumblePose} from './contact-actions.js?v=modifier-stumble-1';
-import {createVariationPicker} from './variation.js?v=modifier-stumble-1';
-import {BREAKFALL_RULES,breakfallPlan,breakfallPosition} from './breakfalls.js?v=modifier-stumble-1';
+import {groundFeet,carryHands,mantleHands,point} from './kinematics.js?v=side-ukemi-1';
+import {createWorld} from './world.js?v=side-ukemi-1';
+import {traversalTarget,traversalPosition} from './traversal.js?v=side-ukemi-1';
+import {CONTACT_RULES,calibrateRig,heroLandingPose,ledgeGrabPose} from './contact-actions.js?v=side-ukemi-1';
+import {createVariationPicker} from './variation.js?v=side-ukemi-1';
+import {BREAKFALL_RULES,breakfallPlan,breakfallPosition} from './breakfalls.js?v=side-ukemi-1';
 const variationPicker=createVariationPicker();
 const actionProfiles=await fetch('action-profiles.json?v=responsive-2').then(r=>{if(!r.ok)throw Error('Action windows unavailable');return r.json()}).then(d=>d.profiles);
 import {exportClips,createRecorder,download} from './export.js';
@@ -75,7 +75,6 @@ function apply(a,time,dt){
  const support=state.mode==='play'&&grounded&&state.stance!=='prone'&&state.stance!=='down'&&state.stance!=='seiza'&&a.take?.group!=='ground'&&!state.flight&&(!state.action||state.action.type==='jump');
  const ik=groundFeet(a,contacts,support,dt,world.floor(state.position.x,state.position.z,state.position.y));state.maxIKReach=Math.max(state.maxIKReach,ik.reach);state.maxLengthError=Math.max(state.maxLengthError,ik.length);
  if(state.mode==='play'&&state.flight?.type==='ledge'){const report=ledgeGrabPose(a,{...state.flight,controllerPosition:state.position});state.contactDiagnostics[a.id]={kind:'ledge',...report};state.maxLengthError=Math.max(state.maxLengthError,report.length)}
- if(state.mode==='play'&&state.flight?.type==='stumble'){const report=sideStumblePose(a,state.flight);state.contactDiagnostics[a.id]={kind:'side-stumble',...report};state.maxLengthError=Math.max(state.maxLengthError,report.length||0)}
  if(state.mode==='play'&&state.action?.type==='hero-land'){const report=heroLandingPose(a,state.action.elapsed);state.contactDiagnostics[a.id]={kind:'hero-land',...report};state.maxLengthError=Math.max(state.maxLengthError,report.length||0)}
  if(state.mode==='play'&&state.flight?.type==='mantle'){const hands=mantleHands(a,state.flight,state.position);state.maxLengthError=Math.max(state.maxLengthError,hands.length)}
 }
@@ -98,7 +97,7 @@ function endAction(){const a=state.action;if(!a)return;for(const actor of actors
 function actionWindow(actor,id){const take=actor.take?.motion===id?actor.take:takeFor(id,actor.id,state.entry?.id===id?state.entry.seeds[actor.id]:null);return actor.take?.id===take?.id&&actor.data?.action_window||actionProfiles[take?.id+':'+actor.id]}
 async function action(id,{type='action',stance=null,carry,duration,blend=.065,seed=null}={}){
  if(state.mode==='preview')exitPreview();if(!takeFor(id,active().id))return false;
- if(['ukemi','stumble'].includes(state.flight?.type)&&type!=='ukemi'&&!releaseBreakfall())return false;
+ if(state.flight?.type==='ukemi'&&type!=='ukemi'&&!releaseBreakfall())return false;
  if(state.flight?.type==='ledge'&&type!=='ledge'){state.flight=null;state.fallSpeed=0;log('ledge-release',{reason:id})}
  cancelAction('superseded');const entry=beginEntry(id,true,seed);if(!entry)return false;const take=takeFor(id,active().id,entry.seeds[active().id]);
  const profile=(actionProfiles[take.id+':'+active().id]),ref={id,type,elapsed:0,stance,carry,attached:false,ready:false,duration:duration??profile?.duration??take.duration_s??6,blend,facing:state.facing};
@@ -107,7 +106,7 @@ async function action(id,{type='action',stance=null,carry,duration,blend=.065,se
 function contextualJump(input=controlInput()){const heading=Math.hypot(input.x||0,input.z||0)>.1?direction(input):vec(Math.sin(state.facing),0,Math.cos(state.facing));return traversalTarget(world,state.position,heading)}
 async function jump(high=false,input=controlInput()){
  if(state.mode==='preview')exitPreview();
- if(['ukemi','stumble'].includes(state.flight?.type)&&!releaseBreakfall())return false;
+ if(state.flight?.type==='ukemi'&&!releaseBreakfall())return false;
  if(state.flight||state.position.y>world.floor(state.position.x,state.position.z,state.position.y)+.08){
   const f=state.flight;if(f?.type==='jump'&&state.action?.type!=='jump'){const pending=action(f.animation,{type:'jump',duration:f.pre+f.air+f.recovery});Object.assign(state.action,{elapsed:f.elapsed,pre:f.pre,air:f.air,height:f.height});return pending}return false;
  }
@@ -138,7 +137,7 @@ function landed(floor,impact){
  const drop=Math.max(0,(state.fallPeak??floor)-floor);state.fallPeak=null;
  if(drop>=CONTACT_RULES.heroDrop&&impact>=CONTACT_RULES.heroImpactSpeed&&!state.carrying&&!['prone','down','sit'].includes(state.stance)){state.flight=null;state.stance='stand';state.velocity.set(0,0,0);log('hero-landing',{drop_m:drop,impact_m_s:impact});void action('game-land-hard',{type:'hero-land',duration:CONTACT_RULES.landingDuration,blend:.07});return true}return false;
 }
-function releaseBreakfall(){const f=state.flight;if(!['ukemi','stumble'].includes(f?.type))return true;if(f.elapsed/f.duration<BREAKFALL_RULES.recoveryFraction)return false;state.flight=null;state.position.y=world.floor(state.position.x,state.position.z,state.position.y);state.fallSpeed=0;cancelAction('ukemi recovery interrupted');return true}
+function releaseBreakfall(){const f=state.flight;if(f?.type!=='ukemi')return true;if(f.elapsed/f.duration<BREAKFALL_RULES.recoveryFraction)return false;state.flight=null;state.position.y=world.floor(state.position.x,state.position.z,state.position.y);state.fallSpeed=0;cancelAction('ukemi recovery interrupted');return true}
 function tripOnContact(input,hits,incoming){
  const blocked=state.tripBlockedObstacle;if(blocked&&!state.flight){const dx=Math.max(0,Math.abs(state.position.x-blocked.x)-blocked.w/2),dz=Math.max(0,Math.abs(state.position.z-blocked.z)-blocked.d/2);if(Math.hypot(dx,dz)>.7)state.tripBlockedObstacle=null}
  if(state.flight||state.action||state.stance!=='stand'||state.carrying||state.time<state.tripCooldownUntil||Math.hypot(input.x||0,input.z||0)<.1)return false;
@@ -147,7 +146,7 @@ function tripOnContact(input,hits,incoming){
  const b=plan.obstacleRef;if(state.tripBlockedObstacle===b)return false;
  state.tripBlockedObstacle=b;state.tripCooldownUntil=state.time+plan.duration+BREAKFALL_RULES.cooldownAfter;state.flight=plan;state.velocity.set(0,0,0);state.fallPeak=null;
  const preferred=takeFor(plan.id,active().id),seed=state.variety?null:(pool.find(t=>t.id===preferred?.id)||pool[0]).seed;
- log(plan.type==='stumble'?'side-object-stumble':'low-object-trip',{obstacle:plan.obstacle,direction:plan.kind,incoming_speed_m_s:incoming.length(),destination:plan.destination.toArray()});void action(plan.id,{type:'ukemi',duration:plan.duration,blend:.10,seed});return true;
+ log(plan.kind.startsWith('side-')?'side-object-ukemi':'low-object-trip',{obstacle:plan.obstacle,direction:plan.kind,redirected:!!plan.redirected,incoming_speed_m_s:incoming.length(),destination:plan.destination.toArray()});void action(plan.id,{type:'ukemi',duration:plan.duration,blend:.10,seed});return true;
 }
 function physics(dt,target){
  const f=state.flight,oldY=state.position.y;
@@ -162,7 +161,7 @@ function physics(dt,target){
    if(t>f.pre+f.air/2&&state.position.y<floor){state.position.y=floor;if(!f.landed&&landed(floor,Math.abs(state.fallSpeed))){target.set(0,0,0);return}f.elapsed=f.pre+f.air;f.landed=true;if(state.action?.type==='jump')state.action.elapsed=f.elapsed}
    if(!world.fits(state.position,1.85)){state.position.y=oldY;state.flight=null;state.fallSpeed=0;cancelAction('jump clearance collision');return}
   }else{
-   const desired=['ukemi','stumble'].includes(f.type)?breakfallPosition(f):traversalPosition(f),vertical=state.position.clone().setY(desired.y);
+   const desired=f.type==='ukemi'?breakfallPosition(f):traversalPosition(f),vertical=state.position.clone().setY(desired.y);
    if(!world.fits(vertical,1.85)){state.flight=null;cancelAction('blocked traversal clearance');log('traversal-blocked',{obstacle:f.obstacle});target.set(0,0,0);return}
    state.position.y=desired.y;
    const delta=desired.clone().sub(state.position).setY(0),moved=world.move(state.position,delta,1.85);
@@ -207,7 +206,7 @@ function advance(dt,input=controlInput()){
   tripOnContact(input,world.state.moveHits,incoming);
   const actual=dt?state.position.clone().sub(before).length()/dt:0;
   // Vertical motion has its own lifetime, independent of animation cancellation.
-  const facing=['ukemi','stumble'].includes(state.flight?.type)?state.flight.facing:state.flight&&state.flight.type!=='jump'?Math.atan2(state.flight.destination.x-state.flight.start.x,state.flight.destination.z-state.flight.start.z):state.action?.id.startsWith('game-dodge-')||state.action?.type==='hero-land'?state.action.facing:strafing()?state.yaw:actual>.05?Math.atan2(state.velocity.x,state.velocity.z):state.facing;
+  const facing=state.flight?.type==='ukemi'?state.flight.facing:state.flight&&state.flight.type!=='jump'?Math.atan2(state.flight.destination.x-state.flight.start.x,state.flight.destination.z-state.flight.start.z):state.action?.id.startsWith('game-dodge-')||state.action?.type==='hero-land'?state.action.facing:strafing()?state.yaw:actual>.05?Math.atan2(state.velocity.x,state.velocity.z):state.facing;
   state.facing+=wrap(facing-state.facing)*(1-Math.exp(-dt*12));updateActorPositions();
   const local=strafing()?input:{x:0,z:moving?1:0};
   const desired=state.action?.id||movementClip(local,moving?speed:0);motion(desired);
@@ -230,9 +229,9 @@ function advance(dt,input=controlInput()){
 function updateHUD(){
  const a=active();if(!a)return;const f=state.flight,x=state.action,speed=Math.hypot(state.velocity.x,state.velocity.z),zone=world.zone(state.position);
  let mode=state.stance;
- if(state.mode==='preview')mode='motion preview';else if(f?.type==='ledge')mode='ledge / '+(f.elapsed<.13?'load':f.elapsed<.5?'leap':f.elapsed<.97?'catch / hang':f.elapsed<1.93?'pull up':'top out');else if(x?.type==='hero-land')mode='hero landing / '+(x.elapsed<.14?'impact':x.elapsed<.92?'knee + fist':'recover');else if(f?.type==='jump')mode='jump / '+(f.elapsed<f.pre?'load':f.elapsed<f.pre+f.air?'air':'land');else if(['ukemi','stumble'].includes(f?.type))mode=f.kind+(f.type==='stumble'?' brace / ':' ukemi / ')+(f.elapsed/f.duration<.72?'breakfall':'recover');else if(f)mode=f.type;
+ if(state.mode==='preview')mode='motion preview';else if(f?.type==='ledge')mode='ledge / '+(f.elapsed<.13?'load':f.elapsed<.5?'leap':f.elapsed<.97?'catch / hang':f.elapsed<1.93?'pull up':'top out');else if(x?.type==='hero-land')mode='hero landing / '+(x.elapsed<.14?'impact':x.elapsed<.92?'knee + fist':'recover');else if(f?.type==='jump')mode='jump / '+(f.elapsed<f.pre?'load':f.elapsed<f.pre+f.air?'air':'land');else if(f?.type==='ukemi')mode=f.kind+' ukemi / '+(f.elapsed/f.duration<.72?'breakfall':'recover');else if(f)mode=f.type;
  $('mode').textContent=`${a.label} · ${mode} · ${speed.toFixed(1)} m/s${state.carrying?' · carrying':''}${state.paused?' · paused':''}`;
- const layered=['ukemi','stumble'].includes(f?.type)?f.kind+(f.type==='stumble'?' knee + hand / obstacle reaction':' ukemi / obstacle reaction'):f?.type==='ledge'?'Ledge grab + pull-up':x?.type==='hero-land'?'Superhero landing':null;
+ const layered=f?.type==='ukemi'?f.kind+' ukemi / obstacle reaction':f?.type==='ledge'?'Ledge grab + pull-up':x?.type==='hero-land'?'Superhero landing':null;
  $('motion-status').textContent=`${layered?layered+' · contact layer / ':''}${a.take?.label||'Loading'} · seed ${a.take?.seed||'…'}${a.pending?' · loading next':''}${a.data?.jump&&!a.data.jump.valid_airborne_detection?' · source flight unverified':''}${a.take?.group==='traversal'?' · contact probe':''}`;
  $('zone').textContent=`${zone==='orange'?'ORANGE / RUN':zone==='red'?'RED / SPRINT':'FREE PLAY'} · ${state.position.x.toFixed(1)}, ${state.position.z.toFixed(1)}${world.state.lastCollision?' · contact: '+world.state.lastCollision:''}${recorder.active?' · REC '+recorder.seconds.toFixed(1)+'s':''}`;
 }
@@ -271,7 +270,7 @@ function dodge(){
  const pending=action('game-dodge-'+d,{duration:.32});state.action.direction=heading;state.action.facing=facing;return pending;
 }
 function crouch(doubleTap=false){
- if(['ukemi','stumble'].includes(state.flight?.type)&&!releaseBreakfall())return false;
+ if(state.flight?.type==='ukemi'&&!releaseBreakfall())return false;
  if(state.flight?.type==='ledge'){state.flight=null;state.fallSpeed=0;cancelAction('release ledge');log('ledge-release',{reason:'C'});return true}
  if(state.mode==='preview')exitPreview();cancelAction('crouch input');if(state.flight||state.carrying)return false;
  if(doubleTap){state.stance='seiza';state.velocity.set(0,0,0);motion('game-crouch-down',true);log('stance',{stance:'seiza'});return true}
@@ -357,7 +356,7 @@ try{
  // Warm only common transitions; the rest load on demand and are cached as clips,
  // without loading another mesh or creating another WebGL renderer.
  const warm=['game-walk-forward','game-jog-forward','game-run-forward','game-sprint-forward','game-crouch-idle','game-crouch-forward','game-crouch-down','game-crouch-up','game-jump-standing','game-jump-run','game-dodge-forward','game-jab','game-cross','game-vault','game-mantle','game-land-hard','game-pickup','game-putdown','game-carry-idle'];
- (async()=>{const ids=[...warm,'game-ukemi-forward','game-ukemi-backward'],jobs=ids.flatMap(id=>catalog.takes.filter(t=>t.motion===id&&t.automatic_eligible!==false).flatMap(t=>actors.map(a=>()=>dataFor(t,a.id))));await Promise.all(Array.from({length:4},async()=>{while(jobs.length)await jobs.shift()()}))})().catch(console.error);
+ (async()=>{const ids=[...warm,'game-ukemi-forward','game-ukemi-backward','game-ukemi-side-left','game-ukemi-side-right'],jobs=ids.flatMap(id=>catalog.takes.filter(t=>t.motion===id&&t.automatic_eligible!==false).flatMap(t=>actors.map(a=>()=>dataFor(t,a.id))));await Promise.all(Array.from({length:4},async()=>{while(jobs.length)await jobs.shift()()}))})().catch(console.error);
 }catch(e){$('mode').textContent=e.message;console.error(e)}
 window.GameLab={state,actors,world,camera,renderer,recorder,store,get profile(){return profile},get sprintMode(){return sprintMode},ctrlMove,applyProfile,contextTarget,contextInteract,focused,strafing,controlInput,get catalog(){return catalog},get active(){return active()},get loadJobs(){return loadJobs},get variationDraws(){return variationPicker.draws},eligibleTakes,motion,preview,action,jump,interact,crouch,cancelAction,attack,contextualJump,startTrial,tripOnContact,get breakfallRules(){return BREAKFALL_RULES},get contactRules(){return CONTACT_RULES},reset,advance,shortcut,dataFor,takeFor,
  setManual(value=true){state.manualStep=value},setPosition(x,z,y=0){state.position.set(x,y,z);state.fallPeak=null;state.fallSpeed=0;state.flight=null;state.velocity.set(0,0,0);updateActorPositions()},

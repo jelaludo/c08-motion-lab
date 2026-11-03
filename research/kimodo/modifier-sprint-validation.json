@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/?controls=hybrid",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/kimodo-game/?controls=hybrid",
   "checks": [
     {
       "body": "c08",
@@ -13,15 +13,15 @@
       ],
       "sprint_draws": [
         2055,
-        411,
-        1644,
         2466,
-        1233,
         1644,
+        411,
         1233,
         411,
-        2055,
-        2466
+        1644,
+        1233,
+        2466,
+        2055
       ],
       "seed822_preview_available": true
     },
@@ -47,58 +47,29 @@
     {
       "body": "c08",
       "side": "left",
-      "brace": {
-        "f": "side-left",
+      "strafe": {
         "p": [
-          -30,
+          0.5645279428691108,
           0,
-          13.269900667401432
+          0
         ],
-        "d": {
-          "kind": "side-stumble",
-          "weight": 1,
-          "side": "L",
-          "kneeError": 6.919178814672923e-10,
-          "handError": 2.3603307150171227e-8,
-          "length": 2.8827106202111707e-8,
-          "reach": 0
-        },
-        "surface": {
-          "handMin": 0.003978770298501383,
-          "kneeMin": 0.00722561175250297
-        }
+        "facing": 0,
+        "motion": "game-walk-left",
+        "speed": 1.2411457388386848
       }
     },
     {
       "body": "c08",
-      "brace_recording": true,
-      "gltf_errors": 0,
-      "gltf_warnings": 0,
-      "seed_trace": true
-    },
-    {
-      "body": "c08",
       "side": "right",
-      "brace": {
-        "f": "side-right",
+      "strafe": {
         "p": [
-          -30,
+          -0.5645279428691108,
           0,
-          13.269900667401432
+          0
         ],
-        "d": {
-          "kind": "side-stumble",
-          "weight": 1,
-          "side": "R",
-          "kneeError": 5.551115123125783e-16,
-          "handError": 1.6032071734861264e-8,
-          "length": 2.6691192922534412e-8,
-          "reach": 0
-        },
-        "surface": {
-          "handMin": 0.003978776111559751,
-          "kneeMin": 0.005494047948336245
-        }
+        "facing": 0,
+        "motion": "game-walk-right",
+        "speed": 1.2411457388386848
       }
     },
     {
@@ -115,15 +86,15 @@
         2466
       ],
       "sprint_draws": [
-        2466,
+        2055,
+        1233,
+        1644,
         411,
-        1644,
-        2055,
-        1233,
-        1644,
-        1233,
-        2055,
         2466,
+        1644,
+        2466,
+        1233,
+        2055,
         411
       ],
       "seed822_preview_available": true
@@ -150,58 +121,29 @@
     {
       "body": "brek43",
       "side": "left",
-      "brace": {
-        "f": "side-left",
+      "strafe": {
         "p": [
-          -30,
+          0.5645279428691108,
           0,
-          13.269900667401432
+          0
         ],
-        "d": {
-          "kind": "side-stumble",
-          "weight": 1,
-          "side": "L",
-          "kneeError": 4.485658063146974e-9,
-          "handError": 1.5051052251434084e-8,
-          "length": 1.2379988922894825e-8,
-          "reach": 0.0000153280691157498
-        },
-        "surface": {
-          "handMin": 0.005286771744701879,
-          "kneeMin": 0.016039580604467585
-        }
+        "facing": 0,
+        "motion": "game-walk-left",
+        "speed": 1.2411457388386848
       }
     },
     {
       "body": "brek43",
-      "brace_recording": true,
-      "gltf_errors": 0,
-      "gltf_warnings": 0,
-      "seed_trace": true
-    },
-    {
-      "body": "brek43",
       "side": "right",
-      "brace": {
-        "f": "side-right",
+      "strafe": {
         "p": [
-          -30,
+          -0.5645279428691108,
           0,
-          13.269900667401432
+          0
         ],
-        "d": {
-          "kind": "side-stumble",
-          "weight": 1,
-          "side": "R",
-          "kneeError": 1.999096520314735e-8,
-          "handError": 1.8038008216313992e-8,
-          "length": 1.4352938892958633e-8,
-          "reach": 0
-        },
-        "surface": {
-          "handMin": 0.005286777704800877,
-          "kneeMin": 0.016034151129935004
-        }
+        "facing": 0,
+        "motion": "game-walk-right",
+        "speed": 1.2411457388386848
       }
     },
     {
@@ -209,7 +151,6 @@
       "ctrl_s_backward_collision": true
     },
     {
-      "tall_wall_lateral_brace": true,
       "right_ctrl_release": true
     },
     {
