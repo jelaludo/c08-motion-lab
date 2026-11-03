@@ -1,8 +1,8 @@
 {
   "schema": "kimodo-game-recording/1",
   "body": "brek43",
-  "ended": "2026-11-03T10:29:01.466Z",
-  "duration_s": 7.79999999999956,
+  "ended": "2026-11-03T10:38:32.324Z",
+  "duration_s": 7.799999999999557,
   "frames": 157,
   "events": [
     {
@@ -66,30 +66,30 @@
       "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
     },
     {
-      "time": 5.674999999999681,
+      "time": 5.674999999999677,
       "type": "hero-landing",
       "drop_m": 2.65,
       "impact_m_s": 7.112250000000005
     },
     {
-      "time": 5.674999999999681,
+      "time": 5.674999999999677,
       "type": "action-start",
       "id": "game-land-hard"
     },
     {
-      "time": 5.674999999999681,
+      "time": 5.674999999999677,
       "type": "motion",
       "id": "game-land-hard-seed411",
       "body": "brek43",
       "source_sha256": "103fd44742ccdf8386cf8bc5501044c64bd680ecb4b62ca17fccdc401d005c6b"
     },
     {
-      "time": 7.349999999999586,
+      "time": 7.349999999999582,
       "type": "action-end",
       "id": "game-land-hard"
     },
     {
-      "time": 7.374999999999584,
+      "time": 7.374999999999581,
       "type": "motion",
       "id": "game-idle-seed411",
       "body": "brek43",

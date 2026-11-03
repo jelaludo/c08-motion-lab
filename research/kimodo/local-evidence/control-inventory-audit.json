@@ -304,7 +304,7 @@
         "test": "Add only after the level and game design need that mechanic; do not copy every feature from all five games into one controller."
       }
     ],
-    "runtime_source_sha256": "e840d609d65f7286f7118cb0c95848d96bb2bd46d1dcd8068dc9af8907424739",
+    "runtime_source_sha256": "a183214ebe835dec567c476e1075531a2cdad09be1e05442e8c33b9f99fe7476",
     "scope": "Static inventory/code audit. Existing candidate IDs do not establish accepted motion quality or completed game states.",
     "earlier_lab_take_count": 90,
     "prior_lab_sources": {

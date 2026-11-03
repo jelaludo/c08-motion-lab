@@ -146,7 +146,7 @@ function physics(dt,target){
   return;
  }
  const floor=world.floor(state.position.x,state.position.z,state.position.y);
- if(state.position.y>floor+.015){state.fallSpeed=Math.min(0,state.fallSpeed)-9.81*dt;state.position.y=Math.max(floor,state.position.y+state.fallSpeed*dt);if(state.position.y<=floor+.001){if(landed(floor,Math.abs(state.fallSpeed)))target.set(0,0,0);state.fallSpeed=0}}else{state.position.y=floor;state.fallSpeed=0}
+ if(state.position.y>floor+1e-6){state.fallSpeed=Math.min(0,state.fallSpeed)-9.81*dt;state.position.y=Math.max(floor,state.position.y+state.fallSpeed*dt);if(state.position.y<=floor+1e-6){if(landed(floor,Math.abs(state.fallSpeed)))target.set(0,0,0);state.fallSpeed=0}}else{state.position.y=floor;if(state.fallPeak!==null&&state.fallSpeed<0&&landed(floor,Math.abs(state.fallSpeed)))target.set(0,0,0);state.fallSpeed=0}
 }
 
 function boxPose(actor,mesh){const pelvis=point(actor.bones.PELVIS),forward=vec(Math.sin(state.facing),0,Math.cos(state.facing));mesh.position.copy(pelvis).addScaledVector(forward,.39);mesh.position.y=actor.group.position.y+1.04;mesh.rotation.set(0,state.facing,0);mesh.updateMatrixWorld(true);const ik=carryHands(actor,mesh);state.maxIKReach=Math.max(state.maxIKReach,ik.reach);state.maxLengthError=Math.max(state.maxLengthError,ik.length)}

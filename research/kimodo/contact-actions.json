@@ -36,12 +36,12 @@
     }
   ],
   "runtime_sha256": {
-    "game.js": "a9089a19669154d54449d925ac56d179a58ff69a54dafc3184170f564599f954",
+    "game.js": "8170d74c4a084129ad70f86c3fba18070944bd6ac9d9a1550b2473c5df98dbc5",
     "world.js": "f16ea6d3d4ac79f955350081a4b2398fbdda4058c41b8d06f7cd0ef9eb45541e",
     "traversal.js": "ebdba22c791e1df20d012ec6120a34eabbe502d03cd38613f72bb4cf4af4decd",
     "kinematics.js": "d074662b2d899ccc78df6a7e6eda975a12cedb3087d4f730e3e394df7e1c7133",
     "contact-actions.js": "af1e6d1a8f6208beba74a6c4f9c2f51605afdff6cf32cfb04964f09a21cfd7e0",
-    "index.html": "fa3cd40feaa676dc42fc569912cec3a9772b157a1a5f05d9b9e232affc0da66f"
+    "index.html": "2c860d8d54d063cb15dd11ee8ffdb68855d43204430f20a0ece56e623fd71324"
   },
   "hash_scope": "UTF8 LF Git blob bytes",
   "recordings": [
