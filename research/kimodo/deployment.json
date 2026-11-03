@@ -37,5 +37,76 @@
     "qa": "browser-modifier-validation.json",
     "body_preset_groups": 4,
     "policy": "Ctrl/Meta browser shortcuts bypass gameplay; explicit Ctrl+Space high jump retained. Plain C/CC crouch/seiza."
+  },
+  "latest_content_commit": "4772e8397e2563fdd10e2e2e63e522cd20238b55",
+  "contact_action_followup": {
+    "verified_content_commit": "4772e8397e2563fdd10e2e2e63e522cd20238b55",
+    "pages_run": 41621078230,
+    "pages_run_conclusion": "success",
+    "verified_at": "2026-11-03T10:43:09.687948+00:00",
+    "contact_qa": "contact-actions-validation.json",
+    "realtime_ui_qa": "contact-demo-links-validation.json",
+    "controller_and_download_bytes": [
+      {
+        "file": "game.js",
+        "sha256": "8170d74c4a084129ad70f86c3fba18070944bd6ac9d9a1550b2473c5df98dbc5",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/game.js?verified=4772e8397e2563fdd10e2e2e63e522cd20238b55",
+        "bytes": 48184,
+        "verified": true
+      },
+      {
+        "file": "world.js",
+        "sha256": "f16ea6d3d4ac79f955350081a4b2398fbdda4058c41b8d06f7cd0ef9eb45541e",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/world.js?verified=4772e8397e2563fdd10e2e2e63e522cd20238b55",
+        "bytes": 4621,
+        "verified": true
+      },
+      {
+        "file": "traversal.js",
+        "sha256": "ebdba22c791e1df20d012ec6120a34eabbe502d03cd38613f72bb4cf4af4decd",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/traversal.js?verified=4772e8397e2563fdd10e2e2e63e522cd20238b55",
+        "bytes": 3497,
+        "verified": true
+      },
+      {
+        "file": "kinematics.js",
+        "sha256": "d074662b2d899ccc78df6a7e6eda975a12cedb3087d4f730e3e394df7e1c7133",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/kinematics.js?verified=4772e8397e2563fdd10e2e2e63e522cd20238b55",
+        "bytes": 3542,
+        "verified": true
+      },
+      {
+        "file": "contact-actions.js",
+        "sha256": "af1e6d1a8f6208beba74a6c4f9c2f51605afdff6cf32cfb04964f09a21cfd7e0",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/contact-actions.js?verified=4772e8397e2563fdd10e2e2e63e522cd20238b55",
+        "bytes": 5942,
+        "verified": true
+      },
+      {
+        "file": "index.html",
+        "sha256": "2c860d8d54d063cb15dd11ee8ffdb68855d43204430f20a0ece56e623fd71324",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/index.html?verified=4772e8397e2563fdd10e2e2e63e522cd20238b55",
+        "bytes": 11276,
+        "verified": true
+      },
+      {
+        "file": "contact-takes/c08-ledge-hero-recording.glb",
+        "sha256": "ac0ec8693fa2b008c1e2354bc77663c21cdb4e8130629b64ef3594921fca3f34",
+        "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/4772e8397e2563fdd10e2e2e63e522cd20238b55/research/kimodo/contact-takes/c08-ledge-hero-recording.glb",
+        "bytes": 1553160,
+        "verified": true
+      },
+      {
+        "file": "contact-takes/brek43-ledge-hero-recording.glb",
+        "sha256": "f8919268929ff8937b0502d275f7b8546168c50dc65145e944cb5ce73b5959f6",
+        "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/4772e8397e2563fdd10e2e2e63e522cd20238b55/research/kimodo/contact-takes/brek43-ledge-hero-recording.glb",
+        "bytes": 1922484,
+        "verified": true
+      }
+    ],
+    "dev_log_entries": 33,
+    "dev_log_words": 12512,
+    "method": "Authored contact/pose and controller layers over existing Kimodo outputs; no new inference.",
+    "scope": "Both original robot bodies, joint and selected hand/knee skin clearance, high ledge phases, actual platform drop, pause/replay and interrupted recovery; two GLB exports validate with zero errors/warnings. Original 94-type generated library and source track assets unchanged."
   }
 }

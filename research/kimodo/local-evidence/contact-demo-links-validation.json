@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "base": "http://127.0.0.1:8802/kimodo-game/",
+  "scope": "Real requestAnimationFrame playback; no manual simulation stepping.",
+  "checks": [
+    {
+      "body": "c08",
+      "direct_ledge": true,
+      "realtime_catch": true,
+      "pause": true,
+      "replay_resumes": true,
+      "realtime_hero_drop": true,
+      "keyboard_focus_restored": true
+    },
+    {
+      "body": "brek43",
+      "direct_ledge": true,
+      "realtime_catch": true,
+      "pause": true,
+      "replay_resumes": true,
+      "realtime_hero_drop": true,
+      "keyboard_focus_restored": true
+    }
+  ],
+  "errors": []
+}

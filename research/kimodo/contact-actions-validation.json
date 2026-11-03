@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "url": "http://127.0.0.1:8802/kimodo-game/?controls=hybrid",
+  "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/?controls=hybrid",
   "checks": [
     {
       "body": "c08",
@@ -18,15 +18,15 @@
             "kind": "ledge",
             "weight": 1,
             "handWeight": 1,
-            "length": 3.0454214317021666e-08,
-            "handError": 3.128248915637975e-08
+            "length": 3.0454214317021666e-8,
+            "handError": 3.128248915637975e-8
           },
           "brek43": {
             "kind": "ledge",
             "weight": 1,
             "handWeight": 1,
-            "length": 1.0382690041055298e-08,
-            "handError": 1.4960614845330272e-08
+            "length": 1.0382690041055298e-8,
+            "handError": 1.4960614845330272e-8
           }
         },
         "events": [
@@ -152,16 +152,16 @@
             "kind": "hero-land",
             "weight": 1,
             "kneeError": 2.7577367830154345e-15,
-            "fistError": 4.3686304532195164e-08,
-            "length": 2.41928885813536e-08,
+            "fistError": 4.3686304532195164e-8,
+            "length": 2.41928885813536e-8,
             "reach": 0
           },
           "brek43": {
             "kind": "hero-land",
             "weight": 1,
-            "kneeError": 2.1194423607447825e-08,
-            "fistError": 8.269536076677724e-09,
-            "length": 8.677945917412444e-09,
+            "kneeError": 2.1194423607447825e-8,
+            "fistError": 8.269536076677724e-9,
+            "length": 8.677945917412444e-9,
             "reach": 0
           }
         },
@@ -246,15 +246,15 @@
             "kind": "ledge",
             "weight": 1,
             "handWeight": 1,
-            "length": 3.0454214317021666e-08,
-            "handError": 3.128248915637975e-08
+            "length": 3.0454214317021666e-8,
+            "handError": 3.128248915637975e-8
           },
           "brek43": {
             "kind": "ledge",
             "weight": 1,
             "handWeight": 1,
-            "length": 1.0382690041055298e-08,
-            "handError": 1.4960614845330272e-08
+            "length": 1.0382690041055298e-8,
+            "handError": 1.4960614845330272e-8
           }
         },
         "events": [
@@ -380,16 +380,16 @@
             "kind": "hero-land",
             "weight": 1,
             "kneeError": 2.7577367830154345e-15,
-            "fistError": 4.3686304532195164e-08,
-            "length": 2.41928885813536e-08,
+            "fistError": 4.3686304532195164e-8,
+            "length": 2.41928885813536e-8,
             "reach": 0
           },
           "brek43": {
             "kind": "hero-land",
             "weight": 1,
-            "kneeError": 2.1194423607447825e-08,
-            "fistError": 8.269536076677724e-09,
-            "length": 8.677945917412444e-09,
+            "kneeError": 2.1194423607447825e-8,
+            "fistError": 8.269536076677724e-9,
+            "length": 8.677945917412444e-9,
             "reach": 0
           }
         },
@@ -459,6 +459,5 @@
       ]
     }
   ],
-  "errors": [],
-  "evidence_scope": "Observed local runtime; live publication checks recorded separately."
+  "errors": []
 }
