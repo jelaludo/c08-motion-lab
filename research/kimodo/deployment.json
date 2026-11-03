@@ -29,5 +29,13 @@
     "action-profiles.json": "1dd6ac0b7c03ae0f04e1580da78e37a5614733b2d9a8e053f0d2a4bb0c68df27",
     "index.html": "9cf6733615a1bdce883b8a6d19ce844496a862f5d8f18e9bc0d5dff1b3f51c5e"
   },
-  "verified_at": "2026-11-03T01:34:28.745179+00:00"
+  "verified_at": "2026-11-03T01:34:28.745179+00:00",
+  "browser_modifier_followup": {
+    "verified_content_commit": "5ec350720af21201bf572d6daa77a4a3b167586a",
+    "pages_run": 41600978972,
+    "pages_run_conclusion": "success",
+    "qa": "browser-modifier-validation.json",
+    "body_preset_groups": 4,
+    "policy": "Ctrl/Meta browser shortcuts bypass gameplay; explicit Ctrl+Space high jump retained. Plain C/CC crouch/seiza."
+  }
 }
