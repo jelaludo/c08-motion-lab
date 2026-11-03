@@ -13,6 +13,8 @@ export function createWorld(scene){
  for(const [x,z]of [[-17,26],[-23,35],[-17,44],[26,23],[31,39],[25,58]])box('solid wall',x,z,4,2,2.4,'#526970');
  box('training climb wall',7,7,4,1.2,1.55,'#557e9b');label('SPACE / CLIMB',7,4.6,undefined,.035,.55);
  box('training vault barrier',6,12,4,.6,.6,'#b89654');label('SPACE / VAULT',6,10,undefined,.035,.55);
+ box('high ledge platform',20,7,8,3,2.65,'#7776a2');obstacles.at(-1).traversal='ledge';label('SPACE / LEDGE GRAB',20,3.3,undefined,.035,.6);
+ lane('DROP / HERO LANDING',20,12.5,8,6,'#654d70');
  for(const b of obstacles){if(['low jump','medium jump','training vault barrier'].includes(b.name))b.traversal='vault';if(['solid wall','stacked freight','training climb wall'].includes(b.name))b.traversal='mantle'}
  label('BOX YARD',-12,0);for(let i=0;i<3;i++)box('stacked freight',-18-i*1.6,6,1.2,1.2,1.2+(i%2)*1.2,'#747663');
  const makeCrate=()=>{const m=new T.Mesh(new T.BoxGeometry(.58,.46,.5),mat('#d5aa69'));m.castShadow=true;const edges=new T.LineSegments(new T.EdgesGeometry(m.geometry),new T.LineBasicMaterial({color:0x54402a}));m.add(edges);return m};
@@ -28,6 +30,6 @@ export function createWorld(scene){
  function move(pos,delta,height,r=.27){const n=Math.max(1,Math.ceil(delta.length()/.08)),step=delta.clone().multiplyScalar(1/n),out=pos.clone();for(let i=0;i<n;i++){
   for(const axis of ['x','z']){const candidate=out.clone();candidate[axis]+=step[axis];const hit=obstacles.find(b=>candidate.y+.04<b.top&&candidate.y+height>b.bottom+.01&&intersects(candidate.x,candidate.z,r,b));if(!hit)out[axis]=candidate[axis];else{state.collisions++;state.lastCollision=hit.name}}
  }return out}
- function floor(x,z,y=0){let top=0;for(const b of obstacles)if(b.top<=y+.06&&Math.abs(x-b.x)<b.w/2+.1&&Math.abs(z-b.z)<b.d/2+.1)top=Math.max(top,b.top);return top}
+ function floor(x,z,y=0){let top=0;for(const b of obstacles)if(b.top<=y+.06&&intersects(x,z,.27,b))top=Math.max(top,b.top);return top}
  return {obstacles,props,crate,ghostCrate,bench,terminal,makeCrate,state,move,fits,floor,zone(pos){return Math.abs(pos.x)<=3.5&&pos.z>=19&&pos.z<=43?'orange':Math.abs(pos.x)<=3.5&&pos.z>43&&pos.z<=67?'red':'free'},reset(){crate.position.set(-2,.23,2);crate.rotation.set(0,0,0);state.collisions=0;state.lastCollision=null}};
 }

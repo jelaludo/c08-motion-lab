@@ -2,9 +2,10 @@ import {readMotionJSON,loadMotionModel} from '../shared/motion-asset-io.js';
 import * as T from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {ReviewStore,SCORE_FIELDS} from '../shared/review-store.js';
-import {groundFeet,carryHands,mantleHands,point} from './kinematics.js?v=responsive-2';
-import {createWorld} from './world.js?v=responsive-2';
-import {traversalTarget,traversalPosition} from './traversal.js?v=responsive-2';
+import {groundFeet,carryHands,mantleHands,point} from './kinematics.js?v=contact-actions-1';
+import {createWorld} from './world.js?v=contact-actions-1';
+import {traversalTarget,traversalPosition} from './traversal.js?v=contact-actions-1';
+import {CONTACT_RULES,calibrateRig,heroLandingPose,ledgeGrabPose} from './contact-actions.js?v=contact-actions-1';
 const actionProfiles=await fetch('action-profiles.json?v=responsive-2').then(r=>{if(!r.ok)throw Error('Action windows unavailable');return r.json()}).then(d=>d.profiles);
 import {exportClips,createRecorder,download} from './export.js';
 const $=id=>document.getElementById(id),canvas=$('game');
@@ -13,7 +14,7 @@ const scene=new T.Scene();scene.background=new T.Color('#a7bfc0');scene.fog=new 
 scene.add(new T.HemisphereLight(0xe7f3ff,0x596e51,2.5));const sun=new T.DirectionalLight(0xffecd4,3);sun.position.set(-16,30,-10);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);Object.assign(sun.shadow.camera,{left:-20,right:20,top:20,bottom:-20,near:1,far:80});sun.shadow.bias=-.0004;scene.add(sun,sun.target);
 const camera=new T.PerspectiveCamera(55,1,.03,220),world=createWorld(scene),loader=new GLTFLoader(),actors=[],cache=new Map(),keys=new Set(),recorder=createRecorder(),store=new ReviewStore();
 const state={position:new T.Vector3(0,0,0),velocity:new T.Vector3(),yaw:0,pitch:.24,distance:5.8,facing:0,gait:'jog',stance:'stand',carrying:false,action:null,mode:'play',preview:null,paused:false,time:0,seed:411,preferred:{},tour:null,collisions:0,lastMotion:null,maxIKReach:0,maxLengthError:0,events:[],manualStep:false};
-state.flight=null;state.fallSpeed=0;state.crouchTap=-Infinity;state.attackIndex=0;
+state.flight=null;state.fallSpeed=0;state.fallPeak=null;state.contactDiagnostics={};state.crouchTap=-Infinity;state.attackIndex=0;
 let profile='lab',sprintMode='hold';state.sprintLatch=false;state.shoulder=1;
 try{sprintMode=localStorage.getItem('kimodo-game-sprint-mode-v1')==='toggle'?'toggle':'hold'}catch{}
 const focused=()=>profile==='hybrid'&&keys.has('MouseRight');
@@ -40,24 +41,27 @@ function capture(a){return a.bind.map(n=>({p:n.b.position.clone(),q:n.b.quaterni
 async function motion(id,force=false,seed=null){
  if(!catalog)return;await Promise.all(actors.map(async a=>{
   const take=takeFor(id,a.id,seed);if(!take)return;if(!force&&(a.take?.id===take.id||a.pending===take.id))return;
-  const token=++a.token;a.pending=take.id;loadJobs++;
-  try{const data=await dataFor(take,a.id);if(token!==a.token)return;a.from=capture(a);a.blend=0;a.phase=0;a.data=data;a.take=take;a.pending=null;for(const f of a.feet)f.lock=null;if(a===active()){state.lastMotion=id;log('motion',{id:take.id,body:a.id,source_sha256:take.source_sha256})}}
+  const token=++a.token;a.pending=take.id;a.heldTime=a.sampleTime??a.phase;loadJobs++;
+  try{const data=await dataFor(take,a.id);if(token!==a.token)return;a.from=capture(a);a.blend=0;a.phase=0;a.heldTime=null;a.data=data;a.take=take;a.pending=null;for(const f of a.feet)f.lock=null;if(a===active()){state.lastMotion=id;log('motion',{id:take.id,body:a.id,source_sha256:take.source_sha256})}}
   catch(e){a.pending=null;$('hint').textContent=e.message;console.error(e)}finally{loadJobs--}
  }));updateLinks();
 }
 function apply(a,time,dt){
  const data=a.data;if(!data)return;for(const n of a.bind){n.b.position.copy(n.p);n.b.quaternion.copy(n.q)}
  const t=data.loop?((time%data.duration)+data.duration)%data.duration:T.MathUtils.clamp(time,0,data.duration);
+ a.sampleTime=t;
  for(const track of data.tracks){const [name,property]=track.name.split('.'),b=a.bones[name];if(!b)continue;const value=track.interpolant.evaluate(t);if(property==='quaternion')b.quaternion.fromArray(value).normalize();else b.position.fromArray(value)}
  // Traversal travel already supplies height. Bound the source pelvis lift so
  // it cannot add a second obstacle-height arc to the controller trajectory.
- if(state.mode==='play'&&state.flight&&state.flight.type!=='jump'&&a.bones.PELVIS){const n=a.bind.find(n=>n.b===a.bones.PELVIS);n.b.position.y=n.p.y+T.MathUtils.clamp((n.b.position.y-n.p.y)*.15,-.12/a.scale,.08/a.scale)}
+ if(state.mode==='play'&&['game-mantle','game-vault'].includes(a.take?.motion)&&a.bones.PELVIS){const n=a.bind.find(n=>n.b===a.bones.PELVIS),x=state.action,w=x&&['ledge','mantle','vault'].includes(x.type)?1-smooth(T.MathUtils.clamp((x.elapsed/x.duration-.85)/.15,0,1)):0;n.b.position.y=n.p.y+T.MathUtils.clamp((n.b.position.y-n.p.y)*.15,-.12/a.scale,.08/a.scale)*w}
  a.blend=Math.min(1,a.blend+dt/(state.action?.blend??(state.stance==='crouch'||state.stance==='seiza'?.1:.14)));const w=smooth(a.blend);
  if(a.from&&w<1)for(let i=0;i<a.bind.length;i++){const n=a.bind[i];n.b.position.lerpVectors(a.from[i].p,n.b.position,w);n.b.quaternion.copy(a.from[i].q.clone().slerp(n.b.quaternion,w))}
  a.asset.updateMatrixWorld(true);const index=Math.min(data.contacts.length-1,Math.floor(t*30)),contacts=data.contacts[index];
  const grounded=state.position.y<=world.floor(state.position.x,state.position.z,state.position.y)+.06;
  const support=state.mode==='play'&&grounded&&state.stance!=='prone'&&state.stance!=='down'&&state.stance!=='seiza'&&a.take?.group!=='ground'&&!state.flight&&(!state.action||state.action.type==='jump');
  const ik=groundFeet(a,contacts,support,dt,world.floor(state.position.x,state.position.z,state.position.y));state.maxIKReach=Math.max(state.maxIKReach,ik.reach);state.maxLengthError=Math.max(state.maxLengthError,ik.length);
+ if(state.mode==='play'&&state.flight?.type==='ledge'){const report=ledgeGrabPose(a,{...state.flight,controllerPosition:state.position});state.contactDiagnostics[a.id]={kind:'ledge',...report};state.maxLengthError=Math.max(state.maxLengthError,report.length)}
+ if(state.mode==='play'&&state.action?.type==='hero-land'){const report=heroLandingPose(a,state.action.elapsed);state.contactDiagnostics[a.id]={kind:'hero-land',...report};state.maxLengthError=Math.max(state.maxLengthError,report.length||0)}
  if(state.mode==='play'&&state.flight?.type==='mantle'){const hands=mantleHands(a,state.flight,state.position);state.maxLengthError=Math.max(state.maxLengthError,hands.length)}
 }
 function direction(input){const forward=vec(Math.sin(state.yaw),0,Math.cos(state.yaw)),right=vec(-Math.cos(state.yaw),0,Math.sin(state.yaw));return forward.multiplyScalar(input.z||0).addScaledVector(right,input.x||0).normalize()}
@@ -74,13 +78,14 @@ function movementClip(input,speed){
 }
 function invalidateMotion(){for(const a of actors){a.token++;a.pending=null}}
 function placeBox(){world.crate.position.copy(state.position).addScaledVector(direction({z:1}),.8);world.crate.position.y=world.floor(world.crate.position.x,world.crate.position.z,state.position.y)+.23;world.crate.rotation.set(0,state.facing,0)}
-function cancelAction(reason='input'){const a=state.action;if(!a)return;state.action=null;invalidateMotion();log('action-cancel',{id:a.id,reason});}
-function endAction(){const a=state.action;if(!a)return;if(a.stance)state.stance=a.stance;if(a.carry!==undefined&&!a.attached){state.carrying=a.carry;if(!a.carry)placeBox()}state.action=null;log('action-end',{id:a.id});}
+function cancelAction(reason='input'){const a=state.action;if(!a)return;for(const actor of actors)actor.heldTime=mappedTime(actor);state.action=null;invalidateMotion();log('action-cancel',{id:a.id,reason});}
+function endAction(){const a=state.action;if(!a)return;for(const actor of actors)actor.heldTime=mappedTime(actor);if(a.stance)state.stance=a.stance;if(a.carry!==undefined&&!a.attached){state.carrying=a.carry;if(!a.carry)placeBox()}state.action=null;log('action-end',{id:a.id});}
 function actionWindow(actor,id){const take=takeFor(id,actor.id);return actionProfiles[take?.id+':'+actor.id]}
 async function action(id,{type='action',stance=null,carry,duration,blend=.065}={}){
  if(state.mode==='preview')exitPreview();const take=takeFor(id,active().id);if(!take)return false;
+ if(state.flight?.type==='ledge'&&type!=='ledge'){state.flight=null;state.fallSpeed=0;log('ledge-release',{reason:id})}
  cancelAction('superseded');
- const profile=actionWindow(active(),id),ref={id,type,elapsed:0,stance,carry,attached:false,ready:false,duration:duration??profile?.duration??take.duration_s??6,blend};
+ const profile=actionWindow(active(),id),ref={id,type,elapsed:0,stance,carry,attached:false,ready:false,duration:duration??profile?.duration??take.duration_s??6,blend,facing:state.facing};
  state.action=ref;log('action-start',{id});await motion(id,true);if(state.action!==ref)return false;if(duration===undefined&&!profile)ref.duration=active().data.duration;ref.ready=true;return true;
 }
 function contextualJump(input=controlInput()){const heading=Math.hypot(input.x||0,input.z||0)>.1?direction(input):vec(Math.sin(state.facing),0,Math.cos(state.facing));return traversalTarget(world,state.position,heading)}
@@ -94,7 +99,7 @@ async function jump(high=false,input=controlInput()){
  if(!world.fits(state.position,1.85)){$('hint').textContent='Jump blocked: not enough headroom.';return false}
  state.stance='stand';state.crouchTap=-Infinity;
  const target=high?null:contextualJump(input);
- if(target){state.flight={...target,start:state.position.clone(),elapsed:0};state.facing=Math.atan2(target.destination.x-state.position.x,target.destination.z-state.position.z);state.velocity.set(0,0,0);log('traversal-start',{kind:target.type,obstacle:target.obstacle,destination:target.destination.toArray()});return action(target.id,{type:target.type,duration:target.duration})}
+ if(target){const reach=Math.min(...actors.map(a=>a.rig.shoulderHeight+Math.sqrt(Math.max(.02,a.rig.arm*a.rig.arm-.34*.34))*.86));state.flight={...target,start:state.position.clone(),elapsed:0,hangY:Math.max(state.position.y+.20,target.top-reach+.04)};state.facing=Math.atan2(target.destination.x-state.position.x,target.destination.z-state.position.z);state.velocity.set(0,0,0);log('traversal-start',{kind:target.type,obstacle:target.obstacle,destination:target.destination.toArray()});return action(target.id,{type:target.type,duration:target.duration})}
  const speed=Math.hypot(state.velocity.x,state.velocity.z),d=directionName(input.x,input.z);
  const suffix=high?'high':speed<.2?'standing':d==='backward'||d==='left'||d==='right'?d:speed<1.7?'walk':speed<3?'jog':speed<4.8?'run':'sprint';
  const h=high?1.25:suffix==='standing'?.65:speed>4.8?1.05:speed>3?.9:.72,air=2*Math.sqrt(2*h/9.81),pre=.065;
@@ -102,25 +107,31 @@ async function jump(high=false,input=controlInput()){
  const pending=action('game-jump-'+suffix,{type:'jump',duration:pre+air+.16});Object.assign(state.action,{pre,air,height:h});return pending;
 }
 function mappedTime(a){
- const d=a.data,x=state.action;if(!x||a.take?.motion!==x.id)return a.phase;
+ const d=a.data,x=state.action;if(!x||a.take?.motion!==x.id)return a.heldTime??a.phase;
+ if(x.type==='hero-land')return d.duration;
  if(x.type==='jump'){
   const f=state.flight?.type==='jump'?state.flight:x,p=d.jump||{takeoff_s:.3,landing_s:Math.max(.5,d.duration-.5)},t=x.elapsed;
   if(t<f.pre)return t/Math.max(.01,f.pre)*p.takeoff_s;if(t<f.pre+f.air)return p.takeoff_s+(t-f.pre)/f.air*(p.landing_s-p.takeoff_s);return p.landing_s+Math.min(1,(t-f.pre-f.air)/.16)*(d.duration-p.landing_s);
  }
  const w=actionWindow(a,x.id),u=T.MathUtils.clamp(x.elapsed/x.duration,0,1);return w?T.MathUtils.lerp(w.start,w.end,u):Math.min(x.elapsed,d.duration);
 }
-function movementIntent(){if(state.mode==='preview')exitPreview();if(state.action&&['game-dodge-','game-jab','game-cross','game-kick','game-block'].some(id=>state.action.id.startsWith(id)))cancelAction('movement');if(state.stance==='seiza'||state.stance==='sit')state.stance='crouch'}
+function movementIntent(){if(state.mode==='preview')exitPreview();if(state.action&&['game-dodge-','game-jab','game-cross','game-kick','game-block','game-land-hard'].some(id=>state.action.id.startsWith(id)))cancelAction('movement');if(state.stance==='seiza'||state.stance==='sit')state.stance='crouch'}
 function attack(){if(state.stance==='seiza')state.stance='crouch';return action(state.attackIndex++%2?'game-cross':'game-jab')}
+function landed(floor,impact){
+ const drop=Math.max(0,(state.fallPeak??floor)-floor);state.fallPeak=null;
+ if(drop>=CONTACT_RULES.heroDrop&&impact>=CONTACT_RULES.heroImpactSpeed&&!state.carrying&&!['prone','down','sit'].includes(state.stance)){state.flight=null;state.stance='stand';state.velocity.set(0,0,0);log('hero-landing',{drop_m:drop,impact_m_s:impact});void action('game-land-hard',{type:'hero-land',duration:CONTACT_RULES.landingDuration,blend:.07});return true}return false;
+}
 function physics(dt,target){
  const f=state.flight,oldY=state.position.y;
+ if(f||oldY>world.floor(state.position.x,state.position.z,oldY)+.015)state.fallPeak=Math.max(state.fallPeak??oldY,oldY);
  if(f){
   f.elapsed+=dt;
   if(f.type==='jump'){
    const t=f.elapsed;
    if(t>=f.pre&&t<=f.pre+f.air){const u=(t-f.pre)/f.air;state.position.y=f.launchY+4*f.height*u*(1-u);target.copy(f.velocity)}
-   else if(t>f.pre+f.air){const floor=world.floor(state.position.x,state.position.z,oldY);if(oldY>floor+.08){state.flight=null;cancelAction('jump continues as fall');state.fallSpeed=-Math.sqrt(2*9.81*f.height);return}state.position.y=floor;f.landed=true;target.multiplyScalar(.7)}else target.copy(f.velocity).multiplyScalar(.8);
+   else if(t>f.pre+f.air){const floor=world.floor(state.position.x,state.position.z,oldY);if(oldY>floor+.08){state.flight=null;cancelAction('jump continues as fall');state.fallSpeed=-Math.sqrt(2*9.81*f.height);return}state.position.y=floor;if(!f.landed&&landed(floor,Math.abs(state.fallSpeed))){target.set(0,0,0);return}f.landed=true;target.multiplyScalar(.7)}else target.copy(f.velocity).multiplyScalar(.8);
    const floor=world.floor(state.position.x,state.position.z,oldY);
-   if(t>f.pre+f.air/2&&state.position.y<floor){state.position.y=floor;f.elapsed=f.pre+f.air;f.landed=true;if(state.action?.type==='jump')state.action.elapsed=f.elapsed}
+   if(t>f.pre+f.air/2&&state.position.y<floor){state.position.y=floor;if(!f.landed&&landed(floor,Math.abs(state.fallSpeed))){target.set(0,0,0);return}f.elapsed=f.pre+f.air;f.landed=true;if(state.action?.type==='jump')state.action.elapsed=f.elapsed}
    if(!world.fits(state.position,1.85)){state.position.y=oldY;state.flight=null;state.fallSpeed=0;cancelAction('jump clearance collision');return}
   }else{
    const desired=traversalPosition(f),vertical=state.position.clone().setY(desired.y);
@@ -128,18 +139,18 @@ function physics(dt,target){
    state.position.y=desired.y;
    const delta=desired.clone().sub(state.position).setY(0),moved=world.move(state.position,delta,1.85);
    if(moved.distanceTo(desired)>.04){state.flight=null;cancelAction('blocked traversal route');log('traversal-blocked',{obstacle:f.obstacle});target.set(0,0,0);return}
-   state.position.copy(moved);target.set(0,0,0);state.velocity.set(0,0,0);
+   state.position.copy(moved);target.set(0,0,0);state.velocity.set(0,0,0);state.fallPeak=state.position.y;
   }
   state.fallSpeed=(state.position.y-oldY)/Math.max(.001,dt);
-  if(f.type==='jump'&&f.elapsed>=f.pre+f.air+f.recovery||f.type!=='jump'&&f.elapsed>=f.duration){state.flight=null;state.fallSpeed=0;if(f.type!=='jump')log('traversal-end',{kind:f.type,obstacle:f.obstacle})}
+  if(f.type==='jump'&&f.elapsed>=f.pre+f.air+f.recovery||f.type!=='jump'&&f.elapsed>=f.duration){state.flight=null;state.fallSpeed=0;if(f.type!=='jump'){state.fallPeak=null}if(f.type!=='jump')log('traversal-end',{kind:f.type,obstacle:f.obstacle})}
   return;
  }
  const floor=world.floor(state.position.x,state.position.z,state.position.y);
- if(state.position.y>floor+.015){state.fallSpeed=Math.min(0,state.fallSpeed)-9.81*dt;state.position.y=Math.max(floor,state.position.y+state.fallSpeed*dt)}else{state.position.y=floor;state.fallSpeed=0}
+ if(state.position.y>floor+.015){state.fallSpeed=Math.min(0,state.fallSpeed)-9.81*dt;state.position.y=Math.max(floor,state.position.y+state.fallSpeed*dt);if(state.position.y<=floor+.001){if(landed(floor,Math.abs(state.fallSpeed)))target.set(0,0,0);state.fallSpeed=0}}else{state.position.y=floor;state.fallSpeed=0}
 }
 
 function boxPose(actor,mesh){const pelvis=point(actor.bones.PELVIS),forward=vec(Math.sin(state.facing),0,Math.cos(state.facing));mesh.position.copy(pelvis).addScaledVector(forward,.39);mesh.position.y=actor.group.position.y+1.04;mesh.rotation.set(0,state.facing,0);mesh.updateMatrixWorld(true);const ik=carryHands(actor,mesh);state.maxIKReach=Math.max(state.maxIKReach,ik.reach);state.maxLengthError=Math.max(state.maxLengthError,ik.length)}
-function updateActorPositions(){const offset=vec(Math.cos(state.yaw),0,-Math.sin(state.yaw)).multiplyScalar(2.8);for(const a of actors){a.group.visible=a===active()||$('companion').checked;a.group.position.copy(state.position);if(a!==active())a.group.position.add(offset);a.group.rotation.y=state.facing;a.group.updateMatrixWorld(true)}}
+function updateActorPositions(){const offset=vec(Math.cos(state.facing),0,-Math.sin(state.facing)).multiplyScalar(2.8);for(const a of actors){a.group.visible=a===active()||$('companion').checked;a.group.position.copy(state.position);if(a!==active())a.group.position.add(offset);a.group.rotation.y=state.facing;a.group.updateMatrixWorld(true)}}
 function advance(dt,input=controlInput()){
  if(!catalog||!actors.length||state.paused||modal())return;
  dt=Math.min(.05,Math.max(0,dt));state.time+=dt;
@@ -166,14 +177,14 @@ function advance(dt,input=controlInput()){
   const delta=state.velocity.clone().multiplyScalar(dt);delta.y=0;const before=state.position.clone();state.position.copy(world.move(state.position,delta,height()));
   const actual=dt?state.position.clone().sub(before).length()/dt:0;
   // Vertical motion has its own lifetime, independent of animation cancellation.
-  const facing=state.flight&&state.flight.type!=='jump'?Math.atan2(state.flight.destination.x-state.flight.start.x,state.flight.destination.z-state.flight.start.z):state.action?.id.startsWith('game-dodge-')?state.action.facing:strafing()?state.yaw:actual>.05?Math.atan2(state.velocity.x,state.velocity.z):state.facing;
+  const facing=state.flight&&state.flight.type!=='jump'?Math.atan2(state.flight.destination.x-state.flight.start.x,state.flight.destination.z-state.flight.start.z):state.action?.id.startsWith('game-dodge-')||state.action?.type==='hero-land'?state.action.facing:strafing()?state.yaw:actual>.05?Math.atan2(state.velocity.x,state.velocity.z):state.facing;
   state.facing+=wrap(facing-state.facing)*(1-Math.exp(-dt*12));updateActorPositions();
   const local=strafing()?input:{x:0,z:moving?1:0};
   const desired=state.action?.id||movementClip(local,moving?speed:0);motion(desired);
   for(const a of actors){
    const scaleSpeed=(a.data?.measured_target_speed_m_s||0)*a.scale;
    const rate=a.data?.loop&&actual>.04&&scaleSpeed>.1?T.MathUtils.clamp(actual/scaleSpeed,.45,2):1;
-   a.phase+=dt*rate;const stillCrouch=state.stance==='crouch'&&!moving&&!state.action;apply(a,state.action?mappedTime(a):state.stance==='seiza'?a.data.duration:stillCrouch?.18:a.phase,dt);
+   a.phase+=dt*rate;const stillCrouch=state.stance==='crouch'&&!moving&&!state.action;apply(a,state.action?mappedTime(a):a.heldTime??(state.stance==='seiza'?a.data.duration:stillCrouch?.18:a.phase),dt);
   }
   if(state.action){const a=state.action;
    if(!a.attached&&a.elapsed>a.duration*.55&&a.carry!==undefined){a.attached=true;state.carrying=a.carry;if(!a.carry)placeBox()}
@@ -186,16 +197,25 @@ function advance(dt,input=controlInput()){
  updateHUD();
  if($('interaction')){const target=profile==='hybrid'&&!state.action?contextTarget():null,jumpTarget=!state.flight&&!state.carrying&&world.fits(state.position,1.85)?contextualJump(input):null,prompts=[target?'E · '+target.label:'',jumpTarget?'Space · '+jumpTarget.label+' (contact prototype)':''].filter(Boolean);$('interaction').hidden=!prompts.length;$('interaction').textContent=prompts.join(' | ')}
 }
-function updateHUD(){const a=active();if(!a)return;const speed=Math.hypot(state.velocity.x,state.velocity.z),zone=world.zone(state.position);$('mode').textContent=`${a.label} · ${state.mode==='preview'?'motion preview':state.action?.type==='jump'?'jump / '+(state.action.elapsed<state.action.pre?'load':state.action.elapsed<state.action.pre+state.action.air?'air':'land'):state.stance} · ${speed.toFixed(1)} m/s${state.carrying?' · carrying':''}${state.paused?' · paused':''}`;$('motion-status').textContent=`${a.take?.label||'Loading'} · seed ${a.take?.seed||'…'}${a.pending?' · loading next':''}${a.data?.jump&&!a.data.jump.valid_airborne_detection?' · source flight unverified':''}${a.take?.group==='traversal'?' · contact probe':''}`;$('zone').textContent=`${zone==='orange'?'ORANGE / RUN':zone==='red'?'RED / SPRINT':'FREE PLAY'} · ${state.position.x.toFixed(1)}, ${state.position.z.toFixed(1)}${world.state.lastCollision?' · contact: '+world.state.lastCollision:''}${recorder.active?' · REC '+recorder.seconds.toFixed(1)+'s':''}`;}
-function reset(){if(recorder.active)stopRecording();state.sprintLatch=false;invalidateMotion();state.flight=null;state.fallSpeed=0;state.crouchTap=-Infinity;state.attackIndex=0;state.action=null;state.mode='play';state.preview=null;state.previewContext=null;state.stance='stand';state.carrying=false;state.tour=null;state.position.set(0,0,0);state.velocity.set(0,0,0);state.facing=state.yaw=0;state.pitch=.24;world.reset();keys.clear();updateActorPositions();motion('game-idle',true);$('tour').textContent='Course tour';log('reset');}
-function exitPreview(){const context=state.previewContext;if(context){state.carrying=context.carrying;world.crate.position.copy(context.p);world.crate.quaternion.copy(context.q)}state.previewContext=null;state.flight=null;state.fallSpeed=0;state.mode='play';state.preview=null;state.action=null;state.stance='stand';state.position.y=0;motion(state.carrying?'game-carry-idle':'game-idle',true)}
+function updateHUD(){
+ const a=active();if(!a)return;const f=state.flight,x=state.action,speed=Math.hypot(state.velocity.x,state.velocity.z),zone=world.zone(state.position);
+ let mode=state.stance;
+ if(state.mode==='preview')mode='motion preview';else if(f?.type==='ledge')mode='ledge / '+(f.elapsed<.13?'load':f.elapsed<.5?'leap':f.elapsed<.97?'catch / hang':f.elapsed<1.93?'pull up':'top out');else if(x?.type==='hero-land')mode='hero landing / '+(x.elapsed<.14?'impact':x.elapsed<.92?'knee + fist':'recover');else if(f?.type==='jump')mode='jump / '+(f.elapsed<f.pre?'load':f.elapsed<f.pre+f.air?'air':'land');else if(f)mode=f.type;
+ $('mode').textContent=`${a.label} · ${mode} · ${speed.toFixed(1)} m/s${state.carrying?' · carrying':''}${state.paused?' · paused':''}`;
+ const layered=f?.type==='ledge'?'Ledge grab + pull-up':x?.type==='hero-land'?'Superhero landing':null;
+ $('motion-status').textContent=`${layered?layered+' · contact layer / ':''}${a.take?.label||'Loading'} · seed ${a.take?.seed||'…'}${a.pending?' · loading next':''}${a.data?.jump&&!a.data.jump.valid_airborne_detection?' · source flight unverified':''}${a.take?.group==='traversal'?' · contact probe':''}`;
+ $('zone').textContent=`${zone==='orange'?'ORANGE / RUN':zone==='red'?'RED / SPRINT':'FREE PLAY'} · ${state.position.x.toFixed(1)}, ${state.position.z.toFixed(1)}${world.state.lastCollision?' · contact: '+world.state.lastCollision:''}${recorder.active?' · REC '+recorder.seconds.toFixed(1)+'s':''}`;
+}
+function reset(){if(recorder.active)stopRecording();state.sprintLatch=false;invalidateMotion();state.flight=null;state.fallSpeed=0;state.fallPeak=null;state.contactDiagnostics={};state.crouchTap=-Infinity;state.attackIndex=0;state.action=null;state.mode='play';state.preview=null;state.previewContext=null;state.stance='stand';state.carrying=false;state.tour=null;state.position.set(0,0,0);state.velocity.set(0,0,0);state.facing=state.yaw=0;state.pitch=.24;world.reset();keys.clear();updateActorPositions();motion('game-idle',true);$('tour').textContent='Course tour';log('reset');}
+function startTrial(kind){reset();state.paused=false;$('pause').textContent='Pause';$('pause').setAttribute('aria-pressed','false');if(kind==='ledge')state.position.set(20,0,4.7);else state.position.set(20,2.65,14.5);updateActorPositions();canvas.focus();log('trial',{kind})}
+function exitPreview(){const context=state.previewContext;if(context){state.carrying=context.carrying;world.crate.position.copy(context.p);world.crate.quaternion.copy(context.q)}state.previewContext=null;state.flight=null;state.fallSpeed=0;state.fallPeak=null;state.mode='play';state.preview=null;state.action=null;state.stance='stand';state.position.y=0;motion(state.carrying?'game-carry-idle':'game-idle',true)}
 async function preview(id,seed=Number($('seed').value)){
  if(state.mode!=='preview')state.previewContext={carrying:state.carrying,p:world.crate.position.clone(),q:world.crate.quaternion.clone()};
  state.carrying=id.startsWith('game-carry-');if(!state.carrying&&state.previewContext){world.crate.position.copy(state.previewContext.p);world.crate.quaternion.copy(state.previewContext.q)}
- state.tour=null;state.flight=null;state.fallSpeed=0;state.action=null;state.mode='preview';state.preview=id;state.velocity.set(0,0,0);state.position.y=0;state.paused=false;await motion(id,true,seed);updateActorPositions();renderList();updateLinks();
+ state.tour=null;state.flight=null;state.fallSpeed=0;state.fallPeak=null;state.action=null;state.mode='preview';state.preview=id;state.velocity.set(0,0,0);state.position.y=0;state.paused=false;await motion(id,true,seed);updateActorPositions();renderList();updateLinks();
 }
 function cameraUpdate(dt){
- const compare=$('companion').checked,target=state.position.clone().add(vec(0,1.05,0));if(compare)target.add(vec(Math.cos(state.yaw)*1.4,0,-Math.sin(state.yaw)*1.4));
+ const compare=$('companion').checked,target=state.position.clone().add(vec(0,1.05,0));if(compare)target.add(vec(Math.cos(state.facing)*1.4,0,-Math.sin(state.facing)*1.4));
  if(focused())target.add(vec(-Math.cos(state.yaw),0,Math.sin(state.yaw)).multiplyScalar(.32*state.shoulder));
  const distance=state.distance*(compare?1.35:1),desired=target.clone().add(vec(-Math.sin(state.yaw)*Math.cos(state.pitch)*distance,Math.sin(state.pitch)*distance,-Math.cos(state.yaw)*Math.cos(state.pitch)*distance));
  const ray=new T.Raycaster(target,desired.clone().sub(target).normalize(),0,distance),hits=ray.intersectObjects(world.obstacles.map(b=>b.mesh),false);if(hits[0])desired.copy(target).addScaledVector(ray.ray.direction,Math.max(.55,hits[0].distance-.2));
@@ -220,6 +240,7 @@ function dodge(){
  const pending=action('game-dodge-'+d,{duration:.32});state.action.direction=heading;state.action.facing=facing;return pending;
 }
 function crouch(doubleTap=false){
+ if(state.flight?.type==='ledge'){state.flight=null;state.fallSpeed=0;cancelAction('release ledge');log('ledge-release',{reason:'C'});return true}
  if(state.mode==='preview')exitPreview();cancelAction('crouch input');if(state.flight||state.carrying)return false;
  if(doubleTap){state.stance='seiza';state.velocity.set(0,0,0);motion('game-crouch-down',true);log('stance',{stance:'seiza'});return true}
  if(state.stance==='crouch'||state.stance==='seiza'){
@@ -261,6 +282,7 @@ document.addEventListener('mousemove',e=>{if((drag||document.pointerLockElement=
 $('capture-mouse').onclick=async()=>{canvas.focus();try{await canvas.requestPointerLock()}catch{$('hint').textContent='Pointer capture unavailable; hold the right mouse button and drag to look.'}};
 $('profile').onchange=()=>applyProfile($('profile').value);$('sprint-mode').onchange=()=>{sprintMode=$('sprint-mode').value==='toggle'?'toggle':'hold';state.sprintLatch=false;try{localStorage.setItem('kimodo-game-sprint-mode-v1',sprintMode)}catch{}};
 let requestedProfile=new URLSearchParams(location.search).get('controls');if(!requestedProfile)try{requestedProfile=localStorage.getItem('kimodo-game-controls-profile-v1')}catch{}applyProfile(requestedProfile||'lab');
+$('trial').onchange=()=>{const kind=$('trial').value;if(kind)startTrial(kind);$('trial').value=''};
 $('gait').onchange=()=>state.gait=$('gait').value;$('body').onchange=()=>{updateActorPositions();updateLinks();log('body',{body:active().id});if(state.mode==='preview')preview(state.preview)};$('companion').onchange=updateActorPositions;$('reset').onclick=reset;$('pause').onclick=togglePause;
 for(const id of ['library','review','help'])$(id+'-open').onclick=()=>open(id);
 $('play-mode').onclick=()=>{$('library').close();exitPreview();canvas.focus()};$('record').onclick=()=>recorder.active?stopRecording():startRecording();$('download-record').onclick=async()=>{try{await recorder.save(actors.find(a=>a.id===recorder.body))}catch(e){$('hint').textContent=e.message}};
@@ -295,16 +317,17 @@ try{
   const box=new T.Box3().setFromObject(asset,true),scale=1.9/box.getSize(vec()).y;asset.scale.multiplyScalar(scale);const bones={},bind=[];asset.traverse(b=>{if(b.isBone){bones[b.name]=b;bind.push({b,p:b.position.clone(),q:b.quaternion.clone()})}});
   const a={id:def.id,label:def.label,asset,group,scale,bones,bind,feet:['L','R'].map(s=>({hip:bones['HIP_'+s],knee:bones['KNEE_'+s],ankle:bones['ANKLE_'+s],sole:bones['SOCKET_SOLE_'+s]||bones['ANKLE_'+s],lock:null})),token:0,pending:null,take:null,data:null,phase:0,blend:1};actors.push(a);
  }
+ for(const a of actors)a.rig=calibrateRig(a);
  for(const group of [...new Set(catalog.motions.map(m=>m.group))])$('category').add(new Option(group[0].toUpperCase()+group.slice(1),group));renderList();updateActorPositions();
- await motion('game-idle',true);const query=new URLSearchParams(location.search),requestedBody=query.get('body');if(catalog.bodies.some(b=>b.id===requestedBody))$('body').value=requestedBody;const requested=query.get('motion');if(catalog.motions.some(m=>m.id===requested))await preview(requested,Number(query.get('seed'))||411);else if(query.get('tour')==='1')$('tour').click();else if(query.get('course')==='traversal'){state.position.set(7,0,5.6);updateActorPositions();}
+ await motion('game-idle',true);const query=new URLSearchParams(location.search),requestedBody=query.get('body');if(catalog.bodies.some(b=>b.id===requestedBody))$('body').value=requestedBody;const requested=query.get('motion');if(catalog.motions.some(m=>m.id===requested))await preview(requested,Number(query.get('seed'))||411);else if(query.get('tour')==='1')$('tour').click();else if(query.get('course')==='traversal'){state.position.set(7,0,5.6);updateActorPositions();}else if(['ledge','hero-landing'].includes(query.get('course')))startTrial(query.get('course'));
  camera.position.set(0,2,-6);updateHUD();
  // Warm only common transitions; the rest load on demand and are cached as clips,
  // without loading another mesh or creating another WebGL renderer.
- const warm=['game-walk-forward','game-jog-forward','game-run-forward','game-sprint-forward','game-crouch-idle','game-crouch-forward','game-crouch-down','game-crouch-up','game-jump-standing','game-jump-run','game-dodge-forward','game-jab','game-cross','game-vault','game-mantle','game-pickup','game-putdown','game-carry-idle'];
+ const warm=['game-walk-forward','game-jog-forward','game-run-forward','game-sprint-forward','game-crouch-idle','game-crouch-forward','game-crouch-down','game-crouch-up','game-jump-standing','game-jump-run','game-dodge-forward','game-jab','game-cross','game-vault','game-mantle','game-land-hard','game-pickup','game-putdown','game-carry-idle'];
  (async()=>{await Promise.all(warm.flatMap(id=>actors.map(a=>dataFor(takeFor(id,a.id),a.id))))})().catch(console.error);
 }catch(e){$('mode').textContent=e.message;console.error(e)}
-window.GameLab={state,actors,world,camera,renderer,recorder,store,get profile(){return profile},get sprintMode(){return sprintMode},applyProfile,contextTarget,contextInteract,focused,strafing,controlInput,get catalog(){return catalog},get active(){return active()},get loadJobs(){return loadJobs},motion,preview,action,jump,interact,crouch,cancelAction,attack,contextualJump,reset,advance,shortcut,dataFor,takeFor,
- setManual(value=true){state.manualStep=value},setPosition(x,z,y=0){state.position.set(x,y,z);state.velocity.set(0,0,0);updateActorPositions()},
+window.GameLab={state,actors,world,camera,renderer,recorder,store,get profile(){return profile},get sprintMode(){return sprintMode},applyProfile,contextTarget,contextInteract,focused,strafing,controlInput,get catalog(){return catalog},get active(){return active()},get loadJobs(){return loadJobs},motion,preview,action,jump,interact,crouch,cancelAction,attack,contextualJump,startTrial,get contactRules(){return CONTACT_RULES},reset,advance,shortcut,dataFor,takeFor,
+ setManual(value=true){state.manualStep=value},setPosition(x,z,y=0){state.position.set(x,y,z);state.fallPeak=null;state.fallSpeed=0;state.flight=null;state.velocity.set(0,0,0);updateActorPositions()},
  async exportPack(body,save=true){const a=actors.find(a=>a.id===body),data=[];for(const m of catalog.motions)data.push(await dataFor(takeFor(m.id,body),body));return exportClips(a,data,body+'-game-kit.glb',save)},
  async exportCurrent(save=true){const a=active();return exportClips(a,[await dataFor(a.take,a.id)],a.take.id+'-'+a.id+'-in-place.glb',save)},exportChosen,startRecording,stopRecording,loadReview,saveReview};
 requestAnimationFrame(frame);

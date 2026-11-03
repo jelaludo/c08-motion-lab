@@ -19,7 +19,7 @@ def clean(value):
  if isinstance(value,str) and re.match(r'^[A-Z]:[\\/]',value,re.I):return '[local path omitted]'
  return value
 game=DOC/'kimodo-game';gallery=DOC/'kimodo-bipeds';game.mkdir(exist_ok=True);gallery.mkdir(exist_ok=True)
-for name in ['index.html','game.css','game.js','world.js','traversal.js','action-profiles.json','kinematics.js','export.js','controls.html','controls-study.css','controls-study.js','controls-research.json','control-audit.json']:
+for name in ['index.html','game.css','game.js','world.js','traversal.js','contact-actions.js','action-profiles.json','kinematics.js','export.js','controls.html','controls-study.css','controls-study.js','controls-research.json','control-audit.json']:
  shutil.copy2(WEB/'kimodo-game'/name,game/name)
 exporter=read(game/'export.js').replace("import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js';","import {normalizedGLB} from '../shared/normalized-gltf-export.js';").replace('await new GLTFExporter().parseAsync(','await normalizedGLB(')
 write(game/'export.js',exporter)

@@ -1,0 +1,105 @@
+{
+  "schema": "kimodo-game-recording/1",
+  "body": "c08",
+  "ended": "2026-11-03T10:28:59.859Z",
+  "duration_s": 7.7999999999999705,
+  "frames": 157,
+  "events": [
+    {
+      "time": 0,
+      "type": "record-start",
+      "body": "c08"
+    },
+    {
+      "time": 0,
+      "type": "motion",
+      "id": "game-idle-seed411",
+      "body": "c08",
+      "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+    },
+    {
+      "time": 0,
+      "type": "traversal-start",
+      "kind": "ledge",
+      "obstacle": "high ledge platform",
+      "destination": [
+        20,
+        2.65,
+        5.98
+      ]
+    },
+    {
+      "time": 0,
+      "type": "action-start",
+      "id": "game-mantle"
+    },
+    {
+      "time": 0,
+      "type": "motion",
+      "id": "game-mantle-seed411",
+      "body": "c08",
+      "source_sha256": "79d956767210a2269710fb2209889697671bcfe9add3497402e0f35226627c50"
+    },
+    {
+      "time": 2.475000000000035,
+      "type": "traversal-end",
+      "kind": "ledge",
+      "obstacle": "high ledge platform"
+    },
+    {
+      "time": 2.475000000000035,
+      "type": "action-end",
+      "id": "game-mantle"
+    },
+    {
+      "time": 2.5000000000000355,
+      "type": "motion",
+      "id": "game-idle-seed411",
+      "body": "c08",
+      "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+    },
+    {
+      "time": 2.6250000000000373,
+      "type": "motion",
+      "id": "game-walk-forward-seed411",
+      "body": "c08",
+      "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
+    },
+    {
+      "time": 5.675000000000081,
+      "type": "hero-landing",
+      "drop_m": 2.65,
+      "impact_m_s": 7.112250000000005
+    },
+    {
+      "time": 5.675000000000081,
+      "type": "action-start",
+      "id": "game-land-hard"
+    },
+    {
+      "time": 5.675000000000081,
+      "type": "motion",
+      "id": "game-land-hard-seed411",
+      "body": "c08",
+      "source_sha256": "103fd44742ccdf8386cf8bc5501044c64bd680ecb4b62ca17fccdc401d005c6b"
+    },
+    {
+      "time": 7.349999999999996,
+      "type": "action-end",
+      "id": "game-land-hard"
+    },
+    {
+      "time": 7.374999999999995,
+      "type": "motion",
+      "id": "game-idle-seed411",
+      "body": "c08",
+      "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+    }
+  ],
+  "baked": [
+    "controller world translation and rotation",
+    "retargeted skeletal poses",
+    "runtime foot and carrying-hand IK"
+  ],
+  "scope": "Sampled live play session. Review collision, contacts, props and balance before shipping. Prop mesh and its trajectory are not included in this character recording."
+}

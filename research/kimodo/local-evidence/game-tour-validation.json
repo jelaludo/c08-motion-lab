@@ -170,7 +170,7 @@
         ],
         "action": "game-hit-front",
         "stance": "stand",
-        "pending": 1,
+        "pending": 0,
         "time": 79
       },
       {
@@ -219,116 +219,116 @@
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 0.18350000000000002,
+          "time": 0.18320000000000006,
           "type": "motion",
           "id": "game-jog-forward-seed411",
           "body": "c08",
           "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
         },
         {
-          "time": 1.1852999999999994,
+          "time": 1.1836,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 1.3354999999999988,
+          "time": 1.3336999999999992,
           "type": "reset"
         },
         {
-          "time": 1.3354999999999988,
+          "time": 1.3336999999999992,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 1.3854999999999988,
+          "time": 1.3836999999999993,
           "type": "motion",
           "id": "game-walk-forward-seed411",
           "body": "c08",
           "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
         },
         {
-          "time": 6.6354999999999835,
+          "time": 6.633699999999983,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 6.685499999999983,
+          "time": 6.683699999999983,
           "type": "motion",
           "id": "game-jog-forward-seed411",
           "body": "c08",
           "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
         },
         {
-          "time": 11.335500000000026,
+          "time": 11.333700000000025,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 11.385500000000027,
+          "time": 11.383700000000026,
           "type": "motion",
           "id": "game-run-forward-seed411",
           "body": "c08",
           "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
         },
         {
-          "time": 16.935500000000104,
+          "time": 16.933700000000105,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 16.985500000000105,
+          "time": 16.983700000000105,
           "type": "motion",
           "id": "game-sprint-forward-seed411",
           "body": "c08",
           "source_sha256": "93c3b4c2b8b5988723dff3b70172fc0a5f0ec81ae14ac2ec9bb88a8f512b0b77"
         },
         {
-          "time": 21.235500000000165,
+          "time": 21.233700000000166,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 21.285500000000166,
+          "time": 21.283700000000167,
           "type": "motion",
           "id": "game-sprint-forward-seed411",
           "body": "c08",
           "source_sha256": "93c3b4c2b8b5988723dff3b70172fc0a5f0ec81ae14ac2ec9bb88a8f512b0b77"
         },
         {
-          "time": 21.985500000000176,
+          "time": 21.983700000000177,
           "type": "motion",
           "id": "game-run-forward-seed411",
           "body": "c08",
           "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
         },
         {
-          "time": 23.985500000000204,
+          "time": 23.983700000000205,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 24.035500000000205,
+          "time": 24.033700000000206,
           "type": "motion",
           "id": "game-run-forward-seed411",
           "body": "c08",
           "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
         },
         {
-          "time": 27.98550000000026,
+          "time": 27.983700000000262,
           "type": "traversal-start",
           "kind": "vault",
           "obstacle": "medium jump",
@@ -339,89 +339,89 @@
           ]
         },
         {
-          "time": 27.98550000000026,
+          "time": 27.983700000000262,
           "type": "action-start",
           "id": "game-vault"
         },
         {
-          "time": 27.98550000000026,
+          "time": 27.983700000000262,
           "type": "motion",
           "id": "game-vault-seed411",
           "body": "c08",
           "source_sha256": "3adf6260130202843342ee8c0baffe74a3e95ee6410e4f543399fe5e9dee9420"
         },
         {
-          "time": 28.785500000000273,
+          "time": 28.783700000000273,
           "type": "traversal-end",
           "kind": "vault",
           "obstacle": "medium jump"
         },
         {
-          "time": 28.785500000000273,
+          "time": 28.783700000000273,
           "type": "action-end",
           "id": "game-vault"
         },
         {
-          "time": 28.835500000000273,
+          "time": 28.833700000000274,
           "type": "motion",
           "id": "game-run-forward-seed411",
           "body": "c08",
           "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
         },
         {
-          "time": 29.885500000000288,
+          "time": 29.88370000000029,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 29.93550000000029,
+          "time": 29.93370000000029,
           "type": "motion",
           "id": "game-walk-forward-seed411",
           "body": "c08",
           "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
         },
         {
-          "time": 32.13550000000031,
+          "time": 32.13370000000031,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 32.18550000000031,
+          "time": 32.18370000000031,
           "type": "stance",
           "stance": "crouch"
         },
         {
-          "time": 32.18550000000031,
+          "time": 32.18370000000031,
           "type": "motion",
           "id": "game-crouch-forward-seed411",
           "body": "c08",
           "source_sha256": "94e490e20880ee57b852ba0bb4a076090afcf90ffafaec6bec59708230078cfa"
         },
         {
-          "time": 50.98549999999924,
+          "time": 50.98369999999924,
           "type": "stance",
           "stance": "stand"
         },
         {
-          "time": 50.98549999999924,
+          "time": 50.98369999999924,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 51.085499999999236,
+          "time": 51.08369999999923,
           "type": "motion",
           "id": "game-jog-forward-seed411",
           "body": "c08",
           "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
         },
         {
-          "time": 54.23549999999906,
+          "time": 54.233699999999054,
           "type": "traversal-start",
           "kind": "vault",
           "obstacle": "low jump",
@@ -432,233 +432,233 @@
           ]
         },
         {
-          "time": 54.23549999999906,
+          "time": 54.233699999999054,
           "type": "action-start",
           "id": "game-vault"
         },
         {
-          "time": 54.23549999999906,
+          "time": 54.233699999999054,
           "type": "motion",
           "id": "game-vault-seed411",
           "body": "c08",
           "source_sha256": "3adf6260130202843342ee8c0baffe74a3e95ee6410e4f543399fe5e9dee9420"
         },
         {
-          "time": 55.03549999999901,
+          "time": 55.03369999999901,
           "type": "traversal-end",
           "kind": "vault",
           "obstacle": "low jump"
         },
         {
-          "time": 55.03549999999901,
+          "time": 55.03369999999901,
           "type": "action-end",
           "id": "game-vault"
         },
         {
-          "time": 55.08549999999901,
+          "time": 55.083699999999006,
           "type": "motion",
           "id": "game-jog-forward-seed411",
           "body": "c08",
           "source_sha256": "609b5e9de5c7a40fac0bdf377d6802e0fb97dfe05273ed1d2f8c0c833cdfe18e"
         },
         {
-          "time": 56.68549999999892,
+          "time": 56.683699999998915,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 56.735499999998915,
+          "time": 56.73369999999891,
           "type": "motion",
           "id": "game-run-forward-seed411",
           "body": "c08",
           "source_sha256": "4005b3b2b478f3144ee78b456a0a5b35569dc3cacf516145172e74dee66df3b1"
         },
         {
-          "time": 61.285499999998656,
+          "time": 61.28369999999865,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 61.33549999999865,
+          "time": 61.33369999999865,
           "type": "action-start",
           "id": "game-pickup"
         },
         {
-          "time": 61.33549999999865,
+          "time": 61.33369999999865,
           "type": "motion",
           "id": "game-pickup-seed411",
           "body": "c08",
           "source_sha256": "72f79db311a2a789aaa3612c77c7d6f2c3983121d62c53e8fbb0efc489e57f66"
         },
         {
-          "time": 61.93549999999862,
+          "time": 61.933699999998616,
           "type": "action-end",
           "id": "game-pickup"
         },
         {
-          "time": 61.985499999998616,
+          "time": 61.98369999999861,
           "type": "motion",
           "id": "game-carry-idle-seed411",
           "body": "c08",
           "source_sha256": "fd8db5fe6f0d556df51369310efa09e0533057c8346f20342e0a8700e3ae6279"
         },
         {
-          "time": 62.185499999998605,
+          "time": 62.33369999999859,
           "type": "motion",
           "id": "game-carry-forward-seed411",
           "body": "c08",
           "source_sha256": "0ebe850ceb1093d52325b2a835ff17ac04f2f2ddc82d09009bb40d29a4202ae9"
         },
         {
-          "time": 68.58549999999825,
+          "time": 68.58369999999825,
           "type": "motion",
           "id": "game-carry-idle-seed411",
           "body": "c08",
           "source_sha256": "fd8db5fe6f0d556df51369310efa09e0533057c8346f20342e0a8700e3ae6279"
         },
         {
-          "time": 68.63549999999825,
+          "time": 68.63369999999824,
           "type": "action-start",
           "id": "game-putdown"
         },
         {
-          "time": 68.63549999999825,
+          "time": 68.63369999999824,
           "type": "motion",
           "id": "game-putdown-seed411",
           "body": "c08",
           "source_sha256": "42fc919ca907f2c1aeead896c365e5c4710da5796d8f78a0c4dab84aca04698a"
         },
         {
-          "time": 69.18549999999821,
+          "time": 69.18369999999821,
           "type": "action-end",
           "id": "game-putdown"
         },
         {
-          "time": 69.23549999999821,
+          "time": 69.23369999999821,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 69.28549999999821,
+          "time": 69.2836999999982,
           "type": "action-start",
           "id": "game-wave"
         },
         {
-          "time": 69.3854999999982,
+          "time": 69.3836999999982,
           "type": "motion",
           "id": "game-wave-seed411",
           "body": "c08",
           "source_sha256": "a846ccd576cf23fbdc48ba80aec478cd20fad529b50b948503835d887ded66bc"
         },
         {
-          "time": 74.23549999999793,
+          "time": 74.23369999999792,
           "type": "action-end",
           "id": "game-wave"
         },
         {
-          "time": 74.28549999999792,
+          "time": 74.28369999999792,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 74.33549999999792,
+          "time": 74.33369999999792,
           "type": "action-start",
           "id": "game-combo"
         },
         {
-          "time": 74.38549999999792,
+          "time": 74.38369999999792,
           "type": "motion",
           "id": "game-combo-seed411",
           "body": "c08",
           "source_sha256": "4e31e921c77e6354b79400b63bb42bc624d89713fc9c395c815107b1f09db6c7"
         },
         {
-          "time": 80.28549999999758,
+          "time": 80.28369999999758,
           "type": "action-end",
           "id": "game-combo"
         },
         {
-          "time": 80.33549999999758,
+          "time": 80.33369999999758,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 80.38549999999758,
+          "time": 80.38369999999757,
           "type": "action-start",
           "id": "game-hit-front"
         },
         {
-          "time": 80.38549999999758,
+          "time": 80.38369999999757,
           "type": "motion",
           "id": "game-hit-front-seed411",
           "body": "c08",
           "source_sha256": "3139dbe123508c073ca1a2f3cbc626e8d5f627a22b1c4065a2e116e84f6e43df"
         },
         {
-          "time": 85.3354999999973,
+          "time": 85.3336999999973,
           "type": "action-end",
           "id": "game-hit-front"
         },
         {
-          "time": 85.3854999999973,
+          "time": 85.38369999999729,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         },
         {
-          "time": 85.43549999999729,
+          "time": 85.43369999999729,
           "type": "action-start",
           "id": "game-knockdown"
         },
         {
-          "time": 85.83549999999727,
+          "time": 85.73369999999727,
           "type": "motion",
           "id": "game-knockdown-seed411",
           "body": "c08",
           "source_sha256": "db7bd899d4356174719903859de1856ca543e8f3ae1181f3f1b8ee17ee58de3c"
         },
         {
-          "time": 91.38549999999695,
+          "time": 91.38369999999695,
           "type": "action-end",
           "id": "game-knockdown"
         },
         {
-          "time": 91.48549999999695,
+          "time": 91.48369999999694,
           "type": "action-start",
           "id": "game-getup-back"
         },
         {
-          "time": 91.98549999999692,
+          "time": 91.88369999999692,
           "type": "motion",
           "id": "game-getup-back-seed411",
           "body": "c08",
           "source_sha256": "771dc4da71bb576945f61de1eede7cae6e16fefc907561d21d3eec7d0f530e35"
         },
         {
-          "time": 97.43549999999661,
+          "time": 97.4336999999966,
           "type": "action-end",
           "id": "game-getup-back"
         },
         {
-          "time": 97.4854999999966,
+          "time": 97.4836999999966,
           "type": "motion",
           "id": "game-idle-seed411",
           "body": "c08",
           "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
         }
       ],
-      "reach": 0.07756760448028865,
+      "reach": 0.1271661122161054,
       "length": 1.9887007374208565e-08,
       "p": [
         -8.566666748320614,

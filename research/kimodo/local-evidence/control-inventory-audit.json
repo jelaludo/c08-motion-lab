@@ -119,7 +119,7 @@
         "id": "jump",
         "priority": "P0",
         "name": "Reusable airborne / fall / landing states",
-        "status": "Jump arc and step-off gravity wired; reusable fall poses partial",
+        "status": "Jump/fall and high-drop superhero contact layer wired; fall pose library partial",
         "existing": [
           "game-jump-standing",
           "game-jump-walk",
@@ -232,7 +232,7 @@
         "id": "cover",
         "priority": "P1",
         "name": "Cover and contextual traversal",
-        "status": "Space-triggered vault/mantle paths wired; contact quality remains a probe",
+        "status": "Low vault/mantle and high ledge-grab/pull-up wired; contact quality needs review",
         "existing": [
           "game-vault",
           "game-mantle",
@@ -246,7 +246,7 @@
           "Low/high vault and mantle variants",
           "Contact markers / ledge-height adaptation"
         ],
-        "work": "Explicit surface tags, facing/height/range tests, free destination checks, collision-limited authored trajectories and independent fall gravity are implemented. Exact hand/foot attachment and height-specific clips remain open.",
+        "work": "Explicit range/height/landing checks; high ledges add jump/catch/hang/pull-up/top-out with hand locks. Authored contact layers over generated sources, not a learned physical climbing policy. Ladders and cover remain open.",
         "test": "Same action at several real obstacle heights with hands and feet staying attached. A text-prompt vault is not validated contact traversal."
       },
       {
@@ -304,7 +304,7 @@
         "test": "Add only after the level and game design need that mechanic; do not copy every feature from all five games into one controller."
       }
     ],
-    "runtime_source_sha256": "bb02c66789e56bb0ecda16baed085b8167a36303556bfb0125e960e36f771165",
+    "runtime_source_sha256": "e840d609d65f7286f7118cb0c95848d96bb2bd46d1dcd8068dc9af8907424739",
     "scope": "Static inventory/code audit. Existing candidate IDs do not establish accepted motion quality or completed game states.",
     "earlier_lab_take_count": 90,
     "prior_lab_sources": {

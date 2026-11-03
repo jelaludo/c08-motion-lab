@@ -1,0 +1,443 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/kimodo-game/?controls=hybrid",
+  "checks": [
+    {
+      "body": "c08",
+      "hang": {
+        "p": [
+          20,
+          0.8029105445318376,
+          5.19
+        ],
+        "flight": "ledge",
+        "action": "ledge",
+        "elapsed": 0.7000000000000003,
+        "diagnostics": {
+          "c08": {
+            "kind": "ledge",
+            "weight": 1,
+            "handWeight": 1,
+            "length": 3.0454214317021666e-8,
+            "handError": 3.128248915637975e-8
+          },
+          "brek43": {
+            "kind": "ledge",
+            "weight": 1,
+            "handWeight": 1,
+            "length": 1.0382690041055298e-8,
+            "handError": 1.4960614845330272e-8
+          }
+        },
+        "events": [
+          {
+            "time": 0,
+            "type": "motion",
+            "id": "game-idle-seed411",
+            "body": "c08",
+            "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          },
+          {
+            "time": 0.05,
+            "type": "reset"
+          },
+          {
+            "time": 0.05,
+            "type": "motion",
+            "id": "game-idle-seed411",
+            "body": "c08",
+            "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          },
+          {
+            "time": 0.05,
+            "type": "traversal-start",
+            "kind": "ledge",
+            "obstacle": "high ledge platform",
+            "destination": [
+              20,
+              2.65,
+              5.98
+            ]
+          },
+          {
+            "time": 0.05,
+            "type": "action-start",
+            "id": "game-mantle"
+          },
+          {
+            "time": 0.05,
+            "type": "motion",
+            "id": "game-mantle-seed411",
+            "body": "c08",
+            "source_sha256": "79d956767210a2269710fb2209889697671bcfe9add3497402e0f35226627c50"
+          }
+        ]
+      },
+      "top": {
+        "p": [
+          20,
+          2.65,
+          5.98
+        ],
+        "diagnostics": {
+          "c08": {
+            "kind": "ledge",
+            "weight": 0,
+            "handWeight": 0,
+            "length": 0,
+            "handError": 0
+          },
+          "brek43": {
+            "kind": "ledge",
+            "weight": 0,
+            "handWeight": 0,
+            "length": 0,
+            "handError": 0
+          }
+        },
+        "events": [
+          {
+            "time": 0.05,
+            "type": "traversal-start",
+            "kind": "ledge",
+            "obstacle": "high ledge platform",
+            "destination": [
+              20,
+              2.65,
+              5.98
+            ]
+          },
+          {
+            "time": 0.05,
+            "type": "action-start",
+            "id": "game-mantle"
+          },
+          {
+            "time": 0.05,
+            "type": "motion",
+            "id": "game-mantle-seed411",
+            "body": "c08",
+            "source_sha256": "79d956767210a2269710fb2209889697671bcfe9add3497402e0f35226627c50"
+          },
+          {
+            "time": 2.524999999999995,
+            "type": "traversal-end",
+            "kind": "ledge",
+            "obstacle": "high ledge platform"
+          },
+          {
+            "time": 2.524999999999995,
+            "type": "action-end",
+            "id": "game-mantle"
+          },
+          {
+            "time": 2.549999999999995,
+            "type": "motion",
+            "id": "game-idle-seed411",
+            "body": "c08",
+            "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          }
+        ]
+      },
+      "hero": {
+        "p": [
+          20,
+          0,
+          9.651151694584687
+        ],
+        "action": "hero-land",
+        "elapsed": 0.3,
+        "diagnostics": {
+          "c08": {
+            "kind": "hero-land",
+            "weight": 1,
+            "kneeError": 2.7577367830154345e-15,
+            "fistError": 4.3686304532195164e-8,
+            "length": 2.41928885813536e-8,
+            "reach": 0
+          },
+          "brek43": {
+            "kind": "hero-land",
+            "weight": 1,
+            "kneeError": 2.1194423607447825e-8,
+            "fistError": 8.269536076677724e-9,
+            "length": 8.677945917412444e-9,
+            "reach": 0
+          }
+        },
+        "events": [
+          {
+            "time": 2.524999999999995,
+            "type": "action-end",
+            "id": "game-mantle"
+          },
+          {
+            "time": 2.549999999999995,
+            "type": "motion",
+            "id": "game-idle-seed411",
+            "body": "c08",
+            "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          },
+          {
+            "time": 2.6749999999999945,
+            "type": "motion",
+            "id": "game-walk-forward-seed411",
+            "body": "c08",
+            "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
+          },
+          {
+            "time": 3.97499999999999,
+            "type": "hero-landing",
+            "drop_m": 2.65,
+            "impact_m_s": 7.112250000000005
+          },
+          {
+            "time": 3.97499999999999,
+            "type": "action-start",
+            "id": "game-land-hard"
+          },
+          {
+            "time": 3.97499999999999,
+            "type": "motion",
+            "id": "game-land-hard-seed411",
+            "body": "c08",
+            "source_sha256": "103fd44742ccdf8386cf8bc5501044c64bd680ecb4b62ca17fccdc401d005c6b"
+          }
+        ]
+      },
+      "surface": {
+        "handMin": 0.008847128747552335,
+        "kneeMin": 0.005622823103409391,
+        "elbowRise": 0.2741269652504741
+      },
+      "headStep": 0.040763011668335736
+    },
+    {
+      "body": "c08",
+      "recorded": true,
+      "gltf_errors": 0,
+      "gltf_warnings": 0,
+      "bytes": 1553160,
+      "events": 14
+    },
+    {
+      "body": "brek43",
+      "hang": {
+        "p": [
+          20,
+          0.8029105445318376,
+          5.19
+        ],
+        "flight": "ledge",
+        "action": "ledge",
+        "elapsed": 0.7000000000000003,
+        "diagnostics": {
+          "c08": {
+            "kind": "ledge",
+            "weight": 1,
+            "handWeight": 1,
+            "length": 3.0454214317021666e-8,
+            "handError": 3.128248915637975e-8
+          },
+          "brek43": {
+            "kind": "ledge",
+            "weight": 1,
+            "handWeight": 1,
+            "length": 1.0382690041055298e-8,
+            "handError": 1.4960614845330272e-8
+          }
+        },
+        "events": [
+          {
+            "time": 18.97499999999999,
+            "type": "motion",
+            "id": "game-idle-seed411",
+            "body": "c08",
+            "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          },
+          {
+            "time": 19.17499999999998,
+            "type": "reset"
+          },
+          {
+            "time": 19.17499999999998,
+            "type": "motion",
+            "id": "game-idle-seed411",
+            "body": "brek43",
+            "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          },
+          {
+            "time": 19.17499999999998,
+            "type": "traversal-start",
+            "kind": "ledge",
+            "obstacle": "high ledge platform",
+            "destination": [
+              20,
+              2.65,
+              5.98
+            ]
+          },
+          {
+            "time": 19.17499999999998,
+            "type": "action-start",
+            "id": "game-mantle"
+          },
+          {
+            "time": 19.17499999999998,
+            "type": "motion",
+            "id": "game-mantle-seed411",
+            "body": "brek43",
+            "source_sha256": "79d956767210a2269710fb2209889697671bcfe9add3497402e0f35226627c50"
+          }
+        ]
+      },
+      "top": {
+        "p": [
+          20,
+          2.65,
+          5.98
+        ],
+        "diagnostics": {
+          "c08": {
+            "kind": "ledge",
+            "weight": 0,
+            "handWeight": 0,
+            "length": 0,
+            "handError": 0
+          },
+          "brek43": {
+            "kind": "ledge",
+            "weight": 0,
+            "handWeight": 0,
+            "length": 0,
+            "handError": 0
+          }
+        },
+        "events": [
+          {
+            "time": 19.17499999999998,
+            "type": "traversal-start",
+            "kind": "ledge",
+            "obstacle": "high ledge platform",
+            "destination": [
+              20,
+              2.65,
+              5.98
+            ]
+          },
+          {
+            "time": 19.17499999999998,
+            "type": "action-start",
+            "id": "game-mantle"
+          },
+          {
+            "time": 19.17499999999998,
+            "type": "motion",
+            "id": "game-mantle-seed411",
+            "body": "brek43",
+            "source_sha256": "79d956767210a2269710fb2209889697671bcfe9add3497402e0f35226627c50"
+          },
+          {
+            "time": 21.64999999999984,
+            "type": "traversal-end",
+            "kind": "ledge",
+            "obstacle": "high ledge platform"
+          },
+          {
+            "time": 21.64999999999984,
+            "type": "action-end",
+            "id": "game-mantle"
+          },
+          {
+            "time": 21.674999999999837,
+            "type": "motion",
+            "id": "game-idle-seed411",
+            "body": "brek43",
+            "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          }
+        ]
+      },
+      "hero": {
+        "p": [
+          20,
+          0,
+          9.651151694584687
+        ],
+        "action": "hero-land",
+        "elapsed": 0.3,
+        "diagnostics": {
+          "c08": {
+            "kind": "hero-land",
+            "weight": 1,
+            "kneeError": 2.7577367830154345e-15,
+            "fistError": 4.3686304532195164e-8,
+            "length": 2.41928885813536e-8,
+            "reach": 0
+          },
+          "brek43": {
+            "kind": "hero-land",
+            "weight": 1,
+            "kneeError": 2.1194423607447825e-8,
+            "fistError": 8.269536076677724e-9,
+            "length": 8.677945917412444e-9,
+            "reach": 0
+          }
+        },
+        "events": [
+          {
+            "time": 21.64999999999984,
+            "type": "action-end",
+            "id": "game-mantle"
+          },
+          {
+            "time": 21.674999999999837,
+            "type": "motion",
+            "id": "game-idle-seed411",
+            "body": "brek43",
+            "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+          },
+          {
+            "time": 21.79999999999983,
+            "type": "motion",
+            "id": "game-walk-forward-seed411",
+            "body": "brek43",
+            "source_sha256": "8f85f4603284eb618ea4d566f34cc03916da4048cd85d2220b5f4101ae4993d8"
+          },
+          {
+            "time": 23.099999999999756,
+            "type": "hero-landing",
+            "drop_m": 2.65,
+            "impact_m_s": 7.112250000000005
+          },
+          {
+            "time": 23.099999999999756,
+            "type": "action-start",
+            "id": "game-land-hard"
+          },
+          {
+            "time": 23.099999999999756,
+            "type": "motion",
+            "id": "game-land-hard-seed411",
+            "body": "brek43",
+            "source_sha256": "103fd44742ccdf8386cf8bc5501044c64bd680ecb4b62ca17fccdc401d005c6b"
+          }
+        ]
+      },
+      "surface": {
+        "handMin": -0.005539685663961458,
+        "kneeMin": 0.01641803764465269,
+        "elbowRise": 0.18943525858220267
+      },
+      "headStep": 0.03126221778243998
+    },
+    {
+      "body": "brek43",
+      "recorded": true,
+      "gltf_errors": 0,
+      "gltf_warnings": 0,
+      "bytes": 1922484,
+      "events": 14
+    }
+  ],
+  "errors": []
+}

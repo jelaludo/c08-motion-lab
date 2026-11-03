@@ -3,14 +3,15 @@ export const point=b=>b.getWorldPosition(new T.Vector3());
 const rotation=b=>b.getWorldQuaternion(new T.Quaternion());
 function worldQ(b,q){b.quaternion.copy(rotation(b.parent).invert().multiply(q)).normalize();b.updateWorldMatrix(false,true)}
 function aim(b,child,goal){const p=point(b),from=point(child).sub(p).normalize(),to=goal.clone().sub(p).normalize();worldQ(b,new T.Quaternion().setFromUnitVectors(from,to).multiply(rotation(b)))}
-export function solveChain(a,b,c,goal,endRotation){
+export function solveChain(a,b,c,goal,endRotation,poleGoal){
  const h=point(a),k=point(b),end=point(c),l1=h.distanceTo(k),l2=k.distanceTo(end),ray=goal.clone().sub(h),distance=ray.length();
  const d=T.MathUtils.clamp(distance,Math.abs(l1-l2)+1e-5,l1+l2-1e-5);ray.normalize();
- let pole=k.clone().sub(h);pole.addScaledVector(ray,-pole.dot(ray));if(pole.lengthSq()<1e-9){pole.set(0,0,1).addScaledVector(ray,-ray.z);if(pole.lengthSq()<1e-9)pole.set(1,0,0)}pole.normalize();
+ let pole=(poleGoal||k).clone().sub(h);pole.addScaledVector(ray,-pole.dot(ray));if(pole.lengthSq()<1e-9){pole.set(0,0,1).addScaledVector(ray,-ray.z);if(pole.lengthSq()<1e-9)pole.set(1,0,0)}pole.normalize();
  const x=(l1*l1-l2*l2+d*d)/(2*d),y=Math.sqrt(Math.max(0,l1*l1-x*x));
  aim(a,b,h.clone().addScaledVector(ray,x).addScaledVector(pole,y));aim(b,c,h.clone().addScaledVector(ray,d));if(endRotation)worldQ(c,endRotation);
  return {reach:Math.abs(distance-d),length:Math.max(Math.abs(point(a).distanceTo(point(b))-l1),Math.abs(point(b).distanceTo(point(c))-l2))};
 }
+export {worldQ as setWorldRotation};
 export function groundFeet(actor,contacts,enabled,dt,ground=0){
  const diagnostics={reach:0,length:0};actor.asset.updateMatrixWorld(true);
  for(let side=0;side<2;side++){

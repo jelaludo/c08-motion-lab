@@ -2,17 +2,19 @@
   "schema": "responsive-game-controller/1",
   "date": "2026-11-03",
   "files": {
-    "game.js": "a19eacf187e62974cfeac06d1796e1b10c9d3ae5c5554637798e29d7e039bec7",
-    "world.js": "afb1b33dd2b2f5fff5cbe05a7356f7c25aad6b0a9b3a2effa6d219b6f5938b32",
-    "traversal.js": "4fff2606c3487ca2546d2c87702562a83e7688a745fb1c838b48c2ec5d79dd21",
-    "kinematics.js": "3bd56d2720cfe798350ef2866428d66793cfd19d957302045a467c596eb744dc",
+    "game.js": "a9089a19669154d54449d925ac56d179a58ff69a54dafc3184170f564599f954",
+    "world.js": "f16ea6d3d4ac79f955350081a4b2398fbdda4058c41b8d06f7cd0ef9eb45541e",
+    "traversal.js": "ebdba22c791e1df20d012ec6120a34eabbe502d03cd38613f72bb4cf4af4decd",
+    "kinematics.js": "d074662b2d899ccc78df6a7e6eda975a12cedb3087d4f730e3e394df7e1c7133",
     "action-profiles.json": "1dd6ac0b7c03ae0f04e1580da78e37a5614733b2d9a8e053f0d2a4bb0c68df27",
-    "index.html": "e8bfc6d8add68e018f7a1d159b426848487fef8d06be73cdeb4e0e7cb99847e8"
+    "index.html": "fa3cd40feaa676dc42fc569912cec3a9772b157a1a5f05d9b9e232affc0da66f",
+    "contact-actions.js": "af1e6d1a8f6208beba74a6c4f9c2f51605afdff6cf32cfb04964f09a21cfd7e0"
   },
   "original_motion_assets": "Unchanged; no clips, model meshes or default 94-clip packs regenerated.",
   "scope": "Short source windows, latest-action cancellation, independent flight, immediate crouch/double-C seiza and explicitly tagged vault/mantle prototypes. Technical checks do not establish visual acceptance or exact support contact.",
   "qa": "responsive-controls-validation.json",
   "entry": "../../docs/dev-log/#responsive-controls",
   "hash_scope": "UTF-8 text with LF newlines (Git blob bytes)",
-  "browser_modifier_policy": "Ctrl/Meta bypass keyboard gameplay and clear held input, except explicit Ctrl+Space high jump; crouch is plain C."
+  "browser_modifier_policy": "Ctrl/Meta bypass keyboard gameplay and clear held input, except explicit Ctrl+Space high jump; crouch is plain C.",
+  "contact_action_recipe": "contact-actions.json"
 }

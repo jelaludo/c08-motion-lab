@@ -84,11 +84,35 @@
     "flight": "independent of animation action",
     "traversal": "explicit tags, range/facing/height and free destination; authored collision-checked path; exact contact IK remains open"
   },
+  "contact_actions": {
+    "ledge": {
+      "threshold_height_m": 1.9,
+      "max_height_m": 2.85,
+      "duration_s": 2.45,
+      "phases": [
+        "load",
+        "jump",
+        "catch",
+        "hang",
+        "pull-up",
+        "top-out"
+      ]
+    },
+    "hero_landing": {
+      "min_drop_m": 1.6,
+      "min_impact_m_s": 4.5,
+      "duration_s": 1.65,
+      "pose": "right knee / left fist down; right elbow up"
+    },
+    "method": "Authored contact poses over existing generated sources, not new Kimodo inference",
+    "recording": "Save take bakes these layers; original source clips and 94-clip packs do not."
+  },
   "loop_policy": "Phase-searched interior window plus overlap crossfade. Position/quaternion endpoints match. Review velocity, contacts and balance separately.",
   "jump_policy": "Anticipation / airborne / landing source windows; controller supplies jump height and airtime. Jump source airborne root arc removed in game clip to avoid double height.",
   "runtime_not_in_default_pack": [
     "World movement and collision controller",
     "Foot and carrying hand IK",
+    "Authored ledge and superhero pose layers",
     "Inter-clip blends",
     "Prop transform"
   ],

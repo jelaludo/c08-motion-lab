@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/kimodo-game/?controls=hybrid",
+  "checked": "2026-11-03T10:30:41.669Z",
+  "scope": "Actual Ctrl+C/C/CC/Space/Ctrl+Space; synthetic Ctrl/Meta shortcut events for browser commands with disruptive native effects.",
+  "checks": [
+    {
+      "profile": "hybrid",
+      "body": "c08",
+      "synthetic_browser_shortcuts": 20,
+      "actual_copy_does_not_crouch": true,
+      "plain_c_and_cc": true,
+      "normal_crouch_jump": true,
+      "explicit_ctrl_space_high_jump": true,
+      "held_input_cleared": true
+    },
+    {
+      "profile": "hybrid",
+      "body": "brek43",
+      "synthetic_browser_shortcuts": 20,
+      "actual_copy_does_not_crouch": true,
+      "plain_c_and_cc": true,
+      "normal_crouch_jump": true,
+      "explicit_ctrl_space_high_jump": true,
+      "held_input_cleared": true
+    },
+    {
+      "profile": "lab",
+      "body": "c08",
+      "synthetic_browser_shortcuts": 20,
+      "actual_copy_does_not_crouch": true,
+      "plain_c_and_cc": true,
+      "normal_crouch_jump": true,
+      "explicit_ctrl_space_high_jump": true,
+      "held_input_cleared": true
+    },
+    {
+      "profile": "lab",
+      "body": "brek43",
+      "synthetic_browser_shortcuts": 20,
+      "actual_copy_does_not_crouch": true,
+      "plain_c_and_cc": true,
+      "normal_crouch_jump": true,
+      "explicit_ctrl_space_high_jump": true,
+      "held_input_cleared": true
+    }
+  ],
+  "errors": []
+}
