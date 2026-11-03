@@ -36,7 +36,7 @@ for take,m in meta.items():
   file=R/'web/kimodo-game/clips'/f'{take}-{body}.json'
   profiles[f'{take}:{body}']={'start':start/30,'end':end/30,'peak':peak/30,'duration':duration,'clip_sha256':hashlib.sha256(file.read_bytes()).hexdigest()}
 out={'schema':'responsive-action-windows/1','recipe':1,'scope':'Source motion is unchanged. Controller samples these diagnostic active windows at authored game durations. These windows are candidates, not combat-technique or physical-contact certification.','profiles':profiles}
-(R/'tools/game/action-profiles.json').write_text(json.dumps(out,indent=2),encoding='utf-8')
+(R/'tools/game/action-profiles.json').write_text(json.dumps(out,indent=2),encoding='utf-8',newline='\n')
 print('Profiled',len(profiles),'body/take windows')
 for k,v in profiles.items():
  if k.endswith('seed411:c08'):print(k,{x:v[x] for x in ['start','peak','end','duration']})

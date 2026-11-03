@@ -1,9 +1,9 @@
 {
   "schema": "responsive-controls-qa/1",
   "status": "passed",
-  "url": "http://127.0.0.1:8803/docs/kimodo-game/?controls=hybrid",
-  "staged": true,
-  "checked": "2026-11-03T01:29:09.485Z",
+  "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/?controls=hybrid",
+  "staged": false,
+  "checked": "2026-11-03T01:32:40.834Z",
   "checks": [
     {
       "name": "c08 Alt immediately yields to Space and movement",
@@ -17,7 +17,7 @@
         0,
         0
       ],
-      "motion": "game-jump-standing",
+      "motion": "game-idle",
       "actor_facing_preserved": true
     },
     {

@@ -1,7 +1,7 @@
 {
   "status": "verified_live",
-  "verified_content_commit": "9b704d3df00777772438d1770b62124abf323110",
-  "pages_run": 41475984876,
+  "verified_content_commit": "26f0eebc326d41b7fe87e5aec716758e0d37bfb6",
+  "pages_run": 41560105884,
   "pages_run_conclusion": "success",
   "public_site": "https://jelaludo.github.io/c08-motion-lab/",
   "dev_log": "https://jelaludo.github.io/c08-motion-lab/dev-log/",
@@ -16,7 +16,18 @@
   "source_download_gltf_errors": 0,
   "source_download_gltf_warnings": 0,
   "mesh_fighter_attribution_retained": true,
-  "dev_log_entries": 31,
-  "doc_words": 11141,
-  "scope": "Live recorded playback/controller/export verification. Physical balance, ground/seat/traversal contacts and consuming-engine acceptance remain open."
+  "dev_log_entries": 32,
+  "doc_words": 11819,
+  "scope": "Live recorded playback/controller/export verification. Physical balance, ground/seat/traversal contacts and consuming-engine acceptance remain open.",
+  "responsive_control_groups": 14,
+  "responsive_controls": "responsive-controls-validation.json",
+  "controller_live_sha256": {
+    "game.js": "9753a66c3935197573c0d579bbabd783cf3f8e97313c4bd7de5683627f1e362a",
+    "world.js": "afb1b33dd2b2f5fff5cbe05a7356f7c25aad6b0a9b3a2effa6d219b6f5938b32",
+    "traversal.js": "4fff2606c3487ca2546d2c87702562a83e7688a745fb1c838b48c2ec5d79dd21",
+    "kinematics.js": "3bd56d2720cfe798350ef2866428d66793cfd19d957302045a467c596eb744dc",
+    "action-profiles.json": "1dd6ac0b7c03ae0f04e1580da78e37a5614733b2d9a8e053f0d2a4bb0c68df27",
+    "index.html": "9cf6733615a1bdce883b8a6d19ce844496a862f5d8f18e9bc0d5dff1b3f51c5e"
+  },
+  "verified_at": "2026-11-03T01:34:28.745179+00:00"
 }
