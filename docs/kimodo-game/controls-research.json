@@ -294,7 +294,7 @@
       "action": "Crouch / prone",
       "input": "C / quick C C / Z",
       "live": "Implemented",
-      "detail": "Single C immediately enters crouch locomotion; C C within 300 ms selects static kneeling/seiza. Movement leaves seiza into crouch. Space jumps from either with a headroom check. Prone support contacts and hold-crouch remain incomplete."
+      "detail": "Single C immediately enters crouch locomotion; C C within 300 ms selects static kneeling/seiza. Movement leaves seiza into crouch. Space jumps from either with a headroom check. Prone support contacts and hold-crouch remain incomplete. C is unmodified: Ctrl+C and other Ctrl/Command browser shortcuts bypass gameplay. Ctrl+Space is the explicit high-jump exception."
     },
     {
       "action": "Context interaction",
