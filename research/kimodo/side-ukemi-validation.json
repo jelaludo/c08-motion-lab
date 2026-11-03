@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "url": "http://127.0.0.1:8790/public/c08-motion-lab/docs/kimodo-game/?controls=hybrid",
+  "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/?controls=hybrid",
   "checks": [
     {
       "body": "c08",
@@ -11,12 +11,12 @@
         6633
       ],
       "draws": [
-        6633,
         5522,
         4411,
-        5522,
         6633,
-        4411
+        4411,
+        6633,
+        5522
       ],
       "compared_seeds_synced": true
     },
@@ -111,8 +111,8 @@
       "selected": {
         "kind": "side-left",
         "id": "game-ukemi-side-left",
-        "seed": 5522,
-        "take": "game-ukemi-side-left-seed5522",
+        "seed": 4411,
+        "take": "game-ukemi-side-left-seed4411",
         "duration": 3.6,
         "start": [
           -30,
@@ -131,11 +131,11 @@
         ]
       },
       "middle": {
-        "take": "game-ukemi-side-left-seed5522",
-        "seed": 5522,
+        "take": "game-ukemi-side-left-seed4411",
+        "seed": 4411,
         "clear": true,
         "old_brace": false,
-        "length": 5.6201306941616735e-9
+        "length": 8.7500707790511e-9
       },
       "end": {
         "p": [
@@ -289,7 +289,7 @@
         "seed": 6633,
         "clear": true,
         "old_brace": false,
-        "length": 9.910033738069757e-9
+        "length": 9.94022725242516e-9
       },
       "end": {
         "p": [
@@ -306,8 +306,8 @@
       "selected": {
         "kind": "side-right",
         "id": "game-ukemi-side-right",
-        "seed": 5522,
-        "take": "game-ukemi-side-right-seed5522",
+        "seed": 4411,
+        "take": "game-ukemi-side-right-seed4411",
         "duration": 3.6,
         "start": [
           -17,
@@ -340,12 +340,12 @@
         6633
       ],
       "draws": [
+        5522,
         6633,
         4411,
         5522,
-        6633,
-        5522,
-        4411
+        4411,
+        6633
       ],
       "compared_seeds_synced": true
     },
@@ -440,8 +440,8 @@
       "selected": {
         "kind": "side-left",
         "id": "game-ukemi-side-left",
-        "seed": 6633,
-        "take": "game-ukemi-side-left-seed6633",
+        "seed": 5522,
+        "take": "game-ukemi-side-left-seed5522",
         "duration": 3.6,
         "start": [
           -30,
@@ -460,11 +460,11 @@
         ]
       },
       "middle": {
-        "take": "game-ukemi-side-left-seed6633",
-        "seed": 6633,
+        "take": "game-ukemi-side-left-seed5522",
+        "seed": 5522,
         "clear": true,
         "old_brace": false,
-        "length": 1.157210138824638e-8
+        "length": 1.1511319397694564e-8
       },
       "end": {
         "p": [
@@ -479,7 +479,7 @@
       "body": "brek43",
       "recording": {
         "file": "brek43-side-ukemi.glb",
-        "bytes": 1880932,
+        "bytes": 1880940,
         "gltf_errors": 0,
         "gltf_warnings": 0,
         "seed_trace": true
@@ -494,9 +494,9 @@
         6633
       ],
       "draws": [
-        6633,
         4411,
         5522,
+        6633,
         4411,
         5522,
         6633
@@ -594,8 +594,8 @@
       "selected": {
         "kind": "side-right",
         "id": "game-ukemi-side-right",
-        "seed": 4411,
-        "take": "game-ukemi-side-right-seed4411",
+        "seed": 5522,
+        "take": "game-ukemi-side-right-seed5522",
         "duration": 3.6,
         "start": [
           -30,
@@ -614,11 +614,11 @@
         ]
       },
       "middle": {
-        "take": "game-ukemi-side-right-seed4411",
-        "seed": 4411,
+        "take": "game-ukemi-side-right-seed5522",
+        "seed": 5522,
         "clear": true,
         "old_brace": false,
-        "length": 1.157210138824638e-8
+        "length": 1.1511319397694564e-8
       },
       "end": {
         "p": [
@@ -635,8 +635,8 @@
       "selected": {
         "kind": "side-right",
         "id": "game-ukemi-side-right",
-        "seed": 5522,
-        "take": "game-ukemi-side-right-seed5522",
+        "seed": 4411,
+        "take": "game-ukemi-side-right-seed4411",
         "duration": 3.6,
         "start": [
           -17,

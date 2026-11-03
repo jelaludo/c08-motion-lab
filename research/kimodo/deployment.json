@@ -38,7 +38,7 @@
     "body_preset_groups": 4,
     "policy": "Ctrl/Meta browser shortcuts bypass gameplay; explicit Ctrl+Space high jump retained. Plain C/CC crouch/seiza."
   },
-  "latest_content_commit": "da4eafaf04a2c181c23de31aef9e8ed396f8cd61",
+  "latest_content_commit": "d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1",
   "contact_action_followup": {
     "verified_content_commit": "4772e8397e2563fdd10e2e2e63e522cd20238b55",
     "pages_run": 41621078230,
@@ -195,5 +195,80 @@
     "dev_log_entries": 34,
     "dev_log_words": 13471,
     "scope": "Live hosted playback, modifier-key control boundaries, pooled take choices, directional collisions, selected support skin, source parity and GLB export checks. Animation naturalness, sprint gliding and complete body/environment contact still require reviewer acceptance."
+  },
+  "side_ukemi_followup": {
+    "status": "passed",
+    "verified_content_commit": "d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1",
+    "pages_run": 41730801022,
+    "pages_run_conclusion": "success",
+    "verified_at": "2026-11-03T22:30:32.599223+00:00",
+    "live_files": [
+      {
+        "file": "game.js",
+        "sha256": "c7da9b6cfd3df33a7a8a0e8e3f418f82f007ecddd8499171a60772f1fe0b4eff",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/game.js?verified=d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1",
+        "verified": true,
+        "bytes": 54832
+      },
+      {
+        "file": "breakfalls.js",
+        "sha256": "d801dc7c61b2d9fe9afe6d0237fec952e62f1773ad25fe4209384fbdd772373a",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/breakfalls.js?verified=d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1",
+        "verified": true,
+        "bytes": 3124
+      },
+      {
+        "file": "index.html",
+        "sha256": "ff48e4b44da67b7cb4d9cdb8956a8b10cfc5faeb03e07111b3faa4b0d8aab49c",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/index.html?verified=d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1",
+        "verified": true,
+        "bytes": 13780
+      },
+      {
+        "file": "packs/game-state-machine.json",
+        "sha256": "92209c5b47055b8dd2fc593be9748b88e25a0ceda912f80f7a1a229c91d257dc",
+        "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/packs/game-state-machine.json?verified=d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1",
+        "verified": true,
+        "bytes": 220615
+      },
+      {
+        "file": "side-ukemi-takes/c08-side-ukemi.glb",
+        "sha256": "62031dfbf4ea5853c8ca044518e03ce082d213f5692b2a32394990d1558aac39",
+        "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1/research/kimodo/side-ukemi-takes/c08-side-ukemi.glb",
+        "verified": true,
+        "bytes": 1516872
+      },
+      {
+        "file": "side-ukemi-takes/c08-side-ukemi.json",
+        "sha256": "f8c5fa2830187921956c0dd98ff3c6c0ae1940a6f1868a49ffffe00d5c414afc",
+        "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1/research/kimodo/side-ukemi-takes/c08-side-ukemi.json",
+        "verified": true,
+        "bytes": 3448
+      },
+      {
+        "file": "side-ukemi-takes/brek43-side-ukemi.glb",
+        "sha256": "b8758e7173a471d30f9327775ed3bcf03c2feac51e6843732823f7960c7f2d9e",
+        "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1/research/kimodo/side-ukemi-takes/brek43-side-ukemi.glb",
+        "verified": true,
+        "bytes": 1880944
+      },
+      {
+        "file": "side-ukemi-takes/brek43-side-ukemi.json",
+        "sha256": "0f770ce6437ca3aeadbc4423418a56fa81e63f2bd29527437df53f2f0c9964c6",
+        "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1/research/kimodo/side-ukemi-takes/brek43-side-ukemi.json",
+        "verified": true,
+        "bytes": 3457
+      }
+    ],
+    "live_browser_reports": [
+      "side-ukemi-validation.json",
+      "public-playback-validation.json"
+    ],
+    "dev_log_entries": 35,
+    "dev_log_words": 13956,
+    "source_roundtrip_clips": 768,
+    "game_clips": 408,
+    "side_reaction_checks": 26,
+    "scope": "Live hosted lateral roll variants, shared seeds, low/tall collision routes, committed fall/recovery interrupts, endpoint stance, source parity and zero-error GLB exports. Visual naturalness, complete mesh/environment collision and martial-arts technique remain reviewer assessments."
   }
 }
