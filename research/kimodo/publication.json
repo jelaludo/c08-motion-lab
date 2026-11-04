@@ -36,5 +36,22 @@
       "Private human reference videos",
       "Third-party manuals and game screenshots"
     ]
+  },
+  "live_verification": {
+    "status": "passed",
+    "verified_content_commit": "f296f91084c2bc90a4dea95106a7742c441b295c",
+    "pages_run": 41748373304,
+    "pages_run_conclusion": "success",
+    "verified_at": "2026-11-04T00:41:45.012218+00:00",
+    "live_browser_reports": [
+      "planted-side-trip-validation.json",
+      "planted-side-source-regression.json"
+    ],
+    "dev_log_entries": 36,
+    "dev_log_words": 14550,
+    "planted_contact_checks": 20,
+    "side_source_and_recovery_checks": 26,
+    "source_playback_manifest_unchanged": true,
+    "scope": "Live no-hop root trajectory, fixed sole, hip/knee compression and original bone lengths for12 body/direction/seed cases, approach-side recovery, varied original roll sources and zero-error GLB exports. Kinematic contact tests do not certify rigid-body force/balance simulation or complete skin/environment collision."
   }
 }

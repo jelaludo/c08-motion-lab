@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "url": "https://jelaludo.github.io/c08-motion-lab/dev-log/",
-  "entries": 35,
-  "words": 13956,
+  "entries": 36,
+  "words": 14550,
   "checks": [
     "prominent unresolved crouch/arm feedback",
     "dated entries and working in-page index",

@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "verified_content_commit": "f296f91084c2bc90a4dea95106a7742c441b295c",
+  "pages_run": 41748373304,
+  "pages_run_conclusion": "success",
+  "verified_at": "2026-11-04T00:41:45.012218+00:00",
+  "live_files": [
+    {
+      "file": "game.js",
+      "sha256": "bc905cdee93879ce0d0edbb09723ad2cd182f05182e5a448c9ade7b27ec6d8fa",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/game.js?verified=f296f91084c2bc90a4dea95106a7742c441b295c",
+      "verified": true,
+      "bytes": 55839
+    },
+    {
+      "file": "side-trip.js",
+      "sha256": "be767981e779084fc63add4a8c47a79dca21fc8401ddf6995d74ab0886fabeee",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/side-trip.js?verified=f296f91084c2bc90a4dea95106a7742c441b295c",
+      "verified": true,
+      "bytes": 4560
+    },
+    {
+      "file": "breakfalls.js",
+      "sha256": "5a609678718ca33709621aa0c2a8c23642f3b136cd6260c65e43dcb18ec53588",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/breakfalls.js?verified=f296f91084c2bc90a4dea95106a7742c441b295c",
+      "verified": true,
+      "bytes": 3183
+    },
+    {
+      "file": "index.html",
+      "sha256": "e01e9c339efdb007b89bc78907ae7237ef1b0c31ce5be955d0e81f2c81ef64da",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/index.html?verified=f296f91084c2bc90a4dea95106a7742c441b295c",
+      "verified": true,
+      "bytes": 13911
+    },
+    {
+      "file": "packs/game-state-machine.json",
+      "sha256": "097928b1aa61e7d9431144df2da51ca3618af3091c0709e2f033d3ce3c39be2f",
+      "url": "https://jelaludo.github.io/c08-motion-lab/kimodo-game/packs/game-state-machine.json?verified=f296f91084c2bc90a4dea95106a7742c441b295c",
+      "verified": true,
+      "bytes": 221003
+    },
+    {
+      "file": "planted-side-trip-takes/c08-planted-side-trip.glb",
+      "sha256": "a8114e06a22af90a0486d40243955cac7140cefb64c8f2ae7609757c722786ec",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/f296f91084c2bc90a4dea95106a7742c441b295c/research/kimodo/planted-side-trip-takes/c08-planted-side-trip.glb",
+      "verified": true,
+      "bytes": 1525028
+    },
+    {
+      "file": "planted-side-trip-takes/c08-planted-side-trip.json",
+      "sha256": "f526e5c5a48e3b6248ecf0e9807419b5dd6a537bc21f3c8ec36be340d19561e4",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/f296f91084c2bc90a4dea95106a7742c441b295c/research/kimodo/planted-side-trip-takes/c08-planted-side-trip.json",
+      "verified": true,
+      "bytes": 3975
+    },
+    {
+      "file": "planted-side-trip-takes/brek43-planted-side-trip.glb",
+      "sha256": "07d541eff6238c233194107870775ae174f591b651dd248fe680534dea429eb4",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/f296f91084c2bc90a4dea95106a7742c441b295c/research/kimodo/planted-side-trip-takes/brek43-planted-side-trip.glb",
+      "verified": true,
+      "bytes": 1890148
+    },
+    {
+      "file": "planted-side-trip-takes/brek43-planted-side-trip.json",
+      "sha256": "2352b508a85d57fa82014bb3f1b2babfb0ce0344b649ac31a041b86d75b741dc",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/f296f91084c2bc90a4dea95106a7742c441b295c/research/kimodo/planted-side-trip-takes/brek43-planted-side-trip.json",
+      "verified": true,
+      "bytes": 3981
+    },
+    {
+      "file": "assets-manifest.json",
+      "sha256": "42a1aeebbbe6e637614d33056450f0d28f42233cc0053fa68a178ef7457eea74",
+      "url": "https://raw.githubusercontent.com/jelaludo/c08-motion-lab/f296f91084c2bc90a4dea95106a7742c441b295c/research/kimodo/assets-manifest.json",
+      "verified": true,
+      "bytes": 20262577
+    }
+  ],
+  "live_browser_reports": [
+    "planted-side-trip-validation.json",
+    "planted-side-source-regression.json"
+  ],
+  "dev_log_entries": 36,
+  "dev_log_words": 14550,
+  "planted_contact_checks": 20,
+  "side_source_and_recovery_checks": 26,
+  "source_playback_manifest_unchanged": true,
+  "scope": "Live no-hop root trajectory, fixed sole, hip/knee compression and original bone lengths for12 body/direction/seed cases, approach-side recovery, varied original roll sources and zero-error GLB exports. Kinematic contact tests do not certify rigid-body force/balance simulation or complete skin/environment collision."
+}
