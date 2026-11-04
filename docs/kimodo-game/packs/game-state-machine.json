@@ -141,7 +141,7 @@
       "6633": "skateboard shoulder roll"
     },
     "duration_s": 3.6,
-    "low_obstacle": "Plant impacting foot, compress hip/knee, tip and roll into clear approach-side space",
+    "low_obstacle": "Plant impacting foot, compress hip/knee and continue incoming momentum over beam with matching-side roll; ground-level root and pose contacts",
     "high_obstacle": "Same planted response; select away-side pool and collision-checked ground-level route",
     "contact": {
       "plant_until_s": 0.5,
@@ -149,7 +149,7 @@
       "fold_until_s": 0.45,
       "hip_drop_m": 0.18,
       "controller_roll_start_s": 0.48,
-      "method": "World-space sole anchor and two-bone leg IK; authored pelvis tilt/twist and compression; source-specific entry timing bypasses idle preparation"
+      "method": "World-space sole anchor and two-bone leg IK; authored pelvis tilt/twist and compression; source-specific entry timing bypasses idle preparation; after release torso-skin/leg contacts support low-beam crossing while all other obstacles block"
     },
     "method": "Existing six Kimodo sources plus kinematic contact constraints; not a full rigid-body/force simulation",
     "recording": "Save take bakes selected source, planted leg solve, controller path and transitions; original source clips retain their generated motion"

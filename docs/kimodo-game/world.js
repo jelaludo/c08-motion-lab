@@ -27,9 +27,9 @@ export function createWorld(scene){
  for(const [x,z,w,d]of [[0,-15,100,1],[0,95,100,1],[-50,40,1,110],[50,40,1,110]])box('boundary',x,z,w,d,2.5,'#3a5556');
  const state={collisions:0,lastCollision:null,moveHits:[]};
  function intersects(x,z,r,b){return Math.hypot(x-T.MathUtils.clamp(x,b.x-b.w/2,b.x+b.w/2),z-T.MathUtils.clamp(z,b.z-b.d/2,b.z+b.d/2))<r-1e-6}
- function fits(pos,height,r=.27){return !obstacles.some(b=>pos.y+.04<b.top&&pos.y+height>b.bottom+.01&&intersects(pos.x,pos.z,r,b))}
- function move(pos,delta,height,r=.27){state.moveHits=[];const n=Math.max(1,Math.ceil(delta.length()/.08)),step=delta.clone().multiplyScalar(1/n),out=pos.clone();for(let i=0;i<n;i++){
-  for(const axis of ['x','z']){const candidate=out.clone();candidate[axis]+=step[axis];const hit=obstacles.find(b=>candidate.y+.04<b.top&&candidate.y+height>b.bottom+.01&&intersects(candidate.x,candidate.z,r,b));if(!hit)out[axis]=candidate[axis];else{state.collisions++;state.lastCollision=hit.name;if(!state.moveHits.some(h=>h.obstacle===hit))state.moveHits.push({obstacle:hit})}}
+ function fits(pos,height,r=.27,poseContactObstacle=null){return !obstacles.some(b=>b!==poseContactObstacle&&pos.y+.04<b.top&&pos.y+height>b.bottom+.01&&intersects(pos.x,pos.z,r,b))}
+ function move(pos,delta,height,r=.27,poseContactObstacle=null){state.moveHits=[];const n=Math.max(1,Math.ceil(delta.length()/.08)),step=delta.clone().multiplyScalar(1/n),out=pos.clone();for(let i=0;i<n;i++){
+  for(const axis of ['x','z']){const candidate=out.clone();candidate[axis]+=step[axis];const hit=obstacles.find(b=>b!==poseContactObstacle&&candidate.y+.04<b.top&&candidate.y+height>b.bottom+.01&&intersects(candidate.x,candidate.z,r,b));if(!hit)out[axis]=candidate[axis];else{state.collisions++;state.lastCollision=hit.name;if(!state.moveHits.some(h=>h.obstacle===hit))state.moveHits.push({obstacle:hit})}}
  }return out}
  function floor(x,z,y=0){let top=0;for(const b of obstacles)if(b.top<=y+.06&&intersects(x,z,.27,b))top=Math.max(top,b.top);return top}
  return {obstacles,props,crate,ghostCrate,bench,terminal,makeCrate,state,move,fits,floor,zone(pos){return Math.abs(pos.x)<=3.5&&pos.z>=19&&pos.z<=43?'orange':Math.abs(pos.x)<=3.5&&pos.z>43&&pos.z<=67?'red':'free'},reset(){crate.position.set(-2,.23,2);crate.rotation.set(0,0,0);state.collisions=0;state.lastCollision=null}};

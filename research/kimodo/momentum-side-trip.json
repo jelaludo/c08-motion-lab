@@ -1,0 +1,133 @@
+{
+  "schema": "momentum-side-trip/1",
+  "date": "2026-11-04",
+  "status": "prototype_accepted_for_now_with_known_limitations",
+  "problem": "All sideways collisions were redirected away from the obstacle, reversing the incoming momentum even at low beams.",
+  "change": "Low12\u201370cm beams use the matching incoming side roll and continue across the beam. Tall walls retain the opposite-side fall-away response. Existing planted-foot timing and initial hip/knee fold remain.",
+  "method": "Kinematic contact constraints over six existing Kimodo takes, not a rigid-body force simulation. During explicit low-beam rolls, the upright capsule proxy exempts only the target beam. Sampled core/proximal-shoulder skin supports the beam, and limb IK withdraws arms/legs from its near/far faces; all other solids still block the route.",
+  "source_preservation": {
+    "prior_takes": 204,
+    "source_hashes_and_entire_playback_manifest_unchanged": true,
+    "motion_types": 98,
+    "takes": 204,
+    "body_clips": 408,
+    "default_pack_clips_per_body": 94
+  },
+  "contact": {
+    "plant_until_s": 0.5,
+    "release_until_s": 0.76,
+    "hip_drop_m": 0.18,
+    "rendered_root": "ground-level; no initial clearance hop",
+    "low_roll": "incoming momentum and matching side pool",
+    "tall_roll": "away from wall and opposite side pool"
+  },
+  "validation": {
+    "report": "momentum-side-trip-validation.json",
+    "status": "failed",
+    "completed_direction_contact_world_axis_route_export_checks": 26,
+    "quality_gate": "Full-skin contact gate remains failed in the two cases below. This result is preserved, not relabeled as a complete pass.",
+    "known_skin_failures": [
+      {
+        "body": "c08",
+        "inputSide": "left",
+        "seed": 5522,
+        "time": 0.9000000000000005,
+        "insideVertices": 7239,
+        "torsoVertices": 2669,
+        "minimumClearance": -0.03537072733607205,
+        "groups": {
+          "torso": {
+            "vertices": 2669,
+            "minimumClearance": 0.01371945356197507
+          },
+          "arms": {
+            "vertices": 3911,
+            "minimumClearance": 0.04372453651093555
+          },
+          "legs": {
+            "vertices": 659,
+            "minimumClearance": -0.03537072733607205
+          }
+        }
+      },
+      {
+        "body": "brek43",
+        "inputSide": "left",
+        "seed": 5522,
+        "time": 0.9000000000000005,
+        "insideVertices": 9018,
+        "torsoVertices": 3165,
+        "minimumClearance": -0.05247560405620924,
+        "groups": {
+          "torso": {
+            "vertices": 3165,
+            "minimumClearance": 0.08000681452061953
+          },
+          "arms": {
+            "vertices": 5831,
+            "minimumClearance": 0.04377590573126916
+          },
+          "legs": {
+            "vertices": 22,
+            "minimumClearance": -0.05247560405620924
+          }
+        }
+      }
+    ]
+  },
+  "next_work": [
+    {
+      "priority": "next",
+      "task": "Refine lateral-fall speed and sideways-ukemi phase timing so the movement feels more natural.",
+      "details": [
+        "Tune impact, planted-foot fold, foot release, roll cadence and recovery separately rather than uniformly speeding up the entire clip.",
+        "Compare all six seeds on C08 and B-REK43 while preserving foot anchoring, no initial upward hop and incoming momentum."
+      ]
+    },
+    {
+      "priority": "open contact cleanup",
+      "task": "Resolve proximal hip/thigh shell penetration for left input, seed5522, at0.9s.",
+      "details": [
+        "C08 approximately3.54cm; B-REK43 approximately5.25cm.",
+        "Torso/arm support checks clear these cases; remaining overlap is proximal HIP_L geometry."
+      ]
+    }
+  ],
+  "scope": "Creator accepted the present motion as good enough for now and requested documentation plus a next-round timing note. No further animation/contact refinement is included in this checkpoint.",
+  "exports": "Saved GLBs bake controller motion and contact IK and retain chosen-seed events. Generated source exports remain unchanged.",
+  "runtime_sha256": {
+    "game.js": "1f581b821df1738441c61a27929e83c9769b00f85d5da8c1113e12fc2368e87b",
+    "side-trip.js": "15bfea5218745b729ba98527eefc034fdbecf668879d499a178747dd0dd5d613",
+    "world.js": "7c47785698cb43995e25a9454b29b7ebbb1bf7f6d3c55c2b48b063c280125c88",
+    "breakfalls.js": "4ea08ddf00960f10f080091bdd82652f0f3283f7cc8cc6204418e5559a621bc9",
+    "index.html": "38fdb4aec2c8a14591416a7540f8cdb989647767f6f6f75cd0baf602d00eb55a",
+    "packs/game-state-machine.json": "f30d6d035be6ea560f10926bc7318b20d53f27f80d7e187cf96211b6b9715b2e"
+  },
+  "hash_scope": "UTF8 LF Git blob bytes",
+  "recordings": [
+    {
+      "body": "c08",
+      "file": "momentum-side-trip-takes/c08-momentum-side-trip.glb",
+      "sha256": "3657cd8d68bb084ca13d6dfa93be202d81972e069be3f7d2396a3ff47a41f7ad",
+      "bytes": 1525000
+    },
+    {
+      "body": "c08",
+      "file": "momentum-side-trip-takes/c08-momentum-side-trip.json",
+      "sha256": "247755f6a7a318533132c8b11da8849e07cc6e31315c0b33d620203da55bb8b9",
+      "bytes": 3951
+    },
+    {
+      "body": "brek43",
+      "file": "momentum-side-trip-takes/brek43-momentum-side-trip.glb",
+      "sha256": "de8f6fee0bf82fbd214489cce58a23ec6b2868576614789ab5bbd07d1878690e",
+      "bytes": 1890176
+    },
+    {
+      "body": "brek43",
+      "file": "momentum-side-trip-takes/brek43-momentum-side-trip.json",
+      "sha256": "ad622c5faf1dd09c8a37727ac5b97acb1cf83a56e5adffbbfca90a96fb1d8b2c",
+      "bytes": 3966
+    }
+  ]
+}
