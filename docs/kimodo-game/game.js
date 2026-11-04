@@ -2,12 +2,13 @@ import {readMotionJSON,loadMotionModel} from '../shared/motion-asset-io.js';
 import * as T from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {ReviewStore,SCORE_FIELDS} from '../shared/review-store.js';
-import {groundFeet,carryHands,mantleHands,point} from './kinematics.js?v=side-ukemi-1';
-import {createWorld} from './world.js?v=side-ukemi-1';
-import {traversalTarget,traversalPosition} from './traversal.js?v=side-ukemi-1';
-import {CONTACT_RULES,calibrateRig,heroLandingPose,ledgeGrabPose} from './contact-actions.js?v=side-ukemi-1';
-import {createVariationPicker} from './variation.js?v=side-ukemi-1';
-import {BREAKFALL_RULES,breakfallPlan,breakfallPosition} from './breakfalls.js?v=side-ukemi-1';
+import {groundFeet,carryHands,mantleHands,point} from './kinematics.js?v=planted-trip-1';
+import {createWorld} from './world.js?v=planted-trip-1';
+import {traversalTarget,traversalPosition} from './traversal.js?v=planted-trip-1';
+import {CONTACT_RULES,calibrateRig,heroLandingPose,ledgeGrabPose} from './contact-actions.js?v=planted-trip-1';
+import {createVariationPicker} from './variation.js?v=planted-trip-1';
+import {BREAKFALL_RULES,breakfallPlan,breakfallPosition} from './breakfalls.js?v=planted-trip-1';
+import {SIDE_TRIP_RULES,captureTripContact,plantedSideTrip} from './side-trip.js?v=planted-trip-1';
 const variationPicker=createVariationPicker();
 const actionProfiles=await fetch('action-profiles.json?v=responsive-2').then(r=>{if(!r.ok)throw Error('Action windows unavailable');return r.json()}).then(d=>d.profiles);
 import {exportClips,createRecorder,download} from './export.js';
@@ -74,6 +75,7 @@ function apply(a,time,dt){
  const grounded=state.position.y<=world.floor(state.position.x,state.position.z,state.position.y)+.06;
  const support=state.mode==='play'&&grounded&&state.stance!=='prone'&&state.stance!=='down'&&state.stance!=='seiza'&&a.take?.group!=='ground'&&!state.flight&&(!state.action||state.action.type==='jump');
  const ik=groundFeet(a,contacts,support,dt,world.floor(state.position.x,state.position.z,state.position.y));state.maxIKReach=Math.max(state.maxIKReach,ik.reach);state.maxLengthError=Math.max(state.maxLengthError,ik.length);
+ if(state.mode==='play'&&state.flight?.path==='planted-side-roll'){const report=plantedSideTrip(a,state.flight);if(report){state.contactDiagnostics[a.id]=report;state.maxLengthError=Math.max(state.maxLengthError,report.length||0)}}
  if(state.mode==='play'&&state.flight?.type==='ledge'){const report=ledgeGrabPose(a,{...state.flight,controllerPosition:state.position});state.contactDiagnostics[a.id]={kind:'ledge',...report};state.maxLengthError=Math.max(state.maxLengthError,report.length)}
  if(state.mode==='play'&&state.action?.type==='hero-land'){const report=heroLandingPose(a,state.action.elapsed);state.contactDiagnostics[a.id]={kind:'hero-land',...report};state.maxLengthError=Math.max(state.maxLengthError,report.length||0)}
  if(state.mode==='play'&&state.flight?.type==='mantle'){const hands=mantleHands(a,state.flight,state.position);state.maxLengthError=Math.max(state.maxLengthError,hands.length)}
@@ -129,7 +131,7 @@ function mappedTime(a){
   const f=state.flight?.type==='jump'?state.flight:x,p=d.jump||{takeoff_s:.3,landing_s:Math.max(.5,d.duration-.5)},t=x.elapsed;
   if(t<f.pre)return t/Math.max(.01,f.pre)*p.takeoff_s;if(t<f.pre+f.air)return p.takeoff_s+(t-f.pre)/f.air*(p.landing_s-p.takeoff_s);return p.landing_s+Math.min(1,(t-f.pre-f.air)/.16)*(d.duration-p.landing_s);
  }
- const w=actionWindow(a,x.id),u=T.MathUtils.clamp(x.elapsed/x.duration,0,1);return w?T.MathUtils.lerp(w.start,w.end,u):Math.min(x.elapsed,d.duration);
+ const w=actionWindow(a,x.id),u=T.MathUtils.clamp(x.elapsed/x.duration,0,1);if(state.flight?.path==='planted-side-roll'&&w){const onset=a.take.contact_fall_onset_s??1,plant=SIDE_TRIP_RULES.plantUntil;return x.elapsed<plant?onset*smooth(x.elapsed/plant):T.MathUtils.lerp(onset,w.end,T.MathUtils.clamp((x.elapsed-plant)/(x.duration-plant),0,1))}return w?T.MathUtils.lerp(w.start,w.end,u):Math.min(x.elapsed,d.duration);
 }
 function movementIntent(){if(state.mode==='preview')exitPreview();if(state.action&&['game-dodge-','game-jab','game-cross','game-kick','game-block','game-land-hard'].some(id=>state.action.id.startsWith(id)))cancelAction('movement');if(state.stance==='seiza'||state.stance==='sit')state.stance='crouch'}
 function attack(){if(state.stance==='seiza')state.stance='crouch';return action(state.attackIndex++%2?'game-cross':'game-jab')}
@@ -145,6 +147,7 @@ function tripOnContact(input,hits,incoming){
  const pool=eligibleTakes(plan.id);if(!pool.length)return false;
  const b=plan.obstacleRef;if(state.tripBlockedObstacle===b)return false;
  state.tripBlockedObstacle=b;state.tripCooldownUntil=state.time+plan.duration+BREAKFALL_RULES.cooldownAfter;state.flight=plan;state.velocity.set(0,0,0);state.fallPeak=null;
+ if(plan.path==='planted-side-roll'){plan.contacts=Object.fromEntries(actors.map(a=>[a.id,captureTripContact(a,plan,world.floor(state.position.x,state.position.z,state.position.y))]));log('trip-foot-plant',{obstacle:plan.obstacle,contacts:Object.fromEntries(Object.entries(plan.contacts).map(([body,c])=>[body,{side:c.side,anchor:c.anchor.toArray(),initialKneeFlexion:c.initialKneeFlexion}]))})}
  const preferred=takeFor(plan.id,active().id),seed=state.variety?null:(pool.find(t=>t.id===preferred?.id)||pool[0]).seed;
  log(plan.kind.startsWith('side-')?'side-object-ukemi':'low-object-trip',{obstacle:plan.obstacle,direction:plan.kind,redirected:!!plan.redirected,incoming_speed_m_s:incoming.length(),destination:plan.destination.toArray()});void action(plan.id,{type:'ukemi',duration:plan.duration,blend:.10,seed});return true;
 }

@@ -9690,7 +9690,8 @@
       ],
       "limitations": [
         "Candidate lateral roll/breakfall; ground contact and technique require visual review."
-      ]
+      ],
+      "contact_fall_onset_s": 0.8666666666666667
     },
     {
       "id": "game-ukemi-side-left-seed5522",
@@ -9733,7 +9734,8 @@
       ],
       "limitations": [
         "Candidate lateral roll/breakfall; ground contact and technique require visual review."
-      ]
+      ],
+      "contact_fall_onset_s": 0.8333333333333334
     },
     {
       "id": "game-ukemi-side-left-seed6633",
@@ -9776,7 +9778,8 @@
       ],
       "limitations": [
         "Candidate lateral roll/breakfall; ground contact and technique require visual review."
-      ]
+      ],
+      "contact_fall_onset_s": 0.9333333333333333
     },
     {
       "id": "game-ukemi-side-right-seed4411",
@@ -9819,7 +9822,8 @@
       ],
       "limitations": [
         "Candidate lateral roll/breakfall; ground contact and technique require visual review."
-      ]
+      ],
+      "contact_fall_onset_s": 1.3
     },
     {
       "id": "game-ukemi-side-right-seed5522",
@@ -9862,7 +9866,8 @@
       ],
       "limitations": [
         "Candidate lateral roll/breakfall; ground contact and technique require visual review."
-      ]
+      ],
+      "contact_fall_onset_s": 1.5
     },
     {
       "id": "game-ukemi-side-right-seed6633",
@@ -9905,7 +9910,8 @@
       ],
       "limitations": [
         "Candidate lateral roll/breakfall; ground contact and technique require visual review."
-      ]
+      ],
+      "contact_fall_onset_s": 1.2666666666666666
     }
   ],
   "scope": "Candidate game-motion kit. Source takes preserved; derived in-place loops and one-shots. C08 and B-REK43 only. Runtime transitions, contact IK, collision controller and props require visual acceptance.",

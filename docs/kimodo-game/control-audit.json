@@ -302,7 +302,7 @@
       "test": "Add only after the level and game design need that mechanic; do not copy every feature from all five games into one controller."
     }
   ],
-  "runtime_source_sha256": "c7da9b6cfd3df33a7a8a0e8e3f418f82f007ecddd8499171a60772f1fe0b4eff",
+  "runtime_source_sha256": "bc905cdee93879ce0d0edbb09723ad2cd182f05182e5a448c9ade7b27ec6d8fa",
   "scope": "Static inventory/code audit. Existing candidate IDs do not establish accepted motion quality or completed game states.",
   "earlier_lab_take_count": 90,
   "prior_lab_sources": {
@@ -327,6 +327,6 @@
       "url": "../kimodo-bipeds/?test=r2-ukemi-forward-seed101&category=ground"
     }
   },
-  "local_source_runtime_sha256": "da8222e3f6616229c378736b730dedb6987dea4bca64726e2b728c0573ff095a",
+  "local_source_runtime_sha256": "64a50f06341aaeee30169460a1611649ee3ff5ffcd28372df9e7f5812ee5de80",
   "publication_transport": "Compressed static track assets; animation/controller behavior retained."
 }

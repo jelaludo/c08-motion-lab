@@ -1,0 +1,159 @@
+{
+  "schema": "kimodo-game-recording/1",
+  "body": "brek43",
+  "ended": "2026-11-04T00:34:50.765Z",
+  "duration_s": 7.099999999999596,
+  "frames": 143,
+  "events": [
+    {
+      "time": 0,
+      "type": "record-start",
+      "body": "brek43"
+    },
+    {
+      "time": 0.02499999999999858,
+      "type": "variant-choice",
+      "motion": "game-walk-left",
+      "seeds": {
+        "c08": 411,
+        "brek43": 411
+      },
+      "takes": {
+        "c08": "game-walk-left-seed411",
+        "brek43": "game-walk-left-seed411"
+      },
+      "policy": "preferred"
+    },
+    {
+      "time": 0.02499999999999858,
+      "type": "motion",
+      "id": "game-walk-left-seed411",
+      "body": "brek43",
+      "source_sha256": "e63d91b2f38ce6dfcdd32cc051904dba651332050972b3ab4f4091c368c509d8"
+    },
+    {
+      "time": 2.899999999999835,
+      "type": "trip-foot-plant",
+      "obstacle": "trip hurdle 14",
+      "contacts": {
+        "c08": {
+          "side": "L",
+          "anchor": [
+            -30.16635390600614,
+            0.018,
+            16.494999999999997
+          ],
+          "initialKneeFlexion": 0.4372729111931175
+        },
+        "brek43": {
+          "side": "L",
+          "anchor": [
+            -30.068201770116794,
+            0.018,
+            13.695
+          ],
+          "initialKneeFlexion": 0.4543588034729851
+        }
+      }
+    },
+    {
+      "time": 2.899999999999835,
+      "type": "side-object-ukemi",
+      "obstacle": "trip hurdle 14",
+      "direction": "side-right",
+      "redirected": true,
+      "incoming_speed_m_s": 1.2499999999942215,
+      "destination": [
+        -30,
+        0,
+        11.26990066740143
+      ]
+    },
+    {
+      "time": 2.899999999999835,
+      "type": "variant-choice",
+      "motion": "game-ukemi-side-right",
+      "seeds": {
+        "c08": 4411,
+        "brek43": 4411
+      },
+      "takes": {
+        "c08": "game-ukemi-side-right-seed4411",
+        "brek43": "game-ukemi-side-right-seed4411"
+      },
+      "policy": "explicit"
+    },
+    {
+      "time": 2.899999999999835,
+      "type": "action-start",
+      "id": "game-ukemi-side-right",
+      "takes": {
+        "c08": "game-ukemi-side-right-seed4411",
+        "brek43": "game-ukemi-side-right-seed4411"
+      },
+      "seeds": {
+        "c08": 4411,
+        "brek43": 4411
+      }
+    },
+    {
+      "time": 2.899999999999835,
+      "type": "variant-choice",
+      "motion": "game-ukemi-side-right",
+      "seeds": {
+        "c08": 4411,
+        "brek43": 4411
+      },
+      "takes": {
+        "c08": "game-ukemi-side-right-seed4411",
+        "brek43": "game-ukemi-side-right-seed4411"
+      },
+      "policy": "preferred"
+    },
+    {
+      "time": 2.899999999999835,
+      "type": "motion",
+      "id": "game-ukemi-side-right-seed4411",
+      "body": "brek43",
+      "source_sha256": "972f8af33c3176a9bea8281dffea8cdde61341f9462c8f8f7aa9f98ef740a86d"
+    },
+    {
+      "time": 6.524999999999629,
+      "type": "traversal-end",
+      "kind": "ukemi",
+      "obstacle": "trip hurdle 14"
+    },
+    {
+      "time": 6.524999999999629,
+      "type": "action-end",
+      "id": "game-ukemi-side-right"
+    },
+    {
+      "time": 6.549999999999628,
+      "type": "variant-choice",
+      "motion": "game-idle",
+      "seeds": {
+        "c08": 411,
+        "brek43": 411
+      },
+      "takes": {
+        "c08": "game-idle-seed411",
+        "brek43": "game-idle-seed411"
+      },
+      "policy": "preferred"
+    },
+    {
+      "time": 6.549999999999628,
+      "type": "motion",
+      "id": "game-idle-seed411",
+      "body": "brek43",
+      "source_sha256": "a83471e75d8cf97390aebd0cf1a83d8a8565b30c2fcc5e98fef275ca471bc278"
+    }
+  ],
+  "baked": [
+    "controller world translation and rotation",
+    "retargeted skeletal poses",
+    "runtime foot and carrying-hand IK"
+  ],
+  "scope": "Sampled live play session. Review collision, contacts, props and balance before shipping. Prop mesh and its trajectory are not included in this character recording."
+}

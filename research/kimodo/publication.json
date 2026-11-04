@@ -36,22 +36,5 @@
       "Private human reference videos",
       "Third-party manuals and game screenshots"
     ]
-  },
-  "live_verification": {
-    "status": "passed",
-    "verified_content_commit": "d4d15eab924d3f9f0e30e8ed5aaefaece2c13fd1",
-    "pages_run": 41730801022,
-    "pages_run_conclusion": "success",
-    "verified_at": "2026-11-03T22:30:32.599223+00:00",
-    "live_browser_reports": [
-      "side-ukemi-validation.json",
-      "public-playback-validation.json"
-    ],
-    "dev_log_entries": 35,
-    "dev_log_words": 13956,
-    "source_roundtrip_clips": 768,
-    "game_clips": 408,
-    "side_reaction_checks": 26,
-    "scope": "Live hosted lateral roll variants, shared seeds, low/tall collision routes, committed fall/recovery interrupts, endpoint stance, source parity and zero-error GLB exports. Visual naturalness, complete mesh/environment collision and martial-arts technique remain reviewer assessments."
   }
 }

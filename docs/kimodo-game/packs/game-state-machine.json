@@ -141,10 +141,18 @@
       "6633": "skateboard shoulder roll"
     },
     "duration_s": 3.6,
-    "low_obstacle": "Continue sideways across low hurdle only with clear rollout",
-    "high_obstacle": "Redirect into clear space away from wall; select opposite side pool",
-    "method": "Six new text-conditioned Kimodo predictions with native idle start/end constraints; per-body sampled skin-floor cleanup",
-    "recording": "Save take bakes selected source, controller path, transitions and IK; source exports retain the generated source"
+    "low_obstacle": "Plant impacting foot, compress hip/knee, tip and roll into clear approach-side space",
+    "high_obstacle": "Same planted response; select away-side pool and collision-checked ground-level route",
+    "contact": {
+      "plant_until_s": 0.5,
+      "release_until_s": 0.76,
+      "fold_until_s": 0.45,
+      "hip_drop_m": 0.18,
+      "controller_roll_start_s": 0.48,
+      "method": "World-space sole anchor and two-bone leg IK; authored pelvis tilt/twist and compression; source-specific entry timing bypasses idle preparation"
+    },
+    "method": "Existing six Kimodo sources plus kinematic contact constraints; not a full rigid-body/force simulation",
+    "recording": "Save take bakes selected source, planted leg solve, controller path and transitions; original source clips retain their generated motion"
   },
   "breakfalls": {
     "low_object_height_m": [

@@ -7,10 +7,11 @@ export function breakfallPlan(world,position,velocity,facing,hits){
  const floor=world.floor(position.x,position.z,position.y);if(Math.abs(position.y-floor)>.06)return null;
  for(const hit of hits){const b=hit.obstacle,h=b.top-floor;if(b.trip===false||b.bottom>floor+.05||h<BREAKFALL_RULES.minHeight)continue;
   const lateral=Math.abs(dot)<.65,bodyLeft=new T.Vector3(Math.cos(facing),0,-Math.sin(facing)),sideOf=d=>d.dot(bodyLeft)>0?'left':'right';
-  if(lateral&&h>BREAKFALL_RULES.maxHeight){
-   // A wall cannot be rolled through: recoil and breakfall into clear space.
+  if(lateral){
+   // The impacting leg stops at the object. Buckle into clear approach-side
+   // space instead of raising the entire actor over the hurdle like a vault.
    const away=heading.clone().negate(),destination=position.clone().addScaledVector(away,2.2);destination.y=world.floor(destination.x,destination.z,position.y+.06);
-   const side=sideOf(away),plan={type:'ukemi',path:'recoil-roll',kind:'side-'+side,id:'game-ukemi-side-'+side,start:position.clone(),destination,facing,elapsed:0,duration:3.6,obstacle:b.name,obstacleRef:b,redirected:true};
+   const side=sideOf(away),plan={type:'ukemi',path:'planted-side-roll',kind:'side-'+side,id:'game-ukemi-side-'+side,start:position.clone(),destination,facing,heading,elapsed:0,duration:3.6,obstacle:b.name,obstacleRef:b,redirected:true};
    if([.05,.15,.3,.5,.75,1].every(u=>world.fits(breakfallPosition({...plan,elapsed:u*plan.duration}),1.85)))return plan;
    continue;
   }
@@ -27,7 +28,7 @@ export function breakfallPlan(world,position,velocity,facing,hits){
  return null;
 }
 export function breakfallPosition(f){
- if(f.path==='recoil-roll')return f.start.clone().lerp(f.destination,smooth((f.elapsed/f.duration-.05)/.8));
+ if(f.path==='planted-side-roll')return f.start.clone().lerp(f.destination,smooth((f.elapsed-.48)/2.65));
  const u=T.MathUtils.clamp(f.elapsed/f.duration,0,1),up=smooth(u/.12),cross=smooth((u-.14)/.21),roll=smooth((u-.35)/.55),out=f.start.clone().lerp(f.clear,cross);out.lerp(f.destination,roll);
  out.y=T.MathUtils.lerp(f.start.y,f.top+.075,up);out.y=T.MathUtils.lerp(out.y,f.destination.y,smooth((u-.35)/.17));return out;
 }
